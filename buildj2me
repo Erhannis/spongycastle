@@ -37,7 +37,7 @@ then
     ((cd pkix/src/main/java; tar cf - * ) | (cd $target/src && tar xf -))
     ((cd pkix/src/main/javadoc; tar cf - * ) | (cd $target/src && tar xf -))
     ((cd pkix/src/main/j2me; tar cf - * ) | (cd $target/src && tar xf -))
-    ((cd pkix/src/test/java; tar cf - org.spongycastle.cert/test ) | (cd $target/src && tar xf - ) )
+    ((cd pkix/src/test/java; tar cf - org/spongycastle/cert/test ) | (cd $target/src && tar xf - ) )
     ((cd pkix/src/test/j2me; tar cf - * ) | (cd $target/src && tar xf -))
     ((cd pg/src/main/java; tar cf - * ) | (cd $target/src && tar xf -))
     ((cd pg/src/main/javadoc; tar cf - * ) | (cd $target/src && tar xf -))
@@ -45,185 +45,185 @@ then
     ((cd pg/src/test/j2me; tar cf - * ) | (cd $target/src && tar xf -))
 
     (cd $target;
-        rm src/org.spongycastle.crypto/test/AllTests.java
-        rm src/org.spongycastle.crypto/test/SHA3DigestTest.java
-        rm src/org.spongycastle.crypto/test/SHAKEDigestTest.java
-	rm src/org.spongycastle.crypto/test/NISTECCTest.java
-	rm src/org.spongycastle.crypto/test/LEATest.java
-        rm src/org.spongycastle.crypto/CryptoServicesPermission.java
-        rm src/org.spongycastle.util/StreamParser.java
-        rm src/org.spongycastle.util/StreamParsingException.java
-        rm src/org.spongycastle.asn1/util/Dump.java
-        rm src/org.spongycastle.asn1/test/AllTests.java
-        rm src/org.spongycastle.asn1/test/ASN1IntegerTest.java
-        rm src/org.spongycastle.asn1/test/ASN1SequenceParserTest.java
-        rm src/org.spongycastle.asn1/test/AttributeTableUnitTest.java
-        rm src/org.spongycastle.asn1/test/BiometricDataUnitTest.java
-        rm src/org.spongycastle.asn1/test/BitStringConstantTester.java
-        rm src/org.spongycastle.asn1/test/CommitmentTypeIndicationUnitTest.java
-        rm src/org.spongycastle.asn1/test/CommitmentTypeQualifierUnitTest.java
-        rm src/org.spongycastle.asn1/test/DataGroupHashUnitTest.java
-        rm src/org.spongycastle.asn1/test/DERUTF8StringTest.java
-        rm src/org.spongycastle.asn1/test/EqualsAndHashCodeTest.java
-        rm src/org.spongycastle.asn1/test/GeneralizedTimeTest.java
-        rm src/org.spongycastle.asn1/test/GenerationTest.java
-        rm src/org.spongycastle.asn1/test/InputStreamTest.java
-        rm src/org.spongycastle.asn1/test/Iso4217CurrencyCodeUnitTest.java
-        rm src/org.spongycastle.asn1/test/KeyUsageTest.java
-        rm src/org.spongycastle.asn1/test/LDSSecurityObjectUnitTest.java
-        rm src/org.spongycastle.asn1/test/CMCFailInfoTest.java
-        rm src/org.spongycastle.asn1/test/CMCStatusTest.java
-        rm src/org.spongycastle.asn1/test/PublishTrustAnchorsTest.java
-        rm src/org.spongycastle.asn1/test/RevokeRequestTest.java
-	rm src/org.spongycastle.asn1/test/LocaleTest.java
-	rm src/org.spongycastle.tsp/DataGroup.java
-	rm -rf src/org.spongycastle.tsp/ers
-	rm src/org.spongycastle.crypto/util/JournaledAlgorithm.java
-	rm -rf src/org.spongycastle.crypto/fpe/
-        rm -rf src/org.spongycastle.math/ec/rfc7748/test
-        rm -rf src/org.spongycastle.math/ec/rfc8032/test
-        rm -rf src/org.spongycastle.math/raw/test
-        rm -rf src/org.spongycastle.math/test
-        rm -rf src/org.spongycastle.pqc/math/ntru
-        rm -rf src/org.spongycastle.pqc/crypto/test/ntru
-        rm -rf src/org.spongycastle.pqc/crypto/*/NTRU*
-        rm -rf src/org.spongycastle.pqc/crypto/*/BitStringTest*
-        rm -rf src/org.spongycastle.pqc/crypto/*/IndexGenerator*
-        rm -rf src/org.spongycastle.pqc/crypto/sphincsplus
-        rm -rf src/org.spongycastle.pqc/crypto/xmss
-        rm -rf src/org.spongycastle.pqc/crypto/lms
-        rm -rf src/org.spongycastle.pqc/crypto/test/XMSS*
-        rm -rf src/org.spongycastle.pqc/crypto/test/LMS*
-        rm -rf src/org.spongycastle.pqc/crypto/test/HSS*
-        rm src/org.spongycastle.pqc/crypto/qtesla/QTeslaKeyEncodingTests.java
-        rm -rf src/org.spongycastle.gpg/keybox
-        rm -rf src/org.spongycastle.gpg/test
-        rm src/org.spongycastle.asn1/test/MonetaryValueUnitTest.java
-        rm src/org.spongycastle.asn1/test/NameOrPseudonymUnitTest.java
-        rm src/org.spongycastle.asn1/test/NetscapeCertTypeTest.java
-        rm src/org.spongycastle.asn1/test/OctetStringTest.java
-        rm src/org.spongycastle.asn1/test/ParseTest.java
-        rm src/org.spongycastle.asn1/test/PersonalDataUnitTest.java
-        rm src/org.spongycastle.asn1/test/PKIFailureInfoTest.java
-        rm src/org.spongycastle.asn1/test/QCStatementUnitTest.java
-        rm src/org.spongycastle.asn1/test/ReasonFlagsTest.java
-        rm src/org.spongycastle.asn1/test/SemanticsInformationUnitTest.java
-        rm src/org.spongycastle.asn1/test/SetTest.java
-        rm src/org.spongycastle.asn1/test/SignerLocationUnitTest.java
-        rm src/org.spongycastle.asn1/test/SMIMETest.java
-        rm src/org.spongycastle.asn1/test/TagTest.java
-        rm src/org.spongycastle.asn1/test/TypeOfBiometricDataUnitTest.java
-        rm src/org.spongycastle.asn1/test/UTCTimeTest.java
-        rm src/org.spongycastle.crypto/test/SimpleTestTest.java
-        rm src/org.spongycastle.crypto/test/Argon2Test.java
-        rm src/org.spongycastle.crypto/test/AESVectorFileTest.java
-        rm src/org.spongycastle.crypto/test/GCMReorderTest.java
-        rm src/org.spongycastle.crypto/test/HCFamilyVecTest.java
-        rm src/org.spongycastle.crypto/test/RSABlindedTest.java
-        rm src/org.spongycastle.crypto/test/SP80038GTest.java
-        rm src/org.spongycastle.crypto/digests/Blake3Digest.java
-        rm src/org.spongycastle.crypto/macs/Blake3Mac.java
-        rm src/org.spongycastle.crypto/test/Blake3*.java
-        rm src/org.spongycastle.crypto/params/Blake3*.java
+        rm src/org/spongycastle/crypto/test/AllTests.java
+        rm src/org/spongycastle/crypto/test/SHA3DigestTest.java
+        rm src/org/spongycastle/crypto/test/SHAKEDigestTest.java
+	rm src/org/spongycastle/crypto/test/NISTECCTest.java
+	rm src/org/spongycastle/crypto/test/LEATest.java
+        rm src/org/spongycastle/crypto/CryptoServicesPermission.java
+        rm src/org/spongycastle/util/StreamParser.java
+        rm src/org/spongycastle/util/StreamParsingException.java
+        rm src/org/spongycastle/asn1/util/Dump.java
+        rm src/org/spongycastle/asn1/test/AllTests.java
+        rm src/org/spongycastle/asn1/test/ASN1IntegerTest.java
+        rm src/org/spongycastle/asn1/test/ASN1SequenceParserTest.java
+        rm src/org/spongycastle/asn1/test/AttributeTableUnitTest.java
+        rm src/org/spongycastle/asn1/test/BiometricDataUnitTest.java
+        rm src/org/spongycastle/asn1/test/BitStringConstantTester.java
+        rm src/org/spongycastle/asn1/test/CommitmentTypeIndicationUnitTest.java
+        rm src/org/spongycastle/asn1/test/CommitmentTypeQualifierUnitTest.java
+        rm src/org/spongycastle/asn1/test/DataGroupHashUnitTest.java
+        rm src/org/spongycastle/asn1/test/DERUTF8StringTest.java
+        rm src/org/spongycastle/asn1/test/EqualsAndHashCodeTest.java
+        rm src/org/spongycastle/asn1/test/GeneralizedTimeTest.java
+        rm src/org/spongycastle/asn1/test/GenerationTest.java
+        rm src/org/spongycastle/asn1/test/InputStreamTest.java
+        rm src/org/spongycastle/asn1/test/Iso4217CurrencyCodeUnitTest.java
+        rm src/org/spongycastle/asn1/test/KeyUsageTest.java
+        rm src/org/spongycastle/asn1/test/LDSSecurityObjectUnitTest.java
+        rm src/org/spongycastle/asn1/test/CMCFailInfoTest.java
+        rm src/org/spongycastle/asn1/test/CMCStatusTest.java
+        rm src/org/spongycastle/asn1/test/PublishTrustAnchorsTest.java
+        rm src/org/spongycastle/asn1/test/RevokeRequestTest.java
+	rm src/org/spongycastle/asn1/test/LocaleTest.java
+	rm src/org/spongycastle/tsp/DataGroup.java
+	rm -rf src/org/spongycastle/tsp/ers
+	rm src/org/spongycastle/crypto/util/JournaledAlgorithm.java
+	rm -rf src/org/spongycastle/crypto/fpe/
+        rm -rf src/org/spongycastle/math/ec/rfc7748/test
+        rm -rf src/org/spongycastle/math/ec/rfc8032/test
+        rm -rf src/org/spongycastle/math/raw/test
+        rm -rf src/org/spongycastle/math/test
+        rm -rf src/org/spongycastle/pqc/math/ntru
+        rm -rf src/org/spongycastle/pqc/crypto/test/ntru
+        rm -rf src/org/spongycastle/pqc/crypto/*/NTRU*
+        rm -rf src/org/spongycastle/pqc/crypto/*/BitStringTest*
+        rm -rf src/org/spongycastle/pqc/crypto/*/IndexGenerator*
+        rm -rf src/org/spongycastle/pqc/crypto/sphincsplus
+        rm -rf src/org/spongycastle/pqc/crypto/xmss
+        rm -rf src/org/spongycastle/pqc/crypto/lms
+        rm -rf src/org/spongycastle/pqc/crypto/test/XMSS*
+        rm -rf src/org/spongycastle/pqc/crypto/test/LMS*
+        rm -rf src/org/spongycastle/pqc/crypto/test/HSS*
+        rm src/org/spongycastle/pqc/crypto/qtesla/QTeslaKeyEncodingTests.java
+        rm -rf src/org/spongycastle/gpg/keybox
+        rm -rf src/org/spongycastle/gpg/test
+        rm src/org/spongycastle/asn1/test/MonetaryValueUnitTest.java
+        rm src/org/spongycastle/asn1/test/NameOrPseudonymUnitTest.java
+        rm src/org/spongycastle/asn1/test/NetscapeCertTypeTest.java
+        rm src/org/spongycastle/asn1/test/OctetStringTest.java
+        rm src/org/spongycastle/asn1/test/ParseTest.java
+        rm src/org/spongycastle/asn1/test/PersonalDataUnitTest.java
+        rm src/org/spongycastle/asn1/test/PKIFailureInfoTest.java
+        rm src/org/spongycastle/asn1/test/QCStatementUnitTest.java
+        rm src/org/spongycastle/asn1/test/ReasonFlagsTest.java
+        rm src/org/spongycastle/asn1/test/SemanticsInformationUnitTest.java
+        rm src/org/spongycastle/asn1/test/SetTest.java
+        rm src/org/spongycastle/asn1/test/SignerLocationUnitTest.java
+        rm src/org/spongycastle/asn1/test/SMIMETest.java
+        rm src/org/spongycastle/asn1/test/TagTest.java
+        rm src/org/spongycastle/asn1/test/TypeOfBiometricDataUnitTest.java
+        rm src/org/spongycastle/asn1/test/UTCTimeTest.java
+        rm src/org/spongycastle/crypto/test/SimpleTestTest.java
+        rm src/org/spongycastle/crypto/test/Argon2Test.java
+        rm src/org/spongycastle/crypto/test/AESVectorFileTest.java
+        rm src/org/spongycastle/crypto/test/GCMReorderTest.java
+        rm src/org/spongycastle/crypto/test/HCFamilyVecTest.java
+        rm src/org/spongycastle/crypto/test/RSABlindedTest.java
+        rm src/org/spongycastle/crypto/test/SP80038GTest.java
+        rm src/org/spongycastle/crypto/digests/Blake3Digest.java
+        rm src/org/spongycastle/crypto/macs/Blake3Mac.java
+        rm src/org/spongycastle/crypto/test/Blake3*.java
+        rm src/org/spongycastle/crypto/params/Blake3*.java
         find src -name AllTests.java -exec rm {} \;
         find src -name jcajce -exec rm -r {} \;
-        rm src/org.spongycastle.asn1/test/GetInstanceTest.java
-        rm src/org.spongycastle.asn1/test/ASN1SequenceParserTest.java
-        rm src/org.spongycastle.asn1/test/OctetStringTest.java
-        rm src/org.spongycastle.asn1/test/ParseTest.java
-        rm src/org.spongycastle.crypto/test/GCMReorderTest.java
-        rm -r src/org.spongycastle.pqc/crypto/test
-        rm src/org.spongycastle.cert/test/BcCertTest.java
-        rm src/org.spongycastle.cert/test/GOST3410_2012CMSTest.java
-        rm src/org.spongycastle.crypto/test/SCryptTest.java
-        rm src/org.spongycastle.crypto/test/SM2EngineTest.java
-        rm src/org.spongycastle.crypto/examples/DESExample.java
-        rm src/org.spongycastle.pqc/crypto/test/EncryptionKeyTest.java
-        rm -r src/org.spongycastle.util/io/pem
-        rm -r src/org.spongycastle.crypto/test/cavp
-        rm -r src/org.spongycastle.crypto/test/speedy
-        rm -r src/org.spongycastle.asn1/test/EnumeratedTest.java
-        rm -r src/org.spongycastle.crypto/test/KDFFeedbackGeneratorTest.java
-        rm -r src/org.spongycastle.crypto/test/KDFDoublePipelineIteratorGeneratorTest.java
-        rm -r src/org.spongycastle.crypto/test/KDFCounterGeneratorTest.java
-        rm src/org.spongycastle.cert/test/ConverterTest.java
-        rm src/org.spongycastle.cert/test/BcPKCS10Test.java
-        rm src/org.spongycastle.cert/test/BcAttrCertTest.java
-        rm src/org.spongycastle.cert/test/BcAttrCertSelectorTest.java
-        rm src/org.spongycastle.cert/test/CertPathLoopTest.java
-        rm src/org.spongycastle.cert/test/DANETest.java
-        rm src/org.spongycastle.cert/test/X509ExtensionUtilsTest.java
-        rm src/org.spongycastle.crypto/test/BigSkippingCipherTest.java
-        rm src/org.spongycastle.crypto/test/OpenSSHKeyParsingTests.java
-        rm -r src/org.spongycastle.util/utiltest
-        rm -r src/org.spongycastle.openpgp/examples
-        rm src/org.spongycastle.openpgp/PGPCompressed*
-        rm src/org.spongycastle.openpgp/PGPCanonicalizedDataGenerator*
-        rm -r src/org.spongycastle.util/encoders/test
-        rm -r src/org.spongycastle.util/io/test
-        rm src/org.spongycastle.cms/CMSProcessableFile.java
-        rm -r src/org.spongycastle.math/ec/test
-        rm -r src/org.spongycastle.crypto/agreement/test
-        rm -r src/org.spongycastle.crypto/tls/test
-        rm -r src/org.spongycastle.i18n
-        rm -r src/org.spongycastle.openssl
-        rm -r src/org.spongycastle.apache
-        rm -r src/org.spongycastle.voms
-        rm -r src/org.spongycastle.math/ec/tools
-        rm src/org.spongycastle.mozilla/SignedPublicKeyAndChallenge.java
+        rm src/org/spongycastle/asn1/test/GetInstanceTest.java
+        rm src/org/spongycastle/asn1/test/ASN1SequenceParserTest.java
+        rm src/org/spongycastle/asn1/test/OctetStringTest.java
+        rm src/org/spongycastle/asn1/test/ParseTest.java
+        rm src/org/spongycastle/crypto/test/GCMReorderTest.java
+        rm -r src/org/spongycastle/pqc/crypto/test
+        rm src/org/spongycastle/cert/test/BcCertTest.java
+        rm src/org/spongycastle/cert/test/GOST3410_2012CMSTest.java
+        rm src/org/spongycastle/crypto/test/SCryptTest.java
+        rm src/org/spongycastle/crypto/test/SM2EngineTest.java
+        rm src/org/spongycastle/crypto/examples/DESExample.java
+        rm src/org/spongycastle/pqc/crypto/test/EncryptionKeyTest.java
+        rm -r src/org/spongycastle/util/io/pem
+        rm -r src/org/spongycastle/crypto/test/cavp
+        rm -r src/org/spongycastle/crypto/test/speedy
+        rm -r src/org/spongycastle/asn1/test/EnumeratedTest.java
+        rm -r src/org/spongycastle/crypto/test/KDFFeedbackGeneratorTest.java
+        rm -r src/org/spongycastle/crypto/test/KDFDoublePipelineIteratorGeneratorTest.java
+        rm -r src/org/spongycastle/crypto/test/KDFCounterGeneratorTest.java
+        rm src/org/spongycastle/cert/test/ConverterTest.java
+        rm src/org/spongycastle/cert/test/BcPKCS10Test.java
+        rm src/org/spongycastle/cert/test/BcAttrCertTest.java
+        rm src/org/spongycastle/cert/test/BcAttrCertSelectorTest.java
+        rm src/org/spongycastle/cert/test/CertPathLoopTest.java
+        rm src/org/spongycastle/cert/test/DANETest.java
+        rm src/org/spongycastle/cert/test/X509ExtensionUtilsTest.java
+        rm src/org/spongycastle/crypto/test/BigSkippingCipherTest.java
+        rm src/org/spongycastle/crypto/test/OpenSSHKeyParsingTests.java
+        rm -r src/org/spongycastle/util/utiltest
+        rm -r src/org/spongycastle/openpgp/examples
+        rm src/org/spongycastle/openpgp/PGPCompressed*
+        rm src/org/spongycastle/openpgp/PGPCanonicalizedDataGenerator*
+        rm -r src/org/spongycastle/util/encoders/test
+        rm -r src/org/spongycastle/util/io/test
+        rm src/org/spongycastle/cms/CMSProcessableFile.java
+        rm -r src/org/spongycastle/math/ec/test
+        rm -r src/org/spongycastle/crypto/agreement/test
+        rm -r src/org/spongycastle/crypto/tls/test
+        rm -r src/org/spongycastle/i18n
+        rm -r src/org/spongycastle/openssl
+        rm -r src/org/spongycastle/apache
+        rm -r src/org/spongycastle/voms
+        rm -r src/org/spongycastle/math/ec/tools
+        rm src/org/spongycastle/mozilla/SignedPublicKeyAndChallenge.java
 
-        ed src/org.spongycastle.cms/CMSSignedDataGenerator.java <<%
+        ed src/org/spongycastle/cms/CMSSignedDataGenerator.java <<%
 g/LinkedHashSet/s//HashSet/g
 w
 q
 %
-        ed src/org.spongycastle.openpgp/operator/bc/BcPGPDataEncryptorBuilder.java <<%
+        ed src/org/spongycastle/openpgp/operator/bc/BcPGPDataEncryptorBuilder.java <<%
 g/public BcPGPDataEncryptorBuilder setWi/s//public PGPDataEncryptorBuilder setWi/g
 w
 q
 %
-        ed src/org.spongycastle.gpg/SExpression.java <<%
+        ed src/org/spongycastle/gpg/SExpression.java <<%
 g/\.\.\. /s//[]/g
 w
 q
 %
 
-	ed src/org.spongycastle.cms/CMSAuthEnvelopedDataGenerator.java <<%
+	ed src/org/spongycastle/cms/CMSAuthEnvelopedDataGenerator.java <<%
 g/java.util.Collections/s//java.util.HashMap/
 g/Collections.EMPTY_MAP/s//new HashMap()/
 w
 q
 %
 
-	ed src/org.spongycastle.cms/CMSAuthenticatedDataStreamGenerator.java <<%
+	ed src/org/spongycastle/cms/CMSAuthenticatedDataStreamGenerator.java <<%
 g/java.util.Collections/s/$/ import java.util.HashMap;/
 g/Collections.EMPTY_MAP/s//new HashMap()/
 w
 q
 %
 
-	ed src/org.spongycastle.cms/CMSAuthenticatedDataGenerator.java <<%
+	ed src/org/spongycastle/cms/CMSAuthenticatedDataGenerator.java <<%
 g/java.util.Collections/s/$/ import java.util.HashMap;/
 g/Collections.EMPTY_MAP/s//new HashMap()/
 w
 q
 %
 
-	ed src/org.spongycastle.cms/CMSEnvelopedDataStreamGenerator.java <<%
+	ed src/org/spongycastle/cms/CMSEnvelopedDataStreamGenerator.java <<%
 g/java.util.Collections/s//java.util.HashMap/
 g/Collections.EMPTY_MAP/s//new HashMap()/
 w
 q
 %
 
-	ed src/org.spongycastle.cms/CMSEnvelopedDataGenerator.java <<%
+	ed src/org/spongycastle/cms/CMSEnvelopedDataGenerator.java <<%
 g/java.util.Collections/s//java.util.HashMap/
 g/Collections.EMPTY_MAP/s//new HashMap()/
 w
 q
 %
 
-	ed src/org.spongycastle.cms/CMSEncryptedDataGenerator.java <<%
+	ed src/org/spongycastle/cms/CMSEncryptedDataGenerator.java <<%
 g/java.util.Collections/s//java.util.HashMap/
 g/Collections.EMPTY_MAP/s//new HashMap()/
 w

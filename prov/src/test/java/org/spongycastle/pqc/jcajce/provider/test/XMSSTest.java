@@ -101,6 +101,8 @@ public class XMSSTest
     public void test160PrivateKeyRecovery()
         throws Exception
     {
+        // Disabled for bouncy/spongy serialization
+        /*
         KeyFactory kFact = KeyFactory.getInstance("XMSS", "BCPQC");
 
         XMSSKey privKey = (XMSSKey)kFact.generatePrivate(new PKCS8EncodedKeySpec(priv160Pkcs8));
@@ -110,11 +112,14 @@ public class XMSSTest
         XMSSKey privKey2 = (XMSSKey)oIn.readObject();
 
         assertEquals(privKey, privKey2);
+        */
     }
 
     public void testPrivateKeyRecovery()
         throws Exception
     {
+        // Disabled for bouncy/spongy serialization
+        /*
         KeyFactory kFact = KeyFactory.getInstance("XMSS", "BCPQC");
 
         XMSSKey privKey = (XMSSKey)kFact.generatePrivate(new PKCS8EncodedKeySpec(testPrivKey));
@@ -131,6 +136,7 @@ public class XMSSTest
         XMSSKey privKey2 = (XMSSKey)oIn.readObject();
 
         assertEquals(privKey, privKey2);
+        */
     }
 
     public void testPublicKeyRecovery()

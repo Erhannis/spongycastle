@@ -20,7 +20,7 @@ import org.spongycastle.util.test.SimpleTest;
 public class PKITSBasicConstraintsTest
     extends SimpleTest
 {
-    public static final String PKITS_DATA_RESOURCE_PREFIX = "org.spongycastle.cert/PKITS/certs/";
+    public static final String PKITS_DATA_RESOURCE_PREFIX = "org/spongycastle/cert/PKITS/certs/";
 
     public String getName()
     {

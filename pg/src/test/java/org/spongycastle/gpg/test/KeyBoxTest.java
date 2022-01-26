@@ -136,9 +136,12 @@ public class KeyBoxTest
         throws Exception
     {
         System.err.println("testSanityElGamal 1");
-        try {
-        testSanityElGamal_verify(new BcKeyBox(KeyBoxTest.class.getResourceAsStream("/pgpdata/eg_pubring.kbx")));
-        } catch (Exception e) {
+        try
+        {
+            testSanityElGamal_verify(new BcKeyBox(KeyBoxTest.class.getResourceAsStream("/pgpdata/eg_pubring.kbx")));
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
             throw e;
         }

@@ -286,17 +286,17 @@
         <copy todir="${lcrypto.target.src.dir}">
              <fileset dir="${src.dir}">
                  <exclude name="build/**" />
-                 <include name="org.spongycastle.*.java" />
-                 <include name="org.spongycastle.math/**/*.java" />
-                 <include name="org.spongycastle.crypto/**/*.java" />
-                 <include name="org.spongycastle.util/**/*.java" />
-                 <include name="org.spongycastle.asn1/**/*.java" />
-                 <include name="org.spongycastle.internal/**/*.java" />
-                 <include name="org.spongycastle.pqc/crypto/**/*.java" />
-                 <include name="org.spongycastle.pqc/math/**/*.java" />
-                 <include name="org.spongycastle.pqc/asn1/**/*.java" />
-                 <exclude name="org.spongycastle.pqc/**/*Tests.java" />
-                 <exclude name="org.spongycastle.pqc/**/LMSVectorUtils.java" />
+                 <include name="org/spongycastle/*.java" />
+                 <include name="org/spongycastle/math/**/*.java" />
+                 <include name="org/spongycastle/crypto/**/*.java" />
+                 <include name="org/spongycastle/util/**/*.java" />
+                 <include name="org/spongycastle/asn1/**/*.java" />
+                 <include name="org/spongycastle/internal/**/*.java" />
+                 <include name="org/spongycastle/pqc/crypto/**/*.java" />
+                 <include name="org/spongycastle/pqc/math/**/*.java" />
+                 <include name="org/spongycastle/pqc/asn1/**/*.java" />
+                 <exclude name="org/spongycastle/pqc/**/*Tests.java" />
+                 <exclude name="org/spongycastle/pqc/**/LMSVectorUtils.java" />
              </fileset>
         </copy>
 
@@ -332,58 +332,58 @@
                  <exclude name="cmp/**" />
                  <exclude name="rfc4134/**" />
                  <exclude name="pgpdata/**" />
-                 <exclude name="org.spongycastle.**/AllTests.java" />
-                 <exclude name="org.spongycastle.**/test/**" />
-                 <exclude name="org.spongycastle.crypto/*/*Test.java" />
-                 <exclude name="org.spongycastle.asn1/*/*Test.java" />
-                 <exclude name="org.spongycastle.util/*Test.java" />
-                 <exclude name="org.spongycastle.pqc/**/*Tests.java" />
-                 <exclude name="org.spongycastle.pqc/**/LMSVectorUtils.java" />
+                 <exclude name="org/spongycastle/**/AllTests.java" />
+                 <exclude name="org/spongycastle/**/test/**" />
+                 <exclude name="org/spongycastle/crypto/*/*Test.java" />
+                 <exclude name="org/spongycastle/asn1/*/*Test.java" />
+                 <exclude name="org/spongycastle/util/*Test.java" />
+                 <exclude name="org/spongycastle/pqc/**/*Tests.java" />
+                 <exclude name="org/spongycastle/pqc/**/LMSVectorUtils.java" />
                  <exclude name="**/*.crl" />
-                 <exclude name="org.spongycastle.util/utiltest/**" />
-                 <exclude name="org.spongycastle.asn1/bsi/**" />
-                 <exclude name="org.spongycastle.asn1/cmc/**" />
-                 <exclude name="org.spongycastle.asn1/cmp/**" />
-                 <exclude name="org.spongycastle.asn1/cms/**" />
-                 <exclude name="org.spongycastle.asn1/crmf/**" />
-                 <exclude name="org.spongycastle.asn1/dvcs/**" />
-                 <exclude name="org.spongycastle.asn1/eac/**" />
-                 <exclude name="org.spongycastle.asn1/esf/**" />
-                 <exclude name="org.spongycastle.asn1/ess/**" />
-                 <exclude name="org.spongycastle.asn1/est/**" />
-                 <exclude name="org.spongycastle.asn1/icao/**" />
-                 <exclude name="org.spongycastle.asn1/isismtt/**" />
-                 <exclude name="org.spongycastle.asn1/its/**" />
-                 <exclude name="org.spongycastle.asn1/smime/**" />
-                 <exclude name="org.spongycastle.asn1/tsp/**" />
-                 <exclude name="org.spongycastle.bcpg/**" />
-                 <exclude name="org.spongycastle.cert/**" />
-                 <exclude name="org.spongycastle.cms/**" />
-                 <exclude name="org.spongycastle.pkix/**" />
-                 <exclude name="org.spongycastle.dvcs/**" />
-                 <exclude name="org.spongycastle.eac/**" />
-                 <exclude name="org.spongycastle.est/**" />
-                 <exclude name="org.spongycastle.cmc/**" />
-                 <exclude name="org.spongycastle.mime/**" />
-                 <exclude name="org.spongycastle.mail/**" />
-                 <exclude name="org.spongycastle.gpg/**" />
-                 <exclude name="org.spongycastle.its/**" />
-                 <exclude name="org.spongycastle.oer/**" />
-                 <exclude name="org.spongycastle.openpgp/**" />
-                 <exclude name="org.spongycastle.openssl/**" />
-                 <exclude name="org.spongycastle.mozilla/**" />
-                 <exclude name="org.spongycastle.operator/**" />
-                 <exclude name="org.spongycastle.pkcs/**" />
-                 <exclude name="org.spongycastle.tsp/**" />
-                 <exclude name="org.spongycastle.voms/**" />
-                 <exclude name="org.spongycastle.apache/**" />
-                 <exclude name="org.spongycastle.tls/**" />
-                 <exclude name="org.spongycastle.jsse/**" />
+                 <exclude name="org/spongycastle/util/utiltest/**" />
+                 <exclude name="org/spongycastle/asn1/bsi/**" />
+                 <exclude name="org/spongycastle/asn1/cmc/**" />
+                 <exclude name="org/spongycastle/asn1/cmp/**" />
+                 <exclude name="org/spongycastle/asn1/cms/**" />
+                 <exclude name="org/spongycastle/asn1/crmf/**" />
+                 <exclude name="org/spongycastle/asn1/dvcs/**" />
+                 <exclude name="org/spongycastle/asn1/eac/**" />
+                 <exclude name="org/spongycastle/asn1/esf/**" />
+                 <exclude name="org/spongycastle/asn1/ess/**" />
+                 <exclude name="org/spongycastle/asn1/est/**" />
+                 <exclude name="org/spongycastle/asn1/icao/**" />
+                 <exclude name="org/spongycastle/asn1/isismtt/**" />
+                 <exclude name="org/spongycastle/asn1/its/**" />
+                 <exclude name="org/spongycastle/asn1/smime/**" />
+                 <exclude name="org/spongycastle/asn1/tsp/**" />
+                 <exclude name="org/spongycastle/bcpg/**" />
+                 <exclude name="org/spongycastle/cert/**" />
+                 <exclude name="org/spongycastle/cms/**" />
+                 <exclude name="org/spongycastle/pkix/**" />
+                 <exclude name="org/spongycastle/dvcs/**" />
+                 <exclude name="org/spongycastle/eac/**" />
+                 <exclude name="org/spongycastle/est/**" />
+                 <exclude name="org/spongycastle/cmc/**" />
+                 <exclude name="org/spongycastle/mime/**" />
+                 <exclude name="org/spongycastle/mail/**" />
+                 <exclude name="org/spongycastle/gpg/**" />
+                 <exclude name="org/spongycastle/its/**" />
+                 <exclude name="org/spongycastle/oer/**" />
+                 <exclude name="org/spongycastle/openpgp/**" />
+                 <exclude name="org/spongycastle/openssl/**" />
+                 <exclude name="org/spongycastle/mozilla/**" />
+                 <exclude name="org/spongycastle/operator/**" />
+                 <exclude name="org/spongycastle/pkcs/**" />
+                 <exclude name="org/spongycastle/tsp/**" />
+                 <exclude name="org/spongycastle/voms/**" />
+                 <exclude name="org/spongycastle/apache/**" />
+                 <exclude name="org/spongycastle/tls/**" />
+                 <exclude name="org/spongycastle/jsse/**" />
              </fileset>
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.x509/CertPathReviewerMessages*.properties" />
+                 <include name="org/spongycastle/x509/CertPathReviewerMessages*.properties" />
              </fileset>
-             <fileset dir="${src.dir}" includes="org.spongycastle.util/test/*.java" />
+             <fileset dir="${src.dir}" includes="org/spongycastle/util/test/*.java" />
         </copy>
 
         <compile target="${provider}">
@@ -399,7 +399,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcprovider" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.name}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle Provider" />
@@ -419,7 +419,7 @@
                     <attribute name="Extension-Name" value="org.spongycastle.bcproviderext" />
                     <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                     <attribute name="Specification-Version" value="1.1" />
-                    <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                    <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                     <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                     <attribute name="Implementation-Version" value="${release.version}.0" />
                     <attribute name="Application-Name" value="Bouncy Castle Provider" />
@@ -459,49 +459,49 @@
                  <exclude name="PKITS/**" />
                  <exclude name="cmp/**" />
                  <exclude name="rfc4134/**" />
-                 <exclude name="org.spongycastle.**/AllTests.java" />
-                 <exclude name="org.spongycastle.**/test/**" />
-                 <exclude name="org.spongycastle.crypto/*/*Test.java" />
-                 <exclude name="org.spongycastle.util/*Test.java" />
-                 <exclude name="org.spongycastle.pqc/**/*Tests.java" />
-                 <exclude name="org.spongycastle.pqc/**/LMSVectorUtils.java" />
+                 <exclude name="org/spongycastle/**/AllTests.java" />
+                 <exclude name="org/spongycastle/**/test/**" />
+                 <exclude name="org/spongycastle/crypto/*/*Test.java" />
+                 <exclude name="org/spongycastle/util/*Test.java" />
+                 <exclude name="org/spongycastle/pqc/**/*Tests.java" />
+                 <exclude name="org/spongycastle/pqc/**/LMSVectorUtils.java" />
                  <exclude name="**/*.crl" />
                  <exclude name="**/*.key" />
-                 <exclude name="org.spongycastle.**.crt" />
-                 <exclude name="org.spongycastle.**/test/*.cer" />
-                 <exclude name="org.spongycastle.**/test/*.kbx" />
-                 <exclude name="org.spongycastle.**/test/*.csr" />
-                 <exclude name="org.spongycastle.**/test/*.cvcert" />
-                 <exclude name="org.spongycastle.**/test/*.eml" />
-                 <exclude name="org.spongycastle.**/test/*.sig" />
-                 <exclude name="org.spongycastle.**/test/*.data" />
-                 <exclude name="org.spongycastle.**/test/*.der" />
-                 <exclude name="org.spongycastle.**/test/*.properties" />
-                 <exclude name="org.spongycastle.util/utiltest/**" />
-                 <exclude name="org.spongycastle.mime/**" />
-                 <exclude name="org.spongycastle.mail/**" />
-                 <exclude name="org.spongycastle.cms/**" />
-                 <exclude name="org.spongycastle.pkix/**" />
-                 <exclude name="org.spongycastle.dvcs/**" />
-                 <exclude name="org.spongycastle.eac/**" />
-                 <exclude name="org.spongycastle.est/**" />
-                 <exclude name="org.spongycastle.cmc/**" />
-                 <exclude name="org.spongycastle.cert/**" />
-                 <exclude name="org.spongycastle.pkcs/**" />
-                 <exclude name="org.spongycastle.operator/**" />
-                 <exclude name="org.spongycastle.sasn1/**" />
-                 <exclude name="org.spongycastle.tsp/**" />
-                 <exclude name="org.spongycastle.gpg/**" />
-                 <exclude name="org.spongycastle.openpgp/**" />
-                 <exclude name="org.spongycastle.openssl/**" />
-                 <exclude name="org.spongycastle.mozilla/**" />
-                 <exclude name="org.spongycastle.bcpg/**" />
-                 <exclude name="org.spongycastle.voms/**" />
-                 <exclude name="org.spongycastle.tls/**" />
-                 <exclude name="org.spongycastle.jsse/**" />
+                 <exclude name="org/spongycastle/**.crt" />
+                 <exclude name="org/spongycastle/**/test/*.cer" />
+                 <exclude name="org/spongycastle/**/test/*.kbx" />
+                 <exclude name="org/spongycastle/**/test/*.csr" />
+                 <exclude name="org/spongycastle/**/test/*.cvcert" />
+                 <exclude name="org/spongycastle/**/test/*.eml" />
+                 <exclude name="org/spongycastle/**/test/*.sig" />
+                 <exclude name="org/spongycastle/**/test/*.data" />
+                 <exclude name="org/spongycastle/**/test/*.der" />
+                 <exclude name="org/spongycastle/**/test/*.properties" />
+                 <exclude name="org/spongycastle/util/utiltest/**" />
+                 <exclude name="org/spongycastle/mime/**" />
+                 <exclude name="org/spongycastle/mail/**" />
+                 <exclude name="org/spongycastle/cms/**" />
+                 <exclude name="org/spongycastle/pkix/**" />
+                 <exclude name="org/spongycastle/dvcs/**" />
+                 <exclude name="org/spongycastle/eac/**" />
+                 <exclude name="org/spongycastle/est/**" />
+                 <exclude name="org/spongycastle/cmc/**" />
+                 <exclude name="org/spongycastle/cert/**" />
+                 <exclude name="org/spongycastle/pkcs/**" />
+                 <exclude name="org/spongycastle/operator/**" />
+                 <exclude name="org/spongycastle/sasn1/**" />
+                 <exclude name="org/spongycastle/tsp/**" />
+                 <exclude name="org/spongycastle/gpg/**" />
+                 <exclude name="org/spongycastle/openpgp/**" />
+                 <exclude name="org/spongycastle/openssl/**" />
+                 <exclude name="org/spongycastle/mozilla/**" />
+                 <exclude name="org/spongycastle/bcpg/**" />
+                 <exclude name="org/spongycastle/voms/**" />
+                 <exclude name="org/spongycastle/tls/**" />
+                 <exclude name="org/spongycastle/jsse/**" />
                  <exclude name="org/apache/**/*.java" />
              </fileset>
-             <fileset dir="${src.dir}" includes="org.spongycastle.util/test/*.java" />
+             <fileset dir="${src.dir}" includes="org/spongycastle/util/test/*.java" />
         </copy>
 
         <compile target="${jce}">
@@ -509,8 +509,8 @@
                 <include name="**/*.class"/>
                 <exclude name="**/NTRU*.class" />
                 <exclude name="**/ntru/**/*.class" />
-                <exclude name="org.spongycastle.pqc/**/*Tests.class" />
-                <exclude name="org.spongycastle.pqc/**/LMSVectorUtils.class" />
+                <exclude name="org/spongycastle/pqc/**/*Tests.class" />
+                <exclude name="org/spongycastle/pqc/**/LMSVectorUtils.class" />
                 <include name="**/*.properties"/>
             </jarFileSet>
             <manifestElements>
@@ -518,7 +518,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcjce" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle JCE and Provider" />
@@ -537,7 +537,7 @@
                     <attribute name="Extension-Name" value="org.spongycastle.bcjceext" />
                     <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                     <attribute name="Specification-Version" value="1.1" />
-                    <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                    <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                     <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                     <attribute name="Implementation-Version" value="${release.version}.0" />
                     <attribute name="Application-Name" value="Bouncy Castle JCE and Provider" />
@@ -570,8 +570,8 @@
         <copy todir="${mail.target.src.dir}">
              <fileset dir="${src.dir}">
                  <include name="**/mailcap"/>
-                 <include name="org.spongycastle.mail/**/*.java" />
-                 <include name="org.spongycastle.mail/**/*.properties" />
+                 <include name="org/spongycastle/mail/**/*.java" />
+                 <include name="org/spongycastle/mail/**/*.properties" />
                  <exclude name="**/*Test.java" />
                  <exclude name="**/*Tests.java" />
                  <exclude name="**/test/*.java" />
@@ -595,7 +595,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcmail" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle S/MIME API" />
@@ -620,8 +620,8 @@
              </fileset>
              <fileset dir="${src.dir}">
                  <include name="**/mailcap"/>
-                 <include name="org.spongycastle.mail/**/*.java" />
-                 <include name="org.spongycastle.mail/**/*.properties" />
+                 <include name="org/spongycastle/mail/**/*.java" />
+                 <include name="org/spongycastle/mail/**/*.properties" />
                  <exclude name="**/handlers/*.java" />
                  <exclude name="**/*Test.java" />
                  <exclude name="**/*Tests.java" />
@@ -658,7 +658,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcmail" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle Jakarta S/MIME API" />
@@ -686,10 +686,10 @@
                  <exclude name="**/*Test.java" />
                  <exclude name="**/*Tests.java" />
                  <exclude name="**/test/*.java" />
-                 <include name="org.spongycastle.tls/**/*.java" />
-                 <include name="org.spongycastle.tls/**/*.properties" />
-                 <include name="org.spongycastle.jsse/**/*.java" />
-                 <include name="org.spongycastle.jsse/**/*.properties" />
+                 <include name="org/spongycastle/tls/**/*.java" />
+                 <include name="org/spongycastle/tls/**/*.properties" />
+                 <include name="org/spongycastle/jsse/**/*.java" />
+                 <include name="org/spongycastle/jsse/**/*.properties" />
              </fileset>
         </copy>
 
@@ -704,7 +704,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bctls" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle TLS API and Provider" />
@@ -732,22 +732,22 @@
                  <exclude name="**/*Test.java" />
                  <exclude name="**/*Tests.java" />
                  <exclude name="**/test/*.java" />
-                 <include name="org.spongycastle.asn1/bsi/**" />
-                 <include name="org.spongycastle.asn1/cmc/**" />
-                 <include name="org.spongycastle.asn1/cmp/**" />
-                 <include name="org.spongycastle.asn1/cms/**" />
-                 <include name="org.spongycastle.asn1/crmf/**" />
-                 <include name="org.spongycastle.asn1/dvcs/**" />
-                 <include name="org.spongycastle.asn1/eac/**" />
-                 <include name="org.spongycastle.asn1/esf/**" />
-                 <include name="org.spongycastle.asn1/ess/**" />
-                 <include name="org.spongycastle.asn1/est/**" />
-                 <include name="org.spongycastle.asn1/icao/**" />
-                 <include name="org.spongycastle.asn1/isismtt/**" />
-                 <include name="org.spongycastle.asn1/its/**" />
-                 <include name="org.spongycastle.asn1/smime/**" />
-                 <include name="org.spongycastle.asn1/tsp/**" />
-                 <include name="org.spongycastle.oer/**" />
+                 <include name="org/spongycastle/asn1/bsi/**" />
+                 <include name="org/spongycastle/asn1/cmc/**" />
+                 <include name="org/spongycastle/asn1/cmp/**" />
+                 <include name="org/spongycastle/asn1/cms/**" />
+                 <include name="org/spongycastle/asn1/crmf/**" />
+                 <include name="org/spongycastle/asn1/dvcs/**" />
+                 <include name="org/spongycastle/asn1/eac/**" />
+                 <include name="org/spongycastle/asn1/esf/**" />
+                 <include name="org/spongycastle/asn1/ess/**" />
+                 <include name="org/spongycastle/asn1/est/**" />
+                 <include name="org/spongycastle/asn1/icao/**" />
+                 <include name="org/spongycastle/asn1/isismtt/**" />
+                 <include name="org/spongycastle/asn1/its/**" />
+                 <include name="org/spongycastle/asn1/smime/**" />
+                 <include name="org/spongycastle/asn1/tsp/**" />
+                 <include name="org/spongycastle/oer/**" />
              </fileset>
         </copy>
 
@@ -762,7 +762,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcutil" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle Utility APIs" />
@@ -784,21 +784,21 @@
 
         <copy todir="${pkix.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.cms/**/*.java" />
-                 <include name="org.spongycastle.pkix/**/*.java" />
-                 <include name="org.spongycastle.dvcs/**/*.java" />
-                 <include name="org.spongycastle.eac/**/*.java" />
-                 <include name="org.spongycastle.est/**" />
-                 <include name="org.spongycastle.cmc/**" />
-                 <include name="org.spongycastle.cert/**/*.java" />
-                 <include name="org.spongycastle.its/**/*.java" />
-                 <include name="org.spongycastle.mime/**/*.java" />
-                 <include name="org.spongycastle.mozilla/**/*.java" />
-                 <include name="org.spongycastle.openssl/**/*.java" />
-                 <include name="org.spongycastle.operator/**/*.java" />
-                 <include name="org.spongycastle.pkcs/**/*.java" />
-                 <include name="org.spongycastle.tsp/**/*.java" />
-                 <include name="org.spongycastle.voms/**/*.java" />
+                 <include name="org/spongycastle/cms/**/*.java" />
+                 <include name="org/spongycastle/pkix/**/*.java" />
+                 <include name="org/spongycastle/dvcs/**/*.java" />
+                 <include name="org/spongycastle/eac/**/*.java" />
+                 <include name="org/spongycastle/est/**" />
+                 <include name="org/spongycastle/cmc/**" />
+                 <include name="org/spongycastle/cert/**/*.java" />
+                 <include name="org/spongycastle/its/**/*.java" />
+                 <include name="org/spongycastle/mime/**/*.java" />
+                 <include name="org/spongycastle/mozilla/**/*.java" />
+                 <include name="org/spongycastle/openssl/**/*.java" />
+                 <include name="org/spongycastle/operator/**/*.java" />
+                 <include name="org/spongycastle/pkcs/**/*.java" />
+                 <include name="org/spongycastle/tsp/**/*.java" />
+                 <include name="org/spongycastle/voms/**/*.java" />
                  <exclude name="**/*Test.java" />
                  <exclude name="**/*Tests.java" />
                  <exclude name="**/test/*.*" />
@@ -816,7 +816,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcpkix" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle PKIX API" />
@@ -842,15 +842,15 @@
         <copyStandardFiles toDir="${pg.target.dir}" />
 
         <copy todir="${pg.target.src.dir}" filtering="true">
-             <fileset dir="${src.dir}" includes="org.spongycastle.bcpg/**/*.java" />
+             <fileset dir="${src.dir}" includes="org/spongycastle/bcpg/**/*.java" />
         </copy>
 
         <copy todir="${pg.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.bcpg/**/*.java" />
-                 <include name="org.spongycastle.openpgp/**/*.java" />
-                 <include name="org.spongycastle.gpg/**/*.java" />
-                 <include name="org.spongycastle.apache/**/*.java" />
+                 <include name="org/spongycastle/bcpg/**/*.java" />
+                 <include name="org/spongycastle/openpgp/**/*.java" />
+                 <include name="org/spongycastle/gpg/**/*.java" />
+                 <include name="org/spongycastle/apache/**/*.java" />
                  <exclude name="**/*Test.java" />
                  <exclude name="**/*Tests.java" />
                  <exclude name="**/test/*.java" />
@@ -867,7 +867,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bcpg" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle OpenPGP API" />
@@ -930,9 +930,9 @@
              <fileset dir="${src.dir}" includes="**/*.message" />
         </copy>
 
-        <delete file="${test.target.src.dir}/org.spongycastle.pqc/crypto/lms/AllTests.java" />
-        <delete file="${test.target.src.dir}/org.spongycastle.x509/CertPathReviewerMessages_de.properties" />
-        <delete file="${test.target.src.dir}/org.spongycastle.x509/CertPathReviewerMessages.properties" />
+        <delete file="${test.target.src.dir}/org/spongycastle/pqc/crypto/lms/AllTests.java" />
+        <delete file="${test.target.src.dir}/org/spongycastle/x509/CertPathReviewerMessages_de.properties" />
+        <delete file="${test.target.src.dir}/org/spongycastle/x509/CertPathReviewerMessages.properties" />
 
         <compile-test target="${test.target}">
             <manifestElements>
@@ -940,7 +940,7 @@
                 <attribute name="Extension-Name" value="org.spongycastle.bctest" />
                 <attribute name="Specification-Vendor" value="BouncyCastle.org" />
                 <attribute name="Specification-Version" value="1.1" />
-                <attribute name="Implementation-Vendor-Id" value="org.spongycastle. />
+                <attribute name="Implementation-Vendor-Id" value="org.spongycastle" />
                 <attribute name="Implementation-Vendor" value="BouncyCastle.org" />
                 <attribute name="Implementation-Version" value="${release.version}.0" />
                 <attribute name="Application-Name" value="Bouncy Castle Test Classes" />
@@ -1023,19 +1023,19 @@
     <target name="javadoc-provider" depends="initMacros">
         <copy todir="${provider.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.pqc/**/test/*.java" />
-                 <include name="org.spongycastle.jce/**/test/*.java" />
-                 <include name="org.spongycastle.jce/**/test/*/*.java" />
-                 <include name="org.spongycastle.x509/**/test/*.java" />
-                 <include name="org.spongycastle.ocsp/**/test/*.java" />
-                 <include name="org.spongycastle.crypto/**/test/*.java" />
-                 <include name="org.spongycastle.crypto/**/test/cavp/*.java" />
-                 <include name="org.spongycastle.asn1/test/*.java" />
-                 <include name="org.spongycastle.crypto/**/*.html" />
-                 <include name="org.spongycastle.math/**/*.html" />
-                 <include name="org.spongycastle.asn1/**/*.html" />
-                 <include name="org.spongycastle.pqc/**/*.html" />
-                 <include name="org.spongycastle.util/**/*.html" />
+                 <include name="org/spongycastle/pqc/**/test/*.java" />
+                 <include name="org/spongycastle/jce/**/test/*.java" />
+                 <include name="org/spongycastle/jce/**/test/*/*.java" />
+                 <include name="org/spongycastle/x509/**/test/*.java" />
+                 <include name="org/spongycastle/ocsp/**/test/*.java" />
+                 <include name="org/spongycastle/crypto/**/test/*.java" />
+                 <include name="org/spongycastle/crypto/**/test/cavp/*.java" />
+                 <include name="org/spongycastle/asn1/test/*.java" />
+                 <include name="org/spongycastle/crypto/**/*.html" />
+                 <include name="org/spongycastle/math/**/*.html" />
+                 <include name="org/spongycastle/asn1/**/*.html" />
+                 <include name="org/spongycastle/pqc/**/*.html" />
+                 <include name="org/spongycastle/util/**/*.html" />
              </fileset>
         </copy>
 
@@ -1070,10 +1070,10 @@
     <target name="javadoc-jce" depends="initMacros">
         <copy todir="${jce.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.jce/**/test/*.java" />
-                 <include name="org.spongycastle.jce/**/test/*/*.java" />
-                 <include name="org.spongycastle.x509/**/test/*.java" />
-                 <include name="org.spongycastle.ocsp/**/test/*.java" />
+                 <include name="org/spongycastle/jce/**/test/*.java" />
+                 <include name="org/spongycastle/jce/**/test/*/*.java" />
+                 <include name="org/spongycastle/x509/**/test/*.java" />
+                 <include name="org/spongycastle/ocsp/**/test/*.java" />
              </fileset>
         </copy>
 
@@ -1108,8 +1108,8 @@
     <target name="javadoc-mail" depends="initMacros">
         <copy todir="${mail.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.mail/**/test/*.java" />
-                 <include name="org.spongycastle.mail/**/*.html" />
+                 <include name="org/spongycastle/mail/**/test/*.java" />
+                 <include name="org/spongycastle/mail/**/*.html" />
              </fileset>
         </copy>
 
@@ -1131,10 +1131,10 @@
     <target name="javadoc-tls" depends="initMacros">
         <copy todir="${tls.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.jsse/**/test/*.java" />
-                 <include name="org.spongycastle.jsse/**/*.html" />
-                 <include name="org.spongycastle.tls/**/test/*.java" />
-                 <include name="org.spongycastle.tls/**/*.html" />
+                 <include name="org/spongycastle/jsse/**/test/*.java" />
+                 <include name="org/spongycastle/jsse/**/*.html" />
+                 <include name="org/spongycastle/tls/**/test/*.java" />
+                 <include name="org/spongycastle/tls/**/*.html" />
              </fileset>
         </copy>
 
@@ -1159,36 +1159,36 @@
     <target name="javadoc-util" depends="initMacros">
         <copy todir="${util.target.src.dir}">
              <fileset dir="${src.dir}">
-		<include name="org.spongycastle.asn1/bsi/*.java" />
- 		<include name="org.spongycastle.asn1/cmp/*.java" />
- 		<include name="org.spongycastle.asn1/crmf/*.java" />
- 		<include name="org.spongycastle.asn1/eac/*.java" />
- 		<include name="org.spongycastle.asn1/ess/*.java" />
- 		<include name="org.spongycastle.asn1/icao/*.java" />
-    		<include name="org.spongycastle.asn1/its/*.java" />
-   		<include name="org.spongycastle.asn1/tsp/*.java" />
-		<include name="org.spongycastle.asn1/cmc/*.java" />
-		<include name="org.spongycastle.asn1/cms/*.java" />
-		<include name="org.spongycastle.asn1/dvcs/*.java" />
-		<include name="org.spongycastle.asn1/esf/*.java" />
-		<include name="org.spongycastle.asn1/est/*.java" />
-		<include name="org.spongycastle.asn1/isismtt/**/*.java" />
-		<include name="org.spongycastle.asn1/smime/*.java" />
-                <include name="org.spongycastle.asn1/bsi/**/*.html" />
-                <include name="org.spongycastle.asn1/cmp/**/*.html" />
-                <include name="org.spongycastle.asn1/crmf/**/*.html" />
-                <include name="org.spongycastle.asn1/eac/**/*.html" />
-                <include name="org.spongycastle.asn1/ess/**/*.html" />
-                <include name="org.spongycastle.asn1/icao/**/*.html" />
-                <include name="org.spongycastle.asn1/its/**/*.html" />
-                <include name="org.spongycastle.asn1/tsp/**/*.html" />
-                <include name="org.spongycastle.asn1/cmc/**/*.html" />
-                <include name="org.spongycastle.asn1/cms/**/*.html" />
-                <include name="org.spongycastle.asn1/dvcs/**/*.html" />
-                <include name="org.spongycastle.asn1/esf/**/*.html" />
-                <include name="org.spongycastle.asn1/est/**/*.html" />
-                <include name="org.spongycastle.asn1/isismtt/**/*.html" />
-                <include name="org.spongycastle.asn1/smime/**/*.html" />
+		<include name="org/spongycastle/asn1/bsi/*.java" />
+ 		<include name="org/spongycastle/asn1/cmp/*.java" />
+ 		<include name="org/spongycastle/asn1/crmf/*.java" />
+ 		<include name="org/spongycastle/asn1/eac/*.java" />
+ 		<include name="org/spongycastle/asn1/ess/*.java" />
+ 		<include name="org/spongycastle/asn1/icao/*.java" />
+    		<include name="org/spongycastle/asn1/its/*.java" />
+   		<include name="org/spongycastle/asn1/tsp/*.java" />
+		<include name="org/spongycastle/asn1/cmc/*.java" />
+		<include name="org/spongycastle/asn1/cms/*.java" />
+		<include name="org/spongycastle/asn1/dvcs/*.java" />
+		<include name="org/spongycastle/asn1/esf/*.java" />
+		<include name="org/spongycastle/asn1/est/*.java" />
+		<include name="org/spongycastle/asn1/isismtt/**/*.java" />
+		<include name="org/spongycastle/asn1/smime/*.java" />
+                <include name="org/spongycastle/asn1/bsi/**/*.html" />
+                <include name="org/spongycastle/asn1/cmp/**/*.html" />
+                <include name="org/spongycastle/asn1/crmf/**/*.html" />
+                <include name="org/spongycastle/asn1/eac/**/*.html" />
+                <include name="org/spongycastle/asn1/ess/**/*.html" />
+                <include name="org/spongycastle/asn1/icao/**/*.html" />
+                <include name="org/spongycastle/asn1/its/**/*.html" />
+                <include name="org/spongycastle/asn1/tsp/**/*.html" />
+                <include name="org/spongycastle/asn1/cmc/**/*.html" />
+                <include name="org/spongycastle/asn1/cms/**/*.html" />
+                <include name="org/spongycastle/asn1/dvcs/**/*.html" />
+                <include name="org/spongycastle/asn1/esf/**/*.html" />
+                <include name="org/spongycastle/asn1/est/**/*.html" />
+                <include name="org/spongycastle/asn1/isismtt/**/*.html" />
+                <include name="org/spongycastle/asn1/smime/**/*.html" />
              </fileset>
         </copy>
 
@@ -1213,32 +1213,32 @@
     <target name="javadoc-pkix" depends="initMacros">
         <copy todir="${pkix.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.cms/**/test/*.java" />
-                 <include name="org.spongycastle.pkix/**/test/*.java" />
-                 <include name="org.spongycastle.dvcs/**/test/*.java" />
-                 <include name="org.spongycastle.eac/**/test/*.java" />
-                 <include name="org.spongycastle.est/**/test/*.java" />
-                 <include name="org.spongycastle.cmc/**/test/*.java" />
-                 <include name="org.spongycastle.cert/**/test/*.java" />
-                 <include name="org.spongycastle.mime/**/test/*.java" />
-                 <include name="org.spongycastle.pkcs/**/test/*.java" />
-                 <include name="org.spongycastle.openssl/**/test/*.java" />
-                 <include name="org.spongycastle.mozilla/**/test/*.java" />
-                 <include name="org.spongycastle.operator/**/test/*.java" />
-                 <include name="org.spongycastle.mime/**/*.html" />
-                 <include name="org.spongycastle.cms/**/*.html" />
-                 <include name="org.spongycastle.pkix/**/*.html" />
-                 <include name="org.spongycastle.dvcs/**/*.html" />
-                 <include name="org.spongycastle.eac/**/*.html" />
-                 <include name="org.spongycastle.est/**/*.html" />
-                 <include name="org.spongycastle.cmc/**/*.html" />
-                 <include name="org.spongycastle.cert/**/*.html" />
-                 <include name="org.spongycastle.pkcs/**/*.html" />
-                 <include name="org.spongycastle.openssl/**/*.html" />
-                 <include name="org.spongycastle.operator/**/*.html" />
-                 <include name="org.spongycastle.mozilla/**/*.html" />
-                 <include name="org.spongycastle.tsp/**/test/*.java" />
-                 <include name="org.spongycastle.tsp/**/*.html" />
+                 <include name="org/spongycastle/cms/**/test/*.java" />
+                 <include name="org/spongycastle/pkix/**/test/*.java" />
+                 <include name="org/spongycastle/dvcs/**/test/*.java" />
+                 <include name="org/spongycastle/eac/**/test/*.java" />
+                 <include name="org/spongycastle/est/**/test/*.java" />
+                 <include name="org/spongycastle/cmc/**/test/*.java" />
+                 <include name="org/spongycastle/cert/**/test/*.java" />
+                 <include name="org/spongycastle/mime/**/test/*.java" />
+                 <include name="org/spongycastle/pkcs/**/test/*.java" />
+                 <include name="org/spongycastle/openssl/**/test/*.java" />
+                 <include name="org/spongycastle/mozilla/**/test/*.java" />
+                 <include name="org/spongycastle/operator/**/test/*.java" />
+                 <include name="org/spongycastle/mime/**/*.html" />
+                 <include name="org/spongycastle/cms/**/*.html" />
+                 <include name="org/spongycastle/pkix/**/*.html" />
+                 <include name="org/spongycastle/dvcs/**/*.html" />
+                 <include name="org/spongycastle/eac/**/*.html" />
+                 <include name="org/spongycastle/est/**/*.html" />
+                 <include name="org/spongycastle/cmc/**/*.html" />
+                 <include name="org/spongycastle/cert/**/*.html" />
+                 <include name="org/spongycastle/pkcs/**/*.html" />
+                 <include name="org/spongycastle/openssl/**/*.html" />
+                 <include name="org/spongycastle/operator/**/*.html" />
+                 <include name="org/spongycastle/mozilla/**/*.html" />
+                 <include name="org/spongycastle/tsp/**/test/*.java" />
+                 <include name="org/spongycastle/tsp/**/*.html" />
              </fileset>
         </copy>
 
@@ -1280,13 +1280,13 @@
     <target name="javadoc-pg" depends="initMacros">
         <copy todir="${pg.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.openpgp/**/test/*.java" />
-                 <include name="org.spongycastle.gpg/**/test/*.java" />
-                 <include name="org.spongycastle.bcpg/**/test/*.java" />
-                 <include name="org.spongycastle.apache/**/*.html" />
-                 <include name="org.spongycastle.openpgp/**/*.html" />
-                 <include name="org.spongycastle.gpg/**/*.html" />
-                 <include name="org.spongycastle.bcpg/**/*.html" />
+                 <include name="org/spongycastle/openpgp/**/test/*.java" />
+                 <include name="org/spongycastle/gpg/**/test/*.java" />
+                 <include name="org/spongycastle/bcpg/**/test/*.java" />
+                 <include name="org/spongycastle/apache/**/*.html" />
+                 <include name="org/spongycastle/openpgp/**/*.html" />
+                 <include name="org/spongycastle/gpg/**/*.html" />
+                 <include name="org/spongycastle/bcpg/**/*.html" />
              </fileset>
         </copy>
 
@@ -1312,14 +1312,14 @@
     <target name="javadoc-lw" depends="initMacros">
         <copy todir="${lcrypto.target.src.dir}">
              <fileset dir="${src.dir}">
-                 <include name="org.spongycastle.crypto/**/test/*.java" />
-                 <include name="org.spongycastle.crypto/**/test/cavp/*.java" />
-                 <include name="org.spongycastle.asn1/**/test/*.java" />
-                 <include name="org.spongycastle.crypto/**/*.html" />
-                 <include name="org.spongycastle.math/**/*.html" />
-                 <include name="org.spongycastle.asn1/**/*.html" />
-                 <include name="org.spongycastle.pqc/**/*.html" />
-                 <include name="org.spongycastle.util/**/*.html" />
+                 <include name="org/spongycastle/crypto/**/test/*.java" />
+                 <include name="org/spongycastle/crypto/**/test/cavp/*.java" />
+                 <include name="org/spongycastle/asn1/**/test/*.java" />
+                 <include name="org/spongycastle/crypto/**/*.html" />
+                 <include name="org/spongycastle/math/**/*.html" />
+                 <include name="org/spongycastle/asn1/**/*.html" />
+                 <include name="org/spongycastle/pqc/**/*.html" />
+                 <include name="org/spongycastle/util/**/*.html" />
              </fileset>
         </copy>
 

@@ -54,7 +54,7 @@ If you are familiar with .BAT files you will be able to examine each .sh file to
 ## The code:
 The code can be found in
 ```
-/src/main/java/org.spongycastle.test/est/examples
+/src/main/java/org/spongycastle/test/est/examples
 ```
 
 ## Utility Scripts:
@@ -230,7 +230,7 @@ ___
 
 Unit Tests for CA cert fetching can be found in:
 
-```<bc-java>/test/src/test/java/org.spongycastle.test/est/TestCACertsFetch.java```
+```<bc-java>/test/src/test/java/org/spongycastle/test/est/TestCACertsFetch.java```
 
 ___
 
@@ -285,10 +285,10 @@ The Enrollment client defaults to use BCJSSE for its TLS provider as it supports
 ---
 Unit Tests for Enrollment can be found in:
 
-```test/src/test/java/org.spongycastle.test/est/TestEnroll.java```
+```test/src/test/java/org/spongycastle/test/est/TestEnroll.java```
 
 And for reenrollment:
-```<bc-java>/test/src/test/java/org.spongycastle.test/est/TestReEnroll.java```
+```<bc-java>/test/src/test/java/org/spongycastle/test/est/TestReEnroll.java```
 
 ---
 
@@ -330,5 +330,5 @@ To fetch the attributes:
 
 ---
 Unit tests for fetching csr attributes can be found in:
-```<bc-java>/test/src/test/java/org.spongycastle.test/est/TestGetCSRAttrs.java```
+```<bc-java>/test/src/test/java/org/spongycastle/test/est/TestGetCSRAttrs.java```
 ---

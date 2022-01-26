@@ -62,128 +62,128 @@ find $jdk12src -name "*.java" -exec scripts/usejcecert.sh \{\} \;
 (
     cd $jdk12src
 
-    rm -rf org.spongycastle.math/ec/rfc8032/test
-    rm -rf org.spongycastle.crypto/test/ntru
-    rm -rf org.spongycastle.pqc/math/ntru
-    rm -rf org.spongycastle.pqc/crypto/ntru
-    rm -rf org.spongycastle.pqc/crypto/*/NTRU*
-    rm -rf org.spongycastle.pqc/crypto/xmss
-    rm -rf org.spongycastle.pqc/crypto/lms
-    rm -rf org.spongycastle.pqc/jcajce/provider/xmss
-    rm -rf org.spongycastle.pqc/jcajce/provider/XMSS*
-    rm -rf org.spongycastle.pqc/jcajce/provider/LMS*
-    rm -rf org.spongycastle.pqc/jcajce/provider/lms
-    rm -rf org.spongycastle.pqc/crypto/*/XMSS*
-    rm -rf org.spongycastle.pqc/crypto/*/LMS*
-    rm -rf org.spongycastle.pqc/crypto/*/HSS*
-    rm -rf org.spongycastle.pqc/crypto/*/EncryptionKey*
-    rm -rf org.spongycastle.pqc/crypto/*/BitStringT*
-    rm org.spongycastle.pqc/jcajce/spec/LMS*
-    rm -rf org.spongycastle.crypto/*/test
-    rm -rf org.spongycastle.crypto/*/IndexGenerator*
-    rm -rf org.spongycastle.crypto/test/SimpleTestTest.java
-    rm -rf org.spongycastle.util/utiltest
-    rm -rf org.spongycastle.mail
-    rm -rf org.spongycastle.mime
-    rm org.spongycastle.pkix/jcajce/Revocation*.java
-    rm org.spongycastle.pkix/jcajce/X509RevocationChecker.java
-    rm org.spongycastle.pkix/jcajce/RFC3280*.java
-    rm org.spongycastle.cms/jcajce/JceKeyTransAuthEnvelopedRecipient.java
-    rm org.spongycastle.cms/jcajce/JceAADStream.java
-    rm org.spongycastle.jcajce/provider/keystore/util/ParameterUtil.java
-    rm -rf org.spongycastle.jce/provider/test/SimpleTestTest.java
-    rm -rf org.spongycastle.oer
-    rm -rf org.spongycastle.i18n/test
-    rm -rf org.spongycastle.i18n/filter/test
-    rm -rf org.spongycastle.math/ec/test
-    rm -rf org.spongycastle.crypto/tls/test
-    rm -rf org.spongycastle.crypto/test/GCMReorderTest.java
-    rm -rf org.spongycastle.crypto/test/NISTECCTest.java
-    rm -rf org.spongycastle.jce/ECPointUtil.java
-    rm -rf org.spongycastle.jce/X509LDAP*.java
-    rm -rf org.spongycastle.jce/provider/X509LDAP*.java
-    rm -rf org.spongycastle.jce/provider/JCEEC5*.java
-    rm -rf org.spongycastle.jce/provider/EC5*.java
-    rm -rf org.spongycastle.jce/provider/JCEEC*.java
-    rm -rf org.spongycastle.jcajce/provider/asymmetric/ec/EC5Util.java
-    rm -rf org.spongycastle.jcajce/provider/asymmetric/ecgost12
-    rm -rf org.spongycastle.jcajce/provider/test
-    rm -rf org.spongycastle.math/ec/rfc7748/test
-    rm org.spongycastle.jcajce/BCFKSStoreParameter.java
-    rm -rf org.spongycastle.jce/provider/asymmetric/ec/EC5*.java
-    rm -rf org.spongycastle.jce/provider/test/ECDSA5Test.java
-    rm -rf org.spongycastle.jce/provider/test/CRL5Test.java
-    rm -rf org.spongycastle.jce/provider/test/X509LDAP*.java
-    rm -rf org.spongycastle.jce/provider/test/MQVTest*.java
-    rm -rf org.spongycastle.jce/provider/test/AlgorithmParametersTest.java
-    rm -rf org.spongycastle.jce/provider/test/GOST3410KeyPairTest.java
-    rm -rf org.spongycastle.jce/provider/test/ChaCha20Poly1305Test.java
-    rm -rf org.spongycastle.jce/spec/ECNamedCurveSpec.java
-    rm -rf org.spongycastle.util/encoders/test/*.java
-    rm -rf org.spongycastle.x509/PKIXCertPathReviewer.java
-    rm -rf org.spongycastle.x509/CertPathReviewerException.java
-    rm -rf org.spongycastle.x509/util/LDAPStoreHelper.java
-    rm -rf org.spongycastle.jce/provider/X509StoreLDAPAttrCerts.java
-    rm -rf org.spongycastle.jce/provider/X509StoreLDAPCertPairs.java
-    rm -rf org.spongycastle.jce/provider/X509StoreLDAPCerts.java
-    rm -rf org.spongycastle.jce/provider/X509StoreLDAPCRLs.java
-    rm -rf org.spongycastle.jce/provider/PKIXAttrCert*.java
-    rm -rf org.spongycastle.jce/provider/PKIXNameConstraints*.java
-    rm -rf org.spongycastle.jce/provider/test/PKIXNameConstraintsTest.java
-    rm -rf org.spongycastle.jce/provider/test/nist
-    rm -rf org.spongycastle.jce/provider/test/rsa3
-    rm -rf org.spongycastle.jce/provider/test/DSTU4145Test.java
-    rm -rf org.spongycastle.jce/provider/test/JceTestUtil.java
-    rm -f org.spongycastle.jce/provider/PKIXCertPathValidatorSpi_8.java
-    rm -f org.spongycastle.jce/provider/PKIXCertPathBuilderSpi_8.java
-    rm -f org.spongycastle.jce/provider/WrappedRevocationChecker.java
-    rm -f org.spongycastle.jce/provider/ProvRevocationChecker.java
-    rm -f org.spongycastle.jce/provider/OcspCache.java
-    rm -f org.spongycastle.jce/provider/ProvOcspRevocationChecker.java
-    rm -rf org.spongycastle.x509/PKIXAttrCert*.java
-    rm -rf org.spongycastle.jce/provider/RFC3281*.java
-    rm -rf org.spongycastle.jcajce/PKCS12StoreParameter.java
-    rm org.spongycastle.jce/provider/test/DetDSATest.java
-    rm org.spongycastle.jce/provider/test/AEADTest.java
-    rm -rf org.spongycastle.jce/provider/JDKPKCS12StoreParameter.java
-    rm -rf org.spongycastle.jcajce/BC*LoadStore*.java
-    rm -rf org.spongycastle.jcajce/spec/DSTU4145*.java
-    rm -rf org.spongycastle.jcajce/provider/config/PKCS12StoreParameter.java
-    rm -rf org.spongycastle.jcajce/provider/test/PrivateConstructorTest.java
-    rm -rf org.spongycastle.jcajce/provider/test/ECAlgorithmParametersTest.java
-    rm -rf org.spongycastle.jcajce/provider/test/RandomTest.java
-    rm -rf org.spongycastle.jce/provider/test/ECEncodingTest.java
-    rm org.spongycastle.asn1/test/GetInstanceTest.java
-    rm org.spongycastle.asn1/test/ASN1SequenceParserTest.java
-    rm org.spongycastle.asn1/test/OctetStringTest.java
-    rm org.spongycastle.asn1/test/ParseTest.java
-    rm org.spongycastle.pkix/test/RevocationTest.java
-    rm org.spongycastle.pkix/test/TestUtil.java
-    rm org.spongycastle.cert/ocsp/test/PKIXRevocationTest.java
-    rm -r org.spongycastle.crypto/test/BigSkippingCipherTest.java
-    rm -rf org.spongycastle.openssl/test
-    rm -rf org.spongycastle.jcajce/provider/asymmetric/dstu
-    rm -rf org.spongycastle.jcajce/provider/asymmetric/DSTU*.java
-    rm -rf org.spongycastle.jcajce/provider/asymmetric/util/EC5*.java
-    rm org.spongycastle.asn1/test/EnumeratedTest.java
-    rm -rf org.spongycastle.pqc/crypto/test/QT*.java
-    rm -rf org.spongycastle.pqc/crypto/test/SphincsPlusTest.java
-    rm -rf org.spongycastle.pqc/crypto/qtesla/QT*Tests.java
-    rm -rf org.spongycastle.pqc/jcajce/provider/test
-    rm -r org.spongycastle.crypto/test/speedy
-    rm -r org.spongycastle.crypto/test/cavp
-    rm -r org.spongycastle.crypto/test/KDFFeedbackGeneratorTest.java
-    rm -r org.spongycastle.crypto/test/KDFDoublePipelineIteratorGeneratorTest.java
-    rm -r org.spongycastle.crypto/test/KDFCounterGeneratorTest.java
-    rm -r org.spongycastle.math/test/PrimesTest.java
-    rm -r org.spongycastle.math/raw/test/InterleaveTest.java
-    rm -rf org.spongycastle.cert/jcajce/JcaAttributeCertificateIssuer.java
-    rm -rf org.spongycastle.cert/test/ConverterTest*
-    rm -rf org.spongycastle.cert/test/CertPathLoopTest.java
-    rm -rf org.spongycastle.cert/test/Bc*
-    rm -rf org.spongycastle.tsp/GenTimeAccuracyUnit*
-    rm -rf org.spongycastle.tsp/TimeStampTokenInfoUnit*
-    rm  org.spongycastle.openpgp/test/BcPGPEd25519JcaKeyPairConversionTest.java
+    rm -rf org/spongycastle/math/ec/rfc8032/test
+    rm -rf org/spongycastle/crypto/test/ntru
+    rm -rf org/spongycastle/pqc/math/ntru
+    rm -rf org/spongycastle/pqc/crypto/ntru
+    rm -rf org/spongycastle/pqc/crypto/*/NTRU*
+    rm -rf org/spongycastle/pqc/crypto/xmss
+    rm -rf org/spongycastle/pqc/crypto/lms
+    rm -rf org/spongycastle/pqc/jcajce/provider/xmss
+    rm -rf org/spongycastle/pqc/jcajce/provider/XMSS*
+    rm -rf org/spongycastle/pqc/jcajce/provider/LMS*
+    rm -rf org/spongycastle/pqc/jcajce/provider/lms
+    rm -rf org/spongycastle/pqc/crypto/*/XMSS*
+    rm -rf org/spongycastle/pqc/crypto/*/LMS*
+    rm -rf org/spongycastle/pqc/crypto/*/HSS*
+    rm -rf org/spongycastle/pqc/crypto/*/EncryptionKey*
+    rm -rf org/spongycastle/pqc/crypto/*/BitStringT*
+    rm org/spongycastle/pqc/jcajce/spec/LMS*
+    rm -rf org/spongycastle/crypto/*/test
+    rm -rf org/spongycastle/crypto/*/IndexGenerator*
+    rm -rf org/spongycastle/crypto/test/SimpleTestTest.java
+    rm -rf org/spongycastle/util/utiltest
+    rm -rf org/spongycastle/mail
+    rm -rf org/spongycastle/mime
+    rm org/spongycastle/pkix/jcajce/Revocation*.java
+    rm org/spongycastle/pkix/jcajce/X509RevocationChecker.java
+    rm org/spongycastle/pkix/jcajce/RFC3280*.java
+    rm org/spongycastle/cms/jcajce/JceKeyTransAuthEnvelopedRecipient.java
+    rm org/spongycastle/cms/jcajce/JceAADStream.java
+    rm org/spongycastle/jcajce/provider/keystore/util/ParameterUtil.java
+    rm -rf org/spongycastle/jce/provider/test/SimpleTestTest.java
+    rm -rf org/spongycastle/oer
+    rm -rf org/spongycastle/i18n/test
+    rm -rf org/spongycastle/i18n/filter/test
+    rm -rf org/spongycastle/math/ec/test
+    rm -rf org/spongycastle/crypto/tls/test
+    rm -rf org/spongycastle/crypto/test/GCMReorderTest.java
+    rm -rf org/spongycastle/crypto/test/NISTECCTest.java
+    rm -rf org/spongycastle/jce/ECPointUtil.java
+    rm -rf org/spongycastle/jce/X509LDAP*.java
+    rm -rf org/spongycastle/jce/provider/X509LDAP*.java
+    rm -rf org/spongycastle/jce/provider/JCEEC5*.java
+    rm -rf org/spongycastle/jce/provider/EC5*.java
+    rm -rf org/spongycastle/jce/provider/JCEEC*.java
+    rm -rf org/spongycastle/jcajce/provider/asymmetric/ec/EC5Util.java
+    rm -rf org/spongycastle/jcajce/provider/asymmetric/ecgost12
+    rm -rf org/spongycastle/jcajce/provider/test
+    rm -rf org/spongycastle/math/ec/rfc7748/test
+    rm org/spongycastle/jcajce/BCFKSStoreParameter.java
+    rm -rf org/spongycastle/jce/provider/asymmetric/ec/EC5*.java
+    rm -rf org/spongycastle/jce/provider/test/ECDSA5Test.java
+    rm -rf org/spongycastle/jce/provider/test/CRL5Test.java
+    rm -rf org/spongycastle/jce/provider/test/X509LDAP*.java
+    rm -rf org/spongycastle/jce/provider/test/MQVTest*.java
+    rm -rf org/spongycastle/jce/provider/test/AlgorithmParametersTest.java
+    rm -rf org/spongycastle/jce/provider/test/GOST3410KeyPairTest.java
+    rm -rf org/spongycastle/jce/provider/test/ChaCha20Poly1305Test.java
+    rm -rf org/spongycastle/jce/spec/ECNamedCurveSpec.java
+    rm -rf org/spongycastle/util/encoders/test/*.java
+    rm -rf org/spongycastle/x509/PKIXCertPathReviewer.java
+    rm -rf org/spongycastle/x509/CertPathReviewerException.java
+    rm -rf org/spongycastle/x509/util/LDAPStoreHelper.java
+    rm -rf org/spongycastle/jce/provider/X509StoreLDAPAttrCerts.java
+    rm -rf org/spongycastle/jce/provider/X509StoreLDAPCertPairs.java
+    rm -rf org/spongycastle/jce/provider/X509StoreLDAPCerts.java
+    rm -rf org/spongycastle/jce/provider/X509StoreLDAPCRLs.java
+    rm -rf org/spongycastle/jce/provider/PKIXAttrCert*.java
+    rm -rf org/spongycastle/jce/provider/PKIXNameConstraints*.java
+    rm -rf org/spongycastle/jce/provider/test/PKIXNameConstraintsTest.java
+    rm -rf org/spongycastle/jce/provider/test/nist
+    rm -rf org/spongycastle/jce/provider/test/rsa3
+    rm -rf org/spongycastle/jce/provider/test/DSTU4145Test.java
+    rm -rf org/spongycastle/jce/provider/test/JceTestUtil.java
+    rm -f org/spongycastle/jce/provider/PKIXCertPathValidatorSpi_8.java
+    rm -f org/spongycastle/jce/provider/PKIXCertPathBuilderSpi_8.java
+    rm -f org/spongycastle/jce/provider/WrappedRevocationChecker.java
+    rm -f org/spongycastle/jce/provider/ProvRevocationChecker.java
+    rm -f org/spongycastle/jce/provider/OcspCache.java
+    rm -f org/spongycastle/jce/provider/ProvOcspRevocationChecker.java
+    rm -rf org/spongycastle/x509/PKIXAttrCert*.java
+    rm -rf org/spongycastle/jce/provider/RFC3281*.java
+    rm -rf org/spongycastle/jcajce/PKCS12StoreParameter.java
+    rm org/spongycastle/jce/provider/test/DetDSATest.java
+    rm org/spongycastle/jce/provider/test/AEADTest.java
+    rm -rf org/spongycastle/jce/provider/JDKPKCS12StoreParameter.java
+    rm -rf org/spongycastle/jcajce/BC*LoadStore*.java
+    rm -rf org/spongycastle/jcajce/spec/DSTU4145*.java
+    rm -rf org/spongycastle/jcajce/provider/config/PKCS12StoreParameter.java
+    rm -rf org/spongycastle/jcajce/provider/test/PrivateConstructorTest.java
+    rm -rf org/spongycastle/jcajce/provider/test/ECAlgorithmParametersTest.java
+    rm -rf org/spongycastle/jcajce/provider/test/RandomTest.java
+    rm -rf org/spongycastle/jce/provider/test/ECEncodingTest.java
+    rm org/spongycastle/asn1/test/GetInstanceTest.java
+    rm org/spongycastle/asn1/test/ASN1SequenceParserTest.java
+    rm org/spongycastle/asn1/test/OctetStringTest.java
+    rm org/spongycastle/asn1/test/ParseTest.java
+    rm org/spongycastle/pkix/test/RevocationTest.java
+    rm org/spongycastle/pkix/test/TestUtil.java
+    rm org/spongycastle/cert/ocsp/test/PKIXRevocationTest.java
+    rm -r org/spongycastle/crypto/test/BigSkippingCipherTest.java
+    rm -rf org/spongycastle/openssl/test
+    rm -rf org/spongycastle/jcajce/provider/asymmetric/dstu
+    rm -rf org/spongycastle/jcajce/provider/asymmetric/DSTU*.java
+    rm -rf org/spongycastle/jcajce/provider/asymmetric/util/EC5*.java
+    rm org/spongycastle/asn1/test/EnumeratedTest.java
+    rm -rf org/spongycastle/pqc/crypto/test/QT*.java
+    rm -rf org/spongycastle/pqc/crypto/test/SphincsPlusTest.java
+    rm -rf org/spongycastle/pqc/crypto/qtesla/QT*Tests.java
+    rm -rf org/spongycastle/pqc/jcajce/provider/test
+    rm -r org/spongycastle/crypto/test/speedy
+    rm -r org/spongycastle/crypto/test/cavp
+    rm -r org/spongycastle/crypto/test/KDFFeedbackGeneratorTest.java
+    rm -r org/spongycastle/crypto/test/KDFDoublePipelineIteratorGeneratorTest.java
+    rm -r org/spongycastle/crypto/test/KDFCounterGeneratorTest.java
+    rm -r org/spongycastle/math/test/PrimesTest.java
+    rm -r org/spongycastle/math/raw/test/InterleaveTest.java
+    rm -rf org/spongycastle/cert/jcajce/JcaAttributeCertificateIssuer.java
+    rm -rf org/spongycastle/cert/test/ConverterTest*
+    rm -rf org/spongycastle/cert/test/CertPathLoopTest.java
+    rm -rf org/spongycastle/cert/test/Bc*
+    rm -rf org/spongycastle/tsp/GenTimeAccuracyUnit*
+    rm -rf org/spongycastle/tsp/TimeStampTokenInfoUnit*
+    rm  org/spongycastle/openpgp/test/BcPGPEd25519JcaKeyPairConversionTest.java
 
     sh ../../scripts/jdk1.2ed.sh
 
@@ -201,8 +201,8 @@ then
     mkdir $artifacts/lcrypto-jdk12-$base/src
 
     tar cf - index.html LICENSE.html CONTRIBUTORS.html docs | (cd $artifacts/lcrypto-jdk12-$base && tar xf -)
-    ((cd $jdk12src && tar cf - java org.spongycastle.LICENSE.java \
-    org.spongycastle.math org.spongycastle.internal org.spongycastle.crypto org.spongycastle.util org.spongycastle.asn1 org.spongycastle.pqc/math org.spongycastle.pqc/crypto org.spongycastle.pqc/asn1  ) | (cd $artifacts/lcrypto-jdk12-$base/src && tar xf -)) 
+    ((cd $jdk12src && tar cf - java org/spongycastle/LICENSE.java \
+    org/spongycastle/math org/spongycastle/internal org/spongycastle/crypto org/spongycastle/util org/spongycastle/asn1 org/spongycastle/pqc/math org/spongycastle/pqc/crypto org/spongycastle/pqc/asn1  ) | (cd $artifacts/lcrypto-jdk12-$base/src && tar xf -)) 
     (
         cd $artifacts/lcrypto-jdk12-$base;
 
@@ -266,15 +266,15 @@ then
 
         echo "compiling"
 
-        (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src *.java */*.java internal/*/*/*.java  )
-        (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src a*/*/*.java )
-        (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [bcdefghijklmnopqrstuv]*/*/*.java )
+        (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src *.java */*.java internal/*/*/*.java  )
+        (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src a*/*/*.java )
+        (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [bcdefghijklmnopqrstuv]*/*/*.java )
 
         echo "lightweight regression test"
 
-        cp ../../../../core/src/test/resources/org.spongycastle.crypto/test/*.txt src/org.spongycastle.crypto/test
-        cp ../../../../core/src/test/resources/org.spongycastle.crypto/test/*.txt classes/org.spongycastle.crypto/test
-        cp ../../../../core/src/test/resources/org.spongycastle.asn1/test/*.data classes/org.spongycastle.asn1/test
+        cp ../../../../core/src/test/resources/org/spongycastle/crypto/test/*.txt src/org/spongycastle/crypto/test
+        cp ../../../../core/src/test/resources/org/spongycastle/crypto/test/*.txt classes/org/spongycastle/crypto/test
+        cp ../../../../core/src/test/resources/org/spongycastle/asn1/test/*.data classes/org/spongycastle/asn1/test
 
         java -classpath classes -Dbc.test.data.home=../core/src/test/data org.spongycastle.crypto.test.RegressionTest
         java -classpath classes org.spongycastle.asn1.test.RegressionTest
@@ -289,7 +289,7 @@ then
     mkdir $artifacts/jce-jdk12-$base
     mkdir $artifacts/jce-jdk12-$base/src
     tar cf - index.html LICENSE.html CONTRIBUTORS.html docs | (cd $artifacts/jce-jdk12-$base; tar xf -)
-    ((cd $jdk12src && tar cf - java javax org.spongycastle.LICENSE.java org.spongycastle.crypto org.spongycastle.internal org.spongycastle.math org.spongycastle.pqc org.spongycastle.asn1 org.spongycastle.jcajce org.spongycastle.util org.spongycastle.jce org.spongycastle.x509 ) | (cd $artifacts/jce-jdk12-$base/src && tar xf -))
+    ((cd $jdk12src && tar cf - java javax org/spongycastle/LICENSE.java org/spongycastle/crypto org/spongycastle/internal org/spongycastle/math org/spongycastle/pqc org/spongycastle/asn1 org/spongycastle/jcajce org/spongycastle/util org/spongycastle/jce org/spongycastle/x509 ) | (cd $artifacts/jce-jdk12-$base/src && tar xf -))
 
     (
     cd $artifacts/jce-jdk12-$base; mkdir classes; mkdir javadoc;
@@ -377,26 +377,26 @@ then
     (cd src/javax/crypto; javac -d ../../../classes -classpath ../../../classes:../../../src *.java */*.java)
     (cd src/java/security/spec; javac -d ../../../../classes -classpath ../../../../classes *.java )
 
-    (cd src/org.spongycastle.jce/cert; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src *.java  )
-    (cd src/org.spongycastle.jcajce/provider; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src a*/*.java )
-    (cd src/org.spongycastle.jcajce/provider; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src [cis]*/*.java )
-    (cd src/org.spongycastle.jcajce/provider; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src [abcis]*/*/*.java )
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src *.java a*/*.java a*/*/*.java a*/*/*/*.java internal/*/*/*.java )
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [bc]*/*.java [bc]*/*/*.java [bc]*/*/*/*.java )
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [j]*/*.java [j]*/*/*.java [j]*/*/*/*.java [j]*/*/*/*/*.java)
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [mop]*/*.java [mop]*/*/*.java [mop]*/*/*/*.java [mop]*/*/*/*/*.java)
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [tu]*/*.java [tu]*/*/*.java [tu]*/*/*/*.java)
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [x]*/*/*.java)
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src [x]*/*.java)
+    (cd src/org/spongycastle/jce/cert; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src *.java  )
+    (cd src/org/spongycastle/jcajce/provider; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src a*/*.java )
+    (cd src/org/spongycastle/jcajce/provider; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src [cis]*/*.java )
+    (cd src/org/spongycastle/jcajce/provider; javac -d ../../../../../classes -classpath ../../../../../classes:../../../../../src [abcis]*/*/*.java )
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src *.java a*/*.java a*/*/*.java a*/*/*/*.java internal/*/*/*.java )
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [bc]*/*.java [bc]*/*/*.java [bc]*/*/*/*.java )
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [j]*/*.java [j]*/*/*.java [j]*/*/*/*.java [j]*/*/*/*/*.java)
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [mop]*/*.java [mop]*/*/*.java [mop]*/*/*/*.java [mop]*/*/*/*/*.java)
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [tu]*/*.java [tu]*/*/*.java [tu]*/*/*/*.java)
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [x]*/*/*.java)
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src [x]*/*.java)
 
 
 
     echo "provider regression test"
     java -classpath classes org.spongycastle.jce.provider.test.RegressionTest
 
-    (cd classes; jar cf ../../bctest-jdk12-$base.jar org.spongycastle.asn1/test org.spongycastle.crypto/test org.spongycastle.jce/provider/test)
+    (cd classes; jar cf ../../bctest-jdk12-$base.jar org/spongycastle/asn1/test org/spongycastle/crypto/test org/spongycastle/jce/provider/test)
 
-    rm -rf classes/org.spongycastle.jce/provider/test
+    rm -rf classes/org/spongycastle/jce/provider/test
 
     (cd classes; jar cf ../../bcprov-jdk12-$base.jar java org)
     (cd classes; jar cf ../../jce-jdk12-$base.jar java javax org)
@@ -412,26 +412,26 @@ then
     mkdir $artifacts/bcpkix-jdk12-$base
     mkdir $artifacts/bcpkix-jdk12-$base/src
     tar cf - index.html LICENSE.html CONTRIBUTORS.html docs | (cd $artifacts/bcpkix-jdk12-$base; tar xf -)
-    ((cd $jdk12src && tar cf - org.spongycastle.cert org.spongycastle.cms org.spongycastle.pkcs org.spongycastle.pkix org.spongycastle.openssl org.spongycastle.operator org.spongycastle.mozilla org.spongycastle.tsp org.spongycastle.voms ) | (cd $artifacts/bcpkix-jdk12-$base/src && tar xf -))
+    ((cd $jdk12src && tar cf - org/spongycastle/cert org/spongycastle/cms org/spongycastle/pkcs org/spongycastle/pkix org/spongycastle/openssl org/spongycastle/operator org/spongycastle/mozilla org/spongycastle/tsp org/spongycastle/voms ) | (cd $artifacts/bcpkix-jdk12-$base/src && tar xf -))
     (
     cd $artifacts/bcpkix-jdk12-$base; mkdir classes; mkdir javadoc;
 
     PATH=$JDK12PATH/bin:$PATH
     export PATH
 
-    rm -rf src/org.spongycastle.cert/jcajce/JcaAttributeCertificateIssuer.java
-    rm -rf src/org.spongycastle.cert/test/ConverterTest*
-    rm -rf src/org.spongycastle.cert/test/CertPathLoopTest.java
-    rm -rf src/org.spongycastle.cert/test/Bc*
-    rm -rf src/org.spongycastle.cms/test
-    rm -rf src/org.spongycastle.dvcs/test
-    rm -rf src/org.spongycastle.eac/test
-    rm -rf src/org.spongycastle.pkcs/test
-    rm -rf src/org.spongycastle.tsp/test
-    rm -rf src/org.spongycastle.est
-    rm -rf src/org.spongycastle.tsp/GenTimeAccuracyUnit*
-    rm -rf src/org.spongycastle.tsp/TimeStampTokenInfoUnit*
-    rm src/org.spongycastle.cert/dane/fetcher/JndiDANEFetcherFactory.java
+    rm -rf src/org/spongycastle/cert/jcajce/JcaAttributeCertificateIssuer.java
+    rm -rf src/org/spongycastle/cert/test/ConverterTest*
+    rm -rf src/org/spongycastle/cert/test/CertPathLoopTest.java
+    rm -rf src/org/spongycastle/cert/test/Bc*
+    rm -rf src/org/spongycastle/cms/test
+    rm -rf src/org/spongycastle/dvcs/test
+    rm -rf src/org/spongycastle/eac/test
+    rm -rf src/org/spongycastle/pkcs/test
+    rm -rf src/org/spongycastle/tsp/test
+    rm -rf src/org/spongycastle/est
+    rm -rf src/org/spongycastle/tsp/GenTimeAccuracyUnit*
+    rm -rf src/org/spongycastle/tsp/TimeStampTokenInfoUnit*
+    rm src/org/spongycastle/cert/dane/fetcher/JndiDANEFetcherFactory.java
     find src -name AllTests.java -exec rm {} \;
 
     javadoc -windowtitle "$WINDOWTITLE" -doctitle "$DOCTITLE" \
@@ -464,7 +464,7 @@ then
 
     echo "compiling"
 
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src:../../../../jce-jdk12-$base/classes */*.java */*/*.java */*/*/*.java)
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src:../../../../jce-jdk12-$base/classes */*.java */*/*.java */*/*/*.java)
     cat > classes/pg.mf <<%
 Manifest-Version: 1.0
 Extension-Name: org.spongycastle.bcpkix
@@ -492,7 +492,7 @@ then
     mkdir $artifacts/bcpg-jdk12-$base
     mkdir $artifacts/bcpg-jdk12-$base/src
     tar cf - index.html LICENSE.html CONTRIBUTORS.html docs | (cd $artifacts/bcpg-jdk12-$base; tar xf -)
-    ((cd $jdk12src && tar cf - org.spongycastle.apache org.spongycastle.openpgp org.spongycastle.bcpg org.spongycastle.gpg) |  (cd $artifacts/bcpg-jdk12-$base/src && tar xf -))
+    ((cd $jdk12src && tar cf - org/spongycastle/apache org/spongycastle/openpgp org/spongycastle/bcpg org/spongycastle/gpg) |  (cd $artifacts/bcpg-jdk12-$base/src && tar xf -))
     (
     cd $artifacts/bcpg-jdk12-$base; mkdir classes; mkdir javadoc;
 
@@ -500,26 +500,26 @@ then
     export PATH
 
     rm -rf src/java
-    rm -rf src/org.spongycastle.jce
-    rm -rf src/org.spongycastle.ocsp
-    rm -rf src/org.spongycastle.mail
-    rm -rf src/org.spongycastle.pkcs
-    rm -rf src/org.spongycastle.cms
-    rm -rf src/org.spongycastle.mime
-    rm -rf src/org.spongycastle.eac
-    rm -rf src/org.spongycastle.cert
-    rm -rf src/org.spongycastle.tsp
-    rm -rf src/org.spongycastle.x509
-    rm -rf src/org.spongycastle.voms
-    rm -rf src/org.spongycastle.sasn1
-    rm -rf src/org.spongycastle.est
-    rm -rf src/org.spongycastle.asn1/test
-    rm -rf src/org.spongycastle.gpg/keybox
-    rm -rf src/org.spongycastle.gpg/test
-    rm -f src/org.spongycastle.openpgp/test/DSA2Test.java
-    rm -f src/org.spongycastle.openpgp/test/PGPUnicodeTest.java
-    rm -f src/org.spongycastle.openpgp/test/PGPKeyRingTest.java
-    rm -f src/org.spongycastle.openpgp/test/BcPGPEd25519JcaKeyPairConversionTest.java
+    rm -rf src/org/spongycastle/jce
+    rm -rf src/org/spongycastle/ocsp
+    rm -rf src/org/spongycastle/mail
+    rm -rf src/org/spongycastle/pkcs
+    rm -rf src/org/spongycastle/cms
+    rm -rf src/org/spongycastle/mime
+    rm -rf src/org/spongycastle/eac
+    rm -rf src/org/spongycastle/cert
+    rm -rf src/org/spongycastle/tsp
+    rm -rf src/org/spongycastle/x509
+    rm -rf src/org/spongycastle/voms
+    rm -rf src/org/spongycastle/sasn1
+    rm -rf src/org/spongycastle/est
+    rm -rf src/org/spongycastle/asn1/test
+    rm -rf src/org/spongycastle/gpg/keybox
+    rm -rf src/org/spongycastle/gpg/test
+    rm -f src/org/spongycastle/openpgp/test/DSA2Test.java
+    rm -f src/org/spongycastle/openpgp/test/PGPUnicodeTest.java
+    rm -f src/org/spongycastle/openpgp/test/PGPKeyRingTest.java
+    rm -f src/org/spongycastle/openpgp/test/BcPGPEd25519JcaKeyPairConversionTest.java
     find src -name AllTests.java -exec rm {} \;
 
     javadoc -windowtitle "$WINDOWTITLE" -doctitle "$DOCTITLE" \
@@ -537,19 +537,19 @@ then
 
     echo "compiling"
 
-    ed src/org.spongycastle.bcpg/ArmoredOutputStream.java <<%
+    ed src/org/spongycastle/bcpg/ArmoredOutputStream.java <<%
 /@RELEASE_NAME@/s//$version/
 w
 q
 %
 
-    ed src/org.spongycastle.openpgp/test/RegressionTest.java <<%
+    ed src/org/spongycastle/openpgp/test/RegressionTest.java <<%
 g/new PGPKeyRingTest(),/d
 w
 q
 %
 
-    (cd src/org.spongycastle. javac -d ../../../classes -classpath ../../../classes:../../../src:../../../../jce-jdk12-$base/classes */*.java */*/*.java)
+    (cd src/org/spongycastle/ javac -d ../../../classes -classpath ../../../classes:../../../src:../../../../jce-jdk12-$base/classes */*.java */*/*.java)
     cat > classes/pg.mf <<%
 Manifest-Version: 1.0
 Extension-Name: org.spongycastle.bcpg
@@ -560,9 +560,9 @@ Implementation-Vendor: BouncyCastle.org
 Implementation-Version: $version.0
 %
 
-    cp ../../../../pg/src/test/resources/org.spongycastle.openpgp/test/bigpub.asc classes/org.spongycastle.openpgp/test/bigpub.asc
-    cp ../../../../pg/src/test/resources/org.spongycastle.openpgp/test/eddsa-sks-pub-keyring.asc classes/org.spongycastle.openpgp/test/eddsa-sks-pub-keyring.asc
-    cp ../../../../pg/src/test/resources/org.spongycastle.openpgp/test/longSigSubPack.asc classes/org.spongycastle.openpgp/test/longSigSubPack.asc
+    cp ../../../../pg/src/test/resources/org/spongycastle/openpgp/test/bigpub.asc classes/org/spongycastle/openpgp/test/bigpub.asc
+    cp ../../../../pg/src/test/resources/org/spongycastle/openpgp/test/eddsa-sks-pub-keyring.asc classes/org/spongycastle/openpgp/test/eddsa-sks-pub-keyring.asc
+    cp ../../../../pg/src/test/resources/org/spongycastle/openpgp/test/longSigSubPack.asc classes/org/spongycastle/openpgp/test/longSigSubPack.asc
     (dbase=`pwd`; cd ../../../../pg/src/test/resources/; tar cf - pgpdata | (cd $dbase/classes; tar xf -)) 
     
 

@@ -79,7 +79,7 @@ public class ITSCertLoadTest
         "CERT_TS_F_AT.oer"
     };
 
-    private static final String certContentRoot = "/org.spongycastle.its/certs";
+    private static final String certContentRoot = "/org/spongycastle/its/certs";
 
 
     public void testInt()
@@ -99,7 +99,7 @@ public class ITSCertLoadTest
 //        throws Exception
 //    {
 //
-//        String path = "/org.spongycastle.its/certs/CERT_IUT_B_AT.oer";
+//        String path = "/org/spongycastle/its/certs/CERT_IUT_B_AT.oer";
 //        byte[] data = Streams.readAll(this.getClass().getResourceAsStream(path));
 //        System.out.println(Hex.toHexString(data));
 //

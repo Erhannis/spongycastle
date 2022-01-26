@@ -20,7 +20,7 @@ public class F2mProofer
 {
     private static final int NUM_SAMPLES = 1000;
 
-    private static final String PATH = "crypto/test/src/org.spongycastle.math/ec/test/samples/";
+    private static final String PATH = "crypto/test/src/org/spongycastle/math/ec/test/samples/";
 
     private static final String INPUT_FILE_NAME_PREFIX = "Input_";
 

@@ -7,7 +7,7 @@ mkdir /tmp/classes.jakarta
 (cd mail/src/test/java; tar cf - * | (cd /tmp/jakarta.test && tar xf -))
 (cd mail/src/test/resources; tar cf - * | (cd /tmp/classes.jakarta && tar xf -))
 (
-  cd /tmp/jakarta.test/org.spongycastle.mail/smime/test
+  cd /tmp/jakarta.test/org/spongycastle/mail/smime/test
   for i in *.java
   do
 	ed $i << %%
@@ -19,7 +19,7 @@ q
   done
 )
 
-javac -d /tmp/classes.jakarta -classpath build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcutil-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcpkix-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcjmail-jdk15on-170.jar:/opt/junit/junit.jar:libs/jakarta.mail-2.0.1.jar:libs/jakarta.activation-api-2.0.0.jar /tmp/jakarta.test/org.spongycastle.mail/smime/test/*.java
+javac -d /tmp/classes.jakarta -classpath build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcutil-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcpkix-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcjmail-jdk15on-170.jar:/opt/junit/junit.jar:libs/jakarta.mail-2.0.1.jar:libs/jakarta.activation-api-2.0.0.jar /tmp/jakarta.test/org/spongycastle/mail/smime/test/*.java
 java -cp /tmp/classes.jakarta:build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcpkix-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcutil-jdk15on-170.jar:build/artifacts/jdk1.5/jars/bcjmail-jdk15on-170.jar:/opt/junit/junit.jar:libs/jakarta.mail-2.0.1.jar:libs/jakarta.activation-api-2.0.0.jar:libs/activation.jar org.spongycastle.mail.smime.test.AllTests
 
 )
@@ -28,7 +28,7 @@ java -cp /tmp/classes.jakarta:build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar
 export JAVA_HOME=/opt/jdk-11.0.1
 export PATH=$JAVA_HOME/bin:$PATH
 
-javac -d /tmp/classes.jdk11 -classpath build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/opt/junit/junit.jar prov/src/test/jdk1.11/org.spongycastle.jcajce/provider/test/XDHKeyTest.java
+javac -d /tmp/classes.jdk11 -classpath build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/opt/junit/junit.jar prov/src/test/jdk1.11/org/spongycastle/jcajce/provider/test/XDHKeyTest.java
 java -cp /tmp/classes.jdk11:build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/opt/junit/junit.jar org.spongycastle.jcajce.provider.test.XDHKeyTest
 
 )
@@ -37,6 +37,6 @@ java -cp /tmp/classes.jdk11:build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/
 export JAVA_HOME=/opt/jdk-15
 export PATH=$JAVA_HOME/bin:$PATH
 
-javac -d /tmp/classes.jdk15 -classpath build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/opt/junit/junit.jar prov/src/test/jdk1.15/org.spongycastle.jcajce/provider/test/EdDSA15Test.java
+javac -d /tmp/classes.jdk15 -classpath build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/opt/junit/junit.jar prov/src/test/jdk1.15/org/spongycastle/jcajce/provider/test/EdDSA15Test.java
 java -cp /tmp/classes.jdk15:build/artifacts/jdk1.5/jars/bcprov-jdk15on-170.jar:/opt/junit/junit.jar org.spongycastle.jcajce.provider.test.EdDSA15Test
 )

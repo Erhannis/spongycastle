@@ -141,7 +141,7 @@ public class LEATest
         throws Exception
     {
 
-        BufferedReader bin = new BufferedReader(new InputStreamReader(LEATest.class.getResourceAsStream("/org.spongycastle.crypto/test/lea.txt")));
+        BufferedReader bin = new BufferedReader(new InputStreamReader(LEATest.class.getResourceAsStream("/org/spongycastle/crypto/test/lea.txt")));
         String line;
 
         String comment = null;
