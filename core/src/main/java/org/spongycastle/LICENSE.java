@@ -1,4 +1,4 @@
-package org.spongycastle.
+package org.spongycastle;
 
 import org.spongycastle.util.Strings;
 
