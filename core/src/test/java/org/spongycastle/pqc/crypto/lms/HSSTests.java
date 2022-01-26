@@ -73,7 +73,7 @@ public class HSSTests
     public void testHSSVector_1()
         throws Exception
     {
-        ArrayList<byte[]> blocks = loadVector("/org.spongycastle.pqc/crypto/test/lms/testcase_1.txt");
+        ArrayList<byte[]> blocks = loadVector("/org/spongycastle/pqc/crypto/test/lms/testcase_1.txt");
 
         HSSPublicKeyParameters publicKey = HSSPublicKeyParameters.getInstance(blocks.get(0));
         byte[] message = blocks.get(1);
@@ -91,7 +91,7 @@ public class HSSTests
         throws Exception
     {
 
-        ArrayList<byte[]> blocks = loadVector("/org.spongycastle.pqc/crypto/test/lms/testcase_2.txt");
+        ArrayList<byte[]> blocks = loadVector("/org/spongycastle/pqc/crypto/test/lms/testcase_2.txt");
 
         HSSPublicKeyParameters publicKey = HSSPublicKeyParameters.getInstance(blocks.get(0));
         byte[] message = blocks.get(1);
@@ -315,7 +315,7 @@ public class HSSTests
         throws Exception
     {
 
-        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org.spongycastle.pqc/crypto/test/lms/depth_1.txt"))).split("\n");
+        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org/spongycastle/pqc/crypto/test/lms/depth_1.txt"))).split("\n");
 
         int d = 0;
         List<LMSigParameters> lmsParameters = new ArrayList<LMSigParameters>();
@@ -461,7 +461,7 @@ public class HSSTests
         throws Exception
     {
 
-        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org.spongycastle.pqc/crypto/test/lms/expansion.txt"))).split("\n");
+        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org/spongycastle/pqc/crypto/test/lms/expansion.txt"))).split("\n");
 
         int d = 0;
         List<LMSigParameters> lmsParameters = new ArrayList<LMSigParameters>();

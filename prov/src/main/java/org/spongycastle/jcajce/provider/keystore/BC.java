@@ -27,7 +27,7 @@ public class BC
             provider.addAlgorithm("KeyStore.BouncyCastle", PREFIX + "BcKeyStoreSpi$BouncyCastleStore");
             provider.addAlgorithm("Alg.Alias.KeyStore.UBER", "BouncyCastle");
             provider.addAlgorithm("Alg.Alias.KeyStore.BOUNCYCASTLE", "BouncyCastle");
-            provider.addAlgorithm("Alg.Alias.KeyStore.spongycastle., "BouncyCastle");
+            provider.addAlgorithm("Alg.Alias.KeyStore.spongycastle", "BouncyCastle");
         }
     }
 }

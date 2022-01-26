@@ -192,7 +192,7 @@ public class QTESLATest
         //
         // Values put in file because vectors exceeded length of string constant.
         //
-        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org.spongycastle.pqc/crypto/test/q3pIII.txt")));
+        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org/spongycastle/pqc/crypto/test/q3pIII.txt")));
 
         byte[] seed = Hex.decode(bin.readLine());
         byte[] msg = Hex.decode(bin.readLine());
@@ -255,8 +255,8 @@ public class QTESLATest
         throws Exception
     {
         String[] files = new String[]{
-            "/org.spongycastle.pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-I.rsp",
-            "/org.spongycastle.pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-III.rsp",
+            "/org/spongycastle/pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-I.rsp",
+            "/org/spongycastle/pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-III.rsp",
         };
 
         for (int f = 0; f != files.length; f++)

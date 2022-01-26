@@ -38,7 +38,7 @@ public class SphincsPlusTest
         for (int i = 0; i != fileList.length; i++)
         {
             String name = fileList[i];
-            InputStream src = SphincsPlusTest.class.getResourceAsStream("/org.spongycastle.pqc/crypto/test/sphincs_plus/" + name);
+            InputStream src = SphincsPlusTest.class.getResourceAsStream("/org/spongycastle/pqc/crypto/test/sphincs_plus/" + name);
             BufferedReader bin = new BufferedReader(new InputStreamReader(src));
 
             String line = null;
