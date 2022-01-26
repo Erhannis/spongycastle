@@ -24,6 +24,14 @@ if (JavaVersion.current().isJava8Compatible())
 // this needs to go here, otherwise it can't find config
 apply plugin: 'io.spring.nohttp'
 
+if (JavaVersion.current().isJava8Compatible()) {
+    allprojects {
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+        }
+    }
+}
+
 allprojects {
   apply plugin: 'java'
   apply plugin: 'idea'
