@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package org.spongycastle.jcajce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -15,10 +15,10 @@ import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.NamedParameterSpec;
 import java.util.Base64;
 
-import org.bouncycastle.jcajce.interfaces.EdDSAPrivateKey;
-import org.bouncycastle.jcajce.spec.RawEncodedKeySpec;
-import org.bouncycastle.jcajce.spec.EdDSAParameterSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jcajce.interfaces.EdDSAPrivateKey;
+import org.spongycastle.jcajce.spec.RawEncodedKeySpec;
+import org.spongycastle.jcajce.spec.EdDSAParameterSpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

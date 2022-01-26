@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.test;
+package org.spongycastle.cert.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -17,64 +17,64 @@ import java.util.List;
 import java.util.Set;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.RFC4519Style;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.CertException;
-import org.bouncycastle.cert.X509CRLEntryHolder;
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
-import org.bouncycastle.cert.X509v2CRLBuilder;
-import org.bouncycastle.cert.X509v3CertificateBuilder;
-import org.bouncycastle.cert.bc.BcX509ExtensionUtils;
-import org.bouncycastle.cert.bc.BcX509v1CertificateBuilder;
-import org.bouncycastle.cert.bc.BcX509v3CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DSAKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DSAParametersGenerator;
-import org.bouncycastle.crypto.generators.RSAKeyPairGenerator;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DSAKeyGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.RSAKeyGenerationParameters;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.crypto.util.PublicKeyFactory;
-import org.bouncycastle.crypto.util.SubjectPublicKeyInfoFactory;
-import org.bouncycastle.cert.test.PEMData;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.bc.BcDSAContentSignerBuilder;
-import org.bouncycastle.operator.bc.BcDSAContentVerifierProviderBuilder;
-import org.bouncycastle.operator.bc.BcRSAContentSignerBuilder;
-import org.bouncycastle.operator.bc.BcRSAContentVerifierProviderBuilder;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.RFC4519Style;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.CertException;
+import org.spongycastle.cert.X509CRLEntryHolder;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.cert.X509v2CRLBuilder;
+import org.spongycastle.cert.X509v3CertificateBuilder;
+import org.spongycastle.cert.bc.BcX509ExtensionUtils;
+import org.spongycastle.cert.bc.BcX509v1CertificateBuilder;
+import org.spongycastle.cert.bc.BcX509v3CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.generators.DSAKeyPairGenerator;
+import org.spongycastle.crypto.generators.DSAParametersGenerator;
+import org.spongycastle.crypto.generators.RSAKeyPairGenerator;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DSAKeyGenerationParameters;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.RSAKeyGenerationParameters;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.spongycastle.crypto.util.PublicKeyFactory;
+import org.spongycastle.crypto.util.SubjectPublicKeyInfoFactory;
+import org.spongycastle.cert.test.PEMData;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.bc.BcDSAContentSignerBuilder;
+import org.spongycastle.operator.bc.BcDSAContentVerifierProviderBuilder;
+import org.spongycastle.operator.bc.BcRSAContentSignerBuilder;
+import org.spongycastle.operator.bc.BcRSAContentVerifierProviderBuilder;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
 
 public class BcCertTest
     extends TestCase
@@ -542,7 +542,7 @@ public class BcCertTest
         builder.addRDN(RFC4519Style.o, "The Legion of the Bouncy Castle");
         builder.addRDN(RFC4519Style.l, "Melbourne");
         builder.addRDN(RFC4519Style.st, "Victoria");
-        builder.addRDN(PKCSObjectIdentifiers.pkcs_9_at_emailAddress, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(PKCSObjectIdentifiers.pkcs_9_at_emailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // extensions
@@ -665,7 +665,7 @@ public class BcCertTest
         builder.addRDN(RFC4519Style.o, "The Legion of the Bouncy Castle");
         builder.addRDN(RFC4519Style.l, "Melbourne");
         builder.addRDN(RFC4519Style.st, "Victoria");
-        builder.addRDN(PKCSObjectIdentifiers.pkcs_9_at_emailAddress, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(PKCSObjectIdentifiers.pkcs_9_at_emailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // extensions
@@ -785,7 +785,7 @@ public class BcCertTest
         builder.addRDN(RFC4519Style.o, "The Legion of the Bouncy Castle");
         builder.addRDN(RFC4519Style.l, "Melbourne");
         builder.addRDN(RFC4519Style.st, "Victoria");
-        builder.addRDN(PKCSObjectIdentifiers.pkcs_9_at_emailAddress, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(PKCSObjectIdentifiers.pkcs_9_at_emailAddress, "feedback-crypto.spongycastle.org");
 
         return builder;
     }

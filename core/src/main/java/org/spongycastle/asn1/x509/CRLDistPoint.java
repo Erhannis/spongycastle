@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.util.Strings;
 
 public class CRLDistPoint
     extends ASN1Object

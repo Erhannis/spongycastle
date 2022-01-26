@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.HKDFParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.HKDFParameters;
+import org.spongycastle.crypto.params.KeyParameter;
 
 /**
  * HMAC-based Extract-and-Expand Key Derivation Function (HKDF) implemented

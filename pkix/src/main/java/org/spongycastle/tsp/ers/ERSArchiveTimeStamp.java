@@ -1,21 +1,21 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Date;
 
-import org.bouncycastle.asn1.tsp.ArchiveTimeStamp;
-import org.bouncycastle.asn1.tsp.PartialHashtree;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.SignerInformationVerifier;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.tsp.TSPException;
-import org.bouncycastle.tsp.TimeStampToken;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Store;
+import org.spongycastle.asn1.tsp.ArchiveTimeStamp;
+import org.spongycastle.asn1.tsp.PartialHashtree;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.SignerInformationVerifier;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.tsp.TSPException;
+import org.spongycastle.tsp.TimeStampToken;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Store;
 
 /**
  * RFC 4998 ArchiveTimeStamp.

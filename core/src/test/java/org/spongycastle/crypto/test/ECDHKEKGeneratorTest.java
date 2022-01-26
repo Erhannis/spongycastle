@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.agreement.kdf.DHKDFParameters;
-import org.bouncycastle.crypto.agreement.kdf.ECDHKEKGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.agreement.kdf.DHKDFParameters;
+import org.spongycastle.crypto.agreement.kdf.ECDHKEKGenerator;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * ECDHKEK Generator tests.

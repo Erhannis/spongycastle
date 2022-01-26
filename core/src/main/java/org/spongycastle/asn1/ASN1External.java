@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Objects;
+import org.spongycastle.util.Objects;
 
 /**
  * Class representing the DER-type External

@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Hashtable;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.TeeInputStream;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.TeeInputStream;
 
 public class ClientHello
 {

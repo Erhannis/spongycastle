@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public class ECGOST3410Parameters
     extends ECNamedDomainParameters

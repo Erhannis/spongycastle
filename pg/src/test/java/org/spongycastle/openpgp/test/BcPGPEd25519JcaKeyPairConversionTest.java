@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyFactory;
@@ -12,17 +12,17 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Arrays;
 import java.util.Date;
 
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPKeyPair;
-import org.bouncycastle.openpgp.operator.bc.BcPGPKeyConverter;
-import org.bouncycastle.openpgp.operator.bc.BcPGPKeyPair;
-import org.bouncycastle.openpgp.operator.jcajce.JcaPGPKeyPair;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPKeyPair;
+import org.spongycastle.openpgp.operator.bc.BcPGPKeyConverter;
+import org.spongycastle.openpgp.operator.bc.BcPGPKeyPair;
+import org.spongycastle.openpgp.operator.jcajce.JcaPGPKeyPair;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class BcPGPEd25519JcaKeyPairConversionTest
     extends SimpleTest

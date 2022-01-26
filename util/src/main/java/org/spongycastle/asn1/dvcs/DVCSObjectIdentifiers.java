@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.dvcs;
+package org.spongycastle.asn1.dvcs;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * OIDs for <a href="https://tools.ietf.org/html/rfc3029">RFC 3029</a>

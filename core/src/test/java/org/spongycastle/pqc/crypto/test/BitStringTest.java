@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.crypto.ntru.IndexGenerator.BitString;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.crypto.ntru.IndexGenerator.BitString;
+import org.spongycastle.util.Arrays;
 
 public class BitStringTest
     extends TestCase

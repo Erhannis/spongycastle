@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.params.ParametersWithIV;
 
 /**
  * Implements OpenPGP's rather strange version of Cipher-FeedBack (CFB) mode on top of a simple cipher. For further info see <a href="https://www.ietf.org/rfc/rfc2440.html">RFC 2440</a>.

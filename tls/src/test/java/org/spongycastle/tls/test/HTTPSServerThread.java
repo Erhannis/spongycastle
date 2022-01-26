@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,9 +18,9 @@ import javax.net.ssl.SSLServerSocketFactory;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.TrustManagerFactory;
 
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCertificate;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCertificate;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
 
 public class HTTPSServerThread
     extends Thread

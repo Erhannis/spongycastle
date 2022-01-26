@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.macs;
+package org.spongycastle.crypto.macs;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.paddings.ISO7816d4Padding;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.paddings.ISO7816d4Padding;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Pack;
 
 /**
  * CMAC - as specified at www.nuee.nagoya-u.ac.jp/labs/tiwata/omac/omac.html

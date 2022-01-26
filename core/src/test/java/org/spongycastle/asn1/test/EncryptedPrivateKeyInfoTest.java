@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.ByteArrayInputStream;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
-import org.bouncycastle.asn1.util.ASN1Dump;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
+import org.spongycastle.asn1.util.ASN1Dump;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Test the reading and writing of EncryptedPrivateKeyInfo objects using

@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.modes.gcm;
+package org.spongycastle.crypto.modes.gcm;
 
-import org.bouncycastle.util.Pack;
+import org.spongycastle.util.Pack;
 
 public class Tables4kGCMMultiplier
     implements GCMMultiplier

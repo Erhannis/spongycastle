@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -14,38 +14,38 @@ import java.security.spec.RSAPublicKeySpec;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Attribute;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.SubjectKeyIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509Extension;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.asn1.x509.X509Name;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.jce.ECGOST3410NamedCurveTable;
-import org.bouncycastle.jce.ECNamedCurveTable;
-import org.bouncycastle.jce.PKCS10CertificationRequest;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPrivateKeySpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.Attribute;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.x509.SubjectKeyIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509Extension;
+import org.spongycastle.asn1.x509.X509Extensions;
+import org.spongycastle.asn1.x509.X509Name;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.jce.ECGOST3410NamedCurveTable;
+import org.spongycastle.jce.ECNamedCurveTable;
+import org.spongycastle.jce.PKCS10CertificationRequest;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.interfaces.ECPointEncoder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECPrivateKeySpec;
+import org.spongycastle.jce.spec.ECPublicKeySpec;
+import org.spongycastle.math.ec.ECConstants;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  **/
@@ -112,7 +112,7 @@ public class PKCS10CertRequestTest
         attrs.put(X509Principal.O, "The Legion of the Bouncy Castle");
         attrs.put(X509Principal.L, "Melbourne");
         attrs.put(X509Principal.ST, "Victoria");
-        attrs.put(X509Principal.EmailAddress, "feedback-crypto@bouncycastle.org");
+        attrs.put(X509Principal.EmailAddress, "feedback-crypto.spongycastle.org");
 
         Vector                      order = new Vector();
 
@@ -224,7 +224,7 @@ public class PKCS10CertRequestTest
     private void createECRequest(String algorithm, ASN1ObjectIdentifier algOid)
         throws Exception
     {
-        X9ECParameters x9 = org.bouncycastle.asn1.x9.ECNamedCurveTable.getByName("secp521r1");
+        X9ECParameters x9 = org.spongycastle.asn1.x9.ECNamedCurveTable.getByName("secp521r1");
         ECCurve curve = x9.getCurve();
         ECParameterSpec spec = new ECParameterSpec(curve, x9.getG(), x9.getN(), x9.getH());
 
@@ -492,7 +492,7 @@ public class PKCS10CertRequestTest
         // elliptic curve openSSL
         KeyPairGenerator g = KeyPairGenerator.getInstance("ECDSA", "BC");
 
-        X9ECParameters x9 = org.bouncycastle.asn1.x9.ECNamedCurveTable.getByName("prime239v1");
+        X9ECParameters x9 = org.spongycastle.asn1.x9.ECNamedCurveTable.getByName("prime239v1");
         ECCurve curve = x9.getCurve();
         ECParameterSpec ecSpec = new ECParameterSpec(curve, x9.getG(), x9.getN(), x9.getH());
 

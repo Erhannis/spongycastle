@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.x9;
+package org.spongycastle.asn1.x9;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1TaggedObject;
 
 /**
  * X9.42 definition of a DHPublicKey

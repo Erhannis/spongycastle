@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.TlsServerProtocol;
+import org.spongycastle.tls.TlsServerProtocol;
 
 class TlsTestServerProtocol extends TlsServerProtocol
 {

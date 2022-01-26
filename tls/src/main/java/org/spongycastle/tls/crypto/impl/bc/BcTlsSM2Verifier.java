@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithID;
-import org.bouncycastle.crypto.signers.SM2Signer;
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithID;
+import org.spongycastle.crypto.signers.SM2Signer;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.util.Arrays;
 
 public class BcTlsSM2Verifier
     extends BcTlsVerifier

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -12,11 +12,11 @@ import java.util.Date;
 import java.util.Set;
 import java.util.Vector;
 
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.x509.X509V3CertificateGenerator;
 
 public class CertUniqueIDTest
     extends SimpleTest
@@ -81,7 +81,7 @@ public class CertUniqueIDTest
       values.addElement("The Legion of the Bouncy Castle");
       values.addElement("Melbourne");
       values.addElement("Victoria");
-      values.addElement("feedback-crypto@bouncycastle.org");
+      values.addElement("feedback-crypto.spongycastle.org");
 
       //
       // extensions

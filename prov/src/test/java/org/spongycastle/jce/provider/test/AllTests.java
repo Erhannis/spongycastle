@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.security.Security;
 
@@ -6,7 +6,7 @@ import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 public class AllTests
     extends TestCase
@@ -35,7 +35,7 @@ public class AllTests
 
         protected void setUp()
         {
-            System.setProperty("org.bouncycastle.bks.enable_v1", "true");
+            System.setProperty("org.spongycastle.bks.enable_v1", "true");
 
             Security.addProvider(new BouncyCastleProvider());
         }

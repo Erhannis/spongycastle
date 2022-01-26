@@ -1,12 +1,12 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.PrivateKey;
 
-import org.bouncycastle.tls.HashAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsSigner;
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.tls.HashAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsSigner;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
 
 public abstract class JcaTlsEdDSASigner
     implements TlsSigner

@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.x509.qualified;
+package org.spongycastle.asn1.x509.qualified;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public interface ETSIQCObjectIdentifiers
 {

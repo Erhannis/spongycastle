@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 import java.math.BigInteger;
 import java.util.Collections;

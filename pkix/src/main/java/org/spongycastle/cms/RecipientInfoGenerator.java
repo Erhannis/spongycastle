@@ -1,7 +1,7 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
-import org.bouncycastle.asn1.cms.RecipientInfo;
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.asn1.cms.RecipientInfo;
+import org.spongycastle.operator.GenericKey;
 
 public interface RecipientInfoGenerator
 {

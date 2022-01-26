@@ -1,4 +1,4 @@
-package org.bouncycastle.pkix.jcajce;
+package org.spongycastle.pkix.jcajce;
 
 import java.io.IOException;
 import java.security.PublicKey;
@@ -19,27 +19,27 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.CRLDistPoint;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.DistributionPoint;
-import org.bouncycastle.asn1.x509.DistributionPointName;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.IssuingDistributionPoint;
-import org.bouncycastle.jcajce.PKIXCRLStoreSelector;
-import org.bouncycastle.jcajce.PKIXCertStoreSelector;
-import org.bouncycastle.jcajce.PKIXExtendedBuilderParameters;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.CRLDistPoint;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.DistributionPoint;
+import org.spongycastle.asn1.x509.DistributionPointName;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.IssuingDistributionPoint;
+import org.spongycastle.jcajce.PKIXCRLStoreSelector;
+import org.spongycastle.jcajce.PKIXCertStoreSelector;
+import org.spongycastle.jcajce.PKIXExtendedBuilderParameters;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.util.Arrays;
 
 class RFC3280CertPathUtilities
 {

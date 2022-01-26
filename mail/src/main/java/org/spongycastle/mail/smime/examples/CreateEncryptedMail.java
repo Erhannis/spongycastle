@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.examples;
+package org.spongycastle.mail.smime.examples;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -16,17 +16,17 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mail.smime.SMIMEEnvelopedGenerator;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mail.smime.SMIMEEnvelopedGenerator;
 
 /**
  * a simple example that creates a single encrypted mail message.
  * <p>
  * The key store can be created using the class in
- * org.bouncycastle.jce.examples.PKCS12Example - the program expects only one
+ * org.spongycastle.jce.examples.PKCS12Example - the program expects only one
  * key to be present in the key file.
  * <p>
  * Note: while this means that both the private key is available to
@@ -113,8 +113,8 @@ public class CreateEncryptedMail
         Properties props = System.getProperties();
         Session session = Session.getDefaultInstance(props, null);
 
-        Address fromUser = new InternetAddress("\"Eric H. Echidna\"<eric@bouncycastle.org>");
-        Address toUser = new InternetAddress("example@bouncycastle.org");
+        Address fromUser = new InternetAddress("\"Eric H. Echidna\"<eric.spongycastle.org>");
+        Address toUser = new InternetAddress("example.spongycastle.org");
 
         MimeMessage body = new MimeMessage(session);
         body.setFrom(fromUser);

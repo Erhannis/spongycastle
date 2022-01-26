@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.microsoft;
+package org.spongycastle.asn1.microsoft;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Microsoft

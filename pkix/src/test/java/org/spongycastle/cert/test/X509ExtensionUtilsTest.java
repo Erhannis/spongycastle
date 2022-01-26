@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.test;
+package org.spongycastle.cert.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -10,22 +10,22 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.security.spec.X509EncodedKeySpec;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.SubjectKeyIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509ExtensionUtils;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.SubjectKeyIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509ExtensionUtils;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class X509ExtensionUtilsTest
     extends SimpleTest

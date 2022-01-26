@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 import java.security.spec.EncodedKeySpec;
 

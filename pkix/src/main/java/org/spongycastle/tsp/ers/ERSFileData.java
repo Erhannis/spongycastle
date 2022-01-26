@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Generic class for holding a File of data for RFC 4998 ERS.

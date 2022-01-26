@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class SimpleTestTest
     extends TestCase
 {
     public void testCrypto()
     {
-        org.bouncycastle.util.test.Test[] tests = RegressionTest.tests;
+        org.spongycastle.util.test.Test[] tests = RegressionTest.tests;
 
         for (int i = 0; i != tests.length; i++)
         {

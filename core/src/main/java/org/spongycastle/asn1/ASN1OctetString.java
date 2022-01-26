@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Abstract base for the ASN.1 OCTET STRING data type

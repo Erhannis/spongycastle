@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.crypto.sphincsplus;
+package org.spongycastle.pqc.crypto.sphincsplus;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.crypto.generators.MGF1BytesGenerator;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.MGFParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.crypto.generators.MGF1BytesGenerator;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.MGFParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 abstract class SPHINCSPlusEngine
 {

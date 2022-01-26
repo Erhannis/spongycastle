@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 public class NoSuchStoreException
     extends Exception

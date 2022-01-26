@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTestResult;
+import org.spongycastle.util.test.Test;
+import org.spongycastle.util.test.TestResult;
 
 public class DERUTF8StringTest 
     implements Test

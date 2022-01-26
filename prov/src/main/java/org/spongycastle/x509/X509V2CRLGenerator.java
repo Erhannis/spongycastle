@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -18,32 +18,32 @@ import java.util.Set;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.TBSCertList;
-import org.bouncycastle.asn1.x509.Time;
-import org.bouncycastle.asn1.x509.V2TBSCertListGenerator;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.asn1.x509.X509ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.X509Name;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.X509CRLObject;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.TBSCertList;
+import org.spongycastle.asn1.x509.Time;
+import org.spongycastle.asn1.x509.V2TBSCertListGenerator;
+import org.spongycastle.asn1.x509.X509Extensions;
+import org.spongycastle.asn1.x509.X509ExtensionsGenerator;
+import org.spongycastle.asn1.x509.X509Name;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.X509CRLObject;
 
 /**
  * class to produce an X.509 Version 2 CRL.
- *  @deprecated use org.bouncycastle.cert.X509v2CRLBuilder.
+ *  @deprecated use org.spongycastle.cert.X509v2CRLBuilder.
  */
 public class X509V2CRLGenerator
 {

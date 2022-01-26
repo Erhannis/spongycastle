@@ -1,10 +1,10 @@
-package org.bouncycastle.bcpg.attr;
+package org.spongycastle.bcpg.attr;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import org.bouncycastle.bcpg.UserAttributeSubpacket;
-import org.bouncycastle.bcpg.UserAttributeSubpacketTags;
+import org.spongycastle.bcpg.UserAttributeSubpacket;
+import org.spongycastle.bcpg.UserAttributeSubpacketTags;
 
 /**
  * Basic type for a image attribute packet.

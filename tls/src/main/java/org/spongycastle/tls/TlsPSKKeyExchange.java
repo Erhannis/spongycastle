@@ -1,18 +1,18 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.crypto.TlsAgreement;
-import org.bouncycastle.tls.crypto.TlsCertificateRole;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsDHConfig;
-import org.bouncycastle.tls.crypto.TlsECConfig;
-import org.bouncycastle.tls.crypto.TlsEncryptor;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.crypto.TlsAgreement;
+import org.spongycastle.tls.crypto.TlsCertificateRole;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsDHConfig;
+import org.spongycastle.tls.crypto.TlsECConfig;
+import org.spongycastle.tls.crypto.TlsEncryptor;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.util.Arrays;
 
 /**
  * (D)TLS PSK key exchange (RFC 4279).

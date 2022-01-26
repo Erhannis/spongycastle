@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg;
+package org.spongycastle.gpg;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -12,12 +12,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.openpgp.PGPExtendedKeyAttribute;
-import org.bouncycastle.openpgp.PGPRuntimeOperationException;
-import org.bouncycastle.util.Characters;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.openpgp.PGPExtendedKeyAttribute;
+import org.spongycastle.openpgp.PGPRuntimeOperationException;
+import org.spongycastle.util.Characters;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.io.Streams;
 
 public class SExpression
 {

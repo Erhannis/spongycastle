@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.ntt;
+package org.spongycastle.asn1.ntt;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * From <a href="https://tools.ietf.org/html/rfc3657">RFC 3657</a>

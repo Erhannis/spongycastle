@@ -1,21 +1,21 @@
-package org.bouncycastle.operator.test;
+package org.spongycastle.operator.test;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.Security;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.AlgorithmNameFinder;
-import org.bouncycastle.operator.DefaultAlgorithmNameFinder;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.AlgorithmNameFinder;
+import org.spongycastle.operator.DefaultAlgorithmNameFinder;
 
 public class AllTests
     extends TestCase

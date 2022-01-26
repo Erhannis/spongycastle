@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.TaggedContentInfo;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.cmc.BodyPartID;
+import org.spongycastle.asn1.cmc.TaggedContentInfo;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.util.test.SimpleTest;
 
 public class TaggedContentInfoTest
     extends SimpleTest

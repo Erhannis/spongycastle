@@ -1,14 +1,14 @@
-package org.bouncycastle.asn1.est;
+package org.spongycastle.asn1.est;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.pkcs.Attribute;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.pkcs.Attribute;
 
 /**
  * <pre>

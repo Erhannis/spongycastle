@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.KeyPair;
@@ -6,8 +6,8 @@ import java.security.KeyPair;
 import javax.crypto.interfaces.DHPrivateKey;
 import javax.crypto.interfaces.DHPublicKey;
 
-import org.bouncycastle.tls.crypto.TlsAgreement;
-import org.bouncycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.TlsAgreement;
+import org.spongycastle.tls.crypto.TlsSecret;
 
 /**
  * Support class for ephemeral Diffie-Hellman using the JCE.

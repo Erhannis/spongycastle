@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.security.KeyPair;
 import java.security.Security;
@@ -10,25 +10,25 @@ import java.util.Iterator;
 import javax.crypto.spec.OAEPParameterSpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSEnvelopedData;
-import org.bouncycastle.cms.CMSEnvelopedDataGenerator;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.RecipientId;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientId;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.jcajce.util.AnnotatedPrivateKey;
-import org.bouncycastle.jcajce.util.PrivateKeyAnnotator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.jcajce.JcaAlgorithmParametersConverter;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSEnvelopedData;
+import org.spongycastle.cms.CMSEnvelopedDataGenerator;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.RecipientId;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientId;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.jcajce.util.AnnotatedPrivateKey;
+import org.spongycastle.jcajce.util.PrivateKeyAnnotator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.jcajce.JcaAlgorithmParametersConverter;
 
 public class AnnotatedKeyTest
     extends TestCase
@@ -76,7 +76,7 @@ public class AnnotatedKeyTest
         if (!_initialised)
         {
             _initialised = true;
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
 
             _signDN = "O=Bouncy Castle, C=AU";
             _signKP = CMSTestUtil.makeKeyPair();

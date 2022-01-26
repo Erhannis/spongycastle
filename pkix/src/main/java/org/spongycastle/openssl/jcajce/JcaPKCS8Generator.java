@@ -1,11 +1,11 @@
-package org.bouncycastle.openssl.jcajce;
+package org.spongycastle.openssl.jcajce;
 
 import java.security.PrivateKey;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.openssl.PKCS8Generator;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.util.io.pem.PemGenerationException;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.openssl.PKCS8Generator;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.util.io.pem.PemGenerationException;
 
 public class JcaPKCS8Generator
     extends PKCS8Generator

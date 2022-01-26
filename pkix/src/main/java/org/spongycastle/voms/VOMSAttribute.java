@@ -1,14 +1,14 @@
-package org.bouncycastle.voms;
+package org.spongycastle.voms;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.x509.Attribute;
-import org.bouncycastle.asn1.x509.IetfAttrSyntax;
-import org.bouncycastle.cert.X509AttributeCertificateHolder;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.x509.Attribute;
+import org.spongycastle.asn1.x509.IetfAttrSyntax;
+import org.spongycastle.cert.X509AttributeCertificateHolder;
 
 /**
  * Representation of the authorization information (VO, server address

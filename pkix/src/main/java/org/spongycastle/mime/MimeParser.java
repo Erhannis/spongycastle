@@ -1,4 +1,4 @@
-package org.bouncycastle.mime;
+package org.spongycastle.mime;
 
 import java.io.IOException;
 

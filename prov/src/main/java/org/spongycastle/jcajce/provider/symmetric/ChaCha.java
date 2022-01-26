@@ -1,16 +1,16 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.engines.ChaCha7539Engine;
-import org.bouncycastle.crypto.engines.ChaChaEngine;
-import org.bouncycastle.crypto.modes.ChaCha20Poly1305;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseStreamCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.IvAlgorithmParameters;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.engines.ChaCha7539Engine;
+import org.spongycastle.crypto.engines.ChaChaEngine;
+import org.spongycastle.crypto.modes.ChaCha20Poly1305;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseStreamCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.IvAlgorithmParameters;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
 
 public final class ChaCha
 {

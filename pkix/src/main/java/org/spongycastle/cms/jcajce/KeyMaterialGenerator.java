@@ -1,6 +1,6 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 interface KeyMaterialGenerator
 {

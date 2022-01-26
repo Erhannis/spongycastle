@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.ec;
+package org.spongycastle.crypto.ec;
 
-import org.bouncycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CipherParameters;
 
 public interface ECPairTransform
 {

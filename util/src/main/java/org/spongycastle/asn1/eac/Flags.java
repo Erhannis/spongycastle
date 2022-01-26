@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.eac;
+package org.spongycastle.asn1.eac;
 
 import java.util.Enumeration;
 import java.util.Hashtable;

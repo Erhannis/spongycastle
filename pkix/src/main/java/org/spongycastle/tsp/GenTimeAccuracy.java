@@ -1,7 +1,7 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.tsp.Accuracy;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.tsp.Accuracy;
 
 public class GenTimeAccuracy
 {

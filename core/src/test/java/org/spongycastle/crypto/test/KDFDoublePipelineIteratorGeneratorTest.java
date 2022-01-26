@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
 
-import org.bouncycastle.crypto.test.cavp.CAVPReader;
-import org.bouncycastle.crypto.test.cavp.KDFDoublePipelineCounterTests;
-import org.bouncycastle.crypto.test.cavp.KDFDoublePipelineIterationNoCounterTests;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.test.cavp.CAVPReader;
+import org.spongycastle.crypto.test.cavp.KDFDoublePipelineCounterTests;
+import org.spongycastle.crypto.test.cavp.KDFDoublePipelineIterationNoCounterTests;
+import org.spongycastle.util.test.SimpleTest;
 
 public class KDFDoublePipelineIteratorGeneratorTest
     extends SimpleTest

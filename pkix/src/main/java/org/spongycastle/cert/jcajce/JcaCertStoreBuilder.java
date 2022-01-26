@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.security.GeneralSecurityException;
 import java.security.Provider;
@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.util.Store;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.util.Store;
 
 /**
  * Builder to create a CertStore from certificate and CRL stores.

@@ -1,10 +1,10 @@
-package org.bouncycastle.bcpg.sig;
+package org.spongycastle.bcpg.sig;
 
 import java.io.ByteArrayOutputStream;
 
-import org.bouncycastle.bcpg.SignatureSubpacket;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.util.Strings;
 
 /**
  * Class provided a NotationData object according to

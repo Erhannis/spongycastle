@@ -1,11 +1,11 @@
 
-package org.bouncycastle.est.test;
+package org.spongycastle.est.test;
 
 import java.security.Security;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 class ESTTestSetup
     extends TestSetup

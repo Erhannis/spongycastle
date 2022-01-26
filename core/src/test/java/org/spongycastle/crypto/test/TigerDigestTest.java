@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.TigerDigest;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.TigerDigest;
 
 /**
  * Tiger Digest Test

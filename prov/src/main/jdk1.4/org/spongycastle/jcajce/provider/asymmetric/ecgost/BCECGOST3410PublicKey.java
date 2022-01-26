@@ -1,43 +1,43 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ecgost;
+package org.spongycastle.jcajce.provider.asymmetric.ecgost;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.cryptopro.ECGOST3410NamedCurves;
-import org.bouncycastle.asn1.cryptopro.GOST3410PublicKeyAlgParameters;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X962Parameters;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ECPoint;
-import org.bouncycastle.asn1.x9.X9IntegerConverter;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.jcajce.provider.config.ProviderConfiguration;
-import org.bouncycastle.jce.ECGOST3410NamedCurveTable;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.cryptopro.ECGOST3410NamedCurves;
+import org.spongycastle.asn1.cryptopro.GOST3410PublicKeyAlgParameters;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X962Parameters;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.asn1.x9.X9ECPoint;
+import org.spongycastle.asn1.x9.X9IntegerConverter;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.jcajce.provider.config.ProviderConfiguration;
+import org.spongycastle.jce.ECGOST3410NamedCurveTable;
+import org.spongycastle.jce.interfaces.ECPointEncoder;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECPublicKeySpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
 
 public class BCECGOST3410PublicKey
     implements ECPublicKey, ECPointEncoder
@@ -74,7 +74,7 @@ public class BCECGOST3410PublicKey
         {
             this.ecSpec = null;
 
-            org.bouncycastle.jce.spec.ECParameterSpec s = configuration.getEcImplicitlyCa();
+            org.spongycastle.jce.spec.ECParameterSpec s = configuration.getEcImplicitlyCa();
 
             this.ecPublicKey = new ECPublicKeyParameters(
                 s.getCurve().createPoint(spec.getQ().getAffineXCoord().toBigInteger(), spec.getQ().getAffineYCoord().toBigInteger()),
@@ -313,7 +313,7 @@ public class BCECGOST3410PublicKey
         return (ECParameterSpec)ecSpec;
     }
     
-    public org.bouncycastle.math.ec.ECPoint getQ()
+    public org.spongycastle.math.ec.ECPoint getQ()
     {
         if (ecSpec == null)
         {

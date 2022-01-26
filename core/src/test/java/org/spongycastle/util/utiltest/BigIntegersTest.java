@@ -1,13 +1,13 @@
-package org.bouncycastle.util.utiltest;
+package org.spongycastle.util.utiltest;
 
 import java.math.BigInteger;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.IPAddress;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.IPAddress;
+import org.spongycastle.util.encoders.Hex;
 
 public class BigIntegersTest
     extends TestCase

@@ -1,17 +1,17 @@
-package org.bouncycastle.pqc.crypto.mceliece;
+package org.spongycastle.pqc.crypto.mceliece;
 
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.pqc.math.linearalgebra.GF2Matrix;
-import org.bouncycastle.pqc.math.linearalgebra.GF2mField;
-import org.bouncycastle.pqc.math.linearalgebra.GoppaCode;
-import org.bouncycastle.pqc.math.linearalgebra.GoppaCode.MaMaPe;
-import org.bouncycastle.pqc.math.linearalgebra.Permutation;
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialGF2mSmallM;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.pqc.math.linearalgebra.GF2Matrix;
+import org.spongycastle.pqc.math.linearalgebra.GF2mField;
+import org.spongycastle.pqc.math.linearalgebra.GoppaCode;
+import org.spongycastle.pqc.math.linearalgebra.GoppaCode.MaMaPe;
+import org.spongycastle.pqc.math.linearalgebra.Permutation;
+import org.spongycastle.pqc.math.linearalgebra.PolynomialGF2mSmallM;
 
 
 /**

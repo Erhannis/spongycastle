@@ -1,4 +1,4 @@
-package org.bouncycastle.util.io.pem;
+package org.spongycastle.util.io.pem;
 
 /**
  * Base interface for generators of PEM objects.

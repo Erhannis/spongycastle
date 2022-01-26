@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -9,20 +9,20 @@ import java.security.cert.X509Certificate;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.cms.IssuerAndSerialNumber;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.jcajce.util.AlgorithmParametersUtils;
-import org.bouncycastle.jcajce.util.AnnotatedPrivateKey;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.cms.IssuerAndSerialNumber;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.jcajce.util.AlgorithmParametersUtils;
+import org.spongycastle.jcajce.util.AnnotatedPrivateKey;
 
 class CMSUtils
 {

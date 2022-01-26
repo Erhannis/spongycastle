@@ -1,20 +1,20 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.DSA;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.DSADigestSigner;
-import org.bouncycastle.crypto.signers.ECDSASigner;
-import org.bouncycastle.crypto.signers.HMacDSAKCalculator;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.TlsFatalAlert;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.signers.DSADigestSigner;
+import org.spongycastle.crypto.signers.ECDSASigner;
+import org.spongycastle.crypto.signers.HMacDSAKCalculator;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.TlsFatalAlert;
 
 /**
  * Implementation class for generation of ECDSA signatures in TLS 1.3+ using the BC light-weight API.

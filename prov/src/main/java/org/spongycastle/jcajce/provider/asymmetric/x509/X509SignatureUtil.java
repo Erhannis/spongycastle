@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -13,21 +13,21 @@ import java.security.spec.PSSParameterSpec;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Null;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RSASSAPSSparams;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.jcajce.util.MessageDigestUtils;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Null;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RSASSAPSSparams;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.jcajce.util.MessageDigestUtils;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.encoders.Hex;
 
 class X509SignatureUtil
 {

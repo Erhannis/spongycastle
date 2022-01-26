@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.jcajce.spec;
+package org.spongycastle.pqc.jcajce.spec;
 
 import java.security.InvalidParameterException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialRingGF2;
+import org.spongycastle.pqc.math.linearalgebra.PolynomialRingGF2;
 
 /**
  * This class provides a specification for the parameters that are used by the

@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.digests.Kangaroo.KangarooParameters;
-import org.bouncycastle.crypto.digests.Kangaroo.KangarooTwelve;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.digests.Kangaroo.KangarooParameters;
+import org.spongycastle.crypto.digests.Kangaroo.KangarooTwelve;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Test Cases for Kangaroo12. No TestVectors are available for MarsupilamiFourteen.

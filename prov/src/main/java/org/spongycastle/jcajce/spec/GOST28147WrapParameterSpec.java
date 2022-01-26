@@ -1,14 +1,14 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 import java.security.spec.AlgorithmParameterSpec;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.crypto.engines.GOST28147Engine;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
+import org.spongycastle.crypto.engines.GOST28147Engine;
+import org.spongycastle.util.Arrays;
 
 /**
  * A parameter spec for the GOST-28147 cipher.

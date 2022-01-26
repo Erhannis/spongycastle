@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.PBEParametersGenerator;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.PBEParametersGenerator;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
 
 /**
  * Generator for PBE derived keys and ivs as defined by PKCS 5 V2.0 Scheme 1.

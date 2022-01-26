@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 /**
  * Interface a selector from a store should conform to.

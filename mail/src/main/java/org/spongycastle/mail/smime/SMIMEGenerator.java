@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -15,8 +15,8 @@ import javax.mail.Session;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
-import org.bouncycastle.cms.CMSEnvelopedGenerator;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.cms.CMSEnvelopedGenerator;
+import org.spongycastle.util.Strings;
 
 /**
  * super class of the various generators.

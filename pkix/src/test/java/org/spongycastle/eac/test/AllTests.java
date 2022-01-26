@@ -1,4 +1,4 @@
-package org.bouncycastle.eac.test;
+package org.spongycastle.eac.test;
 
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
@@ -13,24 +13,24 @@ import java.security.Security;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.eac.CertificateHolderAuthorization;
-import org.bouncycastle.asn1.eac.CertificateHolderReference;
-import org.bouncycastle.asn1.eac.CertificationAuthorityReference;
-import org.bouncycastle.asn1.eac.EACObjectIdentifiers;
-import org.bouncycastle.asn1.eac.PackedDate;
-import org.bouncycastle.eac.EACCertificateBuilder;
-import org.bouncycastle.eac.EACCertificateHolder;
-import org.bouncycastle.eac.EACCertificateRequestHolder;
-import org.bouncycastle.eac.jcajce.JcaPublicKeyConverter;
-import org.bouncycastle.eac.operator.EACSignatureVerifier;
-import org.bouncycastle.eac.operator.EACSigner;
-import org.bouncycastle.eac.operator.jcajce.JcaEACSignatureVerifierBuilder;
-import org.bouncycastle.eac.operator.jcajce.JcaEACSignerBuilder;
-import org.bouncycastle.jce.ECNamedCurveTable;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.eac.CertificateHolderAuthorization;
+import org.spongycastle.asn1.eac.CertificateHolderReference;
+import org.spongycastle.asn1.eac.CertificationAuthorityReference;
+import org.spongycastle.asn1.eac.EACObjectIdentifiers;
+import org.spongycastle.asn1.eac.PackedDate;
+import org.spongycastle.eac.EACCertificateBuilder;
+import org.spongycastle.eac.EACCertificateHolder;
+import org.spongycastle.eac.EACCertificateRequestHolder;
+import org.spongycastle.eac.jcajce.JcaPublicKeyConverter;
+import org.spongycastle.eac.operator.EACSignatureVerifier;
+import org.spongycastle.eac.operator.EACSigner;
+import org.spongycastle.eac.operator.jcajce.JcaEACSignatureVerifierBuilder;
+import org.spongycastle.eac.operator.jcajce.JcaEACSignerBuilder;
+import org.spongycastle.jce.ECNamedCurveTable;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
 
 public class AllTests
     extends TestCase

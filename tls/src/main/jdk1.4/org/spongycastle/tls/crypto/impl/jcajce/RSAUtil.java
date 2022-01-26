@@ -1,19 +1,19 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
 import java.security.GeneralSecurityException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RSASSAPSSparams;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.tls.crypto.CryptoHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsCryptoUtils;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RSASSAPSSparams;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.tls.crypto.CryptoHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsCryptoUtils;
 
 class RSAUtil
 {

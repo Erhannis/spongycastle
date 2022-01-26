@@ -1,15 +1,15 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.engines.RSAEngine;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.signers.PSSSigner;
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.engines.RSAEngine;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.crypto.signers.PSSSigner;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
 
 /**
  * Operator supporting the verification of RSASSA-PSS signatures using the BC light-weight API.

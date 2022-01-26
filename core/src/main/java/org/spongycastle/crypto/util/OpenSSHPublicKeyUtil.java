@@ -1,18 +1,18 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.crypto.params.ECNamedDomainParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.math.ec.ECCurve;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAPublicKeyParameters;
+import org.spongycastle.crypto.params.ECNamedDomainParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PublicKeyParameters;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.math.ec.ECCurve;
 
 
 /**

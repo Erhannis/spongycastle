@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.test.speedy;
+package org.spongycastle.crypto.test.speedy;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.generators.Poly1305KeyGenerator;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.generators.Poly1305KeyGenerator;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
 
 /**
  * Poly1305 message authentication code, designed by D. J. Bernstein.

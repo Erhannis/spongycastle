@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.util.test;
+package org.spongycastle.pqc.math.ntru.util.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

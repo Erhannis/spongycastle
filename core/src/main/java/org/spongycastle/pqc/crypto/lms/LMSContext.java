@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
-import static org.bouncycastle.pqc.crypto.lms.LM_OTS.MAX_HASH;
+import static org.spongycastle.pqc.crypto.lms.LM_OTS.MAX_HASH;
 
 public class LMSContext
     implements Digest

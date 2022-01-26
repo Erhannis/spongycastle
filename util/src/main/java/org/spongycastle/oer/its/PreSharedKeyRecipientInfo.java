@@ -1,6 +1,6 @@
-package org.bouncycastle.oer.its;
+package org.spongycastle.oer.its;
 
-import org.bouncycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1OctetString;
 
 /**
  * PreSharedKeyRecipientInfo ::= HashedId8

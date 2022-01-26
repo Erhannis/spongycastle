@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -7,9 +7,9 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.util.Arrays;
 
 public class DTLSClientProtocol
     extends DTLSProtocol

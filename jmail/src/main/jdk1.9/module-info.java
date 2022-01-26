@@ -1,11 +1,11 @@
-module org.bouncycastle.mail
+module org.spongycastle.mail
 {
-    requires org.bouncycastle.provider;
-    requires org.bouncycastle.pkix;
+    requires org.spongycastle.provider;
+    requires org.spongycastle.pkix;
 
-    exports org.bouncycastle.mail.smime;
-    exports org.bouncycastle.mail.smime.examples;
-    exports org.bouncycastle.mail.smime.handlers;
-    exports org.bouncycastle.mail.smime.util;
-    exports org.bouncycastle.mail.smime.validator;
+    exports org.spongycastle.mail.smime;
+    exports org.spongycastle.mail.smime.examples;
+    exports org.spongycastle.mail.smime.handlers;
+    exports org.spongycastle.mail.smime.util;
+    exports org.spongycastle.mail.smime.validator;
 }

@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 
 import java.io.IOException;
@@ -12,9 +12,9 @@ import java.util.Set;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 
-import org.bouncycastle.est.ESTClientSourceProvider;
-import org.bouncycastle.est.Source;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.est.ESTClientSourceProvider;
+import org.spongycastle.est.Source;
+import org.spongycastle.util.Strings;
 
 class DefaultESTClientSourceProvider
     implements ESTClientSourceProvider

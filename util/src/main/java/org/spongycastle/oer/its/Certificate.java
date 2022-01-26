@@ -1,4 +1,4 @@
-package org.bouncycastle.oer.its;
+package org.spongycastle.oer.its;
 
 /**
  * Certificate ::= CertificateBase (ImplicitCertificate | ExplicitCertificate)

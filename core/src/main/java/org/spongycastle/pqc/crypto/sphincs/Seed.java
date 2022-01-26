@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.sphincs;
+package org.spongycastle.pqc.crypto.sphincs;
 
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.engines.ChaChaEngine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.StreamCipher;
+import org.spongycastle.crypto.engines.ChaChaEngine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.Pack;
 
 class Seed
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider.test;
+package org.spongycastle.jsse.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.security.Security;
@@ -21,7 +21,7 @@ import javax.net.ssl.CertPathTrustManagerParameters;
 import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Base64;
 
 import junit.framework.TestCase;
 

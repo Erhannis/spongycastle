@@ -1,20 +1,20 @@
-package org.bouncycastle.asn1.icao.test;
+package org.spongycastle.asn1.icao.test;
 
 import java.io.IOException;
 import java.util.Random;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.icao.DataGroupHash;
-import org.bouncycastle.asn1.icao.LDSSecurityObject;
-import org.bouncycastle.asn1.icao.LDSVersionInfo;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.icao.DataGroupHash;
+import org.spongycastle.asn1.icao.LDSSecurityObject;
+import org.spongycastle.asn1.icao.LDSVersionInfo;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.util.test.SimpleTest;
 
 public class LDSSecurityObjectUnitTest 
     extends SimpleTest

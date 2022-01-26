@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.util;
+package org.spongycastle.mail.smime.util;
 
 import javax.mail.internet.SharedInputStream;
 import java.io.BufferedInputStream;

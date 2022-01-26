@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
 /**
  * Utility methods for making use of EntropySources.

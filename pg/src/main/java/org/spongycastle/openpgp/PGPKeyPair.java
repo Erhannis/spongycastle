@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 /**
  * General class to handle JCA key pairs and convert them into OpenPGP ones.

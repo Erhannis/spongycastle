@@ -1,14 +1,14 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.bouncycastle.asn1.dvcs.DVCSRequestInformation;
-import org.bouncycastle.asn1.dvcs.DVCSTime;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.PolicyInformation;
-import org.bouncycastle.tsp.TimeStampToken;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.dvcs.DVCSRequestInformation;
+import org.spongycastle.asn1.dvcs.DVCSTime;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.PolicyInformation;
+import org.spongycastle.tsp.TimeStampToken;
+import org.spongycastle.util.Arrays;
 
 /**
  * Information piece of DVCS requests.

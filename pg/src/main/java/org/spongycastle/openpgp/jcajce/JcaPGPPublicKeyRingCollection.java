@@ -1,13 +1,13 @@
-package org.bouncycastle.openpgp.jcajce;
+package org.spongycastle.openpgp.jcajce;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPublicKeyRingCollection;
-import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPublicKeyRingCollection;
+import org.spongycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
 
 public class JcaPGPPublicKeyRingCollection
     extends PGPPublicKeyRingCollection

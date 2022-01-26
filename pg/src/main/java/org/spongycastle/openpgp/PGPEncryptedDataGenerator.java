@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -6,16 +6,16 @@ import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.bcpg.BCPGOutputStream;
-import org.bouncycastle.bcpg.HashAlgorithmTags;
-import org.bouncycastle.bcpg.PacketTags;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.openpgp.operator.PBEKeyEncryptionMethodGenerator;
-import org.bouncycastle.openpgp.operator.PGPDataEncryptor;
-import org.bouncycastle.openpgp.operator.PGPDataEncryptorBuilder;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
-import org.bouncycastle.openpgp.operator.PGPKeyEncryptionMethodGenerator;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.bcpg.BCPGOutputStream;
+import org.spongycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.bcpg.PacketTags;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.openpgp.operator.PBEKeyEncryptionMethodGenerator;
+import org.spongycastle.openpgp.operator.PGPDataEncryptor;
+import org.spongycastle.openpgp.operator.PGPDataEncryptorBuilder;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.openpgp.operator.PGPKeyEncryptionMethodGenerator;
+import org.spongycastle.util.io.TeeOutputStream;
 
 /**
  * Generator for encrypted objects.

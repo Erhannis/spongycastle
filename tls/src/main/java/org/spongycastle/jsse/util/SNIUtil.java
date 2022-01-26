@@ -1,11 +1,11 @@
-package org.bouncycastle.jsse.util;
+package org.spongycastle.jsse.util;
 
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.bouncycastle.jsse.BCSNIHostName;
-import org.bouncycastle.util.IPAddress;
+import org.spongycastle.jsse.BCSNIHostName;
+import org.spongycastle.util.IPAddress;
 
 public class SNIUtil
 {

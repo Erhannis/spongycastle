@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 
 import java.io.IOException;
@@ -9,14 +9,14 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.est.ESTClient;
-import org.bouncycastle.est.ESTClientSourceProvider;
-import org.bouncycastle.est.ESTException;
-import org.bouncycastle.est.ESTRequest;
-import org.bouncycastle.est.ESTRequestBuilder;
-import org.bouncycastle.est.ESTResponse;
-import org.bouncycastle.est.Source;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.est.ESTClient;
+import org.spongycastle.est.ESTClientSourceProvider;
+import org.spongycastle.est.ESTException;
+import org.spongycastle.est.ESTRequest;
+import org.spongycastle.est.ESTRequestBuilder;
+import org.spongycastle.est.ESTResponse;
+import org.spongycastle.est.Source;
+import org.spongycastle.util.Properties;
 
 class DefaultESTClient
     implements ESTClient
@@ -122,7 +122,7 @@ class DefaultESTClient
 
             OutputStream os = null;
 
-            Set<String> opts = Properties.asKeySet("org.bouncycastle.debug.est");
+            Set<String> opts = Properties.asKeySet("org.spongycastle.debug.est");
             if (opts.contains("output") ||
                 opts.contains("all"))
             {

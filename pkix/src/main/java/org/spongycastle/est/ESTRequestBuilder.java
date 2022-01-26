@@ -1,8 +1,8 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 import java.net.URL;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * Builder for basic EST requests

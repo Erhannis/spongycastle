@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,7 +6,7 @@ import java.util.Collection;
 /**
  * This class contains a collection for collection based <code>X509Store</code>s.
  * 
- * @see org.bouncycastle.x509.X509Store
+ * @see org.spongycastle.x509.X509Store
  * 
  */
 public class X509CollectionStoreParameters

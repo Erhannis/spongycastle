@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.x9;
+package org.spongycastle.asn1.x9;
 
 /**
  * A holding class that allows for X9ECParameters to be lazily constructed.

@@ -1,20 +1,20 @@
-package org.bouncycastle.asn1.isismtt.x509;
+package org.spongycastle.asn1.isismtt.x509;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1PrintableString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.x500.DirectoryString;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.IssuerSerial;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1PrintableString;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERPrintableString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.x500.DirectoryString;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.IssuerSerial;
 
 /**
  * Attribute to indicate that the certificate holder may sign in the name of a

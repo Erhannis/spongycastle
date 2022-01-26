@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.path.test;
+package org.spongycastle.cert.path.test;
 
 import java.security.Security;
 
@@ -6,15 +6,15 @@ import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
 {
     public void testSimpleTests()
     {
-        org.bouncycastle.util.test.Test[] tests = new org.bouncycastle.util.test.Test[] {
+        org.spongycastle.util.test.Test[] tests = new org.spongycastle.util.test.Test[] {
             new CertPathTest(), new CertPathValidationTest(), new BasicConstraintsTest(),
                 new PKITSBasicConstraintsTest() };
 

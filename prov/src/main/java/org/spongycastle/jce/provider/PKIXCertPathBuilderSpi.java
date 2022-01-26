@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.cert.CertPath;
@@ -17,13 +17,13 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.jcajce.PKIXCertStore;
-import org.bouncycastle.jcajce.PKIXExtendedBuilderParameters;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.x509.CertificateFactory;
-import org.bouncycastle.x509.ExtendedPKIXBuilderParameters;
-import org.bouncycastle.x509.ExtendedPKIXParameters;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.jcajce.PKIXCertStore;
+import org.spongycastle.jcajce.PKIXExtendedBuilderParameters;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jcajce.provider.asymmetric.x509.CertificateFactory;
+import org.spongycastle.x509.ExtendedPKIXBuilderParameters;
+import org.spongycastle.x509.ExtendedPKIXParameters;
 
 /**
  * Implements the PKIX CertPathBuilding algorithm for BouncyCastle.

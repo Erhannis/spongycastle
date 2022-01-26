@@ -1,16 +1,16 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 import java.io.IOException;
 import java.math.BigInteger;
 import java.text.ParseException;
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.tsp.Accuracy;
-import org.bouncycastle.asn1.tsp.TSTInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.tsp.Accuracy;
+import org.spongycastle.asn1.tsp.TSTInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.GeneralName;
 
 public class TimeStampTokenInfo
 {

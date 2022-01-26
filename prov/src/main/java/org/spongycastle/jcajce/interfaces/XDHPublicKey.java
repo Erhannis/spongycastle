@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.interfaces;
+package org.spongycastle.jcajce.interfaces;
 
 import java.math.BigInteger;
 import java.security.PublicKey;

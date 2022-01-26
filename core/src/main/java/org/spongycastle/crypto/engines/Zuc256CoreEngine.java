@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.util.Memoable;
 
 /**
  * Zuc256 implementation.

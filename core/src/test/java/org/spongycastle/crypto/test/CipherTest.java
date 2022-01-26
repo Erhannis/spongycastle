@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.test.SimpleTest;
 
 public abstract class CipherTest
     extends SimpleTest

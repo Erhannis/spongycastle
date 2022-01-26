@@ -1,9 +1,9 @@
-package org.bouncycastle.oer.its;
+package org.spongycastle.oer.its;
 
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.oer.OEROptional;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.oer.OEROptional;
 
 /**
  * PsidSsp ::= SEQUENCE {

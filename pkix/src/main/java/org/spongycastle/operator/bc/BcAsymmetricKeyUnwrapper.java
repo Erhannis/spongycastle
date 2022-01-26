@@ -1,14 +1,14 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.operator.AsymmetricKeyUnwrapper;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.OperatorException;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.operator.AsymmetricKeyUnwrapper;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.OperatorException;
 
 public abstract class BcAsymmetricKeyUnwrapper
     extends AsymmetricKeyUnwrapper

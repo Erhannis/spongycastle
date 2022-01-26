@@ -1,4 +1,4 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
 /**
  * Base interface for an input consuming AEAD Decryptor supporting associated text.

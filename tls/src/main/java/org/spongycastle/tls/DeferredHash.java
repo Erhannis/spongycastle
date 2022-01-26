@@ -1,13 +1,13 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import org.bouncycastle.tls.crypto.CryptoHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsHash;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.tls.crypto.CryptoHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsHash;
+import org.spongycastle.util.Integers;
 
 /**
  * Buffers input until the hash algorithm is determined.

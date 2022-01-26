@@ -1,10 +1,10 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.operator.PBESecretKeyDecryptor;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculatorProvider;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.operator.PBESecretKeyDecryptor;
+import org.spongycastle.openpgp.operator.PGPDigestCalculatorProvider;
 
 public class BcPBESecretKeyDecryptorBuilder
 {

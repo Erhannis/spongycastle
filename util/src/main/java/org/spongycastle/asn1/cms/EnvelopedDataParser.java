@@ -1,14 +1,14 @@
-package org.bouncycastle.asn1.cms;
+package org.spongycastle.asn1.cms;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1SetParser;
-import org.bouncycastle.asn1.ASN1TaggedObjectParser;
-import org.bouncycastle.asn1.ASN1Util;
-import org.bouncycastle.asn1.BERTags;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.ASN1SetParser;
+import org.spongycastle.asn1.ASN1TaggedObjectParser;
+import org.spongycastle.asn1.ASN1Util;
+import org.spongycastle.asn1.BERTags;
 
 /** 
  * Parser of <a href="https://tools.ietf.org/html/rfc5652#section-6.1">RFC 5652</a> {@link EnvelopedData} object.

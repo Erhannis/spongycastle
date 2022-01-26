@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.crypto.qtesla;
+package org.spongycastle.pqc.crypto.qtesla;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.util.Arrays;
 
 /**
  * qTESLA public key

@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.agreement.jpake;
+package org.spongycastle.crypto.agreement.jpake;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.util.Arrays;
 
 /**
  * A participant in a Password Authenticated Key Exchange by Juggling (J-PAKE) exchange.

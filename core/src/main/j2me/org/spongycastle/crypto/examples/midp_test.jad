@@ -1,4 +1,4 @@
-MIDlet-1: MIDPTest, , org.bouncycastle.crypto.examples.MIDPTest
+MIDlet-1: MIDPTest, , org.spongycastle.crypto.examples.MIDPTest
 MIDlet-Name: MIDPTest
 MIDlet-Jar-Size: 300000
 MIDlet-Jar-URL: midp_test.jar

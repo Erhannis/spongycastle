@@ -1,32 +1,32 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
-import org.bouncycastle.asn1.sec.ECPrivateKey;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECNamedDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.nist.NISTNamedCurves;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.pkcs.RSAPrivateKey;
+import org.spongycastle.asn1.sec.ECPrivateKey;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAPrivateKeyParameters;
+import org.spongycastle.crypto.params.ECNamedDomainParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PublicKeyParameters;
+import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Strings;
 
 
 /**

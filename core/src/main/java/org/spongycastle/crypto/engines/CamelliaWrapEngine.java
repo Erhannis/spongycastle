@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
 /**
  * An implementation of the Camellia key wrapper based on RFC 3657/RFC 3394.

@@ -1,22 +1,22 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.encodings.PKCS1Encoding;
-import org.bouncycastle.crypto.engines.RSABlindedEngine;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.signers.GenericSigner;
-import org.bouncycastle.crypto.signers.RSADigestSigner;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.encodings.PKCS1Encoding;
+import org.spongycastle.crypto.engines.RSABlindedEngine;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.crypto.signers.GenericSigner;
+import org.spongycastle.crypto.signers.RSADigestSigner;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
 
 /**
  * Operator supporting the generation of RSASSA-PKCS1-v1_5 signatures using the BC light-weight API.

@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
 class NTT
 {

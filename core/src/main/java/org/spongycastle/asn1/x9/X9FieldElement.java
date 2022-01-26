@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.x9;
+package org.spongycastle.asn1.x9;
 
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.math.ec.ECFieldElement;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.math.ec.ECFieldElement;
 
 /**
  * class for processing an FieldElement as a DER object.

@@ -1,4 +1,4 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 /**
  * Basic type for a symmetric key encrypted packet

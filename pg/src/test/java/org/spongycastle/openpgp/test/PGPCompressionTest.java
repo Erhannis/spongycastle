@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -7,13 +7,13 @@ import java.io.OutputStream;
 import java.security.SecureRandom;
 import java.security.Security;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openpgp.PGPCompressedData;
-import org.bouncycastle.openpgp.PGPCompressedDataGenerator;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.jcajce.JcaPGPObjectFactory;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.UncloseableOutputStream;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openpgp.PGPCompressedData;
+import org.spongycastle.openpgp.PGPCompressedDataGenerator;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.jcajce.JcaPGPObjectFactory;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.UncloseableOutputStream;
 
 public class PGPCompressionTest 
     extends SimpleTest

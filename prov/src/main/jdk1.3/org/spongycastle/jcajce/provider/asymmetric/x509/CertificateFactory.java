@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.security.cert.CRL;
 import java.security.cert.CRLException;
-import org.bouncycastle.jce.cert.CertPath;
+import org.spongycastle.jce.cert.CertPath;
 import java.security.cert.CertificateException;
-import org.bouncycastle.jce.cert.CertificateFactorySpi;
+import org.spongycastle.jce.cert.CertificateFactorySpi;
 import java.security.cert.CertificateParsingException;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
@@ -16,18 +16,18 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.SignedData;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.SignedData;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.util.io.Streams;
 
 /**
  * class for dealing with X509 certificates.

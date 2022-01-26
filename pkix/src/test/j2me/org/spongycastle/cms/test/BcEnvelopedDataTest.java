@@ -1,22 +1,22 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.util.Collection;
 import java.util.Iterator;
 
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSEnvelopedData;
-import org.bouncycastle.cms.CMSEnvelopedDataGenerator;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.bc.BcCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.bc.BcRSAKeyTransEnvelopedRecipient;
-import org.bouncycastle.cms.bc.BcRSAKeyTransRecipientInfoGenerator;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSEnvelopedData;
+import org.spongycastle.cms.CMSEnvelopedDataGenerator;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.bc.BcCMSContentEncryptorBuilder;
+import org.spongycastle.cms.bc.BcRSAKeyTransEnvelopedRecipient;
+import org.spongycastle.cms.bc.BcRSAKeyTransRecipientInfoGenerator;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.test.SimpleTest;
 
 public class BcEnvelopedDataTest
     extends SimpleTest

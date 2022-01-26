@@ -1,4 +1,4 @@
-package org.bouncycastle.eac.jcajce;
+package org.spongycastle.eac.jcajce;
 
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;

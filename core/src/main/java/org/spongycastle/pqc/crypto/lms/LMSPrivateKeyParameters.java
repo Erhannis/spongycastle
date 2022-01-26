@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -7,10 +7,10 @@ import java.io.InputStream;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.pqc.crypto.ExhaustedPrivateKeyException;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.pqc.crypto.ExhaustedPrivateKeyException;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
 
 public class LMSPrivateKeyParameters
     extends LMSKeyParameters

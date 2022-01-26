@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 import java.util.Random;
 
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.BodyPartPath;
-import org.bouncycastle.asn1.cmc.BodyPartReference;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.cmc.BodyPartID;
+import org.spongycastle.asn1.cmc.BodyPartPath;
+import org.spongycastle.asn1.cmc.BodyPartReference;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class BodyPartReferenceTest

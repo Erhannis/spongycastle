@@ -1,21 +1,21 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.agreement.srp.SRP6Client;
-import org.bouncycastle.crypto.agreement.srp.SRP6Server;
-import org.bouncycastle.crypto.agreement.srp.SRP6StandardGroups;
-import org.bouncycastle.crypto.agreement.srp.SRP6Util;
-import org.bouncycastle.crypto.agreement.srp.SRP6VerifierGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.generators.DHParametersGenerator;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.SRP6GroupParameters;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.agreement.srp.SRP6Client;
+import org.spongycastle.crypto.agreement.srp.SRP6Server;
+import org.spongycastle.crypto.agreement.srp.SRP6StandardGroups;
+import org.spongycastle.crypto.agreement.srp.SRP6Util;
+import org.spongycastle.crypto.agreement.srp.SRP6VerifierGenerator;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.generators.DHParametersGenerator;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.SRP6GroupParameters;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class SRP6Test extends SimpleTest
 {

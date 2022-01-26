@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 /**
  * Builder and holder class for preparing SP 800-56A compliant OtherInfo. The data is ultimately encoded as a DER SEQUENCE.

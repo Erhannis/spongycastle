@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DERGeneralizedTime;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERPrintableString;
+import org.spongycastle.asn1.DERUTF8String;
 
 /**
  * The default converter for X509 DN entries when going from their

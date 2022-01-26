@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA224Digest;
 
 /**
  * standard vector test for SHA-224 from RFC 3874 - only the last three are in

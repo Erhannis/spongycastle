@@ -1,8 +1,8 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
 
 /**
  * Support interface for generating a signature based on our private credentials.

@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.cms.test;
+package org.spongycastle.asn1.cms.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -7,23 +7,23 @@ import java.io.OutputStream;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1OctetStringParser;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.BEROctetString;
-import org.bouncycastle.asn1.BEROctetStringGenerator;
-import org.bouncycastle.asn1.BERSequenceGenerator;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.DERSequenceGenerator;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.CompressedDataParser;
-import org.bouncycastle.asn1.cms.ContentInfoParser;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1OctetStringParser;
+import org.spongycastle.asn1.ASN1OutputStream;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.ASN1StreamParser;
+import org.spongycastle.asn1.BEROctetString;
+import org.spongycastle.asn1.BEROctetStringGenerator;
+import org.spongycastle.asn1.BERSequenceGenerator;
+import org.spongycastle.asn1.BERTags;
+import org.spongycastle.asn1.DERSequenceGenerator;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.CompressedDataParser;
+import org.spongycastle.asn1.cms.ContentInfoParser;
+import org.spongycastle.util.Arrays;
 
 public class OctetStringTest 
     extends TestCase 

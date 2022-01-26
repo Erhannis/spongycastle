@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.Test;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.Test;
 
 public final class RegressionTest
 {

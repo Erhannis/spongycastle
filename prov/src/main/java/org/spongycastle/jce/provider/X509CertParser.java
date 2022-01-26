@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -9,15 +9,15 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.SignedData;
-import org.bouncycastle.x509.X509StreamParserSpi;
-import org.bouncycastle.x509.util.StreamParsingException;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.SignedData;
+import org.spongycastle.x509.X509StreamParserSpi;
+import org.spongycastle.x509.util.StreamParsingException;
 
 /**
  * @deprecated use CertificateFactory or the PEMParser in the openssl package (pkix jar).
@@ -51,7 +51,7 @@ public class X509CertParser
         }
 
         return new X509CertificateObject(
-                            org.bouncycastle.asn1.x509.Certificate.getInstance(seq));
+                            org.spongycastle.asn1.x509.Certificate.getInstance(seq));
     }
 
     private Certificate getCertificate()
@@ -66,7 +66,7 @@ public class X509CertParser
                 if (obj instanceof ASN1Sequence)
                 {
                    return new X509CertificateObject(
-                                    org.bouncycastle.asn1.x509.Certificate.getInstance(obj));
+                                    org.spongycastle.asn1.x509.Certificate.getInstance(obj));
                 }
             }
         }
@@ -83,7 +83,7 @@ public class X509CertParser
         if (seq != null)
         {
             return new X509CertificateObject(
-                            org.bouncycastle.asn1.x509.Certificate.getInstance(seq));
+                            org.spongycastle.asn1.x509.Certificate.getInstance(seq));
         }
 
         return null;

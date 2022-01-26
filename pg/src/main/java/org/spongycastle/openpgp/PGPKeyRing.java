@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.MarkerPacket;
-import org.bouncycastle.bcpg.Packet;
-import org.bouncycastle.bcpg.PacketTags;
-import org.bouncycastle.bcpg.SignaturePacket;
-import org.bouncycastle.bcpg.TrustPacket;
-import org.bouncycastle.bcpg.UserAttributePacket;
-import org.bouncycastle.bcpg.UserIDPacket;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.MarkerPacket;
+import org.spongycastle.bcpg.Packet;
+import org.spongycastle.bcpg.PacketTags;
+import org.spongycastle.bcpg.SignaturePacket;
+import org.spongycastle.bcpg.TrustPacket;
+import org.spongycastle.bcpg.UserAttributePacket;
+import org.spongycastle.bcpg.UserIDPacket;
 
 /**
  * Parent class for PGP public and secret key rings.

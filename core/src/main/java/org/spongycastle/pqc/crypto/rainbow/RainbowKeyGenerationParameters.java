@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.KeyGenerationParameters;
 
 public class RainbowKeyGenerationParameters
     extends KeyGenerationParameters

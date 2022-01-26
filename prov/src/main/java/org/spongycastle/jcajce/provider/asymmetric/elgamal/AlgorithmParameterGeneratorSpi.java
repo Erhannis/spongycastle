@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.elgamal;
+package org.spongycastle.jcajce.provider.asymmetric.elgamal;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -8,10 +8,10 @@ import java.security.spec.AlgorithmParameterSpec;
 import javax.crypto.spec.DHGenParameterSpec;
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.generators.ElGamalParametersGenerator;
-import org.bouncycastle.crypto.params.ElGamalParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.generators.ElGamalParametersGenerator;
+import org.spongycastle.crypto.params.ElGamalParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
 
 public class AlgorithmParameterGeneratorSpi
     extends BaseAlgorithmParameterGeneratorSpi

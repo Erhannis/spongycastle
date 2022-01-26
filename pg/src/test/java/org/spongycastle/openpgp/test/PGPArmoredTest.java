@@ -1,18 +1,18 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import org.bouncycastle.bcpg.ArmoredInputStream;
-import org.bouncycastle.bcpg.ArmoredOutputStream;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.openpgp.jcajce.JcaPGPObjectFactory;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.bcpg.ArmoredInputStream;
+import org.spongycastle.bcpg.ArmoredOutputStream;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.openpgp.jcajce.JcaPGPObjectFactory;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class PGPArmoredTest
     extends SimpleTest

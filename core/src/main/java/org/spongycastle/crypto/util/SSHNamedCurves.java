@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 import java.util.Collections;
 import java.util.Enumeration;
@@ -6,15 +6,15 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECNamedDomainParameters;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTNamedCurves;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.ec.CustomNamedCurves;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECNamedDomainParameters;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.Strings;
 
 public class SSHNamedCurves
 {

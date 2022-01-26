@@ -1,22 +1,22 @@
-package org.bouncycastle.est.test;
+package org.spongycastle.est.test;
 
 import java.math.BigInteger;
 import java.util.Collection;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.pkcs.Attribute;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.selector.X509CertificateHolderSelector;
-import org.bouncycastle.cmc.SimplePKIResponse;
-import org.bouncycastle.est.CSRAttributesResponse;
-import org.bouncycastle.pkcs.PKCS10CertificationRequest;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.pkcs.Attribute;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.selector.X509CertificateHolderSelector;
+import org.spongycastle.cmc.SimplePKIResponse;
+import org.spongycastle.est.CSRAttributesResponse;
+import org.spongycastle.pkcs.PKCS10CertificationRequest;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.encoders.Base64;
 
 public class ESTParsingTest
     extends TestCase

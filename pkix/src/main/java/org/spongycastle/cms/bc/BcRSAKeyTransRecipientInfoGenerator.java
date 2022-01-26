@@ -1,11 +1,11 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.operator.bc.BcRSAAsymmetricKeyWrapper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.operator.bc.BcRSAAsymmetricKeyWrapper;
 
 public class BcRSAKeyTransRecipientInfoGenerator
     extends BcKeyTransRecipientInfoGenerator

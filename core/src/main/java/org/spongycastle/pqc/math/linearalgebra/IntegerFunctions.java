@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * Class of number-theory related functions for use with integers represented as

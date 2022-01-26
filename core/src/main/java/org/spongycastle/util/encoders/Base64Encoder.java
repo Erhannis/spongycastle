@@ -1,4 +1,4 @@
-package org.bouncycastle.util.encoders;
+package org.spongycastle.util.encoders;
 
 import java.io.IOException;
 import java.io.OutputStream;

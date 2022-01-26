@@ -1,33 +1,33 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.generators.DSAKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DSAParametersGenerator;
-import org.bouncycastle.crypto.params.DSAKeyGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameterGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.crypto.params.DSAValidationParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.DSADigestSigner;
-import org.bouncycastle.crypto.signers.DSASigner;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
-import org.bouncycastle.util.test.TestRandomData;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA3Digest;
+import org.spongycastle.crypto.generators.DSAKeyPairGenerator;
+import org.spongycastle.crypto.generators.DSAParametersGenerator;
+import org.spongycastle.crypto.params.DSAKeyGenerationParameters;
+import org.spongycastle.crypto.params.DSAParameterGenerationParameters;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAPrivateKeyParameters;
+import org.spongycastle.crypto.params.DSAPublicKeyParameters;
+import org.spongycastle.crypto.params.DSAValidationParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.signers.DSADigestSigner;
+import org.spongycastle.crypto.signers.DSASigner;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.FixedSecureRandom;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestRandomBigInteger;
+import org.spongycastle.util.test.TestRandomData;
 
 /**
  * Test based on FIPS 186-2, Appendix 5, an example of DSA, and FIPS 168-3 test vectors.

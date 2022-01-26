@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.InvalidCipherTextException;
 
 /**
  * A cipher mode that includes authenticated encryption with a streaming mode and optional associated data.
@@ -16,7 +16,7 @@ import org.bouncycastle.crypto.InvalidCipherTextException;
  * may be output prior to the call to {@link #doFinal(byte[], int)} that results in an authentication
  * failure. The higher level protocol utilising this cipher must ensure the plaintext data is handled 
  * appropriately until the end of data is reached and the entire ciphertext is authenticated.
- * @see org.bouncycastle.crypto.params.AEADParameters
+ * @see org.spongycastle.crypto.params.AEADParameters
  */
 public interface AEADCipher
 {
@@ -88,7 +88,7 @@ public interface AEADCipher
      * @param outOff offset into out to start copying the data at.
      * @return number of bytes written into out.
      * @throws IllegalStateException if the cipher is in an inappropriate state.
-     * @throws org.bouncycastle.crypto.InvalidCipherTextException if the MAC fails to match.
+     * @throws org.spongycastle.crypto.InvalidCipherTextException if the MAC fails to match.
      */
     public int doFinal(byte[] out, int outOff)
         throws IllegalStateException, InvalidCipherTextException;

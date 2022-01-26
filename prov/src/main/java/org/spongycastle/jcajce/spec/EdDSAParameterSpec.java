@@ -1,8 +1,8 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
 
 /**
  * ParameterSpec for EdDSA signature algorithms.

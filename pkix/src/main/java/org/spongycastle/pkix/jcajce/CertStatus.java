@@ -1,4 +1,4 @@
-package org.bouncycastle.pkix.jcajce;
+package org.spongycastle.pkix.jcajce;
 
 import java.util.Date;
 

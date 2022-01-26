@@ -1,23 +1,23 @@
-package org.bouncycastle.tsp.cms;
+package org.spongycastle.tsp.cms;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.BEROctetString;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.cms.Evidence;
-import org.bouncycastle.asn1.cms.TimeStampAndCRL;
-import org.bouncycastle.asn1.cms.TimeStampTokenEvidence;
-import org.bouncycastle.asn1.cms.TimeStampedData;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.tsp.TimeStampToken;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.BEROctetString;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.cms.Evidence;
+import org.spongycastle.asn1.cms.TimeStampAndCRL;
+import org.spongycastle.asn1.cms.TimeStampTokenEvidence;
+import org.spongycastle.asn1.cms.TimeStampedData;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.tsp.TimeStampToken;
+import org.spongycastle.util.io.Streams;
 
 public class CMSTimeStampedDataGenerator
     extends CMSTimeStampedGenerator

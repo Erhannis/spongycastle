@@ -1,4 +1,4 @@
-package org.bouncycastle.math.field;
+package org.spongycastle.math.field;
 
 import java.math.BigInteger;
 

@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.util.List;
 
-import org.bouncycastle.pqc.crypto.ExhaustedPrivateKeyException;
+import org.spongycastle.pqc.crypto.ExhaustedPrivateKeyException;
 
 class HSS
 {

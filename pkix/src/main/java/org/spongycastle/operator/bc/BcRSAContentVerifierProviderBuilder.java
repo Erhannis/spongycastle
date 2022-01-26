@@ -1,16 +1,16 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.signers.RSADigestSigner;
-import org.bouncycastle.crypto.util.PublicKeyFactory;
-import org.bouncycastle.operator.DigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.signers.RSADigestSigner;
+import org.spongycastle.crypto.util.PublicKeyFactory;
+import org.spongycastle.operator.DigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.OperatorCreationException;
 
 public class BcRSAContentVerifierProviderBuilder
     extends BcContentVerifierProviderBuilder

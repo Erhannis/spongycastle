@@ -1,13 +1,13 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Date;
 
-import org.bouncycastle.bcpg.BCPGOutputStream;
-import org.bouncycastle.bcpg.PacketTags;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.bcpg.BCPGOutputStream;
+import org.spongycastle.bcpg.PacketTags;
+import org.spongycastle.util.Strings;
 
 /**
  * Generator for producing literal data packets.

@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.test;
+package org.spongycastle.mail.smime.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -32,19 +32,19 @@ import javax.mail.internet.MimeMultipart;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.cert.jcajce.JcaCertStore;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
-import org.bouncycastle.i18n.ErrorBundle;
-import org.bouncycastle.mail.smime.SMIMESignedGenerator;
-import org.bouncycastle.mail.smime.validator.SignedMailValidator;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.x509.PKIXCertPathReviewer;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.cert.jcajce.JcaCertStore;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
+import org.spongycastle.i18n.ErrorBundle;
+import org.spongycastle.mail.smime.SMIMESignedGenerator;
+import org.spongycastle.mail.smime.validator.SignedMailValidator;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.x509.PKIXCertPathReviewer;
 
 public class SignedMailValidatorTest extends TestCase
 {
@@ -256,7 +256,7 @@ public class SignedMailValidatorTest extends TestCase
         throws Exception
     {
         MimeBodyPart baseMsg = SMIMETestUtil.makeMimeBodyPart("Hello world!\n");
-        String signDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String signDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         KeyPair signKP = CMSTestUtil.makeKeyPair();
         X509Certificate signCert = CMSTestUtil.makeV1Certificate(signKP, signDN, signKP, signDN);
 
@@ -299,8 +299,8 @@ public class SignedMailValidatorTest extends TestCase
         // read message
         MimeMessage msg = new MimeMessage(session);
 
-        Address fromUser = new InternetAddress("\"Eric H. Echidna\"<eric@bouncycastle.org>");
-        Address toUser = new InternetAddress("example@bouncycastle.org");
+        Address fromUser = new InternetAddress("\"Eric H. Echidna\"<eric.spongycastle.org>");
+        Address toUser = new InternetAddress("example.spongycastle.org");
          
         msg.setFrom(fromUser);
         msg.setRecipient(Message.RecipientType.TO, toUser);
@@ -518,7 +518,7 @@ public class SignedMailValidatorTest extends TestCase
         if (Security.getProvider("BC") == null)
         {
             Security
-                    .addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+                    .addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
         }
     }
     

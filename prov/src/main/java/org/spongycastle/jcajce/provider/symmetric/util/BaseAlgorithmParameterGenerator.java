@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import java.security.AlgorithmParameterGeneratorSpi;
 import java.security.AlgorithmParameters;
@@ -6,8 +6,8 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 public abstract class BaseAlgorithmParameterGenerator
     extends AlgorithmParameterGeneratorSpi

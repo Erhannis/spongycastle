@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.gmss;
+package org.spongycastle.pqc.crypto.gmss;
 
 
 public class GMSSPublicKeyParameters

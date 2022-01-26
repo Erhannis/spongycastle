@@ -1,14 +1,14 @@
-package org.bouncycastle.pqc.jcajce.provider.mceliece;
+package org.spongycastle.pqc.jcajce.provider.mceliece;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
 
 /**
  * utility class for converting jce/jca McElieceCCA2 objects
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 public class McElieceCCA2KeysToParams
 {

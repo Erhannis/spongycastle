@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.io.OutputStream;
 import java.security.InvalidKeyException;
@@ -8,18 +8,18 @@ import java.security.SecureRandom;
 import java.security.Signature;
 import java.security.SignatureException;
 
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.jcajce.io.OutputStreamFactory;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPrivateKey;
-import org.bouncycastle.openpgp.PGPRuntimeOperationException;
-import org.bouncycastle.openpgp.operator.PGPContentSigner;
-import org.bouncycastle.openpgp.operator.PGPContentSignerBuilder;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.jcajce.io.OutputStreamFactory;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPrivateKey;
+import org.spongycastle.openpgp.PGPRuntimeOperationException;
+import org.spongycastle.openpgp.operator.PGPContentSigner;
+import org.spongycastle.openpgp.operator.PGPContentSignerBuilder;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.util.io.TeeOutputStream;
 
 public class JcaPGPContentSignerBuilder
     implements PGPContentSignerBuilder

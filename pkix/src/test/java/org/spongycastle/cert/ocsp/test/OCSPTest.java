@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.ocsp.test;
+package org.spongycastle.cert.ocsp.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -9,37 +9,37 @@ import java.util.Random;
 import java.util.Set;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Exception;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.ocsp.OCSPObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.cert.CertIOException;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.cert.ocsp.BasicOCSPResp;
-import org.bouncycastle.cert.ocsp.BasicOCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.CertificateID;
-import org.bouncycastle.cert.ocsp.CertificateStatus;
-import org.bouncycastle.cert.ocsp.OCSPReq;
-import org.bouncycastle.cert.ocsp.OCSPReqBuilder;
-import org.bouncycastle.cert.ocsp.OCSPResp;
-import org.bouncycastle.cert.ocsp.OCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.Req;
-import org.bouncycastle.cert.ocsp.RespID;
-import org.bouncycastle.cert.ocsp.SingleResp;
-import org.bouncycastle.cert.ocsp.jcajce.JcaBasicOCSPRespBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Exception;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ocsp.OCSPObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.cert.CertIOException;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.cert.ocsp.BasicOCSPResp;
+import org.spongycastle.cert.ocsp.BasicOCSPRespBuilder;
+import org.spongycastle.cert.ocsp.CertificateID;
+import org.spongycastle.cert.ocsp.CertificateStatus;
+import org.spongycastle.cert.ocsp.OCSPReq;
+import org.spongycastle.cert.ocsp.OCSPReqBuilder;
+import org.spongycastle.cert.ocsp.OCSPResp;
+import org.spongycastle.cert.ocsp.OCSPRespBuilder;
+import org.spongycastle.cert.ocsp.Req;
+import org.spongycastle.cert.ocsp.RespID;
+import org.spongycastle.cert.ocsp.SingleResp;
+import org.spongycastle.cert.ocsp.jcajce.JcaBasicOCSPRespBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class OCSPTest
     extends SimpleTest
@@ -280,7 +280,7 @@ public class OCSPTest
         X509CertificateHolder testCert = new JcaX509CertificateHolder(OCSPTestUtil.makeECDSACertificate(signKP, signDN, signKP, signDN));
         DigestCalculatorProvider digCalcProv = new JcaDigestCalculatorProviderBuilder().setProvider(BC).build();
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         GeneralName origName = new GeneralName(new X500Name(origDN));
 
         //
@@ -470,7 +470,7 @@ public class OCSPTest
         X509CertificateHolder testCert = new JcaX509CertificateHolder(OCSPTestUtil.makeCertificate(signKP, signDN, signKP, signDN));
         DigestCalculatorProvider digCalcProv = new JcaDigestCalculatorProviderBuilder().setProvider(BC).build();
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         GeneralName origName = new GeneralName(new X500Name(origDN));
 
         //
@@ -700,7 +700,7 @@ public class OCSPTest
         KeyPair signKP = OCSPTestUtil.makeKeyPair();
         X509CertificateHolder testCert = new JcaX509CertificateHolder(OCSPTestUtil.makeCertificate(signKP, signDN, signKP, signDN));
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         GeneralName origName = new GeneralName(new X500Name(origDN));
         DigestCalculatorProvider digCalcProv = new JcaDigestCalculatorProviderBuilder().setProvider(BC).build();
 

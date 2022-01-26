@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.crypto;
+package org.spongycastle.pqc.crypto;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.util.Arrays;
 
 /**
  * Pair for a value exchange algorithm where the responding party has no private key, such as NewHope.

@@ -1,19 +1,19 @@
-module org.bouncycastle.tls
+module org.spongycastle.tls
 {
-    provides java.security.Provider with org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
+    provides java.security.Provider with org.spongycastle.jsse.provider.BouncyCastleJsseProvider;
     
     requires java.logging;
-    requires org.bouncycastle.provider;
-    requires org.bouncycastle.util;
+    requires org.spongycastle.provider;
+    requires org.spongycastle.util;
 
-    exports org.bouncycastle.jsse;
-    exports org.bouncycastle.tls;
-    exports org.bouncycastle.jsse.provider;
-    exports org.bouncycastle.jsse.java.security;
-    exports org.bouncycastle.jsse.util;
-    exports org.bouncycastle.tls.crypto;
-    exports org.bouncycastle.tls.crypto.impl;
-    exports org.bouncycastle.tls.crypto.impl.bc;
-    exports org.bouncycastle.tls.crypto.impl.jcajce;
-    exports org.bouncycastle.tls.crypto.impl.jcajce.srp;
+    exports org.spongycastle.jsse;
+    exports org.spongycastle.tls;
+    exports org.spongycastle.jsse.provider;
+    exports org.spongycastle.jsse.java.security;
+    exports org.spongycastle.jsse.util;
+    exports org.spongycastle.tls.crypto;
+    exports org.spongycastle.tls.crypto.impl;
+    exports org.spongycastle.tls.crypto.impl.bc;
+    exports org.spongycastle.tls.crypto.impl.jcajce;
+    exports org.spongycastle.tls.crypto.impl.jcajce.srp;
 }

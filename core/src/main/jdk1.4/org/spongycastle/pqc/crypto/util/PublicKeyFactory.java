@@ -1,22 +1,22 @@
-package org.bouncycastle.pqc.crypto.util;
+package org.spongycastle.pqc.crypto.util;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.asn1.bc.BCObjectIdentifiers;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.asn1.SPHINCS256KeyParams;
-import org.bouncycastle.pqc.crypto.newhope.NHPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.asn1.bc.BCObjectIdentifiers;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.asn1.SPHINCS256KeyParams;
+import org.spongycastle.pqc.crypto.newhope.NHPublicKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
 
 /**
  * Factory to create asymmetric public key parameters for asymmetric ciphers from range of

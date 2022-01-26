@@ -1,13 +1,13 @@
-package org.bouncycastle.mime.smime;
+package org.spongycastle.mime.smime;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.mime.BasicMimeParser;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeParser;
-import org.bouncycastle.mime.MimeParserProvider;
-import org.bouncycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.mime.BasicMimeParser;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeParser;
+import org.spongycastle.mime.MimeParserProvider;
+import org.spongycastle.operator.DigestCalculatorProvider;
 
 public class SMimeParserProvider
     implements MimeParserProvider

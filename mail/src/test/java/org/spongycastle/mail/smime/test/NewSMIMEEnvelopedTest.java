@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.test;
+package org.spongycastle.mail.smime.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -23,31 +23,31 @@ import javax.mail.internet.MimeMessage;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSEnvelopedDataGenerator;
-import org.bouncycastle.cms.KeyTransRecipientId;
-import org.bouncycastle.cms.RecipientId;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeRecipientId;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientId;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mail.smime.SMIMEEnveloped;
-import org.bouncycastle.mail.smime.SMIMEEnvelopedGenerator;
-import org.bouncycastle.mail.smime.SMIMEEnvelopedParser;
-import org.bouncycastle.mail.smime.SMIMEUtil;
-import org.bouncycastle.mail.smime.util.FileBackedMimeBodyPart;
-import org.bouncycastle.openssl.PEMKeyPair;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSEnvelopedDataGenerator;
+import org.spongycastle.cms.KeyTransRecipientId;
+import org.spongycastle.cms.RecipientId;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyAgreeEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyAgreeRecipientId;
+import org.spongycastle.cms.jcajce.JceKeyAgreeRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientId;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mail.smime.SMIMEEnveloped;
+import org.spongycastle.mail.smime.SMIMEEnvelopedGenerator;
+import org.spongycastle.mail.smime.SMIMEEnvelopedParser;
+import org.spongycastle.mail.smime.SMIMEUtil;
+import org.spongycastle.mail.smime.util.FileBackedMimeBodyPart;
+import org.spongycastle.openssl.PEMKeyPair;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.openssl.jcajce.JcaPEMKeyConverter;
+import org.spongycastle.util.encoders.Base64;
 
 public class NewSMIMEEnvelopedTest 
     extends TestCase
@@ -334,7 +334,7 @@ public class NewSMIMEEnvelopedTest
 
         byte[] content = recipInfo.getContent(new JceKeyTransEnvelopedRecipient(loadKey("key.pem")));
 
-        assertTrue(org.bouncycastle.util.Arrays.areEqual(testMessage, content));
+        assertTrue(org.spongycastle.util.Arrays.areEqual(testMessage, content));
     }
 
     public void testAES192()
@@ -352,7 +352,7 @@ public class NewSMIMEEnvelopedTest
 
         byte[] content = recipInfo.getContent(new JceKeyTransEnvelopedRecipient(loadKey("key.pem")));
 
-        assertTrue(org.bouncycastle.util.Arrays.areEqual(testMessage, content));
+        assertTrue(org.spongycastle.util.Arrays.areEqual(testMessage, content));
     }
 
     public void testAES256()
@@ -370,7 +370,7 @@ public class NewSMIMEEnvelopedTest
 
         byte[] content = recipInfo.getContent(new JceKeyTransEnvelopedRecipient(loadKey("key.pem")));
 
-        assertTrue(org.bouncycastle.util.Arrays.areEqual(testMessage, content));
+        assertTrue(org.spongycastle.util.Arrays.areEqual(testMessage, content));
     }
 
     public void testCapEncrypt()

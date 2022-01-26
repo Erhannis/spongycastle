@@ -1,7 +1,7 @@
-package org.bouncycastle.jcajce.interfaces;
+package org.spongycastle.jcajce.interfaces;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.TBSCertificate;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.TBSCertificate;
 
 /**
  * Interface exposing some additional methods on a BC native certificate object.

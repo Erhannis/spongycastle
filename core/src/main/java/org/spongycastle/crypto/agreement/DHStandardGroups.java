@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Standard Diffie-Hellman groups from various IETF specifications.

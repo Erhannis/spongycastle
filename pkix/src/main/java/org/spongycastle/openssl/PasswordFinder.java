@@ -1,4 +1,4 @@
-package org.bouncycastle.openssl;
+package org.spongycastle.openssl;
 
 /**
  * call back to allow a password to be fetched when one is requested.

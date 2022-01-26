@@ -1,19 +1,19 @@
-module org.bouncycastle.pg
+module org.spongycastle.pg
 {
-    requires org.bouncycastle.provider;
+    requires org.spongycastle.provider;
 
-    exports org.bouncycastle.bcpg;
-    exports org.bouncycastle.gpg;
-    exports org.bouncycastle.openpgp;
-    exports org.bouncycastle.bcpg.attr;
-    exports org.bouncycastle.bcpg.sig;
-    exports org.bouncycastle.gpg.keybox;
-    exports org.bouncycastle.gpg.keybox.bc;
-    exports org.bouncycastle.gpg.keybox.jcajce;
-    exports org.bouncycastle.openpgp.bc;
-    exports org.bouncycastle.openpgp.examples;
-    exports org.bouncycastle.openpgp.jcajce;
-    exports org.bouncycastle.openpgp.operator;
-    exports org.bouncycastle.openpgp.operator.bc;
-    exports org.bouncycastle.openpgp.operator.jcajce;
+    exports org.spongycastle.bcpg;
+    exports org.spongycastle.gpg;
+    exports org.spongycastle.openpgp;
+    exports org.spongycastle.bcpg.attr;
+    exports org.spongycastle.bcpg.sig;
+    exports org.spongycastle.gpg.keybox;
+    exports org.spongycastle.gpg.keybox.bc;
+    exports org.spongycastle.gpg.keybox.jcajce;
+    exports org.spongycastle.openpgp.bc;
+    exports org.spongycastle.openpgp.examples;
+    exports org.spongycastle.openpgp.jcajce;
+    exports org.spongycastle.openpgp.operator;
+    exports org.spongycastle.openpgp.operator.bc;
+    exports org.spongycastle.openpgp.operator.jcajce;
 }

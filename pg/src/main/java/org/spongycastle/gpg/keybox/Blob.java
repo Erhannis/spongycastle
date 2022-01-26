@@ -1,9 +1,9 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 import java.io.IOException;
 
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.util.Strings;
 
 /**
  * GnuPG keybox blob.

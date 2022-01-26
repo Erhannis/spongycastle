@@ -1,13 +1,13 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.KeyTransRecipient;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.operator.AsymmetricKeyUnwrapper;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.bc.BcRSAAsymmetricKeyUnwrapper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.KeyTransRecipient;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.operator.AsymmetricKeyUnwrapper;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.bc.BcRSAAsymmetricKeyUnwrapper;
 
 public abstract class BcKeyTransRecipient
     implements KeyTransRecipient

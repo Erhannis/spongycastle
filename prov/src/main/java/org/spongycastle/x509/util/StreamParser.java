@@ -1,4 +1,4 @@
-package org.bouncycastle.x509.util;
+package org.spongycastle.x509.util;
 
 import java.util.Collection;
 

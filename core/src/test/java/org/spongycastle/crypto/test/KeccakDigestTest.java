@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.KeccakDigest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.digests.KeccakDigest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Keccak Digest Test

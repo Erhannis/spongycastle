@@ -1,9 +1,9 @@
-package org.bouncycastle.operator.jcajce;
+package org.spongycastle.operator.jcajce;
 
 import java.security.Key;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.operator.GenericKey;
 
 public class JceGenericKey
     extends GenericKey

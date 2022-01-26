@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.isismtt.x509;
+package org.spongycastle.asn1.isismtt.x509;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x509.GeneralName;
 
 /**
  * Attribute to indicate admissions to certain professions.
@@ -110,9 +110,9 @@ import org.bouncycastle.asn1.x509.GeneralName;
  * are logically connected (e.g. they have been issued under the same admission
  * number).
  *
- * @see org.bouncycastle.asn1.isismtt.x509.Admissions
- * @see org.bouncycastle.asn1.isismtt.x509.ProfessionInfo
- * @see org.bouncycastle.asn1.isismtt.x509.NamingAuthority
+ * @see org.spongycastle.asn1.isismtt.x509.Admissions
+ * @see org.spongycastle.asn1.isismtt.x509.ProfessionInfo
+ * @see org.spongycastle.asn1.isismtt.x509.NamingAuthority
  */
 public class AdmissionSyntax
     extends ASN1Object

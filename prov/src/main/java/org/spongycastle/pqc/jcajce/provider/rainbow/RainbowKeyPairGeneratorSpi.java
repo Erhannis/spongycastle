@@ -1,18 +1,18 @@
-package org.bouncycastle.pqc.jcajce.provider.rainbow;
+package org.spongycastle.pqc.jcajce.provider.rainbow;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowPublicKeyParameters;
-import org.bouncycastle.pqc.jcajce.spec.RainbowParameterSpec;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.pqc.crypto.rainbow.RainbowKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowKeyPairGenerator;
+import org.spongycastle.pqc.crypto.rainbow.RainbowParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowPublicKeyParameters;
+import org.spongycastle.pqc.jcajce.spec.RainbowParameterSpec;
 
 public class RainbowKeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

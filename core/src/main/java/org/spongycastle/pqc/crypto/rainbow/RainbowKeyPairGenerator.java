@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.rainbow.util.ComputeInField;
-import org.bouncycastle.pqc.crypto.rainbow.util.GF2Field;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.rainbow.util.ComputeInField;
+import org.spongycastle.pqc.crypto.rainbow.util.GF2Field;
 
 /**
  * This class implements AsymmetricCipherKeyPairGenerator. It is used

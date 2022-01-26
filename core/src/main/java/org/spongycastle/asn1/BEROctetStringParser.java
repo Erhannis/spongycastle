@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.util.io.Streams;
 
 /**
  * A parser for indefinite-length OCTET STRINGs.

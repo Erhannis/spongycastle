@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.mime.encoding.Base64InputStream;
-import org.bouncycastle.mime.encoding.Base64OutputStream;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.mime.encoding.Base64InputStream;
+import org.spongycastle.mime.encoding.Base64OutputStream;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
 
 public class Base64TransferEncodingTest
     extends TestCase

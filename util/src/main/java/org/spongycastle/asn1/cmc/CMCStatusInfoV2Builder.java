@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.cmc;
+package org.spongycastle.asn1.cmc;
 
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERUTF8String;
 
 public class CMCStatusInfoV2Builder
 {

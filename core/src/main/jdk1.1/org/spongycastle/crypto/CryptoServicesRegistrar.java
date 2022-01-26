@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -6,12 +6,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHValidationParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAValidationParameters;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHValidationParameters;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAValidationParameters;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Basic registrar class for providing defaults for cryptography services in this module.

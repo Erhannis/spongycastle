@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package org.spongycastle.pqc.math.ntru.polynomial.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionKeyGenerationParameters;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.ProductFormPolynomial;
+import org.spongycastle.pqc.crypto.ntru.NTRUEncryptionKeyGenerationParameters;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.ProductFormPolynomial;
 
 public class ProductFormPolynomialTest
     extends TestCase

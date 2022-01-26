@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
 
 public class LMSPublicKeyParameters
     extends LMSKeyParameters

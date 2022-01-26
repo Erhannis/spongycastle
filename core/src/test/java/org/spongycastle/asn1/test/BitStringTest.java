@@ -1,18 +1,18 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.BERBitString;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DLBitString;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestResult;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.BERBitString;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DLBitString;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestResult;
 
 public class BitStringTest
     extends SimpleTest

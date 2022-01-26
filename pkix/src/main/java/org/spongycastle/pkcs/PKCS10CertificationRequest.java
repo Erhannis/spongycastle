@@ -1,4 +1,4 @@
-package org.bouncycastle.pkcs;
+package org.spongycastle.pkcs;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -6,24 +6,24 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.pkcs.Attribute;
-import org.bouncycastle.asn1.pkcs.CertificationRequest;
-import org.bouncycastle.asn1.pkcs.CertificationRequestInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.ContentVerifierProvider;
+import org.spongycastle.asn1.ASN1Boolean;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.pkcs.Attribute;
+import org.spongycastle.asn1.pkcs.CertificationRequest;
+import org.spongycastle.asn1.pkcs.CertificationRequestInfo;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.ContentVerifierProvider;
 
 /**
  * Holding class for a PKCS#10 certification request.

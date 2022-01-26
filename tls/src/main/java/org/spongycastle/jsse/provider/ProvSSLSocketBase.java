@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -20,14 +20,14 @@ import javax.net.ssl.HandshakeCompletedListener;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocket;
 
-import org.bouncycastle.jsse.BCSSLSocket;
+import org.spongycastle.jsse.BCSSLSocket;
 
 abstract class ProvSSLSocketBase
     extends SSLSocket
     implements BCSSLSocket
 {
     protected static final boolean provAssumeOriginalHostName = PropertyUtils
-        .getBooleanSystemProperty("org.bouncycastle.jsse.client.assumeOriginalHostName", false);
+        .getBooleanSystemProperty("org.spongycastle.jsse.client.assumeOriginalHostName", false);
     protected static final boolean provJdkTlsTrustNameService = PropertyUtils
         .getBooleanSystemProperty("jdk.tls.trustNameService", false);
 

@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.DERBitString;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.DERBitString;
 
 /**
  * The ReasonFlags object.

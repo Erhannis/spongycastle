@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.lang.reflect.Constructor;
 import java.security.InvalidKeyException;
@@ -12,11 +12,11 @@ import javax.crypto.spec.DESedeKeySpec;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.jcajce.provider.symmetric.util.BCPBEKey;
-import org.bouncycastle.jcajce.provider.symmetric.util.PBE;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.jcajce.provider.symmetric.util.BCPBEKey;
+import org.spongycastle.jcajce.provider.symmetric.util.PBE;
 
 public class JCESecretKeyFactory
     extends SecretKeyFactorySpi

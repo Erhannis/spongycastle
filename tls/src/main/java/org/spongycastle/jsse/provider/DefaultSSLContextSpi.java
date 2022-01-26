@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.KeyManagementException;
 import java.security.SecureRandom;
@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.TrustManager;
 
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
 
 class DefaultSSLContextSpi extends ProvSSLContextSpi
 {

@@ -1,7 +1,7 @@
-package org.bouncycastle.jcajce.provider.util;
+package org.spongycastle.jcajce.provider.util;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
 
 public abstract class AsymmetricAlgorithmProvider
     extends AlgorithmProvider

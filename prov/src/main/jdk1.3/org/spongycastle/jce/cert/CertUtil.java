@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.cert;
+package org.spongycastle.jce.cert;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -7,14 +7,14 @@ import java.security.NoSuchProviderException;
 import java.security.Provider;
 import java.security.Security;
 
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.OIDTokenizer;
-import org.bouncycastle.asn1.x509.X509Name;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OutputStream;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.OIDTokenizer;
+import org.spongycastle.asn1.x509.X509Name;
+import org.spongycastle.util.Strings;
 
 class CertUtil
 {
@@ -288,7 +288,7 @@ class CertUtil
      * Throw an IOException if the first component is not 0, 1 or 2 or the
      * second component is greater than 39.<br />
      * <br />
-     * User {@link org.bouncycastle.asn1.OIDTokenizer OIDTokenizer}
+     * User {@link org.spongycastle.asn1.OIDTokenizer OIDTokenizer}
      * 
      * @param the
      *            OID to be checked.

@@ -1,20 +1,20 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.paddings.BlockCipherPadding;
-import org.bouncycastle.crypto.paddings.ISO10126d2Padding;
-import org.bouncycastle.crypto.paddings.ISO7816d4Padding;
-import org.bouncycastle.crypto.paddings.PKCS7Padding;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.crypto.paddings.TBCPadding;
-import org.bouncycastle.crypto.paddings.X923Padding;
-import org.bouncycastle.crypto.paddings.ZeroBytePadding;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.engines.DESEngine;
+import org.spongycastle.crypto.paddings.BlockCipherPadding;
+import org.spongycastle.crypto.paddings.ISO10126d2Padding;
+import org.spongycastle.crypto.paddings.ISO7816d4Padding;
+import org.spongycastle.crypto.paddings.PKCS7Padding;
+import org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher;
+import org.spongycastle.crypto.paddings.TBCPadding;
+import org.spongycastle.crypto.paddings.X923Padding;
+import org.spongycastle.crypto.paddings.ZeroBytePadding;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * General Padding tests.

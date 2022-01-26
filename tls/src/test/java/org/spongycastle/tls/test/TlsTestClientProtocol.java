@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.TlsClientProtocol;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.TlsClientProtocol;
 
 class TlsTestClientProtocol extends TlsClientProtocol
 {

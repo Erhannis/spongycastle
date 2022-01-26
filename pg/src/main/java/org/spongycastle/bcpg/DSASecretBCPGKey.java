@@ -1,4 +1,4 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -36,7 +36,7 @@ public class DSASecretBCPGKey
     /**
      *  return "PGP"
      * 
-     * @see org.bouncycastle.bcpg.BCPGKey#getFormat()
+     * @see org.spongycastle.bcpg.BCPGKey#getFormat()
      */
     public String getFormat() 
     {
@@ -46,7 +46,7 @@ public class DSASecretBCPGKey
     /**
      * return the standard PGP encoding of the key.
      * 
-     * @see org.bouncycastle.bcpg.BCPGKey#getEncoded()
+     * @see org.spongycastle.bcpg.BCPGKey#getEncoded()
      */
     public byte[] getEncoded() 
     {

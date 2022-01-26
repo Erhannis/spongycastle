@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.nist;
+package org.spongycastle.asn1.nist;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  *

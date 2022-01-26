@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.cmp;
+package org.spongycastle.asn1.cmp;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.crmf.CertTemplate;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.X509Extensions;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.crmf.CertTemplate;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.X509Extensions;
 
 public class RevDetails
     extends ASN1Object

@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.util;
+package org.spongycastle.jsse.util;
 
 import java.net.Socket;
 import java.net.URL;
@@ -9,10 +9,10 @@ import java.util.logging.Logger;
 import javax.net.SocketFactory;
 import javax.net.ssl.SSLSocketFactory;
 
-import org.bouncycastle.jsse.BCSNIHostName;
-import org.bouncycastle.jsse.BCSNIServerName;
-import org.bouncycastle.jsse.BCSSLParameters;
-import org.bouncycastle.jsse.BCSSLSocket;
+import org.spongycastle.jsse.BCSNIHostName;
+import org.spongycastle.jsse.BCSNIServerName;
+import org.spongycastle.jsse.BCSSLParameters;
+import org.spongycastle.jsse.BCSSLSocket;
 
 public class SNISocketFactory extends CustomSSLSocketFactory
 {

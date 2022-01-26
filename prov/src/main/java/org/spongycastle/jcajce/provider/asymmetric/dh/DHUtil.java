@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dh;
+package org.spongycastle.jcajce.provider.asymmetric.dh;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Fingerprint;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Fingerprint;
+import org.spongycastle.util.Strings;
 
 class DHUtil
 {

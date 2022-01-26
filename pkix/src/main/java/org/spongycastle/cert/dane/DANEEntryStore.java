@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,10 +8,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.StoreException;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.StoreException;
 
 /**
  * Class storing DANEEntry objects.

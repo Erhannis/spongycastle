@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.macs.SkeinMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.macs.SkeinMac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class SkeinMacTest
     extends SimpleTest

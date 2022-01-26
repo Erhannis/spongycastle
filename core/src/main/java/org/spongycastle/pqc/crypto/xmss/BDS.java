@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.TreeMap;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * BDS.

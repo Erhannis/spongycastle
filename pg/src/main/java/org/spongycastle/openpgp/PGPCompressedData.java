@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayInputStream;
 import java.io.EOFException;
@@ -7,12 +7,12 @@ import java.io.InputStream;
 import java.util.zip.Inflater;
 import java.util.zip.InflaterInputStream;
 
-import org.bouncycastle.apache.bzip2.CBZip2InputStream;
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.CompressedDataPacket;
-import org.bouncycastle.bcpg.CompressionAlgorithmTags;
-import org.bouncycastle.bcpg.Packet;
-import org.bouncycastle.bcpg.PacketTags;
+import org.spongycastle.apache.bzip2.CBZip2InputStream;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.CompressedDataPacket;
+import org.spongycastle.bcpg.CompressionAlgorithmTags;
+import org.spongycastle.bcpg.Packet;
+import org.spongycastle.bcpg.PacketTags;
 
 /**
  * A PGP compressed data object.

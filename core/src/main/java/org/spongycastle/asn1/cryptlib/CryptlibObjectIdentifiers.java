@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.cryptlib;
+package org.spongycastle.asn1.cryptlib;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public class CryptlibObjectIdentifiers
 {

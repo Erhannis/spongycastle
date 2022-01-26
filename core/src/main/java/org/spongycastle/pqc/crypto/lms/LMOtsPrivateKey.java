@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
-import static org.bouncycastle.pqc.crypto.lms.LM_OTS.D_MESG;
-import static org.bouncycastle.pqc.crypto.lms.LM_OTS.SEED_LEN;
-import static org.bouncycastle.pqc.crypto.lms.LM_OTS.SEED_RANDOMISER_INDEX;
+import static org.spongycastle.pqc.crypto.lms.LM_OTS.D_MESG;
+import static org.spongycastle.pqc.crypto.lms.LM_OTS.SEED_LEN;
+import static org.spongycastle.pqc.crypto.lms.LM_OTS.SEED_RANDOMISER_INDEX;
 
 class LMOtsPrivateKey
 {

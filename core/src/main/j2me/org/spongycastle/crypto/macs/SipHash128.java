@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.macs;
+package org.spongycastle.crypto.macs;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.util.Pack;
 
 /**
  * Implementation of SipHash with 128 bit output.

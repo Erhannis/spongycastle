@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.pqc.crypto.xmss.XMSSParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
+import org.spongycastle.util.Arrays;
 
 /**
  * Test cases for XMSSPrivateKey class.

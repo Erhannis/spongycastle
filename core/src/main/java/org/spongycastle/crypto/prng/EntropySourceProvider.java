@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
 public interface EntropySourceProvider
 {

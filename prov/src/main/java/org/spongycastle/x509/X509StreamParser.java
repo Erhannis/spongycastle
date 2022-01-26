@@ -1,7 +1,7 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
-import org.bouncycastle.x509.util.StreamParser;
-import org.bouncycastle.x509.util.StreamParsingException;
+import org.spongycastle.x509.util.StreamParser;
+import org.spongycastle.x509.util.StreamParsingException;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -22,7 +22,7 @@ import java.util.Collection;
  * <code>algorithm</code> parameter to the <code>getInstance</code> methods.
  * <p>
  * Implementations must implement the
- * {@link org.bouncycastle.x509.X509StreamParserSpi}.
+ * {@link org.spongycastle.x509.X509StreamParserSpi}.
  */
 public class X509StreamParser
     implements StreamParser

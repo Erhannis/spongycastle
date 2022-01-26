@@ -1,14 +1,14 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.openpgp.operator.PGPContentVerifier;
-import org.bouncycastle.openpgp.operator.PGPContentVerifierBuilder;
-import org.bouncycastle.openpgp.operator.PGPContentVerifierBuilderProvider;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPublicKey;
+import org.spongycastle.openpgp.operator.PGPContentVerifier;
+import org.spongycastle.openpgp.operator.PGPContentVerifierBuilder;
+import org.spongycastle.openpgp.operator.PGPContentVerifierBuilderProvider;
 
 public class BcPGPContentVerifierBuilderProvider
     implements PGPContentVerifierBuilderProvider

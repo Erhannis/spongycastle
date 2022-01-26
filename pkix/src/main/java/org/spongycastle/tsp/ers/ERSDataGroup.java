@@ -1,11 +1,11 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Representation of data groups with more than 1 members according to the description provided in RFC4998.

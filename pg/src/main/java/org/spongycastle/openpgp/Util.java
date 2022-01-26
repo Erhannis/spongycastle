@@ -1,9 +1,9 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.BCPGInputStream;
 
 class Util
 {

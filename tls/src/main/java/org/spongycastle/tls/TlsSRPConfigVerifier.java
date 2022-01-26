@@ -1,6 +1,6 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.tls.crypto.TlsSRPConfig;
+import org.spongycastle.tls.crypto.TlsSRPConfig;
 
 /**
  * Interface for verifying SRP config needs to conform to.

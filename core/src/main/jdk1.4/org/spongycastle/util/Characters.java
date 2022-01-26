@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 public class Characters
 {

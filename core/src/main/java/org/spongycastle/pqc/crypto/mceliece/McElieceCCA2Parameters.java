@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.mceliece;
+package org.spongycastle.pqc.crypto.mceliece;
 
 public class McElieceCCA2Parameters
     extends McElieceParameters

@@ -1,12 +1,12 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.IOException;
 import java.security.Principal;
 import java.security.cert.X509Certificate;
 import java.util.List;
 
-import org.bouncycastle.jsse.BCX509Key;
-import org.bouncycastle.tls.SecurityParameters;
+import org.spongycastle.jsse.BCX509Key;
+import org.spongycastle.tls.SecurityParameters;
 
 interface ProvTlsManager
 {

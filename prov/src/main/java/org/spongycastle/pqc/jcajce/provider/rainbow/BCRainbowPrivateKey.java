@@ -1,18 +1,18 @@
-package org.bouncycastle.pqc.jcajce.provider.rainbow;
+package org.spongycastle.pqc.jcajce.provider.rainbow;
 
 import java.io.IOException;
 import java.security.PrivateKey;
 import java.util.Arrays;
 
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.asn1.RainbowPrivateKey;
-import org.bouncycastle.pqc.crypto.rainbow.Layer;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.rainbow.util.RainbowUtil;
-import org.bouncycastle.pqc.jcajce.spec.RainbowPrivateKeySpec;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.asn1.RainbowPrivateKey;
+import org.spongycastle.pqc.crypto.rainbow.Layer;
+import org.spongycastle.pqc.crypto.rainbow.RainbowPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.rainbow.util.RainbowUtil;
+import org.spongycastle.pqc.jcajce.spec.RainbowPrivateKeySpec;
 
 /**
  * The Private key in Rainbow consists of the linear affine maps L1, L2 and the
@@ -187,11 +187,11 @@ public class BCRainbowPrivateKey
     {
         int hash = layers.length;
 
-        hash = hash * 37 + org.bouncycastle.util.Arrays.hashCode(A1inv);
-        hash = hash * 37 + org.bouncycastle.util.Arrays.hashCode(b1);
-        hash = hash * 37 + org.bouncycastle.util.Arrays.hashCode(A2inv);
-        hash = hash * 37 + org.bouncycastle.util.Arrays.hashCode(b2);
-        hash = hash * 37 + org.bouncycastle.util.Arrays.hashCode(vi);
+        hash = hash * 37 + org.spongycastle.util.Arrays.hashCode(A1inv);
+        hash = hash * 37 + org.spongycastle.util.Arrays.hashCode(b1);
+        hash = hash * 37 + org.spongycastle.util.Arrays.hashCode(A2inv);
+        hash = hash * 37 + org.spongycastle.util.Arrays.hashCode(b2);
+        hash = hash * 37 + org.spongycastle.util.Arrays.hashCode(vi);
 
         for (int i = layers.length - 1; i >= 0; i--)
         {

@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.ByteArrayOutputStream;
 
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.util.Encodable;
 
 /**
  * Type to assist in build LMS messages.

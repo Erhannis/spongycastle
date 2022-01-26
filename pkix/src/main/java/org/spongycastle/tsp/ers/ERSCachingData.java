@@ -1,10 +1,10 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * An ERSData object that caches hash calculations.

@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.io.ByteArrayOutputStream;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters;
-import org.bouncycastle.math.ec.rfc8032.Ed25519;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PublicKeyParameters;
+import org.spongycastle.math.ec.rfc8032.Ed25519;
+import org.spongycastle.util.Arrays;
 
 public class Ed25519Signer
     implements Signer

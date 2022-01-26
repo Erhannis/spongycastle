@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.test;
+package org.spongycastle.tsp.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -7,18 +7,18 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cmp.PKIFailureInfo;
-import org.bouncycastle.asn1.cmp.PKIStatus;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.tsp.TSPAlgorithms;
-import org.bouncycastle.tsp.TimeStampRequest;
-import org.bouncycastle.tsp.TimeStampResponse;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cmp.PKIFailureInfo;
+import org.spongycastle.asn1.cmp.PKIStatus;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.tsp.TSPAlgorithms;
+import org.spongycastle.tsp.TimeStampRequest;
+import org.spongycastle.tsp.TimeStampResponse;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.encoders.Base64;
 
 /**
  * Test Cases
@@ -242,7 +242,7 @@ public class ParseTest
       + "WruAAg/Lj4r0f9vN12wRlHoS2UKDjrE1DnUBbrM=");
 
     /* (non-Javadoc)
-     * @see org.bouncycastle.util.test.Test#getName()
+     * @see org.spongycastle.util.test.Test#getName()
      */
     public String getName()
     {

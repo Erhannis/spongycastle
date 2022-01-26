@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.isara;
+package org.spongycastle.asn1.isara;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public interface IsaraObjectIdentifiers
 {

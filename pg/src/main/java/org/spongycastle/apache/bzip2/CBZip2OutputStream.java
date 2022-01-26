@@ -22,7 +22,7 @@
  * great code.
  */
 
-package org.bouncycastle.apache.bzip2;
+package org.spongycastle.apache.bzip2;
 
 import java.io.IOException;
 import java.io.OutputStream;

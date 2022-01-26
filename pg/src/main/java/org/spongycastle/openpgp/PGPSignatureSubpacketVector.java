@@ -1,31 +1,31 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.bouncycastle.bcpg.SignaturePacket;
-import org.bouncycastle.bcpg.SignatureSubpacket;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.bcpg.sig.Exportable;
-import org.bouncycastle.bcpg.sig.Features;
-import org.bouncycastle.bcpg.sig.IntendedRecipientFingerprint;
-import org.bouncycastle.bcpg.sig.IssuerFingerprint;
-import org.bouncycastle.bcpg.sig.IssuerKeyID;
-import org.bouncycastle.bcpg.sig.KeyExpirationTime;
-import org.bouncycastle.bcpg.sig.KeyFlags;
-import org.bouncycastle.bcpg.sig.NotationData;
-import org.bouncycastle.bcpg.sig.PreferredAlgorithms;
-import org.bouncycastle.bcpg.sig.PrimaryUserID;
-import org.bouncycastle.bcpg.sig.Revocable;
-import org.bouncycastle.bcpg.sig.RevocationKey;
-import org.bouncycastle.bcpg.sig.RevocationReason;
-import org.bouncycastle.bcpg.sig.SignatureCreationTime;
-import org.bouncycastle.bcpg.sig.SignatureExpirationTime;
-import org.bouncycastle.bcpg.sig.SignatureTarget;
-import org.bouncycastle.bcpg.sig.SignerUserID;
-import org.bouncycastle.bcpg.sig.TrustSignature;
+import org.spongycastle.bcpg.SignaturePacket;
+import org.spongycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.bcpg.sig.Exportable;
+import org.spongycastle.bcpg.sig.Features;
+import org.spongycastle.bcpg.sig.IntendedRecipientFingerprint;
+import org.spongycastle.bcpg.sig.IssuerFingerprint;
+import org.spongycastle.bcpg.sig.IssuerKeyID;
+import org.spongycastle.bcpg.sig.KeyExpirationTime;
+import org.spongycastle.bcpg.sig.KeyFlags;
+import org.spongycastle.bcpg.sig.NotationData;
+import org.spongycastle.bcpg.sig.PreferredAlgorithms;
+import org.spongycastle.bcpg.sig.PrimaryUserID;
+import org.spongycastle.bcpg.sig.Revocable;
+import org.spongycastle.bcpg.sig.RevocationKey;
+import org.spongycastle.bcpg.sig.RevocationReason;
+import org.spongycastle.bcpg.sig.SignatureCreationTime;
+import org.spongycastle.bcpg.sig.SignatureExpirationTime;
+import org.spongycastle.bcpg.sig.SignatureTarget;
+import org.spongycastle.bcpg.sig.SignerUserID;
+import org.spongycastle.bcpg.sig.TrustSignature;
 
 /**
  * Container for a list of signature subpackets.

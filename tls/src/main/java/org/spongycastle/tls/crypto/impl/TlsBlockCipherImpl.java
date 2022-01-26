@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl;
+package org.spongycastle.tls.crypto.impl;
 
 import java.io.IOException;
 

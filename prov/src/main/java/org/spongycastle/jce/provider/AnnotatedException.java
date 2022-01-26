@@ -1,6 +1,6 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
-import org.bouncycastle.jce.exception.ExtException;
+import org.spongycastle.jce.exception.ExtException;
 
 public class AnnotatedException
     extends Exception

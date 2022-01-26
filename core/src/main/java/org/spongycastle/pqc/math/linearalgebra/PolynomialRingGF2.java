@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 /**
  * This class describes operations with polynomials over finite field GF(2), i e

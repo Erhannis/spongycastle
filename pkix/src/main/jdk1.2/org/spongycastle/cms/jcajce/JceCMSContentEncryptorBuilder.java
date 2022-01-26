@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.OutputStream;
 import java.security.AlgorithmParameters;
@@ -12,14 +12,14 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.jcajce.io.CipherOutputStream;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.jcajce.io.CipherOutputStream;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.util.Integers;
 
 public class JceCMSContentEncryptorBuilder
 {

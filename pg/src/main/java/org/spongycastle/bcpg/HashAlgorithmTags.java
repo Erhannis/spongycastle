@@ -1,6 +1,6 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 /**
  * basic tags for hash algorithms

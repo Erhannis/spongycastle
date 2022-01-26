@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

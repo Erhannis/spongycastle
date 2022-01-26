@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.CharToByteConverter;
-import org.bouncycastle.crypto.PasswordConverter;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CharToByteConverter;
+import org.spongycastle.crypto.PasswordConverter;
+import org.spongycastle.util.Arrays;
 
 public class Argon2Parameters
 {

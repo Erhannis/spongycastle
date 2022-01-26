@@ -3,7 +3,7 @@
 
 (
 ed $1 <<%%
-g/org.bouncycastle.jce.cert./s//java.security.cert./g
+g/org.spongycastle.jce.cert./s//java.security.cert./g
 w
 q
 %%

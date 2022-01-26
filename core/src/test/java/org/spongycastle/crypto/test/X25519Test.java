@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.agreement.X25519Agreement;
-import org.bouncycastle.crypto.generators.X25519KeyPairGenerator;
-import org.bouncycastle.crypto.params.X25519KeyGenerationParameters;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.agreement.X25519Agreement;
+import org.spongycastle.crypto.generators.X25519KeyPairGenerator;
+import org.spongycastle.crypto.params.X25519KeyGenerationParameters;
+import org.spongycastle.util.test.SimpleTest;
 
 public class X25519Test
     extends SimpleTest

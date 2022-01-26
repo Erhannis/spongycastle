@@ -1,12 +1,12 @@
-package org.bouncycastle.openpgp.bc;
+package org.spongycastle.openpgp.bc;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPSecretKeyRing;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPSecretKeyRing;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
 
 public class BcPGPSecretKeyRing
     extends PGPSecretKeyRing

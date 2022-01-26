@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,13 +6,13 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.openpgp.PGPLiteralData;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.openpgp.PGPLiteralData;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
 
 public class PGPUtilTest
     extends SimpleTest

@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -9,9 +9,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.util.io.Streams;
 
-import static org.bouncycastle.pqc.crypto.lms.HSS.rangeTestKeys;
+import static org.spongycastle.pqc.crypto.lms.HSS.rangeTestKeys;
 
 public class HSSPrivateKeyParameters
     extends LMSKeyParameters
@@ -317,8 +317,8 @@ public class HSSPrivateKeyParameters
             // Equality is I and seed being equal and the lmsQMath.
             // I and seed are derived from this nodes parent and will change if the parent q, I, seed changes.
             //
-            boolean seedEquals = org.bouncycastle.util.Arrays.areEqual(childI, keys[i].getI())
-                && org.bouncycastle.util.Arrays.areEqual(childSeed, keys[i].getMasterSecret());
+            boolean seedEquals = org.spongycastle.util.Arrays.areEqual(childI, keys[i].getI())
+                && org.spongycastle.util.Arrays.areEqual(childSeed, keys[i].getMasterSecret());
 
 
             if (!seedEquals)

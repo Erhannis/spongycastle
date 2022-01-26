@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.pqc.crypto.StateAwareMessageSigner;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.pqc.crypto.StateAwareMessageSigner;
+import org.spongycastle.util.Arrays;
 
 /**
  * XMSS^MT Signer class.

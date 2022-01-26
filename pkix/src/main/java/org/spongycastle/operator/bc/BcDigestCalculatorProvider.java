@@ -1,13 +1,13 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
 
 public class BcDigestCalculatorProvider
     implements DigestCalculatorProvider

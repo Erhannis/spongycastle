@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -15,17 +15,17 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.PBEParameterSpec;
 import javax.crypto.spec.RC2ParameterSpec;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.crypto.params.RC2Parameters;
-import org.bouncycastle.crypto.params.SkeinParameters;
-import org.bouncycastle.jcajce.PKCS12Key;
-import org.bouncycastle.jcajce.spec.AEADParameterSpec;
-import org.bouncycastle.jcajce.spec.SkeinParameterSpec;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.AEADParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.params.RC2Parameters;
+import org.spongycastle.crypto.params.SkeinParameters;
+import org.spongycastle.jcajce.PKCS12Key;
+import org.spongycastle.jcajce.spec.AEADParameterSpec;
+import org.spongycastle.jcajce.spec.SkeinParameterSpec;
 
 public class BaseMac
     extends MacSpi implements PBE

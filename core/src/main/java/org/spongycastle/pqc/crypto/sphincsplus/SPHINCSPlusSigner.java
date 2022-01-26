@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.sphincsplus;
+package org.spongycastle.pqc.crypto.sphincsplus;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.MessageSigner;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.MessageSigner;
+import org.spongycastle.util.Arrays;
 
 /**
  * SPHINCS+ signer.

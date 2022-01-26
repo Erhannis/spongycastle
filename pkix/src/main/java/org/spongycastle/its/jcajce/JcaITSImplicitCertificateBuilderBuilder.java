@@ -1,12 +1,12 @@
-package org.bouncycastle.its.jcajce;
+package org.spongycastle.its.jcajce;
 
 import java.security.Provider;
 
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.ITSImplicitCertificateBuilder;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.ITSImplicitCertificateBuilder;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
 
 public class JcaITSImplicitCertificateBuilderBuilder
 {

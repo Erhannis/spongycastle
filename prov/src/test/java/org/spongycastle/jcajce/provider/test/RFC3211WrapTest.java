@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package org.spongycastle.jcajce.provider.test;
 
 
 import java.security.AlgorithmParameters;
@@ -12,9 +12,9 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class RFC3211WrapTest
     extends TestCase

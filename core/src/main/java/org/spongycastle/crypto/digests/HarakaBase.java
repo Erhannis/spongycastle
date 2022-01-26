@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
 /**
  * Base class for Haraka v2, https://eprint.iacr.org/2016/098.pdf

@@ -1,17 +1,17 @@
-package org.bouncycastle.pqc.jcajce.provider.rainbow;
+package org.spongycastle.pqc.jcajce.provider.rainbow;
 
 import java.security.PublicKey;
 
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.asn1.RainbowPublicKey;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.rainbow.util.RainbowUtil;
-import org.bouncycastle.pqc.jcajce.provider.util.KeyUtil;
-import org.bouncycastle.pqc.jcajce.spec.RainbowPublicKeySpec;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.asn1.RainbowPublicKey;
+import org.spongycastle.pqc.crypto.rainbow.RainbowParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowPublicKeyParameters;
+import org.spongycastle.pqc.crypto.rainbow.util.RainbowUtil;
+import org.spongycastle.pqc.jcajce.provider.util.KeyUtil;
+import org.spongycastle.pqc.jcajce.spec.RainbowPublicKeySpec;
+import org.spongycastle.util.Arrays;
 
 /**
  * This class implements CipherParameters and PublicKey.

@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
 /**
  * Base interface describing an entropy source for a DRBG.

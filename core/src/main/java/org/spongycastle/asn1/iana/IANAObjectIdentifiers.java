@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.iana;
+package org.spongycastle.asn1.iana;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * IANA:

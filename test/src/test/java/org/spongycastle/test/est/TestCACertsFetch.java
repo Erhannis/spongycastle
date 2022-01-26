@@ -1,4 +1,4 @@
-package org.bouncycastle.test.est;
+package org.spongycastle.test.est;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -25,27 +25,27 @@ import java.util.concurrent.TimeUnit;
 import javax.net.ssl.SSLHandshakeException;
 import javax.net.ssl.SSLSession;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.est.CACertsResponse;
-import org.bouncycastle.est.ESTClient;
-import org.bouncycastle.est.ESTClientProvider;
-import org.bouncycastle.est.ESTException;
-import org.bouncycastle.est.ESTRequest;
-import org.bouncycastle.est.ESTResponse;
-import org.bouncycastle.est.ESTService;
-import org.bouncycastle.est.ESTServiceBuilder;
-import org.bouncycastle.est.Source;
-import org.bouncycastle.est.jcajce.JcaJceUtils;
-import org.bouncycastle.est.jcajce.JsseESTServiceBuilder;
-import org.bouncycastle.test.est.examples.ExampleUtils;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.io.pem.PemReader;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.est.CACertsResponse;
+import org.spongycastle.est.ESTClient;
+import org.spongycastle.est.ESTClientProvider;
+import org.spongycastle.est.ESTException;
+import org.spongycastle.est.ESTRequest;
+import org.spongycastle.est.ESTResponse;
+import org.spongycastle.est.ESTService;
+import org.spongycastle.est.ESTServiceBuilder;
+import org.spongycastle.est.Source;
+import org.spongycastle.est.jcajce.JcaJceUtils;
+import org.spongycastle.est.jcajce.JsseESTServiceBuilder;
+import org.spongycastle.test.est.examples.ExampleUtils;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.io.pem.PemReader;
+import org.spongycastle.util.test.SimpleTest;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -103,7 +103,7 @@ public class TestCACertsFetch
         try
         {
             serverInstance = startDefaultServer();
-            System.setProperty("org.bouncycastle.debug.est", "all");
+            System.setProperty("org.spongycastle.debug.est", "all");
 
 //            SSLSocketFactoryCreatorBuilder sfcb = new SSLSockuetFactoryCreatorBuilder();
 

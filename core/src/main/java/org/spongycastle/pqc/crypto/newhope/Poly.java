@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.util.Pack;
 
 class Poly
 {

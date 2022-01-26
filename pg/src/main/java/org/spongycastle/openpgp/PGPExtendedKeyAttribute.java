@@ -1,11 +1,11 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.gpg.SExpression;
+import org.spongycastle.gpg.SExpression;
 
 public class PGPExtendedKeyAttribute
 {

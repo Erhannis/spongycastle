@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.ocsp;
+package org.spongycastle.cert.ocsp;
 
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -6,25 +6,25 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.ocsp.BasicOCSPResponse;
-import org.bouncycastle.asn1.ocsp.CertStatus;
-import org.bouncycastle.asn1.ocsp.ResponseData;
-import org.bouncycastle.asn1.ocsp.RevokedInfo;
-import org.bouncycastle.asn1.ocsp.SingleResponse;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERGeneralizedTime;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.ocsp.BasicOCSPResponse;
+import org.spongycastle.asn1.ocsp.CertStatus;
+import org.spongycastle.asn1.ocsp.ResponseData;
+import org.spongycastle.asn1.ocsp.RevokedInfo;
+import org.spongycastle.asn1.ocsp.SingleResponse;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Generator for basic OCSP response objects.

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
@@ -8,19 +8,19 @@ import java.security.interfaces.DSAParams;
 import java.security.interfaces.DSAPrivateKey;
 import java.security.interfaces.DSAPublicKey;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Fingerprint;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAPrivateKeyParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Fingerprint;
 
 /**
  * utility class for converting jce/jca DSA objects
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 public class DSAUtil
 {

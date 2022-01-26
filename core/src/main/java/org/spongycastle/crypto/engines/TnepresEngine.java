@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.util.Pack;
+import org.spongycastle.util.Pack;
 
 /**
  * Tnepres is a 128-bit 32-round block cipher with variable key lengths,

@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * ASN.1 VisibleString object encoding ISO 646 (ASCII) character code points 32 to 126.

@@ -1,7 +1,7 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
 
 /**
  * Object Identifiers associated with TLS extensions.

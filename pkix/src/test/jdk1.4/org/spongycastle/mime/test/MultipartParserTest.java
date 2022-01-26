@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -12,28 +12,28 @@ import java.util.List;
 import java.util.Map;
 
 import junit.framework.TestCase;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.SignerInformationStore;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mime.BasicMimeParser;
-import org.bouncycastle.mime.ConstantMimeContext;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeContext;
-import org.bouncycastle.mime.MimeMultipartContext;
-import org.bouncycastle.mime.MimeParser;
-import org.bouncycastle.mime.MimeParserContext;
-import org.bouncycastle.mime.MimeParserListener;
-import org.bouncycastle.mime.MimeParserProvider;
-import org.bouncycastle.mime.smime.SMimeParserListener;
-import org.bouncycastle.mime.smime.SMimeParserProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.SignerInformationStore;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mime.BasicMimeParser;
+import org.spongycastle.mime.ConstantMimeContext;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeContext;
+import org.spongycastle.mime.MimeMultipartContext;
+import org.spongycastle.mime.MimeParser;
+import org.spongycastle.mime.MimeParserContext;
+import org.spongycastle.mime.MimeParserListener;
+import org.spongycastle.mime.MimeParserProvider;
+import org.spongycastle.mime.smime.SMimeParserListener;
+import org.spongycastle.mime.smime.SMimeParserProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.bc.BcDigestCalculatorProvider;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.io.Streams;
 
 /*
  This needs to be here to avoid issues with the 1.5 filter editing the html tags.

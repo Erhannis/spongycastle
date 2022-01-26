@@ -1,12 +1,12 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.signers.Ed25519Signer;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.signers.Ed25519Signer;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
 
 public class BcTlsEd25519Signer
     extends BcTlsSigner

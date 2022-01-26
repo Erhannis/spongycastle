@@ -1,14 +1,14 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.security.cert.CRLException;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.IssuingDistributionPoint;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.IssuingDistributionPoint;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 class X509CRLObject
     extends X509CRLImpl

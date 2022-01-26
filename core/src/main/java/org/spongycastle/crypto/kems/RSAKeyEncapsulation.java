@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.kems;
+package org.spongycastle.crypto.kems;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.KeyEncapsulation;
-import org.bouncycastle.crypto.params.KDFParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.KeyEncapsulation;
+import org.spongycastle.crypto.params.KDFParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * The RSA Key Encapsulation Mechanism (RSA-KEM) from ISO 18033-2.

@@ -1,7 +1,7 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.bcpg.HashAlgorithmTags;
-import org.bouncycastle.openpgp.PGPException;
+import org.spongycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.openpgp.PGPException;
 
 /**
  * A factory for digest algorithms.

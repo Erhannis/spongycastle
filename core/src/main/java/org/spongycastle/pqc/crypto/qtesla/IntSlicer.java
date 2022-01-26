@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.qtesla;
+package org.spongycastle.pqc.crypto.qtesla;
 
 /**
  * Simulates pointer arithmetic.

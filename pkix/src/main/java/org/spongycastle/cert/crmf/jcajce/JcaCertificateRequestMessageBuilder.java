@@ -1,14 +1,14 @@
-package org.bouncycastle.cert.crmf.jcajce;
+package org.spongycastle.cert.crmf.jcajce;
 
 import java.math.BigInteger;
 import java.security.PublicKey;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.crmf.CertificateRequestMessageBuilder;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.crmf.CertificateRequestMessageBuilder;
 
 public class JcaCertificateRequestMessageBuilder
     extends CertificateRequestMessageBuilder

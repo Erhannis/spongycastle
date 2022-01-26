@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.x500.style;
+package org.spongycastle.asn1.x500.style;
 
 import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1ParsingException;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.x500.AttributeTypeAndValue;
-import org.bouncycastle.asn1.x500.RDN;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameStyle;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ParsingException;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.x500.AttributeTypeAndValue;
+import org.spongycastle.asn1.x500.RDN;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameStyle;
 
 /**
  * This class provides some default behavior and common implementation for a

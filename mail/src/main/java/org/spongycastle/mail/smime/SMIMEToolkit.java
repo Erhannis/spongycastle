@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,20 +12,20 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.Recipient;
-import org.bouncycastle.cms.RecipientId;
-import org.bouncycastle.cms.RecipientInfoGenerator;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.SignerId;
-import org.bouncycastle.cms.SignerInfoGenerator;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.SignerInformationVerifier;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.util.CollectionStore;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.Recipient;
+import org.spongycastle.cms.RecipientId;
+import org.spongycastle.cms.RecipientInfoGenerator;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.SignerId;
+import org.spongycastle.cms.SignerInfoGenerator;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.SignerInformationVerifier;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.util.CollectionStore;
 
 /**
  * A tool kit of common tasks.

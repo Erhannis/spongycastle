@@ -1,6 +1,6 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.util.Pack;
+import org.spongycastle.util.Pack;
 
 public class DefaultTlsHeartbeat
     implements TlsHeartbeat

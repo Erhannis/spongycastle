@@ -1,13 +1,13 @@
-package org.bouncycastle.dvcs.test;
+package org.spongycastle.dvcs.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.operator.DigestCalculator;
 
 
 class SHA1DigestCalculator

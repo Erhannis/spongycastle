@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.sphincs;
+package org.spongycastle.pqc.crypto.sphincs;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.KeyGenerationParameters;
 
 public class SPHINCS256KeyPairGenerator
     implements AsymmetricCipherKeyPairGenerator

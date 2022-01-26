@@ -1,9 +1,9 @@
-package org.bouncycastle.oer.its;
+package org.spongycastle.oer.its;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.DEROctetString;
 
 public class BitmapSsp
     extends DEROctetString

@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.crypto.BasicAgreement;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.BasicAgreement;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.util.Pack;
 
 /**
  * Support class for constructing integrated encryption ciphers

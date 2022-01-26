@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -20,11 +20,11 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Hashtable;
 
-import org.bouncycastle.jcajce.PKIXCRLStore;
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Iterable;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
+import org.spongycastle.jcajce.PKIXCRLStore;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Iterable;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
 
 class CrlCache
 {

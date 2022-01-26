@@ -1,9 +1,9 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
 import java.io.OutputStream;
 import java.security.KeyStore;
 
-import org.bouncycastle.crypto.util.PBKDFConfig;
+import org.spongycastle.crypto.util.PBKDFConfig;
 
 /**
  * LoadStoreParameter to allow configuring of the PBKDF used to generate encryption keys for

@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 class TestDoneFlag
 {

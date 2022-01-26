@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -7,11 +7,11 @@ import java.security.PublicKey;
 
 import javax.crypto.interfaces.DHPrivateKey;
 
-import org.bouncycastle.tls.Certificate;
-import org.bouncycastle.tls.TlsCredentialedAgreement;
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.tls.crypto.TlsCryptoException;
-import org.bouncycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.Certificate;
+import org.spongycastle.tls.TlsCredentialedAgreement;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.TlsCryptoException;
+import org.spongycastle.tls.crypto.TlsSecret;
 
 /**
  * Credentialed class generating agreed secrets from a peer's public key for our end of the TLS connection using the JCE.

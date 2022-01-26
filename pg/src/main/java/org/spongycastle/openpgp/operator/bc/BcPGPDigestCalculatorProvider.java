@@ -1,12 +1,12 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculatorProvider;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.openpgp.operator.PGPDigestCalculatorProvider;
 
 public class BcPGPDigestCalculatorProvider
     implements PGPDigestCalculatorProvider

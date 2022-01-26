@@ -1,9 +1,9 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
 import javax.crypto.interfaces.PBEKey;
 
-import org.bouncycastle.crypto.CharToByteConverter;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CharToByteConverter;
+import org.spongycastle.util.Arrays;
 
 /**
  * A password based key for use with PBKDF2 as defined in PKCS#5 with full PBE parameters.

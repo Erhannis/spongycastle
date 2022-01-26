@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.io.InputStream;
 import java.security.AlgorithmParameters;
@@ -17,15 +17,15 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.jcajce.io.CipherInputStream;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptor;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.jcajce.io.CipherInputStream;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPublicKey;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.openpgp.operator.PGPDataDecryptor;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
 
 class OperatorHelper
 {

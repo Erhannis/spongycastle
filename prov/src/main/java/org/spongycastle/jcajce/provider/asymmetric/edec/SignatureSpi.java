@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.edec;
+package org.spongycastle.jcajce.provider.asymmetric.edec;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidKeyException;
@@ -8,15 +8,15 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.SignatureException;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters;
-import org.bouncycastle.crypto.params.Ed448PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed448PublicKeyParameters;
-import org.bouncycastle.crypto.signers.Ed25519Signer;
-import org.bouncycastle.crypto.signers.Ed448Signer;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PublicKeyParameters;
+import org.spongycastle.crypto.params.Ed448PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed448PublicKeyParameters;
+import org.spongycastle.crypto.signers.Ed25519Signer;
+import org.spongycastle.crypto.signers.Ed448Signer;
 
 public class SignatureSpi
     extends java.security.SignatureSpi

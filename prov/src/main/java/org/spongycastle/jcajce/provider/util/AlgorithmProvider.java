@@ -1,6 +1,6 @@
-package org.bouncycastle.jcajce.provider.util;
+package org.spongycastle.jcajce.provider.util;
 
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
 
 public abstract class AlgorithmProvider
 {

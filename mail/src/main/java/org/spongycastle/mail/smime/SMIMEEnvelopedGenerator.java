@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -11,13 +11,13 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.cms.CMSEnvelopedDataGenerator;
-import org.bouncycastle.cms.CMSEnvelopedDataStreamGenerator;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.RecipientInfoGenerator;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.cms.CMSEnvelopedDataGenerator;
+import org.spongycastle.cms.CMSEnvelopedDataStreamGenerator;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.RecipientInfoGenerator;
+import org.spongycastle.operator.OutputEncryptor;
 
 /**
  * General class for generating a pkcs7-mime message.

@@ -1,4 +1,4 @@
-package org.bouncycastle.util.encoders.test;
+package org.spongycastle.util.encoders.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 import junit.framework.TestCase;
-import org.bouncycastle.util.encoders.Encoder;
+import org.spongycastle.util.encoders.Encoder;
 
 public abstract class AbstractCoderTest extends TestCase
 {

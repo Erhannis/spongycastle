@@ -1,5 +1,5 @@
-// Copyright (c) 2005 The Legion Of The Bouncy Castle (https://www.bouncycastle.org)
-package org.bouncycastle.pkcs.test;
+// Copyright (c) 2005 The Legion Of The Bouncy Castle (https://www.spongycastle.org)
+package org.spongycastle.pkcs.test;
 
 import java.security.Security;
 
@@ -16,7 +16,7 @@ class BCTestSetup
 
     protected void setUp()
     {
-        Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+        Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
     }
 
     protected void tearDown()

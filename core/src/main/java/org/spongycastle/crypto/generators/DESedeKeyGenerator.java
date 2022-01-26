@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.params.DESedeParameters;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.params.DESedeParameters;
 
 public class DESedeKeyGenerator
     extends DESKeyGenerator

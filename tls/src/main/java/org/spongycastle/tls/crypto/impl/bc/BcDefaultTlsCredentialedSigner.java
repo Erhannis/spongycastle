@@ -1,19 +1,19 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed448PrivateKeyParameters;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.tls.Certificate;
-import org.bouncycastle.tls.DefaultTlsCredentialedSigner;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsSigner;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DSAPrivateKeyParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed448PrivateKeyParameters;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.tls.Certificate;
+import org.spongycastle.tls.DefaultTlsCredentialedSigner;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsSigner;
 
 /**
  * Credentialed class for generating signatures based on the use of primitives from the BC light-weight API.

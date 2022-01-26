@@ -1,4 +1,4 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 /**
  * Exception thrown when failed to initialize some DVCS-related staff.

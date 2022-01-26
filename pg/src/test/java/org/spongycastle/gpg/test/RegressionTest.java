@@ -1,9 +1,9 @@
-package org.bouncycastle.gpg.test;
+package org.spongycastle.gpg.test;
 
 import java.security.Security;
 
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.Test;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.Test;
 
 public class RegressionTest
 {
@@ -13,7 +13,7 @@ public class RegressionTest
 
     public static void main(String[] args)
     {
-        Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+        Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
         SimpleTest.runTests(tests);
     }
 }

@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CMCObjectIdentifiers;
-import org.bouncycastle.asn1.cmc.TaggedAttribute;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.cmc.BodyPartID;
+import org.spongycastle.asn1.cmc.CMCObjectIdentifiers;
+import org.spongycastle.asn1.cmc.TaggedAttribute;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class TaggedAttributeTest

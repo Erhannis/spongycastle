@@ -1,4 +1,4 @@
-package org.bouncycastle.operator.jcajce;
+package org.spongycastle.operator.jcajce;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -10,19 +10,19 @@ import java.security.cert.CertificateEncodingException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.OperatorStreamException;
-import org.bouncycastle.operator.RawContentVerifier;
-import org.bouncycastle.operator.RuntimeOperatorException;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.OperatorStreamException;
+import org.spongycastle.operator.RawContentVerifier;
+import org.spongycastle.operator.RuntimeOperatorException;
 
 public class JcaContentVerifierProviderBuilder
 {

@@ -1,17 +1,17 @@
-package org.bouncycastle.pqc.jcajce.provider.rainbow;
+package org.spongycastle.pqc.jcajce.provider.rainbow;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowPublicKeyParameters;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.pqc.crypto.rainbow.RainbowPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowPublicKeyParameters;
 
 
 /**
  * utility class for converting jce/jca Rainbow objects
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 
 public class RainbowKeysToParams

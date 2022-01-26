@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 public class PartialHashTreeVerificationException
     extends ERSException

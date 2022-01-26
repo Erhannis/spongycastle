@@ -1,15 +1,15 @@
-package org.bouncycastle.cert.crmf.jcajce;
+package org.spongycastle.cert.crmf.jcajce;
 
 import java.security.Provider;
 import java.security.PublicKey;
 
-import org.bouncycastle.asn1.crmf.CertReqMsg;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.crmf.CRMFException;
-import org.bouncycastle.cert.crmf.CertificateRequestMessage;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.asn1.crmf.CertReqMsg;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.crmf.CRMFException;
+import org.spongycastle.cert.crmf.CertificateRequestMessage;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
 
 public class JcaCertificateRequestMessage
     extends CertificateRequestMessage

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -29,54 +29,54 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.misc.NetscapeCertType;
-import org.bouncycastle.asn1.misc.NetscapeRevocationURL;
-import org.bouncycastle.asn1.misc.VerisignCzagExtension;
-import org.bouncycastle.asn1.util.ASN1Dump;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.style.RFC4519Style;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.TBSCertificate;
-import org.bouncycastle.jcajce.interfaces.BCX509Certificate;
-import org.bouncycastle.jcajce.io.OutputStreamFactory;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.misc.NetscapeCertType;
+import org.spongycastle.asn1.misc.NetscapeRevocationURL;
+import org.spongycastle.asn1.misc.VerisignCzagExtension;
+import org.spongycastle.asn1.util.ASN1Dump;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.style.RFC4519Style;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.x509.TBSCertificate;
+import org.spongycastle.jcajce.interfaces.BCX509Certificate;
+import org.spongycastle.jcajce.io.OutputStreamFactory;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 abstract class X509CertificateImpl
     extends X509Certificate
     implements BCX509Certificate
 {
     protected JcaJceHelper bcHelper;
-    protected org.bouncycastle.asn1.x509.Certificate c;
+    protected org.spongycastle.asn1.x509.Certificate c;
     protected BasicConstraints basicConstraints;
     protected boolean[] keyUsage;
     protected String sigAlgName;
     protected byte[] sigAlgParams;
 
-    X509CertificateImpl(JcaJceHelper bcHelper, org.bouncycastle.asn1.x509.Certificate c,
+    X509CertificateImpl(JcaJceHelper bcHelper, org.spongycastle.asn1.x509.Certificate c,
         BasicConstraints basicConstraints, boolean[] keyUsage, String sigAlgName, byte[] sigAlgParams)
     {
         this.bcHelper = bcHelper;
@@ -678,7 +678,7 @@ abstract class X509CertificateImpl
         return id1.getParameters().equals(id2.getParameters());
     }
 
-    private static Collection getAlternativeNames(org.bouncycastle.asn1.x509.Certificate c, String oid)
+    private static Collection getAlternativeNames(org.spongycastle.asn1.x509.Certificate c, String oid)
         throws CertificateParsingException
     {
         byte[] extOctets = getExtensionOctets(c, oid);
@@ -737,7 +737,7 @@ abstract class X509CertificateImpl
         }
     }
 
-    protected static byte[] getExtensionOctets(org.bouncycastle.asn1.x509.Certificate c, String oid)
+    protected static byte[] getExtensionOctets(org.spongycastle.asn1.x509.Certificate c, String oid)
     {
         ASN1OctetString extValue = getExtensionValue(c, oid);
         if (null != extValue)
@@ -747,7 +747,7 @@ abstract class X509CertificateImpl
         return null;
     }
 
-    protected static ASN1OctetString getExtensionValue(org.bouncycastle.asn1.x509.Certificate c, String oid)
+    protected static ASN1OctetString getExtensionValue(org.spongycastle.asn1.x509.Certificate c, String oid)
     {
         Extensions exts = c.getTBSCertificate().getExtensions();
         if (null != exts)

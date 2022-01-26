@@ -1,10 +1,10 @@
-package org.bouncycastle.pkix;
+package org.spongycastle.pkix;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectKeyIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.KeyTransRecipientId;
-import org.bouncycastle.cms.RecipientId;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectKeyIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.KeyTransRecipientId;
+import org.spongycastle.cms.RecipientId;
 
 /**
  * Holder class for public/private key based identity information.

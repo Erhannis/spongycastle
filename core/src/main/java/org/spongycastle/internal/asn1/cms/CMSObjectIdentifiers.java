@@ -1,7 +1,7 @@
-package org.bouncycastle.internal.asn1.cms;
+package org.spongycastle.internal.asn1.cms;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
 
 public interface CMSObjectIdentifiers
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -16,27 +16,27 @@ import java.util.List;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaCRLStore;
-import org.bouncycastle.cert.jcajce.JcaCertStore;
-import org.bouncycastle.cms.CMSCompressedDataStreamGenerator;
-import org.bouncycastle.cms.CMSDigestedData;
-import org.bouncycastle.cms.CMSSignedDataParser;
-import org.bouncycastle.cms.CMSSignedDataStreamGenerator;
-import org.bouncycastle.cms.CMSTypedStream;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.SignerInformationStore;
-import org.bouncycastle.cms.jcajce.JcaSignerInfoVerifierBuilder;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
-import org.bouncycastle.cms.jcajce.JcaX509CertSelectorConverter;
-import org.bouncycastle.cms.jcajce.ZlibCompressor;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaCRLStore;
+import org.spongycastle.cert.jcajce.JcaCertStore;
+import org.spongycastle.cms.CMSCompressedDataStreamGenerator;
+import org.spongycastle.cms.CMSDigestedData;
+import org.spongycastle.cms.CMSSignedDataParser;
+import org.spongycastle.cms.CMSSignedDataStreamGenerator;
+import org.spongycastle.cms.CMSTypedStream;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.SignerInformationStore;
+import org.spongycastle.cms.jcajce.JcaSignerInfoVerifierBuilder;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
+import org.spongycastle.cms.jcajce.JcaX509CertSelectorConverter;
+import org.spongycastle.cms.jcajce.ZlibCompressor;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.encoders.Base64;
 
 public class MiscDataStreamTest
     extends TestCase
@@ -107,7 +107,7 @@ public class MiscDataStreamTest
         if (!_initialised)
         {
             _initialised = true;
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
 
             _signDN   = "O=Bouncy Castle, C=AU";
             _signKP   = CMSTestUtil.makeKeyPair();

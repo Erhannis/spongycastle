@@ -1,9 +1,9 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.TlsCrypto;
 
 /**
  * Base interface for a (D)TLS endpoint.

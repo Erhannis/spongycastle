@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 /**
  * Interface for a converter that produces a byte encoding for a char array.

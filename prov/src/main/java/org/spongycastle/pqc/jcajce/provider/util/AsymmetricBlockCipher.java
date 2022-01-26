@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.util;
+package org.spongycastle.pqc.jcajce.provider.util;
 
 import java.io.ByteArrayOutputStream;
 import java.security.InvalidAlgorithmParameterException;
@@ -12,7 +12,7 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.ShortBufferException;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
 
 
 /**

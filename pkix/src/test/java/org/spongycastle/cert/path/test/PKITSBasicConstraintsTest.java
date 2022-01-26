@@ -1,26 +1,26 @@
-package org.bouncycastle.cert.path.test;
+package org.spongycastle.cert.path.test;
 
 import java.io.IOException;
 import java.security.Security;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509ContentVerifierProviderBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509ContentVerifierProviderBuilder;
-import org.bouncycastle.cert.path.CertPath;
-import org.bouncycastle.cert.path.CertPathValidation;
-import org.bouncycastle.cert.path.CertPathValidationResult;
-import org.bouncycastle.cert.path.validations.BasicConstraintsValidation;
-import org.bouncycastle.cert.path.validations.KeyUsageValidation;
-import org.bouncycastle.cert.path.validations.ParentCertIssuedValidation;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509ContentVerifierProviderBuilder;
+import org.spongycastle.cert.jcajce.JcaX509ContentVerifierProviderBuilder;
+import org.spongycastle.cert.path.CertPath;
+import org.spongycastle.cert.path.CertPathValidation;
+import org.spongycastle.cert.path.CertPathValidationResult;
+import org.spongycastle.cert.path.validations.BasicConstraintsValidation;
+import org.spongycastle.cert.path.validations.KeyUsageValidation;
+import org.spongycastle.cert.path.validations.ParentCertIssuedValidation;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.test.SimpleTest;
 
 public class PKITSBasicConstraintsTest
     extends SimpleTest
 {
-    public static final String PKITS_DATA_RESOURCE_PREFIX = "org/bouncycastle/cert/PKITS/certs/";
+    public static final String PKITS_DATA_RESOURCE_PREFIX = "org.spongycastle.cert/PKITS/certs/";
 
     public String getName()
     {

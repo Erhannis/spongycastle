@@ -1,21 +1,21 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.util.DEROtherInfo;
-import org.bouncycastle.pqc.crypto.ExchangePair;
-import org.bouncycastle.pqc.crypto.newhope.NHAgreement;
-import org.bouncycastle.pqc.crypto.newhope.NHExchangePairGenerator;
-import org.bouncycastle.pqc.crypto.newhope.NHKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.util.DEROtherInfo;
+import org.spongycastle.pqc.crypto.ExchangePair;
+import org.spongycastle.pqc.crypto.newhope.NHAgreement;
+import org.spongycastle.pqc.crypto.newhope.NHExchangePairGenerator;
+import org.spongycastle.pqc.crypto.newhope.NHKeyPairGenerator;
+import org.spongycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class NewHopeTest
     extends SimpleTest

@@ -1,6 +1,6 @@
-package org.bouncycastle.util.test;
+package org.spongycastle.util.test;
 
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * A fixed secure random designed to return data for someone needing random bytes.

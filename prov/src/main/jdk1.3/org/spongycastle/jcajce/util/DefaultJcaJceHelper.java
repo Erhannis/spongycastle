@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.util;
+package org.spongycastle.jcajce.util;
 
 import java.security.AlgorithmParameterGenerator;
 import java.security.AlgorithmParameters;

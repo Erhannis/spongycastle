@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.x509.sigi;
+package org.spongycastle.asn1.x509.sigi;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x500.DirectoryString;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x500.DirectoryString;
 
 /**
  * Structure for a name or pseudonym.
@@ -24,7 +24,7 @@ import org.bouncycastle.asn1.x500.DirectoryString;
  *       }
  * </pre>
  * 
- * @see org.bouncycastle.asn1.x509.sigi.PersonalData
+ * @see org.spongycastle.asn1.x509.sigi.PersonalData
  * 
  */
 public class NameOrPseudonym

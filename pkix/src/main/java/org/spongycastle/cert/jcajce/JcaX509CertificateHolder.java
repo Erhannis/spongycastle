@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.cert.X509CertificateHolder;
 
 /**
  * JCA helper class for converting an X509Certificate into a X509CertificateHolder object.

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dh;
+package org.spongycastle.jcajce.provider.asymmetric.dh;
 
 import java.math.BigInteger;
 import java.security.InvalidAlgorithmParameterException;
@@ -17,26 +17,26 @@ import javax.crypto.interfaces.DHPublicKey;
 import javax.crypto.spec.DHParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.crypto.BasicAgreement;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.agreement.DHUnifiedAgreement;
-import org.bouncycastle.crypto.agreement.MQVBasicAgreement;
-import org.bouncycastle.crypto.agreement.kdf.ConcatenationKDFGenerator;
-import org.bouncycastle.crypto.agreement.kdf.DHKEKGenerator;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.params.DHMQVPrivateParameters;
-import org.bouncycastle.crypto.params.DHMQVPublicParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
-import org.bouncycastle.crypto.params.DHUPrivateParameters;
-import org.bouncycastle.crypto.params.DHUPublicParameters;
-import org.bouncycastle.crypto.util.DigestFactory;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
-import org.bouncycastle.jcajce.spec.DHDomainParameterSpec;
-import org.bouncycastle.jcajce.spec.DHUParameterSpec;
-import org.bouncycastle.jcajce.spec.MQVParameterSpec;
-import org.bouncycastle.jcajce.spec.UserKeyingMaterialSpec;
+import org.spongycastle.crypto.BasicAgreement;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.agreement.DHUnifiedAgreement;
+import org.spongycastle.crypto.agreement.MQVBasicAgreement;
+import org.spongycastle.crypto.agreement.kdf.ConcatenationKDFGenerator;
+import org.spongycastle.crypto.agreement.kdf.DHKEKGenerator;
+import org.spongycastle.crypto.generators.KDF2BytesGenerator;
+import org.spongycastle.crypto.params.DHMQVPrivateParameters;
+import org.spongycastle.crypto.params.DHMQVPublicParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPrivateKeyParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.crypto.params.DHUPrivateParameters;
+import org.spongycastle.crypto.params.DHUPublicParameters;
+import org.spongycastle.crypto.util.DigestFactory;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
+import org.spongycastle.jcajce.spec.DHDomainParameterSpec;
+import org.spongycastle.jcajce.spec.DHUParameterSpec;
+import org.spongycastle.jcajce.spec.MQVParameterSpec;
+import org.spongycastle.jcajce.spec.UserKeyingMaterialSpec;
 
 /**
  * Diffie-Hellman key agreement. There's actually a better way of doing this

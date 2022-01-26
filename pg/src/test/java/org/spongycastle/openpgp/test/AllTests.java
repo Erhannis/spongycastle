@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.security.Security;
 
@@ -6,8 +6,8 @@ import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
@@ -16,7 +16,7 @@ public class AllTests
     {   
         Security.addProvider(new BouncyCastleProvider());
         
-        org.bouncycastle.util.test.Test[] tests = RegressionTest.tests;
+        org.spongycastle.util.test.Test[] tests = RegressionTest.tests;
         
         for (int i = 0; i != tests.length; i++)
         {

@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.ByteArrayInputStream;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.ocsp.BasicOCSPResponse;
-import org.bouncycastle.asn1.ocsp.OCSPRequest;
-import org.bouncycastle.asn1.ocsp.OCSPResponse;
-import org.bouncycastle.asn1.ocsp.ResponseBytes;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ocsp.BasicOCSPResponse;
+import org.spongycastle.asn1.ocsp.OCSPRequest;
+import org.spongycastle.asn1.ocsp.OCSPResponse;
+import org.spongycastle.asn1.ocsp.ResponseBytes;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.Test;
+import org.spongycastle.util.test.TestResult;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class OCSPTest
     implements Test

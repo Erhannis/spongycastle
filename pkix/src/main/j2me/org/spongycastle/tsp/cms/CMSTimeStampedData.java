@@ -1,23 +1,23 @@
-package org.bouncycastle.tsp.cms;
+package org.spongycastle.tsp.cms;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.cms.AttributeTable;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.cms.Evidence;
-import org.bouncycastle.asn1.cms.TimeStampAndCRL;
-import org.bouncycastle.asn1.cms.TimeStampTokenEvidence;
-import org.bouncycastle.asn1.cms.TimeStampedData;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.tsp.TimeStampToken;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.cms.AttributeTable;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.cms.Evidence;
+import org.spongycastle.asn1.cms.TimeStampAndCRL;
+import org.spongycastle.asn1.cms.TimeStampTokenEvidence;
+import org.spongycastle.asn1.cms.TimeStampedData;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.tsp.TimeStampToken;
 
 public class CMSTimeStampedData
 {

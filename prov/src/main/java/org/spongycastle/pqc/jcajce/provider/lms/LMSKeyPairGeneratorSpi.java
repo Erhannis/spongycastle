@@ -1,30 +1,30 @@
-package org.bouncycastle.pqc.jcajce.provider.lms;
+package org.spongycastle.pqc.jcajce.provider.lms;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.lms.HSSKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.lms.HSSKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.lms.HSSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.HSSPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.LMOtsParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.lms.LMSParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSigParameters;
-import org.bouncycastle.pqc.jcajce.spec.LMSHSSKeyGenParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.LMSHSSParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.LMSKeyGenParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.LMSParameterSpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.lms.HSSKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.lms.HSSKeyPairGenerator;
+import org.spongycastle.pqc.crypto.lms.HSSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.lms.HSSPublicKeyParameters;
+import org.spongycastle.pqc.crypto.lms.LMOtsParameters;
+import org.spongycastle.pqc.crypto.lms.LMSKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.lms.LMSKeyPairGenerator;
+import org.spongycastle.pqc.crypto.lms.LMSParameters;
+import org.spongycastle.pqc.crypto.lms.LMSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.lms.LMSPublicKeyParameters;
+import org.spongycastle.pqc.crypto.lms.LMSigParameters;
+import org.spongycastle.pqc.jcajce.spec.LMSHSSKeyGenParameterSpec;
+import org.spongycastle.pqc.jcajce.spec.LMSHSSParameterSpec;
+import org.spongycastle.pqc.jcajce.spec.LMSKeyGenParameterSpec;
+import org.spongycastle.pqc.jcajce.spec.LMSParameterSpec;
 
 public class LMSKeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

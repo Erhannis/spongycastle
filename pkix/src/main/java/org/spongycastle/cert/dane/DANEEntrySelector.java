@@ -1,6 +1,6 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Selector;
 
 public class DANEEntrySelector
     implements Selector

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.exception;
+package org.spongycastle.jce.exception;
 
 import java.security.cert.CertPath;
 import java.security.cert.CertPathValidatorException;

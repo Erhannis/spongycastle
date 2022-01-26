@@ -1,19 +1,19 @@
-package org.bouncycastle.pqc.crypto.mceliece;
+package org.spongycastle.pqc.crypto.mceliece;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.MessageEncryptor;
-import org.bouncycastle.pqc.math.linearalgebra.GF2Matrix;
-import org.bouncycastle.pqc.math.linearalgebra.GF2Vector;
-import org.bouncycastle.pqc.math.linearalgebra.GF2mField;
-import org.bouncycastle.pqc.math.linearalgebra.GoppaCode;
-import org.bouncycastle.pqc.math.linearalgebra.Permutation;
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialGF2mSmallM;
-import org.bouncycastle.pqc.math.linearalgebra.Vector;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.MessageEncryptor;
+import org.spongycastle.pqc.math.linearalgebra.GF2Matrix;
+import org.spongycastle.pqc.math.linearalgebra.GF2Vector;
+import org.spongycastle.pqc.math.linearalgebra.GF2mField;
+import org.spongycastle.pqc.math.linearalgebra.GoppaCode;
+import org.spongycastle.pqc.math.linearalgebra.Permutation;
+import org.spongycastle.pqc.math.linearalgebra.PolynomialGF2mSmallM;
+import org.spongycastle.pqc.math.linearalgebra.Vector;
 
 /**
  * This class implements the McEliece Public Key cryptosystem (McEliecePKCS). It

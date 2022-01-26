@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ecgost;
+package org.spongycastle.jcajce.provider.asymmetric.ecgost;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -8,21 +8,21 @@ import java.security.PublicKey;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.x9.X9IntegerConverter;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.agreement.ECVKOAgreement;
-import org.bouncycastle.crypto.digests.GOST3411Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithUKM;
-import org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.spec.UserKeyingMaterialSpec;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.asn1.x9.X9IntegerConverter;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.agreement.ECVKOAgreement;
+import org.spongycastle.crypto.digests.GOST3411Digest;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithUKM;
+import org.spongycastle.jcajce.provider.asymmetric.ec.BCECPublicKey;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.jcajce.spec.UserKeyingMaterialSpec;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
 
 public class KeyAgreementSpi
     extends BaseAgreementSpi

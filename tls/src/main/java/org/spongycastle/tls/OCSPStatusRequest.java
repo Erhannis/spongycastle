@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -7,11 +7,11 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ocsp.ResponderID;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ocsp.ResponderID;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.util.io.Streams;
 
 /**
  * RFC 3546 3.6

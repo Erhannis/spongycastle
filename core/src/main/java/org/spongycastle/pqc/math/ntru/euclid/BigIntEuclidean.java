@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.euclid;
+package org.spongycastle.pqc.math.ntru.euclid;
 
 import java.math.BigInteger;
 

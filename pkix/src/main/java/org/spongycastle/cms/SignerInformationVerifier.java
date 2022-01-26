@@ -1,13 +1,13 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.SignatureAlgorithmIdentifierFinder;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.SignatureAlgorithmIdentifierFinder;
 
 public class SignerInformationVerifier
 {

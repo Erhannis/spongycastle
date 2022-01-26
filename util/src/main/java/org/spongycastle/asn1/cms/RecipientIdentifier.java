@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.cms;
+package org.spongycastle.asn1.cms;
 
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERTaggedObject;
 
 /**
  * <a href="https://tools.ietf.org/html/rfc5652#section-6.2.1">RFC 5652</a>:
@@ -52,8 +52,8 @@ public class RecipientIdentifier
      * <li> null &rarr; null
      * <li> {@link RecipientIdentifier} object
      * <li> {@link IssuerAndSerialNumber} object
-     * <li> {@link org.bouncycastle.asn1.ASN1OctetString#getInstance(java.lang.Object) ASN1OctetString} input formats (OctetString, byte[]) with value of KeyIdentifier in DER form
-     * <li> {@link org.bouncycastle.asn1.ASN1Primitive ASN1Primitive} for RecipientIdentifier constructor
+     * <li> {@link org.spongycastle.asn1.ASN1OctetString#getInstance(java.lang.Object) ASN1OctetString} input formats (OctetString, byte[]) with value of KeyIdentifier in DER form
+     * <li> {@link org.spongycastle.asn1.ASN1Primitive ASN1Primitive} for RecipientIdentifier constructor
      * </ul>
      *
      * @param o the object we want converted.

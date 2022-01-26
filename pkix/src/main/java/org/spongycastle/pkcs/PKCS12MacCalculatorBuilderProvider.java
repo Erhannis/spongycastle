@@ -1,6 +1,6 @@
-package org.bouncycastle.pkcs;
+package org.spongycastle.pkcs;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 public interface PKCS12MacCalculatorBuilderProvider
 {

@@ -1,12 +1,12 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.bcpg.ContainedPacket;
-import org.bouncycastle.bcpg.S2K;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.bcpg.SymmetricKeyEncSessionPacket;
-import org.bouncycastle.openpgp.PGPException;
+import org.spongycastle.bcpg.ContainedPacket;
+import org.spongycastle.bcpg.S2K;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.bcpg.SymmetricKeyEncSessionPacket;
+import org.spongycastle.openpgp.PGPException;
 
 /**
  * PGP style PBE encryption method.

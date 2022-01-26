@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.kisa;
+package org.spongycastle.asn1.kisa;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Korea Information Security Agency (KISA)

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -11,32 +11,32 @@ import java.util.Map;
 
 import javax.crypto.spec.IvParameterSpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.cryptopro.GOST28147Parameters;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.engines.CryptoProWrapEngine;
-import org.bouncycastle.crypto.engines.GOST28147Engine;
-import org.bouncycastle.crypto.engines.GOST28147WrapEngine;
-import org.bouncycastle.crypto.macs.GOST28147Mac;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.GCFBBlockCipher;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameterGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseWrapCipher;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
-import org.bouncycastle.jcajce.spec.GOST28147ParameterSpec;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.cryptopro.GOST28147Parameters;
+import org.spongycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.engines.CryptoProWrapEngine;
+import org.spongycastle.crypto.engines.GOST28147Engine;
+import org.spongycastle.crypto.engines.GOST28147WrapEngine;
+import org.spongycastle.crypto.macs.GOST28147Mac;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.modes.GCFBBlockCipher;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameterGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseWrapCipher;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.jcajce.spec.GOST28147ParameterSpec;
+import org.spongycastle.util.Strings;
 
 public final class GOST28147
 {

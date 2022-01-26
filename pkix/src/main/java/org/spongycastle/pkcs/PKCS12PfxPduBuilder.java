@@ -1,21 +1,21 @@
-package org.bouncycastle.pkcs;
+package org.spongycastle.pkcs;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DLSequence;
-import org.bouncycastle.asn1.pkcs.AuthenticatedSafe;
-import org.bouncycastle.asn1.pkcs.ContentInfo;
-import org.bouncycastle.asn1.pkcs.MacData;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Pfx;
-import org.bouncycastle.cms.CMSEncryptedDataGenerator;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DLSequence;
+import org.spongycastle.asn1.pkcs.AuthenticatedSafe;
+import org.spongycastle.asn1.pkcs.ContentInfo;
+import org.spongycastle.asn1.pkcs.MacData;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.Pfx;
+import org.spongycastle.cms.CMSEncryptedDataGenerator;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.operator.OutputEncryptor;
 
 /**
  * A builder for the PKCS#12 Pfx key and certificate store.

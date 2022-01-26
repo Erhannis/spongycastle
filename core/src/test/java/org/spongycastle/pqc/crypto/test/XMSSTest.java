@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
@@ -6,16 +6,16 @@ import java.text.ParseException;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.pqc.crypto.xmss.XMSS;
-import org.bouncycastle.pqc.crypto.xmss.XMSSNode;
-import org.bouncycastle.pqc.crypto.xmss.XMSSParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSSignature;
-import org.bouncycastle.pqc.crypto.xmss.XMSSUtil;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.pqc.crypto.xmss.XMSS;
+import org.spongycastle.pqc.crypto.xmss.XMSSNode;
+import org.spongycastle.pqc.crypto.xmss.XMSSParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSSignature;
+import org.spongycastle.pqc.crypto.xmss.XMSSUtil;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Test cases for XMSS class.

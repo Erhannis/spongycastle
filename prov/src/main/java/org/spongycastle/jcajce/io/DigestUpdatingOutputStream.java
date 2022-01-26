@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.io;
+package org.spongycastle.jcajce.io;
 
 import java.io.IOException;
 import java.io.OutputStream;

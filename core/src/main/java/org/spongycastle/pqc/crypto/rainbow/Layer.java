@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.pqc.crypto.rainbow.util.GF2Field;
-import org.bouncycastle.pqc.crypto.rainbow.util.RainbowUtil;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.crypto.rainbow.util.GF2Field;
+import org.spongycastle.pqc.crypto.rainbow.util.RainbowUtil;
+import org.spongycastle.util.Arrays;
 
 
 /**

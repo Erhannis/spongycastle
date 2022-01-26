@@ -1,20 +1,20 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.AlertLevel;
-import org.bouncycastle.tls.ChannelBinding;
-import org.bouncycastle.tls.PSKTlsServer;
-import org.bouncycastle.tls.ProtocolName;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.TlsCredentialedDecryptor;
-import org.bouncycastle.tls.TlsPSKIdentityManager;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsCrypto;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.AlertLevel;
+import org.spongycastle.tls.ChannelBinding;
+import org.spongycastle.tls.PSKTlsServer;
+import org.spongycastle.tls.ProtocolName;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.TlsCredentialedDecryptor;
+import org.spongycastle.tls.TlsPSKIdentityManager;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsCrypto;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 class MockPSKDTLSServer
     extends PSKTlsServer

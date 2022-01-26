@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DERUTCTime;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.DERGeneralizedTime;
+import org.spongycastle.asn1.DERUTCTime;
+import org.spongycastle.util.test.SimpleTest;
 
 public class LocaleTest
     extends SimpleTest

@@ -1,8 +1,8 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
 import java.security.Key;
 
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.operator.GenericKey;
 
 class OperatorUtils
 {

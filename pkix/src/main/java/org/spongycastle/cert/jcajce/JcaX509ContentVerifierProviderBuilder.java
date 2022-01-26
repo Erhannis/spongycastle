@@ -1,14 +1,14 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.security.Provider;
 import java.security.cert.CertificateException;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509ContentVerifierProviderBuilder;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509ContentVerifierProviderBuilder;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
 
 public class JcaX509ContentVerifierProviderBuilder
     implements X509ContentVerifierProviderBuilder

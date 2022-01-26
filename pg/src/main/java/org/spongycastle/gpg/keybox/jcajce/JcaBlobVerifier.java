@@ -1,13 +1,13 @@
-package org.bouncycastle.gpg.keybox.jcajce;
+package org.spongycastle.gpg.keybox.jcajce;
 
 import java.security.DigestException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 
-import org.bouncycastle.gpg.keybox.BlobVerifier;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.gpg.keybox.BlobVerifier;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.util.Arrays;
 
 public class JcaBlobVerifier
     implements BlobVerifier

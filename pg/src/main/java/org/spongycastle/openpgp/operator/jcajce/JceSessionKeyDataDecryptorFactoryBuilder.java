@@ -1,14 +1,14 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.security.Provider;
 
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPSessionKey;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptor;
-import org.bouncycastle.openpgp.operator.SessionKeyDataDecryptorFactory;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPSessionKey;
+import org.spongycastle.openpgp.operator.PGPDataDecryptor;
+import org.spongycastle.openpgp.operator.SessionKeyDataDecryptorFactory;
 
 public class JceSessionKeyDataDecryptorFactoryBuilder
 {

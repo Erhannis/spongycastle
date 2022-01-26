@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Arrays;
 
 /**
  * Random generation based on the digest with counter. Calling addSeedMaterial will

@@ -1,19 +1,19 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.io.IOException;
 import java.security.cert.Certificate;
 import java.security.cert.X509CertSelector;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Selector;
 
 /**
  * This class is a Selector implementation for X.509 certificates.
  * 
- * @see org.bouncycastle.util.Selector
- * @see org.bouncycastle.x509.X509Store
- * @see org.bouncycastle.jce.provider.X509StoreCertCollection
- * @deprecated use the classes under org.bouncycastle.cert.selector
+ * @see org.spongycastle.util.Selector
+ * @see org.spongycastle.x509.X509Store
+ * @see org.spongycastle.jce.provider.X509StoreCertCollection
+ * @deprecated use the classes under org.spongycastle.cert.selector
  */
 public class X509CertStoreSelector
     extends X509CertSelector

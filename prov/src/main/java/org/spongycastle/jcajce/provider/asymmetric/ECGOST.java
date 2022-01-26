@@ -1,16 +1,16 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.ecgost.KeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.ecgost.KeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class ECGOST
 {
-    private static final String PREFIX_COMMON = "org.bouncycastle.jcajce.provider.asymmetric" + ".ec.";
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".ecgost.";
-    private static final String PREFIX_GOST_2012 = "org.bouncycastle.jcajce.provider.asymmetric" + ".ecgost12.";
+    private static final String PREFIX_COMMON = "org.spongycastle.jcajce.provider.asymmetric" + ".ec.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".ecgost.";
+    private static final String PREFIX_GOST_2012 = "org.spongycastle.jcajce.provider.asymmetric" + ".ecgost12.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider
@@ -64,19 +64,19 @@ public class ECGOST
 
             registerOid(provider, RosstandartObjectIdentifiers.id_tc26_gost_3410_12_256,
                     "ECGOST3410-2012",
-                    new org.bouncycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
+                    new org.spongycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
             registerOid(provider, RosstandartObjectIdentifiers.id_tc26_agreement_gost_3410_12_256,
                              "ECGOST3410-2012",
-                             new org.bouncycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
+                             new org.spongycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
             registerOidAlgorithmParameters(provider,
                     RosstandartObjectIdentifiers.id_tc26_gost_3410_12_256, "ECGOST3410-2012");
 
             registerOid(provider, RosstandartObjectIdentifiers.id_tc26_gost_3410_12_512,
                     "ECGOST3410-2012",
-                    new org.bouncycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
+                    new org.spongycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
             registerOid(provider, RosstandartObjectIdentifiers.id_tc26_agreement_gost_3410_12_512,
                     "ECGOST3410-2012",
-                    new org.bouncycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
+                    new org.spongycastle.jcajce.provider.asymmetric.ecgost12.KeyFactorySpi());
             registerOidAlgorithmParameters(provider,
                     RosstandartObjectIdentifiers.id_tc26_gost_3410_12_512, "ECGOST3410-2012");
 

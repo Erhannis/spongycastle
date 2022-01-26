@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 interface ProvTlsPeer
 {

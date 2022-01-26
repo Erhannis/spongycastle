@@ -1,6 +1,6 @@
-package org.bouncycastle.openssl;
+package org.spongycastle.openssl;
 
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.OperatorCreationException;
 
 public interface PEMDecryptorProvider
 {

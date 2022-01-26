@@ -1,4 +1,4 @@
-package org.bouncycastle.kmip.test;
+package org.spongycastle.kmip.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -6,21 +6,21 @@ import java.math.BigInteger;
 import java.util.Date;
 
 import junit.framework.TestCase;
-import org.bouncycastle.kmip.wire.KMIPBigInteger;
-import org.bouncycastle.kmip.wire.KMIPBoolean;
-import org.bouncycastle.kmip.wire.KMIPByteString;
-import org.bouncycastle.kmip.wire.KMIPDateTime;
-import org.bouncycastle.kmip.wire.KMIPEncodable;
-import org.bouncycastle.kmip.wire.KMIPEnumeration;
-import org.bouncycastle.kmip.wire.KMIPInteger;
-import org.bouncycastle.kmip.wire.KMIPInterval;
-import org.bouncycastle.kmip.wire.KMIPItem;
-import org.bouncycastle.kmip.wire.KMIPLong;
-import org.bouncycastle.kmip.wire.KMIPStructure;
-import org.bouncycastle.kmip.wire.KMIPTextString;
-import org.bouncycastle.kmip.wire.binary.BinaryEncoder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.kmip.wire.KMIPBigInteger;
+import org.spongycastle.kmip.wire.KMIPBoolean;
+import org.spongycastle.kmip.wire.KMIPByteString;
+import org.spongycastle.kmip.wire.KMIPDateTime;
+import org.spongycastle.kmip.wire.KMIPEncodable;
+import org.spongycastle.kmip.wire.KMIPEnumeration;
+import org.spongycastle.kmip.wire.KMIPInteger;
+import org.spongycastle.kmip.wire.KMIPInterval;
+import org.spongycastle.kmip.wire.KMIPItem;
+import org.spongycastle.kmip.wire.KMIPLong;
+import org.spongycastle.kmip.wire.KMIPStructure;
+import org.spongycastle.kmip.wire.KMIPTextString;
+import org.spongycastle.kmip.wire.binary.BinaryEncoder;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class BasicBinTest
     extends TestCase

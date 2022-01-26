@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
 
 /**
  * this does your basic RSA algorithm.

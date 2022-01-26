@@ -1,8 +1,8 @@
-package org.bouncycastle.cert;
+package org.spongycastle.cert;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.OperatorCreationException;
 
 public interface X509ContentVerifierProviderBuilder
 {

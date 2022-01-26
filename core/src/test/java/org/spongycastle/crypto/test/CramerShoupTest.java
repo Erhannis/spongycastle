@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.agreement.DHStandardGroups;
-import org.bouncycastle.crypto.engines.CramerShoupCiphertext;
-import org.bouncycastle.crypto.engines.CramerShoupCoreEngine;
-import org.bouncycastle.crypto.engines.CramerShoupCoreEngine.CramerShoupCiphertextException;
-import org.bouncycastle.crypto.generators.CramerShoupKeyPairGenerator;
-import org.bouncycastle.crypto.generators.CramerShoupParametersGenerator;
-import org.bouncycastle.crypto.params.CramerShoupKeyGenerationParameters;
-import org.bouncycastle.crypto.params.CramerShoupParameters;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.agreement.DHStandardGroups;
+import org.spongycastle.crypto.engines.CramerShoupCiphertext;
+import org.spongycastle.crypto.engines.CramerShoupCoreEngine;
+import org.spongycastle.crypto.engines.CramerShoupCoreEngine.CramerShoupCiphertextException;
+import org.spongycastle.crypto.generators.CramerShoupKeyPairGenerator;
+import org.spongycastle.crypto.generators.CramerShoupParametersGenerator;
+import org.spongycastle.crypto.params.CramerShoupKeyGenerationParameters;
+import org.spongycastle.crypto.params.CramerShoupParameters;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CramerShoupTest
     extends SimpleTest

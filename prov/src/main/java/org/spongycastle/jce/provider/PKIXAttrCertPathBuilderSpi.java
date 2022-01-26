@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
@@ -25,19 +25,19 @@ import java.util.Set;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.jcajce.PKIXCertStoreSelector;
-import org.bouncycastle.jcajce.PKIXExtendedBuilderParameters;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jce.exception.ExtCertPathBuilderException;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.StoreException;
-import org.bouncycastle.x509.ExtendedPKIXBuilderParameters;
-import org.bouncycastle.x509.ExtendedPKIXParameters;
-import org.bouncycastle.x509.X509AttributeCertStoreSelector;
-import org.bouncycastle.x509.X509AttributeCertificate;
-import org.bouncycastle.x509.X509CertStoreSelector;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.jcajce.PKIXCertStoreSelector;
+import org.spongycastle.jcajce.PKIXExtendedBuilderParameters;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jce.exception.ExtCertPathBuilderException;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.StoreException;
+import org.spongycastle.x509.ExtendedPKIXBuilderParameters;
+import org.spongycastle.x509.ExtendedPKIXParameters;
+import org.spongycastle.x509.X509AttributeCertStoreSelector;
+import org.spongycastle.x509.X509AttributeCertificate;
+import org.spongycastle.x509.X509CertStoreSelector;
 
 public class PKIXAttrCertPathBuilderSpi
     extends CertPathBuilderSpi

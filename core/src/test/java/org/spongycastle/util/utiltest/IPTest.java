@@ -1,7 +1,7 @@
-package org.bouncycastle.util.utiltest;
+package org.spongycastle.util.utiltest;
 
 import junit.framework.TestCase;
-import org.bouncycastle.util.IPAddress;
+import org.spongycastle.util.IPAddress;
 
 public class IPTest
     extends TestCase

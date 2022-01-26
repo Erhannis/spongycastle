@@ -1,20 +1,20 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHA512tDigest;
-import org.bouncycastle.pqc.crypto.MessageSigner;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCS256KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCS256KeyPairGenerator;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCS256Signer;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.digests.SHA3Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHA512tDigest;
+import org.spongycastle.pqc.crypto.MessageSigner;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCS256KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCS256KeyPairGenerator;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCS256Signer;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class Sphincs256Test

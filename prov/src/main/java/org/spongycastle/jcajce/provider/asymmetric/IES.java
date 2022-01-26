@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class IES
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".ies.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".ies.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

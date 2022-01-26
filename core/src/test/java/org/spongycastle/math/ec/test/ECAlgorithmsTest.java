@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package org.spongycastle.math.ec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -7,13 +7,13 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ECPoint;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.asn1.x9.X9ECPoint;
+import org.spongycastle.crypto.ec.CustomNamedCurves;
+import org.spongycastle.math.ec.ECAlgorithms;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

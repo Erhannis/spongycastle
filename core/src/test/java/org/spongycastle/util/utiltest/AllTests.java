@@ -1,4 +1,4 @@
-package org.bouncycastle.util.utiltest;
+package org.spongycastle.util.utiltest;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

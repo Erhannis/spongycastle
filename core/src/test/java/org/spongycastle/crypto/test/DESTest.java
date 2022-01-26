@@ -1,18 +1,18 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.generators.DESKeyGenerator;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.CFBBlockCipher;
-import org.bouncycastle.crypto.modes.OFBBlockCipher;
-import org.bouncycastle.crypto.params.DESParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.engines.DESEngine;
+import org.spongycastle.crypto.generators.DESKeyGenerator;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.modes.CFBBlockCipher;
+import org.spongycastle.crypto.modes.OFBBlockCipher;
+import org.spongycastle.crypto.params.DESParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 class DESParityTest
     extends SimpleTest

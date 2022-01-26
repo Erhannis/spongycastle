@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 /**
  * Parameters for key/byte stream derivation classes

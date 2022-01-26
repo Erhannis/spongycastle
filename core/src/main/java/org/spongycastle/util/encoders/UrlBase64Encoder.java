@@ -1,4 +1,4 @@
-package org.bouncycastle.util.encoders;
+package org.spongycastle.util.encoders;
 
 /**
  * Convert binary data to and from UrlBase64 encoding.  This is identical to

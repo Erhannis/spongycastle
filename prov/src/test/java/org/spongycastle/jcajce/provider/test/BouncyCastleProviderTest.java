@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package org.spongycastle.jcajce.provider.test;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import junit.framework.TestCase;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 public class BouncyCastleProviderTest
     extends TestCase
@@ -50,7 +50,7 @@ public class BouncyCastleProviderTest
                     assertTrue(rawValue instanceof String);
                     String value = (String)rawValue;
 
-                    if (value.startsWith("org.bouncycastle."))
+                    if (value.startsWith("org.spongycastle."))
                     {
                         if (key.startsWith("CertStore."))
                         {
@@ -92,7 +92,7 @@ public class BouncyCastleProviderTest
                         String value = (String) rawValue;
     
                         String internal = key.substring("Alg.Alias.".length()).split("\\.")[0];
-                        if (!value.startsWith("org.bouncycastle.")) {
+                        if (!value.startsWith("org.spongycastle.")) {
                             String chainedKey = internal + "." + value;
     
                             Object rawChainedValue = provider.get(chainedKey);

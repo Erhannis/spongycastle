@@ -1,21 +1,21 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SM3Digest;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithID;
-import org.bouncycastle.crypto.params.SM2KeyExchangePrivateParameters;
-import org.bouncycastle.crypto.params.SM2KeyExchangePublicParameters;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Memoable;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SM3Digest;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithID;
+import org.spongycastle.crypto.params.SM2KeyExchangePrivateParameters;
+import org.spongycastle.crypto.params.SM2KeyExchangePublicParameters;
+import org.spongycastle.math.ec.ECAlgorithms;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Memoable;
+import org.spongycastle.util.Pack;
 
 /**
  * SM2 Key Exchange protocol - based on https://tools.ietf.org/html/draft-shen-sm2-ecdsa-02

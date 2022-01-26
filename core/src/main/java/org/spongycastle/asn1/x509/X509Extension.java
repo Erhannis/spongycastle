@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Boolean;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
 
 /**
  * an object for the elements in the X.509 V3 extension block.

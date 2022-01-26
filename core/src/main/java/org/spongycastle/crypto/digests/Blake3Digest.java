@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
 import java.util.Iterator;
 import java.util.Stack;
 
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.params.Blake3Parameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.Memoable;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.params.Blake3Parameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.Memoable;
+import org.spongycastle.util.Pack;
 
 /**
  * Blake3 implementation.

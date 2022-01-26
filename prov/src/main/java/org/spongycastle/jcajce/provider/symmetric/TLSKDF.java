@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
@@ -6,19 +6,19 @@ import java.security.spec.KeySpec;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.util.DigestFactory;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
-import org.bouncycastle.jcajce.spec.TLSKeyMaterialSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA384Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.util.DigestFactory;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.jcajce.spec.TLSKeyMaterialSpec;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 public class TLSKDF
 {

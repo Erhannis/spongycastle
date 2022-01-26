@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ecgost12;
+package org.spongycastle.jcajce.provider.asymmetric.ecgost12;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -10,16 +10,16 @@ import java.security.interfaces.ECPublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPrivateKeySpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
+import org.spongycastle.jcajce.provider.asymmetric.util.EC5Util;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECPrivateKeySpec;
+import org.spongycastle.jce.spec.ECPublicKeySpec;
 
 public class KeyFactorySpi
     extends BaseKeyFactorySpi

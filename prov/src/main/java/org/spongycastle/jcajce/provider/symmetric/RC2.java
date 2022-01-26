@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -10,26 +10,26 @@ import java.security.spec.InvalidParameterSpecException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.RC2ParameterSpec;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RC2CBCParameter;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.engines.RC2Engine;
-import org.bouncycastle.crypto.engines.RC2WrapEngine;
-import org.bouncycastle.crypto.macs.CBCBlockCipherMac;
-import org.bouncycastle.crypto.macs.CFBBlockCipherMac;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameterGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseWrapCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.PBESecretKeyFactory;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RC2CBCParameter;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.engines.RC2Engine;
+import org.spongycastle.crypto.engines.RC2WrapEngine;
+import org.spongycastle.crypto.macs.CBCBlockCipherMac;
+import org.spongycastle.crypto.macs.CFBBlockCipherMac;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameterGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseWrapCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.PBESecretKeyFactory;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.util.Arrays;
 
 public final class RC2
 {

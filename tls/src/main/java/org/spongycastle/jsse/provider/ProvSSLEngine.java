@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -17,20 +17,20 @@ import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLParameters;
 import javax.net.ssl.SSLSession;
 
-import org.bouncycastle.jsse.BCApplicationProtocolSelector;
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.jsse.BCSSLConnection;
-import org.bouncycastle.jsse.BCSSLEngine;
-import org.bouncycastle.jsse.BCSSLParameters;
-import org.bouncycastle.jsse.BCX509Key;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.RecordFormat;
-import org.bouncycastle.tls.RecordPreview;
-import org.bouncycastle.tls.SecurityParameters;
-import org.bouncycastle.tls.TlsClientProtocol;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsProtocol;
-import org.bouncycastle.tls.TlsServerProtocol;
+import org.spongycastle.jsse.BCApplicationProtocolSelector;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCSSLConnection;
+import org.spongycastle.jsse.BCSSLEngine;
+import org.spongycastle.jsse.BCSSLParameters;
+import org.spongycastle.jsse.BCX509Key;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.RecordFormat;
+import org.spongycastle.tls.RecordPreview;
+import org.spongycastle.tls.SecurityParameters;
+import org.spongycastle.tls.TlsClientProtocol;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsProtocol;
+import org.spongycastle.tls.TlsServerProtocol;
 
 /*
  * TODO[jsse] Known limitations (relative to SSLEngine javadoc): 1. The wrap() and unwrap() methods

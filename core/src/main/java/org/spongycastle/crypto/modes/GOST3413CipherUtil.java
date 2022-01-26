@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * Some methods for GOST 3412 cipher algorithm

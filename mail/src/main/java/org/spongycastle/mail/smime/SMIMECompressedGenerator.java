@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -11,9 +11,9 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
-import org.bouncycastle.cms.CMSCompressedDataGenerator;
-import org.bouncycastle.cms.CMSCompressedDataStreamGenerator;
-import org.bouncycastle.operator.OutputCompressor;
+import org.spongycastle.cms.CMSCompressedDataGenerator;
+import org.spongycastle.cms.CMSCompressedDataStreamGenerator;
+import org.spongycastle.operator.OutputCompressor;
 
 /**
  * General class for generating a pkcs7-mime compressed message.
@@ -44,8 +44,8 @@ public class SMIMECompressedGenerator
         {
             final MailcapCommandMap mc = (MailcapCommandMap)commandMap;
 
-            mc.addMailcap("application/pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_mime");
-            mc.addMailcap("application/x-pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_mime");
+            mc.addMailcap("application/pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_mime");
+            mc.addMailcap("application/x-pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_mime");
 
             AccessController.doPrivileged(new PrivilegedAction()
             {

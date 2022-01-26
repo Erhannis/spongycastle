@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
 import java.util.List;
 

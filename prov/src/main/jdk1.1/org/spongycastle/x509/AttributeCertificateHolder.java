@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -11,21 +11,21 @@ import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.Holder;
-import org.bouncycastle.asn1.x509.IssuerSerial;
-import org.bouncycastle.asn1.x509.ObjectDigestInfo;
-import org.bouncycastle.jce.PrincipalUtil;
-import org.bouncycastle.jce.X509Principal;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.Holder;
+import org.spongycastle.asn1.x509.IssuerSerial;
+import org.spongycastle.asn1.x509.ObjectDigestInfo;
+import org.spongycastle.jce.PrincipalUtil;
+import org.spongycastle.jce.X509Principal;
 import java.security.cert.CertSelector;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Selector;
 
 /**
  * The Holder object.
@@ -42,7 +42,7 @@ import org.bouncycastle.util.Selector;
  *                         -- for example, an executable
  *          }
  * </pre>
- * @deprecated use org.bouncycastle.cert.AttributeCertificateHolder
+ * @deprecated use org.spongycastle.cert.AttributeCertificateHolder
  */
 public class AttributeCertificateHolder
     implements CertSelector, Selector
@@ -57,7 +57,7 @@ public class AttributeCertificateHolder
     public AttributeCertificateHolder(X509Principal issuerName,
         BigInteger serialNumber)
     {
-        holder = new org.bouncycastle.asn1.x509.Holder(new IssuerSerial(
+        holder = new org.spongycastle.asn1.x509.Holder(new IssuerSerial(
             new GeneralNames(new GeneralName(issuerName)),
             new ASN1Integer(serialNumber)));
     }

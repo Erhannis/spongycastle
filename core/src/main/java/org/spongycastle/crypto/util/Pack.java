@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 /**
- * @deprecated use org.bouncycastle.util.pack
+ * @deprecated use org.spongycastle.util.pack
  */
 public abstract class Pack
 {

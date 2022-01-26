@@ -1,14 +1,14 @@
-package org.bouncycastle.jcajce.provider.config;
+package org.spongycastle.jcajce.provider.config;
 
 import java.io.OutputStream;
 import java.security.KeyStore;
 import java.security.KeyStore.ProtectionParameter;
 
 /**
- * @deprecated use org.bouncycastle.jcajce.PKCS12StoreParameter
+ * @deprecated use org.spongycastle.jcajce.PKCS12StoreParameter
  */
 public class PKCS12StoreParameter
-    extends org.bouncycastle.jcajce.PKCS12StoreParameter
+    extends org.spongycastle.jcajce.PKCS12StoreParameter
 {
     public PKCS12StoreParameter(OutputStream out, char[] password)
     {

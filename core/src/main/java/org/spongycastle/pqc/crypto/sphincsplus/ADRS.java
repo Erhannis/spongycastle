@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.crypto.sphincsplus;
+package org.spongycastle.pqc.crypto.sphincsplus;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 class ADRS
 {

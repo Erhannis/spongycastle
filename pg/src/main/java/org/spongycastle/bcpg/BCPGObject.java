@@ -1,9 +1,9 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.util.Encodable;
 
 /**
  * Base class for a PGP object.

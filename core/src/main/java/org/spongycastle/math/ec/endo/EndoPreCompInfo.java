@@ -1,7 +1,7 @@
-package org.bouncycastle.math.ec.endo;
+package org.spongycastle.math.ec.endo;
 
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.PreCompInfo;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.PreCompInfo;
 
 public class EndoPreCompInfo implements PreCompInfo
 {

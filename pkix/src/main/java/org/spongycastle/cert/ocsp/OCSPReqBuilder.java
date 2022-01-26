@@ -1,24 +1,24 @@
-package org.bouncycastle.cert.ocsp;
+package org.spongycastle.cert.ocsp;
 
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.ocsp.OCSPRequest;
-import org.bouncycastle.asn1.ocsp.Request;
-import org.bouncycastle.asn1.ocsp.Signature;
-import org.bouncycastle.asn1.ocsp.TBSRequest;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.ContentSigner;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.ocsp.OCSPRequest;
+import org.spongycastle.asn1.ocsp.Request;
+import org.spongycastle.asn1.ocsp.Signature;
+import org.spongycastle.asn1.ocsp.TBSRequest;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.ContentSigner;
 
 public class OCSPReqBuilder
 {
@@ -176,7 +176,7 @@ public class OCSPReqBuilder
      * Generate an unsigned request
      * 
      * @return the OCSPReq
-     * @throws org.bouncycastle.cert.ocsp.OCSPException
+     * @throws org.spongycastle.cert.ocsp.OCSPException
      */
     public OCSPReq build()
         throws OCSPException

@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.IOException;
 import java.security.Key;
@@ -7,17 +7,17 @@ import java.security.Provider;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cms.IssuerAndSerialNumber;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.KeyTransRecipient;
-import org.bouncycastle.cms.KeyTransRecipientId;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.jcajce.JceKTSKeyUnwrapper;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cms.IssuerAndSerialNumber;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.KeyTransRecipient;
+import org.spongycastle.cms.KeyTransRecipientId;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.jcajce.JceKTSKeyUnwrapper;
+import org.spongycastle.util.encoders.Hex;
 
 public abstract class JceKTSKeyTransRecipient
     implements KeyTransRecipient

@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 public class XofUtils
 {

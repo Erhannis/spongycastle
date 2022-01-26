@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.cryptopro;
+package org.spongycastle.asn1.cryptopro;
 
 import java.math.BigInteger;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * table of the available named parameters for GOST 3410-94.

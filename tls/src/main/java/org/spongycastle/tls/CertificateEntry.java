@@ -1,8 +1,8 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.util.Hashtable;
 
-import org.bouncycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.TlsCertificate;
 
 public class CertificateEntry
 {

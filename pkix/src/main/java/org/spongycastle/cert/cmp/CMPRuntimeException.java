@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.cmp;
+package org.spongycastle.cert.cmp;
 
 public class CMPRuntimeException
     extends RuntimeException

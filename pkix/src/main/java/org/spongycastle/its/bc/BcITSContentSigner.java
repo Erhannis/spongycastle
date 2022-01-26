@@ -1,24 +1,24 @@
-package org.bouncycastle.its.bc;
+package org.spongycastle.its.bc;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.io.DigestOutputStream;
-import org.bouncycastle.crypto.params.ECNamedDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.signers.DSADigestSigner;
-import org.bouncycastle.crypto.signers.ECDSASigner;
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.operator.ITSContentSigner;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.bc.BcDefaultDigestProvider;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.io.DigestOutputStream;
+import org.spongycastle.crypto.params.ECNamedDomainParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.signers.DSADigestSigner;
+import org.spongycastle.crypto.signers.ECDSASigner;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.operator.ITSContentSigner;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.bc.BcDefaultDigestProvider;
+import org.spongycastle.util.Arrays;
 
 public class BcITSContentSigner
     implements ITSContentSigner

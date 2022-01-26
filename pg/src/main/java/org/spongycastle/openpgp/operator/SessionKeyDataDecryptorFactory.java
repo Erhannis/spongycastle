@@ -1,6 +1,6 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.openpgp.PGPSessionKey;
+import org.spongycastle.openpgp.PGPSessionKey;
 
 public interface SessionKeyDataDecryptorFactory
     extends PGPDataDecryptorFactory

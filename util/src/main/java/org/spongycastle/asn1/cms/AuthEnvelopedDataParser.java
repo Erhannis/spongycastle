@@ -1,16 +1,16 @@
-package org.bouncycastle.asn1.cms;
+package org.spongycastle.asn1.cms;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1ParsingException;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1SetParser;
-import org.bouncycastle.asn1.ASN1TaggedObjectParser;
-import org.bouncycastle.asn1.ASN1Util;
-import org.bouncycastle.asn1.BERTags;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1ParsingException;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.ASN1SetParser;
+import org.spongycastle.asn1.ASN1TaggedObjectParser;
+import org.spongycastle.asn1.ASN1Util;
+import org.spongycastle.asn1.BERTags;
 
 /**
  * Parse {@link AuthEnvelopedData} input stream.

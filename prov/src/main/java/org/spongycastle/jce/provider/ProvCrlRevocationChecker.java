@@ -1,13 +1,13 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.security.cert.CertPathValidatorException;
 import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
 import java.util.Date;
 
-import org.bouncycastle.jcajce.PKIXCertRevocationChecker;
-import org.bouncycastle.jcajce.PKIXCertRevocationCheckerParameters;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.PKIXCertRevocationChecker;
+import org.spongycastle.jcajce.PKIXCertRevocationCheckerParameters;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 class ProvCrlRevocationChecker
     implements PKIXCertRevocationChecker

@@ -1,22 +1,22 @@
-package org.bouncycastle.test.est;
+package org.spongycastle.test.est;
 
 
 import javax.net.ssl.X509TrustManager;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.cmc.SimplePKIResponse;
-import org.bouncycastle.est.CACertsResponse;
-import org.bouncycastle.est.CSRAttributesResponse;
-import org.bouncycastle.est.CSRRequestResponse;
-import org.bouncycastle.est.ESTServiceBuilder;
-import org.bouncycastle.est.jcajce.JcaJceUtils;
-import org.bouncycastle.est.jcajce.JsseESTServiceBuilder;
-import org.bouncycastle.est.jcajce.SSLSocketFactoryCreator;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.cmc.SimplePKIResponse;
+import org.spongycastle.est.CACertsResponse;
+import org.spongycastle.est.CSRAttributesResponse;
+import org.spongycastle.est.CSRRequestResponse;
+import org.spongycastle.est.ESTServiceBuilder;
+import org.spongycastle.est.jcajce.JcaJceUtils;
+import org.spongycastle.est.jcajce.JsseESTServiceBuilder;
+import org.spongycastle.est.jcajce.SSLSocketFactoryCreator;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 import org.junit.Assert;
 import org.junit.Test;
 

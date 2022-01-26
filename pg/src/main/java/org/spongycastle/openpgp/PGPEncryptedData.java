@@ -1,17 +1,17 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.bcpg.InputStreamPacket;
-import org.bouncycastle.bcpg.SymmetricEncIntegrityPacket;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptor;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptorFactory;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.bcpg.InputStreamPacket;
+import org.spongycastle.bcpg.SymmetricEncIntegrityPacket;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.openpgp.operator.PGPDataDecryptor;
+import org.spongycastle.openpgp.operator.PGPDataDecryptorFactory;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.util.Arrays;
 
 /**
  * A PGP encrypted data object.

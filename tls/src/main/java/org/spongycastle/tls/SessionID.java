@@ -1,7 +1,7 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public final class SessionID
     implements Comparable

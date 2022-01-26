@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Encodable;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.util.Encodable;
+import org.spongycastle.util.Pack;
 
 /**
  * XMSS Signature.

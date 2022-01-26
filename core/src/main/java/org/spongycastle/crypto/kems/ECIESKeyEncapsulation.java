@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.kems;
+package org.spongycastle.crypto.kems;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.KeyEncapsulation;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECKeyParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.KDFParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECMultiplier;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.FixedPointCombMultiplier;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.KeyEncapsulation;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECKeyParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.crypto.params.KDFParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECMultiplier;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.FixedPointCombMultiplier;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * The ECIES Key Encapsulation Mechanism (ECIES-KEM) from ISO 18033-2.

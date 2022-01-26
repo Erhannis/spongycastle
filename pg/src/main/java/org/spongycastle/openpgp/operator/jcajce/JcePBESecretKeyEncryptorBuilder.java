@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -10,13 +10,13 @@ import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.spec.IvParameterSpec;
 
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.openpgp.operator.PBESecretKeyEncryptor;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.openpgp.operator.PBESecretKeyEncryptor;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
 
 public class JcePBESecretKeyEncryptorBuilder
 {

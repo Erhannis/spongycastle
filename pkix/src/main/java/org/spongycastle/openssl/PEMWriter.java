@@ -1,12 +1,12 @@
-package org.bouncycastle.openssl;
+package org.spongycastle.openssl;
 
 import java.io.IOException;
 import java.io.Writer;
 
-import org.bouncycastle.openssl.jcajce.JcaMiscPEMGenerator;
-import org.bouncycastle.util.io.pem.PemGenerationException;
-import org.bouncycastle.util.io.pem.PemObjectGenerator;
-import org.bouncycastle.util.io.pem.PemWriter;
+import org.spongycastle.openssl.jcajce.JcaMiscPEMGenerator;
+import org.spongycastle.util.io.pem.PemGenerationException;
+import org.spongycastle.util.io.pem.PemObjectGenerator;
+import org.spongycastle.util.io.pem.PemWriter;
 
 /**
  * General purpose writer for OpenSSL PEM objects.

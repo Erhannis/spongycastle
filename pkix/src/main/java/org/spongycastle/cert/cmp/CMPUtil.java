@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.cmp;
+package org.spongycastle.cert.cmp;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Object;
 
 class CMPUtil
 {

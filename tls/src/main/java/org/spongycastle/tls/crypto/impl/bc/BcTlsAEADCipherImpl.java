@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.modes.AEADBlockCipher;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.impl.TlsAEADCipherImpl;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.modes.AEADBlockCipher;
+import org.spongycastle.crypto.params.AEADParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.impl.TlsAEADCipherImpl;
 
 final class BcTlsAEADCipherImpl
     implements TlsAEADCipherImpl

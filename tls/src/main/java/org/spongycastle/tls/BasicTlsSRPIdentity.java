@@ -1,7 +1,7 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * A basic SRP Identity holder.

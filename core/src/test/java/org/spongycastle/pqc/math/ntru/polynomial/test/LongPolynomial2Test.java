@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package org.spongycastle.pqc.math.ntru.polynomial.test;
 
 import java.util.Random;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.LongPolynomial2;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.LongPolynomial2;
+import org.spongycastle.util.Arrays;
 
 public class LongPolynomial2Test
     extends TestCase

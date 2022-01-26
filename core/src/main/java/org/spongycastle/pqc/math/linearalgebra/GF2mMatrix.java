@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 /**
  * This class describes some operations with matrices over finite field <i>GF(2<sup>m</sup>)</i>

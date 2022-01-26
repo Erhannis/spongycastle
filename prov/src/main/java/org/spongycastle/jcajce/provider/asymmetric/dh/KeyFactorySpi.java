@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dh;
+package org.spongycastle.jcajce.provider.asymmetric.dh;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -13,13 +13,13 @@ import javax.crypto.interfaces.DHPublicKey;
 import javax.crypto.spec.DHPrivateKeySpec;
 import javax.crypto.spec.DHPublicKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ExtendedInvalidKeySpecException;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
+import org.spongycastle.jcajce.provider.asymmetric.util.ExtendedInvalidKeySpecException;
 
 public class KeyFactorySpi
     extends BaseKeyFactorySpi

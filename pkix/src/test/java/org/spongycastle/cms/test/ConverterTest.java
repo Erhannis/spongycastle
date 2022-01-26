@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.math.BigInteger;
 import java.security.cert.X509CertSelector;
@@ -6,13 +6,13 @@ import java.security.cert.X509CertSelector;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.cms.KeyTransRecipientId;
-import org.bouncycastle.cms.SignerId;
-import org.bouncycastle.cms.jcajce.JcaSelectorConverter;
-import org.bouncycastle.cms.jcajce.JcaX509CertSelectorConverter;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.cms.KeyTransRecipientId;
+import org.spongycastle.cms.SignerId;
+import org.spongycastle.cms.jcajce.JcaSelectorConverter;
+import org.spongycastle.cms.jcajce.JcaX509CertSelectorConverter;
+import org.spongycastle.util.Arrays;
 
 public class ConverterTest
     extends TestCase

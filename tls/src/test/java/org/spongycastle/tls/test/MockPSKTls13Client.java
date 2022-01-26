@@ -1,25 +1,25 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.security.SecureRandom;
 import java.util.Vector;
 
-import org.bouncycastle.tls.AbstractTlsClient;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.AlertLevel;
-import org.bouncycastle.tls.BasicTlsPSKExternal;
-import org.bouncycastle.tls.CipherSuite;
-import org.bouncycastle.tls.PRFAlgorithm;
-import org.bouncycastle.tls.ProtocolName;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.TlsAuthentication;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsPSK;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsCrypto;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.tls.AbstractTlsClient;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.AlertLevel;
+import org.spongycastle.tls.BasicTlsPSKExternal;
+import org.spongycastle.tls.CipherSuite;
+import org.spongycastle.tls.PRFAlgorithm;
+import org.spongycastle.tls.ProtocolName;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.TlsAuthentication;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsPSK;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsCrypto;
+import org.spongycastle.util.Strings;
 
 class MockPSKTls13Client
     extends AbstractTlsClient

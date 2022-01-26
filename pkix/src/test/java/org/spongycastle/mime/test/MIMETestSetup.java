@@ -1,11 +1,11 @@
 
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.security.Security;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 class MIMETestSetup
     extends TestSetup

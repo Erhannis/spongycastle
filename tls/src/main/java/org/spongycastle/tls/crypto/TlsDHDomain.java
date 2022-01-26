@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 /**
  * Domain interface to service factory for creating Diffie-Hellman operators.

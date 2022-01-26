@@ -1,4 +1,4 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -7,32 +7,32 @@ import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.cms.Attribute;
-import org.bouncycastle.asn1.cms.AttributeTable;
-import org.bouncycastle.asn1.cms.CMSAlgorithmProtection;
-import org.bouncycastle.asn1.cms.CMSAttributes;
-import org.bouncycastle.asn1.cms.IssuerAndSerialNumber;
-import org.bouncycastle.asn1.cms.SignerIdentifier;
-import org.bouncycastle.asn1.cms.SignerInfo;
-import org.bouncycastle.asn1.cms.Time;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.RawContentVerifier;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.cms.Attribute;
+import org.spongycastle.asn1.cms.AttributeTable;
+import org.spongycastle.asn1.cms.CMSAlgorithmProtection;
+import org.spongycastle.asn1.cms.CMSAttributes;
+import org.spongycastle.asn1.cms.IssuerAndSerialNumber;
+import org.spongycastle.asn1.cms.SignerIdentifier;
+import org.spongycastle.asn1.cms.SignerInfo;
+import org.spongycastle.asn1.cms.Time;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.DigestInfo;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.RawContentVerifier;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.TeeOutputStream;
 
 /**
  * an expanded SignerInfo block from a CMS Signed message
@@ -631,8 +631,8 @@ public class SignerInformation
      *
      * @param verifier a suitably configured SignerInformationVerifier.
      * @return true if the signer information is verified, false otherwise.
-     * @throws org.bouncycastle.cms.CMSVerifierCertificateNotValidException if the provider has an associated certificate and the certificate is not valid at the time given as the SignerInfo's signing time.
-     * @throws org.bouncycastle.cms.CMSException if the verifier is unable to create a ContentVerifiers or DigestCalculators.
+     * @throws org.spongycastle.cms.CMSVerifierCertificateNotValidException if the provider has an associated certificate and the certificate is not valid at the time given as the SignerInfo's signing time.
+     * @throws org.spongycastle.cms.CMSException if the verifier is unable to create a ContentVerifiers or DigestCalculators.
      */
     public boolean verify(SignerInformationVerifier verifier)
         throws CMSException

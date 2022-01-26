@@ -1,11 +1,11 @@
-package org.bouncycastle.util.encoders.test;
+package org.spongycastle.util.encoders.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.DecoderException;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.encoders.HexEncoder;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.DecoderException;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.encoders.HexEncoder;
 
 public class HexTest extends AbstractCoderTest
 {

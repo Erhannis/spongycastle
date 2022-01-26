@@ -1,7 +1,7 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
 
 abstract class SymmetricAlgorithmProvider
     extends AlgorithmProvider

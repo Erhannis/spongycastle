@@ -1,6 +1,6 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
-import org.bouncycastle.crypto.CharToByteConverter;
+import org.spongycastle.crypto.CharToByteConverter;
 
 /**
  * A password based key for use with PBKDF1 as defined in PKCS#5.

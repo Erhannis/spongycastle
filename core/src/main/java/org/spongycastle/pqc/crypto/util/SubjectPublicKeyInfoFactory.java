@@ -1,32 +1,32 @@
-package org.bouncycastle.pqc.crypto.util;
+package org.spongycastle.pqc.crypto.util;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.isara.IsaraObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.pqc.asn1.McElieceCCA2PrivateKey;
-import org.bouncycastle.pqc.asn1.McElieceCCA2PublicKey;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.asn1.SPHINCS256KeyParams;
-import org.bouncycastle.pqc.asn1.XMSSKeyParams;
-import org.bouncycastle.pqc.asn1.XMSSMTKeyParams;
-import org.bouncycastle.pqc.asn1.XMSSMTPublicKey;
-import org.bouncycastle.pqc.asn1.XMSSPublicKey;
-import org.bouncycastle.pqc.crypto.lms.Composer;
-import org.bouncycastle.pqc.crypto.lms.HSSPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2PrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2PublicKeyParameters;
-import org.bouncycastle.pqc.crypto.newhope.NHPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPublicKeyParameters;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.isara.IsaraObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.pqc.asn1.McElieceCCA2PrivateKey;
+import org.spongycastle.pqc.asn1.McElieceCCA2PublicKey;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.asn1.SPHINCS256KeyParams;
+import org.spongycastle.pqc.asn1.XMSSKeyParams;
+import org.spongycastle.pqc.asn1.XMSSMTKeyParams;
+import org.spongycastle.pqc.asn1.XMSSMTPublicKey;
+import org.spongycastle.pqc.asn1.XMSSPublicKey;
+import org.spongycastle.pqc.crypto.lms.Composer;
+import org.spongycastle.pqc.crypto.lms.HSSPublicKeyParameters;
+import org.spongycastle.pqc.crypto.lms.LMSPublicKeyParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2PrivateKeyParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2PublicKeyParameters;
+import org.spongycastle.pqc.crypto.newhope.NHPublicKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSMTPublicKeyParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSPublicKeyParameters;
 
 /**
  * Factory to create ASN.1 subject public key info objects from lightweight public keys.

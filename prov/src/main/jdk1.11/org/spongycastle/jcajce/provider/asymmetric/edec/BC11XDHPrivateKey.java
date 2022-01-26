@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.edec;
+package org.spongycastle.jcajce.provider.asymmetric.edec;
 
 import java.io.IOException;
 import java.security.interfaces.XECPrivateKey;
@@ -6,11 +6,11 @@ import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.NamedParameterSpec;
 import java.util.Optional;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.X25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.X448PrivateKeyParameters;
-import org.bouncycastle.jcajce.interfaces.XDHPublicKey;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.X25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.X448PrivateKeyParameters;
+import org.spongycastle.jcajce.interfaces.XDHPublicKey;
 
 class BC11XDHPrivateKey
     extends BCXDHPrivateKey

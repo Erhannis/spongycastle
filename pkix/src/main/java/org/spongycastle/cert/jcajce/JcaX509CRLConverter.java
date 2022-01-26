@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509CRL;
 
-import org.bouncycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CRLHolder;
 
 /**
  * Class for converting an X509CRLHolder into a corresponding X509CRL object tied to a

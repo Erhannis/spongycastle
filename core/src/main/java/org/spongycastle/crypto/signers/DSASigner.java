@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.DSAExt;
-import org.bouncycastle.crypto.params.DSAKeyParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.DSAExt;
+import org.spongycastle.crypto.params.DSAKeyParameters;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAPrivateKeyParameters;
+import org.spongycastle.crypto.params.DSAPublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * The Digital Signature Algorithm - as described in "Handbook of Applied

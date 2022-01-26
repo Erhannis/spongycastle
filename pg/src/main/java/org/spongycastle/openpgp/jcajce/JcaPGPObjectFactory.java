@@ -1,10 +1,10 @@
-package org.bouncycastle.openpgp.jcajce;
+package org.spongycastle.openpgp.jcajce;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-import org.bouncycastle.openpgp.PGPObjectFactory;
-import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
+import org.spongycastle.openpgp.PGPObjectFactory;
+import org.spongycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
 
 /**
  * {@link PGPObjectFactory} that uses the sources cryptographic primitives from the JCA API.

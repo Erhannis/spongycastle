@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.ec;
+package org.spongycastle.crypto.ec;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECMultiplier;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.FixedPointCombMultiplier;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.math.ec.ECAlgorithms;
+import org.spongycastle.math.ec.ECMultiplier;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.FixedPointCombMultiplier;
 
 /**
  * this transforms the original randomness used for an ElGamal encryption.

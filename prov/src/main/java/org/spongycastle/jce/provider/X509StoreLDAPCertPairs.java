@@ -1,23 +1,23 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.jce.X509LDAPCertStoreParameters;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.StoreException;
-import org.bouncycastle.x509.X509CertPairStoreSelector;
-import org.bouncycastle.x509.X509StoreParameters;
-import org.bouncycastle.x509.X509StoreSpi;
-import org.bouncycastle.x509.util.LDAPStoreHelper;
+import org.spongycastle.jce.X509LDAPCertStoreParameters;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.StoreException;
+import org.spongycastle.x509.X509CertPairStoreSelector;
+import org.spongycastle.x509.X509StoreParameters;
+import org.spongycastle.x509.X509StoreSpi;
+import org.spongycastle.x509.util.LDAPStoreHelper;
 
 /**
  * A SPI implementation of Bouncy Castle <code>X509Store</code> for getting
  * cross certificates pairs from an LDAP directory.
  *
- * @see org.bouncycastle.x509.X509Store
+ * @see org.spongycastle.x509.X509Store
  */
 public class X509StoreLDAPCertPairs extends X509StoreSpi
 {

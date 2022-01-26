@@ -1,17 +1,17 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.engines.ChaCha7539Engine;
-import org.bouncycastle.crypto.macs.Poly1305;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.impl.TlsAEADCipherImpl;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.engines.ChaCha7539Engine;
+import org.spongycastle.crypto.macs.Poly1305;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.impl.TlsAEADCipherImpl;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 public class BcChaCha20Poly1305 implements TlsAEADCipherImpl
 {

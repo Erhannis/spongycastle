@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.spec;
+package org.spongycastle.jce.spec;
 
 import java.math.BigInteger;
 import java.security.spec.ECField;
@@ -7,13 +7,13 @@ import java.security.spec.ECFieldFp;
 import java.security.spec.ECPoint;
 import java.security.spec.EllipticCurve;
 
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.field.FiniteField;
-import org.bouncycastle.math.field.Polynomial;
-import org.bouncycastle.math.field.PolynomialExtensionField;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.jcajce.provider.asymmetric.util.EC5Util;
+import org.spongycastle.math.ec.ECAlgorithms;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.field.FiniteField;
+import org.spongycastle.math.field.Polynomial;
+import org.spongycastle.math.field.PolynomialExtensionField;
+import org.spongycastle.util.Arrays;
 
 /**
  * specification signifying that the curve parameters can also be
@@ -51,7 +51,7 @@ public class ECNamedCurveSpec
     public ECNamedCurveSpec(
         String                              name,
         ECCurve                             curve,
-        org.bouncycastle.math.ec.ECPoint    g,
+        org.spongycastle.math.ec.ECPoint    g,
         BigInteger                          n)
     {
         super(convertCurve(curve, null), EC5Util.convertPoint(g), n, 1);
@@ -73,7 +73,7 @@ public class ECNamedCurveSpec
     public ECNamedCurveSpec(
         String                              name,
         ECCurve                             curve,
-        org.bouncycastle.math.ec.ECPoint    g,
+        org.spongycastle.math.ec.ECPoint    g,
         BigInteger                          n,
         BigInteger                          h)
     {
@@ -97,7 +97,7 @@ public class ECNamedCurveSpec
     public ECNamedCurveSpec(
         String                              name,
         ECCurve                             curve,
-        org.bouncycastle.math.ec.ECPoint    g,
+        org.spongycastle.math.ec.ECPoint    g,
         BigInteger                          n,
         BigInteger                          h,
         byte[]                              seed)

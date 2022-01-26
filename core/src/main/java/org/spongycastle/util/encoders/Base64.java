@@ -1,10 +1,10 @@
-package org.bouncycastle.util.encoders;
+package org.spongycastle.util.encoders;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 /**
  * Utility class for converting Base64 data to bytes and back again.

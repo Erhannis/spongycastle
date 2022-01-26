@@ -1,13 +1,13 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.crypto.TlsHash;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.tls.crypto.TlsHash;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
 
 class SSL3Utils
 {

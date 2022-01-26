@@ -1,12 +1,12 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.operator.InputAEADDecryptor;
-import org.bouncycastle.operator.InputDecryptor;
-import org.bouncycastle.operator.MacCalculator;
-import org.bouncycastle.util.io.TeeInputStream;
+import org.spongycastle.operator.InputAEADDecryptor;
+import org.spongycastle.operator.InputDecryptor;
+import org.spongycastle.operator.MacCalculator;
+import org.spongycastle.util.io.TeeInputStream;
 
 public class RecipientOperator
 {

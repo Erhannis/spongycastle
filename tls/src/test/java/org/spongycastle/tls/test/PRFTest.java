@@ -1,19 +1,19 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.tls.ExporterLabel;
-import org.bouncycastle.tls.PRFAlgorithm;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsSecret;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
-import org.bouncycastle.tls.crypto.impl.jcajce.JceTlsSecret;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.tls.ExporterLabel;
+import org.spongycastle.tls.PRFAlgorithm;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsCrypto;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsSecret;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
+import org.spongycastle.tls.crypto.impl.jcajce.JceTlsSecret;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class PRFTest
     extends TestCase

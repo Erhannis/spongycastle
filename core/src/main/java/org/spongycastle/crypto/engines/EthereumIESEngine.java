@@ -1,35 +1,35 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.BasicAgreement;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.DigestDerivationFunction;
-import org.bouncycastle.crypto.EphemeralKeyPair;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.KeyParser;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.generators.EphemeralKeyPairGenerator;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.IESParameters;
-import org.bouncycastle.crypto.params.IESWithCipherParameters;
-import org.bouncycastle.crypto.params.ISO18033KDFParameters;
-import org.bouncycastle.crypto.params.KDFParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.BasicAgreement;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.DigestDerivationFunction;
+import org.spongycastle.crypto.EphemeralKeyPair;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.KeyParser;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.generators.EphemeralKeyPairGenerator;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.IESParameters;
+import org.spongycastle.crypto.params.IESWithCipherParameters;
+import org.spongycastle.crypto.params.ISO18033KDFParameters;
+import org.spongycastle.crypto.params.KDFParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Pack;
 
 /**
  * Support class for constructing integrated encryption ciphers for doing basic message exchanges on top of key

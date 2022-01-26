@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
 /**
  *  Encodable digests allow you to download an encoded copy of their internal state. This is useful for the situation where

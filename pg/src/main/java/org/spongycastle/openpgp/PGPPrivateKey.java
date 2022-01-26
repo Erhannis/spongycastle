@@ -1,7 +1,7 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
-import org.bouncycastle.bcpg.BCPGKey;
-import org.bouncycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.bcpg.BCPGKey;
+import org.spongycastle.bcpg.PublicKeyPacket;
 
 /**
  * general class to contain a private key for use with other openPGP

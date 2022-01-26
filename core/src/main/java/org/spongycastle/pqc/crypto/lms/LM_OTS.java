@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 class LM_OTS
 {

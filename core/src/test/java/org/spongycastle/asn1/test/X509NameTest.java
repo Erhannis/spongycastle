@@ -1,33 +1,33 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1PrintableString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.X509DefaultEntryConverter;
-import org.bouncycastle.asn1.x509.X509Name;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OutputStream;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1PrintableString;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.X509DefaultEntryConverter;
+import org.spongycastle.asn1.x509.X509Name;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class X509NameTest
     extends SimpleTest
@@ -42,7 +42,7 @@ public class X509NameTest
        "O=Sun Microsystems Inc,CN=store.sun.com",
        "unstructuredAddress=192.168.1.33,unstructuredName=pixfirewall.ciscopix.com,CN=pixfirewall.ciscopix.com",
        "CN=*.canal-plus.com,OU=Provided by TBS INTERNET https://www.tbs-certificats.com/,OU=\\ CANAL \\+,O=CANAL\\+DISTRIBUTION,L=issy les moulineaux,ST=Hauts de Seine,C=FR",
-       "O=Bouncy Castle,CN=www.bouncycastle.org\\ ",
+       "O=Bouncy Castle,CN=www.spongycastle.org\\ ",
        "O=Bouncy Castle,CN=c:\\\\fred\\\\bob"
     };
 
@@ -163,7 +163,7 @@ public class X509NameTest
         attrs.put(X509Name.O, "The Legion of the Bouncy Castle");
         attrs.put(X509Name.L, "Melbourne");
         attrs.put(X509Name.ST, "Victoria");
-        attrs.put(X509Name.E, "feedback-crypto@bouncycastle.org");
+        attrs.put(X509Name.E, "feedback-crypto.spongycastle.org");
 
         Vector                     order = new Vector();
 
@@ -253,7 +253,7 @@ public class X509NameTest
         val1.addElement("The Legion of the Bouncy Castle");
         val1.addElement("Melbourne");
         val1.addElement("Victoria");
-        val1.addElement("feedback-crypto@bouncycastle.org");
+        val1.addElement("feedback-crypto.spongycastle.org");
 
         name1 = new X509Name(ord1, val1);
         

@@ -1,4 +1,4 @@
-package org.bouncycastle.operator.jcajce;
+package org.spongycastle.operator.jcajce;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,31 +13,31 @@ import java.security.spec.MGF1ParameterSpec;
 import java.security.spec.PSSParameterSpec;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RSASSAPSSparams;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jcajce.CompositePrivateKey;
-import org.bouncycastle.jcajce.io.OutputStreamFactory;
-import org.bouncycastle.jcajce.spec.CompositeAlgorithmSpec;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.RuntimeOperatorException;
-import org.bouncycastle.operator.SignatureAlgorithmIdentifierFinder;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RSASSAPSSparams;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.jcajce.CompositePrivateKey;
+import org.spongycastle.jcajce.io.OutputStreamFactory;
+import org.spongycastle.jcajce.spec.CompositeAlgorithmSpec;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.RuntimeOperatorException;
+import org.spongycastle.operator.SignatureAlgorithmIdentifierFinder;
+import org.spongycastle.util.io.TeeOutputStream;
 
 public class JcaContentSignerBuilder
 {

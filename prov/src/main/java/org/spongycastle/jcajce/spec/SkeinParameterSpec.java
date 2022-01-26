@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -13,28 +13,28 @@ import java.util.Iterator;
 import java.util.Locale;
 import java.util.Map;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
 
 /**
  * Parameters for the Skein hash function - a series of byte[] strings identified by integer tags.
  * <p>
  * Parameterised Skein can be used for:
  * <ul>
- * <li>MAC generation, by providing a {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec.Builder#setKey(byte[]) key}.</li>
- * <li>Randomised hashing, by providing a {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec.Builder#setNonce(byte[]) nonce}.</li>
+ * <li>MAC generation, by providing a {@link org.spongycastle.jcajce.spec.SkeinParameterSpec.Builder#setKey(byte[]) key}.</li>
+ * <li>Randomised hashing, by providing a {@link org.spongycastle.jcajce.spec.SkeinParameterSpec.Builder#setNonce(byte[]) nonce}.</li>
  * <li>A hash function for digital signatures, associating a
- * {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec.Builder#setPublicKey(byte[]) public key} with the message digest.</li>
+ * {@link org.spongycastle.jcajce.spec.SkeinParameterSpec.Builder#setPublicKey(byte[]) public key} with the message digest.</li>
  * <li>A key derivation function, by providing a
- * {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec.Builder#setKeyIdentifier(byte[]) key identifier}.</li>
+ * {@link org.spongycastle.jcajce.spec.SkeinParameterSpec.Builder#setKeyIdentifier(byte[]) key identifier}.</li>
  * <li>Personalised hashing, by providing a
- * {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec.Builder#setPersonalisation(java.util.Date, String, String) recommended format} or
- * {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec.Builder#setPersonalisation(byte[]) arbitrary} personalisation string.</li>
+ * {@link org.spongycastle.jcajce.spec.SkeinParameterSpec.Builder#setPersonalisation(java.util.Date, String, String) recommended format} or
+ * {@link org.spongycastle.jcajce.spec.SkeinParameterSpec.Builder#setPersonalisation(byte[]) arbitrary} personalisation string.</li>
  * </ul>
  *
- * @see org.bouncycastle.crypto.digests.SkeinEngine
- * @see org.bouncycastle.crypto.digests.SkeinDigest
- * @see org.bouncycastle.crypto.macs.SkeinMac
+ * @see org.spongycastle.crypto.digests.SkeinEngine
+ * @see org.spongycastle.crypto.digests.SkeinDigest
+ * @see org.spongycastle.crypto.macs.SkeinMac
  */
 public class SkeinParameterSpec
     implements AlgorithmParameterSpec
@@ -146,7 +146,7 @@ public class SkeinParameterSpec
     }
 
     /**
-     * A builder for {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec}.
+     * A builder for {@link org.spongycastle.jcajce.spec.SkeinParameterSpec}.
      */
     public static class Builder
     {
@@ -169,10 +169,10 @@ public class SkeinParameterSpec
         /**
          * Sets a parameters to apply to the Skein hash function.<br>
          * Parameter types must be in the range 0,5..62, and cannot use the value {@value
-         * org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE} (reserved for message body).
+         * org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE} (reserved for message body).
          * <p>
-         * Parameters with type &lt; {@value org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE} are processed before
-         * the message content, parameters with type &gt; {@value org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE}
+         * Parameters with type &lt; {@value org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE} are processed before
+         * the message content, parameters with type &gt; {@value org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE}
          * are processed after the message and prior to output.
          * </p>
          *
@@ -201,7 +201,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY} parameter.
+         * Sets the {@link org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY} parameter.
          */
         public Builder setKey(byte[] key)
         {
@@ -209,7 +209,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_PERSONALISATION} parameter.
+         * Sets the {@link org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_PERSONALISATION} parameter.
          */
         public Builder setPersonalisation(byte[] personalisation)
         {
@@ -286,7 +286,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
+         * Sets the {@link org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
          *
          * @return the current builder instance.
          */
@@ -296,7 +296,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
+         * Sets the {@link org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
          *
          * @return the current builder instance.
          */
@@ -306,7 +306,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_NONCE} parameter.
+         * Sets the {@link org.spongycastle.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_NONCE} parameter.
          *
          * @return the current builder instance.
          */
@@ -316,7 +316,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Constructs a new {@link org.bouncycastle.jcajce.spec.SkeinParameterSpec} instance with the parameters provided to this
+         * Constructs a new {@link org.spongycastle.jcajce.spec.SkeinParameterSpec} instance with the parameters provided to this
          * builder.
          */
         public SkeinParameterSpec build()

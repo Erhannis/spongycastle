@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 /**
  * base interface for general purpose byte derivation functions.

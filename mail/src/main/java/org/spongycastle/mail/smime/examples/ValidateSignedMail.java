@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.examples;
+package org.spongycastle.mail.smime.examples;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -26,15 +26,15 @@ import javax.mail.Session;
 import javax.mail.internet.MimeMessage;
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.i18n.ErrorBundle;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mail.smime.validator.SignedMailValidator;
-import org.bouncycastle.x509.PKIXCertPathReviewer;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.i18n.ErrorBundle;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mail.smime.validator.SignedMailValidator;
+import org.spongycastle.x509.PKIXCertPathReviewer;
 
 /**
  * An Example that reads a signed mail and validates its signature. Also
@@ -124,7 +124,7 @@ public class ValidateSignedMail
 
     static int dbgLvl = DETAIL;
 
-    private static final String RESOURCE_NAME = "org.bouncycastle.mail.smime.validator.SignedMailValidatorMessages";
+    private static final String RESOURCE_NAME = "org.spongycastle.mail.smime.validator.SignedMailValidatorMessages";
 
     public static void verifySignedMail(MimeMessage msg, PKIXParameters param)
             throws Exception

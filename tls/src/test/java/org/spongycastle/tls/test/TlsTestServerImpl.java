@@ -1,28 +1,28 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.AlertLevel;
-import org.bouncycastle.tls.CertificateRequest;
-import org.bouncycastle.tls.ChannelBinding;
-import org.bouncycastle.tls.CipherSuite;
-import org.bouncycastle.tls.ClientCertificateType;
-import org.bouncycastle.tls.ConnectionEnd;
-import org.bouncycastle.tls.DefaultTlsServer;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.TlsCredentialedDecryptor;
-import org.bouncycastle.tls.TlsCredentialedSigner;
-import org.bouncycastle.tls.TlsCredentials;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.AlertLevel;
+import org.spongycastle.tls.CertificateRequest;
+import org.spongycastle.tls.ChannelBinding;
+import org.spongycastle.tls.CipherSuite;
+import org.spongycastle.tls.ClientCertificateType;
+import org.spongycastle.tls.ConnectionEnd;
+import org.spongycastle.tls.DefaultTlsServer;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.TlsCredentialedDecryptor;
+import org.spongycastle.tls.TlsCredentialedSigner;
+import org.spongycastle.tls.TlsCredentials;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.util.encoders.Hex;
 
 class TlsTestServerImpl
     extends DefaultTlsServer
@@ -213,7 +213,7 @@ class TlsTestServerImpl
         }
     }
 
-    public void notifyClientCertificate(org.bouncycastle.tls.Certificate clientCertificate)
+    public void notifyClientCertificate(org.spongycastle.tls.Certificate clientCertificate)
         throws IOException
     {
         boolean isEmpty = (clientCertificate == null || clientCertificate.isEmpty());

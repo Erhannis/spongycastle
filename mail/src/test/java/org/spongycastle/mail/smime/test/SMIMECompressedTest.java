@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.test;
+package org.spongycastle.mail.smime.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -18,29 +18,29 @@ import javax.mail.internet.MimeMultipart;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.cms.AttributeTable;
-import org.bouncycastle.asn1.smime.SMIMECapabilitiesAttribute;
-import org.bouncycastle.asn1.smime.SMIMECapability;
-import org.bouncycastle.asn1.smime.SMIMECapabilityVector;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaCertStore;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.SignerInformationStore;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
-import org.bouncycastle.cms.jcajce.JcaX509CertSelectorConverter;
-import org.bouncycastle.cms.jcajce.ZlibCompressor;
-import org.bouncycastle.cms.jcajce.ZlibExpanderProvider;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mail.smime.SMIMECompressed;
-import org.bouncycastle.mail.smime.SMIMECompressedGenerator;
-import org.bouncycastle.mail.smime.SMIMECompressedParser;
-import org.bouncycastle.mail.smime.SMIMESigned;
-import org.bouncycastle.mail.smime.SMIMESignedGenerator;
-import org.bouncycastle.mail.smime.SMIMEUtil;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Store;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.cms.AttributeTable;
+import org.spongycastle.asn1.smime.SMIMECapabilitiesAttribute;
+import org.spongycastle.asn1.smime.SMIMECapability;
+import org.spongycastle.asn1.smime.SMIMECapabilityVector;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaCertStore;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.SignerInformationStore;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
+import org.spongycastle.cms.jcajce.JcaX509CertSelectorConverter;
+import org.spongycastle.cms.jcajce.ZlibCompressor;
+import org.spongycastle.cms.jcajce.ZlibExpanderProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mail.smime.SMIMECompressed;
+import org.spongycastle.mail.smime.SMIMECompressedGenerator;
+import org.spongycastle.mail.smime.SMIMECompressedParser;
+import org.spongycastle.mail.smime.SMIMESigned;
+import org.spongycastle.mail.smime.SMIMESignedGenerator;
+import org.spongycastle.mail.smime.SMIMEUtil;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Store;
 
 public class SMIMECompressedTest
     extends TestCase
@@ -74,7 +74,7 @@ public class SMIMECompressedTest
             signKP   = CMSTestUtil.makeKeyPair();
             signCert = CMSTestUtil.makeCertificate(signKP, signDN, signKP, signDN);
 
-            origDN   = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+            origDN   = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
             origKP   = CMSTestUtil.makeKeyPair();
             origCert = CMSTestUtil.makeCertificate(origKP, origDN, signKP, signDN);
         }

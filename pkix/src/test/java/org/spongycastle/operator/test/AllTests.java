@@ -1,4 +1,4 @@
-package org.bouncycastle.operator.test;
+package org.spongycastle.operator.test;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -10,24 +10,24 @@ import javax.crypto.spec.PSource;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RSAESOAEPparams;
-import org.bouncycastle.asn1.pkcs.RSASSAPSSparams;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.AlgorithmNameFinder;
-import org.bouncycastle.operator.DefaultAlgorithmNameFinder;
-import org.bouncycastle.operator.DefaultSignatureNameFinder;
-import org.bouncycastle.operator.jcajce.JceAsymmetricKeyWrapper;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RSAESOAEPparams;
+import org.spongycastle.asn1.pkcs.RSASSAPSSparams;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.AlgorithmNameFinder;
+import org.spongycastle.operator.DefaultAlgorithmNameFinder;
+import org.spongycastle.operator.DefaultSignatureNameFinder;
+import org.spongycastle.operator.jcajce.JceAsymmetricKeyWrapper;
+import org.spongycastle.util.encoders.Hex;
 
 public class AllTests
     extends TestCase

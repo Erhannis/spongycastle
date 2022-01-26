@@ -1,11 +1,11 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.math.BigInteger;
 import java.util.Vector;
 
-import org.bouncycastle.tls.crypto.SRP6Group;
-import org.bouncycastle.tls.crypto.SRP6StandardGroups;
-import org.bouncycastle.tls.crypto.TlsSRPConfig;
+import org.spongycastle.tls.crypto.SRP6Group;
+import org.spongycastle.tls.crypto.SRP6StandardGroups;
+import org.spongycastle.tls.crypto.TlsSRPConfig;
 
 public class DefaultTlsSRPConfigVerifier
     implements TlsSRPConfigVerifier

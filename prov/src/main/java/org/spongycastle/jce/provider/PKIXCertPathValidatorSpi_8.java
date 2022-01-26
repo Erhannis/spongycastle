@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.PublicKey;
@@ -21,20 +21,20 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.TBSCertificate;
-import org.bouncycastle.jcajce.PKIXCertRevocationChecker;
-import org.bouncycastle.jcajce.PKIXExtendedBuilderParameters;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jcajce.interfaces.BCX509Certificate;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jce.exception.ExtCertPathValidatorException;
-import org.bouncycastle.x509.ExtendedPKIXParameters;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.TBSCertificate;
+import org.spongycastle.jcajce.PKIXCertRevocationChecker;
+import org.spongycastle.jcajce.PKIXExtendedBuilderParameters;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jcajce.interfaces.BCX509Certificate;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jce.exception.ExtCertPathValidatorException;
+import org.spongycastle.x509.ExtendedPKIXParameters;
 
 /**
  * CertPathValidatorSpi implementation for X.509 Certificate validation � la RFC

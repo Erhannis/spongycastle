@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CipherParameters;
 
 /**
  * Public parameters for an SM2 key exchange. In this case the ephemeralPublicKey provides the random point used in the algorithm.

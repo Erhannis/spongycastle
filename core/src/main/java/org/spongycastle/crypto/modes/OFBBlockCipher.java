@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.StreamBlockCipher;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.StreamBlockCipher;
+import org.spongycastle.crypto.params.ParametersWithIV;
 
 /**
  * implements a Output-FeedBack (OFB) mode on top of a simple cipher.

@@ -1,15 +1,15 @@
-package org.bouncycastle.cert;
+package org.spongycastle.cert;
 
 import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.TBSCertList;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.TBSCertList;
 
 /**
  * Holding class for an X.509 CRL Entry structure.

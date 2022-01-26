@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
 
 /**
  * A NtruEncrypt public key is essentially a polynomial named <code>h</code>.

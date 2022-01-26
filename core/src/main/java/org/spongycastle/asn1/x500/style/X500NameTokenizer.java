@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.x500.style;
+package org.spongycastle.asn1.x500.style;
 
 /**
  * class for breaking up an X500 Name into it's component tokens, ala

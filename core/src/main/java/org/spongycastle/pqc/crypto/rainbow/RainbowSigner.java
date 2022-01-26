@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.MessageSigner;
-import org.bouncycastle.pqc.crypto.rainbow.util.ComputeInField;
-import org.bouncycastle.pqc.crypto.rainbow.util.GF2Field;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.MessageSigner;
+import org.spongycastle.pqc.crypto.rainbow.util.ComputeInField;
+import org.spongycastle.pqc.crypto.rainbow.util.GF2Field;
 
 /**
  * It implements the sign and verify functions for the Rainbow Signature Scheme.

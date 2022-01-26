@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -34,78 +34,78 @@ import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.cms.Attribute;
-import org.bouncycastle.asn1.cms.AttributeTable;
-import org.bouncycastle.asn1.cms.CCMParameters;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.cms.EncryptedContentInfo;
-import org.bouncycastle.asn1.cms.EnvelopedData;
-import org.bouncycastle.asn1.cms.GCMParameters;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.kisa.KISAObjectIdentifiers;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.ntt.NTTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PBKDF2Params;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RC2CBCParameter;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSEnvelopedData;
-import org.bouncycastle.cms.CMSEnvelopedDataGenerator;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.CMSTypedData;
-import org.bouncycastle.cms.CMSTypedStream;
-import org.bouncycastle.cms.KeyAgreeRecipientInformation;
-import org.bouncycastle.cms.KeyTransRecipientInformation;
-import org.bouncycastle.cms.OriginatorInfoGenerator;
-import org.bouncycastle.cms.OriginatorInformation;
-import org.bouncycastle.cms.PasswordRecipient;
-import org.bouncycastle.cms.PasswordRecipientInformation;
-import org.bouncycastle.cms.RecipientId;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.SimpleAttributeTableGenerator;
-import org.bouncycastle.cms.bc.BcCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.bc.BcPasswordEnvelopedRecipient;
-import org.bouncycastle.cms.bc.BcPasswordRecipientInfoGenerator;
-import org.bouncycastle.cms.bc.BcRSAKeyTransRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKEKEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKEKRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeRecipientId;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientId;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JcePasswordEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JcePasswordRecipientInfoGenerator;
-import org.bouncycastle.jce.ECGOST3410NamedCurveTable;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openssl.PEMKeyPair;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.operator.jcajce.JcaAlgorithmParametersConverter;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.cms.Attribute;
+import org.spongycastle.asn1.cms.AttributeTable;
+import org.spongycastle.asn1.cms.CCMParameters;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.cms.EncryptedContentInfo;
+import org.spongycastle.asn1.cms.EnvelopedData;
+import org.spongycastle.asn1.cms.GCMParameters;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.kisa.KISAObjectIdentifiers;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.ntt.NTTObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PBKDF2Params;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RC2CBCParameter;
+import org.spongycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSEnvelopedData;
+import org.spongycastle.cms.CMSEnvelopedDataGenerator;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.CMSTypedData;
+import org.spongycastle.cms.CMSTypedStream;
+import org.spongycastle.cms.KeyAgreeRecipientInformation;
+import org.spongycastle.cms.KeyTransRecipientInformation;
+import org.spongycastle.cms.OriginatorInfoGenerator;
+import org.spongycastle.cms.OriginatorInformation;
+import org.spongycastle.cms.PasswordRecipient;
+import org.spongycastle.cms.PasswordRecipientInformation;
+import org.spongycastle.cms.RecipientId;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.SimpleAttributeTableGenerator;
+import org.spongycastle.cms.bc.BcCMSContentEncryptorBuilder;
+import org.spongycastle.cms.bc.BcPasswordEnvelopedRecipient;
+import org.spongycastle.cms.bc.BcPasswordRecipientInfoGenerator;
+import org.spongycastle.cms.bc.BcRSAKeyTransRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKEKEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKEKRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JceKeyAgreeEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyAgreeRecipientId;
+import org.spongycastle.cms.jcajce.JceKeyAgreeRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientId;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JcePasswordEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JcePasswordRecipientInfoGenerator;
+import org.spongycastle.jce.ECGOST3410NamedCurveTable;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openssl.PEMKeyPair;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.operator.jcajce.JcaAlgorithmParametersConverter;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.io.Streams;
 
 public class NewEnvelopedDataTest
     extends TestCase
@@ -566,7 +566,7 @@ public class NewEnvelopedDataTest
         if (!_initialised)
         {
             _initialised = true;
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
 
             _signDN = "O=Bouncy Castle, C=AU";
             _signKP = CMSTestUtil.makeKeyPair();
@@ -2257,7 +2257,7 @@ public class NewEnvelopedDataTest
     {
         KeyFactory keyFact = KeyFactory.getInstance("ECGOST3410", BC);
 
-        PrivateKey privKey = keyFact.generatePrivate(new org.bouncycastle.jce.spec.ECPrivateKeySpec(
+        PrivateKey privKey = keyFact.generatePrivate(new org.spongycastle.jce.spec.ECPrivateKeySpec(
             new BigInteger("0B293BE050D0082BDAE785631A6BAB68F35B42786D6DDA56AFAF169891040F77", 16),
             ECGOST3410NamedCurveTable.getParameterSpec("GostR3410-2001-CryptoPro-XchA")));
 
@@ -2374,7 +2374,7 @@ public class NewEnvelopedDataTest
     {
         KeyFactory keyFact = KeyFactory.getInstance("ECGOST3410", BC);
 
-        PrivateKey privKey = keyFact.generatePrivate(new org.bouncycastle.jce.spec.ECPrivateKeySpec(
+        PrivateKey privKey = keyFact.generatePrivate(new org.spongycastle.jce.spec.ECPrivateKeySpec(
             new BigInteger("0B293BE050D0082BDAE785631A6BAB68F35B42786D6DDA56AFAF169891040F77", 16),
             ECGOST3410NamedCurveTable.getParameterSpec("GostR3410-2001-CryptoPro-XchA")));
 

@@ -1,10 +1,10 @@
-package org.bouncycastle.openpgp.bc;
+package org.spongycastle.openpgp.bc;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-import org.bouncycastle.openpgp.PGPObjectFactory;
-import org.bouncycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
+import org.spongycastle.openpgp.PGPObjectFactory;
+import org.spongycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
 
 /**
  * {@link PGPObjectFactory} that uses the Bouncy Castle lightweight API to implement cryptographic

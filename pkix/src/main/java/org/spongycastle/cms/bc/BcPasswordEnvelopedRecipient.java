@@ -1,15 +1,15 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
 import java.io.InputStream;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.RecipientOperator;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.io.CipherInputStream;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.operator.InputDecryptor;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.RecipientOperator;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.StreamCipher;
+import org.spongycastle.crypto.io.CipherInputStream;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.operator.InputDecryptor;
 
 public class BcPasswordEnvelopedRecipient
     extends BcPasswordRecipient

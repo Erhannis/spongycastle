@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidParameterException;
@@ -8,20 +8,20 @@ import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.DSAParameterSpec;
 import java.util.Hashtable;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.generators.DSAKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DSAParametersGenerator;
-import org.bouncycastle.crypto.params.DSAKeyGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameterGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.generators.DSAKeyPairGenerator;
+import org.spongycastle.crypto.generators.DSAParametersGenerator;
+import org.spongycastle.crypto.params.DSAKeyGenerationParameters;
+import org.spongycastle.crypto.params.DSAParameterGenerationParameters;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DSAPrivateKeyParameters;
+import org.spongycastle.crypto.params.DSAPublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.Properties;
 
 public class KeyPairGeneratorSpi
     extends java.security.KeyPairGenerator
@@ -120,7 +120,7 @@ public class KeyPairGeneratorSpi
                         if (strength == 1024)
                         {
                             pGen = new DSAParametersGenerator();
-                            if (Properties.isOverrideSet("org.bouncycastle.dsa.FIPS186-2for1024bits"))
+                            if (Properties.isOverrideSet("org.spongycastle.dsa.FIPS186-2for1024bits"))
                             {
                                 pGen.init(strength, certainty, random);
                             }

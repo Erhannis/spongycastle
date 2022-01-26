@@ -1,4 +1,4 @@
-package org.bouncycastle.openssl.test;
+package org.spongycastle.openssl.test;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -26,33 +26,33 @@ import java.security.interfaces.RSAPrivateCrtKey;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.jcajce.interfaces.EdDSAPrivateKey;
-import org.bouncycastle.jcajce.interfaces.EdDSAPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openssl.CertificateTrustBlock;
-import org.bouncycastle.openssl.PEMDecryptorProvider;
-import org.bouncycastle.openssl.PEMEncryptedKeyPair;
-import org.bouncycastle.openssl.PEMKeyPair;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.openssl.X509TrustedCertificateBlock;
-import org.bouncycastle.openssl.bc.BcPEMDecryptorProvider;
-import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.openssl.jcajce.JcaPEMWriter;
-import org.bouncycastle.openssl.jcajce.JceOpenSSLPKCS8DecryptorProviderBuilder;
-import org.bouncycastle.openssl.jcajce.JcePEMDecryptorProviderBuilder;
-import org.bouncycastle.operator.InputDecryptorProvider;
-import org.bouncycastle.pkcs.PKCS8EncryptedPrivateKeyInfo;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.jcajce.interfaces.EdDSAPrivateKey;
+import org.spongycastle.jcajce.interfaces.EdDSAPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openssl.CertificateTrustBlock;
+import org.spongycastle.openssl.PEMDecryptorProvider;
+import org.spongycastle.openssl.PEMEncryptedKeyPair;
+import org.spongycastle.openssl.PEMKeyPair;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.openssl.X509TrustedCertificateBlock;
+import org.spongycastle.openssl.bc.BcPEMDecryptorProvider;
+import org.spongycastle.openssl.jcajce.JcaPEMKeyConverter;
+import org.spongycastle.openssl.jcajce.JcaPEMWriter;
+import org.spongycastle.openssl.jcajce.JceOpenSSLPKCS8DecryptorProviderBuilder;
+import org.spongycastle.openssl.jcajce.JcePEMDecryptorProviderBuilder;
+import org.spongycastle.operator.InputDecryptorProvider;
+import org.spongycastle.pkcs.PKCS8EncryptedPrivateKeyInfo;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * basic class for reading test.pem - the password is "secret"

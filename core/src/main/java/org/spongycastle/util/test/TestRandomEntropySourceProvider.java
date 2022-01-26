@@ -1,9 +1,9 @@
-package org.bouncycastle.util.test;
+package org.spongycastle.util.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.crypto.prng.EntropySourceProvider;
 
 /**
  * A class for returning "quick entropy" for testing purposes.

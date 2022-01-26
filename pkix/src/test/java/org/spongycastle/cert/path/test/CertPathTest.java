@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.path.test;
+package org.spongycastle.cert.path.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -31,9 +31,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CertPathTest
     extends SimpleTest

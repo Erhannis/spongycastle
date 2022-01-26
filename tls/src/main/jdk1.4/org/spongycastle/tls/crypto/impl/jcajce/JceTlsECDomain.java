@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -10,20 +10,20 @@ import java.security.KeyPairGenerator;
 
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.spec.ECNamedCurveGenParameterSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.NamedGroup;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.TlsAgreement;
-import org.bouncycastle.tls.crypto.TlsCryptoException;
-import org.bouncycastle.tls.crypto.TlsECConfig;
-import org.bouncycastle.tls.crypto.TlsECDomain;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.spec.ECNamedCurveGenParameterSpec;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECPublicKeySpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.NamedGroup;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.TlsAgreement;
+import org.spongycastle.tls.crypto.TlsCryptoException;
+import org.spongycastle.tls.crypto.TlsECConfig;
+import org.spongycastle.tls.crypto.TlsECDomain;
 
 /**
  * EC domain class for generating key pairs and performing key agreement.

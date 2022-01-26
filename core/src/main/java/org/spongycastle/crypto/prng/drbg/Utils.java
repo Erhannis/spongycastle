@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.prng.drbg;
+package org.spongycastle.crypto.prng.drbg;
 
 import java.util.Hashtable;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.util.Integers;
 
 class Utils
 {

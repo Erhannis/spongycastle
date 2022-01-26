@@ -1,14 +1,14 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.Wrapper;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.SymmetricKeyUnwrapper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.Wrapper;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.SymmetricKeyUnwrapper;
 
 public class BcSymmetricKeyUnwrapper
     extends SymmetricKeyUnwrapper

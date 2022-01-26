@@ -1,7 +1,7 @@
-package org.bouncycastle.jce.spec;
+package org.spongycastle.jce.spec;
 
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;
 import java.security.spec.AlgorithmParameterSpec;

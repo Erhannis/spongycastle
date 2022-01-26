@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.elgamal;
+package org.spongycastle.jcajce.provider.asymmetric.elgamal;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
@@ -7,16 +7,16 @@ import java.security.spec.AlgorithmParameterSpec;
 
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.generators.ElGamalKeyPairGenerator;
-import org.bouncycastle.crypto.generators.ElGamalParametersGenerator;
-import org.bouncycastle.crypto.params.ElGamalKeyGenerationParameters;
-import org.bouncycastle.crypto.params.ElGamalParameters;
-import org.bouncycastle.crypto.params.ElGamalPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ElGamalPublicKeyParameters;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ElGamalParameterSpec;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.generators.ElGamalKeyPairGenerator;
+import org.spongycastle.crypto.generators.ElGamalParametersGenerator;
+import org.spongycastle.crypto.params.ElGamalKeyGenerationParameters;
+import org.spongycastle.crypto.params.ElGamalParameters;
+import org.spongycastle.crypto.params.ElGamalPrivateKeyParameters;
+import org.spongycastle.crypto.params.ElGamalPublicKeyParameters;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ElGamalParameterSpec;
 
 public class KeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

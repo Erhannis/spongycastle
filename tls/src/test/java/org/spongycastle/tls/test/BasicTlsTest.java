@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,19 +8,19 @@ import java.net.Socket;
 import java.security.SecureRandom;
 import java.util.Vector;
 
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.AlertLevel;
-import org.bouncycastle.tls.DefaultTlsClient;
-import org.bouncycastle.tls.HashAlgorithm;
-import org.bouncycastle.tls.ServerOnlyTlsAuthentication;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsAuthentication;
-import org.bouncycastle.tls.TlsClientProtocol;
-import org.bouncycastle.tls.TlsServerCertificate;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsCrypto;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.AlertLevel;
+import org.spongycastle.tls.DefaultTlsClient;
+import org.spongycastle.tls.HashAlgorithm;
+import org.spongycastle.tls.ServerOnlyTlsAuthentication;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsAuthentication;
+import org.spongycastle.tls.TlsClientProtocol;
+import org.spongycastle.tls.TlsServerCertificate;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsCrypto;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

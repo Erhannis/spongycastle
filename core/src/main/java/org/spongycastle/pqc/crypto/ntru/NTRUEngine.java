@@ -1,21 +1,21 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.Polynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.ProductFormPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.TernaryPolynomial;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.Polynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.ProductFormPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.TernaryPolynomial;
+import org.spongycastle.util.Arrays;
 
 /**
  * Encrypts, decrypts data and generates key pairs.<br>

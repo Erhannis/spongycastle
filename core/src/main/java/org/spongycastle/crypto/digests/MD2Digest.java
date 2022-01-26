@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.*;
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.crypto.*;
+import org.spongycastle.util.Memoable;
 
 /**
  * implementation of MD2

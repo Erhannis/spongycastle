@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.dane.fetcher;
+package org.spongycastle.cert.dane.fetcher;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,10 +15,10 @@ import javax.naming.directory.Attributes;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.InitialDirContext;
 
-import org.bouncycastle.cert.dane.DANEEntry;
-import org.bouncycastle.cert.dane.DANEEntryFetcher;
-import org.bouncycastle.cert.dane.DANEEntryFetcherFactory;
-import org.bouncycastle.cert.dane.DANEException;
+import org.spongycastle.cert.dane.DANEEntry;
+import org.spongycastle.cert.dane.DANEEntryFetcher;
+import org.spongycastle.cert.dane.DANEEntryFetcherFactory;
+import org.spongycastle.cert.dane.DANEException;
 
 /**
  * A DANE entry fetcher implemented using JNDI.

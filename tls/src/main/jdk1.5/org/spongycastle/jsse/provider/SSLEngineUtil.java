@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.lang.reflect.Method;
 
@@ -6,9 +6,9 @@ import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLParameters;
 import javax.net.ssl.SSLSession;
 
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.jsse.BCSSLEngine;
-import org.bouncycastle.jsse.BCSSLParameters;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCSSLEngine;
+import org.spongycastle.jsse.BCSSLParameters;
 
 abstract class SSLEngineUtil
 {

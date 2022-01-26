@@ -1,16 +1,16 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.tls.CipherSuite;
-import org.bouncycastle.tls.CipherType;
-import org.bouncycastle.tls.EncryptionAlgorithm;
-import org.bouncycastle.tls.KeyExchangeAlgorithm;
-import org.bouncycastle.tls.MACAlgorithm;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.CryptoHashAlgorithm;
+import org.spongycastle.tls.CipherSuite;
+import org.spongycastle.tls.CipherType;
+import org.spongycastle.tls.EncryptionAlgorithm;
+import org.spongycastle.tls.KeyExchangeAlgorithm;
+import org.spongycastle.tls.MACAlgorithm;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.CryptoHashAlgorithm;
 
 class CipherSuiteInfo
 {

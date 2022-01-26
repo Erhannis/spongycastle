@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+package org.spongycastle.jcajce.provider.asymmetric.rsa;
 
 import java.io.IOException;
 import java.security.spec.AlgorithmParameterSpec;
@@ -9,19 +9,19 @@ import java.security.spec.PSSParameterSpec;
 import javax.crypto.spec.OAEPParameterSpec;
 import javax.crypto.spec.PSource;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RSAESOAEPparams;
-import org.bouncycastle.asn1.pkcs.RSASSAPSSparams;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jcajce.provider.util.DigestFactory;
-import org.bouncycastle.jcajce.util.MessageDigestUtils;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RSAESOAEPparams;
+import org.spongycastle.asn1.pkcs.RSASSAPSSparams;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.jcajce.provider.util.DigestFactory;
+import org.spongycastle.jcajce.util.MessageDigestUtils;
 
 public abstract class AlgorithmParametersSpi
     extends java.security.AlgorithmParametersSpi

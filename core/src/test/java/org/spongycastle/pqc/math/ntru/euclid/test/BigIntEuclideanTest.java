@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.math.ntru.euclid.test;
+package org.spongycastle.pqc.math.ntru.euclid.test;
 
 import java.math.BigInteger;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.math.ntru.euclid.BigIntEuclidean;
+import org.spongycastle.pqc.math.ntru.euclid.BigIntEuclidean;
 
 public class BigIntEuclideanTest
     extends TestCase

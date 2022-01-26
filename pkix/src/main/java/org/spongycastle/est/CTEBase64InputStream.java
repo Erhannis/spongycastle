@@ -1,10 +1,10 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Base64;
 
 
 class CTEBase64InputStream

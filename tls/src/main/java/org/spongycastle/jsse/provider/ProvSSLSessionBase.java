@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
@@ -29,12 +29,12 @@ import javax.net.ssl.SSLSessionBindingListener;
 import javax.net.ssl.SSLSessionContext;
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.RecordFormat;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.RecordFormat;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.util.Arrays;
 
 abstract class ProvSSLSessionBase
     extends BCExtendedSSLSession
@@ -70,9 +70,9 @@ abstract class ProvSSLSessionBase
 
     protected abstract JsseSessionParameters getJsseSessionParameters();
 
-    protected abstract org.bouncycastle.tls.Certificate getLocalCertificateTLS();
+    protected abstract org.spongycastle.tls.Certificate getLocalCertificateTLS();
 
-    protected abstract org.bouncycastle.tls.Certificate getPeerCertificateTLS();
+    protected abstract org.spongycastle.tls.Certificate getPeerCertificateTLS();
 
     protected abstract ProtocolVersion getProtocolTLS();
 

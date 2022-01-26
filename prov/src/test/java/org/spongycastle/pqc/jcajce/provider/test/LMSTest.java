@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package org.spongycastle.pqc.jcajce.provider.test;
 
 import java.security.InvalidKeyException;
 import java.security.KeyFactory;
@@ -14,15 +14,15 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.pqc.crypto.lms.LMOtsParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSigParameters;
-import org.bouncycastle.pqc.jcajce.interfaces.LMSPrivateKey;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.pqc.jcajce.spec.LMSHSSKeyGenParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.LMSKeyGenParameterSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.pqc.crypto.lms.LMOtsParameters;
+import org.spongycastle.pqc.crypto.lms.LMSigParameters;
+import org.spongycastle.pqc.jcajce.interfaces.LMSPrivateKey;
+import org.spongycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import org.spongycastle.pqc.jcajce.spec.LMSHSSKeyGenParameterSpec;
+import org.spongycastle.pqc.jcajce.spec.LMSKeyGenParameterSpec;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 public class LMSTest
     extends TestCase

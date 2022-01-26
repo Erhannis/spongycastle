@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.jcajce.provider.mceliece;
+package org.spongycastle.pqc.jcajce.provider.mceliece;
 
 import java.io.IOException;
 import java.security.PublicKey;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.pqc.asn1.McEliecePublicKey;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.mceliece.McEliecePublicKeyParameters;
-import org.bouncycastle.pqc.math.linearalgebra.GF2Matrix;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.pqc.asn1.McEliecePublicKey;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
+import org.spongycastle.pqc.crypto.mceliece.McEliecePublicKeyParameters;
+import org.spongycastle.pqc.math.linearalgebra.GF2Matrix;
 
 /**
  * This class implements a McEliece public key and is usually instantiated by

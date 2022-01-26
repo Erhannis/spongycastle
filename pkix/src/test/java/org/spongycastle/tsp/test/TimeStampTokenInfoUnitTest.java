@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.test;
+package org.spongycastle.tsp.test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -6,14 +6,14 @@ import java.math.BigInteger;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.tsp.TSTInfo;
-import org.bouncycastle.tsp.GenTimeAccuracy;
-import org.bouncycastle.tsp.TSPAlgorithms;
-import org.bouncycastle.tsp.TSPException;
-import org.bouncycastle.tsp.TimeStampTokenInfo;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.tsp.TSTInfo;
+import org.spongycastle.tsp.GenTimeAccuracy;
+import org.spongycastle.tsp.TSPAlgorithms;
+import org.spongycastle.tsp.TSPException;
+import org.spongycastle.tsp.TimeStampTokenInfo;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class TimeStampTokenInfoUnitTest
     extends TestCase

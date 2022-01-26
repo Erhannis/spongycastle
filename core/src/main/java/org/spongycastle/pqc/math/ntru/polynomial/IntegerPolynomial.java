@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,10 +13,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import org.bouncycastle.pqc.math.ntru.euclid.BigIntEuclidean;
-import org.bouncycastle.pqc.math.ntru.util.ArrayEncoder;
-import org.bouncycastle.pqc.math.ntru.util.Util;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.math.ntru.euclid.BigIntEuclidean;
+import org.spongycastle.pqc.math.ntru.util.ArrayEncoder;
+import org.spongycastle.pqc.math.ntru.util.Util;
+import org.spongycastle.util.Arrays;
 
 /**
  * A polynomial with <code>int</code> coefficients.<br>
@@ -30,7 +30,7 @@ public class IntegerPolynomial
     /**
      * Prime numbers &gt; 4500 for resultant computation. Starting them below ~4400 causes incorrect results occasionally.
      * Fortunately, 4500 is about the optimum number for performance.<br/>
-     * This array contains enough prime numbers so primes never have to be computed on-line for any standard {@link org.bouncycastle.pqc.crypto.ntru.NTRUSigningParameters}.
+     * This array contains enough prime numbers so primes never have to be computed on-line for any standard {@link org.spongycastle.pqc.crypto.ntru.NTRUSigningParameters}.
      */
     private static final int[] PRIMES = new int[]{
         4507, 4513, 4517, 4519, 4523, 4547, 4549, 4561, 4567, 4583,

@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 /**
  * Exception thrown if a TSP request or response fails to validate.

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ecgost12;
+package org.spongycastle.jcajce.provider.asymmetric.ecgost12;
 
 import java.math.BigInteger;
 import java.security.AlgorithmParameters;
@@ -8,20 +8,20 @@ import java.security.PublicKey;
 import java.security.SignatureException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
-import org.bouncycastle.crypto.DSAExt;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.GOST3411_2012_512Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.ECGOST3410_2012Signer;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jce.interfaces.ECKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.crypto.DSAExt;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.GOST3411_2012_512Digest;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ECKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.signers.ECGOST3410_2012Signer;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.jce.interfaces.ECKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 /**
  * Signature for GOST34.10 2012 512. Algorithm is the same as for GOST34.10 2001

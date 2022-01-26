@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,14 +6,14 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.SimpleTimeZone;
 
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.ASN1UTCTime;
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DERUTCTime;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.ASN1UTCTime;
+import org.spongycastle.asn1.DERGeneralizedTime;
+import org.spongycastle.asn1.DERUTCTime;
 
 public class Time
     extends ASN1Object

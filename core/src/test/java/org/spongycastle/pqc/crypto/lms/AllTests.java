@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

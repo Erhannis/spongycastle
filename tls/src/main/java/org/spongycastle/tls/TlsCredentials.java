@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 /**
  * Base interface for interfaces/classes carrying TLS credentials.

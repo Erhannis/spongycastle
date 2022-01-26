@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.KeyManagementException;
 import java.security.KeyStore;
@@ -30,16 +30,16 @@ import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509KeyManager;
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jsse.BCX509ExtendedKeyManager;
-import org.bouncycastle.jsse.BCX509ExtendedTrustManager;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.jsse.java.security.BCCryptoPrimitive;
-import org.bouncycastle.tls.CipherSuite;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jsse.BCX509ExtendedKeyManager;
+import org.spongycastle.jsse.BCX509ExtendedTrustManager;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.jsse.java.security.BCCryptoPrimitive;
+import org.spongycastle.tls.CipherSuite;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
 
 class ProvSSLContextSpi
     extends SSLContextSpi

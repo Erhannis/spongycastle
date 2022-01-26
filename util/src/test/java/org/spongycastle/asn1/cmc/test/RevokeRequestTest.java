@@ -1,22 +1,22 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.cmc.RevokeRequest;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.cmc.RevokeRequest;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.util.Pack;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class RevokeRequestTest

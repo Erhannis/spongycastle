@@ -1,4 +1,4 @@
-package org.bouncycastle.mime;
+package org.spongycastle.mime;
 
 /**
  * Base interface for a MIME parser context.

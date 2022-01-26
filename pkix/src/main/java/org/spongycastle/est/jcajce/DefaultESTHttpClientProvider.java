@@ -1,12 +1,12 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 import java.util.Set;
 
 import javax.net.ssl.SSLSocketFactory;
 
-import org.bouncycastle.est.ESTClient;
-import org.bouncycastle.est.ESTClientProvider;
-import org.bouncycastle.est.ESTException;
+import org.spongycastle.est.ESTClient;
+import org.spongycastle.est.ESTClientProvider;
+import org.spongycastle.est.ESTException;
 
 class DefaultESTHttpClientProvider
     implements ESTClientProvider

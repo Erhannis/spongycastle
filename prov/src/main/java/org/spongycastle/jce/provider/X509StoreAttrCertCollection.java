@@ -1,12 +1,12 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.util.Collection;
 
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.x509.X509CollectionStoreParameters;
-import org.bouncycastle.x509.X509StoreParameters;
-import org.bouncycastle.x509.X509StoreSpi;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Selector;
+import org.spongycastle.x509.X509CollectionStoreParameters;
+import org.spongycastle.x509.X509StoreParameters;
+import org.spongycastle.x509.X509StoreSpi;
 
 public class X509StoreAttrCertCollection
     extends X509StoreSpi

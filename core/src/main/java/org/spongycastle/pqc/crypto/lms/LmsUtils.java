@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
 class LmsUtils
 {

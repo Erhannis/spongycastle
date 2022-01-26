@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 /**
  * Marker interface to distinguish a TLS client context.

@@ -1,17 +1,17 @@
-package org.bouncycastle.cert.crmf.bc;
+package org.spongycastle.cert.crmf.bc;
 
 import java.io.IOException;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.asn1.crmf.EncryptedValue;
-import org.bouncycastle.cert.crmf.CRMFException;
-import org.bouncycastle.cert.crmf.EncryptedValueBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.util.PrivateKeyInfoFactory;
-import org.bouncycastle.operator.KeyWrapper;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.crmf.EncryptedValue;
+import org.spongycastle.cert.crmf.CRMFException;
+import org.spongycastle.cert.crmf.EncryptedValueBuilder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.util.PrivateKeyInfoFactory;
+import org.spongycastle.operator.KeyWrapper;
+import org.spongycastle.operator.OutputEncryptor;
 
 /**
  * Lightweight convenience class for EncryptedValueBuilder

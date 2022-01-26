@@ -1,10 +1,10 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.raw.Mod;
-import org.bouncycastle.math.raw.Nat;
+import org.spongycastle.math.raw.Mod;
+import org.spongycastle.math.raw.Nat;
 
 /**
  * BigInteger utilities.

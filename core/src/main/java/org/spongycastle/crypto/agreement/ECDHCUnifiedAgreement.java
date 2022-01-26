@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.ECDHUPrivateParameters;
-import org.bouncycastle.crypto.params.ECDHUPublicParameters;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.ECDHUPrivateParameters;
+import org.spongycastle.crypto.params.ECDHUPublicParameters;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * EC Unified static/ephemeral agreement as described in NIST SP 800-56A using EC co-factor Diffie-Hellman.

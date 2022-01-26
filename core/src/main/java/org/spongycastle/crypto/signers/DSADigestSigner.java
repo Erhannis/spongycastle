@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DSA;
-import org.bouncycastle.crypto.DSAExt;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.DSAExt;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ParametersWithRandom;
 
 public class DSADigestSigner
     implements Signer

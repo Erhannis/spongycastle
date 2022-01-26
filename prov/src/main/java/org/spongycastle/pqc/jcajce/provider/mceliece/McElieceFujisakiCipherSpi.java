@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.mceliece;
+package org.spongycastle.pqc.jcajce.provider.mceliece;
 
 import java.io.ByteArrayOutputStream;
 import java.security.InvalidAlgorithmParameterException;
@@ -11,16 +11,16 @@ import java.security.spec.AlgorithmParameterSpec;
 
 import javax.crypto.BadPaddingException;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.util.DigestFactory;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2KeyParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceFujisakiCipher;
-import org.bouncycastle.pqc.jcajce.provider.util.AsymmetricHybridCipher;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.util.DigestFactory;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2KeyParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceFujisakiCipher;
+import org.spongycastle.pqc.jcajce.provider.util.AsymmetricHybridCipher;
 
 public class McElieceFujisakiCipherSpi
     extends AsymmetricHybridCipher

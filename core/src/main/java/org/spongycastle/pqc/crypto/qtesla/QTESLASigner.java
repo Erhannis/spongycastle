@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.qtesla;
+package org.spongycastle.pqc.crypto.qtesla;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.MessageSigner;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.MessageSigner;
 
 /**
  * Signer for the qTESLA algorithm (https://qtesla.org/)

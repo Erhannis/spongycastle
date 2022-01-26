@@ -1,10 +1,10 @@
-package org.bouncycastle.jcajce.provider.config;
+package org.spongycastle.jcajce.provider.config;
 
 import java.security.BasicPermission;
 import java.security.Permission;
 import java.util.StringTokenizer;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 /**
  * A permission class to define what can be done with the ConfigurableProvider interface.

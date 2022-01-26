@@ -1,8 +1,8 @@
-package org.bouncycastle.jce;
+package org.spongycastle.jce;
 
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x509.KeyUsage;
 
 /**
  * A holding class for constructing an X509 Key Usage extension.

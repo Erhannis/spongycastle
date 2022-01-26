@@ -1,4 +1,4 @@
-package org.bouncycastle.mozilla.jcajce;
+package org.spongycastle.mozilla.jcajce;
 
 import java.security.InvalidKeyException;
 import java.security.KeyFactory;
@@ -8,13 +8,13 @@ import java.security.Provider;
 import java.security.PublicKey;
 import java.security.spec.X509EncodedKeySpec;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.mozilla.SignedPublicKeyAndChallenge;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.mozilla.SignedPublicKeyAndChallenge;
 
 /**
  * This is designed to parse the SignedPublicKeyAndChallenge created by the
@@ -37,7 +37,7 @@ public class JcaSignedPublicKeyAndChallenge
 {
     JcaJceHelper helper = new DefaultJcaJceHelper();
 
-    private JcaSignedPublicKeyAndChallenge(org.bouncycastle.asn1.mozilla.SignedPublicKeyAndChallenge struct, JcaJceHelper helper)
+    private JcaSignedPublicKeyAndChallenge(org.spongycastle.asn1.mozilla.SignedPublicKeyAndChallenge struct, JcaJceHelper helper)
     {
         super(struct);
         this.helper = helper;

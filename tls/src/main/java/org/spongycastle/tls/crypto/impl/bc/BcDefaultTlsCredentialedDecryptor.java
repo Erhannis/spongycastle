@@ -1,20 +1,20 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.encodings.PKCS1Encoding;
-import org.bouncycastle.crypto.engines.RSABlindedEngine;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.tls.Certificate;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.TlsCredentialedDecryptor;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.tls.crypto.impl.TlsImplUtils;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.encodings.PKCS1Encoding;
+import org.spongycastle.crypto.engines.RSABlindedEngine;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.tls.Certificate;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.TlsCredentialedDecryptor;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.impl.TlsImplUtils;
+import org.spongycastle.util.Arrays;
 
 /**
  * Credentialed class decrypting RSA encrypted secrets sent from a peer for our end of the TLS connection using the BC light-weight API.

@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.util.Memoable;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.util.Memoable;
+import org.spongycastle.util.Pack;
 
 /**
  * Base class for SHA-384 and SHA-512.

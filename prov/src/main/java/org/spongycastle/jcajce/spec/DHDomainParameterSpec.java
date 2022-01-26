@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 import java.math.BigInteger;
 
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHValidationParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHValidationParameters;
 
 /**
  * Extension class for DHParameterSpec that wraps a DHDomainParameters object and provides the q domain parameter.

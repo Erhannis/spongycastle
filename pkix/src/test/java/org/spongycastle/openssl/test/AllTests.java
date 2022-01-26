@@ -1,4 +1,4 @@
-package org.bouncycastle.openssl.test;
+package org.spongycastle.openssl.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -15,22 +15,22 @@ import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.openssl.PKCS8Generator;
-import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.openssl.jcajce.JcaPEMWriter;
-import org.bouncycastle.openssl.jcajce.JcaPKCS8Generator;
-import org.bouncycastle.openssl.jcajce.JceOpenSSLPKCS8DecryptorProviderBuilder;
-import org.bouncycastle.openssl.jcajce.JceOpenSSLPKCS8EncryptorBuilder;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.pkcs.PKCS8EncryptedPrivateKeyInfo;
-import org.bouncycastle.pkcs.PKCSException;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.openssl.PKCS8Generator;
+import org.spongycastle.openssl.jcajce.JcaPEMKeyConverter;
+import org.spongycastle.openssl.jcajce.JcaPEMWriter;
+import org.spongycastle.openssl.jcajce.JcaPKCS8Generator;
+import org.spongycastle.openssl.jcajce.JceOpenSSLPKCS8DecryptorProviderBuilder;
+import org.spongycastle.openssl.jcajce.JceOpenSSLPKCS8EncryptorBuilder;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.pkcs.PKCS8EncryptedPrivateKeyInfo;
+import org.spongycastle.pkcs.PKCSException;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class
     AllTests
@@ -52,7 +52,7 @@ public class
             Security.addProvider(new BouncyCastleProvider());
         }
         
-        org.bouncycastle.util.test.Test[] tests = new org.bouncycastle.util.test.Test[]
+        org.spongycastle.util.test.Test[] tests = new org.spongycastle.util.test.Test[]
         {
             new WriterTest(),
             new ParserTest()

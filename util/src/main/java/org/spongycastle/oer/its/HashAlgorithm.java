@@ -1,8 +1,8 @@
-package org.bouncycastle.oer.its;
+package org.spongycastle.oer.its;
 
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
 
 /**
  * CertificateType ::= ENUMERATED {

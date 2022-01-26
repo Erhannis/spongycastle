@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -36,27 +36,27 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.OAEPParameterSpec;
 import javax.crypto.spec.PSource;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.RSAESOAEPparams;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
-import org.bouncycastle.jcajce.spec.OpenSSHPrivateKeySpec;
-import org.bouncycastle.jcajce.spec.OpenSSHPublicKeySpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.pkcs.RSAESOAEPparams;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.DigestInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.jcajce.spec.OpenSSHPrivateKeySpec;
+import org.spongycastle.jcajce.spec.OpenSSHPublicKeySpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class RSATest
     extends SimpleTest
@@ -188,7 +188,7 @@ public class RSATest
         PrivateKeyInfo keyInfo = PrivateKeyInfo.getInstance(privKey.getEncoded());
         BigInteger zero = BigInteger.valueOf(0);
         PKCS8EncodedKeySpec noCrtSpec = new PKCS8EncodedKeySpec(new PrivateKeyInfo(keyInfo.getPrivateKeyAlgorithm(),
-                                                   new org.bouncycastle.asn1.pkcs.RSAPrivateKey(privKeySpec.getModulus(), privKeySpec.getPublicExponent(), privKeySpec.getPrivateExponent(), zero, zero, zero, zero, zero)).getEncoded());
+                                                   new org.spongycastle.asn1.pkcs.RSAPrivateKey(privKeySpec.getModulus(), privKeySpec.getPublicExponent(), privKeySpec.getPrivateExponent(), zero, zero, zero, zero, zero)).getEncoded());
 
         PrivateKey noCrtKey = fact.generatePrivate(noCrtSpec);
         if (noCrtKey instanceof RSAPrivateCrtKey)

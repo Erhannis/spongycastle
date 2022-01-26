@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.gnu;
+package org.spongycastle.asn1.gnu;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * GNU project OID collection<p>

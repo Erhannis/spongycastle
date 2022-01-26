@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.prng.SP800SecureRandom;
-import org.bouncycastle.crypto.prng.SP800SecureRandomBuilder;
-import org.bouncycastle.tls.crypto.TlsNonceGenerator;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.prng.SP800SecureRandom;
+import org.spongycastle.crypto.prng.SP800SecureRandomBuilder;
+import org.spongycastle.tls.crypto.TlsNonceGenerator;
 
 class JcaNonceGenerator
     implements TlsNonceGenerator

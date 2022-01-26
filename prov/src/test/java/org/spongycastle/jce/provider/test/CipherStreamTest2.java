@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -12,12 +12,12 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.spec.IvParameterSpec;
 
-import org.bouncycastle.crypto.io.InvalidCipherTextIOException;
-import org.bouncycastle.jcajce.io.CipherInputStream;
-import org.bouncycastle.jcajce.io.CipherOutputStream;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.io.InvalidCipherTextIOException;
+import org.spongycastle.jcajce.io.CipherInputStream;
+import org.spongycastle.jcajce.io.CipherOutputStream;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CipherStreamTest2
     extends SimpleTest

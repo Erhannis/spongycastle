@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.keystore.util;
+package org.spongycastle.jcajce.provider.keystore.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -21,13 +21,13 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.jcajce.BCLoadStoreParameter;
-import org.bouncycastle.jcajce.provider.util.DigestFactory;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.jcajce.BCLoadStoreParameter;
+import org.spongycastle.jcajce.provider.util.DigestFactory;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.io.Streams;
 
 /**
  * Implements a certificate only JKS key store.

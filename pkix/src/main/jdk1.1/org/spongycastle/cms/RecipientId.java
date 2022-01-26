@@ -1,6 +1,6 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Selector;
 
 public abstract class RecipientId
     implements Selector

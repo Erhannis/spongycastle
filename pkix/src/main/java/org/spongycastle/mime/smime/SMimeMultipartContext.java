@@ -1,20 +1,20 @@
-package org.bouncycastle.mime.smime;
+package org.spongycastle.mime.smime;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Map;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.mime.CanonicalOutputStream;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeContext;
-import org.bouncycastle.mime.MimeMultipartContext;
-import org.bouncycastle.mime.MimeParserContext;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.util.io.TeeInputStream;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.mime.CanonicalOutputStream;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeContext;
+import org.spongycastle.mime.MimeMultipartContext;
+import org.spongycastle.mime.MimeParserContext;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.util.io.TeeInputStream;
+import org.spongycastle.util.io.TeeOutputStream;
 
 public class SMimeMultipartContext
     implements MimeMultipartContext

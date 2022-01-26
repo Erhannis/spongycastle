@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -11,15 +11,15 @@ import java.util.StringTokenizer;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.x500.AttributeTypeAndValue;
-import org.bouncycastle.asn1.x500.RDN;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.jsse.BCSNIHostName;
-import org.bouncycastle.util.IPAddress;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.x500.AttributeTypeAndValue;
+import org.spongycastle.asn1.x500.RDN;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.jsse.BCSNIHostName;
+import org.spongycastle.util.IPAddress;
 
 class HostnameUtil
 {

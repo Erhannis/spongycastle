@@ -1,12 +1,12 @@
 
-package org.bouncycastle.i18n.test;
+package org.spongycastle.i18n.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.i18n.filter.test.HTMLFilterTest;
-import org.bouncycastle.i18n.filter.test.SQLFilterTest;
+import org.spongycastle.i18n.filter.test.HTMLFilterTest;
+import org.spongycastle.i18n.filter.test.SQLFilterTest;
 
 public class AllTests extends TestCase
 {

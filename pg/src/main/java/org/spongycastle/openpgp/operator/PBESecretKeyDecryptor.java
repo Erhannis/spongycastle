@@ -1,7 +1,7 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.bcpg.S2K;
-import org.bouncycastle.openpgp.PGPException;
+import org.spongycastle.bcpg.S2K;
+import org.spongycastle.openpgp.PGPException;
 
 public abstract class PBESecretKeyDecryptor
 {

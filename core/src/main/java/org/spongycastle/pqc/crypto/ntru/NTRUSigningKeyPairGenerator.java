@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -9,18 +9,18 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.pqc.math.ntru.euclid.BigIntEuclidean;
-import org.bouncycastle.pqc.math.ntru.polynomial.BigDecimalPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.BigIntPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.Polynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.ProductFormPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.Resultant;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.pqc.math.ntru.euclid.BigIntEuclidean;
+import org.spongycastle.pqc.math.ntru.polynomial.BigDecimalPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.BigIntPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.Polynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.ProductFormPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.Resultant;
 
 import static java.math.BigInteger.ONE;
 import static java.math.BigInteger.ZERO;

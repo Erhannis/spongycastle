@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+package org.spongycastle.jcajce.provider.asymmetric.rsa;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -14,19 +14,19 @@ import java.security.spec.RSAPrivateCrtKeySpec;
 import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.crypto.util.OpenSSHPrivateKeyUtil;
-import org.bouncycastle.crypto.util.OpenSSHPublicKeyUtil;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ExtendedInvalidKeySpecException;
-import org.bouncycastle.jcajce.spec.OpenSSHPrivateKeySpec;
-import org.bouncycastle.jcajce.spec.OpenSSHPublicKeySpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.pkcs.RSAPrivateKey;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.spongycastle.crypto.util.OpenSSHPrivateKeyUtil;
+import org.spongycastle.crypto.util.OpenSSHPublicKeyUtil;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
+import org.spongycastle.jcajce.provider.asymmetric.util.ExtendedInvalidKeySpecException;
+import org.spongycastle.jcajce.spec.OpenSSHPrivateKeySpec;
+import org.spongycastle.jcajce.spec.OpenSSHPublicKeySpec;
 
 public class KeyFactorySpi
     extends BaseKeyFactorySpi

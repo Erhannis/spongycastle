@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.test;
+package org.spongycastle.cert.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -15,43 +15,43 @@ import java.security.spec.RSAPublicKeySpec;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Attribute;
-import org.bouncycastle.asn1.pkcs.CertificationRequest;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.jce.ECGOST3410NamedCurveTable;
-import org.bouncycastle.jce.ECNamedCurveTable;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPrivateKeySpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
-import org.bouncycastle.pkcs.PKCS10CertificationRequest;
-import org.bouncycastle.pkcs.PKCS10CertificationRequestBuilder;
-import org.bouncycastle.pkcs.jcajce.JcaPKCS10CertificationRequest;
-import org.bouncycastle.pkcs.jcajce.JcaPKCS10CertificationRequestBuilder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.Attribute;
+import org.spongycastle.asn1.pkcs.CertificationRequest;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.jce.ECGOST3410NamedCurveTable;
+import org.spongycastle.jce.ECNamedCurveTable;
+import org.spongycastle.jce.interfaces.ECPointEncoder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECPrivateKeySpec;
+import org.spongycastle.jce.spec.ECPublicKeySpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
+import org.spongycastle.pkcs.PKCS10CertificationRequest;
+import org.spongycastle.pkcs.PKCS10CertificationRequestBuilder;
+import org.spongycastle.pkcs.jcajce.JcaPKCS10CertificationRequest;
+import org.spongycastle.pkcs.jcajce.JcaPKCS10CertificationRequestBuilder;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  **/
@@ -121,7 +121,7 @@ public class PKCS10Test
         x500NameBld.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         x500NameBld.addRDN(BCStyle.L, "Melbourne");
         x500NameBld.addRDN(BCStyle.ST, "Victoria");
-        x500NameBld.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        x500NameBld.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         X500Name    subject = x500NameBld.build();
 
@@ -158,7 +158,7 @@ public class PKCS10Test
         x500NameBld.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         x500NameBld.addRDN(BCStyle.L, "Melbourne");
         x500NameBld.addRDN(BCStyle.ST, "Victoria");
-        x500NameBld.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        x500NameBld.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         X500Name    subject = x500NameBld.build();
 
@@ -289,7 +289,7 @@ public class PKCS10Test
     private void createECRequest(String algorithm, ASN1ObjectIdentifier algOid)
         throws Exception
     {
-        X9ECParameters x9 = org.bouncycastle.asn1.x9.ECNamedCurveTable.getByName("secp521r1");
+        X9ECParameters x9 = org.spongycastle.asn1.x9.ECNamedCurveTable.getByName("secp521r1");
         ECCurve curve = x9.getCurve();
         ECParameterSpec spec = new ECParameterSpec(curve, x9.getG(), x9.getN(), x9.getH());
 
@@ -585,7 +585,7 @@ public class PKCS10Test
         // elliptic curve openSSL
         KeyPairGenerator g = KeyPairGenerator.getInstance("ECDSA", "BC");
 
-        X9ECParameters x9 = org.bouncycastle.asn1.x9.ECNamedCurveTable.getByName("prime239v1");
+        X9ECParameters x9 = org.spongycastle.asn1.x9.ECNamedCurveTable.getByName("prime239v1");
         ECCurve curve = x9.getCurve();
         ECParameterSpec ecSpec = new ECParameterSpec(curve, x9.getG(), x9.getN(), x9.getH());
 

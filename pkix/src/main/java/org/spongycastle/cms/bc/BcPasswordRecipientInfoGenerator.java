@@ -1,18 +1,18 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.pkcs.PBKDF2Params;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.PasswordRecipient;
-import org.bouncycastle.cms.PasswordRecipientInfoGenerator;
-import org.bouncycastle.crypto.PBEParametersGenerator;
-import org.bouncycastle.crypto.Wrapper;
-import org.bouncycastle.crypto.generators.PKCS5S2ParametersGenerator;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.pkcs.PBKDF2Params;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.PasswordRecipient;
+import org.spongycastle.cms.PasswordRecipientInfoGenerator;
+import org.spongycastle.crypto.PBEParametersGenerator;
+import org.spongycastle.crypto.Wrapper;
+import org.spongycastle.crypto.generators.PKCS5S2ParametersGenerator;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.operator.GenericKey;
 
 public class BcPasswordRecipientInfoGenerator
     extends PasswordRecipientInfoGenerator

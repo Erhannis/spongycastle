@@ -3,34 +3,34 @@
 <FindBugsFilter>
     <Match>
         <!-- clone calls copy constructor -->
-        <Class name="org.bouncycastle.jcajce.PKIXCertStoreSelector"/>
+        <Class name="org.spongycastle.jcajce.PKIXCertStoreSelector"/>
         <Method name="clone"/>
         <Bug code="CN"/>
     </Match>
 
     <Match>
         <!-- $$ Needs review, clone returns this, need reason. -->
-        <Class name="org.bouncycastle.jcajce.PKIXCRLStoreSelector"/>
+        <Class name="org.spongycastle.jcajce.PKIXCRLStoreSelector"/>
         <Method name="clone"/>
         <Bug code="CN"/>
     </Match>
 
     <Match>
         <!-- $$ Needs review, clone returns this, need reason. -->
-        <Class name="org.bouncycastle.jcajce.PKIXExtendedParameters"/>
+        <Class name="org.spongycastle.jcajce.PKIXExtendedParameters"/>
         <Method name="clone"/>
         <Bug code="CN"/>
     </Match>
 
     <Match>
         <!-- $$ Needs review, clone returns this, need reason. -->
-        <Class name="org.bouncycastle.jcajce.PKIXExtendedBuilderParameters"/>
+        <Class name="org.spongycastle.jcajce.PKIXExtendedBuilderParameters"/>
         <Method name="clone"/>
         <Bug code="CN"/>
     </Match>
 
     <Match>
-        <Class name="org.bouncycastle.asn1.x500.X500Name"/>
+        <Class name="org.spongycastle.asn1.x500.X500Name"/>
         <Method name="equals"/>
     </Match>
 
@@ -43,22 +43,22 @@
             You should just remove the finalize method.
           -->
 
-        <Class name="org.bouncycastle.crypto.general.ElGamalPrivateKeyParameters"/>
+        <Class name="org.spongycastle.crypto.general.ElGamalPrivateKeyParameters"/>
         <Method name="finalize"/>
         <Bug code="FI"/>
     </Match>
 
 
     <Match>
-        <!-- Nm: The class name org.bouncycastle.util.Iterable shadows the simple name of implemented interface java.lang.Iterable -->
+        <!-- Nm: The class name org.spongycastle.util.Iterable shadows the simple name of implemented interface java.lang.Iterable -->
         <!-- Suggests a rename but I fear that may break some peoples code. -->
-        <Class name="org.bouncycastle.util.Iterable"/>
+        <Class name="org.spongycastle.util.Iterable"/>
     </Match>
 
 
-    <!-- Fixed: Added close in finally block to org.bouncycastle.asn1.ASN1Primitive.fromByteArray(byte[]) -->
-    <!--- Fixed: Added close in finally block to: org.bouncycastle.jcajce.provider.ProvJKS$JKSKeyStoreSpi.engineLoad(InputStream, char[]) -->
-    <!-- Added try / finally close blocks to streams.   org.bouncycastle.jcajce.provider ProvPKCS12 -->
+    <!-- Fixed: Added close in finally block to org.spongycastle.asn1.ASN1Primitive.fromByteArray(byte[]) -->
+    <!--- Fixed: Added close in finally block to: org.spongycastle.jcajce.provider.ProvJKS$JKSKeyStoreSpi.engineLoad(InputStream, char[]) -->
+    <!-- Added try / finally close blocks to streams.   org.spongycastle.jcajce.provider ProvPKCS12 -->
 
     <!-- Added transient to fields in BouncyCastleFipsProvider -->
 
@@ -66,16 +66,16 @@
     <Match>
         <!-- Complaining about a transient 'this' -->
 
-        <Class name="org.bouncycastle.jcajce.provider.ProvRandom$1$1"/>
-        <Class name="org.bouncycastle.jcajce.provider.ProvRandom$2$1"/>
+        <Class name="org.spongycastle.jcajce.provider.ProvRandom$1$1"/>
+        <Class name="org.spongycastle.jcajce.provider.ProvRandom$2$1"/>
     </Match>
 
 
-    <!-- removed unnecessary condition statement from org.bouncycastle.asn1.ASN1ApplicationSpecific.replaceTagNumber(int, byte[]) @212 -->
-    <!-- commented out if statement as it cannot fire:  org.bouncycastle.crypto.fips.BaseKDFBytesGenerator.generateBytes(byte[], int, int) @87 -->
+    <!-- removed unnecessary condition statement from org.spongycastle.asn1.ASN1ApplicationSpecific.replaceTagNumber(int, byte[]) @212 -->
+    <!-- commented out if statement as it cannot fire:  org.spongycastle.crypto.fips.BaseKDFBytesGenerator.generateBytes(byte[], int, int) @87 -->
 
     <Match>
-        <Class name="org.bouncycastle.asn1.ASN1OctetString"/>
+        <Class name="org.spongycastle.asn1.ASN1OctetString"/>
         <Method name="getOctets()"/>
     </Match>
 

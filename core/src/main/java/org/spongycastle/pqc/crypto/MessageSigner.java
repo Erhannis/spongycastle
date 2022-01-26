@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto;
+package org.spongycastle.pqc.crypto;
 
-import org.bouncycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CipherParameters;
 
 /**
  * Base interface for a PQC signing algorithm.

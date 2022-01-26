@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * Haraka-512 v2, https://eprint.iacr.org/2016/098.pdf

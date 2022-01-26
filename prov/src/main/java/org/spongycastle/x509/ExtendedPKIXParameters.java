@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.cert.CertSelector;
@@ -13,8 +13,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
 
 /**
  * This class extends the PKIXParameters with a validity model parameter.
@@ -244,7 +244,7 @@ public class ExtendedPKIXParameters
                 {
                     throw new ClassCastException(
                         "All elements of list must be "
-                            + "of type org.bouncycastle.util.Store.");
+                            + "of type org.spongycastle.util.Store.");
                 }
             }
             this.stores = new ArrayList(stores);

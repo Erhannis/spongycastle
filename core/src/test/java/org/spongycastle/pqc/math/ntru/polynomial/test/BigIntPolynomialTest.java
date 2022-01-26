@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package org.spongycastle.pqc.math.ntru.polynomial.test;
 
 import java.math.BigInteger;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.math.ntru.polynomial.BigIntPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.BigIntPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
 
 public class BigIntPolynomialTest
     extends TestCase

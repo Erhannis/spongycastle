@@ -1,7 +1,7 @@
-package org.bouncycastle.i18n.filter.test;
+package org.spongycastle.i18n.filter.test;
 
-import org.bouncycastle.i18n.filter.Filter;
-import org.bouncycastle.i18n.filter.HTMLFilter;
+import org.spongycastle.i18n.filter.Filter;
+import org.spongycastle.i18n.filter.HTMLFilter;
 
 import junit.framework.TestCase;
 

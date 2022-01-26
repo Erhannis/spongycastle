@@ -1,13 +1,13 @@
-package org.bouncycastle.cert.ocsp.jcajce;
+package org.spongycastle.cert.ocsp.jcajce;
 
 import java.security.PublicKey;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.ocsp.BasicOCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.OCSPException;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.ocsp.BasicOCSPRespBuilder;
+import org.spongycastle.cert.ocsp.OCSPException;
+import org.spongycastle.operator.DigestCalculator;
 
 public class JcaBasicOCSPRespBuilder
     extends BasicOCSPRespBuilder

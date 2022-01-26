@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
@@ -32,20 +32,20 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.internal.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.internal.asn1.cms.CMSObjectIdentifiers;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestFailedException;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestFailedException;
 
 public class CertTest
     extends SimpleTest
@@ -1799,12 +1799,12 @@ public class CertTest
         checkCertificate(7, cert7);
         checkCertificate(8, sm_sign);
 
-        System.setProperty("org.bouncycastle.x509.allow_non-der_tbscert", "true");
+        System.setProperty("org.spongycastle.x509.allow_non-der_tbscert", "true");
 
         checkCertificate(9, x25519Cert,
             KeyFactory.getInstance("EdDSA").generatePublic(new X509EncodedKeySpec(Base64.decode("MCowBQYDK2VwAyEAGb9ECWmEzf6FQbrBZ9w7lshQhqowtrbLDFw4rXAxZuE="))));
 
-        System.setProperty("org.bouncycastle.x509.allow_non-der_tbscert", "false");
+        System.setProperty("org.spongycastle.x509.allow_non-der_tbscert", "false");
 
         try
         {

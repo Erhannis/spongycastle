@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.params.CramerShoupKeyGenerationParameters;
-import org.bouncycastle.crypto.params.CramerShoupParameters;
-import org.bouncycastle.crypto.params.CramerShoupPrivateKeyParameters;
-import org.bouncycastle.crypto.params.CramerShoupPublicKeyParameters;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.params.CramerShoupKeyGenerationParameters;
+import org.spongycastle.crypto.params.CramerShoupParameters;
+import org.spongycastle.crypto.params.CramerShoupPrivateKeyParameters;
+import org.spongycastle.crypto.params.CramerShoupPublicKeyParameters;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * a Cramer Shoup key pair generator

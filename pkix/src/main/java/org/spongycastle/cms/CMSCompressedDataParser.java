@@ -1,16 +1,16 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.asn1.ASN1OctetStringParser;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.cms.CompressedDataParser;
-import org.bouncycastle.asn1.cms.ContentInfoParser;
-import org.bouncycastle.operator.InputExpander;
-import org.bouncycastle.operator.InputExpanderProvider;
+import org.spongycastle.asn1.ASN1OctetStringParser;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.BERTags;
+import org.spongycastle.asn1.cms.CompressedDataParser;
+import org.spongycastle.asn1.cms.ContentInfoParser;
+import org.spongycastle.operator.InputExpander;
+import org.spongycastle.operator.InputExpanderProvider;
 
 /**
  * Class for reading a CMS Compressed Data stream.

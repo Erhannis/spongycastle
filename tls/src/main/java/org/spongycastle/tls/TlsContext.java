@@ -1,7 +1,7 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.tls.crypto.TlsCrypto;
-import org.bouncycastle.tls.crypto.TlsNonceGenerator;
+import org.spongycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.tls.crypto.TlsNonceGenerator;
 
 /**
  * Base interface for a TLS context implementation.

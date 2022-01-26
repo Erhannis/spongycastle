@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.test;
+package org.spongycastle.mail.smime.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -18,24 +18,24 @@ import java.security.cert.X509Certificate;
 import java.util.Date;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509v3CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.crypto.util.JournalingSecureRandom;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mime.smime.SMIMEEnvelopedWriter;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JceAsymmetricKeyWrapper;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509v3CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.crypto.util.JournalingSecureRandom;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mime.smime.SMIMEEnvelopedWriter;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JceAsymmetricKeyWrapper;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
 
 public class JournalingSecureRandomEncryptTest
     extends TestCase

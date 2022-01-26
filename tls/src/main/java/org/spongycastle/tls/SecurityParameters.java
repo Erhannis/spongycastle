@@ -1,9 +1,9 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.util.Vector;
 
-import org.bouncycastle.tls.crypto.CryptoHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.CryptoHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsSecret;
 
 /**
  * Carrier class for general security parameters.

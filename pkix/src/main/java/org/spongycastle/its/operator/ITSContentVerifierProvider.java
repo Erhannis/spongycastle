@@ -1,8 +1,8 @@
-package org.bouncycastle.its.operator;
+package org.spongycastle.its.operator;
 
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.OperatorCreationException;
 
 public interface ITSContentVerifierProvider
 {

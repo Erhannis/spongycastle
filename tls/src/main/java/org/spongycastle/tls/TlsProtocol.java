@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -11,9 +11,9 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
 
 public abstract class TlsProtocol
     implements TlsCloseable

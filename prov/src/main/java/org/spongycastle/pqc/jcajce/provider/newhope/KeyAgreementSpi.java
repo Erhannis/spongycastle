@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.newhope;
+package org.spongycastle.pqc.jcajce.provider.newhope;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -8,13 +8,13 @@ import java.security.spec.AlgorithmParameterSpec;
 
 import javax.crypto.ShortBufferException;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
-import org.bouncycastle.pqc.crypto.ExchangePair;
-import org.bouncycastle.pqc.crypto.newhope.NHAgreement;
-import org.bouncycastle.pqc.crypto.newhope.NHExchangePairGenerator;
-import org.bouncycastle.pqc.crypto.newhope.NHPublicKeyParameters;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
+import org.spongycastle.pqc.crypto.ExchangePair;
+import org.spongycastle.pqc.crypto.newhope.NHAgreement;
+import org.spongycastle.pqc.crypto.newhope.NHExchangePairGenerator;
+import org.spongycastle.pqc.crypto.newhope.NHPublicKeyParameters;
+import org.spongycastle.util.Arrays;
 
 public class KeyAgreementSpi
     extends BaseAgreementSpi

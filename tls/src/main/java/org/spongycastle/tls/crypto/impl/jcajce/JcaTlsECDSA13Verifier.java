@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.security.GeneralSecurityException;
 import java.security.PublicKey;
 import java.security.Signature;
 
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
-import org.bouncycastle.tls.crypto.TlsVerifier;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.tls.crypto.TlsVerifier;
 
 /**
  * Implementation class for verification of ECDSA signatures in TLS 1.3+ using the JCA.

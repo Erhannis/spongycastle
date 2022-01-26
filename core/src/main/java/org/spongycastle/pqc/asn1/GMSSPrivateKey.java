@@ -1,21 +1,21 @@
-package org.bouncycastle.pqc.asn1;
+package org.spongycastle.pqc.asn1;
 
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.pqc.crypto.gmss.GMSSLeaf;
-import org.bouncycastle.pqc.crypto.gmss.GMSSParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSRootCalc;
-import org.bouncycastle.pqc.crypto.gmss.GMSSRootSig;
-import org.bouncycastle.pqc.crypto.gmss.Treehash;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.pqc.crypto.gmss.GMSSLeaf;
+import org.spongycastle.pqc.crypto.gmss.GMSSParameters;
+import org.spongycastle.pqc.crypto.gmss.GMSSRootCalc;
+import org.spongycastle.pqc.crypto.gmss.GMSSRootSig;
+import org.spongycastle.pqc.crypto.gmss.Treehash;
 
 public class GMSSPrivateKey
     extends ASN1Object

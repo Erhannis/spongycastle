@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.lms;
+package org.spongycastle.pqc.jcajce.provider.lms;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
@@ -8,13 +8,13 @@ import java.security.Signature;
 import java.security.SignatureException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.pqc.crypto.ExhaustedPrivateKeyException;
-import org.bouncycastle.pqc.crypto.MessageSigner;
-import org.bouncycastle.pqc.crypto.lms.LMSContext;
-import org.bouncycastle.pqc.crypto.lms.LMSContextBasedSigner;
-import org.bouncycastle.pqc.crypto.lms.LMSContextBasedVerifier;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.pqc.crypto.ExhaustedPrivateKeyException;
+import org.spongycastle.pqc.crypto.MessageSigner;
+import org.spongycastle.pqc.crypto.lms.LMSContext;
+import org.spongycastle.pqc.crypto.lms.LMSContextBasedSigner;
+import org.spongycastle.pqc.crypto.lms.LMSContextBasedVerifier;
 
 public class LMSSignatureSpi
     extends Signature

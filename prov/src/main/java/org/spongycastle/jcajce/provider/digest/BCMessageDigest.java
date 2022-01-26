@@ -1,9 +1,9 @@
-package org.bouncycastle.jcajce.provider.digest;
+package org.spongycastle.jcajce.provider.digest;
 
 import java.security.DigestException;
 import java.security.MessageDigest;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
 public class BCMessageDigest
     extends MessageDigest

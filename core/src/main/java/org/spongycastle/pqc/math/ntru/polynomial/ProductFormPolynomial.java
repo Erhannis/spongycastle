@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * A polynomial of the form <code>f1*f2+f3</code>, where

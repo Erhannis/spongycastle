@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.encoding;
+package org.spongycastle.mime.encoding;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.exception;
+package org.spongycastle.jce.exception;
 
 /**
  * 

@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.tls.crypto.impl.TlsBlockCipherImpl;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.tls.crypto.impl.TlsBlockCipherImpl;
 
 final class BcTlsBlockCipherImpl
     implements TlsBlockCipherImpl

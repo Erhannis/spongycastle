@@ -1,8 +1,8 @@
-package org.bouncycastle.jce.interfaces;
+package org.spongycastle.jce.interfaces;
 
 import javax.crypto.interfaces.DHKey;
 
-import org.bouncycastle.jce.spec.ElGamalParameterSpec;
+import org.spongycastle.jce.spec.ElGamalParameterSpec;
 
 public interface ElGamalKey
     extends DHKey

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.drbg;
+package org.spongycastle.jcajce.provider.drbg;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,23 +13,23 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
-import org.bouncycastle.crypto.prng.SP800SecureRandom;
-import org.bouncycastle.crypto.prng.SP800SecureRandomBuilder;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.ClassUtil;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.Properties;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.crypto.prng.EntropySourceProvider;
+import org.spongycastle.crypto.prng.SP800SecureRandom;
+import org.spongycastle.crypto.prng.SP800SecureRandomBuilder;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.ClassUtil;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
+import org.spongycastle.util.Properties;
+import org.spongycastle.util.Strings;
 
 /**
  * <b>DRBG Configuration</b><br/>
- * <p>org.bouncycastle.drbg.gather_pause_secs - is to stop the entropy collection thread from grabbing all
+ * <p>org.spongycastle.drbg.gather_pause_secs - is to stop the entropy collection thread from grabbing all
  * available entropy on the system. The original motivation for the hybrid infrastructure was virtual machines
  * sometimes produce very few bits of entropy a second, the original approach (which "worked" at least for BC) was
  * to just read on the second thread and allow things to progress around it, but it did tend to hog the system
@@ -38,7 +38,7 @@ import org.bouncycastle.util.Strings;
  * enough to allow everyone to work together, but small enough to ensure the provider's DRBG is being regularly
  * reseeded.
  * </p>
- * <p>org.bouncycastle.drbg.entropysource - is the class name for an implementation of EntropySourceProvider.
+ * <p>org.spongycastle.drbg.entropysource - is the class name for an implementation of EntropySourceProvider.
  * For example, one could be provided which just reads directly from /dev/random and the extra infrastructure used here
  * could be avoided.</p>
  */
@@ -155,7 +155,7 @@ public class DRBG
 
     private static EntropySourceProvider createEntropySource()
     {
-        final String sourceClass = Properties.getPropertyValue("org.bouncycastle.drbg.entropysource");
+        final String sourceClass = Properties.getPropertyValue("org.spongycastle.drbg.entropysource");
 
         return AccessController.doPrivileged(new PrivilegedAction<EntropySourceProvider>()
         {
@@ -177,7 +177,7 @@ public class DRBG
 
     private static SecureRandom createBaseRandom(boolean isPredictionResistant)
     {
-        if (Properties.getPropertyValue("org.bouncycastle.drbg.entropysource") != null)
+        if (Properties.getPropertyValue("org.spongycastle.drbg.entropysource") != null)
         {
             EntropySourceProvider entropyProvider = createEntropySource();
 
@@ -494,7 +494,7 @@ public class DRBG
                 public void run()
                 {
                     long ms;
-                    String pause = Properties.getPropertyValue("org.bouncycastle.drbg.gather_pause_secs");
+                    String pause = Properties.getPropertyValue("org.spongycastle.drbg.gather_pause_secs");
 
                     if (pause != null)
                     {

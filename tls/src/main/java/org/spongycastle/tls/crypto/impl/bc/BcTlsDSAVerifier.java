@@ -1,10 +1,10 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.DSA;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.crypto.signers.DSASigner;
-import org.bouncycastle.crypto.signers.HMacDSAKCalculator;
-import org.bouncycastle.tls.SignatureAlgorithm;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.params.DSAPublicKeyParameters;
+import org.spongycastle.crypto.signers.DSASigner;
+import org.spongycastle.crypto.signers.HMacDSAKCalculator;
+import org.spongycastle.tls.SignatureAlgorithm;
 
 /**
  * Implementation class for the verification of the raw DSA signature type using the BC light-weight API.

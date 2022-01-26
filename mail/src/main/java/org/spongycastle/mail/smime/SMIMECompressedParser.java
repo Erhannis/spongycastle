@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -10,8 +10,8 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimePart;
 
-import org.bouncycastle.cms.CMSCompressedDataParser;
-import org.bouncycastle.cms.CMSException;
+import org.spongycastle.cms.CMSCompressedDataParser;
+import org.spongycastle.cms.CMSException;
 
 /**
  * Stream based containing class for an S/MIME pkcs7-mime compressed MimePart.

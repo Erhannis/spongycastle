@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.x500;
+package org.spongycastle.asn1.x500;
 
-import org.bouncycastle.asn1.ASN1BMPString;
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1PrintableString;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.ASN1T61String;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.ASN1UniversalString;
-import org.bouncycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.ASN1BMPString;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1PrintableString;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.ASN1T61String;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.ASN1UniversalString;
+import org.spongycastle.asn1.DERUTF8String;
 
 /**
  * The DirectoryString CHOICE object.

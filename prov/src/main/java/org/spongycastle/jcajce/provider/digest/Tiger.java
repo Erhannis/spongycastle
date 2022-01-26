@@ -1,13 +1,13 @@
-package org.bouncycastle.jcajce.provider.digest;
+package org.spongycastle.jcajce.provider.digest;
 
-import org.bouncycastle.asn1.iana.IANAObjectIdentifiers;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.digests.TigerDigest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
-import org.bouncycastle.jcajce.provider.symmetric.util.PBESecretKeyFactory;
+import org.spongycastle.asn1.iana.IANAObjectIdentifiers;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.digests.TigerDigest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.jcajce.provider.symmetric.util.PBESecretKeyFactory;
 
 public class Tiger
 {

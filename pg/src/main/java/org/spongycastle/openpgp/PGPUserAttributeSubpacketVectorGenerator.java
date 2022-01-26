@@ -1,7 +1,7 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
-import org.bouncycastle.bcpg.UserAttributeSubpacket;
-import org.bouncycastle.bcpg.attr.ImageAttribute;
+import org.spongycastle.bcpg.UserAttributeSubpacket;
+import org.spongycastle.bcpg.attr.ImageAttribute;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider.test;
+package org.spongycastle.jsse.provider.test;
 
 import java.nio.ByteBuffer;
 import java.security.GeneralSecurityException;

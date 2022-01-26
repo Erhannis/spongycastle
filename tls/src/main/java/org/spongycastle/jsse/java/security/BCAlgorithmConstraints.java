@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.java.security;
+package org.spongycastle.jsse.java.security;
 
 import java.security.AlgorithmParameters;
 import java.security.Key;

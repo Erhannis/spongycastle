@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.security.Provider;
 
@@ -6,14 +6,14 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.openpgp.operator.PBEDataDecryptorFactory;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptor;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculatorProvider;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.openpgp.operator.PBEDataDecryptorFactory;
+import org.spongycastle.openpgp.operator.PGPDataDecryptor;
+import org.spongycastle.openpgp.operator.PGPDigestCalculatorProvider;
 
 /**
  * Builder for {@link PBEDataDecryptorFactory} instances that obtain cryptographic primitives using

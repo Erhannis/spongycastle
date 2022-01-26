@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.interfaces;
+package org.spongycastle.jce.interfaces;
 
 /**
  * Main interface for a GOST 3410-94 key.

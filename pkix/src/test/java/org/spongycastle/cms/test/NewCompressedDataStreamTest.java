@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
@@ -8,11 +8,11 @@ import java.util.Random;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.cms.CMSCompressedDataParser;
-import org.bouncycastle.cms.CMSCompressedDataStreamGenerator;
-import org.bouncycastle.cms.jcajce.ZlibCompressor;
-import org.bouncycastle.cms.jcajce.ZlibExpanderProvider;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.cms.CMSCompressedDataParser;
+import org.spongycastle.cms.CMSCompressedDataStreamGenerator;
+import org.spongycastle.cms.jcajce.ZlibCompressor;
+import org.spongycastle.cms.jcajce.ZlibExpanderProvider;
+import org.spongycastle.util.encoders.Base64;
 
 public class NewCompressedDataStreamTest
     extends TestCase

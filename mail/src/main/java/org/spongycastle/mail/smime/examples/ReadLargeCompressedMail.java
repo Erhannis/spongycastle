@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.examples;
+package org.spongycastle.mail.smime.examples;
 
 import java.util.Properties;
 
@@ -6,10 +6,10 @@ import javax.mail.Session;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
-import org.bouncycastle.cms.jcajce.ZlibExpanderProvider;
-import org.bouncycastle.mail.smime.SMIMECompressedParser;
-import org.bouncycastle.mail.smime.SMIMEUtil;
-import org.bouncycastle.mail.smime.util.SharedFileInputStream;
+import org.spongycastle.cms.jcajce.ZlibExpanderProvider;
+import org.spongycastle.mail.smime.SMIMECompressedParser;
+import org.spongycastle.mail.smime.SMIMEUtil;
+import org.spongycastle.mail.smime.util.SharedFileInputStream;
 
 /**
  * a simple example that reads an oversize compressed email and writes data contained

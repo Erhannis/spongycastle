@@ -1,12 +1,12 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.bcpg.SecretKeyPacket;
-import org.bouncycastle.openpgp.operator.PBESecretKeyEncryptor;
-import org.bouncycastle.openpgp.operator.PGPContentSignerBuilder;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.bcpg.SecretKeyPacket;
+import org.spongycastle.openpgp.operator.PBESecretKeyEncryptor;
+import org.spongycastle.openpgp.operator.PGPContentSignerBuilder;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
 
 public class ExtendedPGPSecretKey
     extends PGPSecretKey

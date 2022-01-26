@@ -1,4 +1,4 @@
-package org.bouncycastle.oer;
+package org.spongycastle.oer;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -7,23 +7,23 @@ import java.math.BigInteger;
 import java.util.Enumeration;
 import java.util.Iterator;
 
-import org.bouncycastle.asn1.ASN1ApplicationSpecific;
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1ApplicationSpecific;
+import org.spongycastle.asn1.ASN1Boolean;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.BERTags;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Pack;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 public class OEROutputStream
 {

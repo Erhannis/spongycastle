@@ -1,18 +1,18 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.DSAExt;
-import org.bouncycastle.crypto.params.GOST3410KeyParameters;
-import org.bouncycastle.crypto.params.GOST3410Parameters;
-import org.bouncycastle.crypto.params.GOST3410PrivateKeyParameters;
-import org.bouncycastle.crypto.params.GOST3410PublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.DSAExt;
+import org.spongycastle.crypto.params.GOST3410KeyParameters;
+import org.spongycastle.crypto.params.GOST3410Parameters;
+import org.spongycastle.crypto.params.GOST3410PrivateKeyParameters;
+import org.spongycastle.crypto.params.GOST3410PublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * GOST R 34.10-94 Signature Algorithm

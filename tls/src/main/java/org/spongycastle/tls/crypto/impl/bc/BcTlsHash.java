@@ -1,7 +1,7 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.tls.crypto.TlsHash;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.tls.crypto.TlsHash;
 
 final class BcTlsHash
     implements TlsHash

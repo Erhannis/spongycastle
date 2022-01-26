@@ -1,15 +1,15 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.cms.EnvelopedData;
-import org.bouncycastle.asn1.crmf.CRMFObjectIdentifiers;
-import org.bouncycastle.asn1.crmf.EncryptedKey;
-import org.bouncycastle.asn1.crmf.PKIArchiveOptions;
-import org.bouncycastle.cms.CMSEnvelopedData;
-import org.bouncycastle.cms.CMSException;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.cms.EnvelopedData;
+import org.spongycastle.asn1.crmf.CRMFObjectIdentifiers;
+import org.spongycastle.asn1.crmf.EncryptedKey;
+import org.spongycastle.asn1.crmf.PKIArchiveOptions;
+import org.spongycastle.cms.CMSEnvelopedData;
+import org.spongycastle.cms.CMSException;
 
 /**
  * Carrier for a PKIArchiveOptions structure.

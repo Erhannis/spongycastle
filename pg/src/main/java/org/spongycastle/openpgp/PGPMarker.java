@@ -4,13 +4,13 @@
  * To change this generated comment go to 
  * Window>Preferences>Java>Code Generation>Code and Comments
  */
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.IOException;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.MarkerPacket;
-import org.bouncycastle.bcpg.Packet;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.MarkerPacket;
+import org.spongycastle.bcpg.Packet;
 
 /**
  * a PGP marker packet - in general these should be ignored other than where

@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * Class representing the Definite-Length-type External

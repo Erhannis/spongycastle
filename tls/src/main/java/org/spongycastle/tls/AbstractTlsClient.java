@@ -1,11 +1,11 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.tls.crypto.TlsCrypto;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.util.Integers;
 
 /**
  * Base class for a TLS client.

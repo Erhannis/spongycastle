@@ -1,20 +1,20 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.AlphabetMapper;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.fpe.FPEEngine;
-import org.bouncycastle.crypto.fpe.FPEFF1Engine;
-import org.bouncycastle.crypto.fpe.FPEFF3_1Engine;
-import org.bouncycastle.crypto.params.FPEParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.util.BasicAlphabetMapper;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AlphabetMapper;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.fpe.FPEEngine;
+import org.spongycastle.crypto.fpe.FPEFF1Engine;
+import org.spongycastle.crypto.fpe.FPEFF3_1Engine;
+import org.spongycastle.crypto.params.FPEParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.util.BasicAlphabetMapper;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class SP80038GTest
     extends SimpleTest
@@ -280,7 +280,7 @@ public class SP80038GTest
     private void testDisable()
         throws Exception
     {
-        System.setProperty("org.bouncycastle.fpe.disable", "true");
+        System.setProperty("org.spongycastle.fpe.disable", "true");
         try
         {
             testFF1();
@@ -300,9 +300,9 @@ public class SP80038GTest
         {
             isEquals("FPE disabled", e.getMessage());
         }
-        System.setProperty("org.bouncycastle.fpe.disable", "false");
+        System.setProperty("org.spongycastle.fpe.disable", "false");
 
-        System.setProperty("org.bouncycastle.fpe.disable_ff1", "true");
+        System.setProperty("org.spongycastle.fpe.disable_ff1", "true");
         try
         {
             testFF1();
@@ -314,7 +314,7 @@ public class SP80038GTest
         }
 
         testFF3_1();
-        System.setProperty("org.bouncycastle.fpe.disable_ff1", "false");
+        System.setProperty("org.spongycastle.fpe.disable_ff1", "false");
     }
 
     private void testFF3_1_255()

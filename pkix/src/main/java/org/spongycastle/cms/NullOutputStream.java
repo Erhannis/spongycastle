@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.IOException;
 import java.io.OutputStream;

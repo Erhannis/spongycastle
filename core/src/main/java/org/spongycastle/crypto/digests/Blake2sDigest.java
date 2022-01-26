@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
 /*
   The BLAKE2 cryptographic hash function was designed by Jean-
@@ -23,9 +23,9 @@ package org.bouncycastle.crypto.digests;
         ---------------+--------+-----------+------+------------+
  */
 
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 /**
  * Implementation of the cryptographic hash function BLAKE2s.

@@ -1,12 +1,12 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Set;
 
-import org.bouncycastle.util.Properties;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Properties;
+import org.spongycastle.util.Strings;
 
 /**
  * A basic http response.
@@ -38,7 +38,7 @@ public class ESTResponse
             this.absoluteReadLimit = ((LimitedSource)source).getAbsoluteReadLimit();
         }
 
-        Set<String> opts = Properties.asKeySet("org.bouncycastle.debug.est");
+        Set<String> opts = Properties.asKeySet("org.spongycastle.debug.est");
         if (opts.contains("input") ||
             opts.contains("all"))
         {

@@ -1,6 +1,6 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 /**
  * The base interface for a provider of DigestCalculator implementations.

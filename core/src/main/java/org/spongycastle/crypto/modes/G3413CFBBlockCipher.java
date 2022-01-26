@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.StreamBlockCipher;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.StreamBlockCipher;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.Arrays;
 
 /**
  * An implementation of the CFB mode for GOST 3412 2015 cipher.

@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.util.JournalingSecureRandom;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.util.JournalingSecureRandom;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.test.SimpleTest;
 
 public class JournalingSecureRandomTest
     extends SimpleTest

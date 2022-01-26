@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.modes.gcm;
+package org.spongycastle.crypto.modes.gcm;
 
 public class BasicGCMMultiplier
     implements GCMMultiplier

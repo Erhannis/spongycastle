@@ -1,15 +1,15 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.DSA;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.signers.DSADigestSigner;
-import org.bouncycastle.crypto.signers.ECDSASigner;
-import org.bouncycastle.crypto.signers.HMacDSAKCalculator;
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.crypto.signers.DSADigestSigner;
+import org.spongycastle.crypto.signers.ECDSASigner;
+import org.spongycastle.crypto.signers.HMacDSAKCalculator;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
 
 /**
  * Implementation class for verification of ECDSA signatures in TLS 1.3+ using the BC light-weight API.

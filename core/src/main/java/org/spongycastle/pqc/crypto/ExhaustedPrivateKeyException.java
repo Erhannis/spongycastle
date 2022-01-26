@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto;
+package org.spongycastle.pqc.crypto;
 
 public class ExhaustedPrivateKeyException
     extends IllegalStateException

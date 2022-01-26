@@ -1,7 +1,7 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPublicKey;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPublicKey;
 
 public interface PGPContentVerifierBuilder
 {

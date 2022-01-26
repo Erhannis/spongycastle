@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,11 +8,11 @@ import java.util.List;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLSocket;
 
-import org.bouncycastle.jsse.BCApplicationProtocolSelector;
-import org.bouncycastle.jsse.BCSNIMatcher;
-import org.bouncycastle.jsse.BCSNIServerName;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.jsse.BCApplicationProtocolSelector;
+import org.spongycastle.jsse.BCSNIMatcher;
+import org.spongycastle.jsse.BCSNIServerName;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.tls.TlsUtils;
 
 final class ProvSSLParameters
 {

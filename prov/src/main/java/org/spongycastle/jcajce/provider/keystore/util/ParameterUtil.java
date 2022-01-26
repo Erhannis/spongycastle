@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.keystore.util;
+package org.spongycastle.jcajce.provider.keystore.util;
 
 import java.io.IOException;
 import java.security.KeyStore;

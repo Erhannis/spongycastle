@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.engines.LEAEngine;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.SICBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.engines.LEAEngine;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.modes.SICBlockCipher;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Test Cases for LEA Cipher.
@@ -141,7 +141,7 @@ public class LEATest
         throws Exception
     {
 
-        BufferedReader bin = new BufferedReader(new InputStreamReader(LEATest.class.getResourceAsStream("/org/bouncycastle/crypto/test/lea.txt")));
+        BufferedReader bin = new BufferedReader(new InputStreamReader(LEATest.class.getResourceAsStream("/org.spongycastle.crypto/test/lea.txt")));
         String line;
 
         String comment = null;

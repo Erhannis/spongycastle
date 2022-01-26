@@ -1,9 +1,9 @@
-package org.bouncycastle.cert.path;
+package org.spongycastle.cert.path;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.util.Integers;
+import org.spongycastle.util.Integers;
 
 class CertPathValidationResultBuilder
 {

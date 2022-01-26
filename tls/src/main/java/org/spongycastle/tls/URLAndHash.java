@@ -1,10 +1,10 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 /**
  * RFC 6066 5.

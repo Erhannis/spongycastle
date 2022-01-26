@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.DTLSClientProtocol;
-import org.bouncycastle.tls.DigitallySigned;
+import org.spongycastle.tls.DTLSClientProtocol;
+import org.spongycastle.tls.DigitallySigned;
 
 class DTLSTestClientProtocol extends DTLSClientProtocol
 {

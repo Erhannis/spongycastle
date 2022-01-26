@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ecgost;
+package org.spongycastle.jcajce.provider.asymmetric.ecgost;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -8,17 +8,17 @@ import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPrivateKeySpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECPrivateKeySpec;
+import org.spongycastle.jce.spec.ECPublicKeySpec;
 
 public class KeyFactorySpi
     extends BaseKeyFactorySpi
@@ -32,33 +32,33 @@ public class KeyFactorySpi
         Class spec)
         throws InvalidKeySpecException
     {
-       if (spec.isAssignableFrom(org.bouncycastle.jce.spec.ECPublicKeySpec.class) && key instanceof ECPublicKey)
+       if (spec.isAssignableFrom(org.spongycastle.jce.spec.ECPublicKeySpec.class) && key instanceof ECPublicKey)
        {
            ECPublicKey k = (ECPublicKey)key;
            if (k.getParams() != null)
            {
-               return new org.bouncycastle.jce.spec.ECPublicKeySpec(k.getQ(), k.getParameters());
+               return new org.spongycastle.jce.spec.ECPublicKeySpec(k.getQ(), k.getParameters());
            }
            else
            {
                ECParameterSpec implicitSpec = BouncyCastleProvider.CONFIGURATION.getEcImplicitlyCa();
 
-               return new org.bouncycastle.jce.spec.ECPublicKeySpec(k.getQ(), implicitSpec);
+               return new org.spongycastle.jce.spec.ECPublicKeySpec(k.getQ(), implicitSpec);
            }
        }
-       else if (spec.isAssignableFrom(org.bouncycastle.jce.spec.ECPrivateKeySpec.class) && key instanceof ECPrivateKey)
+       else if (spec.isAssignableFrom(org.spongycastle.jce.spec.ECPrivateKeySpec.class) && key instanceof ECPrivateKey)
        {
            ECPrivateKey k = (ECPrivateKey)key;
 
            if (k.getParams() != null)
            {
-               return new org.bouncycastle.jce.spec.ECPrivateKeySpec(k.getD(), k.getParameters());
+               return new org.spongycastle.jce.spec.ECPrivateKeySpec(k.getD(), k.getParameters());
            }
            else
            {
                ECParameterSpec implicitSpec = BouncyCastleProvider.CONFIGURATION.getEcImplicitlyCa();
 
-               return new org.bouncycastle.jce.spec.ECPrivateKeySpec(k.getD(), implicitSpec);
+               return new org.spongycastle.jce.spec.ECPrivateKeySpec(k.getD(), implicitSpec);
            }
        }
 

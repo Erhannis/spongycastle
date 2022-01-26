@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 /**
  * Utility methods for processing String objects containing IP addresses.

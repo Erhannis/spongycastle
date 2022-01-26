@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -7,9 +7,9 @@ import java.security.PublicKey;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.TlsEncryptor;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.TlsEncryptor;
 
 final class JcaTlsRSAEncryptor
     implements TlsEncryptor

@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.parsers;
+package org.spongycastle.crypto.parsers;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.crypto.KeyParser;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.KeyParser;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.util.io.Streams;
 
 public class ECIESPublicKeyParser
     implements KeyParser

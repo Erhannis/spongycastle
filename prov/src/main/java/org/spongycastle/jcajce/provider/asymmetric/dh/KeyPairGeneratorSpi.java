@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dh;
+package org.spongycastle.jcajce.provider.asymmetric.dh;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
@@ -8,18 +8,18 @@ import java.util.Hashtable;
 
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.generators.DHBasicKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DHParametersGenerator;
-import org.bouncycastle.crypto.params.DHKeyGenerationParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
-import org.bouncycastle.jcajce.spec.DHDomainParameterSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.generators.DHBasicKeyPairGenerator;
+import org.spongycastle.crypto.generators.DHParametersGenerator;
+import org.spongycastle.crypto.params.DHKeyGenerationParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPrivateKeyParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
+import org.spongycastle.jcajce.spec.DHDomainParameterSpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Integers;
 
 public class KeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

@@ -1,21 +1,21 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
 import java.math.BigInteger;
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * The AuthorityKeyIdentifier object.
@@ -102,7 +102,7 @@ public class AuthorityKeyIdentifier
      *       publicKey.getEncoded()).readObject());
      *   AuthorityKeyIdentifier aki = new AuthorityKeyIdentifier(apki);
      * </pre>
-     * @deprecated create the extension using org.bouncycastle.cert.X509ExtensionUtils
+     * @deprecated create the extension using org.spongycastle.cert.X509ExtensionUtils
      **/
     public AuthorityKeyIdentifier(
         SubjectPublicKeyInfo    spki)
@@ -113,7 +113,7 @@ public class AuthorityKeyIdentifier
     /**
      * create an AuthorityKeyIdentifier with the GeneralNames tag and
      * the serial number provided as well.
-     * @deprecated create the extension using org.bouncycastle.cert.X509ExtensionUtils
+     * @deprecated create the extension using org.spongycastle.cert.X509ExtensionUtils
      */
     public AuthorityKeyIdentifier(
         SubjectPublicKeyInfo    spki,

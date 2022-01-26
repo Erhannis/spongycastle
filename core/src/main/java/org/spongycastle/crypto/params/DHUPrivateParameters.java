@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CipherParameters;
 
 /**
  * Parameters holder for private unified static/ephemeral agreement as described in NIST SP 800-56A.

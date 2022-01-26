@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.util.Arrays;
 
 public class GenericSigner
     implements Signer

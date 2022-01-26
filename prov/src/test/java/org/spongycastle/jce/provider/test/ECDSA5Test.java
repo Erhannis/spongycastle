@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -37,41 +37,41 @@ import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.KeyAgreement;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.internal.asn1.bsi.BSIObjectIdentifiers;
-import org.bouncycastle.internal.asn1.eac.EACObjectIdentifiers;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X962Parameters;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.spec.MQVParameterSpec;
-import org.bouncycastle.jce.ECKeyUtil;
-import org.bouncycastle.jce.ECNamedCurveTable;
-import org.bouncycastle.jce.ECPointUtil;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveGenParameterSpec;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.internal.asn1.bsi.BSIObjectIdentifiers;
+import org.spongycastle.internal.asn1.eac.EACObjectIdentifiers;
+import org.spongycastle.asn1.nist.NISTNamedCurves;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X962Parameters;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.jcajce.spec.MQVParameterSpec;
+import org.spongycastle.jce.ECKeyUtil;
+import org.spongycastle.jce.ECNamedCurveTable;
+import org.spongycastle.jce.ECPointUtil;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveGenParameterSpec;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.FixedSecureRandom;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestRandomBigInteger;
 
 public class ECDSA5Test
     extends SimpleTest
@@ -147,7 +147,7 @@ public class ECDSA5Test
         throws Exception
     {
         ECNamedCurveParameterSpec namedCurve = ECNamedCurveTable.getParameterSpec("P-256");
-        org.bouncycastle.jce.spec.ECPublicKeySpec pubSpec = new org.bouncycastle.jce.spec.ECPublicKeySpec(namedCurve.getCurve().createPoint(PubX, PubY), namedCurve);
+        org.spongycastle.jce.spec.ECPublicKeySpec pubSpec = new org.spongycastle.jce.spec.ECPublicKeySpec(namedCurve.getCurve().createPoint(PubX, PubY), namedCurve);
         KeyFactory kFact = KeyFactory.getInstance("EC", "BC");
         PublicKey pubKey = kFact.generatePublic(pubSpec);
         Signature sig = Signature.getInstance("SHA256WithECDSA", "BC");
@@ -223,7 +223,7 @@ public class ECDSA5Test
             KeyPair kp = kpGen.generateKeyPair();
 
             byte[] enc1 = kp.getPublic().getEncoded();
-            byte[] enc2 = org.bouncycastle.jcajce.util.ECKeyUtil.createKeyWithCompression((ECPublicKey)kp.getPublic()).getEncoded();
+            byte[] enc2 = org.spongycastle.jcajce.util.ECKeyUtil.createKeyWithCompression((ECPublicKey)kp.getPublic()).getEncoded();
 
             isTrue(enc1.length >= enc2.length + 32);
         }

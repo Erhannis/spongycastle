@@ -1,9 +1,9 @@
-package org.bouncycastle.util.encoders.test;
+package org.spongycastle.util.encoders.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.util.encoders.UTF8;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.util.encoders.UTF8;
+import org.spongycastle.util.test.SimpleTest;
 
 public class UTF8Test
     extends SimpleTest

@@ -1,6 +1,6 @@
-package org.bouncycastle.cert.path.validations;
+package org.spongycastle.cert.path.validations;
 
-import org.bouncycastle.cert.path.CertPath;
+import org.spongycastle.cert.path.CertPath;
 
 public class CertificatePoliciesValidationBuilder
 {

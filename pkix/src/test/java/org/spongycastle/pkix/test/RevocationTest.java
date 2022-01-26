@@ -1,4 +1,4 @@
-package org.bouncycastle.pkix.test;
+package org.spongycastle.pkix.test;
 
 import java.io.ByteArrayInputStream;
 import java.math.BigInteger;
@@ -27,10 +27,10 @@ import java.util.List;
 import java.util.Set;
 
 import junit.framework.TestCase;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.pkix.jcajce.X509RevocationChecker;
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.pkix.jcajce.X509RevocationChecker;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.encoders.Base64;
 
 public class RevocationTest
     extends TestCase

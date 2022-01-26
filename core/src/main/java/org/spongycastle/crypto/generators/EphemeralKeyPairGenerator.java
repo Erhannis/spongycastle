@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.EphemeralKeyPair;
-import org.bouncycastle.crypto.KeyEncoder;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.EphemeralKeyPair;
+import org.spongycastle.crypto.KeyEncoder;
 
 public class EphemeralKeyPairGenerator
 {

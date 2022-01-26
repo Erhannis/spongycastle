@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.edec;
+package org.spongycastle.jcajce.provider.asymmetric.edec;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -6,22 +6,22 @@ import java.security.Key;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.RawAgreement;
-import org.bouncycastle.crypto.agreement.X25519Agreement;
-import org.bouncycastle.crypto.agreement.X448Agreement;
-import org.bouncycastle.crypto.agreement.XDHUnifiedAgreement;
-import org.bouncycastle.crypto.agreement.kdf.ConcatenationKDFGenerator;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.X25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.X448PrivateKeyParameters;
-import org.bouncycastle.crypto.params.XDHUPrivateParameters;
-import org.bouncycastle.crypto.params.XDHUPublicParameters;
-import org.bouncycastle.crypto.util.DigestFactory;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
-import org.bouncycastle.jcajce.spec.DHUParameterSpec;
-import org.bouncycastle.jcajce.spec.UserKeyingMaterialSpec;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.RawAgreement;
+import org.spongycastle.crypto.agreement.X25519Agreement;
+import org.spongycastle.crypto.agreement.X448Agreement;
+import org.spongycastle.crypto.agreement.XDHUnifiedAgreement;
+import org.spongycastle.crypto.agreement.kdf.ConcatenationKDFGenerator;
+import org.spongycastle.crypto.generators.KDF2BytesGenerator;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.X25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.X448PrivateKeyParameters;
+import org.spongycastle.crypto.params.XDHUPrivateParameters;
+import org.spongycastle.crypto.params.XDHUPublicParameters;
+import org.spongycastle.crypto.util.DigestFactory;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi;
+import org.spongycastle.jcajce.spec.DHUParameterSpec;
+import org.spongycastle.jcajce.spec.UserKeyingMaterialSpec;
 
 public class KeyAgreementSpi
     extends BaseAgreementSpi

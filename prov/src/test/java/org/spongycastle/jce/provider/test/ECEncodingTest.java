@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.math.BigInteger;
@@ -15,18 +15,18 @@ import java.security.cert.X509Certificate;
 import java.security.spec.ECGenParameterSpec;
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.interfaces.ECPointEncoder;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.x509.X509V3CertificateGenerator;
 
 public class ECEncodingTest
     extends SimpleTest
@@ -87,13 +87,13 @@ public class ECEncodingTest
 
         byte[] enc1 = kp.getPublic().getEncoded();
 
-        System.setProperty("org.bouncycastle.ec.enable_pc", "true");
+        System.setProperty("org.spongycastle.ec.enable_pc", "true");
 
         byte[] enc2 = kp.getPublic().getEncoded();
 
         isTrue(enc2.length == enc1.length - 32);
 
-        System.setProperty("org.bouncycastle.ec.enable_pc", "false");
+        System.setProperty("org.spongycastle.ec.enable_pc", "false");
 
         byte[] enc3 = kp.getPublic().getEncoded();
 

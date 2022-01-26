@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.eac;
+package org.spongycastle.asn1.eac;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.SimpleTimeZone;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * EAC encoding date object

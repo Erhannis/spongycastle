@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.MD5Digest;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.MD5Digest;
 
 /**
  * standard vector test for MD5 from "Handbook of Applied Cryptography", page 345.

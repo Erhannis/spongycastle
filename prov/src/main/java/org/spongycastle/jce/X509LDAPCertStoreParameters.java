@@ -1,6 +1,6 @@
-package org.bouncycastle.jce;
+package org.spongycastle.jce;
 
-import org.bouncycastle.x509.X509StoreParameters;
+import org.spongycastle.x509.X509StoreParameters;
 
 import java.security.cert.CertStoreParameters;
 import java.security.cert.LDAPCertStoreParameters;

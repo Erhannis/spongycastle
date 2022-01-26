@@ -1,11 +1,11 @@
-package org.bouncycastle.pkcs.bc;
+package org.spongycastle.pkcs.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.util.SubjectPublicKeyInfoFactory;
-import org.bouncycastle.pkcs.PKCS10CertificationRequestBuilder;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.util.SubjectPublicKeyInfoFactory;
+import org.spongycastle.pkcs.PKCS10CertificationRequestBuilder;
 
 /**
  * Extension of the PKCS#10 builder to support AsymmetricKey objects.

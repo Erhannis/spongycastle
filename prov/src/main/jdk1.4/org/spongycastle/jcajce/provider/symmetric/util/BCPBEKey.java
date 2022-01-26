@@ -1,15 +1,15 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import javax.crypto.interfaces.PBEKey;
 import javax.crypto.spec.PBEKeySpec;
 import javax.security.auth.Destroyable;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.PBEParametersGenerator;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.PBEParametersGenerator;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.Arrays;
 
 public class BCPBEKey
     implements PBEKey, Destroyable

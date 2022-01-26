@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.io.IOException;
 import java.security.MessageDigest;
@@ -6,16 +6,16 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.Provider;
 
-import org.bouncycastle.bcpg.BCPGKey;
-import org.bouncycastle.bcpg.MPInteger;
-import org.bouncycastle.bcpg.PublicKeyPacket;
-import org.bouncycastle.bcpg.RSAPublicBCPGKey;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.bcpg.BCPGKey;
+import org.spongycastle.bcpg.MPInteger;
+import org.spongycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.bcpg.RSAPublicBCPGKey;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
 
 public class JcaKeyFingerprintCalculator
     implements KeyFingerPrintCalculator

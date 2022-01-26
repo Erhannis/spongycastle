@@ -1,10 +1,10 @@
-package org.bouncycastle.math.ec;
+package org.spongycastle.math.ec;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Hashtable;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
 
 /**
  * base class for points on elliptic curves.

@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -10,12 +10,12 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.impl.TlsAEADCipherImpl;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.impl.TlsAEADCipherImpl;
+import org.spongycastle.util.Pack;
 
 public class JceChaCha20Poly1305 implements TlsAEADCipherImpl
 {

@@ -106,7 +106,7 @@
                 <exclude name="**/pkix/test/RevocationTest.java"/>
                 <exclude name="**/TimeStampTokenInfoUnitTest.java"/>
                 <exclude name="**/cms/test/AnnotatedKeyTest.java"/>
-                <exclude name="**/bouncycastle/cms/test/AuthEnvelopedDataTest.java"/>
+                <exclude name="**.spongycastle.cms/test/AuthEnvelopedDataTest.java"/>
                 <exclude name="**/PKIXRevocationTest.java"/>
 		<exclude name="**/its/**/*.java"/>
             </fileset>

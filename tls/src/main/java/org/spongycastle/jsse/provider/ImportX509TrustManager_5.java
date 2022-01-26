@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.net.Socket;
 import java.security.GeneralSecurityException;
@@ -11,11 +11,11 @@ import java.util.Set;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jsse.BCX509ExtendedTrustManager;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jsse.BCX509ExtendedTrustManager;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.tls.TlsUtils;
 
 class ImportX509TrustManager_5
     extends BCX509ExtendedTrustManager

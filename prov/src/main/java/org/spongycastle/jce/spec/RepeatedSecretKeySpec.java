@@ -1,12 +1,12 @@
-package org.bouncycastle.jce.spec;
+package org.spongycastle.jce.spec;
 
 /**
  * A simple object to indicate that a symmetric cipher should reuse the
  * last key provided.
- * @deprecated use super class org.bouncycastle.jcajce.spec.RepeatedSecretKeySpec
+ * @deprecated use super class org.spongycastle.jcajce.spec.RepeatedSecretKeySpec
  */
 public class RepeatedSecretKeySpec
-    extends org.bouncycastle.jcajce.spec.RepeatedSecretKeySpec
+    extends org.spongycastle.jcajce.spec.RepeatedSecretKeySpec
 {
     private String algorithm;
 

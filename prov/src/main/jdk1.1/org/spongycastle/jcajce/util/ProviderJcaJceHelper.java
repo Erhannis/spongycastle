@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.util;
+package org.spongycastle.jcajce.util;
 
 import java.security.AlgorithmParameterGenerator;
 import java.security.AlgorithmParameters;
@@ -28,7 +28,7 @@ import javax.crypto.Mac;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKeyFactory;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
 
 /**
  * {@link JcaJceHelper} that obtains all algorithms from a specific {@link Provider} instance.

@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -9,17 +9,17 @@ import java.util.HashMap;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.sphincsplus.SPHINCSPlusKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.sphincsplus.SPHINCSPlusKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.sphincsplus.SPHINCSPlusParameters;
-import org.bouncycastle.pqc.crypto.sphincsplus.SPHINCSPlusPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.sphincsplus.SPHINCSPlusPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.sphincsplus.SPHINCSPlusSigner;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.sphincsplus.SPHINCSPlusKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.sphincsplus.SPHINCSPlusKeyPairGenerator;
+import org.spongycastle.pqc.crypto.sphincsplus.SPHINCSPlusParameters;
+import org.spongycastle.pqc.crypto.sphincsplus.SPHINCSPlusPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.sphincsplus.SPHINCSPlusPublicKeyParameters;
+import org.spongycastle.pqc.crypto.sphincsplus.SPHINCSPlusSigner;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.FixedSecureRandom;
 
 public class SphincsPlusTest
     extends TestCase
@@ -38,7 +38,7 @@ public class SphincsPlusTest
         for (int i = 0; i != fileList.length; i++)
         {
             String name = fileList[i];
-            InputStream src = SphincsPlusTest.class.getResourceAsStream("/org/bouncycastle/pqc/crypto/test/sphincs_plus/" + name);
+            InputStream src = SphincsPlusTest.class.getResourceAsStream("/org.spongycastle.pqc/crypto/test/sphincs_plus/" + name);
             BufferedReader bin = new BufferedReader(new InputStreamReader(src));
 
             String line = null;

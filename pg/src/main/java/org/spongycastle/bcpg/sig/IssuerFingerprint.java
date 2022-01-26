@@ -1,8 +1,8 @@
-package org.bouncycastle.bcpg.sig;
+package org.spongycastle.bcpg.sig;
 
-import org.bouncycastle.bcpg.SignatureSubpacket;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.util.Arrays;
 
 /**
  * packet giving the issuer key fingerprint.

@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 /**
  * This is a utility class containing data type conversions using little-endian

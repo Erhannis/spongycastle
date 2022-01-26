@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.rainbow.util;
+package org.spongycastle.pqc.crypto.rainbow.util;
 
 /**
  * This class provides the basic operations like addition, multiplication and

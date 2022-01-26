@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -8,11 +8,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.PacketTags;
-import org.bouncycastle.bcpg.UnsupportedPacketVersionException;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.util.Iterable;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.PacketTags;
+import org.spongycastle.bcpg.UnsupportedPacketVersionException;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.util.Iterable;
 
 /**
  * General class for reading a PGP object stream.

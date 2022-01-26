@@ -1,10 +1,10 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.operator.PBEDataDecryptorFactory;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptor;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.operator.PBEDataDecryptorFactory;
+import org.spongycastle.openpgp.operator.PGPDataDecryptor;
 
 /**
  * A {@link PBEDataDecryptorFactory} for handling PBE decryption operations using the Bouncy Castle

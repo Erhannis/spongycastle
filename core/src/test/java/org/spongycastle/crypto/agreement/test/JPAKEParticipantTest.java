@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.agreement.test;
+package org.spongycastle.crypto.agreement.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEParticipant;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroups;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound1Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound2Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound3Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEUtil;
-import org.bouncycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.agreement.jpake.JPAKEParticipant;
+import org.spongycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
+import org.spongycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroups;
+import org.spongycastle.crypto.agreement.jpake.JPAKERound1Payload;
+import org.spongycastle.crypto.agreement.jpake.JPAKERound2Payload;
+import org.spongycastle.crypto.agreement.jpake.JPAKERound3Payload;
+import org.spongycastle.crypto.agreement.jpake.JPAKEUtil;
+import org.spongycastle.crypto.digests.SHA256Digest;
 
 public class JPAKEParticipantTest
     extends TestCase

@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
-import org.bouncycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CipherParameters;
 
 public class NHAgreement
 {

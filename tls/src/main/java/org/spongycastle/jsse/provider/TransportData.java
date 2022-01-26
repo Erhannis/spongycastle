@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.net.Socket;
 import java.util.Collections;
@@ -7,9 +7,9 @@ import java.util.List;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLSocket;
 
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.jsse.BCSSLParameters;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCSSLParameters;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
 
 class TransportData
 {

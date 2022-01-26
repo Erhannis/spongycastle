@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.tls.crypto.TlsHMAC;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.tls.crypto.TlsHMAC;
 
 final class BcTlsHMAC
     implements TlsHMAC

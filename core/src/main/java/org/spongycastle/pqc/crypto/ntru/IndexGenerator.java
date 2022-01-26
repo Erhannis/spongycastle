@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Arrays;
 
 /**
  * An implementation of the Index Generation Function in IEEE P1363.1.

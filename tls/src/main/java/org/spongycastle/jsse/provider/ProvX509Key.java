@@ -1,12 +1,12 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.PrivateKey;
 import java.security.cert.X509Certificate;
 
 import javax.net.ssl.X509KeyManager;
 
-import org.bouncycastle.jsse.BCX509Key;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.jsse.BCX509Key;
+import org.spongycastle.tls.TlsUtils;
 
 class ProvX509Key
     implements BCX509Key

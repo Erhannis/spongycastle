@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.security.cert.CertStore;
 import java.security.cert.CertStoreException;
@@ -11,10 +11,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.jcajce.PKIXCRLStore;
-import org.bouncycastle.jcajce.PKIXCRLStoreSelector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.StoreException;
+import org.spongycastle.jcajce.PKIXCRLStore;
+import org.spongycastle.jcajce.PKIXCRLStoreSelector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.StoreException;
 
 abstract class PKIXCRLUtil
 {
@@ -63,7 +63,7 @@ abstract class PKIXCRLUtil
      * @param crls
      *            the {@link HashSet} to add the CRLs to.
      * @param crlSelect
-     *            a {@link org.bouncycastle.jcajce.PKIXCRLStoreSelector} object that will be used to
+     *            a {@link org.spongycastle.jcajce.PKIXCRLStoreSelector} object that will be used to
      *            select the CRLs
      * @param crlStores
      *            a List containing only {@link Store} objects. These are used to search for CRLs

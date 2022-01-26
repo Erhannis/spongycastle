@@ -1,18 +1,18 @@
-package org.bouncycastle.its;
+package org.spongycastle.its;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.its.operator.ECDSAEncoder;
-import org.bouncycastle.its.operator.ITSContentVerifierProvider;
-import org.bouncycastle.oer.OEREncoder;
-import org.bouncycastle.oer.its.Certificate;
-import org.bouncycastle.oer.its.IssuerIdentifier;
-import org.bouncycastle.oer.its.PublicEncryptionKey;
-import org.bouncycastle.oer.its.Signature;
-import org.bouncycastle.oer.its.template.IEEE1609dot2;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.its.operator.ECDSAEncoder;
+import org.spongycastle.its.operator.ITSContentVerifierProvider;
+import org.spongycastle.oer.OEREncoder;
+import org.spongycastle.oer.its.Certificate;
+import org.spongycastle.oer.its.IssuerIdentifier;
+import org.spongycastle.oer.its.PublicEncryptionKey;
+import org.spongycastle.oer.its.Signature;
+import org.spongycastle.oer.its.template.IEEE1609dot2;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.util.Encodable;
 
 public class ITSCertificate
     implements Encodable

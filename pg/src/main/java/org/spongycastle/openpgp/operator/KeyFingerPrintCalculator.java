@@ -1,7 +1,7 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.bcpg.PublicKeyPacket;
-import org.bouncycastle.openpgp.PGPException;
+import org.spongycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.openpgp.PGPException;
 
 public interface KeyFingerPrintCalculator
 {

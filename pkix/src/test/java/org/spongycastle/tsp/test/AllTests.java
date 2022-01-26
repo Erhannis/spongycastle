@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.test;
+package org.spongycastle.tsp.test;
 
 import java.security.Security;
 
@@ -42,7 +42,7 @@ public class AllTests
 
         protected void setUp()
         {
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
         }
 
         protected void tearDown()

@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.DerivationParameters;
 
 /**
  * parameters for mask derivation functions.

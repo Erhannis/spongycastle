@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * This class describes some operations with matrices over finite field GF(2)

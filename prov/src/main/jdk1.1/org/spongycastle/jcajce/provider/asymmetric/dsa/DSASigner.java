@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -11,24 +11,24 @@ import java.security.Signature;
 import java.security.interfaces.DSAKey;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DSA;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA384Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
 
 public class DSASigner
     extends Signature
@@ -229,7 +229,7 @@ public class DSASigner
     {
         public stdDSA()
         {
-            super(new SHA1Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA1Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -238,7 +238,7 @@ public class DSASigner
     {
         public dsa224()
         {
-            super(new SHA224Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA224Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
     
@@ -247,7 +247,7 @@ public class DSASigner
     {
         public dsa256()
         {
-            super(new SHA256Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA256Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
     
@@ -256,7 +256,7 @@ public class DSASigner
     {
         public dsa384()
         {
-            super(new SHA384Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA384Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
     
@@ -265,7 +265,7 @@ public class DSASigner
     {
         public dsa512()
         {
-            super(new SHA512Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA512Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -274,7 +274,7 @@ public class DSASigner
     {
         public noneDSA()
         {
-            super(new NullDigest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new NullDigest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 }

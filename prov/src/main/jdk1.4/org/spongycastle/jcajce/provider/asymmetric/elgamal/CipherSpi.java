@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.elgamal;
+package org.spongycastle.jcajce.provider.asymmetric.elgamal;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -16,23 +16,23 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.interfaces.DHKey;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.BufferedAsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.encodings.ISO9796d1Encoding;
-import org.bouncycastle.crypto.encodings.OAEPEncoding;
-import org.bouncycastle.crypto.encodings.PKCS1Encoding;
-import org.bouncycastle.crypto.engines.ElGamalEngine;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseCipherSpi;
-import org.bouncycastle.jce.interfaces.ElGamalKey;
-import org.bouncycastle.jce.interfaces.ElGamalPrivateKey;
-import org.bouncycastle.jce.interfaces.ElGamalPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.BufferedAsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.encodings.ISO9796d1Encoding;
+import org.spongycastle.crypto.encodings.OAEPEncoding;
+import org.spongycastle.crypto.encodings.PKCS1Encoding;
+import org.spongycastle.crypto.engines.ElGamalEngine;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseCipherSpi;
+import org.spongycastle.jce.interfaces.ElGamalKey;
+import org.spongycastle.jce.interfaces.ElGamalPrivateKey;
+import org.spongycastle.jce.interfaces.ElGamalPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Strings;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 public class CipherSpi
     extends BaseCipherSpi

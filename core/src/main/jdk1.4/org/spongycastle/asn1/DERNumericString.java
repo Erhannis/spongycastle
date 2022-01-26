@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * DER NumericString object - this is an ascii string of characters {0,1,2,3,4,5,6,7,8,9, }.

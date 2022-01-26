@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
 import java.io.OutputStream;
 

@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.mceliece;
+package org.spongycastle.pqc.crypto.mceliece;
 
-import org.bouncycastle.pqc.math.linearalgebra.GF2Matrix;
-import org.bouncycastle.pqc.math.linearalgebra.GF2mField;
-import org.bouncycastle.pqc.math.linearalgebra.GoppaCode;
-import org.bouncycastle.pqc.math.linearalgebra.Permutation;
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialGF2mSmallM;
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialRingGF2m;
+import org.spongycastle.pqc.math.linearalgebra.GF2Matrix;
+import org.spongycastle.pqc.math.linearalgebra.GF2mField;
+import org.spongycastle.pqc.math.linearalgebra.GoppaCode;
+import org.spongycastle.pqc.math.linearalgebra.Permutation;
+import org.spongycastle.pqc.math.linearalgebra.PolynomialGF2mSmallM;
+import org.spongycastle.pqc.math.linearalgebra.PolynomialRingGF2m;
 
 
 public class McEliecePrivateKeyParameters

@@ -1,11 +1,11 @@
-package org.bouncycastle.util.io.test;
+package org.spongycastle.util.io.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.util.io.BufferingOutputStream;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.util.io.BufferingOutputStream;
+import org.spongycastle.util.test.SimpleTest;
 
 public class BufferingOutputStreamTest
     extends SimpleTest

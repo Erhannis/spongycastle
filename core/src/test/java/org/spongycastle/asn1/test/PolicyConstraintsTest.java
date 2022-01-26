@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.x509.PolicyConstraints;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.x509.PolicyConstraints;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.test.SimpleTest;
 
 public class PolicyConstraintsTest
     extends SimpleTest

@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.OutputLengthException;
 
 /**
  * A wrapper class that allows block ciphers to be used to process data in
@@ -13,7 +13,7 @@ import org.bouncycastle.crypto.OutputLengthException;
  * or on a doFinal (unless the current block in the buffer is a pad block).
  * The padding mechanism used is the one outlined in PKCS5/PKCS7.
  *
- * @deprecated use org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher instead.
+ * @deprecated use org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher instead.
  */
 public class PaddedBlockCipher
     extends BufferedBlockCipher

@@ -1,9 +1,9 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * Basic type for a user ID packet.

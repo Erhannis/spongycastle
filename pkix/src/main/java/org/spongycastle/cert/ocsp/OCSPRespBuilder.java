@@ -1,13 +1,13 @@
-package org.bouncycastle.cert.ocsp;
+package org.spongycastle.cert.ocsp;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.ocsp.OCSPObjectIdentifiers;
-import org.bouncycastle.asn1.ocsp.OCSPResponse;
-import org.bouncycastle.asn1.ocsp.OCSPResponseStatus;
-import org.bouncycastle.asn1.ocsp.ResponseBytes;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ocsp.OCSPObjectIdentifiers;
+import org.spongycastle.asn1.ocsp.OCSPResponse;
+import org.spongycastle.asn1.ocsp.OCSPResponseStatus;
+import org.spongycastle.asn1.ocsp.ResponseBytes;
 
 /**
  * base generator for an OCSP response - at the moment this only supports the

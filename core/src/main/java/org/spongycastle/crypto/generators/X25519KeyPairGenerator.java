@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.params.X25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.X25519PublicKeyParameters;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.params.X25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.X25519PublicKeyParameters;
 
 public class X25519KeyPairGenerator
     implements AsymmetricCipherKeyPairGenerator

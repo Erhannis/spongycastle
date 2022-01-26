@@ -1,16 +1,16 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.bcpg.BCPGKey;
-import org.bouncycastle.bcpg.MPInteger;
-import org.bouncycastle.bcpg.PublicKeyPacket;
-import org.bouncycastle.bcpg.RSAPublicBCPGKey;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.MD5Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.bcpg.BCPGKey;
+import org.spongycastle.bcpg.MPInteger;
+import org.spongycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.bcpg.RSAPublicBCPGKey;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.MD5Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
 
 public class BcKeyFingerprintCalculator
     implements KeyFingerPrintCalculator

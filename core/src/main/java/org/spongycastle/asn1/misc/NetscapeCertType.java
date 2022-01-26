@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.misc;
+package org.spongycastle.asn1.misc;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.DERBitString;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.DERBitString;
 
 /**
  * The NetscapeCertType object.

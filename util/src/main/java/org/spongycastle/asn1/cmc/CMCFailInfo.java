@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.cmc;
+package org.spongycastle.asn1.cmc;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
 
 /**
  * <pre>

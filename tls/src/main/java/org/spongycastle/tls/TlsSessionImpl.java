@@ -1,6 +1,6 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 class TlsSessionImpl implements TlsSession
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.rainbow.util;
+package org.spongycastle.pqc.crypto.rainbow.util;
 
 /**
  * This class offers different operations on matrices in field GF2^8.

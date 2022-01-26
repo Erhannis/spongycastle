@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.fpe;
+package org.spongycastle.crypto.fpe;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Pack;
 
 /*
  * SP800-38G Format-Preserving Encryption
@@ -18,8 +18,8 @@ import org.bouncycastle.util.Pack;
  */
 class SP80038G
 {
-    static final String FPE_DISABLED = "org.bouncycastle.fpe.disable";
-    static final String FF1_DISABLED = "org.bouncycastle.fpe.disable_ff1";
+    static final String FPE_DISABLED = "org.spongycastle.fpe.disable";
+    static final String FF1_DISABLED = "org.spongycastle.fpe.disable_ff1";
 
     protected static final int BLOCK_SIZE = 16;
     protected static final double LOG2 = Math.log(2.0);

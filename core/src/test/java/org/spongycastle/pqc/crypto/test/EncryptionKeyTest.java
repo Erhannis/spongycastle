@@ -1,15 +1,15 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionPublicKeyParameters;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.pqc.crypto.ntru.NTRUEncryptionKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.ntru.NTRUEncryptionKeyPairGenerator;
+import org.spongycastle.pqc.crypto.ntru.NTRUEncryptionPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.ntru.NTRUEncryptionPublicKeyParameters;
 
 public class EncryptionKeyTest
     extends TestCase

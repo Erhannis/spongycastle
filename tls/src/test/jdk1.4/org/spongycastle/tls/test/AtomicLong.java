@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 /**
  * For jdk1.4

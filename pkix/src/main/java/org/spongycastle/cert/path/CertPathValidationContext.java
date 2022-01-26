@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.path;
+package org.spongycastle.cert.path;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.util.Memoable;
 
 public class CertPathValidationContext
     implements Memoable

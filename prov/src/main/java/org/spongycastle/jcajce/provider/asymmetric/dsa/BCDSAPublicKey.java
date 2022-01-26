@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -9,16 +9,16 @@ import java.security.interfaces.DSAPublicKey;
 import java.security.spec.DSAParameterSpec;
 import java.security.spec.DSAPublicKeySpec;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.DSAParameter;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.DSAParameter;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.params.DSAPublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.util.Strings;
 
 public class BCDSAPublicKey
     implements DSAPublicKey

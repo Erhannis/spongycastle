@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -6,31 +6,31 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Null;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.crmf.AttributeTypeAndValue;
-import org.bouncycastle.asn1.crmf.CertReqMsg;
-import org.bouncycastle.asn1.crmf.CertRequest;
-import org.bouncycastle.asn1.crmf.CertTemplate;
-import org.bouncycastle.asn1.crmf.CertTemplateBuilder;
-import org.bouncycastle.asn1.crmf.OptionalValidity;
-import org.bouncycastle.asn1.crmf.PKMACValue;
-import org.bouncycastle.asn1.crmf.POPOPrivKey;
-import org.bouncycastle.asn1.crmf.ProofOfPossession;
-import org.bouncycastle.asn1.crmf.SubsequentMessage;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.Time;
-import org.bouncycastle.cert.CertIOException;
-import org.bouncycastle.operator.ContentSigner;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Null;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.crmf.AttributeTypeAndValue;
+import org.spongycastle.asn1.crmf.CertReqMsg;
+import org.spongycastle.asn1.crmf.CertRequest;
+import org.spongycastle.asn1.crmf.CertTemplate;
+import org.spongycastle.asn1.crmf.CertTemplateBuilder;
+import org.spongycastle.asn1.crmf.OptionalValidity;
+import org.spongycastle.asn1.crmf.PKMACValue;
+import org.spongycastle.asn1.crmf.POPOPrivKey;
+import org.spongycastle.asn1.crmf.ProofOfPossession;
+import org.spongycastle.asn1.crmf.SubsequentMessage;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.Time;
+import org.spongycastle.cert.CertIOException;
+import org.spongycastle.operator.ContentSigner;
 
 public class CertificateRequestMessageBuilder
 {

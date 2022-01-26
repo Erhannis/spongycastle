@@ -1,4 +1,4 @@
-package org.bouncycastle.iana;
+package org.spongycastle.iana;
 
 /**
  * RFC 5116 

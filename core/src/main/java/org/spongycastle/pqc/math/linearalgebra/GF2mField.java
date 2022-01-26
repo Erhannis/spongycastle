@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
 
 /**
  * This class describes operations with elements from the finite field F =

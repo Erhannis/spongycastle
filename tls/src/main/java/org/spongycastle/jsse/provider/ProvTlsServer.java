@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -17,38 +17,38 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.jsse.BCSNIMatcher;
-import org.bouncycastle.jsse.BCSNIServerName;
-import org.bouncycastle.jsse.BCX509Key;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.AlertLevel;
-import org.bouncycastle.tls.Certificate;
-import org.bouncycastle.tls.CertificateRequest;
-import org.bouncycastle.tls.CertificateStatus;
-import org.bouncycastle.tls.ClientCertificateType;
-import org.bouncycastle.tls.DefaultTlsServer;
-import org.bouncycastle.tls.KeyExchangeAlgorithm;
-import org.bouncycastle.tls.ProtocolName;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SecurityParameters;
-import org.bouncycastle.tls.ServerName;
-import org.bouncycastle.tls.SessionParameters;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsCredentials;
-import org.bouncycastle.tls.TlsDHUtils;
-import org.bouncycastle.tls.TlsExtensionsUtils;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsSession;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.TrustedAuthority;
-import org.bouncycastle.tls.crypto.DHGroup;
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.jsse.BCSNIMatcher;
+import org.spongycastle.jsse.BCSNIServerName;
+import org.spongycastle.jsse.BCX509Key;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.AlertLevel;
+import org.spongycastle.tls.Certificate;
+import org.spongycastle.tls.CertificateRequest;
+import org.spongycastle.tls.CertificateStatus;
+import org.spongycastle.tls.ClientCertificateType;
+import org.spongycastle.tls.DefaultTlsServer;
+import org.spongycastle.tls.KeyExchangeAlgorithm;
+import org.spongycastle.tls.ProtocolName;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SecurityParameters;
+import org.spongycastle.tls.ServerName;
+import org.spongycastle.tls.SessionParameters;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsCredentials;
+import org.spongycastle.tls.TlsDHUtils;
+import org.spongycastle.tls.TlsExtensionsUtils;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsSession;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.TrustedAuthority;
+import org.spongycastle.tls.crypto.DHGroup;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 class ProvTlsServer
     extends DefaultTlsServer
@@ -72,7 +72,7 @@ class ProvTlsServer
         .getBooleanSystemProperty("jdk.tls.server.enableCAExtension", true);
 
     private static final boolean provServerEnableSessionResumption = PropertyUtils
-        .getBooleanSystemProperty("org.bouncycastle.jsse.server.enableSessionResumption", true);
+        .getBooleanSystemProperty("org.spongycastle.jsse.server.enableSessionResumption", true);
 
     // TODO[jsse] Support status_request and status_request_v2 extensions
 //    private static final boolean provServerEnableStatusRequest = PropertyUtils.getBooleanSystemProperty(
@@ -80,7 +80,7 @@ class ProvTlsServer
     private static final boolean provServerEnableStatusRequest = false;
 
     private static final boolean provServerEnableTrustedCAKeys = PropertyUtils
-        .getBooleanSystemProperty("org.bouncycastle.jsse.server.enableTrustedCAKeysExtension", false);
+        .getBooleanSystemProperty("org.spongycastle.jsse.server.enableTrustedCAKeysExtension", false);
 
     private static DHGroup[] getDefaultDHEParameters()
     {

@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * ASN.1 IA5String object - this is a ISO 646 (ASCII) string encoding code points 0 to 127.

@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * Class for breaking up an OID into it's component tokens, ala

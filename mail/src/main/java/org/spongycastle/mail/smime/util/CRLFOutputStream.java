@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.util;
+package org.spongycastle.mail.smime.util;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;

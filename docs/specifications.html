@@ -36,15 +36,15 @@ the classes directory.
 <p>
 To view examples, look at the test programs in the packages:
 <ul>
-	<li><b>org.bouncycastle.crypto.test</b>
-	<li><b>org.bouncycastle.jce.provider.test</b>
+	<li><b>org.spongycastle.crypto.test</b>
+	<li><b>org.spongycastle.jce.provider.test</b>
 </ul>
 <p>
 To verify the packages, run the following Java programs with the
 appropriate classpath:
 <ul>
-	<li><b>java org.bouncycastle.crypto.test.RegressionTest</b>
-	<li><b>java org.bouncycastle.jce.provider.test.RegressionTest</b>
+	<li><b>java org.spongycastle.crypto.test.RegressionTest</b>
+	<li><b>java org.spongycastle.jce.provider.test.RegressionTest</b>
 </ul>
 
 
@@ -68,8 +68,8 @@ We state, where EC MQV has not otherwise been disabled or removed:</br />
 <h2>3.0 System Properties</h2>
 The Bouncy Castle provider can make use of the following two system properties:
 <ul>
-<li><b>org.bouncycastle.ec.disable_mqv</b> - setting this property to true will disable support for EC MQV in the provider.</li>
-<li><b>org.bouncycastle.pkcs1.not_strict</b> - some other providers of cryptography services fail to produce PKCS1 encoded block that are the correct length. Setting this property to true will relax the conformance check on the block length.</li>
+<li><b>org.spongycastle.ec.disable_mqv</b> - setting this property to true will disable support for EC MQV in the provider.</li>
+<li><b>org.spongycastle.pkcs1.not_strict</b> - some other providers of cryptography services fail to produce PKCS1 encoded block that are the correct length. Setting this property to true will relax the conformance check on the block length.</li>
 </ul>
 <h2>4.0 Specifications</h2>
 
@@ -428,9 +428,9 @@ standard Diffie-Hellman key agreement and standard key agreement with
 co-factors.
 </p>
 <p>
-The agreement APIs are in the <b>org.bouncycastle.crypto.agreement</b> package.
+The agreement APIs are in the <b>org.spongycastle.crypto.agreement</b> package.
 Classes for generating Diffie-Hellman parameters can be found in the
-<b>org.bouncycastle.crypto.params</b> and <b>org.bouncycastle.crypto.generators</b> packages.
+<b>org.spongycastle.crypto.params</b> and <b>org.spongycastle.crypto.generators</b> packages.
 </p>
 
 <h4>Key Encapsulation Mechanisms</h4>
@@ -446,30 +446,30 @@ sub-classes
 
 <h4>Signers</h4>
 <p>
-DSA, ECDSA, ISO-9796-2, GOST-3410-94, GOST-3410-2001, GOST-3410-2012, DSTU-4145-2002, and RSA-PSS are supported by the <b>org.bouncycastle.crypto.signers</b>
+DSA, ECDSA, ISO-9796-2, GOST-3410-94, GOST-3410-2001, GOST-3410-2012, DSTU-4145-2002, and RSA-PSS are supported by the <b>org.spongycastle.crypto.signers</b>
 package. Note: as these are light weight classes, if you need to use SHA1 or GOST-3411
 (as defined in the relevant standards) you'll also need to make use of the appropriate
 digest class in conjunction with these.
 Classes for generating DSA and ECDSA parameters can be found in the
-<b>org.bouncycastle.crypto.params</b> and <b>org.bouncycastle.crypto.generators</b> packages.
+<b>org.spongycastle.crypto.params</b> and <b>org.spongycastle.crypto.generators</b> packages.
 <p>
 
 <h3>5.4 Elliptic Curve Transforms.</h3>
 
 <p>
-The org.bouncycastle.crypto.ec package contains implementations for a variety of EC cryptographic transforms such as EC ElGamal.
+The org.spongycastle.crypto.ec package contains implementations for a variety of EC cryptographic transforms such as EC ElGamal.
 </p>
 
 <h3>5.5 TLS/DTLS</h3>
 
 <p>
-The org.bouncycastle.crypto.tls package contains implementations for TLS 1.1, 1.2 and DTLS 1.0, 1.2.
+The org.spongycastle.crypto.tls package contains implementations for TLS 1.1, 1.2 and DTLS 1.0, 1.2.
 </p>
 
 <h3>5.6 Deterministic Random Bit Generators (DRBG) and SecureRandom wrappers</h3>
 
 <p>
-The org.bouncycastle.crypto.prng package contains implementations for a variety of bit generators including those from SP 800-90A and X9.31, as well as builders for SecureRandom objects based around them.
+The org.spongycastle.crypto.prng package contains implementations for a variety of bit generators including those from SP 800-90A and X9.31, as well as builders for SecureRandom objects based around them.
 </p>
 <h3>5.7 ASN.1 package</h3>
 
@@ -542,7 +542,7 @@ by adding an entry to the java.security properties file (found in $JAVA_HOME/jre
 instructions in the file but basically it comes down to adding a line:
 <pre>
 <code>
-    security.provider.&lt;n&gt;=org.bouncycastle.jce.provider.BouncyCastleProvider
+    security.provider.&lt;n&gt;=org.spongycastle.jce.provider.BouncyCastleProvider
 </code>
 </pre>
 <p>Where &lt;n&gt; is the preference you want the provider at (1 being the most prefered).
@@ -734,7 +734,7 @@ in the form of [Agreement]with[KDF PRF Digest][KDF type]. For example:
 </p><p>
 Note: with basic "DH" only the basic algorithm fits in with the JCE API, if
 you're using long-term public keys you may want to look at the light-weight
-API, there are also additional JCE support classes for UserKeyingMaterial and MQVParameters in the <b>org.bouncycastle.jcajce.spec</b> package.
+API, there are also additional JCE support classes for UserKeyingMaterial and MQVParameters in the <b>org.spongycastle.jcajce.spec</b> package.
 </p>
 <h4>ECIES</h4>
 <p>
@@ -1032,8 +1032,8 @@ in the normal PEM encoded format, or as DER binaries.
 <p>
 The CertificateFactory will also read X.509 CRLs (v2) from either PEM or DER encodings.
 <p>
-In addition to the classes in the org.bouncycastle.asn1.x509 package for certificate, CRLs, and OCSP, CRMF, and CMP message
-generation a more JCE "friendly" class is provided in the package org.bouncycastle.cert. The JCE "friendly" classes found in the jcajce
+In addition to the classes in the org.spongycastle.asn1.x509 package for certificate, CRLs, and OCSP, CRMF, and CMP message
+generation a more JCE "friendly" class is provided in the package org.spongycastle.cert. The JCE "friendly" classes found in the jcajce
  subpackages support RSA, DSA, GOST, DTSU, and EC-DSA.
 <p>
 <h3>6.4 Keystore</h3>
@@ -1068,7 +1068,7 @@ key store will be made using the default provider. In the default case PKCS12 us
 <p>
 There is an example program that produces PKCS12 files suitable for
 loading into browsers. It is in the package
-org.bouncycastle.jce.examples.
+org.spongycastle.jce.examples.
 <p>
 The fourth is the BCFKS key store which is a FIPS compliant key store which is also designed for general key storage and based on ASN.1. This key store type is encrypted and supports the use of SCRYPT and the storage of some symmetric key types.
 <p>
@@ -1078,9 +1078,9 @@ There are no classes for supporting EC in the JDK prior to JDK 1.5. If you are u
 an earlier JDK you can find classes for using EC in the following
 packages:
 <ul>
-<li>org.bouncycastle.jce.spec</li>
-<li>org.bouncycastle.jce.interfaces</li>
-<li>org.bouncycastle.jce</li>
+<li>org.spongycastle.jce.spec</li>
+<li>org.spongycastle.jce.interfaces</li>
+<li>org.spongycastle.jce</li>
 </ul>
 
 <h3>7.0 BouncyCastle S/MIME</h3>
@@ -1103,11 +1103,11 @@ The BouncyCastle S/MIME handlers may be set in JavaMail two ways.
 
 	Add the following entries to the mailcap file:
     <pre>
-    application/pkcs7-signature;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_signature
-    application/pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_mime
-    application/x-pkcs7-signature;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_signature
-    application/x-pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_mime
-    multipart/signed;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.multipart_signed
+    application/pkcs7-signature;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_signature
+    application/pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_mime
+    application/x-pkcs7-signature;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_signature
+    application/x-pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_mime
+    multipart/signed;; x-java-content-handler=org.spongycastle.mail.smime.handlers.multipart_signed
     </pre>
     </li>
 <li> DYNAMICALLY<br>
@@ -1123,11 +1123,11 @@ The BouncyCastle S/MIME handlers may be set in JavaMail two ways.
         MailcapCommandMap _mailcap =
             (MailcapCommandMap)CommandMap.getDefaultCommandMap();
 
-        _mailcap.addMailcap("application/pkcs7-signature;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_signature");
-        _mailcap.addMailcap("application/pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_mime");
-        _mailcap.addMailcap("application/x-pkcs7-signature;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_signature");
-        _mailcap.addMailcap("application/x-pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_mime");
-        _mailcap.addMailcap("multipart/signed;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.multipart_signed");
+        _mailcap.addMailcap("application/pkcs7-signature;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_signature");
+        _mailcap.addMailcap("application/pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_mime");
+        _mailcap.addMailcap("application/x-pkcs7-signature;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_signature");
+        _mailcap.addMailcap("application/x-pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_mime");
+        _mailcap.addMailcap("multipart/signed;; x-java-content-handler=org.spongycastle.mail.smime.handlers.multipart_signed");
 
         CommandMap.setDefaultCommandMap(_mailcap);
     } 

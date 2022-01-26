@@ -1,18 +1,18 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.security.SecureRandom;
 import java.util.Random;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2KeyPairGenerator;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2Parameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceFujisakiCipher;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2KeyPairGenerator;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2Parameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceFujisakiCipher;
+import org.spongycastle.util.test.SimpleTest;
 
 public class McElieceFujisakiCipherTest
     extends SimpleTest

@@ -1,15 +1,15 @@
-package org.bouncycastle.jce;
+package org.spongycastle.jce;
 
 import java.io.IOException;
 import java.security.Principal;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.X509Name;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.X509Name;
 
 /**
  * a general extension of X509Name with a couple of extra methods and
@@ -18,7 +18,7 @@ import org.bouncycastle.asn1.x509.X509Name;
  * Objects of this type can be created from certificates and CRLs using the
  * PrincipalUtil class.
  * </p>
- * @see org.bouncycastle.jce.PrincipalUtil
+ * @see org.spongycastle.jce.PrincipalUtil
  * @deprecated use the X500Name class.
  */
 public class X509Principal

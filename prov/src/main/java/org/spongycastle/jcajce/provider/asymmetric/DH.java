@@ -1,17 +1,17 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.dh.KeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.dh.KeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class DH
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".dh.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".dh.";
 
     private static final Map<String, String> generalDhAttributes = new HashMap<String, String>();
 

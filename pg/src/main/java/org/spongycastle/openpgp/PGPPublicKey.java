@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -9,26 +9,26 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptlib.CryptlibObjectIdentifiers;
-import org.bouncycastle.asn1.gnu.GNUObjectIdentifiers;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.bcpg.BCPGKey;
-import org.bouncycastle.bcpg.BCPGOutputStream;
-import org.bouncycastle.bcpg.ContainedPacket;
-import org.bouncycastle.bcpg.DSAPublicBCPGKey;
-import org.bouncycastle.bcpg.ECPublicBCPGKey;
-import org.bouncycastle.bcpg.ElGamalPublicBCPGKey;
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.bcpg.PublicKeyPacket;
-import org.bouncycastle.bcpg.RSAPublicBCPGKey;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.bcpg.TrustPacket;
-import org.bouncycastle.bcpg.UserAttributePacket;
-import org.bouncycastle.bcpg.UserIDPacket;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptlib.CryptlibObjectIdentifiers;
+import org.spongycastle.asn1.gnu.GNUObjectIdentifiers;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.bcpg.BCPGKey;
+import org.spongycastle.bcpg.BCPGOutputStream;
+import org.spongycastle.bcpg.ContainedPacket;
+import org.spongycastle.bcpg.DSAPublicBCPGKey;
+import org.spongycastle.bcpg.ECPublicBCPGKey;
+import org.spongycastle.bcpg.ElGamalPublicBCPGKey;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.bcpg.RSAPublicBCPGKey;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.bcpg.TrustPacket;
+import org.spongycastle.bcpg.UserAttributePacket;
+import org.spongycastle.bcpg.UserIDPacket;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.util.Arrays;
 
 /**
  * general class to handle a PGP public key object.

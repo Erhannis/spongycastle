@@ -1,4 +1,4 @@
-package org.bouncycastle.x509.extension;
+package org.spongycastle.x509.extension;
 
 import java.io.IOException;
 import java.security.cert.CertificateParsingException;
@@ -9,25 +9,25 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.util.Integers;
 
 
 /**
- * @deprecated use org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils
+ * @deprecated use org.spongycastle.cert.jcajce.JcaX509ExtensionUtils
  */
 public class X509ExtensionUtil
 {
     /**
-     * @deprecated use org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils.parseExtensionValue()
+     * @deprecated use org.spongycastle.cert.jcajce.JcaX509ExtensionUtils.parseExtensionValue()
      */
     public static ASN1Primitive fromExtensionValue(
         byte[]  encodedValue) 
@@ -39,7 +39,7 @@ public class X509ExtensionUtil
     }
 
     /**
-     * @deprecated use org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils.getIssuerAlternativeNames()
+     * @deprecated use org.spongycastle.cert.jcajce.JcaX509ExtensionUtils.getIssuerAlternativeNames()
      */
     public static Collection getIssuerAlternativeNames(X509Certificate cert)
             throws CertificateParsingException
@@ -50,7 +50,7 @@ public class X509ExtensionUtil
     }
 
     /**
-     * @deprecated use org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils.getSubjectAlternativeNames()
+     * @deprecated use org.spongycastle.cert.jcajce.JcaX509ExtensionUtils.getSubjectAlternativeNames()
      */
     public static Collection getSubjectAlternativeNames(X509Certificate cert)
             throws CertificateParsingException

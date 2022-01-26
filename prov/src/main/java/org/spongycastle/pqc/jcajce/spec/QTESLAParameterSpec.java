@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.jcajce.spec;
+package org.spongycastle.pqc.jcajce.spec;
 
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
 
 /**
  * qTESLA parameter details. These are divided up on the basis of the security categories for each

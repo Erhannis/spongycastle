@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmc.GetCert;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cmc.GetCert;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class GetCertTest

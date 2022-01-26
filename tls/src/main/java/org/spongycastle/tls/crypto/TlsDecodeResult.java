@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 public final class TlsDecodeResult
 {

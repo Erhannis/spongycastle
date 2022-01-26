@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Memoable;
 
 public class CramerShoupParameters
     implements CipherParameters

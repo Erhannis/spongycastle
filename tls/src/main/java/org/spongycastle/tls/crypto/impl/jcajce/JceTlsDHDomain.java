@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -13,15 +13,15 @@ import javax.crypto.interfaces.DHPrivateKey;
 import javax.crypto.interfaces.DHPublicKey;
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsDHUtils;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.DHGroup;
-import org.bouncycastle.tls.crypto.TlsAgreement;
-import org.bouncycastle.tls.crypto.TlsCryptoException;
-import org.bouncycastle.tls.crypto.TlsDHConfig;
-import org.bouncycastle.tls.crypto.TlsDHDomain;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsDHUtils;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.DHGroup;
+import org.spongycastle.tls.crypto.TlsAgreement;
+import org.spongycastle.tls.crypto.TlsCryptoException;
+import org.spongycastle.tls.crypto.TlsDHConfig;
+import org.spongycastle.tls.crypto.TlsDHDomain;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * JCE support class for Diffie-Hellman key pair generation and key agreement over a specified Diffie-Hellman configuration.

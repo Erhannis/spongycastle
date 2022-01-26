@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.CertificateParsingException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509CertificateHolder;
 
 /**
  * Converter for producing X509Certificate objects tied to a specific provider from X509CertificateHolder objects.

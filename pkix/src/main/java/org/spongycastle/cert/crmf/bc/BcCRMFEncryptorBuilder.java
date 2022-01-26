@@ -1,17 +1,17 @@
-package org.bouncycastle.cert.crmf.bc;
+package org.spongycastle.cert.crmf.bc;
 
 import java.io.OutputStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.crmf.CRMFException;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.util.CipherFactory;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.crmf.CRMFException;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.util.CipherFactory;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.OutputEncryptor;
 
 /**
  * Lightweight CRMFOutputEncryptor builder.

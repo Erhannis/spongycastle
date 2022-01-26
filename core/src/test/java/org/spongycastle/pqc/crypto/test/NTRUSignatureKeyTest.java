@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.pqc.crypto.ntru.NTRUSigner;
-import org.bouncycastle.pqc.crypto.ntru.NTRUSigningKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.ntru.NTRUSigningKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.ntru.NTRUSigningPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.ntru.NTRUSigningPublicKeyParameters;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.pqc.crypto.ntru.NTRUSigner;
+import org.spongycastle.pqc.crypto.ntru.NTRUSigningKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.ntru.NTRUSigningKeyPairGenerator;
+import org.spongycastle.pqc.crypto.ntru.NTRUSigningPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.ntru.NTRUSigningPublicKeyParameters;
 
 public class NTRUSignatureKeyTest
     extends TestCase

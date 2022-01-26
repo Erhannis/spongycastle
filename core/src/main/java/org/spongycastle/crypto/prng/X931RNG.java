@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
-import org.bouncycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BlockCipher;
 
 public class X931RNG
 {

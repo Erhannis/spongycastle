@@ -1,23 +1,23 @@
-package org.bouncycastle.pqc.jcajce.provider.sphincs;
+package org.spongycastle.pqc.jcajce.provider.sphincs;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.security.PrivateKey;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.asn1.SPHINCS256KeyParams;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyInfoFactory;
-import org.bouncycastle.pqc.jcajce.interfaces.SPHINCSKey;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.asn1.SPHINCS256KeyParams;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.util.PrivateKeyFactory;
+import org.spongycastle.pqc.crypto.util.PrivateKeyInfoFactory;
+import org.spongycastle.pqc.jcajce.interfaces.SPHINCSKey;
+import org.spongycastle.util.Arrays;
 
 public class BCSphincs256PrivateKey
     implements PrivateKey, SPHINCSKey

@@ -1,4 +1,4 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
 import java.io.IOException;
 

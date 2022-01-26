@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.examples;
+package org.spongycastle.jcajce.examples;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -10,30 +10,30 @@ import java.security.spec.RSAPrivateCrtKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Date;
 
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.misc.NetscapeCertType;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.Attribute;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.RoleSyntax;
-import org.bouncycastle.asn1.x509.X509AttributeIdentifiers;
-import org.bouncycastle.cert.AttributeCertificateHolder;
-import org.bouncycastle.cert.AttributeCertificateIssuer;
-import org.bouncycastle.cert.X509AttributeCertificateHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
-import org.bouncycastle.cert.X509v2AttributeCertificateBuilder;
-import org.bouncycastle.cert.X509v3CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaAttributeCertificateIssuer;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509v1CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.misc.NetscapeCertType;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.Attribute;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.RoleSyntax;
+import org.spongycastle.asn1.x509.X509AttributeIdentifiers;
+import org.spongycastle.cert.AttributeCertificateHolder;
+import org.spongycastle.cert.AttributeCertificateIssuer;
+import org.spongycastle.cert.X509AttributeCertificateHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.cert.X509v2AttributeCertificateBuilder;
+import org.spongycastle.cert.X509v3CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaAttributeCertificateIssuer;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509v1CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
 
 /**
  * A simple example that generates an attribute certificate.
@@ -99,7 +99,7 @@ public class AttrCertExample
         nameBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         nameBuilder.addRDN(BCStyle.L, "Melbourne");
         nameBuilder.addRDN(BCStyle.CN, "Eric H. Echidna");
-        nameBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        nameBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // create the certificate - version 3

@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.agreement.kdf;
+package org.spongycastle.crypto.agreement.kdf;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.DigestDerivationFunction;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.DigestDerivationFunction;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 /**
  * BSI Key Derivation Function for Session Keys (see BSI-TR-03111 Section 4.3.3)

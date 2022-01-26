@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.Principal;
 import java.security.cert.Certificate;
@@ -7,7 +7,7 @@ import javax.net.ssl.ExtendedSSLSession;
 import javax.net.ssl.SSLPeerUnverifiedException;
 import javax.net.ssl.SSLSessionContext;
 
-import org.bouncycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCExtendedSSLSession;
 
 class ExportSSLSession_7
     extends ExtendedSSLSession

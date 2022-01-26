@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.paddings;
+package org.spongycastle.crypto.paddings;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.params.ParametersWithRandom;
 
 /**
  * A wrapper class that allows block ciphers to be used to process data in

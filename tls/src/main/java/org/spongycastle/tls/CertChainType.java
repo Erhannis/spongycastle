@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 /**
  * Implementation of the RFC 3546 3.3. CertChainType.

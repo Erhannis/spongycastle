@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.ocsp;
+package org.spongycastle.cert.ocsp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,9 +8,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.cert.X509CertificateHolder;
 
 class OCSPUtils
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * DER UniversalString object - encodes UNICODE (ISO 10646) characters using 32-bit format. In Java we

@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -7,21 +7,21 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Iterator;
 
-import org.bouncycastle.openpgp.PGPCompressedData;
-import org.bouncycastle.openpgp.PGPEncryptedData;
-import org.bouncycastle.openpgp.PGPEncryptedDataList;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPLiteralData;
-import org.bouncycastle.openpgp.PGPObjectFactory;
-import org.bouncycastle.openpgp.PGPPBEEncryptedData;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.openpgp.bc.BcPGPObjectFactory;
-import org.bouncycastle.openpgp.operator.PBEDataDecryptorFactory;
-import org.bouncycastle.openpgp.operator.bc.BcPBEDataDecryptorFactory;
-import org.bouncycastle.openpgp.operator.bc.BcPGPDigestCalculatorProvider;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.openpgp.PGPCompressedData;
+import org.spongycastle.openpgp.PGPEncryptedData;
+import org.spongycastle.openpgp.PGPEncryptedDataList;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPLiteralData;
+import org.spongycastle.openpgp.PGPObjectFactory;
+import org.spongycastle.openpgp.PGPPBEEncryptedData;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.openpgp.bc.BcPGPObjectFactory;
+import org.spongycastle.openpgp.operator.PBEDataDecryptorFactory;
+import org.spongycastle.openpgp.operator.bc.BcPBEDataDecryptorFactory;
+import org.spongycastle.openpgp.operator.bc.BcPGPDigestCalculatorProvider;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
 
 public class RewindStreamWhenDecryptingMultiSKESKMessageTest
     extends SimpleTest

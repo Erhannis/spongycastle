@@ -1,22 +1,22 @@
-package org.bouncycastle.pkcs.bc;
+package org.spongycastle.pkcs.bc;
 
 import java.io.OutputStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCS12PBEParams;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.generators.PKCS12ParametersGenerator;
-import org.bouncycastle.crypto.io.CipherOutputStream;
-import org.bouncycastle.crypto.paddings.PKCS7Padding;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCS12PBEParams;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.generators.PKCS12ParametersGenerator;
+import org.spongycastle.crypto.io.CipherOutputStream;
+import org.spongycastle.crypto.paddings.PKCS7Padding;
+import org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.OutputEncryptor;
 
 public class BcPKCS12PBEOutputEncryptorBuilder
 {

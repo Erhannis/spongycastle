@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.ocsp.test;
+package org.spongycastle.cert.ocsp.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -27,32 +27,32 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.ocsp.OCSPObjectIdentifiers;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.cert.ocsp.BasicOCSPResp;
-import org.bouncycastle.cert.ocsp.BasicOCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.CertificateID;
-import org.bouncycastle.cert.ocsp.CertificateStatus;
-import org.bouncycastle.cert.ocsp.OCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.RespID;
-import org.bouncycastle.cert.ocsp.RevokedStatus;
-import org.bouncycastle.cert.ocsp.jcajce.JcaBasicOCSPRespBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ocsp.OCSPObjectIdentifiers;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.cert.ocsp.BasicOCSPResp;
+import org.spongycastle.cert.ocsp.BasicOCSPRespBuilder;
+import org.spongycastle.cert.ocsp.CertificateID;
+import org.spongycastle.cert.ocsp.CertificateStatus;
+import org.spongycastle.cert.ocsp.OCSPRespBuilder;
+import org.spongycastle.cert.ocsp.RespID;
+import org.spongycastle.cert.ocsp.RevokedStatus;
+import org.spongycastle.cert.ocsp.jcajce.JcaBasicOCSPRespBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
 
 public class PKIXRevocationTest
     extends SimpleTest
@@ -360,7 +360,7 @@ public class PKIXRevocationTest
         t.add(conv.getCertificate(c1));
         t.add(conv.getCertificate(c2));
 
-        System.setProperty("org.bouncycastle.x509.enableCRLDP", "true");
+        System.setProperty("org.spongycastle.x509.enableCRLDP", "true");
         CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
 
         CertPath certPath = cf.generateCertPath(t);
@@ -404,7 +404,7 @@ public class PKIXRevocationTest
         t.add(conv.getCertificate(c1));
         t.add(conv.getCertificate(c2));
 
-        System.setProperty("org.bouncycastle.x509.enableCRLDP", "true");
+        System.setProperty("org.spongycastle.x509.enableCRLDP", "true");
         CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
 
         CertPath certPath = cf.generateCertPath(t);
@@ -443,7 +443,7 @@ public class PKIXRevocationTest
         param.addCertPathChecker(rv);
 
         cpv.validate(certPath, param);
-        System.setProperty("org.bouncycastle.x509.enableCRLDP", "");
+        System.setProperty("org.spongycastle.x509.enableCRLDP", "");
     }
 
     private byte[] getOcspResponse(KeyPair ocspKp, DigestCalculatorProvider digCalcProv, X509Certificate issuerCert, X509Certificate cert)

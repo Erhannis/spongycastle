@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.gmss.util;
+package org.spongycastle.pqc.crypto.gmss.util;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
 /**
  * This class implements signature verification of the Winternitz one-time

@@ -1,17 +1,17 @@
-package org.bouncycastle.cert.test;
+package org.spongycastle.cert.test;
 
 import java.io.IOException;
 import java.security.Security;
 
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.dane.DANEEntry;
-import org.bouncycastle.cert.dane.DANEEntryFactory;
-import org.bouncycastle.cert.dane.DANEException;
-import org.bouncycastle.cert.dane.TruncatingDigestCalculator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.dane.DANEEntry;
+import org.spongycastle.cert.dane.DANEEntryFactory;
+import org.spongycastle.cert.dane.DANEException;
+import org.spongycastle.cert.dane.TruncatingDigestCalculator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class DANETest
     extends SimpleTest

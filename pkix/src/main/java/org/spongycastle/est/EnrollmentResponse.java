@@ -1,7 +1,7 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.util.Store;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.util.Store;
 
 
 /**

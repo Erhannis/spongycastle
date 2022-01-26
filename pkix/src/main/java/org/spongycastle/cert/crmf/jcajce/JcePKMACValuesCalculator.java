@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.crmf.jcajce;
+package org.spongycastle.cert.crmf.jcajce;
 
 import java.security.GeneralSecurityException;
 import java.security.MessageDigest;
@@ -7,12 +7,12 @@ import java.security.Provider;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.crmf.CRMFException;
-import org.bouncycastle.cert.crmf.PKMACValuesCalculator;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.crmf.CRMFException;
+import org.spongycastle.cert.crmf.PKMACValuesCalculator;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
 
 public class JcePKMACValuesCalculator
     implements PKMACValuesCalculator

@@ -1,4 +1,4 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 /**
  * General DVCSException.

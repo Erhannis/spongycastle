@@ -1,10 +1,10 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.asn1.tsp.PartialHashtree;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.tsp.PartialHashtree;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Calculator based on the use of a left weighted binary Merkle tree created

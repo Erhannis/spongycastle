@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
 
 /**
  * KeyBox provides an implementation of the PGP keybox.

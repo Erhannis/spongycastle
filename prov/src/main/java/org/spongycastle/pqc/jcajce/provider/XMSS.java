@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.jcajce.provider;
+package org.spongycastle.pqc.jcajce.provider;
 
-import org.bouncycastle.asn1.bc.BCObjectIdentifiers;
-import org.bouncycastle.asn1.isara.IsaraObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.jcajce.provider.xmss.XMSSKeyFactorySpi;
-import org.bouncycastle.pqc.jcajce.provider.xmss.XMSSMTKeyFactorySpi;
+import org.spongycastle.asn1.bc.BCObjectIdentifiers;
+import org.spongycastle.asn1.isara.IsaraObjectIdentifiers;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.jcajce.provider.xmss.XMSSKeyFactorySpi;
+import org.spongycastle.pqc.jcajce.provider.xmss.XMSSMTKeyFactorySpi;
 
 public class XMSS
 {
-    private static final String PREFIX = "org.bouncycastle.pqc.jcajce.provider" + ".xmss.";
+    private static final String PREFIX = "org.spongycastle.pqc.jcajce.provider" + ".xmss.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

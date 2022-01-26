@@ -1,14 +1,14 @@
-package org.bouncycastle.asn1.cms.ecc;
+package org.spongycastle.asn1.cms.ecc;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.cms.OriginatorPublicKey;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.cms.OriginatorPublicKey;
 
 /**
  * <a href="https://tools.ietf.org/html/rfc5753">RFC 5753/3278</a>: MQVuserKeyingMaterial object.
@@ -78,7 +78,7 @@ public class MQVuserKeyingMaterial
      * <ul>
      * <li> null &rarr; null
      * <li> {@link MQVuserKeyingMaterial} object
-     * <li> {@link org.bouncycastle.asn1.ASN1Sequence ASN1Sequence} with MQVuserKeyingMaterial inside it.
+     * <li> {@link org.spongycastle.asn1.ASN1Sequence ASN1Sequence} with MQVuserKeyingMaterial inside it.
      * </ul>
      *
      * @param obj the object we want converted.

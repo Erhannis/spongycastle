@@ -1,10 +1,10 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.util.io.Streams;
 
 class CMSProcessableInputStream implements CMSProcessable, CMSReadable
 {

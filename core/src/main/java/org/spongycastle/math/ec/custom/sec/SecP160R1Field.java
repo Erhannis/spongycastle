@@ -1,12 +1,12 @@
-package org.bouncycastle.math.ec.custom.sec;
+package org.spongycastle.math.ec.custom.sec;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.raw.Mod;
-import org.bouncycastle.math.raw.Nat;
-import org.bouncycastle.math.raw.Nat160;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.math.raw.Mod;
+import org.spongycastle.math.raw.Nat;
+import org.spongycastle.math.raw.Nat160;
+import org.spongycastle.util.Pack;
 
 public class SecP160R1Field
 {

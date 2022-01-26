@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 /**
  * Standard char[] to byte[] converters for password based derivation algorithms.

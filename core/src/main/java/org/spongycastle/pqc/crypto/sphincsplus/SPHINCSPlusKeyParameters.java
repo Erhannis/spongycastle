@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.sphincsplus;
+package org.spongycastle.pqc.crypto.sphincsplus;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
 
 public class SPHINCSPlusKeyParameters
     extends AsymmetricKeyParameter

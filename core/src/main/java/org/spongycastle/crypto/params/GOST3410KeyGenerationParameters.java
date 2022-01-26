@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.KeyGenerationParameters;
 
 import java.security.SecureRandom;
 

@@ -1,16 +1,16 @@
-package org.bouncycastle.cert.path.validations;
+package org.spongycastle.cert.path.validations;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.path.CertPathValidation;
-import org.bouncycastle.cert.path.CertPathValidationContext;
-import org.bouncycastle.cert.path.CertPathValidationException;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.path.CertPathValidation;
+import org.spongycastle.cert.path.CertPathValidationContext;
+import org.spongycastle.cert.path.CertPathValidationException;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.Memoable;
 
 
 public class BasicConstraintsValidation

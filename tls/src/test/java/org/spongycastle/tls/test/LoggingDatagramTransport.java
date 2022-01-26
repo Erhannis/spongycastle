@@ -1,10 +1,10 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 
-import org.bouncycastle.tls.DatagramTransport;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.tls.DatagramTransport;
+import org.spongycastle.util.Strings;
 
 public class LoggingDatagramTransport
     implements DatagramTransport

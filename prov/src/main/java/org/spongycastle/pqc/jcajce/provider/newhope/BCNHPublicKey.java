@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.jcajce.provider.newhope;
+package org.spongycastle.pqc.jcajce.provider.newhope;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.pqc.crypto.newhope.NHPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.util.PublicKeyFactory;
-import org.bouncycastle.pqc.crypto.util.SubjectPublicKeyInfoFactory;
-import org.bouncycastle.pqc.jcajce.interfaces.NHPublicKey;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.pqc.crypto.newhope.NHPublicKeyParameters;
+import org.spongycastle.pqc.crypto.util.PublicKeyFactory;
+import org.spongycastle.pqc.crypto.util.SubjectPublicKeyInfoFactory;
+import org.spongycastle.pqc.jcajce.interfaces.NHPublicKey;
+import org.spongycastle.util.Arrays;
 
 public class BCNHPublicKey
     implements NHPublicKey

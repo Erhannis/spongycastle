@@ -1,13 +1,13 @@
-package org.bouncycastle.its;
+package org.spongycastle.its;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.oer.its.CrlSeries;
-import org.bouncycastle.oer.its.HashedId;
-import org.bouncycastle.oer.its.PsidGroupPermissions;
-import org.bouncycastle.oer.its.PsidSsp;
-import org.bouncycastle.oer.its.SequenceOfPsidGroupPermissions;
-import org.bouncycastle.oer.its.SequenceOfPsidSsp;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.oer.its.CrlSeries;
+import org.spongycastle.oer.its.HashedId;
+import org.spongycastle.oer.its.PsidGroupPermissions;
+import org.spongycastle.oer.its.PsidSsp;
+import org.spongycastle.oer.its.SequenceOfPsidGroupPermissions;
+import org.spongycastle.oer.its.SequenceOfPsidSsp;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
 
 public class ITSCertificateBuilder
 {

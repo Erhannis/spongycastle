@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 import java.security.spec.ECParameterSpec;
 
-import org.bouncycastle.asn1.ua.DSTU4145Params;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ua.DSTU4145Params;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.EC5Util;
+import org.spongycastle.util.Arrays;
 
 /**
  * ParameterSpec for a DSTU4145 key.

@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.jcajce.interfaces;
+package org.spongycastle.pqc.jcajce.interfaces;
 
-import org.bouncycastle.pqc.jcajce.spec.QTESLAParameterSpec;
+import org.spongycastle.pqc.jcajce.spec.QTESLAParameterSpec;
 
 /**
  * Base interface for a qTESLA key.

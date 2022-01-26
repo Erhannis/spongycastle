@@ -1,8 +1,8 @@
-package org.bouncycastle.oer.its;
+package org.spongycastle.oer.its;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1Enumerated;
 
 public class SymmAlgorithm
     extends ASN1Enumerated

@@ -1,13 +1,13 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.crmf.CertRequest;
-import org.bouncycastle.asn1.crmf.PKMACValue;
-import org.bouncycastle.asn1.crmf.POPOSigningKey;
-import org.bouncycastle.asn1.crmf.POPOSigningKeyInput;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.operator.ContentSigner;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.crmf.CertRequest;
+import org.spongycastle.asn1.crmf.PKMACValue;
+import org.spongycastle.asn1.crmf.POPOSigningKey;
+import org.spongycastle.asn1.crmf.POPOSigningKeyInput;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.operator.ContentSigner;
 
 public class ProofOfPossessionSigningKeyBuilder
 {

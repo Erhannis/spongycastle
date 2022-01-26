@@ -1,6 +1,6 @@
-package org.bouncycastle.util.utiltest;
+package org.spongycastle.util.utiltest;
 
-import org.bouncycastle.util.Longs;
+import org.spongycastle.util.Longs;
 
 import junit.framework.TestCase;
 

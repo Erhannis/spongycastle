@@ -1,4 +1,4 @@
-package org.bouncycastle.openssl.test;
+package org.spongycastle.openssl.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -17,20 +17,20 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.RSAPrivateCrtKeySpec;
 import java.util.List;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openssl.PEMEncryptedKeyPair;
-import org.bouncycastle.openssl.PEMKeyPair;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.openssl.bc.BcPEMDecryptorProvider;
-import org.bouncycastle.openssl.jcajce.JcaMiscPEMGenerator;
-import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.openssl.jcajce.JcaPEMWriter;
-import org.bouncycastle.openssl.jcajce.JcePEMDecryptorProviderBuilder;
-import org.bouncycastle.openssl.jcajce.JcePEMEncryptorBuilder;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.pem.PemHeader;
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openssl.PEMEncryptedKeyPair;
+import org.spongycastle.openssl.PEMKeyPair;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.openssl.bc.BcPEMDecryptorProvider;
+import org.spongycastle.openssl.jcajce.JcaMiscPEMGenerator;
+import org.spongycastle.openssl.jcajce.JcaPEMKeyConverter;
+import org.spongycastle.openssl.jcajce.JcaPEMWriter;
+import org.spongycastle.openssl.jcajce.JcePEMDecryptorProviderBuilder;
+import org.spongycastle.openssl.jcajce.JcePEMEncryptorBuilder;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.pem.PemHeader;
+import org.spongycastle.util.io.pem.PemObject;
+import org.spongycastle.util.test.SimpleTest;
 
 public class WriterTest
     extends SimpleTest

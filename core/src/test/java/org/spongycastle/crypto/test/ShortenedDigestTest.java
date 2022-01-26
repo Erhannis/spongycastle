@@ -4,13 +4,13 @@
  * To change the template for this generated file go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.ShortenedDigest;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.ShortenedDigest;
+import org.spongycastle.util.test.SimpleTest;
 
 public class ShortenedDigestTest
     extends SimpleTest

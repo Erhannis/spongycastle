@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.util;
+package org.spongycastle.jsse.util;
 
 import java.io.IOException;
 import java.io.InputStream;

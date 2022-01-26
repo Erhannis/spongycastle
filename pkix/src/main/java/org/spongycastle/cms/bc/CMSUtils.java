@@ -1,8 +1,8 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.operator.GenericKey;
 
 class CMSUtils
 {

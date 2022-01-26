@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.security.cert.CertStore;
 import java.security.cert.CertStoreException;
@@ -8,8 +8,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.jce.provider.AnnotatedException;
-import org.bouncycastle.util.StoreException;
+import org.spongycastle.jce.provider.AnnotatedException;
+import org.spongycastle.util.StoreException;
 
 abstract class PKIXCRLUtil
 {
@@ -40,7 +40,7 @@ abstract class PKIXCRLUtil
      * @param crlSelect
      *            a {@link X509CRLStoreSelector} object that will be used to select the CRLs
      * @param crlStores
-     *            a List containing only {@link org.bouncycastle.x509.X509Store X509Store} objects.
+     *            a List containing only {@link org.spongycastle.x509.X509Store X509Store} objects.
      *            These are used to search for CRLs
      */
     private static void findCRLs(HashSet crls, X509CRLStoreSelector crlSelect, List crlStores) throws AnnotatedException

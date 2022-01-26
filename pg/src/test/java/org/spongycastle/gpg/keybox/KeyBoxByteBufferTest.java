@@ -1,11 +1,11 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 import java.security.Security;
 import java.util.Arrays;
 
 import junit.framework.TestCase;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.test.SimpleTest;
 
 public class KeyBoxByteBufferTest
     extends SimpleTest

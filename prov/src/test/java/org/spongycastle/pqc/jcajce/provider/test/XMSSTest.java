@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package org.spongycastle.pqc.jcajce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -20,25 +20,25 @@ import java.util.HashSet;
 import java.util.Set;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.bc.BCObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.pqc.jcajce.interfaces.StateAwareSignature;
-import org.bouncycastle.pqc.jcajce.interfaces.XMSSKey;
-import org.bouncycastle.pqc.jcajce.interfaces.XMSSPrivateKey;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.pqc.jcajce.spec.XMSSParameterSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.bc.BCObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.pqc.jcajce.interfaces.StateAwareSignature;
+import org.spongycastle.pqc.jcajce.interfaces.XMSSKey;
+import org.spongycastle.pqc.jcajce.interfaces.XMSSPrivateKey;
+import org.spongycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import org.spongycastle.pqc.jcajce.spec.XMSSParameterSpec;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
 
 /**
  * Test cases for the use of XMSS with the BCPQC provider.

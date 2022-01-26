@@ -1,21 +1,21 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.io.StringReader;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.engines.RSAEngine;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.signers.DSASigner;
-import org.bouncycastle.crypto.signers.ECDSASigner;
-import org.bouncycastle.crypto.signers.Ed25519Signer;
-import org.bouncycastle.crypto.util.OpenSSHPrivateKeyUtil;
-import org.bouncycastle.crypto.util.OpenSSHPublicKeyUtil;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.pem.PemReader;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.engines.RSAEngine;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.signers.DSASigner;
+import org.spongycastle.crypto.signers.ECDSASigner;
+import org.spongycastle.crypto.signers.Ed25519Signer;
+import org.spongycastle.crypto.util.OpenSSHPrivateKeyUtil;
+import org.spongycastle.crypto.util.OpenSSHPublicKeyUtil;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.pem.PemReader;
+import org.spongycastle.util.test.SimpleTest;
 
 public class OpenSSHKeyParsingTests
     extends SimpleTest

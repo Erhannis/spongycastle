@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec;
+package org.spongycastle.math.ec;
 
 public class ScaleXPointMap implements ECPointMap
 {

@@ -1,9 +1,9 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.asn1.cms.OriginatorInfo;
+import org.spongycastle.asn1.cms.OriginatorInfo;
 
 /**
  * General class for generating a CMS enveloped-data message.

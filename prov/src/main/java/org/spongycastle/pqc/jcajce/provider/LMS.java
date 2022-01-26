@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.jcajce.provider;
+package org.spongycastle.pqc.jcajce.provider;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class LMS
 {
-    private static final String PREFIX = "org.bouncycastle.pqc.jcajce.provider" + ".lms.";
+    private static final String PREFIX = "org.spongycastle.pqc.jcajce.provider" + ".lms.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

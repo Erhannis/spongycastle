@@ -1,6 +1,6 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 public abstract class AsymmetricKeyWrapper
     implements KeyWrapper

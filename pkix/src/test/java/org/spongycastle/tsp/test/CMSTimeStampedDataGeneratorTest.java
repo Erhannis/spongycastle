@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.test;
+package org.spongycastle.tsp.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -13,28 +13,28 @@ import java.util.Date;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.jcajce.JcaCertStore;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
-import org.bouncycastle.tsp.TSPAlgorithms;
-import org.bouncycastle.tsp.TimeStampRequest;
-import org.bouncycastle.tsp.TimeStampRequestGenerator;
-import org.bouncycastle.tsp.TimeStampResponse;
-import org.bouncycastle.tsp.TimeStampResponseGenerator;
-import org.bouncycastle.tsp.TimeStampToken;
-import org.bouncycastle.tsp.TimeStampTokenGenerator;
-import org.bouncycastle.tsp.cms.CMSTimeStampedData;
-import org.bouncycastle.tsp.cms.CMSTimeStampedDataGenerator;
-import org.bouncycastle.tsp.cms.CMSTimeStampedDataParser;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.jcajce.JcaCertStore;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.bc.BcDigestCalculatorProvider;
+import org.spongycastle.tsp.TSPAlgorithms;
+import org.spongycastle.tsp.TimeStampRequest;
+import org.spongycastle.tsp.TimeStampRequestGenerator;
+import org.spongycastle.tsp.TimeStampResponse;
+import org.spongycastle.tsp.TimeStampResponseGenerator;
+import org.spongycastle.tsp.TimeStampToken;
+import org.spongycastle.tsp.TimeStampTokenGenerator;
+import org.spongycastle.tsp.cms.CMSTimeStampedData;
+import org.spongycastle.tsp.cms.CMSTimeStampedDataGenerator;
+import org.spongycastle.tsp.cms.CMSTimeStampedDataParser;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.io.Streams;
 
 public class CMSTimeStampedDataGeneratorTest
     extends TestCase
@@ -278,7 +278,7 @@ public class CMSTimeStampedDataGeneratorTest
         X509Certificate signCert = TSPTestUtil.makeCACertificate(signKP,
             signDN, signKP, signDN);
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         KeyPair origKP = TSPTestUtil.makeKeyPair();
         X509Certificate cert = TSPTestUtil.makeCertificate(origKP,
             origDN, signKP, signDN);

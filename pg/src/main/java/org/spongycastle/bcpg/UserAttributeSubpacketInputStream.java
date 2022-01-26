@@ -1,10 +1,10 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.bcpg.attr.ImageAttribute;
+import org.spongycastle.bcpg.attr.ImageAttribute;
 
 /**
  * reader for user attribute sub-packets

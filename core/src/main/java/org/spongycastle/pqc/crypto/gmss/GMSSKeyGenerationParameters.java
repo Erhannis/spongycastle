@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.gmss;
+package org.spongycastle.pqc.crypto.gmss;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.KeyGenerationParameters;
 
 public class GMSSKeyGenerationParameters
     extends KeyGenerationParameters

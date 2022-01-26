@@ -1,22 +1,22 @@
-package org.bouncycastle.jcajce.provider.asymmetric.edec;
+package org.spongycastle.jcajce.provider.asymmetric.edec;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.security.PrivateKey;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed448PrivateKeyParameters;
-import org.bouncycastle.crypto.util.PrivateKeyInfoFactory;
-import org.bouncycastle.jcajce.interfaces.EdDSAPrivateKey;
-import org.bouncycastle.jcajce.interfaces.EdDSAPublicKey;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed448PrivateKeyParameters;
+import org.spongycastle.crypto.util.PrivateKeyInfoFactory;
+import org.spongycastle.jcajce.interfaces.EdDSAPrivateKey;
+import org.spongycastle.jcajce.interfaces.EdDSAPublicKey;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Properties;
 
 public class BCEdDSAPrivateKey
     implements EdDSAPrivateKey
@@ -76,7 +76,7 @@ public class BCEdDSAPrivateKey
             ASN1Set attrSet = ASN1Set.getInstance(attributes);
             PrivateKeyInfo privInfo = PrivateKeyInfoFactory.createPrivateKeyInfo(eddsaPrivateKey, attrSet);
 
-            if (hasPublicKey && !Properties.isOverrideSet("org.bouncycastle.pkcs8.v1_info_only"))
+            if (hasPublicKey && !Properties.isOverrideSet("org.spongycastle.pkcs8.v1_info_only"))
             {
                 return privInfo.getEncoded();
             }

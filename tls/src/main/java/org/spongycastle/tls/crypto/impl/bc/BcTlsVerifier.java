@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
-import org.bouncycastle.tls.crypto.TlsVerifier;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.tls.crypto.TlsVerifier;
 
 public abstract class BcTlsVerifier
     implements TlsVerifier

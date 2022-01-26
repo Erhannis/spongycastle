@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
 /**
  * Interface for XMSS objects that need to be storeable as a byte array.

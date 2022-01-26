@@ -1,10 +1,10 @@
-package org.bouncycastle.mime;
+package org.spongycastle.mime;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.mime.smime.SMimeParserContext;
+import org.spongycastle.mime.smime.SMimeParserContext;
 
 public class CanonicalOutputStream
     extends FilterOutputStream

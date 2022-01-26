@@ -1,6 +1,6 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.OperatorCreationException;
 
 public interface SignerInformationVerifierProvider
 {

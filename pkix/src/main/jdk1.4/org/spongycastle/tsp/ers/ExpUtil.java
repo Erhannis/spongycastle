@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 class ExpUtil
 {

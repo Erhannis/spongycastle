@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
 /**
  * A thread based seed generator - one source of randomness.

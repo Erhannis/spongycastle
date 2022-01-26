@@ -1,4 +1,4 @@
-package org.bouncycastle.i18n;
+package org.spongycastle.i18n;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;

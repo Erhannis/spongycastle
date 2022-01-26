@@ -1,11 +1,11 @@
-package org.bouncycastle.math.ec.rfc7748.test;
+package org.spongycastle.math.ec.rfc7748.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.math.ec.rfc7748.X25519;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.math.ec.rfc7748.X25519;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class X25519Test
     extends TestCase

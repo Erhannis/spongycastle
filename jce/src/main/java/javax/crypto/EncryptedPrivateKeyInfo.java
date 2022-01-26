@@ -5,12 +5,12 @@ import java.io.*;
 import java.security.*;
 import java.security.spec.*;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OutputStream;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 /**
  * This class implements the <code>EncryptedPrivateKeyInfo</code> type
@@ -29,7 +29,7 @@ import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
  */
 public class EncryptedPrivateKeyInfo
 {
-    private org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo infoObj;
+    private org.spongycastle.asn1.pkcs.EncryptedPrivateKeyInfo infoObj;
     private AlgorithmParameters algP;
 
     /*
@@ -52,7 +52,7 @@ public class EncryptedPrivateKeyInfo
         ByteArrayInputStream    bIn = new ByteArrayInputStream(encoded);
         ASN1InputStream         dIn = new ASN1InputStream(bIn);
 
-        infoObj = org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo.getInstance((ASN1Sequence)dIn.readObject());
+        infoObj = org.spongycastle.asn1.pkcs.EncryptedPrivateKeyInfo.getInstance((ASN1Sequence)dIn.readObject());
 
         try
         {
@@ -89,9 +89,9 @@ public class EncryptedPrivateKeyInfo
             throw new NullPointerException("parameters null");
         }
 
-        org.bouncycastle.asn1.x509.AlgorithmIdentifier      kAlgId = new AlgorithmIdentifier(new ASN1ObjectIdentifier(algName), null);
+        org.spongycastle.asn1.x509.AlgorithmIdentifier      kAlgId = new AlgorithmIdentifier(new ASN1ObjectIdentifier(algName), null);
 
-        infoObj = new org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo(kAlgId, (byte[])encryptedData.clone());
+        infoObj = new org.spongycastle.asn1.pkcs.EncryptedPrivateKeyInfo(kAlgId, (byte[])encryptedData.clone());
         algP = this.getParameters();
     }
 
@@ -121,7 +121,7 @@ public class EncryptedPrivateKeyInfo
             throw new NullPointerException("parameters null");
         }
 
-        org.bouncycastle.asn1.x509.AlgorithmIdentifier      kAlgId = null;
+        org.spongycastle.asn1.x509.AlgorithmIdentifier      kAlgId = null;
 
         try
         {
@@ -136,7 +136,7 @@ public class EncryptedPrivateKeyInfo
             throw new IllegalArgumentException("error in encoding: " + e.toString());
         }
 
-        infoObj = new org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo(kAlgId, (byte[])encryptedData.clone());
+        infoObj = new org.spongycastle.asn1.pkcs.EncryptedPrivateKeyInfo(kAlgId, (byte[])encryptedData.clone());
         algP = this.getParameters();
     }
 

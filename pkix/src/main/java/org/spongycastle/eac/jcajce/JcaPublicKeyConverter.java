@@ -1,4 +1,4 @@
-package org.bouncycastle.eac.jcajce;
+package org.spongycastle.eac.jcajce;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -16,19 +16,19 @@ import java.security.spec.EllipticCurve;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPublicKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.eac.EACObjectIdentifiers;
-import org.bouncycastle.asn1.eac.ECDSAPublicKey;
-import org.bouncycastle.asn1.eac.PublicKeyDataObject;
-import org.bouncycastle.asn1.eac.RSAPublicKey;
-import org.bouncycastle.eac.EACException;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.field.FiniteField;
-import org.bouncycastle.math.field.Polynomial;
-import org.bouncycastle.math.field.PolynomialExtensionField;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.eac.EACObjectIdentifiers;
+import org.spongycastle.asn1.eac.ECDSAPublicKey;
+import org.spongycastle.asn1.eac.PublicKeyDataObject;
+import org.spongycastle.asn1.eac.RSAPublicKey;
+import org.spongycastle.eac.EACException;
+import org.spongycastle.math.ec.ECAlgorithms;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.field.FiniteField;
+import org.spongycastle.math.field.Polynomial;
+import org.spongycastle.math.field.PolynomialExtensionField;
+import org.spongycastle.util.Arrays;
 
 public class JcaPublicKeyConverter
 {
@@ -160,7 +160,7 @@ public class JcaPublicKeyConverter
         }
     }
 
-    private static org.bouncycastle.math.ec.ECPoint convertPoint(
+    private static org.spongycastle.math.ec.ECPoint convertPoint(
         ECCurve curve,
         java.security.spec.ECPoint point)
     {

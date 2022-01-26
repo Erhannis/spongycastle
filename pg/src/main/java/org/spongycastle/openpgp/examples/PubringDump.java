@@ -1,17 +1,17 @@
-package org.bouncycastle.openpgp.examples;
+package org.spongycastle.openpgp.examples;
 
 import java.io.FileInputStream;
 import java.security.Security;
 import java.util.Iterator;
 
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.openpgp.PGPPublicKeyRing;
-import org.bouncycastle.openpgp.PGPPublicKeyRingCollection;
-import org.bouncycastle.openpgp.PGPUtil;
-import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openpgp.PGPPublicKey;
+import org.spongycastle.openpgp.PGPPublicKeyRing;
+import org.spongycastle.openpgp.PGPPublicKeyRingCollection;
+import org.spongycastle.openpgp.PGPUtil;
+import org.spongycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Basic class which just lists the contents of the public key file passed

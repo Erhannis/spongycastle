@@ -1,8 +1,8 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 /**
  * General interface for a key initialized operator that is able to calculate a MAC from
@@ -14,7 +14,7 @@ public interface MacCalculator
 
     /**
      * Returns a stream that will accept data for the purpose of calculating
-     * the MAC for later verification. Use org.bouncycastle.util.io.TeeOutputStream if you want to accumulate
+     * the MAC for later verification. Use org.spongycastle.util.io.TeeOutputStream if you want to accumulate
      * the data on the fly as well.
      *
      * @return an OutputStream

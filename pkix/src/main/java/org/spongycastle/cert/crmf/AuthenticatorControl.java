@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.crmf.CRMFObjectIdentifiers;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.crmf.CRMFObjectIdentifiers;
 
 /**
  * Carrier for an authenticator control.

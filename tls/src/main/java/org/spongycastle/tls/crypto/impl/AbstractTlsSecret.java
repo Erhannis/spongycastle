@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.crypto.impl;
+package org.spongycastle.tls.crypto.impl;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.crypto.TlsEncryptor;
-import org.bouncycastle.tls.crypto.TlsHMAC;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.crypto.TlsEncryptor;
+import org.spongycastle.tls.crypto.TlsHMAC;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.util.Arrays;
 
 /**
  * Base class for a TlsSecret implementation which captures common code and fields.

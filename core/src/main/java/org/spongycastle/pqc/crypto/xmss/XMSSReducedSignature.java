@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
 import java.util.ArrayList;
 import java.util.List;

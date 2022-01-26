@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.ocsp;
+package org.spongycastle.cert.ocsp;
 
 /**
  * wrapper for the UnknownInfo object

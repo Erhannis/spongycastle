@@ -1,9 +1,9 @@
-package org.bouncycastle.jcajce.provider.config;
+package org.spongycastle.jcajce.provider.config;
 
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
 
 /**
  * Implemented by the BC provider. This allows setting of hidden parameters,

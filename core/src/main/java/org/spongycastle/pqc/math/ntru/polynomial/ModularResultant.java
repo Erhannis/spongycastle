@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.pqc.math.ntru.euclid.BigIntEuclidean;
+import org.spongycastle.pqc.math.ntru.euclid.BigIntEuclidean;
 
 /**
  * A resultant modulo a <code>BigInteger</code>

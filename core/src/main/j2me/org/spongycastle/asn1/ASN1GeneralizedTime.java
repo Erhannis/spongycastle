@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 import java.util.Date;
 import java.util.TimeZone;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * Base class representing the ASN.1 GeneralizedTime type.

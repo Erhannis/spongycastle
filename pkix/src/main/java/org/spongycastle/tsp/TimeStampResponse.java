@@ -1,21 +1,21 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DLSequence;
-import org.bouncycastle.asn1.cmp.PKIFailureInfo;
-import org.bouncycastle.asn1.cmp.PKIFreeText;
-import org.bouncycastle.asn1.cmp.PKIStatus;
-import org.bouncycastle.asn1.cms.Attribute;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.tsp.TimeStampResp;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.DLSequence;
+import org.spongycastle.asn1.cmp.PKIFailureInfo;
+import org.spongycastle.asn1.cmp.PKIFreeText;
+import org.spongycastle.asn1.cmp.PKIStatus;
+import org.spongycastle.asn1.cms.Attribute;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.tsp.TimeStampResp;
+import org.spongycastle.util.Arrays;
 
 /**
  * Base class for an RFC 3161 Time Stamp Response object.

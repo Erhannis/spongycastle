@@ -1,7 +1,7 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
-import org.bouncycastle.asn1.kisa.KISAObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.kisa.KISAObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 class SEEDUtil
 {

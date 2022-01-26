@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.selector.jcajce;
+package org.spongycastle.cert.selector.jcajce;
 
-import org.bouncycastle.jce.cert.X509CertSelector;
+import org.spongycastle.jce.cert.X509CertSelector;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.cert.selector.X509CertificateHolderSelector;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.cert.selector.X509CertificateHolderSelector;
 
 public class JcaSelectorConverter
 {

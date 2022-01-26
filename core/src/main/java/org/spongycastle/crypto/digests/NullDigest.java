@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
 import java.io.ByteArrayOutputStream;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Arrays;
 
 
 public class NullDigest

@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.parsers;
+package org.spongycastle.crypto.parsers;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.KeyParser;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.KeyParser;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.util.io.Streams;
 
 public class DHIESPublicKeyParser
     implements KeyParser

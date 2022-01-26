@@ -1,16 +1,16 @@
-package org.bouncycastle.cert.crmf.jcajce;
+package org.spongycastle.cert.crmf.jcajce;
 
 import java.security.PrivateKey;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.asn1.crmf.EncryptedValue;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.cert.crmf.CRMFException;
-import org.bouncycastle.cert.crmf.EncryptedValueBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.operator.KeyWrapper;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.crmf.EncryptedValue;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.cert.crmf.CRMFException;
+import org.spongycastle.cert.crmf.EncryptedValueBuilder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.operator.KeyWrapper;
+import org.spongycastle.operator.OutputEncryptor;
 
 /**
  * JCA convenience class for EncryptedValueBuilder

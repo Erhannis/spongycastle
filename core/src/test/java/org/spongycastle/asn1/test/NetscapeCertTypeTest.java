@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.misc.NetscapeCertType;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.misc.NetscapeCertType;
+import org.spongycastle.util.test.SimpleTest;
 
 public class NetscapeCertTypeTest
     extends SimpleTest

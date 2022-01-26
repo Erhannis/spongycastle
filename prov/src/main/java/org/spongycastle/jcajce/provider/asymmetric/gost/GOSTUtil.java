@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.provider.asymmetric.gost;
+package org.spongycastle.jcajce.provider.asymmetric.gost;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.params.GOST3410Parameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Fingerprint;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.params.GOST3410Parameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Fingerprint;
+import org.spongycastle.util.Strings;
 
 class GOSTUtil
 {

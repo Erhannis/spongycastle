@@ -1,16 +1,16 @@
-package org.bouncycastle.math.ec.custom.sec;
+package org.spongycastle.math.ec.custom.sec;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.ec.AbstractECLookupTable;
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECLookupTable;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.raw.Nat192;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.math.ec.AbstractECLookupTable;
+import org.spongycastle.math.ec.ECConstants;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECLookupTable;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.raw.Nat192;
+import org.spongycastle.util.encoders.Hex;
 
 public class SecP192K1Curve extends ECCurve.AbstractFp
 {

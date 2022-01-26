@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 /**
  * Ciphers producing a key stream which can be reset to particular points in the stream implement this.

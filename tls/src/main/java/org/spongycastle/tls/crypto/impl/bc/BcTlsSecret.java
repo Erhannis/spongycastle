@@ -1,18 +1,18 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.tls.PRFAlgorithm;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.CryptoHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsCryptoUtils;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.tls.crypto.impl.AbstractTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.AbstractTlsSecret;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.tls.PRFAlgorithm;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.CryptoHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsCryptoUtils;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.impl.AbstractTlsCrypto;
+import org.spongycastle.tls.crypto.impl.AbstractTlsSecret;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * BC light-weight support class for handling TLS secrets and deriving key material and other secrets from them.

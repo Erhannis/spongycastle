@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package org.spongycastle.jcajce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -19,13 +19,13 @@ import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ua.DSTU4145NamedCurves;
-import org.bouncycastle.asn1.ua.UAObjectIdentifiers;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.jcajce.spec.DSTU4145ParameterSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ua.DSTU4145NamedCurves;
+import org.spongycastle.asn1.ua.UAObjectIdentifiers;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.jcajce.spec.DSTU4145ParameterSpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.encoders.Base64;
 
 
 public class GeneralKeyTest

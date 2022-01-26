@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.BasicAgreement;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.BasicAgreement;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPrivateKeyParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
 
 /**
  * a Diffie-Hellman key agreement class.

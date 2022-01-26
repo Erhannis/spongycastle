@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 public enum BlobType
 {

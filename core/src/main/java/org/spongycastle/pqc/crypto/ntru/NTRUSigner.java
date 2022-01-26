@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.nio.ByteBuffer;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.Polynomial;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.Polynomial;
 
 /**
 * Signs, verifies data and generates key pairs.

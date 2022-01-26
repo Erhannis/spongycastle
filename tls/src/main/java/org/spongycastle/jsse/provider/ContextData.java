@@ -1,13 +1,13 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.util.List;
 import java.util.Vector;
 
-import org.bouncycastle.jsse.BCX509ExtendedKeyManager;
-import org.bouncycastle.jsse.BCX509ExtendedTrustManager;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.jsse.BCX509ExtendedKeyManager;
+import org.spongycastle.jsse.BCX509ExtendedTrustManager;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
 
 final class ContextData
 {

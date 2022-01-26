@@ -1,15 +1,15 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.dsa.DSAUtil;
-import org.bouncycastle.jcajce.provider.asymmetric.dsa.KeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.dsa.DSAUtil;
+import org.spongycastle.jcajce.provider.asymmetric.dsa.KeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
 
 public class DSA
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".dsa.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".dsa.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * X9.31-1998 - signing using a hash.

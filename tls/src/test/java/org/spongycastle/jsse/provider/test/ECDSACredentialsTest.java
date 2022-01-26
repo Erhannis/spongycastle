@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider.test;
+package org.spongycastle.jsse.provider.test;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -17,7 +17,7 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
 
-import org.bouncycastle.tls.NamedGroup;
+import org.spongycastle.tls.NamedGroup;
 
 import junit.framework.TestCase;
 

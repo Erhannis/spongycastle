@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x500.DirectoryString;
-import org.bouncycastle.asn1.x509.sigi.NameOrPseudonym;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x500.DirectoryString;
+import org.spongycastle.asn1.x509.sigi.NameOrPseudonym;
 
 public class NameOrPseudonymUnitTest
     extends ASN1UnitTest

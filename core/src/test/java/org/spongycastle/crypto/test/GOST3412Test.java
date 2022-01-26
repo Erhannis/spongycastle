@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.engines.GOST3412_2015Engine;
-import org.bouncycastle.crypto.modes.G3413CBCBlockCipher;
-import org.bouncycastle.crypto.modes.G3413CFBBlockCipher;
-import org.bouncycastle.crypto.modes.G3413CTRBlockCipher;
-import org.bouncycastle.crypto.modes.G3413OFBBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.engines.GOST3412_2015Engine;
+import org.spongycastle.crypto.modes.G3413CBCBlockCipher;
+import org.spongycastle.crypto.modes.G3413CFBBlockCipher;
+import org.spongycastle.crypto.modes.G3413CTRBlockCipher;
+import org.spongycastle.crypto.modes.G3413OFBBlockCipher;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class GOST3412Test
     extends CipherTest

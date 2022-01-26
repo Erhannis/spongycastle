@@ -1,8 +1,8 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.security.PublicKey;
 
-import org.bouncycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAlgorithm;
 
 public class JcaTlsEd448Verifier
     extends JcaTlsEdDSAVerifier

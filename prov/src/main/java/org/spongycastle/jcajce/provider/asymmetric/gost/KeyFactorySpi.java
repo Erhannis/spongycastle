@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.gost;
+package org.spongycastle.jcajce.provider.asymmetric.gost;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -8,16 +8,16 @@ import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
-import org.bouncycastle.jce.interfaces.GOST3410PrivateKey;
-import org.bouncycastle.jce.interfaces.GOST3410PublicKey;
-import org.bouncycastle.jce.spec.GOST3410PrivateKeySpec;
-import org.bouncycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
-import org.bouncycastle.jce.spec.GOST3410PublicKeySpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
+import org.spongycastle.jce.interfaces.GOST3410PrivateKey;
+import org.spongycastle.jce.interfaces.GOST3410PublicKey;
+import org.spongycastle.jce.spec.GOST3410PrivateKeySpec;
+import org.spongycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
+import org.spongycastle.jce.spec.GOST3410PublicKeySpec;
 
 public class KeyFactorySpi
     extends BaseKeyFactorySpi

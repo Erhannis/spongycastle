@@ -1,12 +1,12 @@
-package org.bouncycastle.pkcs.bc;
+package org.spongycastle.pkcs.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.pkcs.CertificationRequest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.util.PublicKeyFactory;
-import org.bouncycastle.pkcs.PKCS10CertificationRequest;
-import org.bouncycastle.pkcs.PKCSException;
+import org.spongycastle.asn1.pkcs.CertificationRequest;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.util.PublicKeyFactory;
+import org.spongycastle.pkcs.PKCS10CertificationRequest;
+import org.spongycastle.pkcs.PKCSException;
 
 public class BcPKCS10CertificationRequest
     extends PKCS10CertificationRequest

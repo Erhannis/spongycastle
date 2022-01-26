@@ -1,18 +1,18 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CertificationRequest;
-import org.bouncycastle.asn1.cmc.EncryptedPOP;
-import org.bouncycastle.asn1.cmc.TaggedCertificationRequest;
-import org.bouncycastle.asn1.cmc.TaggedRequest;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cmc.BodyPartID;
+import org.spongycastle.asn1.cmc.CertificationRequest;
+import org.spongycastle.asn1.cmc.EncryptedPOP;
+import org.spongycastle.asn1.cmc.TaggedCertificationRequest;
+import org.spongycastle.asn1.cmc.TaggedRequest;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class EncryptedPOPTest
     extends SimpleTest

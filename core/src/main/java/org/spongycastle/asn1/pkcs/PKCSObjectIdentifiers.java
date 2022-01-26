@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.pkcs;
+package org.spongycastle.asn1.pkcs;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * pkcs-1 OBJECT IDENTIFIER ::=<p>

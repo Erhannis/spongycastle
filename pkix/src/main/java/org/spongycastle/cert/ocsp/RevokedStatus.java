@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.ocsp;
+package org.spongycastle.cert.ocsp;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ocsp.RevokedInfo;
-import org.bouncycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ocsp.RevokedInfo;
+import org.spongycastle.asn1.x509.CRLReason;
 
 /**
  * wrapper for the RevokedInfo object

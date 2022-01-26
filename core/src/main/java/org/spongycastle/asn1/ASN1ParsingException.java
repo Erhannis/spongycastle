@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * Exception thrown when correctly encoded, but unexpected data is found in a stream while building an object.

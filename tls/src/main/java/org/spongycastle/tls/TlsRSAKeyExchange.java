@@ -1,13 +1,13 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.crypto.TlsCertificateRole;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsEncryptor;
-import org.bouncycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.TlsCertificateRole;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsEncryptor;
+import org.spongycastle.tls.crypto.TlsSecret;
 
 /**
  * (D)TLS RSA key exchange.

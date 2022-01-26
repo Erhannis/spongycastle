@@ -1,12 +1,12 @@
-package org.bouncycastle.jcajce.provider.digest;
+package org.spongycastle.jcajce.provider.digest;
 
-import org.bouncycastle.asn1.ua.UAObjectIdentifiers;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.digests.DSTU7564Digest;
-import org.bouncycastle.crypto.macs.DSTU7564Mac;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.asn1.ua.UAObjectIdentifiers;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.digests.DSTU7564Digest;
+import org.spongycastle.crypto.macs.DSTU7564Mac;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
 
 public class DSTU7564
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import java.security.AlgorithmParametersSpi;
 import java.security.spec.AlgorithmParameterSpec;

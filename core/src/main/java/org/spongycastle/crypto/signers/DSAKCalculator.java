@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * DER BMPString object encodes BMP (<i>Basic Multilingual Plane</i>) subset

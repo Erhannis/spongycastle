@@ -1,13 +1,13 @@
-package org.bouncycastle.math.ec;
+package org.spongycastle.math.ec;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.math.ec.endo.ECEndomorphism;
-import org.bouncycastle.math.ec.endo.EndoUtil;
-import org.bouncycastle.math.ec.endo.GLVEndomorphism;
-import org.bouncycastle.math.field.FiniteField;
-import org.bouncycastle.math.field.PolynomialExtensionField;
-import org.bouncycastle.math.raw.Nat;
+import org.spongycastle.math.ec.endo.ECEndomorphism;
+import org.spongycastle.math.ec.endo.EndoUtil;
+import org.spongycastle.math.ec.endo.GLVEndomorphism;
+import org.spongycastle.math.field.FiniteField;
+import org.spongycastle.math.field.PolynomialExtensionField;
+import org.spongycastle.math.raw.Nat;
 
 public class ECAlgorithms
 {

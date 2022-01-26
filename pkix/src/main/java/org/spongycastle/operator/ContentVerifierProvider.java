@@ -1,7 +1,7 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
 
 /**
  * General interface for providers of ContentVerifier objects.

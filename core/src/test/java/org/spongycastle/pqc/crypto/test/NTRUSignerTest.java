@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 
 import junit.framework.TestCase;

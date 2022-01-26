@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 class ErrorCorrection
 {

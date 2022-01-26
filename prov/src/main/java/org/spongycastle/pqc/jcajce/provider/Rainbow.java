@@ -1,14 +1,14 @@
-package org.bouncycastle.pqc.jcajce.provider;
+package org.spongycastle.pqc.jcajce.provider;
 
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.jcajce.provider.rainbow.RainbowKeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.jcajce.provider.rainbow.RainbowKeyFactorySpi;
 
 public class Rainbow
 {
-    private static final String PREFIX = "org.bouncycastle.pqc.jcajce.provider" + ".rainbow.";
+    private static final String PREFIX = "org.spongycastle.pqc.jcajce.provider" + ".rainbow.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

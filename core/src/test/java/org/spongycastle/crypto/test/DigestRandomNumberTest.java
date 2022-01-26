@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.crypto.prng.DigestRandomGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.crypto.prng.DigestRandomGenerator;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.Digest;
 
 public class DigestRandomNumberTest
     extends SimpleTest

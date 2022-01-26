@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -36,46 +36,46 @@ import java.util.Vector;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.x509.AccessDescription;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.AuthorityInformationAccess;
-import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.CRLDistPoint;
-import org.bouncycastle.asn1.x509.DistributionPoint;
-import org.bouncycastle.asn1.x509.DistributionPointName;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.GeneralSubtree;
-import org.bouncycastle.asn1.x509.IssuingDistributionPoint;
-import org.bouncycastle.asn1.x509.NameConstraints;
-import org.bouncycastle.asn1.x509.PolicyInformation;
-import org.bouncycastle.asn1.x509.qualified.Iso4217CurrencyCode;
-import org.bouncycastle.asn1.x509.qualified.MonetaryValue;
-import org.bouncycastle.asn1.x509.qualified.QCStatement;
-import org.bouncycastle.i18n.ErrorBundle;
-import org.bouncycastle.i18n.LocaleString;
-import org.bouncycastle.i18n.filter.TrustedInput;
-import org.bouncycastle.i18n.filter.UntrustedInput;
-import org.bouncycastle.i18n.filter.UntrustedUrlInput;
-import org.bouncycastle.jce.provider.AnnotatedException;
-import org.bouncycastle.jce.provider.PKIXNameConstraintValidator;
-import org.bouncycastle.jce.provider.PKIXNameConstraintValidatorException;
-import org.bouncycastle.jce.provider.PKIXPolicyNode;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.Objects;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.x509.AccessDescription;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AuthorityInformationAccess;
+import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.CRLDistPoint;
+import org.spongycastle.asn1.x509.DistributionPoint;
+import org.spongycastle.asn1.x509.DistributionPointName;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.GeneralSubtree;
+import org.spongycastle.asn1.x509.IssuingDistributionPoint;
+import org.spongycastle.asn1.x509.NameConstraints;
+import org.spongycastle.asn1.x509.PolicyInformation;
+import org.spongycastle.asn1.x509.qualified.Iso4217CurrencyCode;
+import org.spongycastle.asn1.x509.qualified.MonetaryValue;
+import org.spongycastle.asn1.x509.qualified.QCStatement;
+import org.spongycastle.i18n.ErrorBundle;
+import org.spongycastle.i18n.LocaleString;
+import org.spongycastle.i18n.filter.TrustedInput;
+import org.spongycastle.i18n.filter.UntrustedInput;
+import org.spongycastle.i18n.filter.UntrustedUrlInput;
+import org.spongycastle.jce.provider.AnnotatedException;
+import org.spongycastle.jce.provider.PKIXNameConstraintValidator;
+import org.spongycastle.jce.provider.PKIXNameConstraintValidatorException;
+import org.spongycastle.jce.provider.PKIXPolicyNode;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.Objects;
 
 /**
  * PKIXCertPathReviewer<br>
@@ -88,7 +88,7 @@ public class PKIXCertPathReviewer extends CertPathValidatorUtilities
     private static final String CRL_DIST_POINTS = Extension.cRLDistributionPoints.getId();
     private static final String AUTH_INFO_ACCESS = Extension.authorityInfoAccess.getId();
     
-    private static final String RESOURCE_NAME = "org.bouncycastle.x509.CertPathReviewerMessages";
+    private static final String RESOURCE_NAME = "org.spongycastle.x509.CertPathReviewerMessages";
     
     // input parameters
     

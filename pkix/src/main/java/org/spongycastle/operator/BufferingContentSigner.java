@@ -1,9 +1,9 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.util.io.BufferingOutputStream;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.util.io.BufferingOutputStream;
 
 /**
  * A class that explicitly buffers the data to be signed, sending it in one

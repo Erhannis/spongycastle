@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.esf;
+package org.spongycastle.asn1.esf;
 
-import org.bouncycastle.asn1.ASN1Null;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.DERNull;
+import org.spongycastle.asn1.ASN1Null;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.BERTags;
+import org.spongycastle.asn1.DERNull;
 
 public class SignaturePolicyIdentifier
     extends ASN1Object

@@ -1,8 +1,8 @@
 
-package org.bouncycastle.i18n.filter.test;
+package org.spongycastle.i18n.filter.test;
 
-import org.bouncycastle.i18n.filter.Filter;
-import org.bouncycastle.i18n.filter.SQLFilter;
+import org.spongycastle.i18n.filter.Filter;
+import org.spongycastle.i18n.filter.SQLFilter;
 
 import junit.framework.TestCase;
 

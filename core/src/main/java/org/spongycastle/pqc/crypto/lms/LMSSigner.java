@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.pqc.crypto.MessageSigner;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.pqc.crypto.MessageSigner;
 
 public class LMSSigner
     implements MessageSigner

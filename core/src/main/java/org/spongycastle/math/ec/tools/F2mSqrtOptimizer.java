@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.tools;
+package org.spongycastle.math.ec.tools;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -7,11 +7,11 @@ import java.util.Iterator;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECFieldElement;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.ec.CustomNamedCurves;
+import org.spongycastle.math.ec.ECAlgorithms;
+import org.spongycastle.math.ec.ECFieldElement;
 
 public class F2mSqrtOptimizer
 {

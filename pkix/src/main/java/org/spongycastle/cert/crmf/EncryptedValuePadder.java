@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
 /**
  * An encrypted value padder is used to make sure that prior to a value been

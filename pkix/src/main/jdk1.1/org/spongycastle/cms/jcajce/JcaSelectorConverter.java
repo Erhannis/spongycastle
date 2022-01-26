@@ -1,11 +1,11 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.cert.X509CertSelector;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.cms.KeyTransRecipientId;
-import org.bouncycastle.cms.SignerId;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.cms.KeyTransRecipientId;
+import org.spongycastle.cms.SignerId;
 
 public class JcaSelectorConverter
 {

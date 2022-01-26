@@ -1,10 +1,10 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.util.Vector;
 
-import org.bouncycastle.tls.DatagramTransport;
+import org.spongycastle.tls.DatagramTransport;
 
 public class MockDatagramAssociation
 {

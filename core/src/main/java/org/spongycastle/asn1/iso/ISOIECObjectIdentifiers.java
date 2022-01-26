@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.iso;
+package org.spongycastle.asn1.iso;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * OIDS from  ISO/IEC 10118-3:2004

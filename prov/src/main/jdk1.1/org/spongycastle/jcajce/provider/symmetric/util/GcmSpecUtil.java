@@ -1,14 +1,14 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.internal.asn1.cms.GCMParameters;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.internal.asn1.cms.GCMParameters;
+import org.spongycastle.crypto.params.AEADParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Integers;
 
 public class GcmSpecUtil
 {

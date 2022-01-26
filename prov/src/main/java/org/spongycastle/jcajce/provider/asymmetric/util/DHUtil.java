@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.util;
+package org.spongycastle.jcajce.provider.asymmetric.util;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
@@ -7,15 +7,15 @@ import java.security.PublicKey;
 import javax.crypto.interfaces.DHPrivateKey;
 import javax.crypto.interfaces.DHPublicKey;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.dh.BCDHPublicKey;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPrivateKeyParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.dh.BCDHPublicKey;
 
 /**
  * utility class for converting jce/jca DH objects
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 public class DHUtil
 {

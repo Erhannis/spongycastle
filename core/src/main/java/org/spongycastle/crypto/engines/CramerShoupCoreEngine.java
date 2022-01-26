@@ -1,18 +1,18 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.params.CramerShoupKeyParameters;
-import org.bouncycastle.crypto.params.CramerShoupPrivateKeyParameters;
-import org.bouncycastle.crypto.params.CramerShoupPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.params.CramerShoupKeyParameters;
+import org.spongycastle.crypto.params.CramerShoupPrivateKeyParameters;
+import org.spongycastle.crypto.params.CramerShoupPublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Strings;
 
 /**
  * Essentially the Cramer-Shoup encryption / decryption algorithms according to

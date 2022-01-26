@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.crypto.impl;
+package org.spongycastle.tls.crypto.impl;
 
-import org.bouncycastle.tls.ExporterLabel;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SecurityParameters;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.ExporterLabel;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SecurityParameters;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.util.Arrays;
 
 /**
  * Useful utility methods.

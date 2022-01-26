@@ -1,9 +1,9 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.crypto.TlsDHConfig;
-import org.bouncycastle.tls.crypto.TlsECConfig;
+import org.spongycastle.tls.crypto.TlsDHConfig;
+import org.spongycastle.tls.crypto.TlsECConfig;
 
 /**
  * Interface for a key exchange factory offering a variety of specific algorithms.

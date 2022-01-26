@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.util;
+package org.spongycastle.pqc.jcajce.provider.util;
 
 
 import java.security.InvalidAlgorithmParameterException;

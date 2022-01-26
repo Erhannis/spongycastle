@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 /**
  * Exception thrown if an Archive TimeStamp according to RFC4998 fails to containsHashValue.

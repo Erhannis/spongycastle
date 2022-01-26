@@ -1,4 +1,4 @@
-package org.bouncycastle.pkcs;
+package org.spongycastle.pkcs;
 
 import java.io.IOException;
 

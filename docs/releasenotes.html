@@ -74,7 +74,7 @@ re-implemented in terms of TaggedObject.</li>
 <li>Additional checks have been added for PGP marker packets in the parsing of PGP objects.</li>
 <li>A CMSSignedData.addDigestAlgorithm() has been added to allow for adding additional digest algorithm identifiers to CMS SignedData structures when required.</li>
 <li>Support has been added to CMS for the LMS/HSS signature algorithm.</li>
-<li>The system property "org.bouncycastle.jsse.client.assumeOriginalHostName" (default false) has been added for dealing with SNI problems related to the host name not being propagate by the JVM.</li>
+<li>The system property "org.spongycastle.jsse.client.assumeOriginalHostName" (default false) has been added for dealing with SNI problems related to the host name not being propagate by the JVM.</li>
 <li>The JcePKCSPBEOutputEncryptorBuilder now supports SCRYPT with ciphers that do not have algorithm parameters (e.g. AESKWP).</li>
 <li>Support is now added for certificates using ETSI TS 103 097, "Intelligent Transport Systems (ITS)" in the bcpkix package.</li>
 </ul>
@@ -120,15 +120,15 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2021, June 7th.
 <li>PGPSignature now has a getDigestPrefix() method for people wanting exposure to the signature finger print details.</li>
 <li>The old BKS-V1 format keystore is now disabled by default. If you need to use BKS-V1 for legacy reasons, it can be re-enabled by adding:
 <pre>
-org.bouncycastle.bks.enable_v1=true
+org.spongycastle.bks.enable_v1=true
 </pre>
 to the java.security file. We would be interested in hearing from anyone that needs to do this.</li>
 <li>PLAIN-ECDSA now supports the SHA3 digests.</li>
 <li>Some highlevel support for RFC 4998 ERS has been added for ArchiveTimeStamp and EvidenceRecord. The new classes are in
-the org.bouncycastle.tsp.ers package.</li>
+the org.spongycastle.tsp.ers package.</li>
 <li>ECIES has now also support SHA256, SHA384, and SHA512.</li>
 <li>digestAlgorithms filed in CMS SignedData now includes counter signature digest algorithms where possible.</li>
-<li>A new property "org.bouncycastle.jsse.config" has been added which can be used to configure the BCJSSE provider when it is created using the no-args constructor.</li>
+<li>A new property "org.spongycastle.jsse.config" has been added which can be used to configure the BCJSSE provider when it is created using the no-args constructor.</li>
 <li>In line with changes in OpenSSL 1.1.0, OpenSSLPBEParametersGenerator can now be configured with a digest.</li>
 <li>PGPKeyRingGenerator now includes a method for adding a subkey with a primary key binding signature.</li>
 <li>Support for ASN.1 PRIVATE tags has been added.</li>
@@ -164,7 +164,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2020, December 21st.
 <ul>
 <li>BCJSSE: Added support for system property com.sun.net.ssl.requireCloseNotify. Note that we are using a default value of 'true'.</li>
 <li>BCJSSE: 'TLSv1.3' is now a supported protocol for both client and server. For this release it is only enabled by default for the 'TLSv1.3' SSLContext, but can be explicitly enabled using 'setEnabledProtocols' on an SSLSocket or SSLEngine, or via SSLParameters.</li>
-<li>BCJSSE: Session resumption is now also supported for servers in TLS 1.2 and earlier. For this release it is disabled by default, and can be enabled by setting the boolean system property org.bouncycastle.jsse.server.enableSessionResumption to 'true'.</li>
+<li>BCJSSE: Session resumption is now also supported for servers in TLS 1.2 and earlier. For this release it is disabled by default, and can be enabled by setting the boolean system property org.spongycastle.jsse.server.enableSessionResumption to 'true'.</li>
 <li>The provider RSA-PSS signature names that follow the JCA naming convention.</li>
 <li>FIPS mode for the BCJSSE now enforces namedCurves for any presented certificates.</li>
 <li>PGPSignatureSubpacketGenerator now supports editing of a pre-existing sub-packet list.</li>
@@ -193,7 +193,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2020, November 1st.
 <li>A setSessionKeyObfuscation() method has been added to PublicKeyKeyEncryptionMethodGenerator to allow turning off of session key obfuscation (default is on, method primarily to get around early version GPG issues with AES-128 keys).</li>
 <li>Implemented 'safegcd' constant-time modular inversion (as well as a variable-time variant). It has replaced Fermat inversion in all our EC code, and BigInteger.modInverse in several other places, particularly signers. This improves side-channel protection, and also gives a significant performance boost.</li>
 <li>Performance of custom binary ECC curves and Edwards Curves has been improved.</li>
-<li>BCJSSE: New boolean system property 'org.bouncycastle.jsse.keyManager.checkEKU' allows to disable ExtendedKeyUsage restrictions when selecting credentials (although the peer may still complain).</li>
+<li>BCJSSE: New boolean system property 'org.spongycastle.jsse.keyManager.checkEKU' allows to disable ExtendedKeyUsage restrictions when selecting credentials (although the peer may still complain).</li>
 <li>Initial support has been added for "Composite Keys and Signatures For Use In Internet PKI" using the test OID. Please note there will be further refinements to this as the draft is standardised.</li>
 <li>The BC EdDSA signature API now supports keys implementing all methods on the EdECKey and XECKey interfaces directly.</li>
 <li>Work has begun on classes to support the ETSI TS 103 097, Intelligent Transport Systems (ITS) in the bcpkix package.</li>
@@ -235,13 +235,13 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2020, July 4th.
 <li>BCJSSE: Client-side OCSP stapling now supports status_request_v2 extension.</li>
 <li>Support has been added for PKIXRevocationChecker for users of Java 8 and later.</li>
 <li>Support has been added for "ocsp.enable", "ocsp.responderURL" for users of Java 8 and later.</li>
-<li>Support has been added for "org.bouncycastle.x509.enableCRLDP" to the PKIX validator.</li>
+<li>Support has been added for "org.spongycastle.x509.enableCRLDP" to the PKIX validator.</li>
 <li>BCJSSE: Now supports system property 'jsse.enableFFDHE'</li>
 <li>BCJSSE: Now supports system properties 'jdk.tls.client.SignatureSchemes' and 'jdk.tls.server.SignatureSchemes'.</li>
 <li>Multi-release support has been added for Java 11 XECKeys.</li>
 <li>Multi-release support has been added for Java 15 EdECKeys.</li>
 <li>The MiscPEMGenerator will now output general PrivateKeyInfo structures.</li>
-<li>A new property "org.bouncycastle.pkcs8.v1_info_only" has been added to make the provider only produce version 1 PKCS8 PrivateKeyInfo structures.</li>
+<li>A new property "org.spongycastle.pkcs8.v1_info_only" has been added to make the provider only produce version 1 PKCS8 PrivateKeyInfo structures.</li>
 <li>The PKIX CertPathBuilder will now take the target certificate from the target constraints if a specific certificate is given to the selector.</li>
 <li>BCJSSE: A range of ARIA and CAMELLIA cipher suites added to supported list.</li>
 <li>BCJSSE: Now supports the PSS signature schemes from RFC 8446 (TLS 1.2 onwards).</li>
@@ -340,7 +340,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2019, September 10th.
 
 <h3>2.8.3 Additional Features and Functionality</h3>
 <ul>
-<li>QTESLA is now updated with the round 2 changes. Note: the security catergories, and in some cases key generation and signatures, have changed. For people interested in comparison, the round 1 version is now moved to org.bouncycastle.pqc.crypto.qteslarnd1 - this package will be deleted in 1.64. Please keep in mind that QTESLA may continue to evolve.</li>
+<li>QTESLA is now updated with the round 2 changes. Note: the security catergories, and in some cases key generation and signatures, have changed. For people interested in comparison, the round 1 version is now moved to org.spongycastle.pqc.crypto.qteslarnd1 - this package will be deleted in 1.64. Please keep in mind that QTESLA may continue to evolve.</li>
 <li>Support has been added for generating Ed25519/Ed448 signed certificates.</li>
 <li>A method for recovering the message/digest value from an ECNR signature has been added.</li>
 <li>Support for the ZUC-128 and ZUC-256 ciphers and MACs has been added to the provider and the lightweight API.</li>
@@ -527,7 +527,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2017, December 28
 <li>The BCJSSE provider now supports session resumption in clients.</li>
 <li>The BCJSSE provider now supports Server Name Indication.</li>
 <li>The BCJSSE provider now supports the jdk.tls.namedGroups system property.</li>
-<li>The BCJSSE provider now supports the org.bouncycastle.jsse.ec.disableChar2 system property, which optionally disables the use of characteristic-2 elliptic curves.</li>
+<li>The BCJSSE provider now supports the org.spongycastle.jsse.ec.disableChar2 system property, which optionally disables the use of characteristic-2 elliptic curves.</li>
 <li>EC key generation and signing now use cache-timing resistant table lookups.</li>
 <li>Performance of the DSTU algorithms has been greatly improved.</li>
 <li>Support has been added for generating certificates and signatures in the PKIX API using SHA-3 based digests.</li>
@@ -568,7 +568,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2017, August 18
 <li>Additional mappings have been added for a range of CVC-ECDSA algorithms.</li>
 <li>XMMS and XMSSMT are now available via the BCPQC provider. Support has been added for using these keys in certificates as well.</li>
 <li>Support has been added for DSTU-7564 message digest and the DSTU-7624 ciphers, together with their associated modes.</li>
-<li>A new system property org.bouncycastle.asn1.allow_unsafe_integer has been added to allow parsing of malformed ASN.1 integers in a similar fashion to what BC 1.56 did. The default behavior remains as reject malformed integers.</li>
+<li>A new system property org.spongycastle.asn1.allow_unsafe_integer has been added to allow parsing of malformed ASN.1 integers in a similar fashion to what BC 1.56 did. The default behavior remains as reject malformed integers.</li>
 <li>SignedMailValidator would only pick up the first email address in a DN, even when there was more than one. This has been fixed.</li>
 <li>PEMParser will now support a broader range of PBKDFs in encrypted private key files.</li>
 <li>Work has been done on speeding up the SHA-3 family. The functions are now 3 to 4 times faster.</li>
@@ -659,7 +659,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016, December 23
 <li>CVE-2016-1000338: DSA does not fully validate ASN.1 encoding of signature on verification. It is possible to inject extra elements in the sequence making up the signature and still have it validate, which in some cases may allow the introduction of "invisible" data into a signed structure.</li>
 <li>CVE-2016-1000339: AESFastEngine has a side channel leak if table accesses can be observed. The use of lookup large static lookup tables in AESFastEngine means that where data accesses by the CPU can be observed, it is possible to gain information about the key used to initialize the cipher. We now recommend not using AESFastEngine where this might be a concern. The BC provider is now using AESEngine by default.</li>
 <li>CVE-2016-1000340: Static ECDH vulnerable to carry propagation bug.
-Carry propagation bugs in the implementation of squaring for several raw math classes have been fixed (org.bouncycastle.math.raw.Nat???). These classes are used by our custom elliptic curve implementations (org.bouncycastle.math.ec.custom.**), so there was the possibility of rare (in general usage) spurious calculations for elliptic curve scalar multiplications. Such errors would have been detected with high probability by the output validation for our scalar multipliers.</li>
+Carry propagation bugs in the implementation of squaring for several raw math classes have been fixed (org.spongycastle.math.raw.Nat???). These classes are used by our custom elliptic curve implementations (org.spongycastle.math.ec.custom.**), so there was the possibility of rare (in general usage) spurious calculations for elliptic curve scalar multiplications. Such errors would have been detected with high probability by the output validation for our scalar multipliers.</li>
 <li>CVE-2016-1000341: DSA signature generation vulnerable to timing attack. Where timings can be closely observed for the generation of signatures, the lack of blinding in 1.55 or earlier, may allow an attacker to gain information about the signatures k value and ultimately the private value as well.</li>
 <li>CVE-2016-1000342: ECDSA does not fully validate ASN.1 encoding of signature on verification. It is possible to inject extra elements in the sequence making up the signature and still have it validate, which in some cases may allow the introduction of "invisible" data into a signed structure.</li>
 <li>CVE-2016-1000343: DSA key pair generator generates a weak private key if used with default values. If the JCA key pair generator is not explicitly initialised with DSA parameters, 1.55 and earlier generates a private value assuming a 1024 bit key size. In earlier releases this can be dealt with by explicitly passing parameters to the key pair generator.</li>
@@ -875,7 +875,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014, July 28
 <li>The PGP API now provides automatic conversion of embedded signatures in signature sub-packet vectors.</li>
 <li>The PGP API now fully supports ECDH as outlined in RFC 6637.</li>
 <li>GCM and GMAC now support tag lengths down to 32 bits.</li>
-<li>Custom implementations for many of the SEC Fp curves have been added, resulting in drastically improved performance. The current list includes all secp***k1 and secp***r1 curves from 192 to 521 bits. They can be accessed via the org.bouncycastle.crypto.ec.CustomNamedCurves class and are generally selected by other internal APIs in place of the generic implementations.</li>
+<li>Custom implementations for many of the SEC Fp curves have been added, resulting in drastically improved performance. The current list includes all secp***k1 and secp***r1 curves from 192 to 521 bits. They can be accessed via the org.spongycastle.crypto.ec.CustomNamedCurves class and are generally selected by other internal APIs in place of the generic implementations.</li>
 <li>Automatic EC point validation added, both for decoded inputs and multiplier outputs.</li>
 <li>A SkippingCipher interface has been added for ciphers that can be moved into a specific state for a given byte address. The lightweight class StreamBlockCipher has been generalised to support any BlockCipher object that can support a streaming mode.</li>
 <li>ASN.1 date/time objects now support the passing in of a Locale to allow for constructing the object using a Date interpreted from a different locale to the default for the JVM.</li>
@@ -939,7 +939,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2013, December 3
 </ul>
 <h3>2.21.4 Notes</h3>
 <ul>
-<li>org.bouncycastle.crypto.DerivationFunction is now a base interface, the getDigest() method appears on DigestDerivationFunction.</li>
+<li>org.spongycastle.crypto.DerivationFunction is now a base interface, the getDigest() method appears on DigestDerivationFunction.</li>
 <li>Recent developments at NIST indicate the SHA-3 may be changed before final standardisation. Please bare this in mind if you are using it.</li>
 <li>Other recent developments have raised concerns about the DualECDRBG. We have left the class in place for now, but it is now possible to provide your own parameter values, rather than using the NIST defined ones, if you choose to do so.</li>
 <li>Most deprecated methods have been removed from the PKIX API.</li>
@@ -980,20 +980,20 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2013, May 31
 <li>A new interface Memoable has been added for objects that can copy in and out their state. The digest classes now support this. A special
 class NonMemoableDigest has been added which hides the Memoable interface where it should not be available.</li>
 <li>TDEA is now recognised as an alias for DESede.</li>
-<li>A new package org.bouncycastle.crypto.ec has been introduced to the light wieght API with a range of EC based cryptographic operators.</li>
+<li>A new package org.spongycastle.crypto.ec has been introduced to the light wieght API with a range of EC based cryptographic operators.</li>
 <li>The OpenPGP API now supports password changing on V3 keys if the appropriate PBEKeyEncryptor is used.</li>
 <li>The OpenPGP API now supports password changing on secret key rings where only the private keys for the subkeys have been exported.</li>
 <li>Support has been added to the lightweight API for RSA-KEM and ECIES-KEM.</li>
 <li>Support has been added for NIST SP 800-38D - GMAC to AES and other 128 bit block size algorithms.</li>
-<li>The org.bouncycastle.crypto.tls package has been extended to support client and server side TLS 1.1.</li>
-<li>The org.bouncycastle.crypto.tls package has been extended to support client and server side DTLS 1.0.</li>
+<li>The org.spongycastle.crypto.tls package has been extended to support client and server side TLS 1.1.</li>
+<li>The org.spongycastle.crypto.tls package has been extended to support client and server side DTLS 1.0.</li>
 <li>A basic commitment package has been introduced into the lightweight API containing a digest based commitment scheme.</li>
 <li>It is now possible to set the NotAfter and NotBefore date in the CRMF CertificateRequestMessageBuilder class.</li>
 </ul>
 <h3>2.22.4 Notes</h3>
 <ul>
-<li>The NTRU implementation has been moved into the org.bouncycastle.pqc package hierarchy.</li>
-<li>The change to PEMParser to support explicit EC curves is not backward compatible. If you run into a named curve you need to use org.bouncycastle.asn1.x9.ECNamedCurveTable.getByOID() to look the curve up if required.</li>
+<li>The NTRU implementation has been moved into the org.spongycastle.pqc package hierarchy.</li>
+<li>The change to PEMParser to support explicit EC curves is not backward compatible. If you run into a named curve you need to use org.spongycastle.asn1.x9.ECNamedCurveTable.getByOID() to look the curve up if required.</li>
 </ul>
 
 <a name="r1rv48"><h3>2.23.1 Version</h3></a>
@@ -1114,7 +1114,7 @@ So there are four things useful to know about this release:
 <li>It's not a simple drop in like previous releases, if you wish migrate to it you will need to recompile your application.</li>
 <li>If you avoid deprecated methods it should be relatively painless to move to version 2.0</li>
 <li>The X509Name class will utlimately be replacde with the X500Name class, the getInstance() methods on both these classes allow conversion from one type to another.</li>
-<li>The org.bouncycastle.cms.RecipientId class now has a collection of subclasses to allow for more specific recipient matching. If you are creating your own recipient ids you should use the constructors for the subclasses rather than relying on the set methods inherited from X509CertSelector. The dependencies on X509CertSelector and CertStore will be removed from the version 2 CMS API.</li>
+<li>The org.spongycastle.cms.RecipientId class now has a collection of subclasses to allow for more specific recipient matching. If you are creating your own recipient ids you should use the constructors for the subclasses rather than relying on the set methods inherited from X509CertSelector. The dependencies on X509CertSelector and CertStore will be removed from the version 2 CMS API.</li>
 </ul>
 </p>
 <a name="r1rv45"><h3>2.26.1 Version</h3></a>
@@ -1461,7 +1461,7 @@ Bleichenbacher's RSA signature forgery attack. This has been fixed.
 <li>X509V2CRLGenerator can now be loaded from an existing CRL.
 <li>The CMS enveloped data generators will now attempt to use the default provider for encryption if the passed in provider can only handle key exchange.
 <li>OpenPGP file processing has been substantially speeded up.
-<li>The PKCS1Encoder would accept PKCS1 packets which were one byte oversize. By default this will now cause an error. However, as there are still implementations which still produce such packets the older behaviour can be turned on by setting the VM system property org.bouncycastle.pkcs1.strict to false before creating an RSA cipher using PKCS1 encoding.
+<li>The PKCS1Encoder would accept PKCS1 packets which were one byte oversize. By default this will now cause an error. However, as there are still implementations which still produce such packets the older behaviour can be turned on by setting the VM system property org.spongycastle.pkcs1.strict to false before creating an RSA cipher using PKCS1 encoding.
 <li>A target has been added to the bc-build.xml to zip up the source code rather than leaving it in a directory tree.
 The build scripts now run this target by default.
 <li>Use of toUpperCase and toLowerCase has been replaced with a locale independent converter where appropriate.
@@ -1553,7 +1553,7 @@ This has been fixed.
 <h3>2.40.3 Additional Features and Functionality</h3>
 <ul>
 <li>The SMIME package now supports the large file streaming model as well.
-<li>Additional ASN.1 message support has been added for RFC 3739 in the org.bouncycastle.x509.qualified package.
+<li>Additional ASN.1 message support has been added for RFC 3739 in the org.spongycastle.x509.qualified package.
 <li>Support has been added for Mac algorithm 3 from ISO 9797 to both the lightweight APIs and the provider.
 <li>The provider now supports the DESEDE64 MAC algorithm.
 <li>CertPathValidator has been updated to better support path validation as defined in RFC 3280.
@@ -1644,7 +1644,7 @@ Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2005, April 20
 <h3>2.43.4 Notes</h3>
 <ul>
 <li>Patches for S/MIME binary signatures and canonicalization were actually applied in 1.27, but a couple of days after the release - if the class 
-CMSProcessableBodyPartOutbound is present in the package org.bouncycastle.mail.smime you have the patched 1.27. We would recommend upgrading to 1.28 in any case
+CMSProcessableBodyPartOutbound is present in the package org.spongycastle.mail.smime you have the patched 1.27. We would recommend upgrading to 1.28 in any case
 as some S/MIME 3.1 recommendations have also been introduced for header creation.
 <li>GOST private keys are probably not encoding correctly and can be expected to change.
 </ul>
@@ -1679,9 +1679,9 @@ prevent applications being vunerable to oracle attacks.
 </ul>
 <h3>2.44.4 Changes that may affect compatibility</h3>
 <ul>
-<li>org.bouncycastle.jce.interfaces.ElGamalKey.getParams() has been changed to getParameters() to avoid clashes with
+<li>org.spongycastle.jce.interfaces.ElGamalKey.getParams() has been changed to getParameters() to avoid clashes with
 a JCE interface with the same method signature.
-<li>org.bouncycastle.jce.interfaces.ECKey.getParams() has been changed in JDK 1.5 to getParameters() to avoid clashes
+<li>org.spongycastle.jce.interfaces.ECKey.getParams() has been changed in JDK 1.5 to getParameters() to avoid clashes
 with a JCE interface with the same method signature. The getParams() method in pre-1.5 has been deprecated.
 <li>SHA256WithRSAEncryption, SHA384WithRSAEncryption, SHA512WithRSAEncryption now refer to their PKCS #1 V1.5 implementations. If you
 were using these previously you should use SHA256WithRSAAndMGF1, SHA384WithRSAAndMGF1, or SHA512WithRSAAndMGF1.
@@ -2231,18 +2231,18 @@ This has been fixed.
 <li>ISO9796-2 signatures have been added to the JCE and lightweight API.
 <li>A more general paddings packge for use with MACs and block ciphers had been aded to the lightweight API. MACs now allow you to specify padding.
 <li>X9.23 Padding has been added to the JCE and lightwieght API. The old
-PaddedBlockCipher class is now deprecated see org.bouncycastle.crypto.paddings for details.
+PaddedBlockCipher class is now deprecated see org.spongycastle.crypto.paddings for details.
 <li>SHA-256, SHA-384, and SHA-512 are now added. Note: while the public review
 period has finished, these algorithms have not yet been standardised, in the
 event that final standardisation changes the algorithms these implementations
 will be changed.
 <li>It's now possible to set bag attributes on items to go into a PKCS12 store,
-using the org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier interface.
+using the org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier interface.
 <li>More classses have been added to the ASN.1 package for dealing with
 certificate extensions and CRLs including a CRL generator. Note: the
 CRL generators should be regarded as under development and subject to change.
 <li>There's now an examples package for the JCE (in addition to the examples
-in org.bouncycastle.jce.provider.test) - org.bouncycastle.jce.examples. It
+in org.spongycastle.jce.provider.test) - org.spongycastle.jce.examples. It
 currently consists of a class showing how to generate a PKCS12 file.
 <li>The X.509 CertificateFactory now includes CRL support.  DER or PEM CRLs may be processed.
 <li>The BigInteger library has been written with a view to making it less
@@ -2288,7 +2288,7 @@ fixed. <b>Note:</b>This will affect some PBE encryptions that were carried
 out with DES, equivalent PBE ciphers to the old PBE DES cipher can be
 accessed by prepending the work "Broken" in front of the original PBE cipher
 call. If you want an example of how to deal with this as a migration issue
-have a look in org.bouncycastle.jce.provider.JDKKeyStore lines 201-291.
+have a look in org.spongycastle.jce.provider.JDKKeyStore lines 201-291.
 </ul>
 
 <a name="r1rv06"><h3>2.65.1 Version</h3></a>
@@ -2339,14 +2339,14 @@ This has been fixed.
 </ul>
 <h3>2.66.3 Additional Functionality</h3>
 <ul>
-<li>There is now an org.bouncycastle.jce.netscape package which has
+<li>There is now an org.spongycastle.jce.netscape package which has
 a class in for dealing with Netscape Certificate Request objects.
 </ul>
 <h3>2.66.4 Additional Notes</h3>
 <p>
 Concerning the PKCS12 fix: in a few cases this may cause some backward
 compatibility issues - if this happens to you, drop us a line at
-<a href="mailto:feedback-crypto@bouncycastle.org">feedback-crypto@bouncycastle.org</a>
+<a href="mailto:feedback-crypto.spongycastle.org">feedback-crypto.spongycastle.org</a>
 and we will help you get it sorted out.
 
 <a name="r1rv04"><h3>2.67.1 Version</h3></a>

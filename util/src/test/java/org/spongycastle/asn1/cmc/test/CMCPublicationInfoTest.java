@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmc.CMCPublicationInfo;
-import org.bouncycastle.asn1.crmf.PKIPublicationInfo;
-import org.bouncycastle.asn1.crmf.SinglePubInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cmc.CMCPublicationInfo;
+import org.spongycastle.asn1.crmf.PKIPublicationInfo;
+import org.spongycastle.asn1.crmf.SinglePubInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CMCPublicationInfoTest
     extends SimpleTest

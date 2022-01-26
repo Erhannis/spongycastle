@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -14,13 +14,13 @@ import java.util.logging.Logger;
 
 import javax.net.ssl.SSLSession;
 
-import org.bouncycastle.asn1.x500.AttributeTypeAndValue;
-import org.bouncycastle.asn1.x500.RDN;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.est.ESTException;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.x500.AttributeTypeAndValue;
+import org.spongycastle.asn1.x500.RDN;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.est.ESTException;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 
 /**

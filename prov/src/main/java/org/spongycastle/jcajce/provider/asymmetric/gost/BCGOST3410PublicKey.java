@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.gost;
+package org.spongycastle.jcajce.provider.asymmetric.gost;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -6,20 +6,20 @@ import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.cryptopro.GOST3410PublicKeyAlgParameters;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.GOST3410PublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.GOST3410Util;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.jce.interfaces.GOST3410Params;
-import org.bouncycastle.jce.interfaces.GOST3410PublicKey;
-import org.bouncycastle.jce.spec.GOST3410ParameterSpec;
-import org.bouncycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
-import org.bouncycastle.jce.spec.GOST3410PublicKeySpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.cryptopro.GOST3410PublicKeyAlgParameters;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.GOST3410PublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.GOST3410Util;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.jce.interfaces.GOST3410Params;
+import org.spongycastle.jce.interfaces.GOST3410PublicKey;
+import org.spongycastle.jce.spec.GOST3410ParameterSpec;
+import org.spongycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
+import org.spongycastle.jce.spec.GOST3410PublicKeySpec;
 
 public class BCGOST3410PublicKey
     implements GOST3410PublicKey

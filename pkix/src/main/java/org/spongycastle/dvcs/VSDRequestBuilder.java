@@ -1,13 +1,13 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 import java.io.IOException;
 import java.util.Date;
 
-import org.bouncycastle.asn1.dvcs.DVCSRequestInformationBuilder;
-import org.bouncycastle.asn1.dvcs.DVCSTime;
-import org.bouncycastle.asn1.dvcs.Data;
-import org.bouncycastle.asn1.dvcs.ServiceType;
-import org.bouncycastle.cms.CMSSignedData;
+import org.spongycastle.asn1.dvcs.DVCSRequestInformationBuilder;
+import org.spongycastle.asn1.dvcs.DVCSTime;
+import org.spongycastle.asn1.dvcs.Data;
+import org.spongycastle.asn1.dvcs.ServiceType;
+import org.spongycastle.cms.CMSSignedData;
 
 /**
  * Builder of DVCS requests to VSD service (Verify Signed Document).

@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec;
+package org.spongycastle.math.ec;
 
 /**
  * Class holding precomputation data for the WNAF (Window Non-Adjacent Form)

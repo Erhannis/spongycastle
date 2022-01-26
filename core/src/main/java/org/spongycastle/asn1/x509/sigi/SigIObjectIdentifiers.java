@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.x509.sigi;
+package org.spongycastle.asn1.x509.sigi;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Object Identifiers of SigI specifciation (German Signature Law

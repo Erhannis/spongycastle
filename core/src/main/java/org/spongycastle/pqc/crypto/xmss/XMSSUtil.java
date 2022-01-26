@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -11,9 +11,9 @@ import java.io.ObjectStreamClass;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Utils for XMSS implementation.
@@ -385,15 +385,15 @@ public class XMSSUtil
             components.add("java.util.TreeMap");
             components.add("java.lang.Integer");
             components.add("java.lang.Number");
-            components.add("org.bouncycastle.pqc.crypto.xmss.BDS");
+            components.add("org.spongycastle.pqc.crypto.xmss.BDS");
             components.add("java.util.ArrayList");
-            components.add("org.bouncycastle.pqc.crypto.xmss.XMSSNode");
+            components.add("org.spongycastle.pqc.crypto.xmss.XMSSNode");
             components.add("[B");
             components.add("java.util.LinkedList");
             components.add("java.util.Stack");
             components.add("java.util.Vector");
             components.add("[Ljava.lang.Object;");
-            components.add("org.bouncycastle.pqc.crypto.xmss.BDSTreeHash");
+            components.add("org.spongycastle.pqc.crypto.xmss.BDSTreeHash");
         }
 
         private final Class mainClass;

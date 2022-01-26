@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.util.Arrays;
 
 /**
  * Note that counter is only supported at the location presented in the

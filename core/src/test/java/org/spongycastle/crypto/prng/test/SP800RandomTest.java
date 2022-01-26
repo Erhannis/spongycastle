@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.prng.test;
+package org.spongycastle.crypto.prng.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.prng.BasicEntropySourceProvider;
-import org.bouncycastle.crypto.prng.SP800SecureRandomBuilder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA384Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.engines.AESEngine;
+import org.spongycastle.crypto.engines.DESedeEngine;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.prng.BasicEntropySourceProvider;
+import org.spongycastle.crypto.prng.SP800SecureRandomBuilder;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class SP800RandomTest
     extends SimpleTest

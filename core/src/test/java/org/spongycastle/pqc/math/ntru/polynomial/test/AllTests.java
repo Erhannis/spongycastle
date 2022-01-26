@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package org.spongycastle.pqc.math.ntru.polynomial.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

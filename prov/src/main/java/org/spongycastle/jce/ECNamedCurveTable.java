@@ -1,10 +1,10 @@
-package org.bouncycastle.jce;
+package org.spongycastle.jce;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
 
 /**
  * a table of locally supported named curves.
@@ -21,12 +21,12 @@ public class ECNamedCurveTable
     public static ECNamedCurveParameterSpec getParameterSpec(
         String  name)
     {
-        X9ECParameters  ecP = org.bouncycastle.crypto.ec.CustomNamedCurves.getByName(name);
+        X9ECParameters  ecP = org.spongycastle.crypto.ec.CustomNamedCurves.getByName(name);
         if (ecP == null)
         {
             try
             {
-                ecP = org.bouncycastle.crypto.ec.CustomNamedCurves.getByOID(new ASN1ObjectIdentifier(name));
+                ecP = org.spongycastle.crypto.ec.CustomNamedCurves.getByOID(new ASN1ObjectIdentifier(name));
             }
             catch (IllegalArgumentException e)
             {
@@ -35,12 +35,12 @@ public class ECNamedCurveTable
 
             if (ecP == null)
             {
-                ecP = org.bouncycastle.asn1.x9.ECNamedCurveTable.getByName(name);
+                ecP = org.spongycastle.asn1.x9.ECNamedCurveTable.getByName(name);
                 if (ecP == null)
                 {
                     try
                     {
-                        ecP = org.bouncycastle.asn1.x9.ECNamedCurveTable.getByOID(new ASN1ObjectIdentifier(name));
+                        ecP = org.spongycastle.asn1.x9.ECNamedCurveTable.getByOID(new ASN1ObjectIdentifier(name));
                     }
                     catch (IllegalArgumentException e)
                     {
@@ -71,6 +71,6 @@ public class ECNamedCurveTable
      */
     public static Enumeration getNames()
     {
-        return org.bouncycastle.asn1.x9.ECNamedCurveTable.getNames();
+        return org.spongycastle.asn1.x9.ECNamedCurveTable.getNames();
     }
 }

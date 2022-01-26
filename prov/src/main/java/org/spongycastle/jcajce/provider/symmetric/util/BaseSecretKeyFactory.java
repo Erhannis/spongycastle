@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import java.lang.reflect.Constructor;
 import java.security.InvalidKeyException;
@@ -9,7 +9,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactorySpi;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public class BaseSecretKeyFactory
     extends SecretKeyFactorySpi

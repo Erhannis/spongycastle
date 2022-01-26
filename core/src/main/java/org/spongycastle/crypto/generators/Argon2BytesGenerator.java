@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.Blake2bDigest;
-import org.bouncycastle.crypto.params.Argon2Parameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Longs;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.Blake2bDigest;
+import org.spongycastle.crypto.params.Argon2Parameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Longs;
+import org.spongycastle.util.Pack;
 
 /**
  * Argon2 PBKDF - Based on the results of https://password-hashing.net/ and https://www.ietf.org/archive/id/draft-irtf-cfrg-argon2-03.txt

@@ -1,13 +1,13 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.io.IOException;
 import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.DSAParameterSpec;
 import java.security.spec.InvalidParameterSpecException;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x509.DSAParameter;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x509.DSAParameter;
 
 public class AlgorithmParametersSpi
     extends java.security.AlgorithmParametersSpi

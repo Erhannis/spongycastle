@@ -1,10 +1,10 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.util.List;
 
 import javax.net.ssl.ExtendedSSLSession;
 
-import org.bouncycastle.jsse.BCSNIServerName;
+import org.spongycastle.jsse.BCSNIServerName;
 
 class ImportSSLSession_8
     extends ImportSSLSession_7

@@ -1,9 +1,9 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.x509.DigestInfo;
+import org.spongycastle.operator.DigestCalculator;
 
 public class MessageImprintBuilder
 {

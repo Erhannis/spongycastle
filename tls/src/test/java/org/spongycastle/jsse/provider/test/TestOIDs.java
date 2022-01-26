@@ -1,7 +1,7 @@
-package org.bouncycastle.jsse.provider.test;
+package org.spongycastle.jsse.provider.test;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
 
 class TestOIDs
 {

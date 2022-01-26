@@ -1,19 +1,19 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.bcpg.ContainedPacket;
-import org.bouncycastle.bcpg.MPInteger;
-import org.bouncycastle.bcpg.PublicKeyEncSessionPacket;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.bcpg.ContainedPacket;
+import org.spongycastle.bcpg.MPInteger;
+import org.spongycastle.bcpg.PublicKeyEncSessionPacket;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPublicKey;
+import org.spongycastle.util.Properties;
 
 public abstract class PublicKeyKeyEncryptionMethodGenerator
     extends PGPKeyEncryptionMethodGenerator
 {
-    public static final String SESSION_KEY_OBFUSCATION_PROPERTY = "org.bouncycastle.openpgp.session_key_obfuscation";
+    public static final String SESSION_KEY_OBFUSCATION_PROPERTY = "org.spongycastle.openpgp.session_key_obfuscation";
 
     private static boolean getSessionKeyObfuscationDefault()
     {

@@ -1,20 +1,20 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.cms.OriginatorInfo;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Store;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.cms.OriginatorInfo;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Store;
 
 public class OriginatorInformation
 {

@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.ua;
+package org.spongycastle.asn1.ua;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Ukrainian object identifiers

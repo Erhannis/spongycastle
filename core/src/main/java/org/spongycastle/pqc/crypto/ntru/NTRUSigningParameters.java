@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -7,9 +7,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.DecimalFormat;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
 
 /**
  * A set of parameters for NtruSign. Several predefined parameter sets are available and new ones can be created as well.

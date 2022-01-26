@@ -1,4 +1,4 @@
-package org.bouncycastle.jce;
+package org.spongycastle.jce;
 
 import java.security.cert.CertStoreParameters;
 import java.util.Collection;

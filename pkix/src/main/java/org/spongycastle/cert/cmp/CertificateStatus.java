@@ -1,16 +1,16 @@
-package org.bouncycastle.cert.cmp;
+package org.spongycastle.cert.cmp;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.cmp.CertStatus;
-import org.bouncycastle.asn1.cmp.PKIStatusInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.DigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.cmp.CertStatus;
+import org.spongycastle.asn1.cmp.PKIStatusInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.DigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.util.Arrays;
 
 public class CertificateStatus
 {

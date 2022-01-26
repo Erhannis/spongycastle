@@ -1,6 +1,6 @@
-package org.bouncycastle.cert.path.validations;
+package org.spongycastle.cert.path.validations;
 
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509CertificateHolder;
 
 class ValidationUtils
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.dvcs.test;
+package org.spongycastle.dvcs.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -7,36 +7,36 @@ import java.util.Iterator;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmp.PKIStatus;
-import org.bouncycastle.asn1.cmp.PKIStatusInfo;
-import org.bouncycastle.asn1.dvcs.CertEtcToken;
-import org.bouncycastle.asn1.dvcs.DVCSCertInfo;
-import org.bouncycastle.asn1.dvcs.DVCSCertInfoBuilder;
-import org.bouncycastle.asn1.dvcs.DVCSErrorNotice;
-import org.bouncycastle.asn1.dvcs.DVCSRequest;
-import org.bouncycastle.asn1.dvcs.DVCSRequestInformation;
-import org.bouncycastle.asn1.dvcs.DVCSRequestInformationBuilder;
-import org.bouncycastle.asn1.dvcs.DVCSResponse;
-import org.bouncycastle.asn1.dvcs.DVCSTime;
-import org.bouncycastle.asn1.dvcs.Data;
-import org.bouncycastle.asn1.dvcs.ServiceType;
-import org.bouncycastle.asn1.dvcs.TargetEtcChain;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.PolicyInformation;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSSignedData;
-import org.bouncycastle.dvcs.DVCSException;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cmp.PKIStatus;
+import org.spongycastle.asn1.cmp.PKIStatusInfo;
+import org.spongycastle.asn1.dvcs.CertEtcToken;
+import org.spongycastle.asn1.dvcs.DVCSCertInfo;
+import org.spongycastle.asn1.dvcs.DVCSCertInfoBuilder;
+import org.spongycastle.asn1.dvcs.DVCSErrorNotice;
+import org.spongycastle.asn1.dvcs.DVCSRequest;
+import org.spongycastle.asn1.dvcs.DVCSRequestInformation;
+import org.spongycastle.asn1.dvcs.DVCSRequestInformationBuilder;
+import org.spongycastle.asn1.dvcs.DVCSResponse;
+import org.spongycastle.asn1.dvcs.DVCSTime;
+import org.spongycastle.asn1.dvcs.Data;
+import org.spongycastle.asn1.dvcs.ServiceType;
+import org.spongycastle.asn1.dvcs.TargetEtcChain;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.asn1.x509.DigestInfo;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.PolicyInformation;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSSignedData;
+import org.spongycastle.dvcs.DVCSException;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
 
 public class DVCSParseTest
     extends TestCase
@@ -212,7 +212,7 @@ public class DVCSParseTest
     {
         byte[] requestBytes = Base64.decode(base64request);
 
-        org.bouncycastle.dvcs.DVCSRequest request = new org.bouncycastle.dvcs.DVCSRequest(new CMSSignedData(requestBytes));
+        org.spongycastle.dvcs.DVCSRequest request = new org.spongycastle.dvcs.DVCSRequest(new CMSSignedData(requestBytes));
 
         validate(name, request.getContent(), expected);
     }
@@ -235,7 +235,7 @@ public class DVCSParseTest
         throws DVCSException, IOException, CMSException
     {
         byte[] responseBytes = Base64.decode(base64response);
-        org.bouncycastle.dvcs.DVCSResponse response = new org.bouncycastle.dvcs.DVCSResponse(new CMSSignedData(responseBytes));
+        org.spongycastle.dvcs.DVCSResponse response = new org.spongycastle.dvcs.DVCSResponse(new CMSSignedData(responseBytes));
 
         validate(name, response.getContent(), expected);
     }

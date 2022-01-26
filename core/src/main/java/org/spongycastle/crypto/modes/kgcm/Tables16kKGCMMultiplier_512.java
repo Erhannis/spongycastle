@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.modes.kgcm;
+package org.spongycastle.crypto.modes.kgcm;
 
 public class Tables16kKGCMMultiplier_512
     implements KGCMMultiplier

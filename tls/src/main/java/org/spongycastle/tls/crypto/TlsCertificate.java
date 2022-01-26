@@ -1,12 +1,12 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
 
 /**
  * Interface providing the functional representation of a single X.509 certificate.

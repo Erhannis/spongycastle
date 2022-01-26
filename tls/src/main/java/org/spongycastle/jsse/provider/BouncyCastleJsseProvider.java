@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.AccessController;
 import java.security.GeneralSecurityException;
@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
+import org.spongycastle.util.Strings;
 
 @SuppressWarnings("serial")
 public class BouncyCastleJsseProvider
@@ -23,7 +23,7 @@ public class BouncyCastleJsseProvider
 {
     public static final String PROVIDER_NAME = "BCJSSE";
 
-    private static final String JSSE_CONFIG_PROPERTY = "org.bouncycastle.jsse.config";
+    private static final String JSSE_CONFIG_PROPERTY = "org.spongycastle.jsse.config";
 
     private static final double PROVIDER_VERSION = 1.0013;
     private static final String PROVIDER_INFO = "Bouncy Castle JSSE Provider Version 1.0.13";
@@ -152,7 +152,7 @@ public class BouncyCastleJsseProvider
     private boolean configure(final boolean fipsMode, final JcaTlsCryptoProvider cryptoProvider)
     {
         // TODO[jsse]: should X.509 be an alias.
-        addAlgorithmImplementation("KeyManagerFactory.X.509", "org.bouncycastle.jsse.provider.KeyManagerFactory", new EngineCreator()
+        addAlgorithmImplementation("KeyManagerFactory.X.509", "org.spongycastle.jsse.provider.KeyManagerFactory", new EngineCreator()
         {
             public Object createInstance(Object constructorParameter)
             {
@@ -162,7 +162,7 @@ public class BouncyCastleJsseProvider
         addAlias("Alg.Alias.KeyManagerFactory.X509", "X.509");
         addAlias("Alg.Alias.KeyManagerFactory.PKIX", "X.509");
 
-        addAlgorithmImplementation("TrustManagerFactory.PKIX", "org.bouncycastle.jsse.provider.TrustManagerFactory", new EngineCreator()
+        addAlgorithmImplementation("TrustManagerFactory.PKIX", "org.spongycastle.jsse.provider.TrustManagerFactory", new EngineCreator()
         {
             public Object createInstance(Object constructorParameter)
             {
@@ -172,7 +172,7 @@ public class BouncyCastleJsseProvider
         addAlias("Alg.Alias.TrustManagerFactory.X.509", "PKIX");
         addAlias("Alg.Alias.TrustManagerFactory.X509", "PKIX");
 
-        addAlgorithmImplementation("SSLContext.TLS", "org.bouncycastle.jsse.provider.SSLContext.TLS",
+        addAlgorithmImplementation("SSLContext.TLS", "org.spongycastle.jsse.provider.SSLContext.TLS",
             new EngineCreator()
             {
                 public Object createInstance(Object constructorParameter)
@@ -180,7 +180,7 @@ public class BouncyCastleJsseProvider
                     return new ProvSSLContextSpi(fipsMode, cryptoProvider, null);
                 }
             });
-        addAlgorithmImplementation("SSLContext.TLSV1", "org.bouncycastle.jsse.provider.SSLContext.TLSv1",
+        addAlgorithmImplementation("SSLContext.TLSV1", "org.spongycastle.jsse.provider.SSLContext.TLSv1",
             new EngineCreator()
             {
                 public Object createInstance(Object constructorParameter)
@@ -188,7 +188,7 @@ public class BouncyCastleJsseProvider
                     return new ProvSSLContextSpi(fipsMode, cryptoProvider, specifyClientProtocols("TLSv1"));
                 }
             });
-        addAlgorithmImplementation("SSLContext.TLSV1.1", "org.bouncycastle.jsse.provider.SSLContext.TLSv1_1",
+        addAlgorithmImplementation("SSLContext.TLSV1.1", "org.spongycastle.jsse.provider.SSLContext.TLSv1_1",
             new EngineCreator()
             {
                 public Object createInstance(Object constructorParameter)
@@ -196,7 +196,7 @@ public class BouncyCastleJsseProvider
                     return new ProvSSLContextSpi(fipsMode, cryptoProvider, specifyClientProtocols("TLSv1.1", "TLSv1"));
                 }
             });
-        addAlgorithmImplementation("SSLContext.TLSV1.2", "org.bouncycastle.jsse.provider.SSLContext.TLSv1_2",
+        addAlgorithmImplementation("SSLContext.TLSV1.2", "org.spongycastle.jsse.provider.SSLContext.TLSv1_2",
             new EngineCreator()
             {
                 public Object createInstance(Object constructorParameter)
@@ -205,7 +205,7 @@ public class BouncyCastleJsseProvider
                         specifyClientProtocols("TLSv1.2", "TLSv1.1", "TLSv1"));
                 }
             });
-        addAlgorithmImplementation("SSLContext.TLSV1.3", "org.bouncycastle.jsse.provider.SSLContext.TLSv1_3",
+        addAlgorithmImplementation("SSLContext.TLSV1.3", "org.spongycastle.jsse.provider.SSLContext.TLSv1_3",
             new EngineCreator()
             {
                 public Object createInstance(Object constructorParameter)
@@ -214,7 +214,7 @@ public class BouncyCastleJsseProvider
                         specifyClientProtocols("TLSv1.3", "TLSv1.2", "TLSv1.1", "TLSv1"));
                 }
             });
-        addAlgorithmImplementation("SSLContext.DEFAULT", "org.bouncycastle.jsse.provider.SSLContext.Default",
+        addAlgorithmImplementation("SSLContext.DEFAULT", "org.spongycastle.jsse.provider.SSLContext.Default",
             new EngineCreator()
             {
                 public Object createInstance(Object constructorParameter) throws GeneralSecurityException

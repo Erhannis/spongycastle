@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * This class implements permutations of the set {0,1,...,n-1} for some given n

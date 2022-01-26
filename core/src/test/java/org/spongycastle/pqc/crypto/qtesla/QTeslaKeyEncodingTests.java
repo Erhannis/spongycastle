@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.crypto.qtesla;
+package org.spongycastle.pqc.crypto.qtesla;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Longs;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Longs;
+import org.spongycastle.util.encoders.Hex;
 
 import junit.framework.TestCase;
 
@@ -733,7 +733,7 @@ public class QTeslaKeyEncodingTests
         // Vector data had to be put in file, string constants were too long.
         //
 
-        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org/bouncycastle/pqc/crypto/test/q3pIII.txt")));
+        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org.spongycastle.pqc/crypto/test/q3pIII.txt")));
 
         byte[] seed = Hex.decode(bin.readLine());
         byte[] msg = Hex.decode(bin.readLine());
@@ -749,8 +749,8 @@ public class QTeslaKeyEncodingTests
         //
         byte[] expandedSeed = Hex.decode("F8BC708C44E3D8A298F708196BC66F75F91732E5AF062775A9ACA36CE2DA64BCF62CAA4F63293C7A8F894856E9F263EB9CA4A0648141B4B0EA3A2D3364C36A83");
 
-        long[] s_poly = readLongs("/org/bouncycastle/pqc/crypto/test/3P_s.long");
-        long[] e_poly = readLongs("/org/bouncycastle/pqc/crypto/test/3P_e.long");
+        long[] s_poly = readLongs("/org.spongycastle.pqc/crypto/test/3P_s.long");
+        long[] e_poly = readLongs("/org.spongycastle.pqc/crypto/test/3P_e.long");
 
         //
         // There is no explicit decode of private keys into polynomials defined in the C library.
@@ -768,7 +768,7 @@ public class QTeslaKeyEncodingTests
     public void testDecodeEncodePublicKeyQT3P()
         throws Exception
     {
-        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org/bouncycastle/pqc/crypto/test/q3pIII.txt")));
+        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org.spongycastle.pqc/crypto/test/q3pIII.txt")));
 
         byte[] seed = Hex.decode(bin.readLine());
         byte[] msg = Hex.decode(bin.readLine());

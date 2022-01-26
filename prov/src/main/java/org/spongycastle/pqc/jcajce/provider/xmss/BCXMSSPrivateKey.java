@@ -1,20 +1,20 @@
-package org.bouncycastle.pqc.jcajce.provider.xmss;
+package org.spongycastle.pqc.jcajce.provider.xmss;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.security.PrivateKey;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.pqc.asn1.XMSSKeyParams;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyInfoFactory;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
-import org.bouncycastle.pqc.jcajce.interfaces.XMSSPrivateKey;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.pqc.asn1.XMSSKeyParams;
+import org.spongycastle.pqc.crypto.util.PrivateKeyFactory;
+import org.spongycastle.pqc.crypto.util.PrivateKeyInfoFactory;
+import org.spongycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
+import org.spongycastle.pqc.jcajce.interfaces.XMSSPrivateKey;
+import org.spongycastle.util.Arrays;
 
 public class BCXMSSPrivateKey
     implements PrivateKey, XMSSPrivateKey

@@ -1,9 +1,9 @@
-package org.bouncycastle.its.bc;
+package org.spongycastle.its.bc;
 
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.ITSImplicitCertificateBuilder;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
-import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.ITSImplicitCertificateBuilder;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.operator.bc.BcDigestCalculatorProvider;
 
 public class BcITSImplicitCertificateBuilder
     extends ITSImplicitCertificateBuilder

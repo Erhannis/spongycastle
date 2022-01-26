@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package org.spongycastle.pqc.math.ntru.polynomial.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.LongPolynomial5;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.LongPolynomial5;
+import org.spongycastle.util.Arrays;
 
 public class LongPolynomial5Test
     extends TestCase

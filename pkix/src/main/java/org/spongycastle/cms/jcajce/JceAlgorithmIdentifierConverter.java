@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 
 import java.security.AlgorithmParameters;
@@ -7,9 +7,9 @@ import java.security.NoSuchProviderException;
 import java.security.Provider;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
 
 public class JceAlgorithmIdentifierConverter
 {

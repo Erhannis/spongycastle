@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,46 +17,46 @@ import java.util.Vector;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.TrustManagerFactory;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
-import org.bouncycastle.asn1.sec.ECPrivateKey;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.Certificate;
-import org.bouncycastle.tls.CertificateEntry;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsContext;
-import org.bouncycastle.tls.TlsCredentialedAgreement;
-import org.bouncycastle.tls.TlsCredentialedDecryptor;
-import org.bouncycastle.tls.TlsCredentialedSigner;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.tls.crypto.TlsCrypto;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.impl.bc.BcDefaultTlsCredentialedAgreement;
-import org.bouncycastle.tls.crypto.impl.bc.BcDefaultTlsCredentialedDecryptor;
-import org.bouncycastle.tls.crypto.impl.bc.BcDefaultTlsCredentialedSigner;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaDefaultTlsCredentialedSigner;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.jcajce.JceDefaultTlsCredentialedAgreement;
-import org.bouncycastle.tls.crypto.impl.jcajce.JceDefaultTlsCredentialedDecryptor;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.io.pem.PemReader;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.pkcs.RSAPrivateKey;
+import org.spongycastle.asn1.sec.ECPrivateKey;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.spongycastle.crypto.util.PrivateKeyFactory;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.Certificate;
+import org.spongycastle.tls.CertificateEntry;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsContext;
+import org.spongycastle.tls.TlsCredentialedAgreement;
+import org.spongycastle.tls.TlsCredentialedDecryptor;
+import org.spongycastle.tls.TlsCredentialedSigner;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.impl.bc.BcDefaultTlsCredentialedAgreement;
+import org.spongycastle.tls.crypto.impl.bc.BcDefaultTlsCredentialedDecryptor;
+import org.spongycastle.tls.crypto.impl.bc.BcDefaultTlsCredentialedSigner;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsCrypto;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaDefaultTlsCredentialedSigner;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCrypto;
+import org.spongycastle.tls.crypto.impl.jcajce.JceDefaultTlsCredentialedAgreement;
+import org.spongycastle.tls.crypto.impl.jcajce.JceDefaultTlsCredentialedDecryptor;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.io.pem.PemObject;
+import org.spongycastle.util.io.pem.PemReader;
 
 public class TlsTestUtils
 {
@@ -82,7 +82,7 @@ public class TlsTestUtils
             + "0lAQH/BAgwBgYEVR0lADAcBgNVHREBAf8EEjAQgQ50ZXN0QHRlc3QudGVzdDANBgkqhkiG9w0BAQQFAANBAJg55PBS"
             + "weg6obRUKF4FF6fCrWFi6oCYSQ99LWcAeupc5BofW5MstFMhCOaEucuGVqunwT5G7/DweazzCIrSzB0=");
 
-    static String fingerprint(org.bouncycastle.asn1.x509.Certificate c)
+    static String fingerprint(org.spongycastle.asn1.x509.Certificate c)
         throws IOException
     {
         byte[] der = c.getEncoded();
@@ -365,13 +365,13 @@ public class TlsTestUtils
         return loadCertificateChain(context.getServerVersion(), context.getCrypto(), resources);
     }
 
-    static org.bouncycastle.asn1.x509.Certificate loadBcCertificateResource(String resource)
+    static org.spongycastle.asn1.x509.Certificate loadBcCertificateResource(String resource)
         throws IOException
     {
         PemObject pem = loadPemResource(resource);
         if (pem.getType().endsWith("CERTIFICATE"))
         {
-            return org.bouncycastle.asn1.x509.Certificate.getInstance(pem.getContent());
+            return org.spongycastle.asn1.x509.Certificate.getInstance(pem.getContent());
         }
         throw new IllegalArgumentException("'resource' doesn't specify a valid certificate");
     }

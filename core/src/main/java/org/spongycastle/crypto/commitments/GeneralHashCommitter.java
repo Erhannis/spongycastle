@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.commitments;
+package org.spongycastle.crypto.commitments;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.Commitment;
-import org.bouncycastle.crypto.Committer;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Commitment;
+import org.spongycastle.crypto.Committer;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.util.Arrays;
 
 /**
  * A basic hash-committer based on the one described in "Making Mix Nets Robust for Electronic Voting by Randomized Partial Checking",

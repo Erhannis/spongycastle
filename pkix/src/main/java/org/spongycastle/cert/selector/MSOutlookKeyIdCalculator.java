@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.selector;
+package org.spongycastle.cert.selector;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.util.Pack;
 
 class MSOutlookKeyIdCalculator
 {

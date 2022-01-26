@@ -1,10 +1,10 @@
-package org.bouncycastle.util.test;
+package org.spongycastle.util.test;
 
 import java.io.PrintStream;
 import java.util.Enumeration;
 import java.util.Vector;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 public abstract class SimpleTest
     implements Test

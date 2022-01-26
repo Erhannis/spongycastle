@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -31,9 +31,9 @@ import javax.naming.directory.SearchControls;
 import javax.naming.directory.SearchResult;
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.x509.CertificatePair;
-import org.bouncycastle.jce.X509LDAPCertStoreParameters;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.x509.CertificatePair;
+import org.spongycastle.jce.X509LDAPCertStoreParameters;
 
 /**
  * 
@@ -41,7 +41,7 @@ import org.bouncycastle.jce.X509LDAPCertStoreParameters;
  * from a LDAP location.
  * <p>
  * At first a search is performed in the ldap*AttributeNames of the
- * {@link org.bouncycastle.jce.X509LDAPCertStoreParameters} with the given
+ * {@link org.spongycastle.jce.X509LDAPCertStoreParameters} with the given
  * information of the subject (for all kind of certificates) or issuer (for
  * CRLs), respectively, if a X509CertSelector is given with that details. For
  * CRLs, CA certificates and cross certificates a coarse search is made only for

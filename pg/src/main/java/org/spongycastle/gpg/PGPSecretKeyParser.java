@@ -1,12 +1,12 @@
-package org.bouncycastle.gpg;
+package org.spongycastle.gpg;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.openpgp.OpenedPGPKeyData;
-import org.bouncycastle.openpgp.PGPExtendedKeyHeader;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.openpgp.OpenedPGPKeyData;
+import org.spongycastle.openpgp.PGPExtendedKeyHeader;
+import org.spongycastle.util.Strings;
 
 public class PGPSecretKeyParser
 {

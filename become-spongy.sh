@@ -4,10 +4,10 @@
 
 rm -Rf crypto
 
-# Package rename org.bouncycastle to org.spongycastle
+# Package rename org.spongycastle.to org.spongycastle
     
-find -name bouncycastle | xargs rename s/bouncycastle/spongycastle/
-find bc* -type f | xargs sed -i s/bouncycastle/spongycastle/g
+find -name.spongycastle.| xargs rename s.spongycastle.spongycastle/
+find bc* -type f | xargs sed -i s.spongycastle.spongycastle/g
 
 # BC to SC for provider name
     

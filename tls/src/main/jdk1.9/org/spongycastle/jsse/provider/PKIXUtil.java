@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.cert.CertPathBuilder;
 import java.security.cert.PKIXBuilderParameters;

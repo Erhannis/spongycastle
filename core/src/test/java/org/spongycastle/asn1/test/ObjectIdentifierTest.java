@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestResult;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestResult;
 
 public class ObjectIdentifierTest
     extends SimpleTest

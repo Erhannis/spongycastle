@@ -1,4 +1,4 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 /**
  * Holder class for a response containing the details making up /csrattrs response.

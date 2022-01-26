@@ -1,4 +1,4 @@
-package org.bouncycastle.cert;
+package org.spongycastle.cert;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -11,19 +11,19 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.AttCertValidityPeriod;
-import org.bouncycastle.asn1.x509.Attribute;
-import org.bouncycastle.asn1.x509.AttributeCertificate;
-import org.bouncycastle.asn1.x509.AttributeCertificateInfo;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AttCertValidityPeriod;
+import org.spongycastle.asn1.x509.Attribute;
+import org.spongycastle.asn1.x509.AttributeCertificate;
+import org.spongycastle.asn1.x509.AttributeCertificateInfo;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.util.Encodable;
 
 /**
  * Holding class for an X.509 AttributeCertificate structure.

@@ -1,4 +1,4 @@
-package org.bouncycastle.its.jcajce;
+package org.spongycastle.its.jcajce;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -6,25 +6,25 @@ import java.security.Provider;
 import java.security.Signature;
 import java.security.interfaces.ECPublicKey;
 
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.operator.ITSContentVerifierProvider;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.oer.OEREncoder;
-import org.bouncycastle.oer.its.PublicVerificationKey;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
-import org.bouncycastle.oer.its.VerificationKeyIndicator;
-import org.bouncycastle.oer.its.template.IEEE1609dot2;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.operator.ITSContentVerifierProvider;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.oer.OEREncoder;
+import org.spongycastle.oer.its.PublicVerificationKey;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.oer.its.VerificationKeyIndicator;
+import org.spongycastle.oer.its.template.IEEE1609dot2;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.util.Arrays;
 
 public class JcaITSContentVerifierProvider
     implements ITSContentVerifierProvider

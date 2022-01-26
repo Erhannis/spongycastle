@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.crypto.agreement.X448Agreement;
-import org.bouncycastle.crypto.generators.X448KeyPairGenerator;
-import org.bouncycastle.crypto.params.X448KeyGenerationParameters;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.crypto.agreement.X448Agreement;
+import org.spongycastle.crypto.generators.X448KeyPairGenerator;
+import org.spongycastle.crypto.params.X448KeyGenerationParameters;
+import org.spongycastle.util.test.SimpleTest;
 
 public class X448Test
     extends SimpleTest

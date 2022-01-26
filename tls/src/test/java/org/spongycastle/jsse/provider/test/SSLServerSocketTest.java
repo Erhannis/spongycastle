@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider.test;
+package org.spongycastle.jsse.provider.test;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -6,7 +6,7 @@ import java.security.GeneralSecurityException;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLServerSocket;
 
-import org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
+import org.spongycastle.jsse.provider.BouncyCastleJsseProvider;
 
 import junit.framework.TestCase;
 

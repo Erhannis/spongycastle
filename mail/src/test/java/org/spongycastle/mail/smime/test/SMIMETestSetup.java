@@ -1,5 +1,5 @@
-// Copyright (c) 2005 The Legion Of The Bouncy Castle (https://www.bouncycastle.org)
-package org.bouncycastle.mail.smime.test;
+// Copyright (c) 2005 The Legion Of The Bouncy Castle (https://www.spongycastle.org)
+package org.spongycastle.mail.smime.test;
 
 import java.security.Security;
 
@@ -21,21 +21,21 @@ class SMIMETestSetup extends TestSetup
     protected void setUp()
     {
         Security
-                .addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+                .addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
 
         MailcapCommandMap _mailcap = (MailcapCommandMap)CommandMap
                 .getDefaultCommandMap();
 
         _mailcap
-                .addMailcap("application/pkcs7-signature;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_signature");
+                .addMailcap("application/pkcs7-signature;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_signature");
         _mailcap
-                .addMailcap("application/pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.pkcs7_mime");
+                .addMailcap("application/pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.pkcs7_mime");
         _mailcap
-                .addMailcap("application/x-pkcs7-signature;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_signature");
+                .addMailcap("application/x-pkcs7-signature;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_signature");
         _mailcap
-                .addMailcap("application/x-pkcs7-mime;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.x_pkcs7_mime");
+                .addMailcap("application/x-pkcs7-mime;; x-java-content-handler=org.spongycastle.mail.smime.handlers.x_pkcs7_mime");
         _mailcap
-                .addMailcap("multipart/signed;; x-java-content-handler=org.bouncycastle.mail.smime.handlers.multipart_signed");
+                .addMailcap("multipart/signed;; x-java-content-handler=org.spongycastle.mail.smime.handlers.multipart_signed");
 
         originalMap = CommandMap.getDefaultCommandMap();
         CommandMap.setDefaultCommandMap(_mailcap);

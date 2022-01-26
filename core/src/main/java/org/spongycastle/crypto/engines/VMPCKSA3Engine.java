@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
 public class VMPCKSA3Engine extends VMPCEngine
 {

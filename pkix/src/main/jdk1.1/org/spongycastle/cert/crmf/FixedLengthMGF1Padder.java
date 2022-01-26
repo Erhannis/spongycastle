@@ -1,11 +1,11 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.generators.MGF1BytesGenerator;
-import org.bouncycastle.crypto.params.MGFParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.generators.MGF1BytesGenerator;
+import org.spongycastle.crypto.params.MGFParameters;
 
 /**
  * An encrypted value padder that uses MGF1 as the basis of the padding.

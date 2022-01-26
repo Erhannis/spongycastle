@@ -1,4 +1,4 @@
-package org.bouncycastle.kmip.wire;
+package org.spongycastle.kmip.wire;
 
 public class KMIPInterval
     implements KMIPItem

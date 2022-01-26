@@ -1,4 +1,4 @@
-package org.bouncycastle.kmip.wire.binary;
+package org.spongycastle.kmip.wire.binary;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -7,11 +7,11 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.kmip.wire.KMIPEncodable;
-import org.bouncycastle.kmip.wire.KMIPEncoder;
-import org.bouncycastle.kmip.wire.KMIPItem;
-import org.bouncycastle.kmip.wire.KMIPType;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.kmip.wire.KMIPEncodable;
+import org.spongycastle.kmip.wire.KMIPEncoder;
+import org.spongycastle.kmip.wire.KMIPItem;
+import org.spongycastle.kmip.wire.KMIPType;
+import org.spongycastle.util.Strings;
 
 public class BinaryEncoder
     implements KMIPEncoder

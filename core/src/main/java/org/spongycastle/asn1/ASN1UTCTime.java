@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.SimpleTimeZone;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
 - * UTC time object.

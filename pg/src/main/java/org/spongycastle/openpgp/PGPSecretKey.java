@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -9,33 +9,33 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.BCPGObject;
-import org.bouncycastle.bcpg.BCPGOutputStream;
-import org.bouncycastle.bcpg.ContainedPacket;
-import org.bouncycastle.bcpg.DSASecretBCPGKey;
-import org.bouncycastle.bcpg.ECSecretBCPGKey;
-import org.bouncycastle.bcpg.EdSecretBCPGKey;
-import org.bouncycastle.bcpg.ElGamalSecretBCPGKey;
-import org.bouncycastle.bcpg.HashAlgorithmTags;
-import org.bouncycastle.bcpg.PublicKeyPacket;
-import org.bouncycastle.bcpg.PublicSubkeyPacket;
-import org.bouncycastle.bcpg.RSASecretBCPGKey;
-import org.bouncycastle.bcpg.S2K;
-import org.bouncycastle.bcpg.SecretKeyPacket;
-import org.bouncycastle.bcpg.SecretSubkeyPacket;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.bcpg.UserAttributePacket;
-import org.bouncycastle.bcpg.UserIDPacket;
-import org.bouncycastle.gpg.SExprParser;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.openpgp.operator.PBEProtectionRemoverFactory;
-import org.bouncycastle.openpgp.operator.PBESecretKeyDecryptor;
-import org.bouncycastle.openpgp.operator.PBESecretKeyEncryptor;
-import org.bouncycastle.openpgp.operator.PGPContentSignerBuilder;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.BCPGObject;
+import org.spongycastle.bcpg.BCPGOutputStream;
+import org.spongycastle.bcpg.ContainedPacket;
+import org.spongycastle.bcpg.DSASecretBCPGKey;
+import org.spongycastle.bcpg.ECSecretBCPGKey;
+import org.spongycastle.bcpg.EdSecretBCPGKey;
+import org.spongycastle.bcpg.ElGamalSecretBCPGKey;
+import org.spongycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.bcpg.PublicSubkeyPacket;
+import org.spongycastle.bcpg.RSASecretBCPGKey;
+import org.spongycastle.bcpg.S2K;
+import org.spongycastle.bcpg.SecretKeyPacket;
+import org.spongycastle.bcpg.SecretSubkeyPacket;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.bcpg.UserAttributePacket;
+import org.spongycastle.bcpg.UserIDPacket;
+import org.spongycastle.gpg.SExprParser;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.openpgp.operator.PBEProtectionRemoverFactory;
+import org.spongycastle.openpgp.operator.PBESecretKeyDecryptor;
+import org.spongycastle.openpgp.operator.PBESecretKeyEncryptor;
+import org.spongycastle.openpgp.operator.PGPContentSignerBuilder;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.util.Arrays;
 
 /**
  * general class to handle and construct  a PGP secret key object.
@@ -961,7 +961,7 @@ public class PGPSecretKey
      * Parse a secret key from one of the GPG S expression keys associating it with the passed in public key.
      *
      * @return a secret key object.
-     * @deprecated use org.bouncycastle.gpg.SExprParser - it will also allow you to verify the protection checksum if it is available.
+     * @deprecated use org.spongycastle.gpg.SExprParser - it will also allow you to verify the protection checksum if it is available.
      */
     public static PGPSecretKey parseSecretKeyFromSExpr(InputStream inputStream, PBEProtectionRemoverFactory keyProtectionRemoverFactory, PGPPublicKey pubKey)
         throws IOException, PGPException
@@ -973,7 +973,7 @@ public class PGPSecretKey
      * Parse a secret key from one of the GPG S expression keys.
      *
      * @return a secret key object.
-     * @deprecated use org.bouncycastle.gpg.SExprParser - it will also allow you to verify the protection checksum if it is available.
+     * @deprecated use org.spongycastle.gpg.SExprParser - it will also allow you to verify the protection checksum if it is available.
      */
     public static PGPSecretKey parseSecretKeyFromSExpr(InputStream inputStream, PBEProtectionRemoverFactory keyProtectionRemoverFactory, KeyFingerPrintCalculator fingerPrintCalculator)
         throws IOException, PGPException

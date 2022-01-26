@@ -1,17 +1,17 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.RenegotiationPolicy;
-import org.bouncycastle.tls.TlsClientProtocol;
+import org.spongycastle.tls.RenegotiationPolicy;
+import org.spongycastle.tls.TlsClientProtocol;
 
 class ProvTlsClientProtocol extends TlsClientProtocol
 {
     private static final boolean provAcceptRenegotiation = PropertyUtils.getBooleanSystemProperty(
-        "org.bouncycastle.jsse.client.acceptRenegotiation", false);
+        "org.spongycastle.jsse.client.acceptRenegotiation", false);
 
     private final Closeable closeable;
 

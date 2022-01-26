@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ec;
+package org.spongycastle.jcajce.provider.asymmetric.ec;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -9,29 +9,29 @@ import java.security.spec.ECPoint;
 import java.security.spec.ECPublicKeySpec;
 import java.security.spec.EllipticCurve;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X962Parameters;
-import org.bouncycastle.asn1.x9.X9ECPoint;
-import org.bouncycastle.asn1.x9.X9IntegerConverter;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.jcajce.provider.config.ProviderConfiguration;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X962Parameters;
+import org.spongycastle.asn1.x9.X9ECPoint;
+import org.spongycastle.asn1.x9.X9IntegerConverter;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.EC5Util;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.jcajce.provider.config.ProviderConfiguration;
+import org.spongycastle.jce.interfaces.ECPointEncoder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.Properties;
 
 public class BCECPublicKey
-    implements ECPublicKey, org.bouncycastle.jce.interfaces.ECPublicKey, ECPointEncoder
+    implements ECPublicKey, org.spongycastle.jce.interfaces.ECPublicKey, ECPointEncoder
 {
     static final long serialVersionUID = 2422789860422731812L;
 
@@ -66,7 +66,7 @@ public class BCECPublicKey
 
     public BCECPublicKey(
         String algorithm,
-        org.bouncycastle.jce.spec.ECPublicKeySpec spec,
+        org.spongycastle.jce.spec.ECPublicKeySpec spec,
         ProviderConfiguration configuration)
     {
         this.algorithm = algorithm;
@@ -83,7 +83,7 @@ public class BCECPublicKey
         }
         else
         {
-            org.bouncycastle.jce.spec.ECParameterSpec s = configuration.getEcImplicitlyCa();
+            org.spongycastle.jce.spec.ECParameterSpec s = configuration.getEcImplicitlyCa();
 
             this.ecPublicKey = new ECPublicKeyParameters(s.getCurve().createPoint(spec.getQ().getAffineXCoord().toBigInteger(), spec.getQ().getAffineYCoord().toBigInteger()), EC5Util.getDomainParameters(configuration, (ECParameterSpec)null));
             this.ecSpec = null;
@@ -120,7 +120,7 @@ public class BCECPublicKey
     public BCECPublicKey(
         String algorithm,
         ECPublicKeyParameters params,
-        org.bouncycastle.jce.spec.ECParameterSpec spec,
+        org.spongycastle.jce.spec.ECParameterSpec spec,
         ProviderConfiguration configuration)
     {
         ECDomainParameters      dp = params.getParameters();
@@ -235,7 +235,7 @@ public class BCECPublicKey
 
     public byte[] getEncoded()
     {
-        boolean compress = withCompression || Properties.isOverrideSet("org.bouncycastle.ec.enable_pc");
+        boolean compress = withCompression || Properties.isOverrideSet("org.spongycastle.ec.enable_pc");
 
         AlgorithmIdentifier algId = new AlgorithmIdentifier(
             X9ObjectIdentifiers.id_ecPublicKey,
@@ -252,7 +252,7 @@ public class BCECPublicKey
         return ecSpec;
     }
 
-    public org.bouncycastle.jce.spec.ECParameterSpec getParameters()
+    public org.spongycastle.jce.spec.ECParameterSpec getParameters()
     {
         if (ecSpec == null)     // implictlyCA
         {
@@ -267,9 +267,9 @@ public class BCECPublicKey
         return EC5Util.convertPoint(ecPublicKey.getQ());
     }
 
-    public org.bouncycastle.math.ec.ECPoint getQ()
+    public org.spongycastle.math.ec.ECPoint getQ()
     {
-        org.bouncycastle.math.ec.ECPoint q = ecPublicKey.getQ();
+        org.spongycastle.math.ec.ECPoint q = ecPublicKey.getQ();
 
         if (ecSpec == null)
         {
@@ -284,7 +284,7 @@ public class BCECPublicKey
         return ecPublicKey;
     }
 
-    org.bouncycastle.jce.spec.ECParameterSpec engineGetSpec()
+    org.spongycastle.jce.spec.ECParameterSpec engineGetSpec()
     {
         if (ecSpec != null)
         {

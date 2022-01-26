@@ -1,13 +1,13 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.BERSequenceGenerator;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.operator.OutputCompressor;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.BERSequenceGenerator;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.operator.OutputCompressor;
 
 /**
  * General class for generating a compressed CMS message stream.

@@ -1,12 +1,12 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.tls.crypto.TlsCertificateRole;
-import org.bouncycastle.tls.crypto.TlsEncryptor;
-import org.bouncycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.TlsCertificateRole;
+import org.spongycastle.tls.crypto.TlsEncryptor;
+import org.spongycastle.tls.crypto.TlsSecret;
 
 /**
  * RSA utility methods.

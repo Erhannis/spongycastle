@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.prng.test;
+package org.spongycastle.crypto.prng.test;
 
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.crypto.prng.EntropySourceProvider;
 
 public class TestEntropySourceProvider
     implements EntropySourceProvider

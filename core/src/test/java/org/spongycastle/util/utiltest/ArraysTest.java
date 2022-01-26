@@ -1,7 +1,7 @@
-package org.bouncycastle.util.utiltest;
+package org.spongycastle.util.utiltest;
 
 import junit.framework.TestCase;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 public class ArraysTest
     extends TestCase

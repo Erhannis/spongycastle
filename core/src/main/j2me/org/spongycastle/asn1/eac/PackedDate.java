@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.eac;
+package org.spongycastle.asn1.eac;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * EAC encoding date object

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
@@ -7,12 +7,12 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.crypto.generators.OpenSSLPBEParametersGenerator;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.generators.OpenSSLPBEParametersGenerator;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.util.Strings;
 
 public final class OpenSSLPBKDF
 {

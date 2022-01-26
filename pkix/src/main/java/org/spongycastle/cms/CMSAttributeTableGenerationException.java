@@ -1,4 +1,4 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 public class CMSAttributeTableGenerationException
     extends CMSRuntimeException

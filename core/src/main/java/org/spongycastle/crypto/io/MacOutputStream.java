@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.io;
+package org.spongycastle.crypto.io;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.crypto.Mac;
+import org.spongycastle.crypto.Mac;
 
 public class MacOutputStream
     extends OutputStream

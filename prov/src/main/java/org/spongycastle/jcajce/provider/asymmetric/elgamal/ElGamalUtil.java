@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.elgamal;
+package org.spongycastle.jcajce.provider.asymmetric.elgamal;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
@@ -7,16 +7,16 @@ import java.security.PublicKey;
 import javax.crypto.interfaces.DHPrivateKey;
 import javax.crypto.interfaces.DHPublicKey;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ElGamalParameters;
-import org.bouncycastle.crypto.params.ElGamalPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ElGamalPublicKeyParameters;
-import org.bouncycastle.jce.interfaces.ElGamalPrivateKey;
-import org.bouncycastle.jce.interfaces.ElGamalPublicKey;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ElGamalParameters;
+import org.spongycastle.crypto.params.ElGamalPrivateKeyParameters;
+import org.spongycastle.crypto.params.ElGamalPublicKeyParameters;
+import org.spongycastle.jce.interfaces.ElGamalPrivateKey;
+import org.spongycastle.jce.interfaces.ElGamalPublicKey;
 
 /**
  * utility class for converting jce/jca ElGamal objects
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 public class ElGamalUtil
 {

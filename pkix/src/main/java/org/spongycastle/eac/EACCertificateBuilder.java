@@ -1,18 +1,18 @@
-package org.bouncycastle.eac;
+package org.spongycastle.eac;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.DERApplicationSpecific;
-import org.bouncycastle.asn1.eac.CVCertificate;
-import org.bouncycastle.asn1.eac.CertificateBody;
-import org.bouncycastle.asn1.eac.CertificateHolderAuthorization;
-import org.bouncycastle.asn1.eac.CertificateHolderReference;
-import org.bouncycastle.asn1.eac.CertificationAuthorityReference;
-import org.bouncycastle.asn1.eac.EACTags;
-import org.bouncycastle.asn1.eac.PackedDate;
-import org.bouncycastle.asn1.eac.PublicKeyDataObject;
-import org.bouncycastle.eac.operator.EACSigner;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.DERApplicationSpecific;
+import org.spongycastle.asn1.eac.CVCertificate;
+import org.spongycastle.asn1.eac.CertificateBody;
+import org.spongycastle.asn1.eac.CertificateHolderAuthorization;
+import org.spongycastle.asn1.eac.CertificateHolderReference;
+import org.spongycastle.asn1.eac.CertificationAuthorityReference;
+import org.spongycastle.asn1.eac.EACTags;
+import org.spongycastle.asn1.eac.PackedDate;
+import org.spongycastle.asn1.eac.PublicKeyDataObject;
+import org.spongycastle.eac.operator.EACSigner;
 
 public class EACCertificateBuilder
 {

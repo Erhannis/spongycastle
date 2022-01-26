@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.net.SocketTimeoutException;
 
-import org.bouncycastle.tls.crypto.TlsCipher;
-import org.bouncycastle.tls.crypto.TlsDecodeResult;
-import org.bouncycastle.tls.crypto.TlsEncodeResult;
-import org.bouncycastle.tls.crypto.TlsNullNullCipher;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.crypto.TlsCipher;
+import org.spongycastle.tls.crypto.TlsDecodeResult;
+import org.spongycastle.tls.crypto.TlsEncodeResult;
+import org.spongycastle.tls.crypto.TlsNullNullCipher;
+import org.spongycastle.util.Arrays;
 
 class DTLSRecordLayer
     implements DatagramTransport

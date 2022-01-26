@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x509.qualified.QCStatement;
-import org.bouncycastle.asn1.x509.qualified.RFC3739QCObjectIdentifiers;
-import org.bouncycastle.asn1.x509.qualified.SemanticsInformation;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.x509.qualified.QCStatement;
+import org.spongycastle.asn1.x509.qualified.RFC3739QCObjectIdentifiers;
+import org.spongycastle.asn1.x509.qualified.SemanticsInformation;
+import org.spongycastle.util.test.SimpleTest;
 
 public class QCStatementUnitTest 
     extends SimpleTest

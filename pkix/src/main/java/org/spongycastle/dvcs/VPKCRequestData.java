@@ -1,11 +1,11 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.asn1.dvcs.Data;
-import org.bouncycastle.asn1.dvcs.TargetEtcChain;
+import org.spongycastle.asn1.dvcs.Data;
+import org.spongycastle.asn1.dvcs.TargetEtcChain;
 
 /**
  * Data piece of DVCS request to VPKC service (Verify Public Key Certificates).

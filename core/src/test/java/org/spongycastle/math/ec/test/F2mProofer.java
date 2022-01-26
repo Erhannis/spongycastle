@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package org.spongycastle.math.ec.test;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,17 +10,17 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
 
-import org.bouncycastle.asn1.sec.SECNamedCurves;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.asn1.sec.SECNamedCurves;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.util.BigIntegers;
 
 public class F2mProofer
 {
     private static final int NUM_SAMPLES = 1000;
 
-    private static final String PATH = "crypto/test/src/org/bouncycastle/math/ec/test/samples/";
+    private static final String PATH = "crypto/test/src/org.spongycastle.math/ec/test/samples/";
 
     private static final String INPUT_FILE_NAME_PREFIX = "Input_";
 

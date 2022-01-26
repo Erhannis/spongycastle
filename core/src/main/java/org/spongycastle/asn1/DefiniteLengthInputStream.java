@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.util.io.Streams;
 
 /**
  * Parse data stream of expected ASN.1 data expecting definite-length encoding..

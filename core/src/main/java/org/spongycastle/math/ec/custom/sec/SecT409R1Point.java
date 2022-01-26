@@ -1,10 +1,10 @@
-package org.bouncycastle.math.ec.custom.sec;
+package org.spongycastle.math.ec.custom.sec;
 
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.ECPoint.AbstractF2m;
+import org.spongycastle.math.ec.ECConstants;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.ECPoint.AbstractF2m;
 
 public class SecT409R1Point extends AbstractF2m
 {

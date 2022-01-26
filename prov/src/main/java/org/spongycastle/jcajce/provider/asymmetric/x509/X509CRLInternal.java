@@ -1,9 +1,9 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.security.cert.CRLException;
 
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 class X509CRLInternal extends X509CRLImpl
 {

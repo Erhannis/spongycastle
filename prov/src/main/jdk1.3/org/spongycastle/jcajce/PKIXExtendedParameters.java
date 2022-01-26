@@ -1,9 +1,9 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
 import java.security.cert.CertPathParameters;
 import java.security.cert.CertSelector;
 import java.security.cert.PKIXParameters;
-import org.bouncycastle.jce.cert.TrustAnchor;
+import org.spongycastle.jce.cert.TrustAnchor;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralName;
 
 /**
  * This class extends the PKIXParameters with a validity model parameter.

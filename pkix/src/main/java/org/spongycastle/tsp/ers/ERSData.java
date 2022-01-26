@@ -1,6 +1,6 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * General interface for an ERSData data group object.

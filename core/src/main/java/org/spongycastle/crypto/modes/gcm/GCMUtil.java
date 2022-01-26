@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.modes.gcm;
+package org.spongycastle.crypto.modes.gcm;
 
-import org.bouncycastle.math.raw.Interleave;
-import org.bouncycastle.util.Longs;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.math.raw.Interleave;
+import org.spongycastle.util.Longs;
+import org.spongycastle.util.Pack;
 
 public abstract class GCMUtil
 {

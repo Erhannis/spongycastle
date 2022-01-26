@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.cmp;
+package org.spongycastle.asn1.cmp;
 
-import org.bouncycastle.asn1.ASN1Null;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DERNull;
+import org.spongycastle.asn1.ASN1Null;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DERNull;
 
 public class PKIConfirmContent
     extends ASN1Object

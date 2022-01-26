@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.examples;
+package org.spongycastle.mail.smime.examples;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,8 +13,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
-import org.bouncycastle.cms.jcajce.ZlibCompressor;
-import org.bouncycastle.mail.smime.SMIMECompressedGenerator;
+import org.spongycastle.cms.jcajce.ZlibCompressor;
+import org.spongycastle.mail.smime.SMIMECompressedGenerator;
 
 /**
  * a simple example that creates a single compressed mail message using the large
@@ -48,8 +48,8 @@ public class CreateLargeCompressedMail
         Properties props = System.getProperties();
         Session session = Session.getDefaultInstance(props, null);
 
-        Address fromUser = new InternetAddress("\"Eric H. Echidna\"<eric@bouncycastle.org>");
-        Address toUser = new InternetAddress("example@bouncycastle.org");
+        Address fromUser = new InternetAddress("\"Eric H. Echidna\"<eric.spongycastle.org>");
+        Address toUser = new InternetAddress("example.spongycastle.org");
 
         MimeMessage body = new MimeMessage(session);
         body.setFrom(fromUser);

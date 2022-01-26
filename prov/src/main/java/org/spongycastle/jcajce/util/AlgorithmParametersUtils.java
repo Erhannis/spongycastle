@@ -1,10 +1,10 @@
-package org.bouncycastle.jcajce.util;
+package org.spongycastle.jcajce.util;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Primitive;
 
 /**
  * General JCA/JCE utility methods.

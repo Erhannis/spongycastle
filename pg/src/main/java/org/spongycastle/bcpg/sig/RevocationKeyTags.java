@@ -1,4 +1,4 @@
-package org.bouncycastle.bcpg.sig;
+package org.spongycastle.bcpg.sig;
 
 public interface RevocationKeyTags
 {

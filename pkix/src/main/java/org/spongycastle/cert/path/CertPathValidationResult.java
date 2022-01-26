@@ -1,9 +1,9 @@
-package org.bouncycastle.cert.path;
+package org.spongycastle.cert.path;
 
 import java.util.Collections;
 import java.util.Set;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 public class CertPathValidationResult
 {

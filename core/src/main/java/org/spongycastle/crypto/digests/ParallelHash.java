@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * ParallelHash - a hash designed  to  support the efficient hashing of very long strings, by taking advantage

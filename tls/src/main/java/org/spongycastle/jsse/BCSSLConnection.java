@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
 /**
  * A BCJSSE-specific interface providing access to extended connection-specific functionality.

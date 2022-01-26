@@ -1,9 +1,9 @@
-package org.bouncycastle.jce.interfaces;
+package org.spongycastle.jce.interfaces;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * allow us to set attributes on objects that can go into a PKCS12 store.

@@ -1,13 +1,13 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cms.KEKIdentifier;
-import org.bouncycastle.asn1.cms.KEKRecipientInfo;
-import org.bouncycastle.asn1.cms.RecipientInfo;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.SymmetricKeyWrapper;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cms.KEKIdentifier;
+import org.spongycastle.asn1.cms.KEKRecipientInfo;
+import org.spongycastle.asn1.cms.RecipientInfo;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.SymmetricKeyWrapper;
 
 public abstract class KEKRecipientInfoGenerator
     implements RecipientInfoGenerator

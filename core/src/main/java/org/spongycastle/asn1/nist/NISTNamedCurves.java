@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.nist;
+package org.spongycastle.asn1.nist;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.sec.SECNamedCurves;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.sec.SECNamedCurves;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.util.Strings;
 
 /**
  * Utility class for fetching curves using their NIST names as published in FIPS-PUB 186-3

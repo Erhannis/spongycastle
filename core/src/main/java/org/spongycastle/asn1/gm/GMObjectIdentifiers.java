@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.gm;
+package org.spongycastle.asn1.gm;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public interface GMObjectIdentifiers
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.AlgorithmConstraints;
 import java.security.AlgorithmParameters;
@@ -9,8 +9,8 @@ import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.jsse.java.security.BCCryptoPrimitive;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.jsse.java.security.BCCryptoPrimitive;
 
 abstract class JsseUtils_7
     extends JsseUtils

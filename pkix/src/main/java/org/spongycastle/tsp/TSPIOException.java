@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 import java.io.IOException;
 

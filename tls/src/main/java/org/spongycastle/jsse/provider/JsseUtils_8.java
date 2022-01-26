@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.cert.CertPathBuilder;
 import java.security.cert.PKIXBuilderParameters;
@@ -17,11 +17,11 @@ import javax.net.ssl.SNIMatcher;
 import javax.net.ssl.SNIServerName;
 import javax.net.ssl.StandardConstants;
 
-import org.bouncycastle.jsse.BCApplicationProtocolSelector;
-import org.bouncycastle.jsse.BCSNIHostName;
-import org.bouncycastle.jsse.BCSNIMatcher;
-import org.bouncycastle.jsse.BCSNIServerName;
-import org.bouncycastle.jsse.BCStandardConstants;
+import org.spongycastle.jsse.BCApplicationProtocolSelector;
+import org.spongycastle.jsse.BCSNIHostName;
+import org.spongycastle.jsse.BCSNIMatcher;
+import org.spongycastle.jsse.BCSNIServerName;
+import org.spongycastle.jsse.BCStandardConstants;
 
 abstract class JsseUtils_8
     extends JsseUtils_7

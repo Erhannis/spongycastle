@@ -1,6 +1,6 @@
-package org.bouncycastle.jce.interfaces;
+package org.spongycastle.jce.interfaces;
 
-import org.bouncycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
+import org.spongycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
 
 public interface GOST3410Params
 {

@@ -1,14 +1,14 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMT;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTPublicKeyParameters;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.pqc.crypto.xmss.XMSSMT;
+import org.spongycastle.pqc.crypto.xmss.XMSSMTParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSMTPublicKeyParameters;
+import org.spongycastle.util.Arrays;
 
 /**
  * Test cases for XMSSMTPublicKey class.

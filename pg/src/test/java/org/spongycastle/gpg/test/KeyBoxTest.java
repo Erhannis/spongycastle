@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg.test;
+package org.spongycastle.gpg.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -8,22 +8,22 @@ import java.security.cert.CertificateFactory;
 import java.util.Iterator;
 
 import junit.framework.TestCase;
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.gpg.keybox.BlobType;
-import org.bouncycastle.gpg.keybox.CertificateBlob;
-import org.bouncycastle.gpg.keybox.FirstBlob;
-import org.bouncycastle.gpg.keybox.KeyBlob;
-import org.bouncycastle.gpg.keybox.KeyBox;
-import org.bouncycastle.gpg.keybox.PublicKeyRingBlob;
-import org.bouncycastle.gpg.keybox.bc.BcBlobVerifier;
-import org.bouncycastle.gpg.keybox.bc.BcKeyBox;
-import org.bouncycastle.gpg.keybox.jcajce.JcaKeyBoxBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.openpgp.PGPPublicKeyRing;
-import org.bouncycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.gpg.keybox.BlobType;
+import org.spongycastle.gpg.keybox.CertificateBlob;
+import org.spongycastle.gpg.keybox.FirstBlob;
+import org.spongycastle.gpg.keybox.KeyBlob;
+import org.spongycastle.gpg.keybox.KeyBox;
+import org.spongycastle.gpg.keybox.PublicKeyRingBlob;
+import org.spongycastle.gpg.keybox.bc.BcBlobVerifier;
+import org.spongycastle.gpg.keybox.bc.BcKeyBox;
+import org.spongycastle.gpg.keybox.jcajce.JcaKeyBoxBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openpgp.PGPPublicKey;
+import org.spongycastle.openpgp.PGPPublicKeyRing;
+import org.spongycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
 
 public class KeyBoxTest
     extends SimpleTest

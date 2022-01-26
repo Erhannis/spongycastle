@@ -1,10 +1,10 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayInputStream;
 
 import junit.framework.TestCase;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.util.Strings;
 
 public class MimeParserTest
     extends TestCase

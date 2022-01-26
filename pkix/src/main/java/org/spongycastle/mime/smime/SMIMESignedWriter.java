@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.smime;
+package org.spongycastle.mime.smime;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -14,17 +14,17 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSSignedDataStreamGenerator;
-import org.bouncycastle.cms.SignerInfoGenerator;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeWriter;
-import org.bouncycastle.mime.encoding.Base64OutputStream;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSSignedDataStreamGenerator;
+import org.spongycastle.cms.SignerInfoGenerator;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeWriter;
+import org.spongycastle.mime.encoding.Base64OutputStream;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.Strings;
 
 /**
  * Writer for SMIME Signed objects.

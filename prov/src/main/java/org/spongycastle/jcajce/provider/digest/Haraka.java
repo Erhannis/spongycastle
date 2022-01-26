@@ -1,8 +1,8 @@
-package org.bouncycastle.jcajce.provider.digest;
+package org.spongycastle.jcajce.provider.digest;
 
-import org.bouncycastle.crypto.digests.Haraka256Digest;
-import org.bouncycastle.crypto.digests.Haraka512Digest;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.crypto.digests.Haraka256Digest;
+import org.spongycastle.crypto.digests.Haraka512Digest;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
 
 public class Haraka
 {

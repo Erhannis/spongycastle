@@ -1,11 +1,11 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.openpgp.PGPPublicKeyRing;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.openpgp.PGPPublicKeyRing;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
 
 /**
  * A PGP blob holds key material.

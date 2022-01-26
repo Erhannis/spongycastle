@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.euclid.test;
+package org.spongycastle.pqc.math.ntru.euclid.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

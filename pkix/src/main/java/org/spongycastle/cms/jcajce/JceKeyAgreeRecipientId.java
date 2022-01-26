@@ -1,12 +1,12 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.math.BigInteger;
 import java.security.cert.X509Certificate;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.cms.KeyAgreeRecipientId;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.cms.KeyAgreeRecipientId;
 
 public class JceKeyAgreeRecipientId
     extends KeyAgreeRecipientId

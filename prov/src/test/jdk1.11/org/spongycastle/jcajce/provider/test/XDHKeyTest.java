@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package org.spongycastle.jcajce.provider.test;
 
 import java.security.Key;
 import java.security.KeyFactory;
@@ -17,12 +17,12 @@ import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.KeyAgreement;
 
-import org.bouncycastle.jcajce.interfaces.XDHPrivateKey;
-import org.bouncycastle.jcajce.interfaces.XDHPublicKey;
-import org.bouncycastle.jcajce.spec.RawEncodedKeySpec;
-import org.bouncycastle.jcajce.spec.XDHParameterSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.jcajce.interfaces.XDHPrivateKey;
+import org.spongycastle.jcajce.interfaces.XDHPublicKey;
+import org.spongycastle.jcajce.spec.RawEncodedKeySpec;
+import org.spongycastle.jcajce.spec.XDHParameterSpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

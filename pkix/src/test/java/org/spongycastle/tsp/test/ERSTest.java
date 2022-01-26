@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.test;
+package org.spongycastle.tsp.test;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,40 +13,40 @@ import java.util.List;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaCertStore;
-import org.bouncycastle.cms.jcajce.JcaSignerInfoGeneratorBuilder;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.tsp.TSPAlgorithms;
-import org.bouncycastle.tsp.TSPException;
-import org.bouncycastle.tsp.TimeStampRequest;
-import org.bouncycastle.tsp.TimeStampRequestGenerator;
-import org.bouncycastle.tsp.TimeStampResponse;
-import org.bouncycastle.tsp.TimeStampResponseGenerator;
-import org.bouncycastle.tsp.TimeStampTokenGenerator;
-import org.bouncycastle.tsp.ers.ArchiveTimeStampValidationException;
-import org.bouncycastle.tsp.ers.ERSArchiveTimeStamp;
-import org.bouncycastle.tsp.ers.ERSArchiveTimeStampGenerator;
-import org.bouncycastle.tsp.ers.ERSByteData;
-import org.bouncycastle.tsp.ers.ERSData;
-import org.bouncycastle.tsp.ers.ERSDataGroup;
-import org.bouncycastle.tsp.ers.ERSDirectoryDataGroup;
-import org.bouncycastle.tsp.ers.ERSEvidenceRecord;
-import org.bouncycastle.tsp.ers.ERSEvidenceRecordGenerator;
-import org.bouncycastle.tsp.ers.ERSFileData;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaCertStore;
+import org.spongycastle.cms.jcajce.JcaSignerInfoGeneratorBuilder;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.tsp.TSPAlgorithms;
+import org.spongycastle.tsp.TSPException;
+import org.spongycastle.tsp.TimeStampRequest;
+import org.spongycastle.tsp.TimeStampRequestGenerator;
+import org.spongycastle.tsp.TimeStampResponse;
+import org.spongycastle.tsp.TimeStampResponseGenerator;
+import org.spongycastle.tsp.TimeStampTokenGenerator;
+import org.spongycastle.tsp.ers.ArchiveTimeStampValidationException;
+import org.spongycastle.tsp.ers.ERSArchiveTimeStamp;
+import org.spongycastle.tsp.ers.ERSArchiveTimeStampGenerator;
+import org.spongycastle.tsp.ers.ERSByteData;
+import org.spongycastle.tsp.ers.ERSData;
+import org.spongycastle.tsp.ers.ERSDataGroup;
+import org.spongycastle.tsp.ers.ERSDirectoryDataGroup;
+import org.spongycastle.tsp.ers.ERSEvidenceRecord;
+import org.spongycastle.tsp.ers.ERSEvidenceRecordGenerator;
+import org.spongycastle.tsp.ers.ERSFileData;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 public class ERSTest
     extends TestCase
@@ -98,7 +98,7 @@ public class ERSTest
         X509Certificate signCert = TSPTestUtil.makeCACertificate(signKP,
             signDN, signKP, signDN);
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         KeyPair origKP = TSPTestUtil.makeKeyPair();
         X509Certificate origCert = TSPTestUtil.makeCertificate(origKP,
             origDN, signKP, signDN);
@@ -177,7 +177,7 @@ public class ERSTest
         X509Certificate signCert = TSPTestUtil.makeCACertificate(signKP,
             signDN, signKP, signDN);
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         KeyPair origKP = TSPTestUtil.makeKeyPair();
         X509Certificate origCert = TSPTestUtil.makeCertificate(origKP,
             origDN, signKP, signDN);
@@ -257,7 +257,7 @@ public class ERSTest
         X509Certificate signCert = TSPTestUtil.makeCACertificate(signKP,
             signDN, signKP, signDN);
 
-        String origDN = "CN=Eric H. Echidna, E=eric@bouncycastle.org, O=Bouncy Castle, C=AU";
+        String origDN = "CN=Eric H. Echidna, E=eric.spongycastle.org, O=Bouncy Castle, C=AU";
         KeyPair origKP = TSPTestUtil.makeKeyPair();
         X509Certificate origCert = TSPTestUtil.makeCertificate(origKP,
             origDN, signKP, signDN);

@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.eac;
+package org.spongycastle.asn1.eac;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * German Federal Office for Information Security

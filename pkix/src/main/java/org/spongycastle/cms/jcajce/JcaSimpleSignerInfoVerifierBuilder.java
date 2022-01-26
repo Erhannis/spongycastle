@@ -1,19 +1,19 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.Provider;
 import java.security.PublicKey;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.DefaultCMSSignatureAlgorithmNameGenerator;
-import org.bouncycastle.cms.SignerInformationVerifier;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.DefaultCMSSignatureAlgorithmNameGenerator;
+import org.spongycastle.cms.SignerInformationVerifier;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaContentVerifierProviderBuilder;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
 
 public class JcaSimpleSignerInfoVerifierBuilder
 {

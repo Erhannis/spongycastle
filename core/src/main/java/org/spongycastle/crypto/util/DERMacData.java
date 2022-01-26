@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * Builder and holder class for preparing SP 800-56A compliant MacData. Elements in the data are encoded

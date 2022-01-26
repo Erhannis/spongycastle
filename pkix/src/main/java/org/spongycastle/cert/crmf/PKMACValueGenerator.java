@@ -1,13 +1,13 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.crmf.PKMACValue;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.operator.MacCalculator;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.crmf.PKMACValue;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.operator.MacCalculator;
 
 class PKMACValueGenerator
 {

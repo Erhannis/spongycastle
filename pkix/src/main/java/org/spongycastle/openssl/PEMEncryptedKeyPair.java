@@ -1,8 +1,8 @@
-package org.bouncycastle.openssl;
+package org.spongycastle.openssl;
 
 import java.io.IOException;
 
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.OperatorCreationException;
 
 public class PEMEncryptedKeyPair
 {

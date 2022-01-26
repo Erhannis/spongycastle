@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.ec.WNafUtil;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.math.ec.WNafUtil;
+import org.spongycastle.util.BigIntegers;
 
 class DHParametersHelper
 {

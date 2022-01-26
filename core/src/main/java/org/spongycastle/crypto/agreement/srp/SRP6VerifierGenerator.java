@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.agreement.srp;
+package org.spongycastle.crypto.agreement.srp;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.params.SRP6GroupParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.params.SRP6GroupParameters;
 
 /**
  * Generates new SRP verifier for user

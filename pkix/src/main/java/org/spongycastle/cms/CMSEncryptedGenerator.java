@@ -1,4 +1,4 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 /**
  * General class for generating a CMS encrypted-data message.

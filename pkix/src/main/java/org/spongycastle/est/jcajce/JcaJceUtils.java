@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 import java.security.GeneralSecurityException;
 import java.security.KeyStore;
@@ -23,10 +23,10 @@ import java.util.Set;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.asn1.x509.ExtendedKeyUsage;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.asn1.x509.ExtendedKeyUsage;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.cert.X509CertificateHolder;
 
 
 /**

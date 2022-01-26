@@ -1,27 +1,27 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.Random;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2KeyPairGenerator;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2Parameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2PrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCCA2PublicKeyParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKobaraImaiCipher;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyInfoFactory;
-import org.bouncycastle.pqc.crypto.util.PublicKeyFactory;
-import org.bouncycastle.pqc.crypto.util.SubjectPublicKeyInfoFactory;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2KeyPairGenerator;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2Parameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2PrivateKeyParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCCA2PublicKeyParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKobaraImaiCipher;
+import org.spongycastle.pqc.crypto.util.PrivateKeyFactory;
+import org.spongycastle.pqc.crypto.util.PrivateKeyInfoFactory;
+import org.spongycastle.pqc.crypto.util.PublicKeyFactory;
+import org.spongycastle.pqc.crypto.util.SubjectPublicKeyInfoFactory;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 public class McElieceKobaraImaiCipherTest
     extends SimpleTest

@@ -1,12 +1,12 @@
-package org.bouncycastle.math.ec.rfc8032.test;
+package org.spongycastle.math.ec.rfc8032.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.math.ec.rfc8032.Ed448;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.math.ec.rfc8032.Ed448;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class Ed448Test
     extends TestCase

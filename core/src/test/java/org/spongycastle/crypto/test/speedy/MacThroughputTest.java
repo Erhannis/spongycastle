@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.test.speedy;
+package org.spongycastle.crypto.test.speedy;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.engines.AESFastEngine;
-import org.bouncycastle.crypto.engines.NullEngine;
-import org.bouncycastle.crypto.generators.Poly1305KeyGenerator;
-import org.bouncycastle.crypto.macs.CMac;
-import org.bouncycastle.crypto.macs.GMac;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.macs.Poly1305;
-import org.bouncycastle.crypto.macs.SipHash;
-import org.bouncycastle.crypto.macs.SkeinMac;
-import org.bouncycastle.crypto.modes.GCMBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.engines.AESFastEngine;
+import org.spongycastle.crypto.engines.NullEngine;
+import org.spongycastle.crypto.generators.Poly1305KeyGenerator;
+import org.spongycastle.crypto.macs.CMac;
+import org.spongycastle.crypto.macs.GMac;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.macs.Poly1305;
+import org.spongycastle.crypto.macs.SipHash;
+import org.spongycastle.crypto.macs.SkeinMac;
+import org.spongycastle.crypto.modes.GCMBlockCipher;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
 
 /**
  * Microbenchmark of MACs on short, medium, long messages, with optional object creation cost.

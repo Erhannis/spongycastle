@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
 import java.security.PrivateKey;
 import java.security.cert.X509Certificate;

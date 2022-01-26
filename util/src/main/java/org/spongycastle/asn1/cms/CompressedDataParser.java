@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.cms;
+package org.spongycastle.asn1.cms;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 /**
  * Parser of <a href="https://tools.ietf.org/html/rfc3274">RFC 3274</a> {@link CompressedData} object.

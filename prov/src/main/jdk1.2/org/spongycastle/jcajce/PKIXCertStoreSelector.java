@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
 import java.security.cert.CertSelector;
 import java.security.cert.X509CertSelector;
@@ -7,12 +7,12 @@ import java.security.cert.CertStoreException;
 import java.security.cert.Certificate;
 import java.util.Collection;
 
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Selector;
 
 /**
  * This class is a Selector implementation for certificates.
  * 
- * @see org.bouncycastle.util.Selector
+ * @see org.spongycastle.util.Selector
  */
 public class PKIXCertStoreSelector
     implements Selector

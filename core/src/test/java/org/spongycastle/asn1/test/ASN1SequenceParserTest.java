@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,14 +8,14 @@ import java.util.Arrays;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Null;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.BERSequenceGenerator;
-import org.bouncycastle.asn1.DERSequenceGenerator;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Null;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.ASN1StreamParser;
+import org.spongycastle.asn1.BERSequenceGenerator;
+import org.spongycastle.asn1.DERSequenceGenerator;
+import org.spongycastle.util.encoders.Hex;
 
 public class ASN1SequenceParserTest 
     extends TestCase 

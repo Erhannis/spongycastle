@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.macs;
+package org.spongycastle.crypto.macs;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.engines.DSTU7624Engine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.engines.DSTU7624Engine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Arrays;
 
 /**
  * Implementation of DSTU7624 MAC mode

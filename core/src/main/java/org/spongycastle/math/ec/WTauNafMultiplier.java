@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec;
+package org.spongycastle.math.ec;
 
 import java.math.BigInteger;
 
@@ -12,7 +12,7 @@ public class WTauNafMultiplier extends AbstractECMultiplier
     static final String PRECOMP_NAME = "bc_wtnaf";
 
     /**
-     * Multiplies a {@link org.bouncycastle.math.ec.ECPoint.AbstractF2m ECPoint.AbstractF2m}
+     * Multiplies a {@link org.spongycastle.math.ec.ECPoint.AbstractF2m ECPoint.AbstractF2m}
      * by <code>k</code> using the reduced <code>&tau;</code>-adic NAF (RTNAF)
      * method.
      * @param point The ECPoint.AbstractF2m to multiply.
@@ -40,7 +40,7 @@ public class WTauNafMultiplier extends AbstractECMultiplier
     }
 
     /**
-     * Multiplies a {@link org.bouncycastle.math.ec.ECPoint.AbstractF2m ECPoint.AbstractF2m}
+     * Multiplies a {@link org.spongycastle.math.ec.ECPoint.AbstractF2m ECPoint.AbstractF2m}
      * by an element <code>&lambda;</code> of <code><b>Z</b>[&tau;]</code> using
      * the <code>&tau;</code>-adic NAF (TNAF) method.
      * @param p The ECPoint.AbstractF2m to multiply.
@@ -62,7 +62,7 @@ public class WTauNafMultiplier extends AbstractECMultiplier
     }
 
     /**
-     * Multiplies a {@link org.bouncycastle.math.ec.ECPoint.AbstractF2m ECPoint.AbstractF2m}
+     * Multiplies a {@link org.spongycastle.math.ec.ECPoint.AbstractF2m ECPoint.AbstractF2m}
      * by an element <code>&lambda;</code> of <code><b>Z</b>[&tau;]</code>
      * using the window <code>&tau;</code>-adic NAF (TNAF) method, given the
      * WTNAF of <code>&lambda;</code>.

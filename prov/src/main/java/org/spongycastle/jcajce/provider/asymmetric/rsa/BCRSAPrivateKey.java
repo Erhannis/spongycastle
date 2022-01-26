@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+package org.spongycastle.jcajce.provider.asymmetric.rsa;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -8,15 +8,15 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.RSAPrivateKeySpec;
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PKCS12BagAttributeCarrierImpl;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.jcajce.provider.asymmetric.util.PKCS12BagAttributeCarrierImpl;
+import org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier;
+import org.spongycastle.util.Strings;
 
 public class BCRSAPrivateKey
     implements RSAPrivateKey, PKCS12BagAttributeCarrier
@@ -69,7 +69,7 @@ public class BCRSAPrivateKey
         this.rsaPrivateKey = new RSAKeyParameters(true, modulus, privateExponent);
     }
 
-    BCRSAPrivateKey(AlgorithmIdentifier algID, org.bouncycastle.asn1.pkcs.RSAPrivateKey key)
+    BCRSAPrivateKey(AlgorithmIdentifier algID, org.spongycastle.asn1.pkcs.RSAPrivateKey key)
     {
         this.algorithmIdentifier = algID;
         this.algorithmIdentifierEnc = getEncoding(algID);
@@ -110,7 +110,7 @@ public class BCRSAPrivateKey
 
     public byte[] getEncoded()
     {
-        return KeyUtil.getEncodedPrivateKeyInfo(algorithmIdentifier, new org.bouncycastle.asn1.pkcs.RSAPrivateKey(getModulus(), ZERO, getPrivateExponent(), ZERO, ZERO, ZERO, ZERO, ZERO));
+        return KeyUtil.getEncodedPrivateKeyInfo(algorithmIdentifier, new org.spongycastle.asn1.pkcs.RSAPrivateKey(getModulus(), ZERO, getPrivateExponent(), ZERO, ZERO, ZERO, ZERO, ZERO));
     }
 
     public boolean equals(Object o)

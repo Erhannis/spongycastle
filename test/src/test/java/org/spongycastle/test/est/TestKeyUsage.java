@@ -1,4 +1,4 @@
-package org.bouncycastle.test.est;
+package org.spongycastle.test.est;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -15,15 +15,15 @@ import java.util.Set;
 
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.est.jcajce.JcaJceUtils;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.est.jcajce.JcaJceUtils;
+import org.spongycastle.util.test.SimpleTest;
 import org.junit.Test;
 
 

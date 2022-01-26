@@ -1,14 +1,14 @@
-package org.bouncycastle.tsp.test;
+package org.spongycastle.tsp.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 import junit.framework.TestCase;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
-import org.bouncycastle.tsp.TimeStampToken;
-import org.bouncycastle.tsp.cms.CMSTimeStampedData;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.bc.BcDigestCalculatorProvider;
+import org.spongycastle.tsp.TimeStampToken;
+import org.spongycastle.tsp.cms.CMSTimeStampedData;
 
 public class CMSTimeStampedDataTest
     extends TestCase

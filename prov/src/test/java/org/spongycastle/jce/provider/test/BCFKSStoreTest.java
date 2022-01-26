@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -29,30 +29,30 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.bc.EncryptedObjectStoreData;
-import org.bouncycastle.asn1.bc.ObjectStore;
-import org.bouncycastle.asn1.bc.ObjectStoreIntegrityCheck;
-import org.bouncycastle.asn1.bc.PbkdMacIntegrityCheck;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.misc.ScryptParams;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PBES2Parameters;
-import org.bouncycastle.asn1.pkcs.PBKDF2Params;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.util.PBKDF2Config;
-import org.bouncycastle.crypto.util.PBKDFConfig;
-import org.bouncycastle.crypto.util.ScryptConfig;
-import org.bouncycastle.jcajce.BCFKSLoadStoreParameter;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.bc.EncryptedObjectStoreData;
+import org.spongycastle.asn1.bc.ObjectStore;
+import org.spongycastle.asn1.bc.ObjectStoreIntegrityCheck;
+import org.spongycastle.asn1.bc.PbkdMacIntegrityCheck;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.misc.ScryptParams;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PBES2Parameters;
+import org.spongycastle.asn1.pkcs.PBKDF2Params;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.util.PBKDF2Config;
+import org.spongycastle.crypto.util.PBKDFConfig;
+import org.spongycastle.crypto.util.ScryptConfig;
+import org.spongycastle.jcajce.BCFKSLoadStoreParameter;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
-import static org.bouncycastle.jce.provider.test.PKCS12StoreTest.JKS_Store;
-import static org.bouncycastle.jce.provider.test.PKCS12StoreTest.JKS_TEST_PWD;
+import static org.spongycastle.jce.provider.test.PKCS12StoreTest.JKS_Store;
+import static org.spongycastle.jce.provider.test.PKCS12StoreTest.JKS_TEST_PWD;
 
 /**
  * Exercise the  BCFKS KeyStore,

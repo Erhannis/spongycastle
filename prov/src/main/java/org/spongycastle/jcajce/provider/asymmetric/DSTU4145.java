@@ -1,13 +1,13 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
-import org.bouncycastle.asn1.ua.UAObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.dstu.KeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.asn1.ua.UAObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.dstu.KeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class DSTU4145 
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".dstu.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".dstu.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

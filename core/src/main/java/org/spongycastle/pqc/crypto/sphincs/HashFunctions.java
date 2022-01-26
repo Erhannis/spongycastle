@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.sphincs;
+package org.spongycastle.pqc.crypto.sphincs;
 
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Strings;
 
 
 class HashFunctions

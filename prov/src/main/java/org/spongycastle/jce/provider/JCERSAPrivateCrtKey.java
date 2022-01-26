@@ -1,18 +1,18 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.io.IOException;
 import java.math.BigInteger;
 import java.security.interfaces.RSAPrivateCrtKey;
 import java.security.spec.RSAPrivateCrtKeySpec;
 
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.pkcs.RSAPrivateKey;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.util.Strings;
 
 /**
  * A provider representation for a RSA private key, with CRT factors included.
@@ -31,7 +31,7 @@ public class JCERSAPrivateCrtKey
     private BigInteger  crtCoefficient;
 
     /**
-     * construct a private key from it's org.bouncycastle.crypto equivalent.
+     * construct a private key from it's org.spongycastle.crypto equivalent.
      *
      * @param key the parameters object representing the private key.
      */
@@ -91,7 +91,7 @@ public class JCERSAPrivateCrtKey
         PrivateKeyInfo  info)
         throws IOException
     {
-        this(org.bouncycastle.asn1.pkcs.RSAPrivateKey.getInstance(info.parsePrivateKey()));
+        this(org.spongycastle.asn1.pkcs.RSAPrivateKey.getInstance(info.parsePrivateKey()));
     }
 
     /**

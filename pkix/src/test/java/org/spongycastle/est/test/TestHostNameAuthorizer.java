@@ -1,14 +1,14 @@
-package org.bouncycastle.est.test;
+package org.spongycastle.est.test;
 
 
 import java.io.InputStreamReader;
 import java.security.cert.X509Certificate;
 
 import junit.framework.TestCase;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.est.jcajce.JsseDefaultHostnameAuthorizer;
-import org.bouncycastle.util.io.pem.PemReader;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.est.jcajce.JsseDefaultHostnameAuthorizer;
+import org.spongycastle.util.io.pem.PemReader;
 
 /**
  * TestHostNameAuthorizer tests the hostname authorizer only. EST related functions

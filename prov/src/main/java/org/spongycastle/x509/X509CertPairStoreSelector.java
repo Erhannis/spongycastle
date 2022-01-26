@@ -1,16 +1,16 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Selector;
 
 /**
  * This class is an <code>Selector</code> like implementation to select
  * certificates pairs, which are e.g. used for cross certificates. The set of
  * criteria is given from two
- * {@link org.bouncycastle.x509.X509CertStoreSelector}s which must be both
+ * {@link org.spongycastle.x509.X509CertStoreSelector}s which must be both
  * matched.
  * 
- * @see org.bouncycastle.x509.X509AttributeCertificate
- * @see org.bouncycastle.x509.X509Store
+ * @see org.spongycastle.x509.X509AttributeCertificate
+ * @see org.spongycastle.x509.X509Store
  */
 public class X509CertPairStoreSelector implements Selector
 {

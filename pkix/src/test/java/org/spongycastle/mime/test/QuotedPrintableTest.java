@@ -1,13 +1,13 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.mime.encoding.QuotedPrintableInputStream;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.mime.encoding.QuotedPrintableInputStream;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.io.Streams;
 
 public class QuotedPrintableTest
     extends TestCase

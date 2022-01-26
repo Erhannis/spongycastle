@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 /**
  * Note that the values here are implementation-specific and arbitrary. It is recommended not to

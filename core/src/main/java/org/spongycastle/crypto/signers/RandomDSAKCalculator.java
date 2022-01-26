@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.util.BigIntegers;
 
 public class RandomDSAKCalculator
     implements DSAKCalculator

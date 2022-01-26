@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec;
+package org.spongycastle.math.ec;
 
 /**
  * Interface for classes storing precomputation data for multiplication

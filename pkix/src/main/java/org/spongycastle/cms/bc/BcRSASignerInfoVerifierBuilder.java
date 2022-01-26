@@ -1,14 +1,14 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSSignatureAlgorithmNameGenerator;
-import org.bouncycastle.cms.SignerInformationVerifier;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.operator.DigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.SignatureAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.bc.BcRSAContentVerifierProviderBuilder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSSignatureAlgorithmNameGenerator;
+import org.spongycastle.cms.SignerInformationVerifier;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.operator.DigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.SignatureAlgorithmIdentifierFinder;
+import org.spongycastle.operator.bc.BcRSAContentVerifierProviderBuilder;
 
 public class BcRSASignerInfoVerifierBuilder
 {

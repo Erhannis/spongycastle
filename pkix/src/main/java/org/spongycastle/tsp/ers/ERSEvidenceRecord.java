@@ -1,17 +1,17 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.io.IOException;
 import java.util.Date;
 
-import org.bouncycastle.asn1.tsp.ArchiveTimeStamp;
-import org.bouncycastle.asn1.tsp.ArchiveTimeStampChain;
-import org.bouncycastle.asn1.tsp.ArchiveTimeStampSequence;
-import org.bouncycastle.asn1.tsp.EvidenceRecord;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.SignerInformationVerifier;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.tsp.TSPException;
+import org.spongycastle.asn1.tsp.ArchiveTimeStamp;
+import org.spongycastle.asn1.tsp.ArchiveTimeStampChain;
+import org.spongycastle.asn1.tsp.ArchiveTimeStampSequence;
+import org.spongycastle.asn1.tsp.EvidenceRecord;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.SignerInformationVerifier;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.tsp.TSPException;
 
 /**
  * RFC 4998 Evidence Record.

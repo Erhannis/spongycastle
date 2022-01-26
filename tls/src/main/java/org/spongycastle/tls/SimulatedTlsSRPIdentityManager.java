@@ -1,14 +1,14 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.tls.crypto.SRP6Group;
-import org.bouncycastle.tls.crypto.TlsCrypto;
-import org.bouncycastle.tls.crypto.TlsMAC;
-import org.bouncycastle.tls.crypto.TlsSRP6VerifierGenerator;
-import org.bouncycastle.tls.crypto.TlsSRPConfig;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.tls.crypto.SRP6Group;
+import org.spongycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.tls.crypto.TlsMAC;
+import org.spongycastle.tls.crypto.TlsSRP6VerifierGenerator;
+import org.spongycastle.tls.crypto.TlsSRPConfig;
+import org.spongycastle.util.Strings;
 
 /**
  * An implementation of {@link TlsSRPIdentityManager} that simulates the existence of "unknown" identities

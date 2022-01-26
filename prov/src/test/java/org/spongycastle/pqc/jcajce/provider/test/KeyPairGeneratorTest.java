@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package org.spongycastle.pqc.jcajce.provider.test;
 
 import java.security.KeyFactory;
 import java.security.KeyPair;

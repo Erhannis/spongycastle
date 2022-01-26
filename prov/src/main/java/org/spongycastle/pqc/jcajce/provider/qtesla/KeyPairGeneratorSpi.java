@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.qtesla;
+package org.spongycastle.pqc.jcajce.provider.qtesla;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
@@ -7,15 +7,15 @@ import java.security.spec.AlgorithmParameterSpec;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
-import org.bouncycastle.pqc.jcajce.spec.QTESLAParameterSpec;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAKeyPairGenerator;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
+import org.spongycastle.pqc.jcajce.spec.QTESLAParameterSpec;
+import org.spongycastle.util.Integers;
 
 public class KeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

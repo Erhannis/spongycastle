@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
-import org.bouncycastle.crypto.prng.drbg.SP80090DRBG;
+import org.spongycastle.crypto.prng.drbg.SP80090DRBG;
 
 interface DRBGProvider
 {

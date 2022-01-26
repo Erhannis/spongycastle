@@ -1,11 +1,11 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
 import java.util.Locale;
 import java.util.regex.Pattern;
 
-import org.bouncycastle.jsse.provider.IDNUtil;
-import org.bouncycastle.tls.NameType;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.jsse.provider.IDNUtil;
+import org.spongycastle.tls.NameType;
+import org.spongycastle.util.Strings;
 
 public final class BCSNIHostName extends BCSNIServerName
 {

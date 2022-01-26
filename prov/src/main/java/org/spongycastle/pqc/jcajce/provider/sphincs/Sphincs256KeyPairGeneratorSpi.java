@@ -1,21 +1,21 @@
-package org.bouncycastle.pqc.jcajce.provider.sphincs;
+package org.spongycastle.pqc.jcajce.provider.sphincs;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.digests.SHA512tDigest;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCS256KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCS256KeyPairGenerator;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
-import org.bouncycastle.pqc.jcajce.spec.SPHINCS256KeyGenParameterSpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.digests.SHA3Digest;
+import org.spongycastle.crypto.digests.SHA512tDigest;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCS256KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCS256KeyPairGenerator;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.sphincs.SPHINCSPublicKeyParameters;
+import org.spongycastle.pqc.jcajce.spec.SPHINCS256KeyGenParameterSpec;
 
 public class Sphincs256KeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

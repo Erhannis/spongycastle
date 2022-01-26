@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 /**
  * Interface for MAC services based on HMAC.

@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.examples;
+package org.spongycastle.crypto.examples;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -10,15 +10,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.generators.DESedeKeyGenerator;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.crypto.params.DESedeParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.engines.DESedeEngine;
+import org.spongycastle.crypto.generators.DESedeKeyGenerator;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher;
+import org.spongycastle.crypto.params.DESedeParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * DESExample is a simple DES based encryptor/decryptor.
@@ -26,7 +26,7 @@ import org.bouncycastle.util.encoders.Hex;
  * The program is command line driven, with the input
  * and output files specified on the command line.
  * <pre>
- * java org.bouncycastle.crypto.examples.DESExample infile outfile [keyfile]
+ * java org.spongycastle.crypto.examples.DESExample infile outfile [keyfile]
  * </pre>
  * A new key is generated for each encryption, if key is not specified,
  * then the example will assume encryption is required, and as output
@@ -174,7 +174,7 @@ public class DESExample extends Object
                      * be annoying during unit testing.
                      *     -- jon
                      */
-                    sr.setSeed("www.bouncycastle.org".getBytes());
+                    sr.setSeed("www.spongycastle.org".getBytes());
                 }
                 catch (Exception nsa)
                 {

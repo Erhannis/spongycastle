@@ -1,4 +1,4 @@
-package org.bouncycastle.math.test;
+package org.spongycastle.math.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -6,14 +6,14 @@ import java.security.SecureRandom;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.math.Primes;
-import org.bouncycastle.math.Primes.MROutput;
-import org.bouncycastle.math.Primes.STOutput;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.math.Primes;
+import org.spongycastle.math.Primes.MROutput;
+import org.spongycastle.math.Primes.STOutput;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.BigIntegers;
 
 public class PrimesTest extends TestCase
 {

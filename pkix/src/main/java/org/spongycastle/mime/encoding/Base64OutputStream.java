@@ -1,10 +1,10 @@
-package org.bouncycastle.mime.encoding;
+package org.spongycastle.mime.encoding;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.encoders.Base64Encoder;
+import org.spongycastle.util.encoders.Base64Encoder;
 
 public class Base64OutputStream
     extends FilterOutputStream

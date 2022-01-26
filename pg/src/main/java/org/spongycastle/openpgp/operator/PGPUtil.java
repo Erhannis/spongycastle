@@ -1,13 +1,13 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.bcpg.HashAlgorithmTags;
-import org.bouncycastle.bcpg.S2K;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.bcpg.S2K;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.util.Strings;
 
 /**
  * Basic utility class

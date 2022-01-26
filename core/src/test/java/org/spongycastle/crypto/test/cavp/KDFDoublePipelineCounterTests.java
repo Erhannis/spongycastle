@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.test.cavp;
+package org.spongycastle.crypto.test.cavp;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,13 +6,13 @@ import java.io.PrintWriter;
 import java.util.Properties;
 import java.util.regex.Matcher;
 
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.generators.KDFDoublePipelineIterationBytesGenerator;
-import org.bouncycastle.crypto.params.KDFDoublePipelineIterationParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.TestFailedException;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.generators.KDFDoublePipelineIterationBytesGenerator;
+import org.spongycastle.crypto.params.KDFDoublePipelineIterationParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTestResult;
+import org.spongycastle.util.test.TestFailedException;
 
 public final class KDFDoublePipelineCounterTests
     implements CAVPListener

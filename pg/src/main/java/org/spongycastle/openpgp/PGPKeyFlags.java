@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 /**
  * key flag values for the KeyFlags subpacket.

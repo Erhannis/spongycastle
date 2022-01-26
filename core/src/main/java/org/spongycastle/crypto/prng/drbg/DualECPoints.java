@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.prng.drbg;
+package org.spongycastle.crypto.prng.drbg;
 
-import org.bouncycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.ECPoint;
 
 /**
  * General class for providing point pairs for use with DualEC DRBG. See NIST SP 800-90A for further details.

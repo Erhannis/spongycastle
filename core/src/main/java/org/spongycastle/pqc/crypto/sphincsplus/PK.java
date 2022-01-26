@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.sphincsplus;
+package org.spongycastle.pqc.crypto.sphincsplus;
 
 class PK
 {

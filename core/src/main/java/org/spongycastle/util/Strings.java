@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.security.PrivilegedAction;
 import java.util.ArrayList;
 import java.util.Vector;
 
-import org.bouncycastle.util.encoders.UTF8;
+import org.spongycastle.util.encoders.UTF8;
 
 /**
  * String utilities.

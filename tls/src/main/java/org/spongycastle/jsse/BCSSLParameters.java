@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,8 +7,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.tls.TlsUtils;
 
 /**
  * A BCJSSE-specific interface providing access to extended SSL parameters in earlier JDKs.

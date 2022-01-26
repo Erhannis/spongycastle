@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.Xof;
+import org.spongycastle.crypto.Xof;
 
 
 /**

@@ -1,11 +1,11 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsSigner;
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
-import org.bouncycastle.tls.crypto.impl.TlsImplUtils;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsSigner;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.tls.crypto.impl.TlsImplUtils;
 
 /**
  * Container class for generating signatures that carries the signature type, parameters, public key certificate and public key's associated signer object.

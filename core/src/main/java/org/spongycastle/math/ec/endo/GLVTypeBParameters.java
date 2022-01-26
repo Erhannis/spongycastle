@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.endo;
+package org.spongycastle.math.ec.endo;
 
 import java.math.BigInteger;
 

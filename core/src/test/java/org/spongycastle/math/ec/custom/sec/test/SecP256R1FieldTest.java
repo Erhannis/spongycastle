@@ -1,13 +1,13 @@
-package org.bouncycastle.math.ec.custom.sec.test;
+package org.spongycastle.math.ec.custom.sec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.raw.Nat256;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.ec.CustomNamedCurves;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.raw.Nat256;
 
 import junit.framework.TestCase;
 

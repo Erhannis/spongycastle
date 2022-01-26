@@ -1,20 +1,20 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.PasswordConverter;
-import org.bouncycastle.crypto.generators.SCrypt;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BCPBEKey;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
-import org.bouncycastle.jcajce.spec.ScryptKeySpec;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.PasswordConverter;
+import org.spongycastle.crypto.generators.SCrypt;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BCPBEKey;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.jcajce.spec.ScryptKeySpec;
 
 public class SCRYPT
 {

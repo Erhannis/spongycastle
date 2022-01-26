@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.x500;
+package org.spongycastle.asn1.x500;
 
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x500.style.BCStyle;
 
 /**
  * A builder class for making X.500 Name objects.

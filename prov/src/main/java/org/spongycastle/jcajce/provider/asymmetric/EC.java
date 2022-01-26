@@ -1,23 +1,23 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.internal.asn1.bsi.BSIObjectIdentifiers;
-import org.bouncycastle.internal.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.internal.asn1.eac.EACObjectIdentifiers;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.ec.KeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.internal.asn1.bsi.BSIObjectIdentifiers;
+import org.spongycastle.internal.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.internal.asn1.eac.EACObjectIdentifiers;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.ec.KeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.util.Properties;
 
 public class EC
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".ec.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".ec.";
 
     private static final Map<String, String> generalEcAttributes = new HashMap<String, String>();
 
@@ -144,7 +144,7 @@ public class EC
             registerOidAlgorithmParameters(provider, SECObjectIdentifiers.dhSinglePass_stdDH_sha512kdf_scheme, "EC");
             registerOidAlgorithmParameters(provider, SECObjectIdentifiers.dhSinglePass_cofactorDH_sha512kdf_scheme, "EC");
 
-            if (!Properties.isOverrideSet("org.bouncycastle.ec.disable_mqv"))
+            if (!Properties.isOverrideSet("org.spongycastle.ec.disable_mqv"))
             {
                 provider.addAlgorithm("KeyAgreement.ECMQV", PREFIX + "KeyAgreementSpi$MQV");
 

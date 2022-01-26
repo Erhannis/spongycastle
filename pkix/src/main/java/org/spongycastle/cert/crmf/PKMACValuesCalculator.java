@@ -1,6 +1,6 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 public interface PKMACValuesCalculator
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 /**
  * Utility methods for converting byte arrays into ints and longs, and back again.

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.util;
+package org.spongycastle.jcajce.provider.asymmetric.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,11 +8,11 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OutputStream;
+import org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier;
 
 public class PKCS12BagAttributeCarrierImpl
     implements PKCS12BagAttributeCarrier

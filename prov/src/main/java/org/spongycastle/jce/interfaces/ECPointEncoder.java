@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.interfaces;
+package org.spongycastle.jce.interfaces;
 
 /**
  * All BC elliptic curve keys implement this interface. You need to

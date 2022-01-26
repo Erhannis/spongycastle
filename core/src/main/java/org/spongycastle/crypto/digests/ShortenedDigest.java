@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.ExtendedDigest;
 
 /**
  * Wrapper class that reduces the output length of a particular digest to

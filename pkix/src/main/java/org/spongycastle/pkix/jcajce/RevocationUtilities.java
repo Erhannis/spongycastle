@@ -1,4 +1,4 @@
-package org.bouncycastle.pkix.jcajce;
+package org.spongycastle.pkix.jcajce;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -29,29 +29,29 @@ import java.util.Set;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.style.RFC4519Style;
-import org.bouncycastle.asn1.x509.CRLDistPoint;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.DistributionPoint;
-import org.bouncycastle.asn1.x509.DistributionPointName;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.IssuingDistributionPoint;
-import org.bouncycastle.jcajce.PKIXCRLStore;
-import org.bouncycastle.jcajce.PKIXCRLStoreSelector;
-import org.bouncycastle.jcajce.PKIXCertStoreSelector;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.StoreException;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.style.RFC4519Style;
+import org.spongycastle.asn1.x509.CRLDistPoint;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.DistributionPoint;
+import org.spongycastle.asn1.x509.DistributionPointName;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.x509.IssuingDistributionPoint;
+import org.spongycastle.jcajce.PKIXCRLStore;
+import org.spongycastle.jcajce.PKIXCRLStoreSelector;
+import org.spongycastle.jcajce.PKIXCertStoreSelector;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.StoreException;
 
 class RevocationUtilities
 {

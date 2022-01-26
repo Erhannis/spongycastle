@@ -1,9 +1,9 @@
-package org.bouncycastle.cert.path;
+package org.spongycastle.cert.path;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509CertificateHolder;
 
 class CertPathUtils
 {

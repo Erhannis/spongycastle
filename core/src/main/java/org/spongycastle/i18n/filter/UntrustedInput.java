@@ -1,5 +1,5 @@
 
-package org.bouncycastle.i18n.filter;
+package org.spongycastle.i18n.filter;
 
 /**
  * Wrapper class to mark untrusted input.

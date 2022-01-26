@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -19,28 +19,28 @@ import javax.crypto.KeyAgreement;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.cms.ecc.ECCCMSSharedInfo;
-import org.bouncycastle.asn1.cms.ecc.MQVuserKeyingMaterial;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.cryptopro.Gost2814789EncryptedKey;
-import org.bouncycastle.asn1.cryptopro.Gost2814789KeyWrapParameters;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.KeyAgreeRecipient;
-import org.bouncycastle.jcajce.spec.GOST28147WrapParameterSpec;
-import org.bouncycastle.jcajce.spec.MQVParameterSpec;
-import org.bouncycastle.jcajce.spec.UserKeyingMaterialSpec;
-import org.bouncycastle.operator.DefaultSecretKeySizeProvider;
-import org.bouncycastle.operator.SecretKeySizeProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.cms.ecc.ECCCMSSharedInfo;
+import org.spongycastle.asn1.cms.ecc.MQVuserKeyingMaterial;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.cryptopro.Gost2814789EncryptedKey;
+import org.spongycastle.asn1.cryptopro.Gost2814789KeyWrapParameters;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.KeyAgreeRecipient;
+import org.spongycastle.jcajce.spec.GOST28147WrapParameterSpec;
+import org.spongycastle.jcajce.spec.MQVParameterSpec;
+import org.spongycastle.jcajce.spec.UserKeyingMaterialSpec;
+import org.spongycastle.operator.DefaultSecretKeySizeProvider;
+import org.spongycastle.operator.SecretKeySizeProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
 
 public abstract class JceKeyAgreeRecipient
     implements KeyAgreeRecipient

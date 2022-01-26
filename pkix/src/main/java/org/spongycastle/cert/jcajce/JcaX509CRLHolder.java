@@ -1,10 +1,10 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.security.cert.CRLException;
 import java.security.cert.X509CRL;
 
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.cert.X509CRLHolder;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.cert.X509CRLHolder;
 
 /**
  * JCA helper class for converting an X509CRL into a X509CRLHolder object.

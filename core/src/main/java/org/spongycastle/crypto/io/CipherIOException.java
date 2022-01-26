@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.io;
+package org.spongycastle.crypto.io;
 
 import java.io.IOException;
 

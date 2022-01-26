@@ -1,11 +1,11 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.security.Security;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 abstract class JceTestUtil
 {

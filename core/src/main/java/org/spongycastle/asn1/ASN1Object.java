@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.util.Encodable;
 
 /**
  * Base class for defining an ASN.1 object.

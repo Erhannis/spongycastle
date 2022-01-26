@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.icao.test;
+package org.spongycastle.asn1.icao.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.icao.CscaMasterList;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.icao.CscaMasterList;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CscaMasterListTest
     extends SimpleTest

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -19,13 +19,13 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.internal.asn1.cms.GCMParameters;
-import org.bouncycastle.jcajce.spec.AEADParameterSpec;
-import org.bouncycastle.jcajce.spec.RepeatedSecretKeySpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.internal.asn1.cms.GCMParameters;
+import org.spongycastle.jcajce.spec.AEADParameterSpec;
+import org.spongycastle.jcajce.spec.RepeatedSecretKeySpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class AEADTest extends SimpleTest
 {

@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.io;
+package org.spongycastle.crypto.io;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
 public class DigestOutputStream
     extends OutputStream

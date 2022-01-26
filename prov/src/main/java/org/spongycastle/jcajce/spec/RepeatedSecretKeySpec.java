@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.spec;
+package org.spongycastle.jcajce.spec;
 
 
 import javax.crypto.SecretKey;

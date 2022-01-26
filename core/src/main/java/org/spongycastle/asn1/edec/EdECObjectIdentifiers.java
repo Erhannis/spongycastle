@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.edec;
+package org.spongycastle.asn1.edec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Edwards Elliptic Curve Object Identifiers (RFC 8410)

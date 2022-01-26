@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.lang.ref.SoftReference;
 import java.net.Socket;
@@ -32,19 +32,19 @@ import java.util.logging.Logger;
 
 import javax.net.ssl.SSLEngine;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.jsse.BCSNIHostName;
-import org.bouncycastle.jsse.BCX509ExtendedKeyManager;
-import org.bouncycastle.jsse.BCX509Key;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.tls.KeyExchangeAlgorithm;
-import org.bouncycastle.tls.NamedGroup;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCSNIHostName;
+import org.spongycastle.jsse.BCX509ExtendedKeyManager;
+import org.spongycastle.jsse.BCX509Key;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.tls.KeyExchangeAlgorithm;
+import org.spongycastle.tls.NamedGroup;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.TlsUtils;
 
 class ProvX509KeyManager
     extends BCX509ExtendedKeyManager
@@ -52,7 +52,7 @@ class ProvX509KeyManager
     private static final Logger LOG = Logger.getLogger(ProvX509KeyManager.class.getName());
 
     private static final boolean provKeyManagerCheckEKU = PropertyUtils
-        .getBooleanSystemProperty("org.bouncycastle.jsse.keyManager.checkEKU", true);
+        .getBooleanSystemProperty("org.spongycastle.jsse.keyManager.checkEKU", true);
 
     private final AtomicLong versions = new AtomicLong();
 

@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.examples;
+package org.spongycastle.crypto.examples;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroups;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEParticipant;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound1Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound2Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound3Payload;
-import org.bouncycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
+import org.spongycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroups;
+import org.spongycastle.crypto.agreement.jpake.JPAKEParticipant;
+import org.spongycastle.crypto.agreement.jpake.JPAKERound1Payload;
+import org.spongycastle.crypto.agreement.jpake.JPAKERound2Payload;
+import org.spongycastle.crypto.agreement.jpake.JPAKERound3Payload;
+import org.spongycastle.crypto.digests.SHA256Digest;
 
 /**
  * An example of a J-PAKE exchange.

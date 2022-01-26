@@ -1,9 +1,9 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.util.Iterator;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Iterable;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Iterable;
 
 /**
  * A list of PGP signatures - normally in the signature block after literal data.

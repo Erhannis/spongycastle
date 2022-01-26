@@ -1,19 +1,19 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.cms.CMSAttributeTableGenerator;
-import org.bouncycastle.cms.CMSSignatureEncryptionAlgorithmFinder;
-import org.bouncycastle.cms.DefaultCMSSignatureEncryptionAlgorithmFinder;
-import org.bouncycastle.cms.SignerInfoGenerator;
-import org.bouncycastle.cms.SignerInfoGeneratorBuilder;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.cms.CMSAttributeTableGenerator;
+import org.spongycastle.cms.CMSSignatureEncryptionAlgorithmFinder;
+import org.spongycastle.cms.DefaultCMSSignatureEncryptionAlgorithmFinder;
+import org.spongycastle.cms.SignerInfoGenerator;
+import org.spongycastle.cms.SignerInfoGeneratorBuilder;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
 
 public class JcaSignerInfoGeneratorBuilder
 {

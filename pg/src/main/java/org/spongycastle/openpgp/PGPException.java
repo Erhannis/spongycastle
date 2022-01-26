@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 /**
  * generic exception class for PGP encoding/decoding problems

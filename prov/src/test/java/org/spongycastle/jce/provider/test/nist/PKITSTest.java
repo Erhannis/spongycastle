@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test.nist;
+package org.spongycastle.jce.provider.test.nist;
 
 import java.io.InputStream;
 import java.security.cert.CertPath;
@@ -21,16 +21,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.TBSCertificate;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.KeyUsage;
+import org.spongycastle.asn1.x509.TBSCertificate;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
 
 /**
  * Utility class to support PKITS testing of the Cert Path library and associated functions.

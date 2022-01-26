@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.macs;
+package org.spongycastle.crypto.macs;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.SkeinEngine;
-import org.bouncycastle.crypto.engines.ThreefishEngine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.SkeinParameters;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.digests.SkeinEngine;
+import org.spongycastle.crypto.engines.ThreefishEngine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.SkeinParameters;
 
 /**
  * Implementation of the Skein parameterised MAC function in 256, 512 and 1024 bit block sizes,

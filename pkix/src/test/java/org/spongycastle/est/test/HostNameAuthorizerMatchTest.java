@@ -1,10 +1,10 @@
-package org.bouncycastle.est.test;
+package org.spongycastle.est.test;
 
 import java.io.IOException;
 import java.util.HashSet;
 
 import junit.framework.TestCase;
-import org.bouncycastle.est.jcajce.JsseDefaultHostnameAuthorizer;
+import org.spongycastle.est.jcajce.JsseDefaultHostnameAuthorizer;
 
 public class HostNameAuthorizerMatchTest
     extends TestCase

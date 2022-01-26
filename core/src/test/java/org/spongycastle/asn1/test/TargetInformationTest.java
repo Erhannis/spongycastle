@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.Target;
-import org.bouncycastle.asn1.x509.TargetInformation;
-import org.bouncycastle.asn1.x509.Targets;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.Target;
+import org.spongycastle.asn1.x509.TargetInformation;
+import org.spongycastle.asn1.x509.Targets;
+import org.spongycastle.util.test.SimpleTest;
 
 public class TargetInformationTest
     extends SimpleTest

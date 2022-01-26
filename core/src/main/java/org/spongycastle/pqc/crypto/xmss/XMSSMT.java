@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.xmss;
+package org.spongycastle.pqc.crypto.xmss;
 
 import java.security.SecureRandom;
 import java.text.ParseException;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.util.Arrays;
 
 /**
  * XMSS^MT.

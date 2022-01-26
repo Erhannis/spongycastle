@@ -1,4 +1,4 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -13,22 +13,22 @@ import java.util.Set;
 import java.util.TimeZone;
 import java.util.regex.Pattern;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.est.CsrAttrs;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cmc.CMCException;
-import org.bouncycastle.cmc.SimplePKIResponse;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.pkcs.PKCS10CertificationRequest;
-import org.bouncycastle.pkcs.PKCS10CertificationRequestBuilder;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERPrintableString;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.est.CsrAttrs;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cmc.CMCException;
+import org.spongycastle.cmc.SimplePKIResponse;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.pkcs.PKCS10CertificationRequest;
+import org.spongycastle.pkcs.PKCS10CertificationRequestBuilder;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.encoders.Base64;
 
 /**
  * ESTService provides unified access to an EST server which is defined as implementing

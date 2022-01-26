@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.esf;
+package org.spongycastle.asn1.esf;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
 
 public interface ESFAttributes
 {

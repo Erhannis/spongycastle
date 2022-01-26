@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.prng.test;
+package org.spongycastle.crypto.prng.test;
 
-import org.bouncycastle.crypto.prng.FixedSecureRandom;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.prng.FixedSecureRandom;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class FixedSecureRandomTest
     extends SimpleTest

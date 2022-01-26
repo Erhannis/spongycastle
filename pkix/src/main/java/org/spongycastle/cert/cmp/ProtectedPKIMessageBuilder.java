@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.cmp;
+package org.spongycastle.cert.cmp;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -6,23 +6,23 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmp.CMPCertificate;
-import org.bouncycastle.asn1.cmp.InfoTypeAndValue;
-import org.bouncycastle.asn1.cmp.PKIBody;
-import org.bouncycastle.asn1.cmp.PKIFreeText;
-import org.bouncycastle.asn1.cmp.PKIHeader;
-import org.bouncycastle.asn1.cmp.PKIHeaderBuilder;
-import org.bouncycastle.asn1.cmp.PKIMessage;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.MacCalculator;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cmp.CMPCertificate;
+import org.spongycastle.asn1.cmp.InfoTypeAndValue;
+import org.spongycastle.asn1.cmp.PKIBody;
+import org.spongycastle.asn1.cmp.PKIFreeText;
+import org.spongycastle.asn1.cmp.PKIHeader;
+import org.spongycastle.asn1.cmp.PKIHeaderBuilder;
+import org.spongycastle.asn1.cmp.PKIMessage;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.MacCalculator;
 
 /**
  * Builder for creating a protected PKI message.

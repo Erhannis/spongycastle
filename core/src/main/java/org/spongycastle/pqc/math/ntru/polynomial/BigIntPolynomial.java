@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.util.Arrays;
 
 /**
  * A polynomial with {@link BigInteger} coefficients.<br>

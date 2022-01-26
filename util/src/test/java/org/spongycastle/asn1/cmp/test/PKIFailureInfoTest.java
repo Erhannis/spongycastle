@@ -1,14 +1,14 @@
-package org.bouncycastle.asn1.cmp.test;
+package org.spongycastle.asn1.cmp.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.cmp.PKIFailureInfo;
-import org.bouncycastle.asn1.util.test.BitStringConstantTester;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.cmp.PKIFailureInfo;
+import org.spongycastle.asn1.util.test.BitStringConstantTester;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 
 /**

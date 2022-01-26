@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -7,13 +7,13 @@ import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.DSAParameterSpec;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.generators.DSAParametersGenerator;
-import org.bouncycastle.crypto.params.DSAParameterGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.generators.DSAParametersGenerator;
+import org.spongycastle.crypto.params.DSAParameterGenerationParameters;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
+import org.spongycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
 
 public class AlgorithmParameterGeneratorSpi
     extends BaseAlgorithmParameterGeneratorSpi

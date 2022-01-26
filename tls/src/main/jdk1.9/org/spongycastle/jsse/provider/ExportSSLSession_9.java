@@ -1,8 +1,8 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.util.List;
 
-import org.bouncycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCExtendedSSLSession;
 
 class ExportSSLSession_9
     extends ExportSSLSession_8

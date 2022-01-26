@@ -1,9 +1,9 @@
-package org.bouncycastle.oer.its.template;
+package org.spongycastle.oer.its.template;
 
 
 import java.math.BigInteger;
 
-import org.bouncycastle.oer.OERDefinition;
+import org.spongycastle.oer.OERDefinition;
 
 public class Ieee1609Dot2BaseTypes
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -11,16 +11,16 @@ import java.security.PublicKey;
 import java.security.spec.ECParameterSpec;
 import java.security.spec.ECPublicKeySpec;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.NamedGroup;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.TlsAgreement;
-import org.bouncycastle.tls.crypto.TlsCryptoException;
-import org.bouncycastle.tls.crypto.TlsECConfig;
-import org.bouncycastle.tls.crypto.TlsECDomain;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.NamedGroup;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.TlsAgreement;
+import org.spongycastle.tls.crypto.TlsCryptoException;
+import org.spongycastle.tls.crypto.TlsECConfig;
+import org.spongycastle.tls.crypto.TlsECDomain;
 
 /**
  * EC domain class for generating key pairs and performing key agreement.
@@ -112,11 +112,11 @@ public class JceTlsECDomain
 
     public byte[] encodePublicKey(PublicKey publicKey) throws IOException
     {
-        // TODO Add new org.bouncycastle.util.ECPointHolder with getEncodedPoint(boolean)
+        // TODO Add new org.spongycastle.util.ECPointHolder with getEncodedPoint(boolean)
 
-        if (publicKey instanceof org.bouncycastle.jce.interfaces.ECPublicKey)
+        if (publicKey instanceof org.spongycastle.jce.interfaces.ECPublicKey)
         {
-            return encodePoint(((org.bouncycastle.jce.interfaces.ECPublicKey)publicKey).getQ());
+            return encodePoint(((org.spongycastle.jce.interfaces.ECPublicKey)publicKey).getQ());
         }
 
         if (publicKey instanceof java.security.interfaces.ECPublicKey)

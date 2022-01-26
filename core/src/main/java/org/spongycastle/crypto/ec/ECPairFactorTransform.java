@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.ec;
+package org.spongycastle.crypto.ec;
 
 import java.math.BigInteger;
 

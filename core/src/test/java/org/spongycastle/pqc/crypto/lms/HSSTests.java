@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.prng.FixedSecureRandom;
-import org.bouncycastle.pqc.crypto.ExhaustedPrivateKeyException;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.prng.FixedSecureRandom;
+import org.spongycastle.pqc.crypto.ExhaustedPrivateKeyException;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.io.Streams;
 
 public class HSSTests
     extends TestCase
@@ -73,7 +73,7 @@ public class HSSTests
     public void testHSSVector_1()
         throws Exception
     {
-        ArrayList<byte[]> blocks = loadVector("/org/bouncycastle/pqc/crypto/test/lms/testcase_1.txt");
+        ArrayList<byte[]> blocks = loadVector("/org.spongycastle.pqc/crypto/test/lms/testcase_1.txt");
 
         HSSPublicKeyParameters publicKey = HSSPublicKeyParameters.getInstance(blocks.get(0));
         byte[] message = blocks.get(1);
@@ -91,7 +91,7 @@ public class HSSTests
         throws Exception
     {
 
-        ArrayList<byte[]> blocks = loadVector("/org/bouncycastle/pqc/crypto/test/lms/testcase_2.txt");
+        ArrayList<byte[]> blocks = loadVector("/org.spongycastle.pqc/crypto/test/lms/testcase_2.txt");
 
         HSSPublicKeyParameters publicKey = HSSPublicKeyParameters.getInstance(blocks.get(0));
         byte[] message = blocks.get(1);
@@ -315,7 +315,7 @@ public class HSSTests
         throws Exception
     {
 
-        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org/bouncycastle/pqc/crypto/test/lms/depth_1.txt"))).split("\n");
+        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org.spongycastle.pqc/crypto/test/lms/depth_1.txt"))).split("\n");
 
         int d = 0;
         List<LMSigParameters> lmsParameters = new ArrayList<LMSigParameters>();
@@ -461,7 +461,7 @@ public class HSSTests
         throws Exception
     {
 
-        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org/bouncycastle/pqc/crypto/test/lms/expansion.txt"))).split("\n");
+        String[] lines = new String(Streams.readAll(HSSTests.class.getResourceAsStream("/org.spongycastle.pqc/crypto/test/lms/expansion.txt"))).split("\n");
 
         int d = 0;
         List<LMSigParameters> lmsParameters = new ArrayList<LMSigParameters>();

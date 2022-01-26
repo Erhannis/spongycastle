@@ -1,9 +1,9 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * A calculator which produces a truncated digest from a regular one, with the truncation

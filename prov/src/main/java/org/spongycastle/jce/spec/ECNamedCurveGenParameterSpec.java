@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.spec;
+package org.spongycastle.jce.spec;
 
 import java.security.spec.AlgorithmParameterSpec;
 

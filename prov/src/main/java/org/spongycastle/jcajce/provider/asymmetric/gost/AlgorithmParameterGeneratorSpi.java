@@ -1,16 +1,16 @@
-package org.bouncycastle.jcajce.provider.asymmetric.gost;
+package org.spongycastle.jcajce.provider.asymmetric.gost;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.generators.GOST3410ParametersGenerator;
-import org.bouncycastle.crypto.params.GOST3410Parameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
-import org.bouncycastle.jce.spec.GOST3410ParameterSpec;
-import org.bouncycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.generators.GOST3410ParametersGenerator;
+import org.spongycastle.crypto.params.GOST3410Parameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
+import org.spongycastle.jce.spec.GOST3410ParameterSpec;
+import org.spongycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
 
 public class AlgorithmParameterGeneratorSpi
     extends BaseAlgorithmParameterGeneratorSpi

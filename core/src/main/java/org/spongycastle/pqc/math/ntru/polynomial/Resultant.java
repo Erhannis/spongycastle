@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 import java.math.BigInteger;
 

@@ -1,6 +1,6 @@
-package org.bouncycastle.math.field;
+package org.spongycastle.math.field;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 class GF2Polynomial implements Polynomial
 {

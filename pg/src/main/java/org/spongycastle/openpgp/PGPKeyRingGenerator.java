@@ -1,16 +1,16 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.bcpg.PublicSubkeyPacket;
-import org.bouncycastle.bcpg.SignatureSubpacket;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.openpgp.operator.PBESecretKeyDecryptor;
-import org.bouncycastle.openpgp.operator.PBESecretKeyEncryptor;
-import org.bouncycastle.openpgp.operator.PGPContentSignerBuilder;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.bcpg.PublicSubkeyPacket;
+import org.spongycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.openpgp.operator.PBESecretKeyDecryptor;
+import org.spongycastle.openpgp.operator.PBESecretKeyEncryptor;
+import org.spongycastle.openpgp.operator.PGPContentSignerBuilder;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
 
 /**
  * Generator for a PGP master and subkey ring. This class will generate

@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.params.Ed448PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed448PublicKeyParameters;
-import org.bouncycastle.math.ec.rfc8032.Ed448;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.params.Ed448PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed448PublicKeyParameters;
+import org.spongycastle.math.ec.rfc8032.Ed448;
+import org.spongycastle.util.Arrays;
 
 public class Ed448phSigner
     implements Signer

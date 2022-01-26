@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,9 +12,9 @@ import javax.net.ssl.SSLParameters;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocket;
 
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.jsse.BCSSLParameters;
-import org.bouncycastle.jsse.BCSSLSocket;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCSSLParameters;
+import org.spongycastle.jsse.BCSSLSocket;
 
 abstract class SSLSocketUtil
 {

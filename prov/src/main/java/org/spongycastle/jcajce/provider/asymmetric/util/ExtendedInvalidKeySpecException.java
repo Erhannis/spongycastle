@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.util;
+package org.spongycastle.jcajce.provider.asymmetric.util;
 
 import java.security.spec.InvalidKeySpecException;
 

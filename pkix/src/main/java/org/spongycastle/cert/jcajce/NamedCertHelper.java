@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.security.NoSuchProviderException;
 import java.security.cert.CertificateException;

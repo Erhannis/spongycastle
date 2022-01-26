@@ -1,7 +1,7 @@
 package java.math.test;
 
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.Test;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.Test;
 
 public class RegressionTest
 {

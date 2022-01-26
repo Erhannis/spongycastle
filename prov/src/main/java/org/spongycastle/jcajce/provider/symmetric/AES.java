@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -11,44 +11,44 @@ import java.util.Map;
 
 import javax.crypto.spec.IvParameterSpec;
 
-import org.bouncycastle.asn1.bc.BCObjectIdentifiers;
-import org.bouncycastle.internal.asn1.cms.CCMParameters;
-import org.bouncycastle.internal.asn1.cms.GCMParameters;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.engines.AESWrapEngine;
-import org.bouncycastle.crypto.engines.AESWrapPadEngine;
-import org.bouncycastle.crypto.engines.RFC3211WrapEngine;
-import org.bouncycastle.crypto.engines.RFC5649WrapEngine;
-import org.bouncycastle.crypto.generators.Poly1305KeyGenerator;
-import org.bouncycastle.crypto.macs.CMac;
-import org.bouncycastle.crypto.macs.GMac;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.CCMBlockCipher;
-import org.bouncycastle.crypto.modes.CFBBlockCipher;
-import org.bouncycastle.crypto.modes.GCMBlockCipher;
-import org.bouncycastle.crypto.modes.OFBBlockCipher;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameterGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseWrapCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.BlockCipherProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.GcmSpecUtil;
-import org.bouncycastle.jcajce.provider.symmetric.util.IvAlgorithmParameters;
-import org.bouncycastle.jcajce.provider.symmetric.util.PBESecretKeyFactory;
-import org.bouncycastle.jcajce.spec.AEADParameterSpec;
+import org.spongycastle.asn1.bc.BCObjectIdentifiers;
+import org.spongycastle.internal.asn1.cms.CCMParameters;
+import org.spongycastle.internal.asn1.cms.GCMParameters;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.engines.AESEngine;
+import org.spongycastle.crypto.engines.AESWrapEngine;
+import org.spongycastle.crypto.engines.AESWrapPadEngine;
+import org.spongycastle.crypto.engines.RFC3211WrapEngine;
+import org.spongycastle.crypto.engines.RFC5649WrapEngine;
+import org.spongycastle.crypto.generators.Poly1305KeyGenerator;
+import org.spongycastle.crypto.macs.CMac;
+import org.spongycastle.crypto.macs.GMac;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.modes.CCMBlockCipher;
+import org.spongycastle.crypto.modes.CFBBlockCipher;
+import org.spongycastle.crypto.modes.GCMBlockCipher;
+import org.spongycastle.crypto.modes.OFBBlockCipher;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameterGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseSecretKeyFactory;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseWrapCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.BlockCipherProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.GcmSpecUtil;
+import org.spongycastle.jcajce.provider.symmetric.util.IvAlgorithmParameters;
+import org.spongycastle.jcajce.provider.symmetric.util.PBESecretKeyFactory;
+import org.spongycastle.jcajce.spec.AEADParameterSpec;
 
 public final class AES
 {
@@ -221,7 +221,7 @@ public final class AES
     {
         public Poly1305()
         {
-            super(new org.bouncycastle.crypto.macs.Poly1305(new AESEngine()));
+            super(new org.spongycastle.crypto.macs.Poly1305(new AESEngine()));
         }
     }
 

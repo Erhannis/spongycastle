@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.agreement.srp.SRP6VerifierGenerator;
-import org.bouncycastle.tls.crypto.TlsSRP6VerifierGenerator;
+import org.spongycastle.crypto.agreement.srp.SRP6VerifierGenerator;
+import org.spongycastle.tls.crypto.TlsSRP6VerifierGenerator;
 
 final class BcTlsSRP6VerifierGenerator
     implements TlsSRP6VerifierGenerator

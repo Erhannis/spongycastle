@@ -1,13 +1,13 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
-import org.bouncycastle.tls.TlsClientProtocol;
-import org.bouncycastle.tls.TlsServerProtocol;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.tls.TlsClientProtocol;
+import org.spongycastle.tls.TlsServerProtocol;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
 
 import junit.framework.TestCase;
 

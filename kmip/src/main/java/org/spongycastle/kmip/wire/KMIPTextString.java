@@ -1,6 +1,6 @@
-package org.bouncycastle.kmip.wire;
+package org.spongycastle.kmip.wire;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 public class KMIPTextString
     implements KMIPItem

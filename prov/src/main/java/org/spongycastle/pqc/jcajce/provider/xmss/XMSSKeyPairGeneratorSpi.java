@@ -1,23 +1,23 @@
-package org.bouncycastle.pqc.jcajce.provider.xmss;
+package org.spongycastle.pqc.jcajce.provider.xmss;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.xmss.XMSSParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPublicKeyParameters;
-import org.bouncycastle.pqc.jcajce.spec.XMSSParameterSpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.pqc.crypto.xmss.XMSSKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSKeyPairGenerator;
+import org.spongycastle.pqc.crypto.xmss.XMSSParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSPublicKeyParameters;
+import org.spongycastle.pqc.jcajce.spec.XMSSParameterSpec;
 
 public class XMSSKeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

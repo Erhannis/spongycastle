@@ -1,10 +1,10 @@
-package org.bouncycastle.math.ec.custom.sec;
+package org.spongycastle.math.ec.custom.sec;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.math.raw.Interleave;
-import org.bouncycastle.math.raw.Nat;
-import org.bouncycastle.math.raw.Nat320;
+import org.spongycastle.math.raw.Interleave;
+import org.spongycastle.math.raw.Nat;
+import org.spongycastle.math.raw.Nat320;
 
 public class SecT283Field
 {

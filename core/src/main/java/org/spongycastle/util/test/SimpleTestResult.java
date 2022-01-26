@@ -1,6 +1,6 @@
-package org.bouncycastle.util.test;
+package org.spongycastle.util.test;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 public class SimpleTestResult implements TestResult
 {

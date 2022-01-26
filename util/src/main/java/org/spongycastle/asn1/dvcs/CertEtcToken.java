@@ -1,22 +1,22 @@
-package org.bouncycastle.asn1.dvcs;
+package org.spongycastle.asn1.dvcs;
 
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.cmp.PKIStatusInfo;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.ess.ESSCertID;
-import org.bouncycastle.asn1.ocsp.CertID;
-import org.bouncycastle.asn1.ocsp.CertStatus;
-import org.bouncycastle.asn1.ocsp.OCSPResponse;
-import org.bouncycastle.asn1.smime.SMIMECapabilities;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.cmp.PKIStatusInfo;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.ess.ESSCertID;
+import org.spongycastle.asn1.ocsp.CertID;
+import org.spongycastle.asn1.ocsp.CertStatus;
+import org.spongycastle.asn1.ocsp.OCSPResponse;
+import org.spongycastle.asn1.smime.SMIMECapabilities;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.asn1.x509.Extension;
 
 /**
  * <pre>

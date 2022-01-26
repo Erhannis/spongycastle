@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,9 +7,9 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.tsp.PartialHashtree;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.tsp.PartialHashtree;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.util.io.Streams;
 
 class ERSUtil
 {

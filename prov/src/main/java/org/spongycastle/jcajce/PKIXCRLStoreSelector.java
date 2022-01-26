@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
 import java.math.BigInteger;
 import java.security.cert.CRL;
@@ -10,17 +10,17 @@ import java.security.cert.X509CRLSelector;
 import java.security.cert.X509Certificate;
 import java.util.Collection;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Selector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Selector;
 
 /**
  * This class is a Selector implementation for X.509 certificate revocation
  * lists.
  * 
- * @see org.bouncycastle.util.Selector
+ * @see org.spongycastle.util.Selector
  */
 public class PKIXCRLStoreSelector<T extends CRL>
     implements Selector<T>

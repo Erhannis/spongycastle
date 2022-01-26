@@ -1,10 +1,10 @@
-package org.bouncycastle.util.encoders;
+package org.spongycastle.util.encoders;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * A streaming Base32 encoder.

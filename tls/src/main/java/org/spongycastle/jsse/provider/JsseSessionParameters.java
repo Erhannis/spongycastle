@@ -1,6 +1,6 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
-import org.bouncycastle.jsse.BCSNIServerName;
+import org.spongycastle.jsse.BCSNIServerName;
 
 class JsseSessionParameters
 {

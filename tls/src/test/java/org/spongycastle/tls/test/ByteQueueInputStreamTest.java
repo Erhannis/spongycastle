@@ -1,8 +1,8 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.tls.ByteQueueInputStream;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.ByteQueueInputStream;
+import org.spongycastle.util.Arrays;
 
 public class ByteQueueInputStreamTest
     extends TestCase

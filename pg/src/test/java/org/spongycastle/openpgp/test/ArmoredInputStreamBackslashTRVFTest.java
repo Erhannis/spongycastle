@@ -1,15 +1,15 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.Security;
 
-import org.bouncycastle.bcpg.ArmoredInputStream;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openpgp.PGPSecretKeyRing;
-import org.bouncycastle.openpgp.bc.BcPGPSecretKeyRing;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.bcpg.ArmoredInputStream;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openpgp.PGPSecretKeyRing;
+import org.spongycastle.openpgp.bc.BcPGPSecretKeyRing;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 public class ArmoredInputStreamBackslashTRVFTest
     extends SimpleTest

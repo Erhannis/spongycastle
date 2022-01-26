@@ -1,8 +1,8 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.bcpg.HashAlgorithmTags;
 
 /**
  * A digest calculator, which consumes a stream of data and computes a digest value over it.
@@ -19,7 +19,7 @@ public interface PGPDigestCalculator
 
     /**
      * Returns a stream that will accept data for the purpose of calculating a digest. Use
-     * org.bouncycastle.util.io.TeeOutputStream if you want to accumulate the data on the fly as
+     * org.spongycastle.util.io.TeeOutputStream if you want to accumulate the data on the fly as
      * well.
      * 
      * @return an OutputStream that data to be digested can be written to.

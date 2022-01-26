@@ -1,6 +1,6 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.util.Encodable;
 
 /**
  * base interface for a PGP key

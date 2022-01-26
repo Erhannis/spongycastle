@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
 /**
  * an implementation of the AES Key Wrapper from the NIST Key Wrap

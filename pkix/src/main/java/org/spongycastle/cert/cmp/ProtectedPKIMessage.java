@@ -1,23 +1,23 @@
-package org.bouncycastle.cert.cmp;
+package org.spongycastle.cert.cmp;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmp.CMPCertificate;
-import org.bouncycastle.asn1.cmp.CMPObjectIdentifiers;
-import org.bouncycastle.asn1.cmp.PBMParameter;
-import org.bouncycastle.asn1.cmp.PKIBody;
-import org.bouncycastle.asn1.cmp.PKIHeader;
-import org.bouncycastle.asn1.cmp.PKIMessage;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.crmf.PKMACBuilder;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.ContentVerifierProvider;
-import org.bouncycastle.operator.MacCalculator;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cmp.CMPCertificate;
+import org.spongycastle.asn1.cmp.CMPObjectIdentifiers;
+import org.spongycastle.asn1.cmp.PBMParameter;
+import org.spongycastle.asn1.cmp.PKIBody;
+import org.spongycastle.asn1.cmp.PKIHeader;
+import org.spongycastle.asn1.cmp.PKIMessage;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.crmf.PKMACBuilder;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.ContentVerifierProvider;
+import org.spongycastle.operator.MacCalculator;
+import org.spongycastle.util.Arrays;
 
 /**
  * Wrapper for a PKIMessage with protection attached to it.

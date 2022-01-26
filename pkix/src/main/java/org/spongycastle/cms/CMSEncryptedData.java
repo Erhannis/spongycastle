@@ -1,13 +1,13 @@
-package org.bouncycastle.cms;
+package org.spongycastle.cms;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.cms.EncryptedContentInfo;
-import org.bouncycastle.asn1.cms.EncryptedData;
-import org.bouncycastle.operator.InputDecryptor;
-import org.bouncycastle.operator.InputDecryptorProvider;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.cms.EncryptedContentInfo;
+import org.spongycastle.asn1.cms.EncryptedData;
+import org.spongycastle.operator.InputDecryptor;
+import org.spongycastle.operator.InputDecryptorProvider;
 
 public class CMSEncryptedData
 {

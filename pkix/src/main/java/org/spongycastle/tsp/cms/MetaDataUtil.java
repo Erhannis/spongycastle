@@ -1,13 +1,13 @@
-package org.bouncycastle.tsp.cms;
+package org.spongycastle.tsp.cms;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.cms.Attributes;
-import org.bouncycastle.asn1.cms.MetaData;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.cms.Attributes;
+import org.spongycastle.asn1.cms.MetaData;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.operator.DigestCalculator;
 
 class MetaDataUtil
 {

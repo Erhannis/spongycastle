@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.io.IOException;
 import java.math.BigInteger;

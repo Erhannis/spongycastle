@@ -1,4 +1,4 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,8 +6,8 @@ import java.io.OutputStream;
 import java.math.BigInteger;
 import java.util.Hashtable;
 
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Integers;
 
 public class TlsSRPUtils
 {

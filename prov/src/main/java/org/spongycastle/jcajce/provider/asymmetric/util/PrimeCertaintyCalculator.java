@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.util;
+package org.spongycastle.jcajce.provider.asymmetric.util;
 
 public class PrimeCertaintyCalculator
 {

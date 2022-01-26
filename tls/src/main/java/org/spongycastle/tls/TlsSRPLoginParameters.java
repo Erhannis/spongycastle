@@ -1,9 +1,9 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.tls.crypto.TlsSRPConfig;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.crypto.TlsSRPConfig;
+import org.spongycastle.util.Arrays;
 
 public class TlsSRPLoginParameters
 {

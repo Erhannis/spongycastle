@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -7,13 +7,13 @@ import java.security.KeyPairGenerator;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.TlsAgreement;
-import org.bouncycastle.tls.crypto.TlsCryptoException;
-import org.bouncycastle.tls.crypto.TlsECDomain;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.TlsAgreement;
+import org.spongycastle.tls.crypto.TlsCryptoException;
+import org.spongycastle.tls.crypto.TlsECDomain;
+import org.spongycastle.util.Arrays;
 
 public class JceX25519Domain implements TlsECDomain
 {

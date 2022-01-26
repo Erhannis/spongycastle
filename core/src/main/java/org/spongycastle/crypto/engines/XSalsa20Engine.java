@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.util.Pack;
+import org.spongycastle.util.Pack;
 
 /**
  * Implementation of Daniel J. Bernstein's XSalsa20 stream cipher - Salsa20 with an extended nonce.

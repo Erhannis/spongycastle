@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.util.Arrays;
 
 /**
 * A SecureRandom that maintains a journal of its output.

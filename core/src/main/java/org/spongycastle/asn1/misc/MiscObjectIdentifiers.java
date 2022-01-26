@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.misc;
+package org.spongycastle.asn1.misc;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 public interface MiscObjectIdentifiers
 {

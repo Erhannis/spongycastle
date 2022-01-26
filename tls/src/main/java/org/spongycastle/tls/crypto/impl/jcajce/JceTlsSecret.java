@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.security.GeneralSecurityException;
 import java.security.MessageDigest;
@@ -6,15 +6,15 @@ import java.security.MessageDigest;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.tls.PRFAlgorithm;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.CryptoHashAlgorithm;
-import org.bouncycastle.tls.crypto.TlsCryptoUtils;
-import org.bouncycastle.tls.crypto.TlsSecret;
-import org.bouncycastle.tls.crypto.impl.AbstractTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.AbstractTlsSecret;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.tls.PRFAlgorithm;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.CryptoHashAlgorithm;
+import org.spongycastle.tls.crypto.TlsCryptoUtils;
+import org.spongycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.crypto.impl.AbstractTlsCrypto;
+import org.spongycastle.tls.crypto.impl.AbstractTlsSecret;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * JCE support class for handling TLS secrets and deriving key material and other secrets from them.

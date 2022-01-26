@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.OutputStream;
 import java.security.AccessController;
@@ -12,23 +12,23 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.cms.GCMParameters;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.jcajce.io.CipherOutputStream;
-import org.bouncycastle.operator.DefaultSecretKeySizeProvider;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.MacCaptureStream;
-import org.bouncycastle.operator.OutputAEADEncryptor;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.operator.SecretKeySizeProvider;
-import org.bouncycastle.operator.jcajce.JceGenericKey;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.cms.GCMParameters;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.jcajce.io.CipherOutputStream;
+import org.spongycastle.operator.DefaultSecretKeySizeProvider;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.MacCaptureStream;
+import org.spongycastle.operator.OutputAEADEncryptor;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.operator.SecretKeySizeProvider;
+import org.spongycastle.operator.jcajce.JceGenericKey;
 
 /**
  * Builder for the content encryptor in EnvelopedData - used to encrypt the actual transmitted content.

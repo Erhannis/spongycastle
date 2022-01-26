@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dstu;
+package org.spongycastle.jcajce.provider.asymmetric.dstu;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -10,41 +10,41 @@ import java.security.spec.ECPrivateKeySpec;
 import java.security.spec.EllipticCurve;
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.ua.DSTU4145BinaryField;
-import org.bouncycastle.asn1.ua.DSTU4145ECBinary;
-import org.bouncycastle.asn1.ua.DSTU4145NamedCurves;
-import org.bouncycastle.asn1.ua.DSTU4145Params;
-import org.bouncycastle.asn1.ua.DSTU4145PointEncoder;
-import org.bouncycastle.asn1.ua.UAObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X962Parameters;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ECPoint;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PKCS12BagAttributeCarrierImpl;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.jce.spec.ECNamedCurveSpec;
-import org.bouncycastle.math.ec.ECCurve;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.ua.DSTU4145BinaryField;
+import org.spongycastle.asn1.ua.DSTU4145ECBinary;
+import org.spongycastle.asn1.ua.DSTU4145NamedCurves;
+import org.spongycastle.asn1.ua.DSTU4145Params;
+import org.spongycastle.asn1.ua.DSTU4145PointEncoder;
+import org.spongycastle.asn1.ua.UAObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X962Parameters;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.asn1.x9.X9ECPoint;
+import org.spongycastle.asn1.x9.X9ObjectIdentifiers;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.EC5Util;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.jcajce.provider.asymmetric.util.PKCS12BagAttributeCarrierImpl;
+import org.spongycastle.jce.interfaces.ECPointEncoder;
+import org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.jce.spec.ECNamedCurveSpec;
+import org.spongycastle.math.ec.ECCurve;
 
 public class BCDSTU4145PrivateKey
-    implements ECPrivateKey, org.bouncycastle.jce.interfaces.ECPrivateKey, PKCS12BagAttributeCarrier, ECPointEncoder
+    implements ECPrivateKey, org.spongycastle.jce.interfaces.ECPrivateKey, PKCS12BagAttributeCarrier, ECPointEncoder
 {
     static final long serialVersionUID = 7245981689601667138L;
 
@@ -69,7 +69,7 @@ public class BCDSTU4145PrivateKey
     }
 
     public BCDSTU4145PrivateKey(
-        org.bouncycastle.jce.spec.ECPrivateKeySpec spec)
+        org.spongycastle.jce.spec.ECPrivateKeySpec spec)
     {
         this.d = spec.getD();
 
@@ -139,7 +139,7 @@ public class BCDSTU4145PrivateKey
         String algorithm,
         ECPrivateKeyParameters params,
         BCDSTU4145PublicKey pubKey,
-        org.bouncycastle.jce.spec.ECParameterSpec spec)
+        org.spongycastle.jce.spec.ECParameterSpec spec)
     {
         ECDomainParameters dp = params.getParameters();
 
@@ -242,7 +242,7 @@ public class BCDSTU4145PrivateKey
             else
             {
                 DSTU4145Params dstuParams = DSTU4145Params.getInstance(seq);
-                org.bouncycastle.jce.spec.ECParameterSpec spec;
+                org.spongycastle.jce.spec.ECParameterSpec spec;
                 if (dstuParams.isNamedCurve())
                 {
                     ASN1ObjectIdentifier curveOid = dstuParams.getNamedCurve();
@@ -265,7 +265,7 @@ public class BCDSTU4145PrivateKey
                     {
                         reverseBytes(g_bytes);
                     }
-                    spec = new org.bouncycastle.jce.spec.ECParameterSpec(curve, DSTU4145PointEncoder.decodePoint(curve, g_bytes), binary.getN());
+                    spec = new org.spongycastle.jce.spec.ECParameterSpec(curve, DSTU4145PointEncoder.decodePoint(curve, g_bytes), binary.getN());
                 }
 
                 EllipticCurve ellipticCurve = EC5Util.convertCurve(spec.getCurve(), spec.getSeed());
@@ -287,7 +287,7 @@ public class BCDSTU4145PrivateKey
         }
         else
         {
-            org.bouncycastle.asn1.sec.ECPrivateKey ec = org.bouncycastle.asn1.sec.ECPrivateKey.getInstance(privKey);
+            org.spongycastle.asn1.sec.ECPrivateKey ec = org.spongycastle.asn1.sec.ECPrivateKey.getInstance(privKey);
 
             this.d = ec.getKey();
             this.publicKey = ec.getPublicKey();
@@ -363,15 +363,15 @@ public class BCDSTU4145PrivateKey
         }
 
         PrivateKeyInfo info;
-        org.bouncycastle.asn1.sec.ECPrivateKey keyStructure;
+        org.spongycastle.asn1.sec.ECPrivateKey keyStructure;
 
         if (publicKey != null)
         {
-            keyStructure = new org.bouncycastle.asn1.sec.ECPrivateKey(orderBitLength, this.getS(), publicKey, params);
+            keyStructure = new org.spongycastle.asn1.sec.ECPrivateKey(orderBitLength, this.getS(), publicKey, params);
         }
         else
         {
-            keyStructure = new org.bouncycastle.asn1.sec.ECPrivateKey(orderBitLength, this.getS(), params);
+            keyStructure = new org.spongycastle.asn1.sec.ECPrivateKey(orderBitLength, this.getS(), params);
         }
 
         try
@@ -399,7 +399,7 @@ public class BCDSTU4145PrivateKey
         return ecSpec;
     }
 
-    public org.bouncycastle.jce.spec.ECParameterSpec getParameters()
+    public org.spongycastle.jce.spec.ECParameterSpec getParameters()
     {
         if (ecSpec == null)
         {
@@ -409,7 +409,7 @@ public class BCDSTU4145PrivateKey
         return EC5Util.convertSpec(ecSpec);
     }
 
-    org.bouncycastle.jce.spec.ECParameterSpec engineGetSpec()
+    org.spongycastle.jce.spec.ECParameterSpec engineGetSpec()
     {
         if (ecSpec != null)
         {

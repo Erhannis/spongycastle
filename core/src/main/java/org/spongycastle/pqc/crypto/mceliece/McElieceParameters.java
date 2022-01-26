@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.mceliece;
+package org.spongycastle.pqc.crypto.mceliece;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialRingGF2;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.pqc.math.linearalgebra.PolynomialRingGF2;
 
 public class McElieceParameters
     implements CipherParameters

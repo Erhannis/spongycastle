@@ -1,8 +1,8 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
 import javax.crypto.interfaces.PBEKey;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * A password based key for use with PKCS#12 with full PBE parameters.

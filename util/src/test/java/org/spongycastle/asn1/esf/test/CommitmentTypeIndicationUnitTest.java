@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.esf.test;
+package org.spongycastle.asn1.esf.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.esf.CommitmentTypeIdentifier;
-import org.bouncycastle.asn1.esf.CommitmentTypeIndication;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.esf.CommitmentTypeIdentifier;
+import org.spongycastle.asn1.esf.CommitmentTypeIndication;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CommitmentTypeIndicationUnitTest 
     extends SimpleTest

@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.cmc.CMCStatus;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.cmc.CMCStatus;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class CMCStatusTest

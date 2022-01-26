@@ -1,9 +1,9 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * Basic output stream.

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -20,36 +20,36 @@ import java.security.spec.RSAPrivateCrtKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1BMPString;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DLSequenceParser;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.ContentInfo;
-import org.bouncycastle.asn1.pkcs.EncryptedData;
-import org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.MacData;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Pfx;
-import org.bouncycastle.asn1.pkcs.SafeBag;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jcajce.PKCS12StoreParameter;
-import org.bouncycastle.jce.PKCS12Util;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.provider.JDKPKCS12StoreParameter;
-import org.bouncycastle.jce.provider.X509CertificateObject;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1BMPString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1StreamParser;
+import org.spongycastle.asn1.DERBMPString;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DLSequenceParser;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.ContentInfo;
+import org.spongycastle.asn1.pkcs.EncryptedData;
+import org.spongycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
+import org.spongycastle.asn1.pkcs.MacData;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.Pfx;
+import org.spongycastle.asn1.pkcs.SafeBag;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.jcajce.PKCS12StoreParameter;
+import org.spongycastle.jce.PKCS12Util;
+import org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.JDKPKCS12StoreParameter;
+import org.spongycastle.jce.provider.X509CertificateObject;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Exercise the various key stores, making sure we at least get back what we put in!
@@ -999,11 +999,11 @@ public class PKCS12StoreTest
             isEquals("password supplied for keystore that does not require one", e.getMessage());
         }
 
-        System.setProperty("org.bouncycastle.pkcs12.ignore_useless_passwd", "true");
+        System.setProperty("org.spongycastle.pkcs12.ignore_useless_passwd", "true");
         
         pkcs12.load(new ByteArrayInputStream(certsOnly), "1".toCharArray());
 
-        System.setProperty("org.bouncycastle.pkcs12.ignore_useless_passwd", "false");
+        System.setProperty("org.spongycastle.pkcs12.ignore_useless_passwd", "false");
     }
     private void testGOSTStore()
         throws Exception
@@ -1194,7 +1194,7 @@ public class PKCS12StoreTest
         //
         bOut = new ByteArrayOutputStream();
 
-        storeParam = new org.bouncycastle.jcajce.provider.config.PKCS12StoreParameter(bOut, passwd, true);
+        storeParam = new org.spongycastle.jcajce.provider.config.PKCS12StoreParameter(bOut, passwd, true);
 
         store.store(storeParam);
 
@@ -1315,7 +1315,7 @@ public class PKCS12StoreTest
 
         Certificate[] chain = new Certificate[1];
 
-        chain[0] = createCert(pubKey, privKey, "issuer@bouncycastle.org", "subject@bouncycastle.org");
+        chain[0] = createCert(pubKey, privKey, "issuer.spongycastle.org", "subject.spongycastle.org");
 
         testSupportedTypes(privKey, chain);
 
@@ -1675,7 +1675,7 @@ public class PKCS12StoreTest
 
         System.arraycopy(chain1, 0, chain2, 1, chain1.length);
 
-        chain2[0] = createCert(newPair.getPublic(), k1, "subject@bouncycastle.org", "extra@bouncycaste.org");
+        chain2[0] = createCert(newPair.getPublic(), k1, "subject.spongycastle.org", "extra@bouncycaste.org");
 
         if (((PKCS12BagAttributeCarrier)chain1[0]).getBagAttribute(PKCSObjectIdentifiers.pkcs_9_at_localKeyId) == null)
         {
@@ -1819,7 +1819,7 @@ public class PKCS12StoreTest
     private void testIterationCount()
         throws Exception
     {
-        System.setProperty("org.bouncycastle.pkcs12.max_it_count", "10");
+        System.setProperty("org.spongycastle.pkcs12.max_it_count", "10");
 
         ByteArrayInputStream stream = new ByteArrayInputStream(pkcs12StorageIssue);
         KeyStore store = KeyStore.getInstance("PKCS12", BC);
@@ -1834,7 +1834,7 @@ public class PKCS12StoreTest
             isTrue(e.getMessage().endsWith("iteration count 2000 greater than 10"));
         }
 
-        System.clearProperty("org.bouncycastle.pkcs12.max_it_count");
+        System.clearProperty("org.spongycastle.pkcs12.max_it_count");
     }
 
     private void testBCFKSLoad()
@@ -1896,7 +1896,7 @@ public class PKCS12StoreTest
         }
         catch (IOException e)
         {           
-            isTrue("illegal object in getInstance: org.bouncycastle.asn1.DLSequence".equals(e.getMessage()));
+            isTrue("illegal object in getInstance: org.spongycastle.asn1.DLSequence".equals(e.getMessage()));
         }
     }
 

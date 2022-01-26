@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.io;
+package org.spongycastle.jcajce.io;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 
-import org.bouncycastle.crypto.io.InvalidCipherTextIOException;
+import org.spongycastle.crypto.io.InvalidCipherTextIOException;
 
 /**
  * A CipherOutputStream is composed of an OutputStream and a cipher so that write() methods process

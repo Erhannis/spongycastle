@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.mceliece;
+package org.spongycastle.pqc.crypto.mceliece;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.pqc.math.linearalgebra.BigIntUtils;
-import org.bouncycastle.pqc.math.linearalgebra.GF2Vector;
-import org.bouncycastle.pqc.math.linearalgebra.IntegerFunctions;
+import org.spongycastle.pqc.math.linearalgebra.BigIntUtils;
+import org.spongycastle.pqc.math.linearalgebra.GF2Vector;
+import org.spongycastle.pqc.math.linearalgebra.IntegerFunctions;
 
 
 /**

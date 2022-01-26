@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.prng.test;
+package org.spongycastle.crypto.prng.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
 {   
     public void testCrypto()
     {   
-        org.bouncycastle.util.test.Test[] tests = RegressionTest.tests;
+        org.spongycastle.util.test.Test[] tests = RegressionTest.tests;
         
         for (int i = 0; i != tests.length; i++)
         {

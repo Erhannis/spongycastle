@@ -1,4 +1,4 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
 /**
  * Interface for ContentVerifiers that also support raw signatures that can be

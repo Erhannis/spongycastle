@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;

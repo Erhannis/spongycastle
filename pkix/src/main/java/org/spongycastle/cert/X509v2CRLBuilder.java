@@ -1,4 +1,4 @@
-package org.bouncycastle.cert;
+package org.spongycastle.cert;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -6,20 +6,20 @@ import java.util.Date;
 import java.util.Enumeration;
 import java.util.Locale;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.TBSCertList;
-import org.bouncycastle.asn1.x509.Time;
-import org.bouncycastle.asn1.x509.V2TBSCertListGenerator;
-import org.bouncycastle.operator.ContentSigner;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.asn1.x509.TBSCertList;
+import org.spongycastle.asn1.x509.Time;
+import org.spongycastle.asn1.x509.V2TBSCertListGenerator;
+import org.spongycastle.operator.ContentSigner;
 
 /**
  * class to produce an X.509 Version 2 CRL.

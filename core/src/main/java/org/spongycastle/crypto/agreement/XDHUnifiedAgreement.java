@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.RawAgreement;
-import org.bouncycastle.crypto.params.XDHUPrivateParameters;
-import org.bouncycastle.crypto.params.XDHUPublicParameters;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.RawAgreement;
+import org.spongycastle.crypto.params.XDHUPrivateParameters;
+import org.spongycastle.crypto.params.XDHUPublicParameters;
 
 public class XDHUnifiedAgreement
     implements RawAgreement

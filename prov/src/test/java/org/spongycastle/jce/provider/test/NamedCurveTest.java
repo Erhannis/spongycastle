@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -23,17 +23,17 @@ import java.util.Set;
 
 import javax.crypto.KeyAgreement;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.ECGOST3410NamedCurves;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.sec.SECNamedCurves;
-import org.bouncycastle.asn1.teletrust.TeleTrusTNamedCurves;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x9.X962NamedCurves;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveSpec;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptopro.ECGOST3410NamedCurves;
+import org.spongycastle.asn1.nist.NISTNamedCurves;
+import org.spongycastle.asn1.sec.SECNamedCurves;
+import org.spongycastle.asn1.teletrust.TeleTrusTNamedCurves;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x9.X962NamedCurves;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveSpec;
+import org.spongycastle.util.test.SimpleTest;
 
 public class NamedCurveTest
     extends SimpleTest

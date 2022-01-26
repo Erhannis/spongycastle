@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 /**
  * super class for all Password Based Encryption (PBE) parameter generator classes.

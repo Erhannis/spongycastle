@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.agreement.kdf;
+package org.spongycastle.crypto.agreement.kdf;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.DerivationFunction;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.util.Pack;
 
 /**
  * RFC 2631 Diffie-hellman KEK derivation function.

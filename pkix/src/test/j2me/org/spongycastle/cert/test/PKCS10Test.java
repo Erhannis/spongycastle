@@ -1,27 +1,27 @@
-package org.bouncycastle.cert.test;
+package org.spongycastle.cert.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RSAPublicKey;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
-import org.bouncycastle.operator.bc.BcRSAContentSignerBuilder;
-import org.bouncycastle.operator.bc.BcRSAContentVerifierProviderBuilder;
-import org.bouncycastle.pkcs.PKCS10CertificationRequest;
-import org.bouncycastle.pkcs.PKCS10CertificationRequestBuilder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.RSAPublicKey;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
+import org.spongycastle.operator.DefaultSignatureAlgorithmIdentifierFinder;
+import org.spongycastle.operator.bc.BcRSAContentSignerBuilder;
+import org.spongycastle.operator.bc.BcRSAContentVerifierProviderBuilder;
+import org.spongycastle.pkcs.PKCS10CertificationRequest;
+import org.spongycastle.pkcs.PKCS10CertificationRequestBuilder;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  **/
@@ -103,7 +103,7 @@ public class PKCS10Test
         builder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         builder.addRDN(BCStyle.L, "Melbourne");
         builder.addRDN(BCStyle.ST, "Victoria");
-        builder.addRDN(BCStyle.E, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(BCStyle.E, "feedback-crypto.spongycastle.org");
 
         //
         // extensions
@@ -124,7 +124,7 @@ public class PKCS10Test
         x500NameBld.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         x500NameBld.addRDN(BCStyle.L, "Melbourne");
         x500NameBld.addRDN(BCStyle.ST, "Victoria");
-        x500NameBld.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        x500NameBld.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         X500Name    subject = x500NameBld.build();
 

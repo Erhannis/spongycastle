@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.util;
+package org.spongycastle.pqc.math.ntru.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.bouncycastle.pqc.math.ntru.euclid.IntEuclidean;
-import org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.TernaryPolynomial;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.pqc.math.ntru.euclid.IntEuclidean;
+import org.spongycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial;
+import org.spongycastle.pqc.math.ntru.polynomial.TernaryPolynomial;
+import org.spongycastle.util.Integers;
 
 public class Util
 {

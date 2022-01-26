@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 public class DERGraphicString
     extends ASN1GraphicString

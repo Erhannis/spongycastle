@@ -1,19 +1,19 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.DigestingMessageSigner;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowParameters;
-import org.bouncycastle.pqc.crypto.rainbow.RainbowSigner;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.DigestingMessageSigner;
+import org.spongycastle.pqc.crypto.rainbow.RainbowKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowKeyPairGenerator;
+import org.spongycastle.pqc.crypto.rainbow.RainbowParameters;
+import org.spongycastle.pqc.crypto.rainbow.RainbowSigner;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class RainbowSignerTest

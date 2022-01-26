@@ -1,12 +1,12 @@
-package org.bouncycastle.cert.ocsp.test;
+package org.spongycastle.cert.ocsp.test;
 
 import java.security.Security;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
@@ -15,7 +15,7 @@ public class AllTests
     {   
         Security.addProvider(new BouncyCastleProvider());
         
-        org.bouncycastle.util.test.Test[] tests = new org.bouncycastle.util.test.Test[] { new OCSPTest() };
+        org.spongycastle.util.test.Test[] tests = new org.spongycastle.util.test.Test[] { new OCSPTest() };
         
         for (int i = 0; i != tests.length; i++)
         {

@@ -1,9 +1,9 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsHMAC;
-import org.bouncycastle.tls.crypto.TlsHash;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsHMAC;
+import org.spongycastle.tls.crypto.TlsHash;
+import org.spongycastle.util.Arrays;
 
 /**
  * HMAC implementation based on original internet draft for HMAC (RFC 2104)

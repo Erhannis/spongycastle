@@ -1,11 +1,11 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.TlsServerProtocol;
+import org.spongycastle.tls.TlsServerProtocol;
 
 class ProvTlsServerProtocol extends TlsServerProtocol
 {

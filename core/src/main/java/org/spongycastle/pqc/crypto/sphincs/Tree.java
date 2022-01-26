@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.sphincs;
+package org.spongycastle.pqc.crypto.sphincs;
 
 class Tree
 {

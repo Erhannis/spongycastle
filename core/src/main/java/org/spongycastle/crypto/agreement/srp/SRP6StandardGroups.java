@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.agreement.srp;
+package org.spongycastle.crypto.agreement.srp;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.params.SRP6GroupParameters;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.params.SRP6GroupParameters;
+import org.spongycastle.util.encoders.Hex;
 
 public class SRP6StandardGroups
 {

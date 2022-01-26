@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 public class TSPException
     extends Exception

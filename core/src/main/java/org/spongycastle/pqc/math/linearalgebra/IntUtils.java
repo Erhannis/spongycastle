@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 public final class IntUtils
 {

@@ -1,4 +1,4 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 /**
  * TLSUniqueProvider implementation of this can provide the TLS unique value.

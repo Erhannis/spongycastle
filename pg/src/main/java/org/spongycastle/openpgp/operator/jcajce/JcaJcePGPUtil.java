@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -6,14 +6,14 @@ import java.math.BigInteger;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.ec.CustomNamedCurves;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * Basic utility class
@@ -25,7 +25,7 @@ class JcaJcePGPUtil
         byte[]          keyBytes)
         throws PGPException
     {
-        String    algName = org.bouncycastle.openpgp.PGPUtil.getSymmetricCipherName(algorithm);
+        String    algName = org.spongycastle.openpgp.PGPUtil.getSymmetricCipherName(algorithm);
 
         if (algName == null)
         {

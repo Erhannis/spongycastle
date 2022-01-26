@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.test;
+package org.spongycastle.openpgp.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Date;
 
-import org.bouncycastle.openpgp.PGPCanonicalizedDataGenerator;
-import org.bouncycastle.openpgp.PGPLiteralData;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.openpgp.PGPCanonicalizedDataGenerator;
+import org.spongycastle.openpgp.PGPLiteralData;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTest;
 
 public class PGPCanonicalizedDataGeneratorTest
     extends SimpleTest

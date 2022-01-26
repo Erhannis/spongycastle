@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.io;
+package org.spongycastle.crypto.io;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.crypto.Mac;
+import org.spongycastle.crypto.Mac;
 
 public class MacInputStream
     extends FilterInputStream

@@ -1,6 +1,6 @@
-package org.bouncycastle.math.ec.rfc7748;
+package org.spongycastle.math.ec.rfc7748;
 
-import org.bouncycastle.math.raw.Mod;
+import org.spongycastle.math.raw.Mod;
 
 public abstract class X25519Field
 {

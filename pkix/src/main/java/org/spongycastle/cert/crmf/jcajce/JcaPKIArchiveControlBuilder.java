@@ -1,13 +1,13 @@
-package org.bouncycastle.cert.crmf.jcajce;
+package org.spongycastle.cert.crmf.jcajce;
 
 import java.security.PrivateKey;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.cert.crmf.PKIArchiveControlBuilder;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.cert.crmf.PKIArchiveControlBuilder;
 
 public class JcaPKIArchiveControlBuilder
     extends PKIArchiveControlBuilder

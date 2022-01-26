@@ -1,20 +1,20 @@
-package org.bouncycastle.asn1.x509.sigi;
+package org.spongycastle.asn1.x509.sigi;
 
 import java.math.BigInteger;
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1PrintableString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.x500.DirectoryString;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1PrintableString;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERPrintableString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.x500.DirectoryString;
 
 /**
  * Contains personal data for the otherName field in the subjectAltNames
@@ -31,8 +31,8 @@ import org.bouncycastle.asn1.x500.DirectoryString;
  *       }
  * </pre>
  *
- * @see org.bouncycastle.asn1.x509.sigi.NameOrPseudonym
- * @see org.bouncycastle.asn1.x509.sigi.SigIObjectIdentifiers
+ * @see org.spongycastle.asn1.x509.sigi.NameOrPseudonym
+ * @see org.spongycastle.asn1.x509.sigi.SigIObjectIdentifiers
  */
 public class PersonalData
     extends ASN1Object

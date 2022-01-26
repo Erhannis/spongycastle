@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.ua;
+package org.spongycastle.asn1.ua;
 
 import java.math.BigInteger;
 import java.util.Random;
 
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.ECConstants;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
 
 /**
  * DSTU4145 encodes points somewhat differently than X9.62

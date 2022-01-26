@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.qtesla;
+package org.spongycastle.pqc.jcajce.provider.qtesla;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
@@ -8,12 +8,12 @@ import java.security.Signature;
 import java.security.SignatureException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASigner;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASigner;
 
 public class SignatureSpi
     extends Signature

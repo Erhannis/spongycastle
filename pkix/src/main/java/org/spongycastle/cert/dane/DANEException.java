@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
 /**
  * General checked Exception thrown in the DANE package.

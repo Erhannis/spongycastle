@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
-import org.bouncycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CipherParameters;
 
 public class RainbowParameters
     implements CipherParameters

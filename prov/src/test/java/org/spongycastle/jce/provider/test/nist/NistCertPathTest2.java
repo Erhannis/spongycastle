@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test.nist;
+package org.spongycastle.jce.provider.test.nist;
 
 import java.security.Security;
 
@@ -14,7 +14,7 @@ public class NistCertPathTest2
     {
         if (Security.getProvider("BC") == null)
         {
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
         }
     }
 

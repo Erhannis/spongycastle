@@ -1,4 +1,4 @@
-package org.bouncycastle.util.encoders;
+package org.spongycastle.util.encoders;
 
 /**
  * Exception thrown if an attempt is made to decode invalid data, or some other failure occurs.

@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.macs;
+package org.spongycastle.crypto.macs;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.digests.CSHAKEDigest;
-import org.bouncycastle.crypto.digests.XofUtils;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.digests.CSHAKEDigest;
+import org.spongycastle.crypto.digests.XofUtils;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * KMAC - MAC with optional XOF mode.

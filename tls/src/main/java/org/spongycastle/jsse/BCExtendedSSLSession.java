@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.util;
+package org.spongycastle.jcajce.provider.asymmetric.util;
 
 import java.lang.reflect.Method;
 import java.math.BigInteger;
@@ -11,34 +11,34 @@ import java.security.spec.AlgorithmParameterSpec;
 import java.util.Enumeration;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X962Parameters;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECNamedDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.config.ProviderConfiguration;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.FixedPointCombMultiplier;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Fingerprint;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X962Parameters;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.crypto.ec.CustomNamedCurves;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ECDomainParameters;
+import org.spongycastle.crypto.params.ECNamedDomainParameters;
+import org.spongycastle.crypto.params.ECPrivateKeyParameters;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.jcajce.provider.config.ProviderConfiguration;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.ec.FixedPointCombMultiplier;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Fingerprint;
+import org.spongycastle.util.Strings;
 
 /**
  * utility class for converting jce/jca ECDSA, ECDH, and ECDHC
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 public class ECUtil
 {
@@ -114,7 +114,7 @@ public class ECUtil
 
     public static ECDomainParameters getDomainParameters(
         ProviderConfiguration configuration,
-        org.bouncycastle.jce.spec.ECParameterSpec params)
+        org.spongycastle.jce.spec.ECParameterSpec params)
     {
         ECDomainParameters domainParameters;
 
@@ -127,7 +127,7 @@ public class ECUtil
         }
         else if (params == null)
         {
-            org.bouncycastle.jce.spec.ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
+            org.spongycastle.jce.spec.ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
 
             domainParameters = new ECDomainParameters(iSpec.getCurve(), iSpec.getG(), iSpec.getN(), iSpec.getH(), iSpec.getSeed());
         }
@@ -159,7 +159,7 @@ public class ECUtil
         }
         else if (params.isImplicitlyCA())
         {
-            org.bouncycastle.jce.spec.ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
+            org.spongycastle.jce.spec.ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
 
             domainParameters = new ECDomainParameters(iSpec.getCurve(), iSpec.getG(), iSpec.getN(), iSpec.getH(), iSpec.getSeed());
         }
@@ -343,7 +343,7 @@ public class ECUtil
                 && params.getCurve().equals(ecParameterSpec.getCurve())
                 && params.getG().equals(ecParameterSpec.getG()))
             {
-                return org.bouncycastle.asn1.x9.ECNamedCurveTable.getOID(name);
+                return org.spongycastle.asn1.x9.ECNamedCurveTable.getOID(name);
             }
         }
 
@@ -382,12 +382,12 @@ public class ECUtil
         return ECNamedCurveTable.getName(oid);
     }
 
-    public static String privateKeyToString(String algorithm, BigInteger d, org.bouncycastle.jce.spec.ECParameterSpec spec)
+    public static String privateKeyToString(String algorithm, BigInteger d, org.spongycastle.jce.spec.ECParameterSpec spec)
     {
         StringBuffer buf = new StringBuffer();
         String nl = Strings.lineSeparator();
 
-        org.bouncycastle.math.ec.ECPoint q = new FixedPointCombMultiplier().multiply(spec.getG(), d).normalize();
+        org.spongycastle.math.ec.ECPoint q = new FixedPointCombMultiplier().multiply(spec.getG(), d).normalize();
 
         buf.append(algorithm);
         buf.append(" Private Key [").append(ECUtil.generateKeyFingerprint(q, spec)).append("]").append(nl);
@@ -397,7 +397,7 @@ public class ECUtil
         return buf.toString();
     }
 
-    public static String publicKeyToString(String algorithm, org.bouncycastle.math.ec.ECPoint q, org.bouncycastle.jce.spec.ECParameterSpec spec)
+    public static String publicKeyToString(String algorithm, org.spongycastle.math.ec.ECPoint q, org.spongycastle.jce.spec.ECParameterSpec spec)
     {
         StringBuffer buf = new StringBuffer();
         String nl = Strings.lineSeparator();
@@ -410,7 +410,7 @@ public class ECUtil
         return buf.toString();
     }
 
-    public static String generateKeyFingerprint(ECPoint publicPoint, org.bouncycastle.jce.spec.ECParameterSpec spec)
+    public static String generateKeyFingerprint(ECPoint publicPoint, org.spongycastle.jce.spec.ECParameterSpec spec)
     {
         ECCurve curve = spec.getCurve();
         ECPoint g = spec.getG();

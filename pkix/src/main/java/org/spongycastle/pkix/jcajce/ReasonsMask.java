@@ -1,6 +1,6 @@
-package org.bouncycastle.pkix.jcajce;
+package org.spongycastle.pkix.jcajce;
 
-import org.bouncycastle.asn1.x509.ReasonFlags;
+import org.spongycastle.asn1.x509.ReasonFlags;
 
 /**
  * This class helps to handle CRL revocation reasons mask. Each CRL handles a

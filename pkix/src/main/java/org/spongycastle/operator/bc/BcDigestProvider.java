@@ -1,8 +1,8 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.operator.OperatorCreationException;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.operator.OperatorCreationException;
 
 public interface BcDigestProvider
 {

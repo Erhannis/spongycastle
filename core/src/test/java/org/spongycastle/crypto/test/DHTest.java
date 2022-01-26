@@ -1,24 +1,24 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.agreement.DHAgreement;
-import org.bouncycastle.crypto.agreement.DHBasicAgreement;
-import org.bouncycastle.crypto.agreement.DHUnifiedAgreement;
-import org.bouncycastle.crypto.generators.DHBasicKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DHKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DHParametersGenerator;
-import org.bouncycastle.crypto.params.DHKeyGenerationParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
-import org.bouncycastle.crypto.params.DHUPrivateParameters;
-import org.bouncycastle.crypto.params.DHUPublicParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.agreement.DHAgreement;
+import org.spongycastle.crypto.agreement.DHBasicAgreement;
+import org.spongycastle.crypto.agreement.DHUnifiedAgreement;
+import org.spongycastle.crypto.generators.DHBasicKeyPairGenerator;
+import org.spongycastle.crypto.generators.DHKeyPairGenerator;
+import org.spongycastle.crypto.generators.DHParametersGenerator;
+import org.spongycastle.crypto.params.DHKeyGenerationParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPrivateKeyParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.crypto.params.DHUPrivateParameters;
+import org.spongycastle.crypto.params.DHUPublicParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class DHTest
     extends SimpleTest

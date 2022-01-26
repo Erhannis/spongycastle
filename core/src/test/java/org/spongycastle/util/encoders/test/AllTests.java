@@ -1,4 +1,4 @@
-package org.bouncycastle.util.encoders.test;
+package org.spongycastle.util.encoders.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

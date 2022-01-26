@@ -1,6 +1,6 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
-import org.bouncycastle.util.Selector;
+import org.spongycastle.util.Selector;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidParameterException;
@@ -16,7 +16,7 @@ import java.util.Set;
  * This class contains extended parameters for PKIX certification path builders.
  * 
  * @see java.security.cert.PKIXBuilderParameters
- * @see org.bouncycastle.jce.provider.PKIXCertPathBuilderSpi
+ * @see org.spongycastle.jce.provider.PKIXCertPathBuilderSpi
  * @deprecated use PKIXExtendedBuilderParameters
  */
 public class ExtendedPKIXBuilderParameters extends ExtendedPKIXParameters
@@ -106,7 +106,7 @@ public class ExtendedPKIXBuilderParameters extends ExtendedPKIXParameters
      * @throws InvalidParameterException if <code>maxPathLength</code> is set
      *             to a value less than -1
      * 
-     * @see org.bouncycastle.jce.provider.PKIXCertPathBuilderSpi
+     * @see org.spongycastle.jce.provider.PKIXCertPathBuilderSpi
      * @see #getMaxPathLength
      */
     public void setMaxPathLength(int maxPathLength)
@@ -138,7 +138,7 @@ public class ExtendedPKIXBuilderParameters extends ExtendedPKIXParameters
      * <code>PKIXBuilderParameters</code>.
      * 
      * @param params Parameters to set.
-     * @see org.bouncycastle.x509.ExtendedPKIXParameters#setParams(java.security.cert.PKIXParameters)
+     * @see org.spongycastle.x509.ExtendedPKIXParameters#setParams(java.security.cert.PKIXParameters)
      */
     protected void setParams(PKIXParameters params)
     {

@@ -1,13 +1,13 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.util.Vector;
 
-import org.bouncycastle.tls.ConnectionEnd;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsContext;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.ConnectionEnd;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsContext;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsCertificate;
 
 public class TlsTestConfig
 {

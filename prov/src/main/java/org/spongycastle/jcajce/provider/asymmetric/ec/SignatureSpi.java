@@ -1,26 +1,26 @@
-package org.bouncycastle.jcajce.provider.asymmetric.ec;
+package org.spongycastle.jcajce.provider.asymmetric.ec;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DSAExt;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.digests.RIPEMD160Digest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.DSAEncoding;
-import org.bouncycastle.crypto.signers.ECDSASigner;
-import org.bouncycastle.crypto.signers.ECNRSigner;
-import org.bouncycastle.crypto.signers.HMacDSAKCalculator;
-import org.bouncycastle.crypto.signers.PlainDSAEncoding;
-import org.bouncycastle.crypto.signers.StandardDSAEncoding;
-import org.bouncycastle.crypto.util.DigestFactory;
-import org.bouncycastle.jcajce.provider.asymmetric.util.DSABase;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DSAExt;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.digests.RIPEMD160Digest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.signers.DSAEncoding;
+import org.spongycastle.crypto.signers.ECDSASigner;
+import org.spongycastle.crypto.signers.ECNRSigner;
+import org.spongycastle.crypto.signers.HMacDSAKCalculator;
+import org.spongycastle.crypto.signers.PlainDSAEncoding;
+import org.spongycastle.crypto.signers.StandardDSAEncoding;
+import org.spongycastle.crypto.util.DigestFactory;
+import org.spongycastle.jcajce.provider.asymmetric.util.DSABase;
+import org.spongycastle.jcajce.provider.asymmetric.util.ECUtil;
 
 public class SignatureSpi
     extends DSABase

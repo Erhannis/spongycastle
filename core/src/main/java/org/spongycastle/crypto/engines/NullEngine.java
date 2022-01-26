@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.OutputLengthException;
 
 /**
  * The no-op engine that just copies bytes through, irrespective of whether encrypting and decrypting.
@@ -34,7 +34,7 @@ public class NullEngine implements BlockCipher
     }
 
     /* (non-Javadoc)
-     * @see org.bouncycastle.crypto.BlockCipher#init(boolean, org.bouncycastle.crypto.CipherParameters)
+     * @see org.spongycastle.crypto.BlockCipher#init(boolean, org.spongycastle.crypto.CipherParameters)
      */
     public void init(boolean forEncryption, CipherParameters params) throws IllegalArgumentException
     {
@@ -43,7 +43,7 @@ public class NullEngine implements BlockCipher
     }
 
     /* (non-Javadoc)
-     * @see org.bouncycastle.crypto.BlockCipher#getAlgorithmName()
+     * @see org.spongycastle.crypto.BlockCipher#getAlgorithmName()
      */
     public String getAlgorithmName()
     {
@@ -51,7 +51,7 @@ public class NullEngine implements BlockCipher
     }
 
     /* (non-Javadoc)
-     * @see org.bouncycastle.crypto.BlockCipher#getBlockSize()
+     * @see org.spongycastle.crypto.BlockCipher#getBlockSize()
      */
     public int getBlockSize()
     {
@@ -59,7 +59,7 @@ public class NullEngine implements BlockCipher
     }
 
     /* (non-Javadoc)
-     * @see org.bouncycastle.crypto.BlockCipher#processBlock(byte[], int, byte[], int)
+     * @see org.spongycastle.crypto.BlockCipher#processBlock(byte[], int, byte[], int)
      */
     public int processBlock(byte[] in, int inOff, byte[] out, int outOff)
         throws DataLengthException, IllegalStateException
@@ -87,7 +87,7 @@ public class NullEngine implements BlockCipher
     }
 
     /* (non-Javadoc)
-     * @see org.bouncycastle.crypto.BlockCipher#reset()
+     * @see org.spongycastle.crypto.BlockCipher#reset()
      */
     public void reset()
     {

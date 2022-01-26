@@ -1,8 +1,8 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
-import org.bouncycastle.bcpg.UserAttributeSubpacket;
-import org.bouncycastle.bcpg.UserAttributeSubpacketTags;
-import org.bouncycastle.bcpg.attr.ImageAttribute;
+import org.spongycastle.bcpg.UserAttributeSubpacket;
+import org.spongycastle.bcpg.UserAttributeSubpacketTags;
+import org.spongycastle.bcpg.attr.ImageAttribute;
 
 /**
  * Container for a list of user attribute subpackets.

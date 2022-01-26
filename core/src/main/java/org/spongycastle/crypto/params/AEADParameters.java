@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.util.Arrays;
 
 public class AEADParameters
     implements CipherParameters

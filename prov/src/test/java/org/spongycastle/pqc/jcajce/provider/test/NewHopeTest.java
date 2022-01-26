@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package org.spongycastle.pqc.jcajce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -16,9 +16,9 @@ import java.security.spec.X509EncodedKeySpec;
 import javax.crypto.KeyAgreement;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.jcajce.interfaces.NHKey;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.jcajce.interfaces.NHKey;
+import org.spongycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import org.spongycastle.util.Arrays;
 
 /**
  * Test cases for the use of NewHope (NH) with the BCPQC provider.

@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Base class for PBKDF configs.

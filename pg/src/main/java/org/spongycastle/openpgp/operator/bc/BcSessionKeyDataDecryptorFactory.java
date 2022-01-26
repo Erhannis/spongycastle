@@ -1,10 +1,10 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPSessionKey;
-import org.bouncycastle.openpgp.operator.PGPDataDecryptor;
-import org.bouncycastle.openpgp.operator.SessionKeyDataDecryptorFactory;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPSessionKey;
+import org.spongycastle.openpgp.operator.PGPDataDecryptor;
+import org.spongycastle.openpgp.operator.SessionKeyDataDecryptorFactory;
 
 /**
  * A decryptor factory for handling PGP session keys.

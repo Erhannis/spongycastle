@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -18,9 +18,9 @@ import javax.net.ssl.KeyManagerFactorySpi;
 import javax.net.ssl.KeyStoreBuilderParameters;
 import javax.net.ssl.ManagerFactoryParameters;
 
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jsse.BCX509ExtendedKeyManager;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jsse.BCX509ExtendedKeyManager;
+import org.spongycastle.tls.TlsUtils;
 
 class ProvKeyManagerFactorySpi
     extends KeyManagerFactorySpi

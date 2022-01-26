@@ -1,7 +1,7 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
-import org.bouncycastle.asn1.tsp.PartialHashtree;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.asn1.tsp.PartialHashtree;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Base interface for an implementation that calculates the root hash

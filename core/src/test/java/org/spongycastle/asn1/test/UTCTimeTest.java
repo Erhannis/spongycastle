@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.text.SimpleDateFormat;
 import java.util.SimpleTimeZone;
 
-import org.bouncycastle.asn1.DERUTCTime;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.DERUTCTime;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * X.690 test example

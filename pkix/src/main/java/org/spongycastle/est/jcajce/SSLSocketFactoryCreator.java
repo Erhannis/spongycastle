@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 
 import javax.net.ssl.SSLSocketFactory;

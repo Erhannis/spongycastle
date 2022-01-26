@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
@@ -11,21 +11,21 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.SealedObject;
 
-import org.bouncycastle.crypto.agreement.ECDHBasicAgreement;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.engines.IESEngine;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.IESParameterSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.agreement.ECDHBasicAgreement;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.engines.DESEngine;
+import org.spongycastle.crypto.engines.IESEngine;
+import org.spongycastle.crypto.generators.KDF2BytesGenerator;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher;
+import org.spongycastle.jcajce.provider.asymmetric.ec.IESCipher;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECPublicKey;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.IESParameterSpec;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Test for ECIES - Elliptic Curve Integrated Encryption Scheme
@@ -59,8 +59,8 @@ public class ECIESTest
         byte[] derivation = Hex.decode("202122232425262728292a2b2c2d2e2f");
         byte[] encoding   = Hex.decode("303132333435363738393a3b3c3d3e3f");
 
-        IESCipher c1 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
-        IESCipher c2 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
+        IESCipher c1 = new org.spongycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
+        IESCipher c2 = new org.spongycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
 
         c1 = new IESCipher(new IESEngine(new ECDHBasicAgreement(),
                 new KDF2BytesGenerator(new SHA1Digest()),
@@ -72,8 +72,8 @@ public class ECIESTest
                 new HMac(new SHA1Digest()),
                 new PaddedBufferedBlockCipher(new DESEngine())));
 
-        c1 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
-        c2 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
+        c1 = new org.spongycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
+        c2 = new org.spongycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
 
         // Testing ECIES with default curve in streaming mode
         KeyPairGenerator g = KeyPairGenerator.getInstance("EC", "BC");

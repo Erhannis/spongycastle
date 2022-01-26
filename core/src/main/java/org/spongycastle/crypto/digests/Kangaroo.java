@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Bytes;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Bytes;
+import org.spongycastle.util.Pack;
 
 /**
  * Kangaroo.

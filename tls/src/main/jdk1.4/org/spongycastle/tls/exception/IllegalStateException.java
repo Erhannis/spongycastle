@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.exception;
+package org.spongycastle.tls.exception;
 
 public class IllegalStateException
     extends java.lang.IllegalStateException

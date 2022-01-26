@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * DER VisibleString object encoding ISO 646 (ASCII) character code points 32 to 126.

@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.cmc.CMCFailInfo;
-import org.bouncycastle.asn1.cmc.ExtendedFailInfo;
-import org.bouncycastle.asn1.cmc.OtherStatusInfo;
-import org.bouncycastle.asn1.cmc.PendInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.cmc.CMCFailInfo;
+import org.spongycastle.asn1.cmc.ExtendedFailInfo;
+import org.spongycastle.asn1.cmc.OtherStatusInfo;
+import org.spongycastle.asn1.cmc.PendInfo;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class OtherStatusInfoTest

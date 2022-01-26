@@ -1,12 +1,12 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.cert.X509CertSelector;
 
-import org.bouncycastle.cms.KeyTransRecipientId;
-import org.bouncycastle.cms.SignerId;
+import org.spongycastle.cms.KeyTransRecipientId;
+import org.spongycastle.cms.SignerId;
 
 public class JcaX509CertSelectorConverter
-    extends org.bouncycastle.cert.selector.jcajce.JcaX509CertSelectorConverter
+    extends org.spongycastle.cert.selector.jcajce.JcaX509CertSelectorConverter
 {
     public JcaX509CertSelectorConverter()
     {

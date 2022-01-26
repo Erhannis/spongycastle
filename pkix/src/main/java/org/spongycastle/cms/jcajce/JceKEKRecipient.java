@@ -1,15 +1,15 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.Key;
 import java.security.Provider;
 
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.KEKRecipient;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.SymmetricKeyUnwrapper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.KEKRecipient;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.SymmetricKeyUnwrapper;
 
 public abstract class JceKEKRecipient
     implements KEKRecipient

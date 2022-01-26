@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.anssi;
+package org.spongycastle.asn1.anssi;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Object Identifiers belong to the French Agency, ANSSI.

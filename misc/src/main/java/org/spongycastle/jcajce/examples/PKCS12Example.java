@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.examples;
+package org.spongycastle.jcajce.examples;
 
 import java.io.FileOutputStream;
 import java.math.BigInteger;
@@ -13,23 +13,23 @@ import java.security.spec.RSAPrivateCrtKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Date;
 
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
-import org.bouncycastle.cert.X509v3CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.cert.jcajce.JcaX509v1CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.asn1.DERBMPString;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.cert.X509v3CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.cert.jcajce.JcaX509v1CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
 
 /**
  * Example of how to set up a certificate chain and a PKCS 12 store for
@@ -105,7 +105,7 @@ public class PKCS12Example
         nameBuilder.addRDN(BCStyle.C, "AU");
         nameBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         nameBuilder.addRDN(BCStyle.OU, "Bouncy Intermediate Certificate");
-        nameBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        nameBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // create the certificate - version 3
@@ -172,7 +172,7 @@ public class PKCS12Example
         issuerBuilder.addRDN(BCStyle.C, "AU");
         issuerBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         issuerBuilder.addRDN(BCStyle.OU, "Bouncy Intermediate Certificate");
-        issuerBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        issuerBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // subjects name table.
@@ -183,7 +183,7 @@ public class PKCS12Example
         subjectBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         subjectBuilder.addRDN(BCStyle.L, "Melbourne");
         subjectBuilder.addRDN(BCStyle.CN, "Eric H. Echidna");
-        subjectBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        subjectBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // create the certificate - version 3

@@ -1,8 +1,8 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.util.Set;
 
-import org.bouncycastle.tls.CipherSuite;
+import org.spongycastle.tls.CipherSuite;
 
 class ProvAlgorithmDecomposer
     extends JcaAlgorithmDecomposer

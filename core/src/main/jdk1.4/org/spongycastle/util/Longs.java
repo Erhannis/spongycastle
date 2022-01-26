@@ -1,6 +1,6 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
-import org.bouncycastle.math.raw.Bits;
+import org.spongycastle.math.raw.Bits;
 
 public class Longs
 {

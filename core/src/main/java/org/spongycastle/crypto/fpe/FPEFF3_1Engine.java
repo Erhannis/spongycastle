@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.fpe;
+package org.spongycastle.crypto.fpe;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.params.FPEParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.engines.AESEngine;
+import org.spongycastle.crypto.params.FPEParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Properties;
 
 /**
  * NIST SP 800-38G, FF3-1 format preserving encryption.

@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 
-import org.bouncycastle.crypto.params.Ed448PublicKeyParameters;
-import org.bouncycastle.crypto.signers.Ed448Signer;
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.crypto.params.Ed448PublicKeyParameters;
+import org.spongycastle.crypto.signers.Ed448Signer;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
 
 public class BcTlsEd448Verifier
     extends BcTlsVerifier

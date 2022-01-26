@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package org.spongycastle.pqc.jcajce.provider.test;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.util.test.FixedSecureRandom;
+import org.spongycastle.util.test.FixedSecureRandom;
 
 /**
  * Factory for producing FixedSecureRandom objects for use with testsing

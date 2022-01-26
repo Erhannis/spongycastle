@@ -1,20 +1,20 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.util.Collection;
 
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.x509.X509CollectionStoreParameters;
-import org.bouncycastle.x509.X509StoreParameters;
-import org.bouncycastle.x509.X509StoreSpi;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Selector;
+import org.spongycastle.x509.X509CollectionStoreParameters;
+import org.spongycastle.x509.X509StoreParameters;
+import org.spongycastle.x509.X509StoreSpi;
 
 /**
  * This class is a collection based Bouncy Castle
- * {@link org.bouncycastle.x509.X509Store} SPI implementation for certificate
+ * {@link org.spongycastle.x509.X509Store} SPI implementation for certificate
  * pairs.
  *
- * @see org.bouncycastle.x509.X509Store
- * @see org.bouncycastle.x509.X509CertificatePair
+ * @see org.spongycastle.x509.X509Store
+ * @see org.spongycastle.x509.X509CertificatePair
  */
 public class X509StoreCertPairCollection extends X509StoreSpi
 {
@@ -51,8 +51,8 @@ public class X509StoreCertPairCollection extends X509StoreSpi
      * <code>selector</code>.
      * <p>
      * The returned collection contains
-     * {@link org.bouncycastle.x509.X509CertificatePair}s. The selector must be
-     * a {@link org.bouncycastle.x509.X509CertPairStoreSelector} to select
+     * {@link org.spongycastle.x509.X509CertificatePair}s. The selector must be
+     * a {@link org.spongycastle.x509.X509CertPairStoreSelector} to select
      * certificate pairs.
      * </p>
      * @return A collection with matching certificate pairs.

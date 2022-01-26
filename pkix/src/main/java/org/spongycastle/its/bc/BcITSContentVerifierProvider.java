@@ -1,25 +1,25 @@
-package org.bouncycastle.its.bc;
+package org.spongycastle.its.bc;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.signers.DSADigestSigner;
-import org.bouncycastle.crypto.signers.ECDSASigner;
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.operator.ITSContentVerifierProvider;
-import org.bouncycastle.oer.OEREncoder;
-import org.bouncycastle.oer.its.PublicVerificationKey;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
-import org.bouncycastle.oer.its.VerificationKeyIndicator;
-import org.bouncycastle.oer.its.template.IEEE1609dot2;
-import org.bouncycastle.operator.ContentVerifier;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.bc.BcDefaultDigestProvider;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.crypto.signers.DSADigestSigner;
+import org.spongycastle.crypto.signers.ECDSASigner;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.operator.ITSContentVerifierProvider;
+import org.spongycastle.oer.OEREncoder;
+import org.spongycastle.oer.its.PublicVerificationKey;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.oer.its.VerificationKeyIndicator;
+import org.spongycastle.oer.its.template.IEEE1609dot2;
+import org.spongycastle.operator.ContentVerifier;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.bc.BcDefaultDigestProvider;
+import org.spongycastle.util.Arrays;
 
 public class BcITSContentVerifierProvider
     implements ITSContentVerifierProvider

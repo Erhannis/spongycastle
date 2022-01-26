@@ -1,9 +1,9 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
-import org.bouncycastle.tls.NameType;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.tls.NameType;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public abstract class BCSNIServerName
 {

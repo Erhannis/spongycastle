@@ -16,16 +16,16 @@ popd
 
 pushd $DIR/jars
 
-curl -o ver.index  https://downloads.bouncycastle.org/betas/index.html
+curl -o ver.index  https://downloads.spongycastle.org/betas/index.html
 bcver=`fgrep bcprov-ext ver.index | fgrep .jar | sed -e "s:^.*bcprov-ext-jdk15on-::" | sed -e "s:.jar<.*$::"`
 
 if  type curl > /dev/null; then
-    curl -o bcprov.jar  https://downloads.bouncycastle.org/betas/bcprov-jdk15on-$bcver.jar
-    curl -o bctls.jar https://downloads.bouncycastle.org/betas/bctls-jdk15on-$bcver.jar
+    curl -o bcprov.jar  https://downloads.spongycastle.org/betas/bcprov-jdk15on-$bcver.jar
+    curl -o bctls.jar https://downloads.spongycastle.org/betas/bctls-jdk15on-$bcver.jar
     curl -o suffixlist.dat  https://www.publicsuffix.org/list/public_suffix_list.dat
 elif type wget > /dev/null ; then
-    wget -O bcprov.jar https://downloads.bouncycastle.org/betas/bcprov-jdk15on-$bcver.jar
-    wget -O bctls.jar https://downloads.bouncycastle.org/betas/bctls-jdk15on-$bcver.jar
+    wget -O bcprov.jar https://downloads.spongycastle.org/betas/bcprov-jdk15on-$bcver.jar
+    wget -O bctls.jar https://downloads.spongycastle.org/betas/bctls-jdk15on-$bcver.jar
     wget -O suffixlist.dat https://www.publicsuffix.org/list/public_suffix_list.dat
 else
     echo "No wget or curl to download provider jar"

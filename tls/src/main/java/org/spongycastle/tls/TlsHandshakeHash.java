@@ -1,9 +1,9 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.tls.crypto.TlsHash;
+import org.spongycastle.tls.crypto.TlsHash;
 
 /**
  * Base interface for an object that can calculate a handshake hash.

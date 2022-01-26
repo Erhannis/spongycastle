@@ -1,14 +1,14 @@
-package org.bouncycastle.openssl.jcajce;
+package org.spongycastle.openssl.jcajce;
 
 import java.security.Provider;
 import java.security.SecureRandom;
 
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openssl.PEMEncryptor;
-import org.bouncycastle.openssl.PEMException;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openssl.PEMEncryptor;
+import org.spongycastle.openssl.PEMException;
 
 public class JcePEMEncryptorBuilder
 {

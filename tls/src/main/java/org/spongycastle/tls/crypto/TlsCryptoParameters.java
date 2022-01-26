@@ -1,8 +1,8 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SecurityParameters;
-import org.bouncycastle.tls.TlsContext;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SecurityParameters;
+import org.spongycastle.tls.TlsContext;
 
 /**
  * Carrier class for context-related parameters needed for creating secrets and ciphers.

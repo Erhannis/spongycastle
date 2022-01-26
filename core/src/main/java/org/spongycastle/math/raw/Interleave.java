@@ -1,4 +1,4 @@
-package org.bouncycastle.math.raw;
+package org.spongycastle.math.raw;
 
 public class Interleave
 {

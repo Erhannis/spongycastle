@@ -1,20 +1,20 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.cms.EnvelopedData;
-import org.bouncycastle.asn1.crmf.CRMFObjectIdentifiers;
-import org.bouncycastle.asn1.crmf.EncKeyWithID;
-import org.bouncycastle.asn1.crmf.EncryptedKey;
-import org.bouncycastle.asn1.crmf.PKIArchiveOptions;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.cms.CMSEnvelopedData;
-import org.bouncycastle.cms.CMSEnvelopedDataGenerator;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.RecipientInfoGenerator;
-import org.bouncycastle.operator.OutputEncryptor;
+import org.spongycastle.asn1.cms.EnvelopedData;
+import org.spongycastle.asn1.crmf.CRMFObjectIdentifiers;
+import org.spongycastle.asn1.crmf.EncKeyWithID;
+import org.spongycastle.asn1.crmf.EncryptedKey;
+import org.spongycastle.asn1.crmf.PKIArchiveOptions;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.cms.CMSEnvelopedData;
+import org.spongycastle.cms.CMSEnvelopedDataGenerator;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.RecipientInfoGenerator;
+import org.spongycastle.operator.OutputEncryptor;
 
 /**
  * Builder for a PKIArchiveControl structure.

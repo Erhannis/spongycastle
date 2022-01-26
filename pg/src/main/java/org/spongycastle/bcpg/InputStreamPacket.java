@@ -1,4 +1,4 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 /**
  * A block of data associated with other packets in a PGP object stream.

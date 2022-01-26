@@ -1,16 +1,16 @@
-package org.bouncycastle.openpgp.operator.bc;
+package org.spongycastle.openpgp.operator.bc;
 
 import java.io.OutputStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.io.CipherOutputStream;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.operator.PGPDataEncryptor;
-import org.bouncycastle.openpgp.operator.PGPDataEncryptorBuilder;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.io.CipherOutputStream;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.operator.PGPDataEncryptor;
+import org.spongycastle.openpgp.operator.PGPDataEncryptorBuilder;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
 
 /**
  * {@link PGPDataEncryptorBuilder} implementation that uses the Bouncy Castle lightweight API to

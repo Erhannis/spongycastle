@@ -1,9 +1,9 @@
-package org.bouncycastle.pqc.crypto.gmss;
+package org.spongycastle.pqc.crypto.gmss;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 class GMSSUtils
 {

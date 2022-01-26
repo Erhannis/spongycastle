@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 /**
  * Exception to be thrown on a failure to reset an object implementing Memoable.

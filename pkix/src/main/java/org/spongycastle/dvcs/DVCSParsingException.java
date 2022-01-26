@@ -1,4 +1,4 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 /**
  * DVCS parsing exception - thrown when failed to parse DVCS message.

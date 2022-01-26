@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.elgamal;
+package org.spongycastle.jcajce.provider.asymmetric.elgamal;
 
 import java.io.IOException;
 import java.security.spec.AlgorithmParameterSpec;
@@ -6,11 +6,11 @@ import java.security.spec.InvalidParameterSpecException;
 
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.oiw.ElGamalParameter;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
-import org.bouncycastle.jce.spec.ElGamalParameterSpec;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.oiw.ElGamalParameter;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseAlgorithmParameters;
+import org.spongycastle.jce.spec.ElGamalParameterSpec;
 
 public class AlgorithmParametersSpi
     extends BaseAlgorithmParameters

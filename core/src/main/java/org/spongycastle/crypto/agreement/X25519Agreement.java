@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.RawAgreement;
-import org.bouncycastle.crypto.params.X25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.X25519PublicKeyParameters;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.RawAgreement;
+import org.spongycastle.crypto.params.X25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.X25519PublicKeyParameters;
 
 public final class X25519Agreement
     implements RawAgreement

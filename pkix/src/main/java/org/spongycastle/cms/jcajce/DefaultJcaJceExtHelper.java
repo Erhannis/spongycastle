@@ -1,15 +1,15 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.PrivateKey;
 
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.operator.SymmetricKeyUnwrapper;
-import org.bouncycastle.operator.jcajce.JceAsymmetricKeyUnwrapper;
-import org.bouncycastle.operator.jcajce.JceKTSKeyUnwrapper;
-import org.bouncycastle.operator.jcajce.JceSymmetricKeyUnwrapper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.operator.SymmetricKeyUnwrapper;
+import org.spongycastle.operator.jcajce.JceAsymmetricKeyUnwrapper;
+import org.spongycastle.operator.jcajce.JceKTSKeyUnwrapper;
+import org.spongycastle.operator.jcajce.JceSymmetricKeyUnwrapper;
 
 class DefaultJcaJceExtHelper
     extends DefaultJcaJceHelper

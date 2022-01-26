@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -8,15 +8,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.tsp.ArchiveTimeStamp;
-import org.bouncycastle.asn1.tsp.PartialHashtree;
-import org.bouncycastle.asn1.tsp.TSTInfo;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.tsp.TSPException;
-import org.bouncycastle.tsp.TimeStampRequest;
-import org.bouncycastle.tsp.TimeStampRequestGenerator;
-import org.bouncycastle.tsp.TimeStampResponse;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.tsp.ArchiveTimeStamp;
+import org.spongycastle.asn1.tsp.PartialHashtree;
+import org.spongycastle.asn1.tsp.TSTInfo;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.tsp.TSPException;
+import org.spongycastle.tsp.TimeStampRequest;
+import org.spongycastle.tsp.TimeStampRequestGenerator;
+import org.spongycastle.tsp.TimeStampResponse;
+import org.spongycastle.util.Arrays;
 
 /**
  * Generator for RFC 4998 Archive Time Stamps.

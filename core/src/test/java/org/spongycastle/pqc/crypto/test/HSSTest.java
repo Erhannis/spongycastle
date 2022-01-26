@@ -1,21 +1,21 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.ExhaustedPrivateKeyException;
-import org.bouncycastle.pqc.crypto.lms.HSSKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.lms.HSSKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.lms.HSSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.HSSPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.lms.HSSSigner;
-import org.bouncycastle.pqc.crypto.lms.LMOtsParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSParameters;
-import org.bouncycastle.pqc.crypto.lms.LMSigParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.AsymmetricCipherKeyPairGenerator;
+import org.spongycastle.pqc.crypto.ExhaustedPrivateKeyException;
+import org.spongycastle.pqc.crypto.lms.HSSKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.lms.HSSKeyPairGenerator;
+import org.spongycastle.pqc.crypto.lms.HSSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.lms.HSSPublicKeyParameters;
+import org.spongycastle.pqc.crypto.lms.HSSSigner;
+import org.spongycastle.pqc.crypto.lms.LMOtsParameters;
+import org.spongycastle.pqc.crypto.lms.LMSParameters;
+import org.spongycastle.pqc.crypto.lms.LMSigParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 public class HSSTest
     extends TestCase

@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.agreement.kdf;
+package org.spongycastle.crypto.agreement.kdf;
 
-import org.bouncycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.DerivationParameters;
 
 /**
  * BSI Key Derivation Function Parameters for Session Keys (see BSI-TR-03111 Section 4.3.3)

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dsa;
+package org.spongycastle.jcajce.provider.asymmetric.dsa;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -11,28 +11,28 @@ import java.security.Signature;
 import java.security.interfaces.DSAKey;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DSA;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.RIPEMD160Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.HMacDSAKCalculator;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA384Digest;
+import org.spongycastle.crypto.digests.SHA3Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.RIPEMD160Digest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.signers.HMacDSAKCalculator;
+import org.spongycastle.util.Arrays;
 
 public class DSASigner
     extends Signature
@@ -221,7 +221,7 @@ public class DSASigner
     {
         public stdDSA()
         {
-            super(new SHA1Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA1Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -230,7 +230,7 @@ public class DSASigner
     {
         public dsaRMD160()
         {
-            super(new RIPEMD160Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new RIPEMD160Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -239,7 +239,7 @@ public class DSASigner
     {
         public detDSA()
         {
-            super(new SHA1Digest(), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA1Digest())));
+            super(new SHA1Digest(), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA1Digest())));
         }
     }
 
@@ -248,7 +248,7 @@ public class DSASigner
     {
         public dsa224()
         {
-            super(new SHA224Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA224Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -257,7 +257,7 @@ public class DSASigner
     {
         public detDSA224()
         {
-            super(new SHA224Digest(), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA224Digest())));
+            super(new SHA224Digest(), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA224Digest())));
         }
     }
 
@@ -266,7 +266,7 @@ public class DSASigner
     {
         public dsa256()
         {
-            super(new SHA256Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA256Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -275,7 +275,7 @@ public class DSASigner
     {
         public detDSA256()
         {
-            super(new SHA256Digest(), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA256Digest())));
+            super(new SHA256Digest(), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA256Digest())));
         }
     }
 
@@ -284,7 +284,7 @@ public class DSASigner
     {
         public dsa384()
         {
-            super(new SHA384Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA384Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -293,7 +293,7 @@ public class DSASigner
     {
         public detDSA384()
         {
-            super(new SHA384Digest(), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA384Digest())));
+            super(new SHA384Digest(), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA384Digest())));
         }
     }
 
@@ -302,7 +302,7 @@ public class DSASigner
     {
         public dsa512()
         {
-            super(new SHA512Digest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA512Digest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -311,7 +311,7 @@ public class DSASigner
     {
         public detDSA512()
         {
-            super(new SHA512Digest(), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA512Digest())));
+            super(new SHA512Digest(), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA512Digest())));
         }
     }
 
@@ -320,7 +320,7 @@ public class DSASigner
     {
         public dsaSha3_224()
         {
-            super(new SHA3Digest(224), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA3Digest(224), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -329,7 +329,7 @@ public class DSASigner
     {
         public detDSASha3_224()
         {
-            super(new SHA3Digest(224), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(224))));
+            super(new SHA3Digest(224), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(224))));
         }
     }
 
@@ -338,7 +338,7 @@ public class DSASigner
     {
         public dsaSha3_256()
         {
-            super(new SHA3Digest(256), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA3Digest(256), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -347,7 +347,7 @@ public class DSASigner
     {
         public detDSASha3_256()
         {
-            super(new SHA3Digest(256), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(256))));
+            super(new SHA3Digest(256), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(256))));
         }
     }
 
@@ -356,7 +356,7 @@ public class DSASigner
     {
         public dsaSha3_384()
         {
-            super(new SHA3Digest(384), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA3Digest(384), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -365,7 +365,7 @@ public class DSASigner
     {
         public detDSASha3_384()
         {
-            super(new SHA3Digest(384), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(384))));
+            super(new SHA3Digest(384), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(384))));
         }
     }
 
@@ -374,7 +374,7 @@ public class DSASigner
     {
         public dsaSha3_512()
         {
-            super(new SHA3Digest(512), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new SHA3Digest(512), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 
@@ -383,7 +383,7 @@ public class DSASigner
     {
         public detDSASha3_512()
         {
-            super(new SHA3Digest(512), new org.bouncycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(512))));
+            super(new SHA3Digest(512), new org.spongycastle.crypto.signers.DSASigner(new HMacDSAKCalculator(new SHA3Digest(512))));
         }
     }
 
@@ -392,7 +392,7 @@ public class DSASigner
     {
         public noneDSA()
         {
-            super(new NullDigest(), new org.bouncycastle.crypto.signers.DSASigner());
+            super(new NullDigest(), new org.spongycastle.crypto.signers.DSASigner());
         }
     }
 }

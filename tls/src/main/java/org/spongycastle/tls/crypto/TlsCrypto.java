@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 import java.io.IOException;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.tls.EncryptionAlgorithm;
-import org.bouncycastle.tls.MACAlgorithm;
-import org.bouncycastle.tls.NamedGroup;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.EncryptionAlgorithm;
+import org.spongycastle.tls.MACAlgorithm;
+import org.spongycastle.tls.NamedGroup;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
 
 /**
  * Service and object creation interface for the primitive types and services that are associated

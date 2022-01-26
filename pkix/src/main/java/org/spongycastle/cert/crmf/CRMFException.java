@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.crmf;
+package org.spongycastle.cert.crmf;
 
 public class CRMFException
     extends Exception

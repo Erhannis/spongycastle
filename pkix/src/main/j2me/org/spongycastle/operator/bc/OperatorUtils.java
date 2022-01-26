@@ -1,6 +1,6 @@
-package org.bouncycastle.operator.bc;
+package org.spongycastle.operator.bc;
 
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.operator.GenericKey;
 
 class OperatorUtils
 {

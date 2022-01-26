@@ -1,19 +1,19 @@
 
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
-import org.bouncycastle.asn1.ASN1BMPString;
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.ASN1VisibleString;
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.DERVisibleString;
+import org.spongycastle.asn1.ASN1BMPString;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.ASN1VisibleString;
+import org.spongycastle.asn1.DERBMPString;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.DERVisibleString;
 
 /**
  * <code>DisplayText</code> class, used in

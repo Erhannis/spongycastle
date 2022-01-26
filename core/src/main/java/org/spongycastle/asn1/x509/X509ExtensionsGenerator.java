@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
 
 /**
  * Generator for X.509 extensions
- * @deprecated use org.bouncycastle.asn1.x509.ExtensionsGenerator
+ * @deprecated use org.spongycastle.asn1.x509.ExtensionsGenerator
  */
 public class X509ExtensionsGenerator
 {

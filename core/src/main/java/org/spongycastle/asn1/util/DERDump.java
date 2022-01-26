@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.util;
+package org.spongycastle.asn1.util;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Primitive;
 
 /**
  * @deprecated use ASN1Dump.

@@ -1,12 +1,12 @@
-package org.bouncycastle.openpgp.operator.jcajce;
+package org.spongycastle.openpgp.operator.jcajce;
 
 import java.io.OutputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import org.bouncycastle.bcpg.HashAlgorithmTags;
-import org.bouncycastle.jcajce.io.OutputStreamFactory;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.jcajce.io.OutputStreamFactory;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
 
 class SHA1PGPDigestCalculator
     implements PGPDigestCalculator

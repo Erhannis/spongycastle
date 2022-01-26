@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package org.spongycastle.pqc.jcajce.provider.test;
 
 import java.security.KeyFactory;
 import java.security.KeyPairGenerator;
 import java.security.SecureRandom;
 
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.jcajce.spec.McElieceCCA2KeyGenParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
+import org.spongycastle.pqc.asn1.PQCObjectIdentifiers;
+import org.spongycastle.pqc.jcajce.spec.McElieceCCA2KeyGenParameterSpec;
+import org.spongycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
 
 
 public class McElieceKeyPairGeneratorTest

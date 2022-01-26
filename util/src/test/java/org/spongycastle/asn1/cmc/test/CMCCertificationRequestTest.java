@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.cmc.CertificationRequest;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.cmc.CertificationRequest;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CMCCertificationRequestTest
     extends SimpleTest

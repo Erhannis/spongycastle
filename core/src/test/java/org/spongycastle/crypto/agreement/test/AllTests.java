@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.agreement.test;
+package org.spongycastle.crypto.agreement.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

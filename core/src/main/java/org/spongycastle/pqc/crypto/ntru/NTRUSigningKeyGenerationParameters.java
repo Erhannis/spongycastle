@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -7,11 +7,11 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.DecimalFormat;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
 
 /**
  * A set of parameters for NtruSign. Several predefined parameter sets are available and new ones can be created as well.
@@ -86,7 +86,7 @@ public class NTRUSigningKeyGenerationParameters
      * @param normBound    maximum norm for valid signatures
      * @param keyNormBound maximum norm for the ploynomials <code>F</code> and <code>G</code>
      * @param primeCheck   whether <code>2N+1</code> is prime
-     * @param sparse       whether to treat ternary polynomials as sparsely populated ({@link org.bouncycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial} vs {@link org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial})
+     * @param sparse       whether to treat ternary polynomials as sparsely populated ({@link org.spongycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial} vs {@link org.spongycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial})
      * @param keyGenAlg    <code>RESULTANT</code> produces better bases, <code>FLOAT</code> is slightly faster. <code>RESULTANT</code> follows the EESS standard while <code>FLOAT</code> is described in Hoffstein et al: An Introduction to Mathematical Cryptography.
      * @param hashAlg      a valid identifier for a <code>java.security.MessageDigest</code> instance such as <code>SHA-256</code>. The <code>MessageDigest</code> must support the <code>getDigestLength()</code> method.
      */
@@ -123,7 +123,7 @@ public class NTRUSigningKeyGenerationParameters
      * @param normBound    maximum norm for valid signatures
      * @param keyNormBound maximum norm for the ploynomials <code>F</code> and <code>G</code>
      * @param primeCheck   whether <code>2N+1</code> is prime
-     * @param sparse       whether to treat ternary polynomials as sparsely populated ({@link org.bouncycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial} vs {@link org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial})
+     * @param sparse       whether to treat ternary polynomials as sparsely populated ({@link org.spongycastle.pqc.math.ntru.polynomial.SparseTernaryPolynomial} vs {@link org.spongycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial})
      * @param keyGenAlg    <code>RESULTANT</code> produces better bases, <code>FLOAT</code> is slightly faster. <code>RESULTANT</code> follows the EESS standard while <code>FLOAT</code> is described in Hoffstein et al: An Introduction to Mathematical Cryptography.
      * @param hashAlg      a valid identifier for a <code>java.security.MessageDigest</code> instance such as <code>SHA-256</code>. The <code>MessageDigest</code> must support the <code>getDigestLength()</code> method.
      */

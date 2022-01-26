@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,13 +10,13 @@ import java.security.spec.DSAParameterSpec;
 
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.jcajce.spec.DHDomainParameterSpec;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.config.ProviderConfiguration;
-import org.bouncycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.params.DSAParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.jcajce.spec.DHDomainParameterSpec;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.config.ProviderConfiguration;
+import org.spongycastle.jce.spec.ECParameterSpec;
 
 class BouncyCastleProviderConfiguration
     implements ProviderConfiguration

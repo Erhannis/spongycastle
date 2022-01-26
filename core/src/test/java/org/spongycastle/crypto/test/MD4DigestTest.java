@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.MD4Digest;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.MD4Digest;
 
 /**
  * standard vector test for MD4 from RFC 1320.

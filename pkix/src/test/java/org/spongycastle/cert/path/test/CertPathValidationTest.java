@@ -1,28 +1,28 @@
-package org.bouncycastle.cert.path.test;
+package org.spongycastle.cert.path.test;
 
 import java.security.Security;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509ContentVerifierProviderBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509ContentVerifierProviderBuilder;
-import org.bouncycastle.cert.path.CertPath;
-import org.bouncycastle.cert.path.CertPathValidation;
-import org.bouncycastle.cert.path.CertPathValidationContext;
-import org.bouncycastle.cert.path.CertPathValidationResult;
-import org.bouncycastle.cert.path.validations.BasicConstraintsValidation;
-import org.bouncycastle.cert.path.validations.CRLValidation;
-import org.bouncycastle.cert.path.validations.KeyUsageValidation;
-import org.bouncycastle.cert.path.validations.ParentCertIssuedValidation;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509ContentVerifierProviderBuilder;
+import org.spongycastle.cert.jcajce.JcaX509ContentVerifierProviderBuilder;
+import org.spongycastle.cert.path.CertPath;
+import org.spongycastle.cert.path.CertPathValidation;
+import org.spongycastle.cert.path.CertPathValidationContext;
+import org.spongycastle.cert.path.CertPathValidationResult;
+import org.spongycastle.cert.path.validations.BasicConstraintsValidation;
+import org.spongycastle.cert.path.validations.CRLValidation;
+import org.spongycastle.cert.path.validations.KeyUsageValidation;
+import org.spongycastle.cert.path.validations.ParentCertIssuedValidation;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CertPathValidationTest
     extends SimpleTest

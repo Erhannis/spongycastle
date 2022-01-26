@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.eac;
+package org.spongycastle.asn1.eac;
 
-import org.bouncycastle.asn1.ASN1ApplicationSpecific;
-import org.bouncycastle.asn1.BERTags;
+import org.spongycastle.asn1.ASN1ApplicationSpecific;
+import org.spongycastle.asn1.BERTags;
 
 public class EACTags
 {

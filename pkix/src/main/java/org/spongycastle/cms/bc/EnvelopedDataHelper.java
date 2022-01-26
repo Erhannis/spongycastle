@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
 import java.security.SecureRandom;
 import java.util.Collections;
@@ -7,33 +7,33 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.Wrapper;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.engines.RC2Engine;
-import org.bouncycastle.crypto.engines.RFC3211WrapEngine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.util.AlgorithmIdentifierFactory;
-import org.bouncycastle.crypto.util.CipherFactory;
-import org.bouncycastle.crypto.util.CipherKeyGeneratorFactory;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.bc.BcDigestProvider;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.Wrapper;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA384Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.engines.AESEngine;
+import org.spongycastle.crypto.engines.DESEngine;
+import org.spongycastle.crypto.engines.DESedeEngine;
+import org.spongycastle.crypto.engines.RC2Engine;
+import org.spongycastle.crypto.engines.RFC3211WrapEngine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.util.AlgorithmIdentifierFactory;
+import org.spongycastle.crypto.util.CipherFactory;
+import org.spongycastle.crypto.util.CipherKeyGeneratorFactory;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.bc.BcDigestProvider;
 
 class EnvelopedDataHelper
 {

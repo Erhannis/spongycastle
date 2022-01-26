@@ -1,4 +1,4 @@
-package org.bouncycastle.pkcs;
+package org.spongycastle.pkcs;
 
 /**
  * General checked Exception thrown in the cert package and its sub-packages.

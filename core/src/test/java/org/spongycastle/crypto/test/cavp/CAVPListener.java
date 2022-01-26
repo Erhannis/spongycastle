@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.test.cavp;
+package org.spongycastle.crypto.test.cavp;
 
 import java.util.Properties;
 

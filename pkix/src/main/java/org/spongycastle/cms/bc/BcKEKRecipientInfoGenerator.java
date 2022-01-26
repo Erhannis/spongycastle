@@ -1,8 +1,8 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.asn1.cms.KEKIdentifier;
-import org.bouncycastle.cms.KEKRecipientInfoGenerator;
-import org.bouncycastle.operator.bc.BcSymmetricKeyWrapper;
+import org.spongycastle.asn1.cms.KEKIdentifier;
+import org.spongycastle.cms.KEKRecipientInfoGenerator;
+import org.spongycastle.operator.bc.BcSymmetricKeyWrapper;
 
 public class BcKEKRecipientInfoGenerator
     extends KEKRecipientInfoGenerator

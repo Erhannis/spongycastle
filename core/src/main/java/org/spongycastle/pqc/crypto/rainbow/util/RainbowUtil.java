@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.rainbow.util;
+package org.spongycastle.pqc.crypto.rainbow.util;
 
 /**
  * This class is needed for the conversions while encoding and decoding, as well as for

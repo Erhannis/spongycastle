@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg;
+package org.spongycastle.gpg;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -8,32 +8,32 @@ import java.io.OutputStream;
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.bcpg.DSAPublicBCPGKey;
-import org.bouncycastle.bcpg.DSASecretBCPGKey;
-import org.bouncycastle.bcpg.ECDSAPublicBCPGKey;
-import org.bouncycastle.bcpg.ECPublicBCPGKey;
-import org.bouncycastle.bcpg.ECSecretBCPGKey;
-import org.bouncycastle.bcpg.ElGamalPublicBCPGKey;
-import org.bouncycastle.bcpg.ElGamalSecretBCPGKey;
-import org.bouncycastle.bcpg.HashAlgorithmTags;
-import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
-import org.bouncycastle.bcpg.PublicKeyPacket;
-import org.bouncycastle.bcpg.RSAPublicBCPGKey;
-import org.bouncycastle.bcpg.RSASecretBCPGKey;
-import org.bouncycastle.bcpg.S2K;
-import org.bouncycastle.bcpg.SecretKeyPacket;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.openpgp.PGPSecretKey;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.openpgp.operator.PBEProtectionRemoverFactory;
-import org.bouncycastle.openpgp.operator.PBESecretKeyDecryptor;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculator;
-import org.bouncycastle.openpgp.operator.PGPDigestCalculatorProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.bcpg.DSAPublicBCPGKey;
+import org.spongycastle.bcpg.DSASecretBCPGKey;
+import org.spongycastle.bcpg.ECDSAPublicBCPGKey;
+import org.spongycastle.bcpg.ECPublicBCPGKey;
+import org.spongycastle.bcpg.ECSecretBCPGKey;
+import org.spongycastle.bcpg.ElGamalPublicBCPGKey;
+import org.spongycastle.bcpg.ElGamalSecretBCPGKey;
+import org.spongycastle.bcpg.HashAlgorithmTags;
+import org.spongycastle.bcpg.PublicKeyAlgorithmTags;
+import org.spongycastle.bcpg.PublicKeyPacket;
+import org.spongycastle.bcpg.RSAPublicBCPGKey;
+import org.spongycastle.bcpg.RSASecretBCPGKey;
+import org.spongycastle.bcpg.S2K;
+import org.spongycastle.bcpg.SecretKeyPacket;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPPublicKey;
+import org.spongycastle.openpgp.PGPSecretKey;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.openpgp.operator.PBEProtectionRemoverFactory;
+import org.spongycastle.openpgp.operator.PBESecretKeyDecryptor;
+import org.spongycastle.openpgp.operator.PGPDigestCalculator;
+import org.spongycastle.openpgp.operator.PGPDigestCalculatorProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 /**
  * A parser for secret keys stored in SExpr

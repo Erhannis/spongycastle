@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.mceliece;
+package org.spongycastle.pqc.jcajce.provider.mceliece;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
@@ -6,13 +6,13 @@ import java.security.KeyPairGenerator;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McEliecePrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McEliecePublicKeyParameters;
-import org.bouncycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
+import org.spongycastle.pqc.crypto.mceliece.McElieceParameters;
+import org.spongycastle.pqc.crypto.mceliece.McEliecePrivateKeyParameters;
+import org.spongycastle.pqc.crypto.mceliece.McEliecePublicKeyParameters;
+import org.spongycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
 
 public class McElieceKeyPairGeneratorSpi
     extends KeyPairGenerator

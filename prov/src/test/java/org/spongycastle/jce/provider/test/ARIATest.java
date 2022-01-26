@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -14,10 +14,10 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.nsri.NSRIObjectIdentifiers;
-import org.bouncycastle.crypto.prng.FixedSecureRandom;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.nsri.NSRIObjectIdentifiers;
+import org.spongycastle.crypto.prng.FixedSecureRandom;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * basic test class for the ARIA cipher vectors from FIPS-197

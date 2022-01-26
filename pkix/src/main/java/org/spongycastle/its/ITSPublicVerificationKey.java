@@ -1,6 +1,6 @@
-package org.bouncycastle.its;
+package org.spongycastle.its;
 
-import org.bouncycastle.oer.its.PublicVerificationKey;
+import org.spongycastle.oer.its.PublicVerificationKey;
 
 public class ITSPublicVerificationKey
 {

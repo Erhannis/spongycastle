@@ -1,20 +1,20 @@
-package org.bouncycastle.jcajce.provider.asymmetric.util;
+package org.spongycastle.jcajce.provider.asymmetric.util;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.GOST3410Parameters;
-import org.bouncycastle.crypto.params.GOST3410PrivateKeyParameters;
-import org.bouncycastle.crypto.params.GOST3410PublicKeyParameters;
-import org.bouncycastle.jce.interfaces.GOST3410PrivateKey;
-import org.bouncycastle.jce.interfaces.GOST3410PublicKey;
-import org.bouncycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.GOST3410Parameters;
+import org.spongycastle.crypto.params.GOST3410PrivateKeyParameters;
+import org.spongycastle.crypto.params.GOST3410PublicKeyParameters;
+import org.spongycastle.jce.interfaces.GOST3410PrivateKey;
+import org.spongycastle.jce.interfaces.GOST3410PublicKey;
+import org.spongycastle.jce.spec.GOST3410PublicKeyParameterSetSpec;
 
 /**
  * utility class for converting jce/jca GOST3410-94 objects
- * objects into their org.bouncycastle.crypto counterparts.
+ * objects into their org.spongycastle.crypto counterparts.
  */
 public class GOST3410Util
 {

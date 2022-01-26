@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.KeyGenerationParameters;
 
 public class Ed448KeyGenerationParameters
     extends KeyGenerationParameters

@@ -1,19 +1,19 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CMCFailInfo;
-import org.bouncycastle.asn1.cmc.CMCStatus;
-import org.bouncycastle.asn1.cmc.CMCStatusInfoV2;
-import org.bouncycastle.asn1.cmc.CMCStatusInfoV2Builder;
-import org.bouncycastle.asn1.cmc.ExtendedFailInfo;
-import org.bouncycastle.asn1.cmc.PendInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.DERGeneralizedTime;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cmc.BodyPartID;
+import org.spongycastle.asn1.cmc.CMCFailInfo;
+import org.spongycastle.asn1.cmc.CMCStatus;
+import org.spongycastle.asn1.cmc.CMCStatusInfoV2;
+import org.spongycastle.asn1.cmc.CMCStatusInfoV2Builder;
+import org.spongycastle.asn1.cmc.ExtendedFailInfo;
+import org.spongycastle.asn1.cmc.PendInfo;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class CMCStatusInfoV2Test

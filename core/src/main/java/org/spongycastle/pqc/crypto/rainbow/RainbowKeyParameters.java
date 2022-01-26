@@ -1,6 +1,6 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
 
 public class RainbowKeyParameters 
     extends AsymmetricKeyParameter

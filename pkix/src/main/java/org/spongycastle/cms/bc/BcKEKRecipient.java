@@ -1,12 +1,12 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.KEKRecipient;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.SymmetricKeyUnwrapper;
-import org.bouncycastle.operator.bc.BcSymmetricKeyUnwrapper;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.KEKRecipient;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.SymmetricKeyUnwrapper;
+import org.spongycastle.operator.bc.BcSymmetricKeyUnwrapper;
 
 public abstract class BcKEKRecipient
     implements KEKRecipient

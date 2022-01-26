@@ -1,6 +1,6 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
-import org.bouncycastle.tls.NamedGroup;
+import org.spongycastle.tls.NamedGroup;
 
 /**
  * Carrier class for Elliptic Curve parameter configuration.

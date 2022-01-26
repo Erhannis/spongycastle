@@ -1,10 +1,10 @@
-package org.bouncycastle.test.est;
+package org.spongycastle.test.est;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
@@ -28,7 +28,7 @@ public class AllTests
     {
         public void testSimple()
         {
-            org.bouncycastle.util.test.Test[] tests = new org.bouncycastle.util.test.Test[] {
+            org.spongycastle.util.test.Test[] tests = new org.spongycastle.util.test.Test[] {
                 // TODO:
             };
 

@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.prng;
+package org.spongycastle.crypto.prng;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

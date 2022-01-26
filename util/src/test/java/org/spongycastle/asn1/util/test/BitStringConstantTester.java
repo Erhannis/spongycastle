@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.util.test;
+package org.spongycastle.asn1.util.test;
 
 public class BitStringConstantTester
 {

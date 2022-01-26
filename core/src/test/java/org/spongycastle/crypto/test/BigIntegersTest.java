@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomData;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestRandomData;
 
 public class BigIntegersTest
     extends SimpleTest

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.keystore.bc;
+package org.spongycastle.jcajce.provider.keystore.bc;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -33,29 +33,29 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.PBEParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.PBEParametersGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.generators.PKCS12ParametersGenerator;
-import org.bouncycastle.crypto.io.DigestInputStream;
-import org.bouncycastle.crypto.io.DigestOutputStream;
-import org.bouncycastle.crypto.io.MacInputStream;
-import org.bouncycastle.crypto.io.MacOutputStream;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.jcajce.io.CipherInputStream;
-import org.bouncycastle.jcajce.io.CipherOutputStream;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jce.interfaces.BCKeyStore;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Properties;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.PBEParametersGenerator;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.generators.PKCS12ParametersGenerator;
+import org.spongycastle.crypto.io.DigestInputStream;
+import org.spongycastle.crypto.io.DigestOutputStream;
+import org.spongycastle.crypto.io.MacInputStream;
+import org.spongycastle.crypto.io.MacOutputStream;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.jcajce.io.CipherInputStream;
+import org.spongycastle.jcajce.io.CipherOutputStream;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jce.interfaces.BCKeyStore;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Properties;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.io.TeeOutputStream;
 
 public class BcKeyStoreSpi
     extends KeyStoreSpi
@@ -1076,7 +1076,7 @@ public class BcKeyStoreSpi
         public Version1()
         {
             super(1);
-            if (!Properties.isOverrideSet("org.bouncycastle.bks.enable_v1"))
+            if (!Properties.isOverrideSet("org.spongycastle.bks.enable_v1"))
             {
                  throw new IllegalStateException("BKS-V1 not enabled");
             }

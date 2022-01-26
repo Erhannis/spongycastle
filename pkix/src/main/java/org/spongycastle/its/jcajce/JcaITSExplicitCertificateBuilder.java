@@ -1,18 +1,18 @@
-package org.bouncycastle.its.jcajce;
+package org.spongycastle.its.jcajce;
 
 import java.security.Provider;
 import java.security.interfaces.ECPublicKey;
 
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.ITSExplicitCertificateBuilder;
-import org.bouncycastle.its.ITSPublicEncryptionKey;
-import org.bouncycastle.its.operator.ITSContentSigner;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.oer.its.CertificateId;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.ITSExplicitCertificateBuilder;
+import org.spongycastle.its.ITSPublicEncryptionKey;
+import org.spongycastle.its.operator.ITSContentSigner;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.oer.its.CertificateId;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
 
 public class JcaITSExplicitCertificateBuilder
     extends ITSExplicitCertificateBuilder

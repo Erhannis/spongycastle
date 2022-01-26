@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
@@ -14,7 +14,7 @@ class CMSTestSetup extends TestSetup
 
     protected void setUp()
     {
-        Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+        Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
     }
 
     protected void tearDown()

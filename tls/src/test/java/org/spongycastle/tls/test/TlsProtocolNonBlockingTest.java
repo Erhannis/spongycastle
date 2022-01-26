@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.TlsClientProtocol;
-import org.bouncycastle.tls.TlsProtocol;
-import org.bouncycastle.tls.TlsServerProtocol;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.TlsClientProtocol;
+import org.spongycastle.tls.TlsProtocol;
+import org.spongycastle.tls.TlsServerProtocol;
+import org.spongycastle.util.Arrays;
 
 import junit.framework.TestCase;
 

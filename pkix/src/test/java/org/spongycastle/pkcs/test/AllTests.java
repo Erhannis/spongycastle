@@ -1,4 +1,4 @@
-package org.bouncycastle.pkcs.test;
+package org.spongycastle.pkcs.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

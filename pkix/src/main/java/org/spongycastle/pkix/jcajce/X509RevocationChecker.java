@@ -1,4 +1,4 @@
-package org.bouncycastle.pkix.jcajce;
+package org.spongycastle.pkix.jcajce;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
@@ -40,24 +40,24 @@ import java.util.logging.Logger;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.CRLDistPoint;
-import org.bouncycastle.asn1.x509.DistributionPoint;
-import org.bouncycastle.asn1.x509.DistributionPointName;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.jcajce.PKIXCRLStore;
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.util.CollectionStore;
-import org.bouncycastle.util.Iterable;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.CRLDistPoint;
+import org.spongycastle.asn1.x509.DistributionPoint;
+import org.spongycastle.asn1.x509.DistributionPointName;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.jcajce.PKIXCRLStore;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.util.CollectionStore;
+import org.spongycastle.util.Iterable;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
 
 /**
  * X.509 Certificate Revocation Checker - still lacks OCSP support and support for delta CRLs.

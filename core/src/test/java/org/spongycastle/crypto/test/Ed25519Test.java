@@ -1,20 +1,20 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.generators.Ed25519KeyPairGenerator;
-import org.bouncycastle.crypto.params.Ed25519KeyGenerationParameters;
-import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
-import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters;
-import org.bouncycastle.crypto.signers.Ed25519Signer;
-import org.bouncycastle.crypto.signers.Ed25519ctxSigner;
-import org.bouncycastle.crypto.signers.Ed25519phSigner;
-import org.bouncycastle.math.ec.rfc8032.Ed25519;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.generators.Ed25519KeyPairGenerator;
+import org.spongycastle.crypto.params.Ed25519KeyGenerationParameters;
+import org.spongycastle.crypto.params.Ed25519PrivateKeyParameters;
+import org.spongycastle.crypto.params.Ed25519PublicKeyParameters;
+import org.spongycastle.crypto.signers.Ed25519Signer;
+import org.spongycastle.crypto.signers.Ed25519ctxSigner;
+import org.spongycastle.crypto.signers.Ed25519phSigner;
+import org.spongycastle.math.ec.rfc8032.Ed25519;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class Ed25519Test
     extends SimpleTest

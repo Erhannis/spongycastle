@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.sphincsplus;
+package org.spongycastle.pqc.crypto.sphincsplus;
 
 import java.util.LinkedList;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 class Fors
 {

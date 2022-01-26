@@ -1,9 +1,9 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.*;
 import java.math.BigInteger;
 
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * base class for an RSA Secret (or Private) Key.
@@ -137,7 +137,7 @@ public class RSASecretBCPGKey
     /**
      *  return "PGP"
      * 
-     * @see org.bouncycastle.bcpg.BCPGKey#getFormat()
+     * @see org.spongycastle.bcpg.BCPGKey#getFormat()
      */
     public String getFormat() 
     {
@@ -147,7 +147,7 @@ public class RSASecretBCPGKey
     /**
      * return the standard PGP encoding of the key.
      * 
-     * @see org.bouncycastle.bcpg.BCPGKey#getEncoded()
+     * @see org.spongycastle.bcpg.BCPGKey#getEncoded()
      */
     public byte[] getEncoded() 
     {

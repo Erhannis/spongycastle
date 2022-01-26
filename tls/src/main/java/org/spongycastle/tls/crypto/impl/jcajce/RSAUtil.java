@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.MGF1ParameterSpec;
 import java.security.spec.PSSParameterSpec;
 
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.tls.crypto.TlsCryptoUtils;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.tls.crypto.TlsCryptoUtils;
 
 class RSAUtil
 {

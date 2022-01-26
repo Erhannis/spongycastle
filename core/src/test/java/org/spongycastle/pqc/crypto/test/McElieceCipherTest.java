@@ -1,22 +1,22 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.security.SecureRandom;
 import java.util.Random;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCipher;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKobaraImaiCipher;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceParameters;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.mceliece.McElieceCipher;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
+import org.spongycastle.pqc.crypto.mceliece.McElieceKobaraImaiCipher;
+import org.spongycastle.pqc.crypto.mceliece.McElieceParameters;
+import org.spongycastle.pqc.crypto.util.PrivateKeyFactory;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class McElieceCipherTest
     extends SimpleTest

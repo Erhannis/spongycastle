@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.HashAlgorithm;
-import org.bouncycastle.tls.MACAlgorithm;
-import org.bouncycastle.tls.PRFAlgorithm;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.HashAlgorithm;
+import org.spongycastle.tls.MACAlgorithm;
+import org.spongycastle.tls.PRFAlgorithm;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
 
 public abstract class TlsCryptoUtils
 {

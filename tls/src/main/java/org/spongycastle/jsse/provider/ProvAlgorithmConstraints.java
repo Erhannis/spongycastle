@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.security.AlgorithmParameters;
 import java.security.Key;
@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.jsse.java.security.BCCryptoPrimitive;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.jsse.java.security.BCCryptoPrimitive;
 
 class ProvAlgorithmConstraints
     extends AbstractAlgorithmConstraints

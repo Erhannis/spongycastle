@@ -1,10 +1,10 @@
-package org.bouncycastle.mime;
+package org.spongycastle.mime;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 /**
  * Read regular text lines, allowing for a single character look ahead.

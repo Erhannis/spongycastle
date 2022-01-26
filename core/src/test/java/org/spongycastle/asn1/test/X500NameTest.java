@@ -1,32 +1,32 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1PrintableString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.ASN1UTF8String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.x500.RDN;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStrictStyle;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x500.style.IETFUtils;
-import org.bouncycastle.asn1.x509.X509DefaultEntryConverter;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1PrintableString;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.ASN1UTF8String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.x500.RDN;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStrictStyle;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x500.style.IETFUtils;
+import org.spongycastle.asn1.x509.X509DefaultEntryConverter;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class X500NameTest
     extends SimpleTest
@@ -41,7 +41,7 @@ public class X500NameTest
        "O=Sun Microsystems Inc,CN=store.sun.com",
        "unstructuredAddress=192.168.1.33,unstructuredName=pixfirewall.ciscopix.com,CN=pixfirewall.ciscopix.com",
        "CN=*.canal-plus.com,OU=Provided by TBS INTERNET https://www.tbs-certificats.com/,OU=\\ CANAL \\+,O=CANAL\\+DISTRIBUTION,L=issy les moulineaux,ST=Hauts de Seine,C=FR",
-       "O=Bouncy Castle,CN=www.bouncycastle.org\\ ",
+       "O=Bouncy Castle,CN=www.spongycastle.org\\ ",
        "O=Bouncy Castle,CN=c:\\\\fred\\\\bob",
        "C=0,O=1,OU=2,T=3,CN=4,SERIALNUMBER=5,STREET=6,SERIALNUMBER=7,L=8,ST=9,SURNAME=10,GIVENNAME=11,INITIALS=12," +
            "GENERATION=13,UniqueIdentifier=14,BusinessCategory=15,PostalCode=16,DN=17,Pseudonym=18,PlaceOfBirth=19," +
@@ -172,7 +172,7 @@ public class X500NameTest
         builder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         builder.addRDN(BCStyle.L, "Melbourne");
         builder.addRDN(BCStyle.ST, "Victoria");
-        builder.addRDN(BCStyle.E, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(BCStyle.E, "feedback-crypto.spongycastle.org");
 
         X500Name    name1 = builder.build();
 
@@ -197,7 +197,7 @@ public class X500NameTest
         builder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         builder.addRDN(BCStyle.L, "Melbourne");
         builder.addRDN(BCStyle.ST, "Victoria");
-        builder.addRDN(BCStyle.E, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(BCStyle.E, "feedback-crypto.spongycastle.org");
 
         X500Name    name2 = builder.build();
 
@@ -222,11 +222,11 @@ public class X500NameTest
         builder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         builder.addRDN(BCStyle.L, "Melbourne");
         builder.addRDN(BCStyle.ST, "Victoria");
-        builder.addRDN(BCStyle.E, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(BCStyle.E, "feedback-crypto.spongycastle.org");
 
         X500NameBuilder builder2 = new X500NameBuilder(BCStyle.INSTANCE);
 
-        builder.addRDN(BCStyle.E, "feedback-crypto@bouncycastle.org");
+        builder.addRDN(BCStyle.E, "feedback-crypto.spongycastle.org");
         builder.addRDN(BCStyle.C, "AU");
         builder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         builder.addRDN(BCStyle.L, "Melbourne");
@@ -267,7 +267,7 @@ public class X500NameTest
         val1.addElement("The Legion of the Bouncy Castle");
         val1.addElement("Melbourne");
         val1.addElement("Victoria");
-        val1.addElement("feedback-crypto@bouncycastle.org");
+        val1.addElement("feedback-crypto.spongycastle.org");
 
         name1 = new X500Name(ord1, val1);
 

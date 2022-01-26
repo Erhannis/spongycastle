@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 public class PGPRuntimeOperationException
     extends RuntimeException

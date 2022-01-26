@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.macs;
+package org.spongycastle.crypto.macs;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.Blake3Digest;
-import org.bouncycastle.crypto.params.Blake3Parameters;
-import org.bouncycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.digests.Blake3Digest;
+import org.spongycastle.crypto.params.Blake3Parameters;
+import org.spongycastle.crypto.params.KeyParameter;
 
 /**
  * Bouncy implementation of Blake3Mac.

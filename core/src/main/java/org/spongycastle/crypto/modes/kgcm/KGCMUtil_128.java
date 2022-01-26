@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.modes.kgcm;
+package org.spongycastle.crypto.modes.kgcm;
 
-import org.bouncycastle.math.raw.Interleave;
+import org.spongycastle.math.raw.Interleave;
 
 /**
  * Utilities for the GF(2^m) field with corresponding extension polynomial:

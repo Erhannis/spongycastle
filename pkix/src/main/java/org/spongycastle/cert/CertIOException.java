@@ -1,4 +1,4 @@
-package org.bouncycastle.cert;
+package org.spongycastle.cert;
 
 import java.io.IOException;
 

@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.signers;
+package org.spongycastle.crypto.signers;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Integers;
 
 public class ISOTrailers
 {

@@ -1,8 +1,8 @@
-package org.bouncycastle.math.raw.test;
+package org.spongycastle.math.raw.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.raw.Interleave;
+import org.spongycastle.math.raw.Interleave;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

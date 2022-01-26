@@ -1,4 +1,4 @@
-package org.bouncycastle.eac;
+package org.spongycastle.eac;
 
 /**
  * General checked Exception thrown in the cert package and its sub-packages.

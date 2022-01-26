@@ -1,8 +1,8 @@
-package org.bouncycastle.operator;
+package org.spongycastle.operator;
 
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 /**
  * General interface for an operator that is able to create a signature from
@@ -20,7 +20,7 @@ public interface ContentSigner
 
     /**
      * Returns a stream that will accept data for the purpose of calculating
-     * a signature. Use org.bouncycastle.util.io.TeeOutputStream if you want to accumulate
+     * a signature. Use org.spongycastle.util.io.TeeOutputStream if you want to accumulate
      * the data on the fly as well.
      *
      * @return an OutputStream

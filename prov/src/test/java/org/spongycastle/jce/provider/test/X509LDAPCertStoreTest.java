@@ -1,14 +1,14 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
-import org.bouncycastle.jce.PrincipalUtil;
-import org.bouncycastle.jce.X509LDAPCertStoreParameters;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509CRLStoreSelector;
-import org.bouncycastle.x509.X509CertStoreSelector;
-import org.bouncycastle.x509.X509Store;
+import org.spongycastle.jce.PrincipalUtil;
+import org.spongycastle.jce.X509LDAPCertStoreParameters;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.x509.X509CRLStoreSelector;
+import org.spongycastle.x509.X509CertStoreSelector;
+import org.spongycastle.x509.X509Store;
 
 import java.io.ByteArrayInputStream;
 import java.security.Security;

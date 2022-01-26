@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.x500.style;
+package org.spongycastle.asn1.x500.style;
 
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x500.RDN;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameStyle;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERPrintableString;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x500.RDN;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameStyle;
+import org.spongycastle.asn1.x509.X509ObjectIdentifiers;
 
 public class BCStyle
     extends AbstractX500NameStyle

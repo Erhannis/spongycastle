@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.prng.drbg;
+package org.spongycastle.crypto.prng.drbg;
 
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.util.Arrays;
 
 /**
  * A SP800-90A HMAC DRBG.

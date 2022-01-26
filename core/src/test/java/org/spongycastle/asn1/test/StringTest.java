@@ -1,23 +1,23 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.ASN1T61String;
-import org.bouncycastle.asn1.ASN1UniversalString;
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERGeneralString;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERNumericString;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.DERT61String;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.DERUniversalString;
-import org.bouncycastle.asn1.DERVisibleString;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.ASN1T61String;
+import org.spongycastle.asn1.ASN1UniversalString;
+import org.spongycastle.asn1.DERBMPString;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERGeneralString;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERNumericString;
+import org.spongycastle.asn1.DERPrintableString;
+import org.spongycastle.asn1.DERT61String;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.DERUniversalString;
+import org.spongycastle.asn1.DERVisibleString;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * X.690 test example

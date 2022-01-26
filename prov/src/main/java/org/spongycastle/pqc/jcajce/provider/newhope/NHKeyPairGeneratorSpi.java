@@ -1,16 +1,16 @@
-package org.bouncycastle.pqc.jcajce.provider.newhope;
+package org.spongycastle.pqc.jcajce.provider.newhope;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
 import java.security.SecureRandom;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.newhope.NHKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.newhope.NHPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.newhope.NHPublicKeyParameters;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.pqc.crypto.newhope.NHKeyPairGenerator;
+import org.spongycastle.pqc.crypto.newhope.NHPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.newhope.NHPublicKeyParameters;
 
 public class NHKeyPairGeneratorSpi
     extends java.security.KeyPairGenerator

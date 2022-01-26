@@ -1,6 +1,6 @@
-package org.bouncycastle.tsp.cms;
+package org.spongycastle.tsp.cms;
 
-import org.bouncycastle.tsp.TimeStampToken;
+import org.spongycastle.tsp.TimeStampToken;
 
 public class ImprintDigestInvalidException
     extends Exception

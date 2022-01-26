@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.x500;
+package org.spongycastle.asn1.x500;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * This interface provides a profile to conform to when

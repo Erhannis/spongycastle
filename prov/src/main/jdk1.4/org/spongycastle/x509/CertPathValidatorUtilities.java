@@ -1,4 +1,4 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -33,34 +33,34 @@ import java.util.Set;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.CertificateList;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.IssuingDistributionPoint;
-import org.bouncycastle.asn1.x509.PolicyInformation;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509Extension;
-import org.bouncycastle.jcajce.PKIXCertStoreSelector;
-import org.bouncycastle.jce.exception.ExtCertPathValidatorException;
-import org.bouncycastle.jce.provider.AnnotatedException;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.provider.PKIXPolicyNode;
-import org.bouncycastle.util.Encodable;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.StoreException;
-import org.bouncycastle.jce.provider.X509CRLObject;
-import org.bouncycastle.jce.provider.X509CRLEntryObject;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Enumerated;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1OutputStream;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.CertificateList;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.IssuingDistributionPoint;
+import org.spongycastle.asn1.x509.PolicyInformation;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509Extension;
+import org.spongycastle.jcajce.PKIXCertStoreSelector;
+import org.spongycastle.jce.exception.ExtCertPathValidatorException;
+import org.spongycastle.jce.provider.AnnotatedException;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.PKIXPolicyNode;
+import org.spongycastle.util.Encodable;
+import org.spongycastle.util.Selector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.StoreException;
+import org.spongycastle.jce.provider.X509CRLObject;
+import org.spongycastle.jce.provider.X509CRLEntryObject;
 
 class CertPathValidatorUtilities
 {
@@ -495,7 +495,7 @@ class CertPathValidatorUtilities
      * @param certStores a List containing only {@link X509Store} objects. These
      *                   are used to search for certificates.
      * @return a Collection of all found {@link X509Certificate} or
-     *         {@link org.bouncycastle.x509.X509AttributeCertificate} objects.
+     *         {@link org.spongycastle.x509.X509AttributeCertificate} objects.
      *         May be empty but never <code>null</code>.
      */
     protected static Collection findCertificates(X509CertStoreSelector certSelect,
@@ -504,7 +504,7 @@ class CertPathValidatorUtilities
     {
         Set certs = new HashSet();
         Iterator iter = certStores.iterator();
-        org.bouncycastle.jcajce.provider.asymmetric.x509.CertificateFactory certFact = new org.bouncycastle.jcajce.provider.asymmetric.x509.CertificateFactory();
+        org.spongycastle.jcajce.provider.asymmetric.x509.CertificateFactory certFact = new org.spongycastle.jcajce.provider.asymmetric.x509.CertificateFactory();
 
         while (iter.hasNext())
         {

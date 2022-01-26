@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
 
-import org.bouncycastle.crypto.generators.OpenBSDBCrypt;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.generators.OpenBSDBCrypt;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 public class OpenBSDBCryptTest
     extends SimpleTest

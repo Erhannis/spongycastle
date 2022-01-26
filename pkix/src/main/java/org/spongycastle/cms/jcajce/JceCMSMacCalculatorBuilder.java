@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.OutputStream;
 import java.security.AlgorithmParameters;
@@ -9,13 +9,13 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.Mac;
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.jcajce.io.MacOutputStream;
-import org.bouncycastle.operator.GenericKey;
-import org.bouncycastle.operator.MacCalculator;
-import org.bouncycastle.operator.jcajce.JceGenericKey;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.jcajce.io.MacOutputStream;
+import org.spongycastle.operator.GenericKey;
+import org.spongycastle.operator.MacCalculator;
+import org.spongycastle.operator.jcajce.JceGenericKey;
 
 public class JceCMSMacCalculatorBuilder
 {

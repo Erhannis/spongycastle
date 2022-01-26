@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.ess.test;
+package org.spongycastle.asn1.ess.test;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ess.ESSCertIDv2;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.util.test.ASN1UnitTest;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ess.ESSCertIDv2;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.util.test.ASN1UnitTest;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
 
 public class ESSCertIDv2UnitTest
     extends ASN1UnitTest

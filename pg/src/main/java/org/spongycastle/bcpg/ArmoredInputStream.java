@@ -1,11 +1,11 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.StringList;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.StringList;
+import org.spongycastle.util.Strings;
 
 /**
  * reader for Base64 armored objects - read the headers and then start returning

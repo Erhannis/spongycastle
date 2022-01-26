@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.crypto.gmss;
+package org.spongycastle.pqc.crypto.gmss;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.encoders.Hex;
 
 
 /**

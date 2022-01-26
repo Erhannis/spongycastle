@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.asn1;
+package org.spongycastle.pqc.asn1;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.bc.BCObjectIdentifiers;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.bc.BCObjectIdentifiers;
 
 /**
  * PQC:

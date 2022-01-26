@@ -1,4 +1,4 @@
-package org.bouncycastle.openssl.jcajce;
+package org.spongycastle.openssl.jcajce;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,26 +9,26 @@ import java.security.Provider;
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.pkcs.EncryptionScheme;
-import org.bouncycastle.asn1.pkcs.KeyDerivationFunc;
-import org.bouncycastle.asn1.pkcs.PBEParameter;
-import org.bouncycastle.asn1.pkcs.PBES2Parameters;
-import org.bouncycastle.asn1.pkcs.PBKDF2Params;
-import org.bouncycastle.asn1.pkcs.PKCS12PBEParams;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.CharToByteConverter;
-import org.bouncycastle.jcajce.PBKDF1KeyWithParameters;
-import org.bouncycastle.jcajce.PKCS12KeyWithParameters;
-import org.bouncycastle.jcajce.io.CipherInputStream;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.openssl.PEMException;
-import org.bouncycastle.operator.InputDecryptor;
-import org.bouncycastle.operator.InputDecryptorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.pkcs.EncryptionScheme;
+import org.spongycastle.asn1.pkcs.KeyDerivationFunc;
+import org.spongycastle.asn1.pkcs.PBEParameter;
+import org.spongycastle.asn1.pkcs.PBES2Parameters;
+import org.spongycastle.asn1.pkcs.PBKDF2Params;
+import org.spongycastle.asn1.pkcs.PKCS12PBEParams;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.crypto.CharToByteConverter;
+import org.spongycastle.jcajce.PBKDF1KeyWithParameters;
+import org.spongycastle.jcajce.PKCS12KeyWithParameters;
+import org.spongycastle.jcajce.io.CipherInputStream;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.openssl.PEMException;
+import org.spongycastle.operator.InputDecryptor;
+import org.spongycastle.operator.InputDecryptorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.util.Strings;
 
 /**
  * DecryptorProviderBuilder for producing DecryptorProvider for use with PKCS8EncryptedPrivateKeyInfo.

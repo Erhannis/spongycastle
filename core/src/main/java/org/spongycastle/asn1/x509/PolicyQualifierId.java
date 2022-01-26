@@ -1,7 +1,7 @@
 
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * PolicyQualifierId, used in the CertificatePolicies

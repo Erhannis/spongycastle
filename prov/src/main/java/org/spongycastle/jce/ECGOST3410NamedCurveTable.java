@@ -1,11 +1,11 @@
-package org.bouncycastle.jce;
+package org.spongycastle.jce;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.ECGOST3410NamedCurves;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptopro.ECGOST3410NamedCurves;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.jce.spec.ECNamedCurveParameterSpec;
 
 /**
  * a table of locally supported named curves.

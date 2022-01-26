@@ -1,11 +1,11 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
 import junit.framework.TestCase;
-import org.bouncycastle.mime.BoundaryLimitedInputStream;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.mime.BoundaryLimitedInputStream;
+import org.spongycastle.util.io.Streams;
 
 public class TestBoundaryLimitedInputStream
     extends TestCase

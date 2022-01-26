@@ -1,17 +1,17 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.security.PrivateKey;
 import java.security.AlgorithmParameters;
 import java.security.KeyPairGenerator;
 import java.security.KeyPair;
 import java.security.spec.AlgorithmParameterSpec;
-import org.bouncycastle.jce.spec.ECNamedCurveGenParameterSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.jce.spec.ECNamedCurveGenParameterSpec;
+import org.spongycastle.jce.spec.ECParameterSpec;
 
-import org.bouncycastle.jce.interfaces.ECKey;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
+import org.spongycastle.jce.interfaces.ECKey;
+import org.spongycastle.jce.interfaces.ECPrivateKey;
 
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 class ECUtil
 {

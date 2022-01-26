@@ -221,7 +221,7 @@
                 <exclude name="**/JournalingSecureRandomEncryptTest.java" />
                 <exclude name="**/PKIXRevocationTest.java" />
                 <exclude name="**/cms/test/AnnotatedKeyTest.java"/>
-                <exclude name="**/bouncycastle/cms/test/AuthEnvelopedDataTest.java"/>
+                <exclude name="**.spongycastle.cms/test/AuthEnvelopedDataTest.java"/>
                 <exclude name="**/its/**" />
             </fileset>
             <fileset dir="mail/src/test/java">
@@ -314,22 +314,22 @@
                 <exclude name="**/MultipartParserTest.java"/>
             </fileset>
         </replaceregexp>
-        <replaceregexp match="java.security.cert.CertStore" replace="org.bouncycastle.jce.cert.CertStore" flags="g" byline="true">
+        <replaceregexp match="java.security.cert.CertStore" replace="org.spongycastle.jce.cert.CertStore" flags="g" byline="true">
             <fileset dir="${src.dir}">
               <include name="**/*.java"/>
             </fileset>
         </replaceregexp>
-        <replaceregexp match="java.security.cert.PKIX" replace="org.bouncycastle.jce.cert.PKIX" flags="g" byline="true">
+        <replaceregexp match="java.security.cert.PKIX" replace="org.spongycastle.jce.cert.PKIX" flags="g" byline="true">
             <fileset dir="${src.dir}">
               <include name="**/*.java"/>
             </fileset>
         </replaceregexp>
-        <replaceregexp match="java.security.cert.(.*Selector)" replace="org.bouncycastle.jce.cert.\1" flags="g" byline="true">
+        <replaceregexp match="java.security.cert.(.*Selector)" replace="org.spongycastle.jce.cert.\1" flags="g" byline="true">
             <fileset dir="${src.dir}">
               <include name="**/*.java"/>
             </fileset>
         </replaceregexp>
-        <replaceregexp match="java.security.cert.CertPath" replace="org.bouncycastle.jce.cert.CertPath" flags="g" byline="true">
+        <replaceregexp match="java.security.cert.CertPath" replace="org.spongycastle.jce.cert.CertPath" flags="g" byline="true">
             <fileset dir="${src.dir}">
               <include name="**/*.java"/>
             </fileset>

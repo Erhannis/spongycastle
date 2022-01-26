@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.crmf;
+package org.spongycastle.asn1.crmf;
 
-import org.bouncycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Integer;
 
 public class SubsequentMessage
     extends ASN1Integer

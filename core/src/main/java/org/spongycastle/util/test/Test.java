@@ -1,4 +1,4 @@
-package org.bouncycastle.util.test;
+package org.spongycastle.util.test;
 
 public interface Test
 {

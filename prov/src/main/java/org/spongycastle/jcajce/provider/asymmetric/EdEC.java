@@ -1,16 +1,16 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.edec.KeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.jcajce.provider.asymmetric.edec.KeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class EdEC
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric" + ".edec.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric" + ".edec.";
 
     private static final Map<String, String> edxAttributes = new HashMap<String, String>();
 

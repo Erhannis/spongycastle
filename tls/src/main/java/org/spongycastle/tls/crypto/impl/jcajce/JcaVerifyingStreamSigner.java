@@ -1,15 +1,15 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.security.Signature;
 import java.security.SignatureException;
 
-import org.bouncycastle.jcajce.io.OutputStreamFactory;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
-import org.bouncycastle.util.io.TeeOutputStream;
+import org.spongycastle.jcajce.io.OutputStreamFactory;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.util.io.TeeOutputStream;
 
 class JcaVerifyingStreamSigner
     implements TlsStreamSigner

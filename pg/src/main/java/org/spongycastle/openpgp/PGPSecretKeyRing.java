@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -10,17 +10,17 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.PacketTags;
-import org.bouncycastle.bcpg.PublicSubkeyPacket;
-import org.bouncycastle.bcpg.SecretKeyPacket;
-import org.bouncycastle.bcpg.SecretSubkeyPacket;
-import org.bouncycastle.bcpg.TrustPacket;
-import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
-import org.bouncycastle.openpgp.operator.PBESecretKeyDecryptor;
-import org.bouncycastle.openpgp.operator.PBESecretKeyEncryptor;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Iterable;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.PacketTags;
+import org.spongycastle.bcpg.PublicSubkeyPacket;
+import org.spongycastle.bcpg.SecretKeyPacket;
+import org.spongycastle.bcpg.SecretSubkeyPacket;
+import org.spongycastle.bcpg.TrustPacket;
+import org.spongycastle.openpgp.operator.KeyFingerPrintCalculator;
+import org.spongycastle.openpgp.operator.PBESecretKeyDecryptor;
+import org.spongycastle.openpgp.operator.PBESecretKeyEncryptor;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Iterable;
 
 /**
  * Class to hold a single master secret key and its subkeys.

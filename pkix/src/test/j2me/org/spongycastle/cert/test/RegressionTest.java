@@ -1,7 +1,7 @@
-package org.bouncycastle.cert.test;
+package org.spongycastle.cert.test;
 
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.Test;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.Test;
 
 public class RegressionTest
 {

@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.prng.test;
+package org.spongycastle.crypto.prng.test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.util.encoders.Hex;
 
 public class DRBGTestVector
 {

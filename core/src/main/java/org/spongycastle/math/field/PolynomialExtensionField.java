@@ -1,4 +1,4 @@
-package org.bouncycastle.math.field;
+package org.spongycastle.math.field;
 
 public interface PolynomialExtensionField extends ExtensionField
 {

@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.pqc.crypto.ExchangePair;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.pqc.crypto.ExchangePair;
+import org.spongycastle.util.Arrays;
 
 /**
  * A processor with associated builders for doing secret key transformation using

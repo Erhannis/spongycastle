@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.oiw;
+package org.spongycastle.asn1.oiw;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * OIW organization's OIDs:

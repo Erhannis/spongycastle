@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dh;
+package org.spongycastle.jcajce.provider.asymmetric.dh;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -8,11 +8,11 @@ import java.security.spec.AlgorithmParameterSpec;
 import javax.crypto.spec.DHGenParameterSpec;
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.generators.DHParametersGenerator;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.generators.DHParametersGenerator;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseAlgorithmParameterGeneratorSpi;
+import org.spongycastle.jcajce.provider.asymmetric.util.PrimeCertaintyCalculator;
 
 public class AlgorithmParameterGeneratorSpi
     extends BaseAlgorithmParameterGeneratorSpi

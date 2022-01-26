@@ -1,6 +1,6 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
-import org.bouncycastle.asn1.dvcs.Data;
+import org.spongycastle.asn1.dvcs.Data;
 
 /**
  * Data piece of DVCRequest object (DVCS Data structure).

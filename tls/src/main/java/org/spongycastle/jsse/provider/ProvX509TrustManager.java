@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.net.Socket;
 import java.security.GeneralSecurityException;
@@ -33,15 +33,15 @@ import java.util.logging.Logger;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jsse.BCExtendedSSLSession;
-import org.bouncycastle.jsse.BCSNIHostName;
-import org.bouncycastle.jsse.BCSSLParameters;
-import org.bouncycastle.jsse.BCX509ExtendedTrustManager;
-import org.bouncycastle.jsse.java.security.BCAlgorithmConstraints;
-import org.bouncycastle.tls.KeyExchangeAlgorithm;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jsse.BCExtendedSSLSession;
+import org.spongycastle.jsse.BCSNIHostName;
+import org.spongycastle.jsse.BCSSLParameters;
+import org.spongycastle.jsse.BCX509ExtendedTrustManager;
+import org.spongycastle.jsse.java.security.BCAlgorithmConstraints;
+import org.spongycastle.tls.KeyExchangeAlgorithm;
+import org.spongycastle.tls.TlsUtils;
 
 class ProvX509TrustManager
     extends BCX509ExtendedTrustManager
@@ -51,7 +51,7 @@ class ProvX509TrustManager
     private static final boolean provCheckRevocation = PropertyUtils
         .getBooleanSystemProperty("com.sun.net.ssl.checkRevocation", false);
     private static final boolean provTrustManagerCheckEKU = PropertyUtils
-        .getBooleanSystemProperty("org.bouncycastle.jsse.trustManager.checkEKU", true);
+        .getBooleanSystemProperty("org.spongycastle.jsse.trustManager.checkEKU", true);
 
     private static final Map<String, Integer> keyUsagesServer = createKeyUsagesServer();
 

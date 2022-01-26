@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 /**
  * With FIPS PUB 202 a new kind of message digest was announced which supported extendable output, or variable digest sizes.

@@ -1,6 +1,6 @@
-package org.bouncycastle.x509;
+package org.spongycastle.x509;
 
-import org.bouncycastle.x509.util.StreamParsingException;
+import org.spongycastle.x509.util.StreamParsingException;
 
 import java.io.InputStream;
 import java.util.Collection;
@@ -9,7 +9,7 @@ import java.util.Collection;
  * This abstract class defines the service provider interface (SPI) for
  * X509StreamParser.
  *
- * @see org.bouncycastle.x509.X509StreamParser
+ * @see org.spongycastle.x509.X509StreamParser
  *
  */
 public abstract class X509StreamParserSpi

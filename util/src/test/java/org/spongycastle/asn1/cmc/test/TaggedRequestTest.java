@@ -1,30 +1,30 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CertificationRequest;
-import org.bouncycastle.asn1.cmc.TaggedCertificationRequest;
-import org.bouncycastle.asn1.cmc.TaggedRequest;
-import org.bouncycastle.asn1.crmf.AttributeTypeAndValue;
-import org.bouncycastle.asn1.crmf.CertReqMsg;
-import org.bouncycastle.asn1.crmf.CertRequest;
-import org.bouncycastle.asn1.crmf.CertTemplate;
-import org.bouncycastle.asn1.crmf.Controls;
-import org.bouncycastle.asn1.crmf.POPOSigningKey;
-import org.bouncycastle.asn1.crmf.POPOSigningKeyInput;
-import org.bouncycastle.asn1.crmf.ProofOfPossession;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.cmc.BodyPartID;
+import org.spongycastle.asn1.cmc.CertificationRequest;
+import org.spongycastle.asn1.cmc.TaggedCertificationRequest;
+import org.spongycastle.asn1.cmc.TaggedRequest;
+import org.spongycastle.asn1.crmf.AttributeTypeAndValue;
+import org.spongycastle.asn1.crmf.CertReqMsg;
+import org.spongycastle.asn1.crmf.CertRequest;
+import org.spongycastle.asn1.crmf.CertTemplate;
+import org.spongycastle.asn1.crmf.Controls;
+import org.spongycastle.asn1.crmf.POPOSigningKey;
+import org.spongycastle.asn1.crmf.POPOSigningKeyInput;
+import org.spongycastle.asn1.crmf.ProofOfPossession;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class TaggedRequestTest
     extends SimpleTest

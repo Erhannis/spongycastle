@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -11,17 +11,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASigner;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAKeyPairGenerator;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASigner;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.encoders.Hex;
 
 import junit.framework.TestCase;
 
@@ -192,7 +192,7 @@ public class QTESLATest
         //
         // Values put in file because vectors exceeded length of string constant.
         //
-        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org/bouncycastle/pqc/crypto/test/q3pIII.txt")));
+        BufferedReader bin = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/org.spongycastle.pqc/crypto/test/q3pIII.txt")));
 
         byte[] seed = Hex.decode(bin.readLine());
         byte[] msg = Hex.decode(bin.readLine());
@@ -255,8 +255,8 @@ public class QTESLATest
         throws Exception
     {
         String[] files = new String[]{
-            "/org/bouncycastle/pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-I.rsp",
-            "/org/bouncycastle/pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-III.rsp",
+            "/org.spongycastle.pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-I.rsp",
+            "/org.spongycastle.pqc/crypto/test/qTeslaR2/KAT/ref/PQCsignKAT_qTesla-p-III.rsp",
         };
 
         for (int f = 0; f != files.length; f++)

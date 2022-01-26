@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.encodings;
+package org.spongycastle.crypto.encodings;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.util.Arrays;
 
 /**
  * this does your basic PKCS 1 v1.5 padding - whether or not you should be using this
@@ -20,17 +20,17 @@ public class PKCS1Encoding
     /**
      * @deprecated use NOT_STRICT_LENGTH_ENABLED_PROPERTY
      */
-    public static final String STRICT_LENGTH_ENABLED_PROPERTY = "org.bouncycastle.pkcs1.strict";
+    public static final String STRICT_LENGTH_ENABLED_PROPERTY = "org.spongycastle.pkcs1.strict";
 
     /**
      * some providers fail to include the leading zero in PKCS1 encoded blocks. If you need to
-     * work with one of these set the system property org.bouncycastle.pkcs1.not_strict to true.
+     * work with one of these set the system property org.spongycastle.pkcs1.not_strict to true.
      * <p>
      * The system property is checked during construction of the encoding object, it is set to
      * false by default.
      * </p>
      */
-    public static final String NOT_STRICT_LENGTH_ENABLED_PROPERTY = "org.bouncycastle.pkcs1.not_strict";
+    public static final String NOT_STRICT_LENGTH_ENABLED_PROPERTY = "org.spongycastle.pkcs1.not_strict";
 
     private static final int HEADER_LENGTH = 10;
 

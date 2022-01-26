@@ -1,13 +1,13 @@
-package org.bouncycastle.cert.bc;
+package org.spongycastle.cert.bc;
 
 import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.util.SubjectPublicKeyInfoFactory;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.util.SubjectPublicKeyInfoFactory;
 
 /**
  * JCA helper class to allow BC lightweight objects to be used in the construction of a Version 1 certificate.

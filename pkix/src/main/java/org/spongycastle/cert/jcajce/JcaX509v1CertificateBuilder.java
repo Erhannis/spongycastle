@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.jcajce;
+package org.spongycastle.cert.jcajce;
 
 import java.math.BigInteger;
 import java.security.PublicKey;
@@ -6,9 +6,9 @@ import java.util.Date;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509v1CertificateBuilder;
 
 /**
  * JCA helper class to allow JCA objects to be used in the construction of a Version 1 certificate.

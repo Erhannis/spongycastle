@@ -1,4 +1,4 @@
-package org.bouncycastle.pkix.jcajce;
+package org.spongycastle.pkix.jcajce;
 
 import java.security.cert.CertStore;
 import java.security.cert.CertStoreException;
@@ -10,9 +10,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.jcajce.PKIXCRLStoreSelector;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.StoreException;
+import org.spongycastle.jcajce.PKIXCRLStoreSelector;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.StoreException;
 
 abstract class PKIXCRLUtil
 {

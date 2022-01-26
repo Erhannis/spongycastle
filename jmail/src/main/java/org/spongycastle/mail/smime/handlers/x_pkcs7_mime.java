@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.handlers;
+package org.spongycastle.mail.smime.handlers;
 
 import java.awt.datatransfer.DataFlavor;
 

@@ -1,7 +1,7 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Factory class for creating DANEEntry objects.

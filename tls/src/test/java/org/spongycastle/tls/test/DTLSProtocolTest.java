@@ -1,12 +1,12 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.tls.DTLSClientProtocol;
-import org.bouncycastle.tls.DTLSServerProtocol;
-import org.bouncycastle.tls.DTLSTransport;
-import org.bouncycastle.tls.DatagramTransport;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.tls.DTLSClientProtocol;
+import org.spongycastle.tls.DTLSServerProtocol;
+import org.spongycastle.tls.DTLSTransport;
+import org.spongycastle.tls.DatagramTransport;
+import org.spongycastle.util.Arrays;
 
 import junit.framework.TestCase;
 

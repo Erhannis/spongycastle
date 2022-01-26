@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.euclid;
+package org.spongycastle.pqc.math.ntru.euclid;
 
 /**
  * Extended Euclidean Algorithm in <code>int</code>s

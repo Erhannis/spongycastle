@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.MacDerivationFunction;
-import org.bouncycastle.crypto.params.KDFCounterParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.DerivationParameters;
+import org.spongycastle.crypto.Mac;
+import org.spongycastle.crypto.MacDerivationFunction;
+import org.spongycastle.crypto.params.KDFCounterParameters;
+import org.spongycastle.crypto.params.KeyParameter;
 
 /**
  * This KDF has been defined by the publicly available NIST SP 800-108 specification.

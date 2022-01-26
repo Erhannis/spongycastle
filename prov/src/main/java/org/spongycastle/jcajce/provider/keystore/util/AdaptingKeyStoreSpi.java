@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.keystore.util;
+package org.spongycastle.jcajce.provider.keystore.util;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -15,9 +15,9 @@ import java.security.cert.CertificateException;
 import java.util.Date;
 import java.util.Enumeration;
 
-import org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.util.Properties;
+import org.spongycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.util.Properties;
 
 /**
  * Implements a certificate only JKS key store.

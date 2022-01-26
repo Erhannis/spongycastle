@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.pqc.crypto.ExchangePair;
-import org.bouncycastle.pqc.crypto.ExchangePairGenerator;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.pqc.crypto.ExchangePair;
+import org.spongycastle.pqc.crypto.ExchangePairGenerator;
 
 public class NHExchangePairGenerator
     implements ExchangePairGenerator

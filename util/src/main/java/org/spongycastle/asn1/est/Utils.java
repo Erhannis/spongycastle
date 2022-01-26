@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.est;
+package org.spongycastle.asn1.est;
 
 class Utils
 {

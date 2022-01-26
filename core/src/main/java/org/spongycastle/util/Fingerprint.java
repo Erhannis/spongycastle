@@ -1,7 +1,7 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
-import org.bouncycastle.crypto.digests.SHA512tDigest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.crypto.digests.SHA512tDigest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
 
 /**
  * Basic 20 byte finger print class.

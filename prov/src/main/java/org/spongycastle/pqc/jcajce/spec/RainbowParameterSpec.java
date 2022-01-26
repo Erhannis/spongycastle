@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.jcajce.spec;
+package org.spongycastle.pqc.jcajce.spec;
 
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * This class provides methods for setting and getting the Rainbow-parameters

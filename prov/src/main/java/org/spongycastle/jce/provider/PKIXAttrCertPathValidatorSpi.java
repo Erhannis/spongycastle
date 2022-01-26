@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider;
+package org.spongycastle.jce.provider;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.cert.CertPath;
@@ -12,19 +12,19 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.jcajce.PKIXExtendedParameters;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jce.exception.ExtCertPathValidatorException;
-import org.bouncycastle.util.Selector;
-import org.bouncycastle.x509.ExtendedPKIXParameters;
-import org.bouncycastle.x509.X509AttributeCertStoreSelector;
-import org.bouncycastle.x509.X509AttributeCertificate;
+import org.spongycastle.jcajce.PKIXExtendedParameters;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jce.exception.ExtCertPathValidatorException;
+import org.spongycastle.util.Selector;
+import org.spongycastle.x509.ExtendedPKIXParameters;
+import org.spongycastle.x509.X509AttributeCertStoreSelector;
+import org.spongycastle.x509.X509AttributeCertificate;
 
 /**
  * CertPathValidatorSpi implementation for X.509 Attribute Certificates la RFC 3281.
  * 
- * @see org.bouncycastle.x509.ExtendedPKIXParameters
+ * @see org.spongycastle.x509.ExtendedPKIXParameters
  */
 public class PKIXAttrCertPathValidatorSpi
     extends CertPathValidatorSpi
@@ -48,7 +48,7 @@ public class PKIXAttrCertPathValidatorSpi
      * necessary to correctly validate this attribute certificate.
      * <p>
      * The attribute certificate issuer must be added to the trusted attribute
-     * issuers with {@link org.bouncycastle.x509.ExtendedPKIXParameters#setTrustedACIssuers(java.util.Set)}.
+     * issuers with {@link org.spongycastle.x509.ExtendedPKIXParameters#setTrustedACIssuers(java.util.Set)}.
      * 
      * @param certPath The certificate path which belongs to the attribute
      *            certificate issuer public key certificate.

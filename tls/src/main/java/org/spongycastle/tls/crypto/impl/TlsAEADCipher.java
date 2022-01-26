@@ -1,19 +1,19 @@
-package org.bouncycastle.tls.crypto.impl;
+package org.spongycastle.tls.crypto.impl;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.ContentType;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SecurityParameters;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsCipher;
-import org.bouncycastle.tls.crypto.TlsCryptoParameters;
-import org.bouncycastle.tls.crypto.TlsCryptoUtils;
-import org.bouncycastle.tls.crypto.TlsDecodeResult;
-import org.bouncycastle.tls.crypto.TlsEncodeResult;
-import org.bouncycastle.tls.crypto.TlsSecret;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.ContentType;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SecurityParameters;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsCipher;
+import org.spongycastle.tls.crypto.TlsCryptoParameters;
+import org.spongycastle.tls.crypto.TlsCryptoUtils;
+import org.spongycastle.tls.crypto.TlsDecodeResult;
+import org.spongycastle.tls.crypto.TlsEncodeResult;
+import org.spongycastle.tls.crypto.TlsSecret;
 
 /**
  * A generic TLS 1.2 AEAD cipher.

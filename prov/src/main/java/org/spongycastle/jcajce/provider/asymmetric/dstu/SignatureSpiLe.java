@@ -1,10 +1,10 @@
-package org.bouncycastle.jcajce.provider.asymmetric.dstu;
+package org.spongycastle.jcajce.provider.asymmetric.dstu;
 
 import java.io.IOException;
 import java.security.SignatureException;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.DEROctetString;
 
 public class SignatureSpiLe
     extends SignatureSpi

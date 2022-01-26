@@ -1,19 +1,19 @@
-package org.bouncycastle.pqc.jcajce.provider.qtesla;
+package org.spongycastle.pqc.jcajce.provider.qtesla;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.security.PublicKey;
 
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
-import org.bouncycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
-import org.bouncycastle.pqc.crypto.util.PublicKeyFactory;
-import org.bouncycastle.pqc.crypto.util.SubjectPublicKeyInfoFactory;
-import org.bouncycastle.pqc.jcajce.interfaces.QTESLAKey;
-import org.bouncycastle.pqc.jcajce.spec.QTESLAParameterSpec;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLAPublicKeyParameters;
+import org.spongycastle.pqc.crypto.qtesla.QTESLASecurityCategory;
+import org.spongycastle.pqc.crypto.util.PublicKeyFactory;
+import org.spongycastle.pqc.crypto.util.SubjectPublicKeyInfoFactory;
+import org.spongycastle.pqc.jcajce.interfaces.QTESLAKey;
+import org.spongycastle.pqc.jcajce.spec.QTESLAParameterSpec;
+import org.spongycastle.util.Arrays;
 
 public class BCqTESLAPublicKey
     implements PublicKey, QTESLAKey

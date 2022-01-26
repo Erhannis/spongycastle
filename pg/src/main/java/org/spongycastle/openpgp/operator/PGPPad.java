@@ -1,6 +1,6 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.openpgp.PGPException;
+import org.spongycastle.openpgp.PGPException;
 
 /**
  * Utility class that provides padding addition and removal for PGP session keys.

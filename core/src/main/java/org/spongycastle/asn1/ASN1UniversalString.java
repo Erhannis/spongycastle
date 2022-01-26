@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * ASN.1 UniversalString object - encodes UNICODE (ISO 10646) characters using 32-bit format. In Java we

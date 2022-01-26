@@ -1,9 +1,9 @@
-package org.bouncycastle.openpgp.operator;
+package org.spongycastle.openpgp.operator;
 
-import org.bouncycastle.bcpg.ContainedPacket;
-import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
-import org.bouncycastle.openpgp.PGPEncryptedDataGenerator;
-import org.bouncycastle.openpgp.PGPException;
+import org.spongycastle.bcpg.ContainedPacket;
+import org.spongycastle.bcpg.SymmetricKeyAlgorithmTags;
+import org.spongycastle.openpgp.PGPEncryptedDataGenerator;
+import org.spongycastle.openpgp.PGPException;
 
 /**
  * An encryption method that can be applied to encrypt data in a {@link PGPEncryptedDataGenerator}.

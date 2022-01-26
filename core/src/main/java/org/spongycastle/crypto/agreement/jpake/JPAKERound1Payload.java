@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.agreement.jpake;
+package org.spongycastle.crypto.agreement.jpake;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * The payload sent/received during the first round of a J-PAKE exchange.

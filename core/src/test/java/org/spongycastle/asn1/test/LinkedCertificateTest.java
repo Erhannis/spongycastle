@@ -1,16 +1,16 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.bc.LinkedCertificate;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.bc.LinkedCertificate;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.DigestInfo;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
 
 public class LinkedCertificateTest
     extends ASN1UnitTest
@@ -25,7 +25,7 @@ public class LinkedCertificateTest
     {
         DigestInfo digInfo = new DigestInfo(
                                     new AlgorithmIdentifier(NISTObjectIdentifiers.id_sha256), new byte[32]);
-        GeneralName certLocation = new GeneralName(GeneralName.uniformResourceIdentifier, "https://www.bouncycastle.org/certs");
+        GeneralName certLocation = new GeneralName(GeneralName.uniformResourceIdentifier, "https://www.spongycastle.org/certs");
         X500Name certIssuer = null;
         GeneralNames cACerts = null;
 

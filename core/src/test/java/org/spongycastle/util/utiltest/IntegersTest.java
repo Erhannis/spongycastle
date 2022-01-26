@@ -1,6 +1,6 @@
-package org.bouncycastle.util.utiltest;
+package org.spongycastle.util.utiltest;
 
-import org.bouncycastle.util.Integers;
+import org.spongycastle.util.Integers;
 
 import junit.framework.TestCase;
 

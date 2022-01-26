@@ -1,26 +1,26 @@
-package org.bouncycastle.mime.smime;
+package org.spongycastle.mime.smime;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.cms.CMSEnvelopedDataParser;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSSignedData;
-import org.bouncycastle.cms.OriginatorInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.SignerInformationStore;
-import org.bouncycastle.mime.ConstantMimeContext;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeContext;
-import org.bouncycastle.mime.MimeIOException;
-import org.bouncycastle.mime.MimeParserContext;
-import org.bouncycastle.mime.MimeParserListener;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.cms.CMSEnvelopedDataParser;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSSignedData;
+import org.spongycastle.cms.OriginatorInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.SignerInformationStore;
+import org.spongycastle.mime.ConstantMimeContext;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeContext;
+import org.spongycastle.mime.MimeIOException;
+import org.spongycastle.mime.MimeParserContext;
+import org.spongycastle.mime.MimeParserListener;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.io.Streams;
 
 public abstract class SMimeParserListener
     implements MimeParserListener

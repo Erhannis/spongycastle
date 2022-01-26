@@ -1,4 +1,4 @@
-package org.bouncycastle.util;
+package org.spongycastle.util;
 
 /**
  * Interface for Memoable objects. Memoable objects allow the taking of a snapshot of their internal state

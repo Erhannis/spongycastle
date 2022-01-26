@@ -1,7 +1,7 @@
-package org.bouncycastle.oer.its.template;
+package org.spongycastle.oer.its.template;
 
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.oer.OERDefinition;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.oer.OERDefinition;
 
 /**
  * OER forward definition builders for OER encoded data.

@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.cmp;
+package org.spongycastle.asn1.cmp;
 
-import org.bouncycastle.asn1.ASN1Choice;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.crmf.CertReqMessages;
-import org.bouncycastle.asn1.pkcs.CertificationRequest;
+import org.spongycastle.asn1.ASN1Choice;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERTaggedObject;
+import org.spongycastle.asn1.crmf.CertReqMessages;
+import org.spongycastle.asn1.pkcs.CertificationRequest;
 
 public class PKIBody
     extends ASN1Object

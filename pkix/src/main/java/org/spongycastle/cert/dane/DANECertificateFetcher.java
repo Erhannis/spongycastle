@@ -1,11 +1,11 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * A single shot fetcher for a certificate which will only request the specific DNS record if the

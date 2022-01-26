@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.cmc.test;
+package org.spongycastle.asn1.cmc.test;
 
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cmc.ExtensionReq;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Boolean;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cmc.ExtensionReq;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class ExtensionReqTest

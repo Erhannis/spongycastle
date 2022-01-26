@@ -1,4 +1,4 @@
-package org.bouncycastle.test.est.examples;
+package org.spongycastle.test.est.examples;
 
 
 import java.io.File;
@@ -15,30 +15,30 @@ import java.security.SecureRandom;
 import java.security.Security;
 import java.security.spec.ECGenParameterSpec;
 
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.est.ESTAuth;
-import org.bouncycastle.est.ESTService;
-import org.bouncycastle.est.EnrollmentResponse;
-import org.bouncycastle.est.jcajce.JcaHttpAuthBuilder;
-import org.bouncycastle.est.jcajce.JcaJceUtils;
-import org.bouncycastle.est.jcajce.JsseDefaultHostnameAuthorizer;
-import org.bouncycastle.est.jcajce.JsseESTServiceBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.openssl.jcajce.JcaMiscPEMGenerator;
-import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.openssl.jcajce.JcaPKCS8Generator;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.pkcs.PKCS10CertificationRequest;
-import org.bouncycastle.pkcs.PKCS10CertificationRequestBuilder;
-import org.bouncycastle.pkcs.jcajce.JcaPKCS10CertificationRequestBuilder;
-import org.bouncycastle.test.est.BCChannelBindingProvider;
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.io.pem.PemReader;
-import org.bouncycastle.util.io.pem.PemWriter;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.est.ESTAuth;
+import org.spongycastle.est.ESTService;
+import org.spongycastle.est.EnrollmentResponse;
+import org.spongycastle.est.jcajce.JcaHttpAuthBuilder;
+import org.spongycastle.est.jcajce.JcaJceUtils;
+import org.spongycastle.est.jcajce.JsseDefaultHostnameAuthorizer;
+import org.spongycastle.est.jcajce.JsseESTServiceBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.openssl.jcajce.JcaMiscPEMGenerator;
+import org.spongycastle.openssl.jcajce.JcaPEMKeyConverter;
+import org.spongycastle.openssl.jcajce.JcaPKCS8Generator;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.pkcs.PKCS10CertificationRequest;
+import org.spongycastle.pkcs.PKCS10CertificationRequestBuilder;
+import org.spongycastle.pkcs.jcajce.JcaPKCS10CertificationRequestBuilder;
+import org.spongycastle.test.est.BCChannelBindingProvider;
+import org.spongycastle.util.io.pem.PemObject;
+import org.spongycastle.util.io.pem.PemReader;
+import org.spongycastle.util.io.pem.PemWriter;
 
 /**
  * Enroll example exercises the enrollment of a certificate.
@@ -63,7 +63,7 @@ public class EnrollExample
         boolean reEnroll = false;
         String tlsVersion = "TLS";
         String tlsProvider = "BCJSSE";
-        String tlsProviderClass = "org.bouncycastle.jsse.provider.BouncyCastleJsseProvider";
+        String tlsProviderClass = "org.spongycastle.jsse.provider.BouncyCastleJsseProvider";
         boolean noNameVerifier = false;
         boolean pop = false;
         int timeout = 0;

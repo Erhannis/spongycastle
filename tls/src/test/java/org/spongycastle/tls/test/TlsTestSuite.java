@@ -1,18 +1,18 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.security.SecureRandom;
 import java.security.Security;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.HashAlgorithm;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsCrypto;
-import org.bouncycastle.tls.crypto.impl.bc.BcTlsCrypto;
-import org.bouncycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.HashAlgorithm;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.tls.crypto.impl.bc.BcTlsCrypto;
+import org.spongycastle.tls.crypto.impl.jcajce.JcaTlsCryptoProvider;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

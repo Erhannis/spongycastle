@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+package org.spongycastle.jcajce.provider.asymmetric.rsa;
 
 import java.io.ByteArrayOutputStream;
 import java.security.AlgorithmParameters;
@@ -16,16 +16,16 @@ import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.MGF1ParameterSpec;
 import java.security.spec.PSSParameterSpec;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.engines.RSABlindedEngine;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.jcajce.provider.util.DigestFactory;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.engines.RSABlindedEngine;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.jcajce.provider.util.DigestFactory;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 public class PSSSignatureSpi
     extends SignatureSpi
@@ -44,7 +44,7 @@ public class PSSSignatureSpi
     private RSAKeyParameters key;
     private SecureRandom random;
 
-    private org.bouncycastle.crypto.signers.PSSSigner pss;
+    private org.spongycastle.crypto.signers.PSSSigner pss;
     private boolean isInitState = true;
 
     private byte getTrailer(
@@ -52,7 +52,7 @@ public class PSSSignatureSpi
     {
         if (trailerField == 1)
         {
-            return org.bouncycastle.crypto.signers.PSSSigner.TRAILER_IMPLICIT;
+            return org.spongycastle.crypto.signers.PSSSigner.TRAILER_IMPLICIT;
         }
         
         throw new IllegalArgumentException("unknown trailer field");
@@ -121,7 +121,7 @@ public class PSSSignatureSpi
         }
 
         key = RSAUtil.generatePublicKeyParameter((RSAPublicKey)publicKey);
-        pss = new org.bouncycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength, trailer);
+        pss = new org.spongycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength, trailer);
         pss.init(false, key);
         isInitState = true;
     }
@@ -145,7 +145,7 @@ public class PSSSignatureSpi
         }
 
         key = RSAUtil.generatePrivateKeyParameter((RSAPrivateKey)privateKey);
-        pss = new org.bouncycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength, trailer);
+        pss = new org.spongycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength, trailer);
 
         if (random != null)
         {
@@ -275,7 +275,7 @@ public class PSSSignatureSpi
 
             if (key != null)
             {
-                pss = new org.bouncycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength, trailer);
+                pss = new org.spongycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength, trailer);
                 if (key.isPrivate())
                 {
                     pss.init(true, key);

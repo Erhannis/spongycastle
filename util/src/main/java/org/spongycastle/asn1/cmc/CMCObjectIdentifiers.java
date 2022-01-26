@@ -1,6 +1,6 @@
-package org.bouncycastle.asn1.cmc;
+package org.spongycastle.asn1.cmc;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
 
 /**
  * Object Identifiers from RFC 5272

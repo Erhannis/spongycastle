@@ -1,18 +1,18 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.tsp.MessageImprint;
-import org.bouncycastle.asn1.tsp.TimeStampReq;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
+import org.spongycastle.asn1.ASN1Boolean;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.tsp.MessageImprint;
+import org.spongycastle.asn1.tsp.TimeStampReq;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.operator.DefaultDigestAlgorithmIdentifierFinder;
 
 /**
  * Generator for RFC 3161 Time Stamp Request objects.

@@ -1,6 +1,6 @@
-package org.bouncycastle.bcpg.sig;
+package org.spongycastle.bcpg.sig;
 
-import org.bouncycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.SignatureSubpacket;
 
 /**
  * packet giving signature creation time.

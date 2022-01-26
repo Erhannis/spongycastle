@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.util.Strings;
+import org.spongycastle.util.Strings;
 
 class SSHBuilder
 {

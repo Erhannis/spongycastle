@@ -1,6 +1,6 @@
-package org.bouncycastle.jcajce;
+package org.spongycastle.jcajce;
 
-import org.bouncycastle.crypto.PBEParametersGenerator;
+import org.spongycastle.crypto.PBEParametersGenerator;
 
 /**
  * A password based key for use with PKCS#12.

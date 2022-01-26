@@ -1,11 +1,11 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.cms.ecc.ECCCMSSharedInfo;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.cms.ecc.ECCCMSSharedInfo;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.util.Pack;
 
 class RFC5753KeyMaterialGenerator
     implements KeyMaterialGenerator

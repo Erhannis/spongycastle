@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.crmf.test;
+package org.spongycastle.asn1.crmf.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.crmf.PKIPublicationInfo;
-import org.bouncycastle.asn1.crmf.SinglePubInfo;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.crmf.PKIPublicationInfo;
+import org.spongycastle.asn1.crmf.SinglePubInfo;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.util.test.SimpleTest;
 
 
 public class PKIPublicationInfoTest

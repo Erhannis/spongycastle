@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider;
+package org.spongycastle.pqc.jcajce.provider;
 
 import java.io.IOException;
 import java.security.AccessController;
@@ -10,13 +10,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.config.ProviderConfiguration;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.config.ProviderConfiguration;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
 
 public class BouncyCastlePQCProvider
     extends Provider
@@ -34,7 +34,7 @@ public class BouncyCastlePQCProvider
     /*
     * Configurable symmetric ciphers
     */
-    private static final String ALGORITHM_PACKAGE = "org.bouncycastle.pqc.jcajce.provider.";
+    private static final String ALGORITHM_PACKAGE = "org.spongycastle.pqc.jcajce.provider.";
     private static final String[] ALGORITHMS =
         {
             "Rainbow", "McEliece", "SPHINCS", "LMS", "NH", "XMSS", "QTESLA"

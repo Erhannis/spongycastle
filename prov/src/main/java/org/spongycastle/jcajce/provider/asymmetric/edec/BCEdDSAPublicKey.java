@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.edec;
+package org.spongycastle.jcajce.provider.asymmetric.edec;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -6,13 +6,13 @@ import java.io.ObjectOutputStream;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters;
-import org.bouncycastle.crypto.params.Ed448PublicKeyParameters;
-import org.bouncycastle.jcajce.interfaces.EdDSAPublicKey;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.Ed25519PublicKeyParameters;
+import org.spongycastle.crypto.params.Ed448PublicKeyParameters;
+import org.spongycastle.jcajce.interfaces.EdDSAPublicKey;
+import org.spongycastle.util.Arrays;
 
 public class BCEdDSAPublicKey
     implements EdDSAPublicKey

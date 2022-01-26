@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.modes.GCFBBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.ParametersWithSBox;
-import org.bouncycastle.crypto.params.ParametersWithUKM;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.modes.GCFBBlockCipher;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.params.ParametersWithSBox;
+import org.spongycastle.crypto.params.ParametersWithUKM;
+import org.spongycastle.util.Pack;
 
 public class CryptoProWrapEngine
     extends GOST28147WrapEngine

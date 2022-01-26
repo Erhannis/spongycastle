@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.ocsp.test;
+package org.spongycastle.cert.ocsp.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -12,29 +12,29 @@ import java.util.Date;
 
 import javax.crypto.KeyGenerator;
 
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AccessDescription;
-import org.bouncycastle.asn1.x509.AuthorityInformationAccess;
-import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.ExtendedKeyUsage;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.asn1.x509.SubjectKeyIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.asn1.x509.X509Name;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
-import org.bouncycastle.cert.X509v3CertificateBuilder;
-import org.bouncycastle.cert.bc.BcX509ExtensionUtils;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.cert.jcajce.JcaX509v1CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.bouncycastle.operator.ContentSigner;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AccessDescription;
+import org.spongycastle.asn1.x509.AuthorityInformationAccess;
+import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.ExtendedKeyUsage;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.asn1.x509.SubjectKeyIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x509.X509Extensions;
+import org.spongycastle.asn1.x509.X509Name;
+import org.spongycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.cert.X509v3CertificateBuilder;
+import org.spongycastle.cert.bc.BcX509ExtensionUtils;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.cert.jcajce.JcaX509v1CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.spongycastle.operator.ContentSigner;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.x509.X509V3CertificateGenerator;
 
 public class OCSPTestUtil
 {
@@ -102,7 +102,7 @@ public class OCSPTestUtil
     public static X509Certificate makeCertificate(KeyPair _subKP, String _subDN, KeyPair _issKP, X509Certificate _issCert, boolean _ca)
         throws Exception
     {
-        org.bouncycastle.asn1.x509.Certificate cert =  org.bouncycastle.asn1.x509.Certificate.getInstance(_issCert.getEncoded());
+        org.spongycastle.asn1.x509.Certificate cert =  org.spongycastle.asn1.x509.Certificate.getInstance(_issCert.getEncoded());
 
         ContentSigner sigGen = new JcaContentSignerBuilder("SHA256WithRSAEncryption").setProvider(BC).build(_issKP.getPrivate());
         X509v3CertificateBuilder certGen = new JcaX509v3CertificateBuilder(
@@ -127,7 +127,7 @@ public class OCSPTestUtil
     public static X509Certificate makeCertificateWithOCSP(KeyPair _subKP, String _subDN, KeyPair _issKP, X509Certificate _issCert, boolean _ca, String uri)
         throws Exception
     {
-        org.bouncycastle.asn1.x509.Certificate cert =  org.bouncycastle.asn1.x509.Certificate.getInstance(_issCert.getEncoded());
+        org.spongycastle.asn1.x509.Certificate cert =  org.spongycastle.asn1.x509.Certificate.getInstance(_issCert.getEncoded());
 
         ContentSigner sigGen = new JcaContentSignerBuilder("SHA256WithRSAEncryption").setProvider(BC).build(_issKP.getPrivate());
         X509v3CertificateBuilder certGen = new JcaX509v3CertificateBuilder(
@@ -156,7 +156,7 @@ public class OCSPTestUtil
     public static X509Certificate makeCertificate(KeyPair _subKP, String _subDN, KeyPair _issKP, X509Certificate _issCert, KeyPurposeId keyPurpose)
         throws Exception
     {
-        org.bouncycastle.asn1.x509.Certificate cert =  org.bouncycastle.asn1.x509.Certificate.getInstance(_issCert.getEncoded());
+        org.spongycastle.asn1.x509.Certificate cert =  org.spongycastle.asn1.x509.Certificate.getInstance(_issCert.getEncoded());
 
         ContentSigner sigGen = new JcaContentSignerBuilder("SHA256WithRSAEncryption").setProvider(BC).build(_issKP.getPrivate());
         X509v3CertificateBuilder certGen = new JcaX509v3CertificateBuilder(

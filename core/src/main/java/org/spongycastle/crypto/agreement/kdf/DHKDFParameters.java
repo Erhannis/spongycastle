@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.agreement.kdf;
+package org.spongycastle.crypto.agreement.kdf;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.crypto.DerivationParameters;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.crypto.DerivationParameters;
 
 public class DHKDFParameters
     implements DerivationParameters

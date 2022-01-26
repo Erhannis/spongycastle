@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.x509;
+package org.spongycastle.jcajce.provider.asymmetric.x509;
 
 import java.io.IOException;
 import java.security.PublicKey;
@@ -11,17 +11,17 @@ import java.util.Enumeration;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.jcajce.provider.asymmetric.util.PKCS12BagAttributeCarrierImpl;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.jcajce.provider.asymmetric.util.PKCS12BagAttributeCarrierImpl;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jce.interfaces.PKCS12BagAttributeCarrier;
+import org.spongycastle.util.Arrays;
 
 class X509CertificateObject
     extends X509CertificateImpl
@@ -39,7 +39,7 @@ class X509CertificateObject
 
     private PKCS12BagAttributeCarrier   attrCarrier = new PKCS12BagAttributeCarrierImpl();
 
-    X509CertificateObject(JcaJceHelper bcHelper, org.bouncycastle.asn1.x509.Certificate c)
+    X509CertificateObject(JcaJceHelper bcHelper, org.spongycastle.asn1.x509.Certificate c)
         throws CertificateParsingException
     {
         super(bcHelper, c, createBasicConstraints(c), createKeyUsage(c), createSigAlgName(c), createSigAlgParams(c));
@@ -284,7 +284,7 @@ class X509CertificateObject
         }
     }
 
-    private static BasicConstraints createBasicConstraints(org.bouncycastle.asn1.x509.Certificate c)
+    private static BasicConstraints createBasicConstraints(org.spongycastle.asn1.x509.Certificate c)
         throws CertificateParsingException
     {
         try
@@ -303,7 +303,7 @@ class X509CertificateObject
         }
     }
 
-    private static boolean[] createKeyUsage(org.bouncycastle.asn1.x509.Certificate c) throws CertificateParsingException
+    private static boolean[] createKeyUsage(org.spongycastle.asn1.x509.Certificate c) throws CertificateParsingException
     {
         try
         {
@@ -333,7 +333,7 @@ class X509CertificateObject
         }
     }
 
-    private static String createSigAlgName(org.bouncycastle.asn1.x509.Certificate c) throws CertificateParsingException
+    private static String createSigAlgName(org.spongycastle.asn1.x509.Certificate c) throws CertificateParsingException
     {
         try
         {
@@ -345,7 +345,7 @@ class X509CertificateObject
         }
     }
 
-    private static byte[] createSigAlgParams(org.bouncycastle.asn1.x509.Certificate c) throws CertificateParsingException
+    private static byte[] createSigAlgParams(org.spongycastle.asn1.x509.Certificate c) throws CertificateParsingException
     {
         try
         {

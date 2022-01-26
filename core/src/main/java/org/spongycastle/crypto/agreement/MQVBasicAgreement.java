@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.BasicAgreement;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.DHMQVPrivateParameters;
-import org.bouncycastle.crypto.params.DHMQVPublicParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DHPublicKeyParameters;
+import org.spongycastle.crypto.BasicAgreement;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.DHMQVPrivateParameters;
+import org.spongycastle.crypto.params.DHMQVPublicParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.crypto.params.DHPrivateKeyParameters;
+import org.spongycastle.crypto.params.DHPublicKeyParameters;
 
 public class MQVBasicAgreement
     implements BasicAgreement

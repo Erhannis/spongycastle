@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.isismtt.test;
+package org.spongycastle.asn1.isismtt.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.isismtt.x509.Restriction;
-import org.bouncycastle.asn1.util.test.ASN1UnitTest;
-import org.bouncycastle.asn1.x500.DirectoryString;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.isismtt.x509.Restriction;
+import org.spongycastle.asn1.util.test.ASN1UnitTest;
+import org.spongycastle.asn1.x500.DirectoryString;
 
 public class RestrictionUnitTest
     extends ASN1UnitTest

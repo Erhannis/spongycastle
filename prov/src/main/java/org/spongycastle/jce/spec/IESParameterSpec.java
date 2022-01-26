@@ -1,8 +1,8 @@
-package org.bouncycastle.jce.spec;
+package org.spongycastle.jce.spec;
 
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * Parameter spec for an integrated encryptor, as in IEEE P1363a

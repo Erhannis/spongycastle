@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -12,30 +12,30 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 
 import junit.framework.TestCase;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.OriginatorInformation;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientId;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.cms.test.CMSTestUtil;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeParser;
-import org.bouncycastle.mime.MimeParserContext;
-import org.bouncycastle.mime.MimeParserProvider;
-import org.bouncycastle.mime.smime.SMIMEEnvelopedWriter;
-import org.bouncycastle.mime.smime.SMimeParserListener;
-import org.bouncycastle.mime.smime.SMimeParserProvider;
-import org.bouncycastle.openssl.PEMKeyPair;
-import org.bouncycastle.openssl.PEMParser;
-import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.OriginatorInformation;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientId;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.cms.test.CMSTestUtil;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeParser;
+import org.spongycastle.mime.MimeParserContext;
+import org.spongycastle.mime.MimeParserProvider;
+import org.spongycastle.mime.smime.SMIMEEnvelopedWriter;
+import org.spongycastle.mime.smime.SMimeParserListener;
+import org.spongycastle.mime.smime.SMimeParserProvider;
+import org.spongycastle.openssl.PEMKeyPair;
+import org.spongycastle.openssl.PEMParser;
+import org.spongycastle.openssl.jcajce.JcaPEMKeyConverter;
+import org.spongycastle.operator.bc.BcDigestCalculatorProvider;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
 
 public class TestSMIMEEnveloped
     extends TestCase
@@ -110,7 +110,7 @@ public class TestSMIMEEnveloped
                 assertNotNull(recipInfo);
 
                 byte[] content = recipInfo.getContent(new JceKeyTransEnvelopedRecipient(loadKey("key.pem")));
-                assertTrue(org.bouncycastle.util.Arrays.areEqual(testMessage, content));
+                assertTrue(org.spongycastle.util.Arrays.areEqual(testMessage, content));
 
                 dataParsed.markDone();
             }
@@ -157,7 +157,7 @@ public class TestSMIMEEnveloped
                 assertNotNull(recipInfo);
 
                 byte[] content = recipInfo.getContent(new JceKeyTransEnvelopedRecipient(_reciKP.getPrivate()));
-                assertTrue(org.bouncycastle.util.Arrays.areEqual(testMessage, content));
+                assertTrue(org.spongycastle.util.Arrays.areEqual(testMessage, content));
 
                 dataParsed.markDone();
             }

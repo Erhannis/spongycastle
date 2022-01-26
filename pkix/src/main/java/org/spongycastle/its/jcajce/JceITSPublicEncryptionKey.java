@@ -1,4 +1,4 @@
-package org.bouncycastle.its.jcajce;
+package org.spongycastle.its.jcajce;
 
 import java.security.KeyFactory;
 import java.security.Provider;
@@ -7,28 +7,28 @@ import java.security.interfaces.ECPublicKey;
 import java.security.spec.ECParameterSpec;
 import java.security.spec.ECPublicKeySpec;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTNamedCurves;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.its.ITSPublicEncryptionKey;
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.jcajce.util.DefaultJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
-import org.bouncycastle.jcajce.util.NamedJcaJceHelper;
-import org.bouncycastle.jcajce.util.ProviderJcaJceHelper;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.oer.its.BasePublicEncryptionKey;
-import org.bouncycastle.oer.its.EccCurvePoint;
-import org.bouncycastle.oer.its.EccP256CurvePoint;
-import org.bouncycastle.oer.its.EccP384CurvePoint;
-import org.bouncycastle.oer.its.PublicEncryptionKey;
-import org.bouncycastle.oer.its.SymmAlgorithm;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTNamedCurves;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTNamedCurves;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.its.ITSPublicEncryptionKey;
+import org.spongycastle.jcajce.provider.asymmetric.util.EC5Util;
+import org.spongycastle.jcajce.util.DefaultJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.jcajce.util.NamedJcaJceHelper;
+import org.spongycastle.jcajce.util.ProviderJcaJceHelper;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.oer.its.BasePublicEncryptionKey;
+import org.spongycastle.oer.its.EccCurvePoint;
+import org.spongycastle.oer.its.EccP256CurvePoint;
+import org.spongycastle.oer.its.EccP384CurvePoint;
+import org.spongycastle.oer.its.PublicEncryptionKey;
+import org.spongycastle.oer.its.SymmAlgorithm;
 
 public class JceITSPublicEncryptionKey
     extends ITSPublicEncryptionKey

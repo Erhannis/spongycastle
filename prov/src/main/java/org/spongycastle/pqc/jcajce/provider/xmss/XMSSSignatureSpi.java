@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.xmss;
+package org.spongycastle.pqc.jcajce.provider.xmss;
 
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
@@ -8,17 +8,17 @@ import java.security.Signature;
 import java.security.SignatureException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.NullDigest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSSigner;
-import org.bouncycastle.pqc.jcajce.interfaces.StateAwareSignature;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.NullDigest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSSigner;
+import org.spongycastle.pqc.jcajce.interfaces.StateAwareSignature;
 
 public class XMSSSignatureSpi
     extends Signature

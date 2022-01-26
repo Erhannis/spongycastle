@@ -1,4 +1,4 @@
-package org.bouncycastle.pkcs.test;
+package org.spongycastle.pkcs.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -25,60 +25,60 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Attribute;
-import org.bouncycastle.asn1.pkcs.ContentInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.SubjectKeyIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509v1CertificateBuilder;
-import org.bouncycastle.cert.X509v3CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX500NameUtil;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.bouncycastle.cert.jcajce.JcaX509v1CertificateBuilder;
-import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.engines.RC2Engine;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.InputDecryptorProvider;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.operator.bc.BcDefaultDigestProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.pkcs.PKCS12PfxPdu;
-import org.bouncycastle.pkcs.PKCS12PfxPduBuilder;
-import org.bouncycastle.pkcs.PKCS12SafeBag;
-import org.bouncycastle.pkcs.PKCS12SafeBagBuilder;
-import org.bouncycastle.pkcs.PKCS12SafeBagFactory;
-import org.bouncycastle.pkcs.PKCS8EncryptedPrivateKeyInfo;
-import org.bouncycastle.pkcs.PKCS8EncryptedPrivateKeyInfoBuilder;
-import org.bouncycastle.pkcs.PKCSException;
-import org.bouncycastle.pkcs.bc.BcPKCS12MacCalculatorBuilder;
-import org.bouncycastle.pkcs.bc.BcPKCS12MacCalculatorBuilderProvider;
-import org.bouncycastle.pkcs.bc.BcPKCS12PBEInputDecryptorProviderBuilder;
-import org.bouncycastle.pkcs.bc.BcPKCS12PBEOutputEncryptorBuilder;
-import org.bouncycastle.pkcs.jcajce.JcaPKCS12SafeBagBuilder;
-import org.bouncycastle.pkcs.jcajce.JcaPKCS8EncryptedPrivateKeyInfoBuilder;
-import org.bouncycastle.pkcs.jcajce.JcePKCS12MacCalculatorBuilder;
-import org.bouncycastle.pkcs.jcajce.JcePKCS12MacCalculatorBuilderProvider;
-import org.bouncycastle.pkcs.jcajce.JcePKCSPBEInputDecryptorProviderBuilder;
-import org.bouncycastle.pkcs.jcajce.JcePKCSPBEOutputEncryptorBuilder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERBMPString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.Attribute;
+import org.spongycastle.asn1.pkcs.ContentInfo;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x500.X500NameBuilder;
+import org.spongycastle.asn1.x500.style.BCStyle;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.SubjectKeyIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509v1CertificateBuilder;
+import org.spongycastle.cert.X509v3CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX500NameUtil;
+import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.spongycastle.cert.jcajce.JcaX509v1CertificateBuilder;
+import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.spongycastle.crypto.engines.DESedeEngine;
+import org.spongycastle.crypto.engines.RC2Engine;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.InputDecryptorProvider;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.operator.bc.BcDefaultDigestProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.pkcs.PKCS12PfxPdu;
+import org.spongycastle.pkcs.PKCS12PfxPduBuilder;
+import org.spongycastle.pkcs.PKCS12SafeBag;
+import org.spongycastle.pkcs.PKCS12SafeBagBuilder;
+import org.spongycastle.pkcs.PKCS12SafeBagFactory;
+import org.spongycastle.pkcs.PKCS8EncryptedPrivateKeyInfo;
+import org.spongycastle.pkcs.PKCS8EncryptedPrivateKeyInfoBuilder;
+import org.spongycastle.pkcs.PKCSException;
+import org.spongycastle.pkcs.bc.BcPKCS12MacCalculatorBuilder;
+import org.spongycastle.pkcs.bc.BcPKCS12MacCalculatorBuilderProvider;
+import org.spongycastle.pkcs.bc.BcPKCS12PBEInputDecryptorProviderBuilder;
+import org.spongycastle.pkcs.bc.BcPKCS12PBEOutputEncryptorBuilder;
+import org.spongycastle.pkcs.jcajce.JcaPKCS12SafeBagBuilder;
+import org.spongycastle.pkcs.jcajce.JcaPKCS8EncryptedPrivateKeyInfoBuilder;
+import org.spongycastle.pkcs.jcajce.JcePKCS12MacCalculatorBuilder;
+import org.spongycastle.pkcs.jcajce.JcePKCS12MacCalculatorBuilderProvider;
+import org.spongycastle.pkcs.jcajce.JcePKCSPBEInputDecryptorProviderBuilder;
+import org.spongycastle.pkcs.jcajce.JcePKCSPBEOutputEncryptorBuilder;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
 
 public class PfxPduTest
     extends TestCase
@@ -613,7 +613,7 @@ public class PfxPduTest
         subjectBuilder.addRDN(BCStyle.C, "AU");
         subjectBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         subjectBuilder.addRDN(BCStyle.OU, "Bouncy Intermediate Certificate");
-        subjectBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        subjectBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // create the certificate - version 3
@@ -669,7 +669,7 @@ public class PfxPduTest
         issuerBuilder.addRDN(BCStyle.C, "AU");
         issuerBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         issuerBuilder.addRDN(BCStyle.OU, "Bouncy Intermediate Certificate");
-        issuerBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        issuerBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // subject name builder
@@ -680,7 +680,7 @@ public class PfxPduTest
         subjectBuilder.addRDN(BCStyle.O, "The Legion of the Bouncy Castle");
         subjectBuilder.addRDN(BCStyle.L, "Melbourne");
         subjectBuilder.addRDN(BCStyle.CN, "Eric H. Echidna");
-        subjectBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto@bouncycastle.org");
+        subjectBuilder.addRDN(BCStyle.EmailAddress, "feedback-crypto.spongycastle.org");
 
         //
         // create the certificate - version 3

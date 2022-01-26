@@ -1,11 +1,11 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.math.ec.ECPoint;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.math.ec.ECPoint;
 
 /**
  * base class for an EC Public Key.
@@ -47,7 +47,7 @@ public abstract class ECPublicBCPGKey
     /**
      * return "PGP"
      *
-     * @see org.bouncycastle.bcpg.BCPGKey#getFormat()
+     * @see org.spongycastle.bcpg.BCPGKey#getFormat()
      */
     public String getFormat()
     {
@@ -57,7 +57,7 @@ public abstract class ECPublicBCPGKey
     /**
      * return the standard PGP encoding of the key.
      *
-     * @see org.bouncycastle.bcpg.BCPGKey#getEncoded()
+     * @see org.spongycastle.bcpg.BCPGKey#getEncoded()
      */
     public byte[] getEncoded()
     {

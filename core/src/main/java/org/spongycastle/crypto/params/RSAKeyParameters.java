@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.util.Properties;
+import org.spongycastle.util.Properties;
 
 public class RSAKeyParameters
     extends AsymmetricKeyParameter
@@ -48,7 +48,7 @@ public class RSAKeyParameters
 
         // If you need to set this you need to have a serious word to whoever is generating
         // your keys.
-        if (Properties.isOverrideSet("org.bouncycastle.rsa.allow_unsafe_mod"))
+        if (Properties.isOverrideSet("org.spongycastle.rsa.allow_unsafe_mod"))
         {
             return modulus;
         }

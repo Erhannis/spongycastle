@@ -1,4 +1,4 @@
-package org.bouncycastle.cert.path.test;
+package org.spongycastle.cert.path.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -9,19 +9,19 @@ import java.security.NoSuchProviderException;
 import java.security.PublicKey;
 import java.security.Security;
 import java.security.SignatureException;
-import org.bouncycastle.jce.cert.CertPath;
-import org.bouncycastle.jce.cert.CertPathBuilder;
-import org.bouncycastle.jce.cert.CertPathBuilderException;
-import org.bouncycastle.jce.cert.CertPathBuilderResult;
-import org.bouncycastle.jce.cert.CertStore;
+import org.spongycastle.jce.cert.CertPath;
+import org.spongycastle.jce.cert.CertPathBuilder;
+import org.spongycastle.jce.cert.CertPathBuilderException;
+import org.spongycastle.jce.cert.CertPathBuilderResult;
+import org.spongycastle.jce.cert.CertStore;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.CertificateException;
-import org.bouncycastle.jce.cert.CertificateFactory;
-import org.bouncycastle.jce.cert.CollectionCertStoreParameters;
-import org.bouncycastle.jce.cert.PKIXBuilderParameters;
-import org.bouncycastle.jce.cert.TrustAnchor;
-import org.bouncycastle.jce.cert.X509CertSelector;
+import org.spongycastle.jce.cert.CertificateFactory;
+import org.spongycastle.jce.cert.CollectionCertStoreParameters;
+import org.spongycastle.jce.cert.PKIXBuilderParameters;
+import org.spongycastle.jce.cert.TrustAnchor;
+import org.spongycastle.jce.cert.X509CertSelector;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,10 +31,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
 
 public class CertPathTest
     extends SimpleTest

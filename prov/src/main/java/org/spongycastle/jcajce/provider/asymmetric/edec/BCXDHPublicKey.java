@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.edec;
+package org.spongycastle.jcajce.provider.asymmetric.edec;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -7,13 +7,13 @@ import java.math.BigInteger;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 
-import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.X25519PublicKeyParameters;
-import org.bouncycastle.crypto.params.X448PublicKeyParameters;
-import org.bouncycastle.jcajce.interfaces.XDHPublicKey;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.edec.EdECObjectIdentifiers;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.X25519PublicKeyParameters;
+import org.spongycastle.crypto.params.X448PublicKeyParameters;
+import org.spongycastle.jcajce.interfaces.XDHPublicKey;
+import org.spongycastle.util.Arrays;
 
 public class BCXDHPublicKey
     implements XDHPublicKey

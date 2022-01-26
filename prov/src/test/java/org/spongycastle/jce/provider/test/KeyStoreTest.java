@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -24,15 +24,15 @@ import java.util.Date;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import org.spongycastle.asn1.x9.ECNamedCurveTable;
+import org.spongycastle.asn1.x9.X9ECParameters;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.x509.X509V3CertificateGenerator;
 
 /**
  * Exercise the various key stores, making sure we at least get back what we put in!
@@ -100,7 +100,7 @@ public class KeyStoreTest
         attrs.put(X509Principal.O, "The Legion of the Bouncy Castle");
         attrs.put(X509Principal.L, "Melbourne");
         attrs.put(X509Principal.ST, "Victoria");
-        attrs.put(X509Principal.E, "feedback-crypto@bouncycastle.org");
+        attrs.put(X509Principal.E, "feedback-crypto.spongycastle.org");
 
         order.addElement(X509Principal.C);
         order.addElement(X509Principal.O);
@@ -229,7 +229,7 @@ public class KeyStoreTest
         attrs.put(X509Principal.O, "The Legion of the Bouncy Castle");
         attrs.put(X509Principal.L, "Melbourne");
         attrs.put(X509Principal.ST, "Victoria");
-        attrs.put(X509Principal.EmailAddress, "feedback-crypto@bouncycastle.org");
+        attrs.put(X509Principal.EmailAddress, "feedback-crypto.spongycastle.org");
 
         order.addElement(X509Principal.C);
         order.addElement(X509Principal.O);
@@ -415,7 +415,7 @@ public class KeyStoreTest
         attrs.put(X509Principal.O, "The Legion of the Bouncy Castle");
         attrs.put(X509Principal.L, "Melbourne");
         attrs.put(X509Principal.ST, "Victoria");
-        attrs.put(X509Principal.E, "feedback-crypto@bouncycastle.org");
+        attrs.put(X509Principal.E, "feedback-crypto.spongycastle.org");
 
         order.addElement(X509Principal.C);
         order.addElement(X509Principal.O);
@@ -494,7 +494,7 @@ public class KeyStoreTest
     public static void main(
         String[]    args)
     {
-        System.setProperty("org.bouncycastle.bks.enable_v1", "true");
+        System.setProperty("org.spongycastle.bks.enable_v1", "true");
 
         Security.addProvider(new BouncyCastleProvider());
 

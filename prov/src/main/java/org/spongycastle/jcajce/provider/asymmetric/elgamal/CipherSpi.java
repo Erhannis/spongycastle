@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.elgamal;
+package org.spongycastle.jcajce.provider.asymmetric.elgamal;
 
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -22,21 +22,21 @@ import javax.crypto.interfaces.DHPublicKey;
 import javax.crypto.spec.OAEPParameterSpec;
 import javax.crypto.spec.PSource;
 
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.encodings.ISO9796d1Encoding;
-import org.bouncycastle.crypto.encodings.OAEPEncoding;
-import org.bouncycastle.crypto.encodings.PKCS1Encoding;
-import org.bouncycastle.crypto.engines.ElGamalEngine;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseCipherSpi;
-import org.bouncycastle.jcajce.provider.util.BadBlockException;
-import org.bouncycastle.jcajce.provider.util.DigestFactory;
-import org.bouncycastle.jce.interfaces.ElGamalKey;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.encodings.ISO9796d1Encoding;
+import org.spongycastle.crypto.encodings.OAEPEncoding;
+import org.spongycastle.crypto.encodings.PKCS1Encoding;
+import org.spongycastle.crypto.engines.ElGamalEngine;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseCipherSpi;
+import org.spongycastle.jcajce.provider.util.BadBlockException;
+import org.spongycastle.jcajce.provider.util.DigestFactory;
+import org.spongycastle.jce.interfaces.ElGamalKey;
+import org.spongycastle.util.Strings;
 
 public class CipherSpi
     extends BaseCipherSpi

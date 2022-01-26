@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -17,44 +17,44 @@ import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cms.AuthenticatedData;
-import org.bouncycastle.asn1.cms.CCMParameters;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSAuthenticatedData;
-import org.bouncycastle.cms.CMSAuthenticatedDataGenerator;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.OriginatorInfoGenerator;
-import org.bouncycastle.cms.PasswordRecipient;
-import org.bouncycastle.cms.PasswordRecipientInformation;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.jcajce.JceCMSMacCalculatorBuilder;
-import org.bouncycastle.cms.jcajce.JceKEKAuthenticatedRecipient;
-import org.bouncycastle.cms.jcajce.JceKEKRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeAuthenticatedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyAgreeRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JceKeyTransAuthenticatedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.cms.jcajce.JcePasswordAuthenticatedRecipient;
-import org.bouncycastle.cms.jcajce.JcePasswordRecipientInfoGenerator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cms.AuthenticatedData;
+import org.spongycastle.asn1.cms.CCMParameters;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSAuthenticatedData;
+import org.spongycastle.cms.CMSAuthenticatedDataGenerator;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.OriginatorInfoGenerator;
+import org.spongycastle.cms.PasswordRecipient;
+import org.spongycastle.cms.PasswordRecipientInformation;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.jcajce.JceCMSMacCalculatorBuilder;
+import org.spongycastle.cms.jcajce.JceKEKAuthenticatedRecipient;
+import org.spongycastle.cms.jcajce.JceKEKRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JceKeyAgreeAuthenticatedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyAgreeRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JceKeyTransAuthenticatedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.cms.jcajce.JcePasswordAuthenticatedRecipient;
+import org.spongycastle.cms.jcajce.JcePasswordRecipientInfoGenerator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.util.encoders.Hex;
 
 public class NewAuthenticatedDataTest
     extends TestCase
@@ -87,7 +87,7 @@ public class NewAuthenticatedDataTest
         if (!_initialised)
         {
             _initialised = true;
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
 
             _signDN = "O=Bouncy Castle, C=AU";
             _signKP = CMSTestUtil.makeKeyPair();

@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.prng.drbg;
+package org.spongycastle.crypto.prng.drbg;
 
 /**
  * Interface to SP800-90A deterministic random bit generators.

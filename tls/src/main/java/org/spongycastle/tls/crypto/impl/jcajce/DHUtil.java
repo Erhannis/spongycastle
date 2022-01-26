@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.math.BigInteger;
 import java.security.AlgorithmParameters;
@@ -7,9 +7,9 @@ import java.security.spec.KeySpec;
 
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.jcajce.spec.DHDomainParameterSpec;
-import org.bouncycastle.jcajce.spec.DHExtendedPublicKeySpec;
-import org.bouncycastle.tls.crypto.DHGroup;
+import org.spongycastle.jcajce.spec.DHDomainParameterSpec;
+import org.spongycastle.jcajce.spec.DHExtendedPublicKeySpec;
+import org.spongycastle.tls.crypto.DHGroup;
 
 class DHUtil
 {

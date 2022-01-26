@@ -1,25 +1,25 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.BCPGOutputStream;
-import org.bouncycastle.bcpg.MPInteger;
-import org.bouncycastle.bcpg.SignaturePacket;
-import org.bouncycastle.bcpg.SignatureSubpacket;
-import org.bouncycastle.bcpg.TrustPacket;
-import org.bouncycastle.bcpg.UserAttributeSubpacket;
-import org.bouncycastle.openpgp.operator.PGPContentVerifier;
-import org.bouncycastle.openpgp.operator.PGPContentVerifierBuilder;
-import org.bouncycastle.openpgp.operator.PGPContentVerifierBuilderProvider;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.BCPGOutputStream;
+import org.spongycastle.bcpg.MPInteger;
+import org.spongycastle.bcpg.SignaturePacket;
+import org.spongycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.TrustPacket;
+import org.spongycastle.bcpg.UserAttributeSubpacket;
+import org.spongycastle.openpgp.operator.PGPContentVerifier;
+import org.spongycastle.openpgp.operator.PGPContentVerifierBuilder;
+import org.spongycastle.openpgp.operator.PGPContentVerifierBuilderProvider;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Strings;
 
 /**
  *A PGP signature object.

@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.modes;
+package org.spongycastle.crypto.modes;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.OutputLengthException;
 
 /**
  * A Cipher Text Stealing (CTS) mode cipher. CTS allows block ciphers to
@@ -83,7 +83,7 @@ public class OldCTSBlockCipher
      * @param out the space for any output that might be produced.
      * @param outOff the offset from which the output will be copied.
      * @return the number of output bytes copied to out.
-     * @exception org.bouncycastle.crypto.DataLengthException if there isn't enough space in out.
+     * @exception org.spongycastle.crypto.DataLengthException if there isn't enough space in out.
      * @exception IllegalStateException if the cipher isn't initialised.
      */
     public int processByte(
@@ -116,7 +116,7 @@ public class OldCTSBlockCipher
      * @param out the space for any output that might be produced.
      * @param outOff the offset from which the output will be copied.
      * @return the number of output bytes copied to out.
-     * @exception org.bouncycastle.crypto.DataLengthException if there isn't enough space in out.
+     * @exception org.spongycastle.crypto.DataLengthException if there isn't enough space in out.
      * @exception IllegalStateException if the cipher isn't initialised.
      */
     public int processBytes(
@@ -182,11 +182,11 @@ public class OldCTSBlockCipher
      * @param out the array the block currently being held is copied into.
      * @param outOff the offset at which the copying starts.
      * @return the number of output bytes copied to out.
-     * @exception org.bouncycastle.crypto.DataLengthException if there is insufficient space in out for
+     * @exception org.spongycastle.crypto.DataLengthException if there is insufficient space in out for
      * the output.
      * @exception IllegalStateException if the underlying cipher is not
      * initialised.
-     * @exception org.bouncycastle.crypto.InvalidCipherTextException if cipher text decrypts wrongly (in
+     * @exception org.spongycastle.crypto.InvalidCipherTextException if cipher text decrypts wrongly (in
      * case the exception will never get thrown).
      */
     public int doFinal(

@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.crypto.engines.GOST28147Engine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithSBox;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Memoable;
-import org.bouncycastle.util.Pack;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.engines.GOST28147Engine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithSBox;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Memoable;
+import org.spongycastle.util.Pack;
 
 /**
  * implementation of GOST R 34.11-94

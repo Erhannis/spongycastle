@@ -1,4 +1,4 @@
-package org.bouncycastle.math.raw.test;
+package org.spongycastle.math.raw.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

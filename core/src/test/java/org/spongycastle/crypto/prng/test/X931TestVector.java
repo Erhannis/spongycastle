@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.prng.test;
+package org.spongycastle.crypto.prng.test;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.prng.EntropySourceProvider;
 
 public class X931TestVector
 {

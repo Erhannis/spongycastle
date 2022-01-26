@@ -1,10 +1,10 @@
-package org.bouncycastle.its;
+package org.spongycastle.its;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.oer.its.Duration;
-import org.bouncycastle.oer.its.ValidityPeriod;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.oer.its.Duration;
+import org.spongycastle.oer.its.ValidityPeriod;
 
 public class ITSValidityPeriod
 {

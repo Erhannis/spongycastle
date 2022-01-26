@@ -1,4 +1,4 @@
-package org.bouncycastle.test.est.examples;
+package org.spongycastle.test.est.examples;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

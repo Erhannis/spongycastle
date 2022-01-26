@@ -1,18 +1,18 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.pqc.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.pqc.crypto.xmss.XMSS;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMT;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.pqc.crypto.util.PrivateKeyFactory;
+import org.spongycastle.pqc.crypto.xmss.XMSS;
+import org.spongycastle.pqc.crypto.xmss.XMSSMT;
+import org.spongycastle.pqc.crypto.xmss.XMSSMTParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Base64;
 
 /**
  * Test cases for XMSSMTPrivateKey class.

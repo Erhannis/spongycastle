@@ -1,12 +1,12 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.CMSSignedData;
-import org.bouncycastle.cms.CMSSignedDataGenerator;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.CMSSignedData;
+import org.spongycastle.cms.CMSSignedDataGenerator;
 
 public class SignedDVCSMessageGenerator
 {

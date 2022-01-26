@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.util;
+package org.spongycastle.crypto.util;
 
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
 
 /**
  * Configuration class for a PBKDF based around scrypt.

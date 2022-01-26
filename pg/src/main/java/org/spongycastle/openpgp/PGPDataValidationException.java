@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 /**
  * Thrown if the iv at the start of a data stream indicates the wrong key

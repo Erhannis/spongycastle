@@ -1,6 +1,6 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
-import org.bouncycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculator;
 
 /**
  * Generic class for holding byte[] data for RFC 4998 ERS.

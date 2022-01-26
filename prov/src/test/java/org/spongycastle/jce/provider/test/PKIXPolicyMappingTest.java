@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,19 +24,19 @@ import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.CertificatePolicies;
-import org.bouncycastle.asn1.x509.PolicyInformation;
-import org.bouncycastle.asn1.x509.PolicyMappings;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestFailedException;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x509.BasicConstraints;
+import org.spongycastle.asn1.x509.CertificatePolicies;
+import org.spongycastle.asn1.x509.PolicyInformation;
+import org.spongycastle.asn1.x509.PolicyMappings;
+import org.spongycastle.asn1.x509.X509Extensions;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.TestFailedException;
+import org.spongycastle.x509.X509V3CertificateGenerator;
 
 public class PKIXPolicyMappingTest
     extends SimpleTest

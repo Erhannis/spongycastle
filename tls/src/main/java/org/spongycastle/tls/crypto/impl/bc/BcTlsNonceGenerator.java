@@ -1,7 +1,7 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.prng.RandomGenerator;
-import org.bouncycastle.tls.crypto.TlsNonceGenerator;
+import org.spongycastle.crypto.prng.RandomGenerator;
+import org.spongycastle.tls.crypto.TlsNonceGenerator;
 
 final class BcTlsNonceGenerator
     implements TlsNonceGenerator

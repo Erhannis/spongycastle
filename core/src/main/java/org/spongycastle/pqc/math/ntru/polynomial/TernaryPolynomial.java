@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 /**
  * A polynomial whose coefficients are all equal to -1, 0, or 1

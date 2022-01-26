@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.engines.VMPCKSA3Engine;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseStreamCipher;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.engines.VMPCKSA3Engine;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseStreamCipher;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
 
 public final class VMPCKSA3
 {

@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPublicKeyParameters;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.pqc.crypto.xmss.XMSSParameters;
+import org.spongycastle.pqc.crypto.xmss.XMSSPublicKeyParameters;
+import org.spongycastle.util.Arrays;
 
 /**
  * Test cases for XMSSPublicKey class.

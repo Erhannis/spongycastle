@@ -1,10 +1,10 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
 
 public final class SipHash
 {
@@ -17,7 +17,7 @@ public final class SipHash
     {
         public Mac24()
         {
-            super(new org.bouncycastle.crypto.macs.SipHash());
+            super(new org.spongycastle.crypto.macs.SipHash());
         }
     }
 
@@ -26,7 +26,7 @@ public final class SipHash
     {
         public Mac48()
         {
-            super(new org.bouncycastle.crypto.macs.SipHash(4, 8));
+            super(new org.spongycastle.crypto.macs.SipHash(4, 8));
         }
     }
 

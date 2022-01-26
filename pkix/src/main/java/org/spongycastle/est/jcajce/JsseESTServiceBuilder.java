@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 
 import java.net.Socket;
@@ -12,9 +12,9 @@ import java.util.Set;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.X509TrustManager;
 
-import org.bouncycastle.est.ESTClientProvider;
-import org.bouncycastle.est.ESTService;
-import org.bouncycastle.est.ESTServiceBuilder;
+import org.spongycastle.est.ESTClientProvider;
+import org.spongycastle.est.ESTService;
+import org.spongycastle.est.ESTServiceBuilder;
 
 
 /**

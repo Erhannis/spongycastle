@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
 
 public interface KeyParser
 {

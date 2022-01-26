@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.examples;
+package org.spongycastle.jcajce.examples;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,16 +7,16 @@ import java.security.PrivilegedAction;
 import java.security.Provider;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
-import org.bouncycastle.crypto.prng.SP800SecureRandom;
-import org.bouncycastle.crypto.prng.SP800SecureRandomBuilder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.macs.HMac;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.crypto.prng.EntropySourceProvider;
+import org.spongycastle.crypto.prng.SP800SecureRandom;
+import org.spongycastle.crypto.prng.SP800SecureRandomBuilder;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.io.Streams;
 
 /**
  * A basic example for Unix style systems that just uses /dev/random. The idea is just to get something that
@@ -147,7 +147,7 @@ public class SamplingEntropySourceProvider
     public static void main(String[] ags)
         throws Exception
     {
-        System.setProperty("org.bouncycastle.drbg.entropysource", "org.bouncycastle.jcajce.examples.SamplingEntropySourceProvider");
+        System.setProperty("org.spongycastle.drbg.entropysource", "org.spongycastle.jcajce.examples.SamplingEntropySourceProvider");
 
         Provider prov = new BouncyCastleProvider();
 

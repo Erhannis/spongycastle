@@ -1,32 +1,32 @@
-package org.bouncycastle.asn1.cms.test;
+package org.spongycastle.asn1.cms.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-import org.bouncycastle.asn1.ASN1OctetStringParser;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1Set;
-import org.bouncycastle.asn1.ASN1SetParser;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.CompressedData;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.cms.ContentInfoParser;
-import org.bouncycastle.asn1.cms.EncryptedContentInfoParser;
-import org.bouncycastle.asn1.cms.EnvelopedData;
-import org.bouncycastle.asn1.cms.EnvelopedDataParser;
-import org.bouncycastle.asn1.cms.KEKRecipientInfo;
-import org.bouncycastle.asn1.cms.KeyTransRecipientInfo;
-import org.bouncycastle.asn1.cms.RecipientInfo;
-import org.bouncycastle.asn1.cms.SignedData;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
+import org.spongycastle.asn1.ASN1OctetStringParser;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1SequenceParser;
+import org.spongycastle.asn1.ASN1Set;
+import org.spongycastle.asn1.ASN1SetParser;
+import org.spongycastle.asn1.ASN1StreamParser;
+import org.spongycastle.asn1.BERTags;
+import org.spongycastle.asn1.DERSet;
+import org.spongycastle.asn1.cms.CMSObjectIdentifiers;
+import org.spongycastle.asn1.cms.CompressedData;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.cms.ContentInfoParser;
+import org.spongycastle.asn1.cms.EncryptedContentInfoParser;
+import org.spongycastle.asn1.cms.EnvelopedData;
+import org.spongycastle.asn1.cms.EnvelopedDataParser;
+import org.spongycastle.asn1.cms.KEKRecipientInfo;
+import org.spongycastle.asn1.cms.KeyTransRecipientInfo;
+import org.spongycastle.asn1.cms.RecipientInfo;
+import org.spongycastle.asn1.cms.SignedData;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
+import org.spongycastle.util.test.SimpleTestResult;
+import org.spongycastle.util.test.Test;
+import org.spongycastle.util.test.TestResult;
 
 public class CMSTest
     implements Test

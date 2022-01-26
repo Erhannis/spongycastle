@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.util;
+package org.spongycastle.jcajce.provider.util;
 
 import javax.crypto.BadPaddingException;
 

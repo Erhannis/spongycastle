@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+package org.spongycastle.jcajce.provider.asymmetric.rsa;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -7,13 +7,13 @@ import java.math.BigInteger;
 import java.security.interfaces.RSAPublicKey;
 import java.security.spec.RSAPublicKeySpec;
 
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.KeyUtil;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.DERNull;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.crypto.params.RSAKeyParameters;
+import org.spongycastle.jcajce.provider.asymmetric.util.KeyUtil;
+import org.spongycastle.util.Strings;
 
 public class BCRSAPublicKey
     implements RSAPublicKey
@@ -72,7 +72,7 @@ public class BCRSAPublicKey
     {
         try
         {
-            org.bouncycastle.asn1.pkcs.RSAPublicKey  pubKey = org.bouncycastle.asn1.pkcs.RSAPublicKey.getInstance(info.parsePublicKey());
+            org.spongycastle.asn1.pkcs.RSAPublicKey  pubKey = org.spongycastle.asn1.pkcs.RSAPublicKey.getInstance(info.parsePublicKey());
 
             this.algorithmIdentifier = info.getAlgorithm();
             this.modulus = pubKey.getModulus();
@@ -121,7 +121,7 @@ public class BCRSAPublicKey
 
     public byte[] getEncoded()
     {
-        return KeyUtil.getEncodedSubjectPublicKeyInfo(algorithmIdentifier, new org.bouncycastle.asn1.pkcs.RSAPublicKey(getModulus(), getPublicExponent()));
+        return KeyUtil.getEncodedSubjectPublicKeyInfo(algorithmIdentifier, new org.spongycastle.asn1.pkcs.RSAPublicKey(getModulus(), getPublicExponent()));
     }
 
     RSAKeyParameters engineGetKeyParameters()

@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.math.raw.Nat;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.math.raw.Nat;
+import org.spongycastle.util.Integers;
 
 public class DHPublicKeyParameters
     extends DHKeyParameters

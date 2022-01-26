@@ -1,20 +1,20 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.util.Arrays;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.cms.CMSCompressedData;
-import org.bouncycastle.cms.CMSCompressedDataGenerator;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessableByteArray;
-import org.bouncycastle.cms.jcajce.ZlibCompressor;
-import org.bouncycastle.cms.jcajce.ZlibExpanderProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.StreamOverflowException;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.cms.CMSCompressedData;
+import org.spongycastle.cms.CMSCompressedDataGenerator;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessableByteArray;
+import org.spongycastle.cms.jcajce.ZlibCompressor;
+import org.spongycastle.cms.jcajce.ZlibExpanderProvider;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.StreamOverflowException;
 
 public class NewCompressedDataTest
     extends TestCase

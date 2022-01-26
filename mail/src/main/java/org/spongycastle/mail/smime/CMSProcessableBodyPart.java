@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -6,8 +6,8 @@ import java.io.OutputStream;
 import javax.mail.BodyPart;
 import javax.mail.MessagingException;
 
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSProcessable;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSProcessable;
 
 /**
  * a holding class for a BodyPart to be processed.

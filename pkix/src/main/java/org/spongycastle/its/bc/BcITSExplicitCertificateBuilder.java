@@ -1,12 +1,12 @@
-package org.bouncycastle.its.bc;
+package org.spongycastle.its.bc;
 
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.its.ITSExplicitCertificateBuilder;
-import org.bouncycastle.its.ITSPublicEncryptionKey;
-import org.bouncycastle.its.operator.ITSContentSigner;
-import org.bouncycastle.oer.its.CertificateId;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.crypto.params.ECPublicKeyParameters;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.its.ITSExplicitCertificateBuilder;
+import org.spongycastle.its.ITSPublicEncryptionKey;
+import org.spongycastle.its.operator.ITSContentSigner;
+import org.spongycastle.oer.its.CertificateId;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
 
 public class BcITSExplicitCertificateBuilder
     extends ITSExplicitCertificateBuilder

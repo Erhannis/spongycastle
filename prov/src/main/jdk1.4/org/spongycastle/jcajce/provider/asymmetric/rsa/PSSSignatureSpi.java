@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+package org.spongycastle.jcajce.provider.asymmetric.rsa;
 
 import java.io.ByteArrayOutputStream;
 import java.security.AlgorithmParameters;
@@ -14,21 +14,21 @@ import java.security.interfaces.RSAPublicKey;
 import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.PSSParameterSpec;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHA512tDigest;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.engines.RSABlindedEngine;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jcajce.util.BCJcaJceHelper;
-import org.bouncycastle.jcajce.util.JcaJceHelper;
+import org.spongycastle.crypto.AsymmetricBlockCipher;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SHA1Digest;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.digests.SHA384Digest;
+import org.spongycastle.crypto.digests.SHA512Digest;
+import org.spongycastle.crypto.digests.SHA512tDigest;
+import org.spongycastle.crypto.digests.SHA3Digest;
+import org.spongycastle.crypto.engines.RSABlindedEngine;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jcajce.util.BCJcaJceHelper;
+import org.spongycastle.jcajce.util.JcaJceHelper;
 
 public class PSSSignatureSpi
     extends Signature
@@ -44,14 +44,14 @@ public class PSSSignatureSpi
     private byte trailer;
     private boolean isRaw;
 
-    private org.bouncycastle.crypto.signers.PSSSigner pss;
+    private org.spongycastle.crypto.signers.PSSSigner pss;
 
     private byte getTrailer(
         int trailerField)
     {
         if (trailerField == 1)
         {
-            return org.bouncycastle.crypto.signers.PSSSigner.TRAILER_IMPLICIT;
+            return org.spongycastle.crypto.signers.PSSSigner.TRAILER_IMPLICIT;
         }
         
         throw new IllegalArgumentException("unknown trailer field");
@@ -143,7 +143,7 @@ public class PSSSignatureSpi
             setupContentDigest();
         }
 
-        pss = new org.bouncycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength);
+        pss = new org.spongycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength);
         pss.init(false,
             RSAUtil.generatePublicKeyParameter((RSAPublicKey)publicKey));
     }
@@ -164,7 +164,7 @@ public class PSSSignatureSpi
             setupContentDigest();
         }
 
-        pss = new org.bouncycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength);
+        pss = new org.spongycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength);
         pss.init(true, new ParametersWithRandom(RSAUtil.generatePrivateKeyParameter((RSAPrivateKey)privateKey), random));
     }
 
@@ -183,7 +183,7 @@ public class PSSSignatureSpi
             setupContentDigest();
         }
         
-        pss = new org.bouncycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength);
+        pss = new org.spongycastle.crypto.signers.PSSSigner(signer, contentDigest, mgfDigest, saltLength);
         pss.init(true, RSAUtil.generatePrivateKeyParameter((RSAPrivateKey)privateKey));
     }
 

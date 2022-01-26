@@ -1,4 +1,4 @@
-package org.bouncycastle.tsp;
+package org.spongycastle.tsp;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -7,21 +7,21 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.DLSequence;
-import org.bouncycastle.asn1.cmp.PKIFailureInfo;
-import org.bouncycastle.asn1.cmp.PKIFreeText;
-import org.bouncycastle.asn1.cmp.PKIStatus;
-import org.bouncycastle.asn1.cmp.PKIStatusInfo;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.tsp.TimeStampResp;
-import org.bouncycastle.asn1.x509.Extensions;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.DERUTF8String;
+import org.spongycastle.asn1.DLSequence;
+import org.spongycastle.asn1.cmp.PKIFailureInfo;
+import org.spongycastle.asn1.cmp.PKIFreeText;
+import org.spongycastle.asn1.cmp.PKIStatus;
+import org.spongycastle.asn1.cmp.PKIStatusInfo;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.tsp.TimeStampResp;
+import org.spongycastle.asn1.x509.Extensions;
 
 /**
  * Generator for RFC 3161 Time Stamp Responses.

@@ -1,4 +1,4 @@
-package org.bouncycastle.eac.operator.jcajce;
+package org.spongycastle.eac.operator.jcajce;
 
 class EACUtil
 {

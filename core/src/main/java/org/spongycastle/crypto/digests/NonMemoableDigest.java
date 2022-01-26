@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.crypto.ExtendedDigest;
+import org.spongycastle.crypto.ExtendedDigest;
 
 /**
  * Wrapper removes exposure to the Memoable interface on an ExtendedDigest implementation.

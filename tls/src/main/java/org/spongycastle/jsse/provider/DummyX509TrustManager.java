@@ -1,4 +1,4 @@
-package org.bouncycastle.jsse.provider;
+package org.spongycastle.jsse.provider;
 
 import java.net.Socket;
 import java.security.cert.CertificateException;
@@ -6,7 +6,7 @@ import java.security.cert.X509Certificate;
 
 import javax.net.ssl.SSLEngine;
 
-import org.bouncycastle.jsse.BCX509ExtendedTrustManager;
+import org.spongycastle.jsse.BCX509ExtendedTrustManager;
 
 final class DummyX509TrustManager
     extends BCX509ExtendedTrustManager

@@ -1,10 +1,10 @@
-package org.bouncycastle.operator.jcajce;
+package org.spongycastle.operator.jcajce;
 
 import java.security.Key;
 
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.operator.GenericKey;
+import org.spongycastle.operator.GenericKey;
 
 class OperatorUtils
 {

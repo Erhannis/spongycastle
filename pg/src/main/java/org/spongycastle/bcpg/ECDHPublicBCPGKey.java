@@ -1,10 +1,10 @@
-package org.bouncycastle.bcpg;
+package org.spongycastle.bcpg;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.math.ec.ECPoint;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.math.ec.ECPoint;
 
 /**
  * base class for an ECDH Public Key.

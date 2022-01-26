@@ -1,9 +1,9 @@
-package org.bouncycastle.tls;
+package org.spongycastle.tls;
 
 import java.io.IOException;
 import java.util.Hashtable;
 
-import org.bouncycastle.tls.crypto.TlsCrypto;
+import org.spongycastle.tls.crypto.TlsCrypto;
 
 public class SRPTlsServer
     extends AbstractTlsServer

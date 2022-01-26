@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.engines;
+package org.spongycastle.crypto.engines;
 
 /**
  * An implementation of the SEED key wrapper based on RFC 4010/RFC 3394.

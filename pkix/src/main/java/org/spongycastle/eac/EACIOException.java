@@ -1,4 +1,4 @@
-package org.bouncycastle.eac;
+package org.spongycastle.eac;
 
 import java.io.IOException;
 

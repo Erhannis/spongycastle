@@ -1,11 +1,11 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.io.SignerOutputStream;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.io.SignerOutputStream;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
 
 class BcTlsStreamVerifier
     implements TlsStreamVerifier

@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -12,29 +12,29 @@ import java.util.Collection;
 import java.util.Iterator;
 
 import junit.framework.TestCase;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.SignerInformationStore;
-import org.bouncycastle.cms.jcajce.JcaSignerId;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
-import org.bouncycastle.cms.test.CMSTestUtil;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mime.Headers;
-import org.bouncycastle.mime.MimeParser;
-import org.bouncycastle.mime.MimeParserContext;
-import org.bouncycastle.mime.MimeParserProvider;
-import org.bouncycastle.mime.smime.SMIMESignedWriter;
-import org.bouncycastle.mime.smime.SMimeParserListener;
-import org.bouncycastle.mime.smime.SMimeParserProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.SignerInformationStore;
+import org.spongycastle.cms.jcajce.JcaSignerId;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
+import org.spongycastle.cms.test.CMSTestUtil;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mime.Headers;
+import org.spongycastle.mime.MimeParser;
+import org.spongycastle.mime.MimeParserContext;
+import org.spongycastle.mime.MimeParserProvider;
+import org.spongycastle.mime.smime.SMIMESignedWriter;
+import org.spongycastle.mime.smime.SMimeParserListener;
+import org.spongycastle.mime.smime.SMimeParserProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.bc.BcDigestCalculatorProvider;
+import org.spongycastle.util.Store;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
 
 public class TestSMIMESigned
     extends TestCase
@@ -155,7 +155,7 @@ public class TestSMIMESigned
             {
                 byte[] content = Streams.readAll(inputStream);
 
-                assertTrue(org.bouncycastle.util.Arrays.areEqual(messageContent, content));
+                assertTrue(org.spongycastle.util.Arrays.areEqual(messageContent, content));
             }
 
             public void signedData(MimeParserContext parserContext, Headers headers, Store certificates, Store CRLs, Store attributeCertificates, SignerInformationStore signers)

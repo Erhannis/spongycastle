@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package org.spongycastle.jcajce.provider.test;
 
 import java.security.GeneralSecurityException;
 import java.security.Security;
@@ -8,12 +8,12 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AlphabetMapper;
-import org.bouncycastle.crypto.util.BasicAlphabetMapper;
-import org.bouncycastle.jcajce.spec.FPEParameterSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.AlphabetMapper;
+import org.spongycastle.crypto.util.BasicAlphabetMapper;
+import org.spongycastle.jcajce.spec.FPEParameterSpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 public class SP80038GTest
     extends TestCase

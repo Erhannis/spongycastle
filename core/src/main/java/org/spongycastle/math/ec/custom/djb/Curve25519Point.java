@@ -1,9 +1,9 @@
-package org.bouncycastle.math.ec.custom.djb;
+package org.spongycastle.math.ec.custom.djb;
 
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.raw.Nat256;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.raw.Nat256;
 
 public class Curve25519Point extends ECPoint.AbstractFp
 {

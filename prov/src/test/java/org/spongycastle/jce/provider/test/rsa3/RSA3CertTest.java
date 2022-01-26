@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test.rsa3;
+package org.spongycastle.jce.provider.test.rsa3;
 
 import java.security.Security;
 import java.security.Signature;
@@ -19,7 +19,7 @@ public class RSA3CertTest
     {
         if (Security.getProvider("BC") == null)
         {
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
         }
     }
     

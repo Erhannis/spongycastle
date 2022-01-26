@@ -1,11 +1,11 @@
-package org.bouncycastle.jcajce.provider.keystore;
+package org.spongycastle.jcajce.provider.keystore;
 
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
 
 public class BCFKS
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.keystore" + ".bcfks.";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.keystore" + ".bcfks.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

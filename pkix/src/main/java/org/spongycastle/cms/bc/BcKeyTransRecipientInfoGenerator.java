@@ -1,9 +1,9 @@
-package org.bouncycastle.cms.bc;
+package org.spongycastle.cms.bc;
 
-import org.bouncycastle.asn1.cms.IssuerAndSerialNumber;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.KeyTransRecipientInfoGenerator;
-import org.bouncycastle.operator.bc.BcAsymmetricKeyWrapper;
+import org.spongycastle.asn1.cms.IssuerAndSerialNumber;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.KeyTransRecipientInfoGenerator;
+import org.spongycastle.operator.bc.BcAsymmetricKeyWrapper;
 
 public abstract class BcKeyTransRecipientInfoGenerator
     extends KeyTransRecipientInfoGenerator

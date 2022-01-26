@@ -1,15 +1,15 @@
-package org.bouncycastle.cmc;
+package org.spongycastle.cmc;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.cert.X509CRLHolder;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.CMSSignedData;
-import org.bouncycastle.util.Encodable;
-import org.bouncycastle.util.Store;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.cert.X509CRLHolder;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.CMSSignedData;
+import org.spongycastle.util.Encodable;
+import org.spongycastle.util.Store;
 
 /**
  * Carrier for a Simple PKI Response.

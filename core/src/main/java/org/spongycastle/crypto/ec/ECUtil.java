@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.ec;
+package org.spongycastle.crypto.ec;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.math.ec.ECConstants;
+import org.spongycastle.util.BigIntegers;
 
 class ECUtil
 {

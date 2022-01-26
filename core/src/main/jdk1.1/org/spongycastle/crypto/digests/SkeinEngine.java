@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.engines.ThreefishEngine;
-import org.bouncycastle.crypto.macs.SkeinMac;
-import org.bouncycastle.crypto.params.SkeinParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.engines.ThreefishEngine;
+import org.spongycastle.crypto.macs.SkeinMac;
+import org.spongycastle.crypto.params.SkeinParameters;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Memoable;
 
 /**
  * Implementation of the Skein family of parameterised hash functions in 256, 512 and 1024 bit block

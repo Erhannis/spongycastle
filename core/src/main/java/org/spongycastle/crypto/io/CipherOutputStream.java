@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.io;
+package org.spongycastle.crypto.io;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.modes.AEADBlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.StreamCipher;
+import org.spongycastle.crypto.modes.AEADBlockCipher;
 
 /**
  * A CipherOutputStream is composed of an OutputStream and a cipher so that write() methods process

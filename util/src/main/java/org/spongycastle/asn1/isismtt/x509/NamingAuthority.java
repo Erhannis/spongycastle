@@ -1,20 +1,20 @@
-package org.bouncycastle.asn1.isismtt.x509;
+package org.spongycastle.asn1.isismtt.x509;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1IA5String;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.isismtt.ISISMTTObjectIdentifiers;
-import org.bouncycastle.asn1.x500.DirectoryString;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1IA5String;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1String;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.isismtt.ISISMTTObjectIdentifiers;
+import org.spongycastle.asn1.x500.DirectoryString;
 
 /**
  * Names of authorities which are responsible for the administration of title
@@ -28,7 +28,7 @@ import org.bouncycastle.asn1.x500.DirectoryString;
  *               namingAuthorityText DirectoryString(SIZE(1..128)) OPTIONAL
  *             }
  * </pre>
- * @see org.bouncycastle.asn1.isismtt.x509.AdmissionSyntax
+ * @see org.spongycastle.asn1.isismtt.x509.AdmissionSyntax
  * 
  */
 public class NamingAuthority

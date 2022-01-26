@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1.test;
+package org.spongycastle.asn1.test;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x509.qualified.Iso4217CurrencyCode;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.x509.qualified.Iso4217CurrencyCode;
+import org.spongycastle.util.test.SimpleTest;
 
 public class Iso4217CurrencyCodeUnitTest 
     extends SimpleTest

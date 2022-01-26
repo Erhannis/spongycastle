@@ -1,8 +1,8 @@
-package org.bouncycastle.bcpg.sig;
+package org.spongycastle.bcpg.sig;
 
-import org.bouncycastle.bcpg.SignatureSubpacket;
-import org.bouncycastle.bcpg.SignatureSubpacketTags;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.bcpg.SignatureSubpacket;
+import org.spongycastle.bcpg.SignatureSubpacketTags;
+import org.spongycastle.util.Arrays;
 
 /**
  * RFC 4880, Section 5.2.3.25 - Signature Target subpacket.

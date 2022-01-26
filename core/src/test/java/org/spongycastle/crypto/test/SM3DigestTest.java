@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SM3Digest;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.digests.SM3Digest;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * standard vector test for SM3 digest from chinese specification

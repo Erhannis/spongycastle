@@ -1,25 +1,25 @@
-package org.bouncycastle.asn1.util.test;
+package org.spongycastle.asn1.util.test;
 
-import org.bouncycastle.asn1.cmc.test.*;
-import org.bouncycastle.asn1.cmp.test.*;
-import org.bouncycastle.asn1.cms.test.*;
-import org.bouncycastle.asn1.crmf.test.*;
-import org.bouncycastle.asn1.esf.test.*;
-import org.bouncycastle.asn1.ess.test.*;
-import org.bouncycastle.asn1.icao.test.*;
-import org.bouncycastle.asn1.isismtt.test.AdditionalInformationSyntaxUnitTest;
-import org.bouncycastle.asn1.isismtt.test.AdmissionSyntaxUnitTest;
-import org.bouncycastle.asn1.isismtt.test.AdmissionsUnitTest;
-import org.bouncycastle.asn1.isismtt.test.CertHashUnitTest;
-import org.bouncycastle.asn1.isismtt.test.DeclarationOfMajorityUnitTest;
-import org.bouncycastle.asn1.isismtt.test.MonetaryLimitUnitTest;
-import org.bouncycastle.asn1.isismtt.test.NamingAuthorityUnitTest;
-import org.bouncycastle.asn1.isismtt.test.ProcurationSyntaxUnitTest;
-import org.bouncycastle.asn1.isismtt.test.RequestedCertificateUnitTest;
-import org.bouncycastle.asn1.isismtt.test.RestrictionUnitTest;
-import org.bouncycastle.asn1.smime.test.SMIMETest;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.Test;
+import org.spongycastle.asn1.cmc.test.*;
+import org.spongycastle.asn1.cmp.test.*;
+import org.spongycastle.asn1.cms.test.*;
+import org.spongycastle.asn1.crmf.test.*;
+import org.spongycastle.asn1.esf.test.*;
+import org.spongycastle.asn1.ess.test.*;
+import org.spongycastle.asn1.icao.test.*;
+import org.spongycastle.asn1.isismtt.test.AdditionalInformationSyntaxUnitTest;
+import org.spongycastle.asn1.isismtt.test.AdmissionSyntaxUnitTest;
+import org.spongycastle.asn1.isismtt.test.AdmissionsUnitTest;
+import org.spongycastle.asn1.isismtt.test.CertHashUnitTest;
+import org.spongycastle.asn1.isismtt.test.DeclarationOfMajorityUnitTest;
+import org.spongycastle.asn1.isismtt.test.MonetaryLimitUnitTest;
+import org.spongycastle.asn1.isismtt.test.NamingAuthorityUnitTest;
+import org.spongycastle.asn1.isismtt.test.ProcurationSyntaxUnitTest;
+import org.spongycastle.asn1.isismtt.test.RequestedCertificateUnitTest;
+import org.spongycastle.asn1.isismtt.test.RestrictionUnitTest;
+import org.spongycastle.asn1.smime.test.SMIMETest;
+import org.spongycastle.util.test.SimpleTest;
+import org.spongycastle.util.test.Test;
 
 public class RegressionTest
 {

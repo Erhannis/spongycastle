@@ -1,11 +1,11 @@
-package org.bouncycastle.cert.dane;
+package org.spongycastle.cert.dane;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
 
 /**
  * Factory for creating selector objects to use with the DANECertificateStore.

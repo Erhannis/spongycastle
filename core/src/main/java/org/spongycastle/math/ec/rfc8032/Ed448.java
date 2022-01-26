@@ -1,13 +1,13 @@
-package org.bouncycastle.math.ec.rfc8032;
+package org.spongycastle.math.ec.rfc8032;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.crypto.digests.SHAKEDigest;
-import org.bouncycastle.math.ec.rfc7748.X448;
-import org.bouncycastle.math.ec.rfc7748.X448Field;
-import org.bouncycastle.math.raw.Nat;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.crypto.digests.SHAKEDigest;
+import org.spongycastle.math.ec.rfc7748.X448;
+import org.spongycastle.math.ec.rfc7748.X448Field;
+import org.spongycastle.math.raw.Nat;
+import org.spongycastle.util.Arrays;
 
 public abstract class Ed448
 {

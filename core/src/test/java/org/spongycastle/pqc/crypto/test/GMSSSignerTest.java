@@ -1,26 +1,26 @@
-package org.bouncycastle.pqc.crypto.test;
+package org.spongycastle.pqc.crypto.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.DigestingMessageSigner;
-import org.bouncycastle.pqc.crypto.DigestingStateAwareMessageSigner;
-import org.bouncycastle.pqc.crypto.gmss.GMSSDigestProvider;
-import org.bouncycastle.pqc.crypto.gmss.GMSSKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.gmss.GMSSParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSSigner;
-import org.bouncycastle.pqc.crypto.gmss.GMSSStateAwareSigner;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.AsymmetricCipherKeyPair;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.Signer;
+import org.spongycastle.crypto.digests.SHA224Digest;
+import org.spongycastle.crypto.params.AsymmetricKeyParameter;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.pqc.crypto.DigestingMessageSigner;
+import org.spongycastle.pqc.crypto.DigestingStateAwareMessageSigner;
+import org.spongycastle.pqc.crypto.gmss.GMSSDigestProvider;
+import org.spongycastle.pqc.crypto.gmss.GMSSKeyGenerationParameters;
+import org.spongycastle.pqc.crypto.gmss.GMSSKeyPairGenerator;
+import org.spongycastle.pqc.crypto.gmss.GMSSParameters;
+import org.spongycastle.pqc.crypto.gmss.GMSSPrivateKeyParameters;
+import org.spongycastle.pqc.crypto.gmss.GMSSSigner;
+import org.spongycastle.pqc.crypto.gmss.GMSSStateAwareSigner;
+import org.spongycastle.util.BigIntegers;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.test.SimpleTest;
 
 public class GMSSSignerTest
     extends SimpleTest

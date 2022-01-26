@@ -1,8 +1,8 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.DigitallySigned;
+import org.spongycastle.tls.DigitallySigned;
 
 /**
  * Base interface for a TLS verifier that works with signatures and either raw message digests, or

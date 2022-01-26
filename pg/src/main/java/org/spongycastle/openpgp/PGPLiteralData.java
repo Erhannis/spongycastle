@@ -1,14 +1,14 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.LiteralDataPacket;
-import org.bouncycastle.bcpg.Packet;
-import org.bouncycastle.bcpg.PacketTags;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.LiteralDataPacket;
+import org.spongycastle.bcpg.Packet;
+import org.spongycastle.bcpg.PacketTags;
 
 /**
  * A single literal data packet in a PGP object stream.

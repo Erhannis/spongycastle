@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.ntru;
+package org.spongycastle.pqc.crypto.ntru;
 
 import java.nio.ByteBuffer;
 
-import org.bouncycastle.crypto.Digest;
+import org.spongycastle.crypto.Digest;
 
 /**
  * An implementation of the deterministic pseudo-random generator in EESS section 3.7.3.1

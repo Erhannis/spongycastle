@@ -1,8 +1,8 @@
-package org.bouncycastle.math.field;
+package org.spongycastle.math.field;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.util.Integers;
+import org.spongycastle.util.Integers;
 
 class GenericPolynomialExtensionField implements PolynomialExtensionField
 {

@@ -1,20 +1,20 @@
-package org.bouncycastle.cert.path.validations;
+package org.spongycastle.cert.path.validations;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Null;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.cert.CertException;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.X509ContentVerifierProviderBuilder;
-import org.bouncycastle.cert.path.CertPathValidation;
-import org.bouncycastle.cert.path.CertPathValidationContext;
-import org.bouncycastle.cert.path.CertPathValidationException;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Null;
+import org.spongycastle.asn1.x500.X500Name;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.cert.CertException;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.X509ContentVerifierProviderBuilder;
+import org.spongycastle.cert.path.CertPathValidation;
+import org.spongycastle.cert.path.CertPathValidationContext;
+import org.spongycastle.cert.path.CertPathValidationException;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.util.Memoable;
 
 public class ParentCertIssuedValidation
     implements CertPathValidation

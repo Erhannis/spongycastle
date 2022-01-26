@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.asymmetric;
+package org.spongycastle.jcajce.provider.asymmetric;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -8,26 +8,26 @@ import java.security.PublicKey;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.CompositePrivateKey;
-import org.bouncycastle.jcajce.CompositePublicKey;
-import org.bouncycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
-import org.bouncycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.misc.MiscObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.spongycastle.jcajce.CompositePrivateKey;
+import org.spongycastle.jcajce.CompositePublicKey;
+import org.spongycastle.jcajce.provider.asymmetric.util.BaseKeyFactorySpi;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricAlgorithmProvider;
+import org.spongycastle.jcajce.provider.util.AsymmetricKeyInfoConverter;
 
 public class COMPOSITE
 {
-    private static final String PREFIX = "org.bouncycastle.jcajce.provider.asymmetric.COMPOSITE";
+    private static final String PREFIX = "org.spongycastle.jcajce.provider.asymmetric.COMPOSITE";
 
     private static final Map<String, String> compositeAttributes = new HashMap<String, String>();
 
     static
     {
-        compositeAttributes.put("SupportedKeyClasses", "org.bouncycastle.jcajce.CompositePublicKey|org.bouncycastle.jcajce.CompositePrivateKey");
+        compositeAttributes.put("SupportedKeyClasses", "org.spongycastle.jcajce.CompositePublicKey|org.spongycastle.jcajce.CompositePrivateKey");
         compositeAttributes.put("SupportedKeyFormats", "PKCS#8|X.509");
     }
 

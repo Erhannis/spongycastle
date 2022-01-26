@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.lms;
+package org.spongycastle.pqc.crypto.lms;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.util.Encodable;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.util.Encodable;
+import org.spongycastle.util.io.Streams;
 
-import static org.bouncycastle.pqc.crypto.lms.LM_OTS.D_MESG;
+import static org.spongycastle.pqc.crypto.lms.LM_OTS.D_MESG;
 
 class LMOtsPublicKey
     implements Encodable

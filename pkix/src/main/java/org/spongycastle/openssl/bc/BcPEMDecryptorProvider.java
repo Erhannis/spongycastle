@@ -1,9 +1,9 @@
-package org.bouncycastle.openssl.bc;
+package org.spongycastle.openssl.bc;
 
-import org.bouncycastle.openssl.PEMDecryptor;
-import org.bouncycastle.openssl.PEMDecryptorProvider;
-import org.bouncycastle.openssl.PEMException;
-import org.bouncycastle.openssl.PasswordException;
+import org.spongycastle.openssl.PEMDecryptor;
+import org.spongycastle.openssl.PEMDecryptorProvider;
+import org.spongycastle.openssl.PEMException;
+import org.spongycastle.openssl.PasswordException;
 
 public class BcPEMDecryptorProvider
     implements PEMDecryptorProvider

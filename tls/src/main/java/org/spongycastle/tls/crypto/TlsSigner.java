@@ -1,8 +1,8 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
 
 /**
  * Base interface for a TLS signer that works on raw message digests.

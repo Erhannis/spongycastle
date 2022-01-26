@@ -1,4 +1,4 @@
-package org.bouncycastle.est.jcajce;
+package org.spongycastle.est.jcajce;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,9 +7,9 @@ import java.io.OutputStream;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocket;
 
-import org.bouncycastle.est.LimitedSource;
-import org.bouncycastle.est.Source;
-import org.bouncycastle.est.TLSUniqueProvider;
+import org.spongycastle.est.LimitedSource;
+import org.spongycastle.est.Source;
+import org.spongycastle.est.TLSUniqueProvider;
 
 
 class LimitedSSLSocketSource

@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.CramerShoupParameters;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.digests.SHA256Digest;
+import org.spongycastle.crypto.params.CramerShoupParameters;
+import org.spongycastle.crypto.params.DHParameters;
+import org.spongycastle.util.BigIntegers;
 
 public class CramerShoupParametersGenerator
 {

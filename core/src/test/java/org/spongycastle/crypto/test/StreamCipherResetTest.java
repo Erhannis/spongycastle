@@ -1,24 +1,24 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.engines.ChaChaEngine;
-import org.bouncycastle.crypto.engines.Grain128Engine;
-import org.bouncycastle.crypto.engines.Grainv1Engine;
-import org.bouncycastle.crypto.engines.HC128Engine;
-import org.bouncycastle.crypto.engines.HC256Engine;
-import org.bouncycastle.crypto.engines.ISAACEngine;
-import org.bouncycastle.crypto.engines.RC4Engine;
-import org.bouncycastle.crypto.engines.Salsa20Engine;
-import org.bouncycastle.crypto.engines.XSalsa20Engine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.StreamCipher;
+import org.spongycastle.crypto.engines.ChaChaEngine;
+import org.spongycastle.crypto.engines.Grain128Engine;
+import org.spongycastle.crypto.engines.Grainv1Engine;
+import org.spongycastle.crypto.engines.HC128Engine;
+import org.spongycastle.crypto.engines.HC256Engine;
+import org.spongycastle.crypto.engines.ISAACEngine;
+import org.spongycastle.crypto.engines.RC4Engine;
+import org.spongycastle.crypto.engines.Salsa20Engine;
+import org.spongycastle.crypto.engines.XSalsa20Engine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Test whether block ciphers implement reset contract on init, encrypt/decrypt and reset.

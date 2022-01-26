@@ -1,8 +1,8 @@
-package org.bouncycastle.tls.crypto;
+package org.spongycastle.tls.crypto;
 
 import java.io.IOException;
 
-import org.bouncycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.ProtocolVersion;
 
 /**
  * Base interface for a TLS bulk cipher.

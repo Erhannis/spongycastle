@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp.examples.test;
+package org.spongycastle.openpgp.examples.test;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,17 +14,17 @@ import java.io.PrintStream;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.openpgp.examples.ClearSignedFileProcessor;
-import org.bouncycastle.openpgp.examples.DSAElGamalKeyRingGenerator;
-import org.bouncycastle.openpgp.examples.KeyBasedFileProcessor;
-import org.bouncycastle.openpgp.examples.KeyBasedLargeFileProcessor;
-import org.bouncycastle.openpgp.examples.PBEFileProcessor;
-import org.bouncycastle.openpgp.examples.RSAKeyPairGenerator;
-import org.bouncycastle.openpgp.examples.SignedFileProcessor;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.openpgp.examples.ClearSignedFileProcessor;
+import org.spongycastle.openpgp.examples.DSAElGamalKeyRingGenerator;
+import org.spongycastle.openpgp.examples.KeyBasedFileProcessor;
+import org.spongycastle.openpgp.examples.KeyBasedLargeFileProcessor;
+import org.spongycastle.openpgp.examples.PBEFileProcessor;
+import org.spongycastle.openpgp.examples.RSAKeyPairGenerator;
+import org.spongycastle.openpgp.examples.SignedFileProcessor;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
 
 public class AllTests
     extends TestCase

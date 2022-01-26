@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.agreement.test;
+package org.spongycastle.crypto.agreement.test;
 
 import java.math.BigInteger;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
 
 public class JPAKEPrimeOrderGroupTest
     extends TestCase

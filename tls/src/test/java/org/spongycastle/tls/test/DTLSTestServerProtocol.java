@@ -1,6 +1,6 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
-import org.bouncycastle.tls.DTLSServerProtocol;
+import org.spongycastle.tls.DTLSServerProtocol;
 
 class DTLSTestServerProtocol extends DTLSServerProtocol
 {

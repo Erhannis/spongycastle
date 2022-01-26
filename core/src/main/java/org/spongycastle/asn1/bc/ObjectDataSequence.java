@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.bc;
+package org.spongycastle.asn1.bc;
 
 import java.util.Iterator;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.util.Arrays;
 
 /**
  * <pre>
@@ -16,7 +16,7 @@ import org.bouncycastle.util.Arrays;
  */
 public class ObjectDataSequence
     extends ASN1Object
-    implements org.bouncycastle.util.Iterable<ASN1Encodable>
+    implements org.spongycastle.util.Iterable<ASN1Encodable>
 {
     private final ASN1Encodable[] dataSequence;
 

@@ -1,6 +1,6 @@
-package org.bouncycastle.util.test;
+package org.spongycastle.util.test;
 
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * A fixed secure random designed to return data for someone needing to create a single BigInteger.

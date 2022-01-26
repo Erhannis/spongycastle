@@ -1,4 +1,4 @@
-package org.bouncycastle.gpg.keybox;
+package org.spongycastle.gpg.keybox;
 
 /**
  * Base interface for a blob integrity checking operator.

@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.generators;
+package org.spongycastle.crypto.generators;
 
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.macs.Poly1305;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.KeyGenerationParameters;
+import org.spongycastle.crypto.macs.Poly1305;
 
 /**
  * Generates keys for the Poly1305 MAC.

@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.gmss;
+package org.spongycastle.pqc.crypto.gmss;
 
 import java.util.Vector;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.pqc.crypto.gmss.util.GMSSRandom;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.pqc.crypto.gmss.util.GMSSRandom;
+import org.spongycastle.util.Integers;
+import org.spongycastle.util.encoders.Hex;
 
 
 /**

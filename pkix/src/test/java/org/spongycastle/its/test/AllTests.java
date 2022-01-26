@@ -1,11 +1,11 @@
-package org.bouncycastle.its.test;
+package org.spongycastle.its.test;
 
 import java.security.Security;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
 
 public class AllTests
     extends TestCase

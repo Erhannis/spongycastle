@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto;
+package org.spongycastle.crypto;
 
 import java.security.Permission;
 import java.util.HashSet;

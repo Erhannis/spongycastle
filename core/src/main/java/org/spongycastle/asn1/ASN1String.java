@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 /**
  * General interface implemented by ASN.1 STRING objects for extracting the content String.

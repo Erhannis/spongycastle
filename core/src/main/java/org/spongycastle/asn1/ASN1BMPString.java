@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * ASN.1 BMPString object encodes BMP (<i>Basic Multilingual Plane</i>) subset

@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.jcajce;
+package org.spongycastle.cms.jcajce;
 
 import java.security.Key;
 import java.security.KeyFactory;
@@ -14,19 +14,19 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyAgreement;
 import javax.crypto.SecretKey;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.cryptopro.Gost2814789EncryptedKey;
-import org.bouncycastle.asn1.cryptopro.GostR3410KeyTransport;
-import org.bouncycastle.asn1.cryptopro.GostR3410TransportParameters;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.KeyTransRecipient;
-import org.bouncycastle.jcajce.spec.GOST28147WrapParameterSpec;
-import org.bouncycastle.jcajce.spec.UserKeyingMaterialSpec;
-import org.bouncycastle.operator.OperatorException;
-import org.bouncycastle.operator.jcajce.JceAsymmetricKeyUnwrapper;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
+import org.spongycastle.asn1.cryptopro.Gost2814789EncryptedKey;
+import org.spongycastle.asn1.cryptopro.GostR3410KeyTransport;
+import org.spongycastle.asn1.cryptopro.GostR3410TransportParameters;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.KeyTransRecipient;
+import org.spongycastle.jcajce.spec.GOST28147WrapParameterSpec;
+import org.spongycastle.jcajce.spec.UserKeyingMaterialSpec;
+import org.spongycastle.operator.OperatorException;
+import org.spongycastle.operator.jcajce.JceAsymmetricKeyUnwrapper;
+import org.spongycastle.util.Arrays;
 
 public abstract class JceKeyTransRecipient
     implements KeyTransRecipient

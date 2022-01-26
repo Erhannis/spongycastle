@@ -1,26 +1,26 @@
-package org.bouncycastle.its;
+package org.spongycastle.its;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.oer.its.Certificate;
-import org.bouncycastle.oer.its.CertificateBase;
-import org.bouncycastle.oer.its.CertificateId;
-import org.bouncycastle.oer.its.CertificateType;
-import org.bouncycastle.oer.its.EccP256CurvePoint;
-import org.bouncycastle.oer.its.HashedId;
-import org.bouncycastle.oer.its.IssuerIdentifier;
-import org.bouncycastle.oer.its.PublicEncryptionKey;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
-import org.bouncycastle.oer.its.VerificationKeyIndicator;
-import org.bouncycastle.operator.DigestCalculator;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.oer.its.Certificate;
+import org.spongycastle.oer.its.CertificateBase;
+import org.spongycastle.oer.its.CertificateId;
+import org.spongycastle.oer.its.CertificateType;
+import org.spongycastle.oer.its.EccP256CurvePoint;
+import org.spongycastle.oer.its.HashedId;
+import org.spongycastle.oer.its.IssuerIdentifier;
+import org.spongycastle.oer.its.PublicEncryptionKey;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.oer.its.VerificationKeyIndicator;
+import org.spongycastle.operator.DigestCalculator;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.util.Arrays;
 
 public class ITSImplicitCertificateBuilder
     extends ITSCertificateBuilder

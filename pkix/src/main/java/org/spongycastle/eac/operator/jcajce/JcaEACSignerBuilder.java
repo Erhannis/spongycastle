@@ -1,4 +1,4 @@
-package org.bouncycastle.eac.operator.jcajce;
+package org.spongycastle.eac.operator.jcajce;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,14 +13,14 @@ import java.security.SignatureException;
 import java.util.Arrays;
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.eac.EACObjectIdentifiers;
-import org.bouncycastle.eac.operator.EACSigner;
-import org.bouncycastle.operator.OperatorCreationException;
-import org.bouncycastle.operator.OperatorStreamException;
-import org.bouncycastle.operator.RuntimeOperatorException;
+import org.spongycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.eac.EACObjectIdentifiers;
+import org.spongycastle.eac.operator.EACSigner;
+import org.spongycastle.operator.OperatorCreationException;
+import org.spongycastle.operator.OperatorStreamException;
+import org.spongycastle.operator.RuntimeOperatorException;
 
 public class JcaEACSignerBuilder
 {

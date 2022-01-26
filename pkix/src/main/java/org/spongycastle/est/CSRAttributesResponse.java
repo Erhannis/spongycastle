@@ -1,14 +1,14 @@
-package org.bouncycastle.est;
+package org.spongycastle.est;
 
 import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.est.AttrOrOID;
-import org.bouncycastle.asn1.est.CsrAttrs;
-import org.bouncycastle.util.Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.est.AttrOrOID;
+import org.spongycastle.asn1.est.CsrAttrs;
+import org.spongycastle.util.Encodable;
 
 /**
  * Wrapper class around a CsrAttrs structure.

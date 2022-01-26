@@ -1,4 +1,4 @@
-package org.bouncycastle.cmc;
+package org.spongycastle.cmc;
 
 public class CMCException
     extends Exception

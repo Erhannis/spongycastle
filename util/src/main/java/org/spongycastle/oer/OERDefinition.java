@@ -1,4 +1,4 @@
-package org.bouncycastle.oer;
+package org.spongycastle.oer;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Integer;
 
 public class OERDefinition
 {

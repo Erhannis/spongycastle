@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.params;
+package org.spongycastle.crypto.params;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.math.ec.rfc8032.Ed448;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.math.ec.rfc8032.Ed448;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.io.Streams;
 
 public final class Ed448PublicKeyParameters
     extends AsymmetricKeyParameter

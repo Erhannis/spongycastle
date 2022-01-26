@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.prng.drbg;
+package org.spongycastle.crypto.prng.drbg;
 
 import java.util.Hashtable;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.prng.EntropySource;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Integers;
 
 /**
  * A SP800-90A Hash DRBG.

@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.io;
+package org.spongycastle.crypto.io;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.SkippingCipher;
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.modes.AEADBlockCipher;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.SkippingCipher;
+import org.spongycastle.crypto.StreamCipher;
+import org.spongycastle.crypto.modes.AEADBlockCipher;
+import org.spongycastle.util.Arrays;
 
 /**
  * A CipherInputStream is composed of an InputStream and a cipher so that read() methods return data

@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.math.ntru.polynomial;
+package org.spongycastle.pqc.math.ntru.polynomial;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.pqc.math.ntru.util.ArrayEncoder;
-import org.bouncycastle.pqc.math.ntru.util.Util;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.pqc.math.ntru.util.ArrayEncoder;
+import org.spongycastle.pqc.math.ntru.util.Util;
+import org.spongycastle.util.Arrays;
 
 /**
  * A <code>TernaryPolynomial</code> with a "low" number of nonzero coefficients.

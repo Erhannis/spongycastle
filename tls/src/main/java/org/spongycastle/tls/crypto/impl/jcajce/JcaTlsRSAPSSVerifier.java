@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.crypto.impl.jcajce;
+package org.spongycastle.tls.crypto.impl.jcajce;
 
 import java.io.IOException;
 import java.security.PublicKey;
 import java.security.spec.AlgorithmParameterSpec;
 
-import org.bouncycastle.tls.DigitallySigned;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.SignatureScheme;
-import org.bouncycastle.tls.crypto.TlsStreamVerifier;
-import org.bouncycastle.tls.crypto.TlsVerifier;
+import org.spongycastle.tls.DigitallySigned;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.SignatureScheme;
+import org.spongycastle.tls.crypto.TlsStreamVerifier;
+import org.spongycastle.tls.crypto.TlsVerifier;
 
 /**
  * Operator supporting the verification of RSASSA-PSS signatures.

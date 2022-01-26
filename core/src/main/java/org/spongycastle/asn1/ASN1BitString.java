@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1;
+package org.spongycastle.asn1;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.util.Arrays;
 
 /**
  * Base class for BIT STRING objects

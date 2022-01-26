@@ -1,10 +1,10 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.ExtendedDigest;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsHMAC;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Digest;
+import org.spongycastle.crypto.ExtendedDigest;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsHMAC;
+import org.spongycastle.util.Arrays;
 
 /**
  * HMAC implementation based on original internet draft for HMAC (RFC 2104).

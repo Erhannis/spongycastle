@@ -1,28 +1,28 @@
-package org.bouncycastle.its;
+package org.spongycastle.its;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.its.operator.ECDSAEncoder;
-import org.bouncycastle.its.operator.ITSContentSigner;
-import org.bouncycastle.oer.OEREncoder;
-import org.bouncycastle.oer.its.Certificate;
-import org.bouncycastle.oer.its.CertificateBase;
-import org.bouncycastle.oer.its.CertificateId;
-import org.bouncycastle.oer.its.CertificateType;
-import org.bouncycastle.oer.its.HashAlgorithm;
-import org.bouncycastle.oer.its.HashedId;
-import org.bouncycastle.oer.its.IssuerIdentifier;
-import org.bouncycastle.oer.its.PublicVerificationKey;
-import org.bouncycastle.oer.its.Signature;
-import org.bouncycastle.oer.its.ToBeSignedCertificate;
-import org.bouncycastle.oer.its.VerificationKeyIndicator;
-import org.bouncycastle.oer.its.template.IEEE1609dot2;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.nist.NISTObjectIdentifiers;
+import org.spongycastle.asn1.sec.SECObjectIdentifiers;
+import org.spongycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import org.spongycastle.its.operator.ECDSAEncoder;
+import org.spongycastle.its.operator.ITSContentSigner;
+import org.spongycastle.oer.OEREncoder;
+import org.spongycastle.oer.its.Certificate;
+import org.spongycastle.oer.its.CertificateBase;
+import org.spongycastle.oer.its.CertificateId;
+import org.spongycastle.oer.its.CertificateType;
+import org.spongycastle.oer.its.HashAlgorithm;
+import org.spongycastle.oer.its.HashedId;
+import org.spongycastle.oer.its.IssuerIdentifier;
+import org.spongycastle.oer.its.PublicVerificationKey;
+import org.spongycastle.oer.its.Signature;
+import org.spongycastle.oer.its.ToBeSignedCertificate;
+import org.spongycastle.oer.its.VerificationKeyIndicator;
+import org.spongycastle.oer.its.template.IEEE1609dot2;
+import org.spongycastle.util.Arrays;
 
 public class ITSExplicitCertificateBuilder
     extends ITSCertificateBuilder

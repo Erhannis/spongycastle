@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.crypto.rainbow;
+package org.spongycastle.pqc.crypto.rainbow;
 
 public class RainbowPrivateKeyParameters
     extends RainbowKeyParameters

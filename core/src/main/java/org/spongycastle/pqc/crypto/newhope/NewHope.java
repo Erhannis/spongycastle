@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.crypto.newhope;
+package org.spongycastle.pqc.crypto.newhope;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.digests.SHA3Digest;
+import org.spongycastle.crypto.digests.SHA3Digest;
 
 /**
  * This implementation is based heavily on the C reference implementation from https://cryptojedi.org/crypto/index.shtml.

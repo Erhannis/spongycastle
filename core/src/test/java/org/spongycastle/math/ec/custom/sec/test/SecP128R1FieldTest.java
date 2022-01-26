@@ -1,10 +1,10 @@
-package org.bouncycastle.math.ec.custom.sec.test;
+package org.spongycastle.math.ec.custom.sec.test;
 
 
 import java.util.Arrays;
 
-import org.bouncycastle.math.ec.custom.sec.SecP128R1Field;
-import org.bouncycastle.math.raw.Nat128;
+import org.spongycastle.math.ec.custom.sec.SecP128R1Field;
+import org.spongycastle.math.raw.Nat128;
 
 import junit.framework.TestCase;
 

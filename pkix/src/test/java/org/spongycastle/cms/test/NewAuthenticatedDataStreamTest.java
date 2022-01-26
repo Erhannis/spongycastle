@@ -1,4 +1,4 @@
-package org.bouncycastle.cms.test;
+package org.spongycastle.cms.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
@@ -12,23 +12,23 @@ import java.util.Iterator;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSAuthenticatedDataParser;
-import org.bouncycastle.cms.CMSAuthenticatedDataStreamGenerator;
-import org.bouncycastle.cms.OriginatorInfoGenerator;
-import org.bouncycastle.cms.RecipientInformation;
-import org.bouncycastle.cms.RecipientInformationStore;
-import org.bouncycastle.cms.jcajce.JceCMSMacCalculatorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyTransAuthenticatedRecipient;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSAuthenticatedDataParser;
+import org.spongycastle.cms.CMSAuthenticatedDataStreamGenerator;
+import org.spongycastle.cms.OriginatorInfoGenerator;
+import org.spongycastle.cms.RecipientInformation;
+import org.spongycastle.cms.RecipientInformationStore;
+import org.spongycastle.cms.jcajce.JceCMSMacCalculatorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyTransAuthenticatedRecipient;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
 
 public class NewAuthenticatedDataStreamTest
     extends TestCase
@@ -61,7 +61,7 @@ public class NewAuthenticatedDataStreamTest
         if (!_initialised)
         {
             _initialised = true;
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
 
             _signDN   = "O=Bouncy Castle, C=AU";
             _signKP   = CMSTestUtil.makeKeyPair();

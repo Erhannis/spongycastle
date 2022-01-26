@@ -1,11 +1,11 @@
-package org.bouncycastle.openssl;
+package org.spongycastle.openssl;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.util.Arrays;
 
 /**
  * Holder for an OpenSSL trusted certificate block.

@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
 
-import org.bouncycastle.crypto.generators.Argon2BytesGenerator;
-import org.bouncycastle.crypto.params.Argon2Parameters;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.generators.Argon2BytesGenerator;
+import org.spongycastle.crypto.params.Argon2Parameters;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * Tests from https://tools.ietf.org/html/draft-irtf-cfrg-argon2-03

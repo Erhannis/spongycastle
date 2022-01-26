@@ -1,10 +1,10 @@
-package org.bouncycastle.math.ec.custom.sec;
+package org.spongycastle.math.ec.custom.sec;
 
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.raw.Nat;
-import org.bouncycastle.math.raw.Nat192;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
+import org.spongycastle.math.raw.Nat;
+import org.spongycastle.math.raw.Nat192;
 
 public class SecP192R1Point extends ECPoint.AbstractFp
 {

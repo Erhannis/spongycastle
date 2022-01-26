@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
 /*
   The BLAKE2 cryptographic hash function was designed by Jean-
@@ -8,8 +8,8 @@ package org.bouncycastle.crypto.digests;
   Reference Implementation and Description can be found at: https://blake2.net/blake2x.pdf
  */
 
-import org.bouncycastle.crypto.Xof;
-import org.bouncycastle.util.Arrays;
+import org.spongycastle.crypto.Xof;
+import org.spongycastle.util.Arrays;
 
 /**
  * Implementation of the eXtendable Output Function (XOF) BLAKE2xs.

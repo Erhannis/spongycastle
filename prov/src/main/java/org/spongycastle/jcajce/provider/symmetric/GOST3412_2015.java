@@ -1,18 +1,18 @@
-package org.bouncycastle.jcajce.provider.symmetric;
+package org.spongycastle.jcajce.provider.symmetric;
 
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherKeyGenerator;
-import org.bouncycastle.crypto.engines.GOST3412_2015Engine;
-import org.bouncycastle.crypto.macs.CMac;
-import org.bouncycastle.crypto.modes.G3413CBCBlockCipher;
-import org.bouncycastle.crypto.modes.G3413CFBBlockCipher;
-import org.bouncycastle.crypto.modes.G3413CTRBlockCipher;
-import org.bouncycastle.crypto.modes.G3413OFBBlockCipher;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
-import org.bouncycastle.jcajce.provider.symmetric.util.BaseMac;
-import org.bouncycastle.jcajce.provider.util.AlgorithmProvider;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherKeyGenerator;
+import org.spongycastle.crypto.engines.GOST3412_2015Engine;
+import org.spongycastle.crypto.macs.CMac;
+import org.spongycastle.crypto.modes.G3413CBCBlockCipher;
+import org.spongycastle.crypto.modes.G3413CFBBlockCipher;
+import org.spongycastle.crypto.modes.G3413CTRBlockCipher;
+import org.spongycastle.crypto.modes.G3413OFBBlockCipher;
+import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseBlockCipher;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseKeyGenerator;
+import org.spongycastle.jcajce.provider.symmetric.util.BaseMac;
+import org.spongycastle.jcajce.provider.util.AlgorithmProvider;
 
 
 public class GOST3412_2015

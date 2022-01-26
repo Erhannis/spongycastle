@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.agreement.jpake;
+package org.spongycastle.crypto.agreement.jpake;
 
 import java.math.BigInteger;
 
@@ -26,7 +26,7 @@ public class JPAKERound3Payload
     /**
      * The value of MacTag, as computed by round 3.
      *
-     * @see JPAKEUtil#calculateMacTag(String, String, BigInteger, BigInteger, BigInteger, BigInteger, BigInteger, org.bouncycastle.crypto.Digest)
+     * @see JPAKEUtil#calculateMacTag(String, String, BigInteger, BigInteger, BigInteger, BigInteger, BigInteger, org.spongycastle.crypto.Digest)
      */
     private final BigInteger macTag;
 

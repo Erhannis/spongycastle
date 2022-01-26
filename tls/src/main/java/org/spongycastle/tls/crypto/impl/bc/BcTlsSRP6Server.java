@@ -1,13 +1,13 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.agreement.srp.SRP6Server;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.crypto.TlsSRP6Server;
+import org.spongycastle.crypto.CryptoException;
+import org.spongycastle.crypto.agreement.srp.SRP6Server;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.crypto.TlsSRP6Server;
 
 final class BcTlsSRP6Server
     implements TlsSRP6Server

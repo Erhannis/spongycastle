@@ -1,4 +1,4 @@
-package org.bouncycastle.mime.test;
+package org.spongycastle.mime.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -12,23 +12,23 @@ import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.cms.CMSAlgorithm;
-import org.bouncycastle.cms.CMSException;
-import org.bouncycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
-import org.bouncycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
-import org.bouncycastle.cms.test.CMSTestUtil;
-import org.bouncycastle.crypto.util.JournaledAlgorithm;
-import org.bouncycastle.crypto.util.JournalingSecureRandom;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.mime.smime.SMIMEEnvelopedWriter;
-import org.bouncycastle.operator.OutputEncryptor;
-import org.bouncycastle.operator.jcajce.JceAsymmetricKeyWrapper;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.x509.AlgorithmIdentifier;
+import org.spongycastle.cms.CMSAlgorithm;
+import org.spongycastle.cms.CMSException;
+import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
+import org.spongycastle.cms.jcajce.JceKeyTransRecipientInfoGenerator;
+import org.spongycastle.cms.test.CMSTestUtil;
+import org.spongycastle.crypto.util.JournaledAlgorithm;
+import org.spongycastle.crypto.util.JournalingSecureRandom;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.mime.smime.SMIMEEnvelopedWriter;
+import org.spongycastle.operator.OutputEncryptor;
+import org.spongycastle.operator.jcajce.JceAsymmetricKeyWrapper;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.io.Streams;
 
 /**
  *

@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.digests;
+package org.spongycastle.crypto.digests;
 
-import org.bouncycastle.util.Memoable;
+import org.spongycastle.util.Memoable;
 
 /**
  * implementation of GOST R 34.11-2012 256-bit

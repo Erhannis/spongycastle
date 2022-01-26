@@ -1,39 +1,39 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.tls.AlertDescription;
-import org.bouncycastle.tls.AlertLevel;
-import org.bouncycastle.tls.CertificateEntry;
-import org.bouncycastle.tls.CertificateRequest;
-import org.bouncycastle.tls.ChannelBinding;
-import org.bouncycastle.tls.CipherSuite;
-import org.bouncycastle.tls.ClientCertificateType;
-import org.bouncycastle.tls.ConnectionEnd;
-import org.bouncycastle.tls.DefaultTlsClient;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsAuthentication;
-import org.bouncycastle.tls.TlsCredentialedSigner;
-import org.bouncycastle.tls.TlsCredentials;
-import org.bouncycastle.tls.TlsExtensionsUtils;
-import org.bouncycastle.tls.TlsFatalAlert;
-import org.bouncycastle.tls.TlsServerCertificate;
-import org.bouncycastle.tls.TlsUtils;
-import org.bouncycastle.tls.crypto.TlsCertificate;
-import org.bouncycastle.tls.crypto.TlsStreamSigner;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import org.spongycastle.asn1.ASN1BitString;
+import org.spongycastle.asn1.ASN1EncodableVector;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.DERBitString;
+import org.spongycastle.asn1.DERSequence;
+import org.spongycastle.asn1.x509.Certificate;
+import org.spongycastle.tls.AlertDescription;
+import org.spongycastle.tls.AlertLevel;
+import org.spongycastle.tls.CertificateEntry;
+import org.spongycastle.tls.CertificateRequest;
+import org.spongycastle.tls.ChannelBinding;
+import org.spongycastle.tls.CipherSuite;
+import org.spongycastle.tls.ClientCertificateType;
+import org.spongycastle.tls.ConnectionEnd;
+import org.spongycastle.tls.DefaultTlsClient;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsAuthentication;
+import org.spongycastle.tls.TlsCredentialedSigner;
+import org.spongycastle.tls.TlsCredentials;
+import org.spongycastle.tls.TlsExtensionsUtils;
+import org.spongycastle.tls.TlsFatalAlert;
+import org.spongycastle.tls.TlsServerCertificate;
+import org.spongycastle.tls.TlsUtils;
+import org.spongycastle.tls.crypto.TlsCertificate;
+import org.spongycastle.tls.crypto.TlsStreamSigner;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
 
 class TlsTestClientImpl
     extends DefaultTlsClient
@@ -295,9 +295,9 @@ class TlsTestClientImpl
                         return sig;
                     }
 
-                    public org.bouncycastle.tls.Certificate getCertificate()
+                    public org.spongycastle.tls.Certificate getCertificate()
                     {
-                        org.bouncycastle.tls.Certificate cert = signerCredentials.getCertificate();
+                        org.spongycastle.tls.Certificate cert = signerCredentials.getCertificate();
 
                         if (config.clientAuth == TlsTestConfig.CLIENT_AUTH_INVALID_CERT)
                         {
@@ -321,7 +321,7 @@ class TlsTestClientImpl
         };
     }
 
-    protected org.bouncycastle.tls.Certificate corruptCertificate(org.bouncycastle.tls.Certificate cert)
+    protected org.spongycastle.tls.Certificate corruptCertificate(org.spongycastle.tls.Certificate cert)
     {
         CertificateEntry[] certEntryList = cert.getCertificateEntryList();
         try
@@ -334,7 +334,7 @@ class TlsTestClientImpl
         {
             throw new RuntimeException(e);
         }
-        return new org.bouncycastle.tls.Certificate(cert.getCertificateRequestContext(), certEntryList);
+        return new org.spongycastle.tls.Certificate(cert.getCertificateRequestContext(), certEntryList);
     }
 
     protected TlsCertificate corruptCertificateSignature(TlsCertificate tlsCertificate) throws IOException

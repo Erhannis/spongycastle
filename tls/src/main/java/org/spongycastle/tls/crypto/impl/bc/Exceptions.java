@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.crypto.impl.bc;
+package org.spongycastle.tls.crypto.impl.bc;
 
 /**
  * In earlier JDK's these do not allow nested exceptions

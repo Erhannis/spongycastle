@@ -1,6 +1,6 @@
-package org.bouncycastle.jsse;
+package org.spongycastle.jsse;
 
-import org.bouncycastle.tls.NameType;
+import org.spongycastle.tls.NameType;
 
 public final class BCStandardConstants
 {

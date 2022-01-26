@@ -1,18 +1,18 @@
-package org.bouncycastle.dvcs;
+package org.spongycastle.dvcs;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cms.ContentInfo;
-import org.bouncycastle.asn1.dvcs.DVCSObjectIdentifiers;
-import org.bouncycastle.asn1.dvcs.DVCSRequestInformationBuilder;
-import org.bouncycastle.asn1.dvcs.Data;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.cms.CMSSignedDataGenerator;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+import org.spongycastle.asn1.cms.ContentInfo;
+import org.spongycastle.asn1.dvcs.DVCSObjectIdentifiers;
+import org.spongycastle.asn1.dvcs.DVCSRequestInformationBuilder;
+import org.spongycastle.asn1.dvcs.Data;
+import org.spongycastle.asn1.x509.ExtensionsGenerator;
+import org.spongycastle.asn1.x509.GeneralName;
+import org.spongycastle.asn1.x509.GeneralNames;
+import org.spongycastle.cms.CMSSignedDataGenerator;
 
 /**
  * Common base class for client DVCRequest builders.
@@ -123,7 +123,7 @@ public abstract class DVCSRequestBuilder
             requestInformationBuilder.setExtensions(extGenerator.generate());
         }
 
-        org.bouncycastle.asn1.dvcs.DVCSRequest request = new org.bouncycastle.asn1.dvcs.DVCSRequest(requestInformationBuilder.build(), data);
+        org.spongycastle.asn1.dvcs.DVCSRequest request = new org.spongycastle.asn1.dvcs.DVCSRequest(requestInformationBuilder.build(), data);
 
         return new DVCSRequest(new ContentInfo(DVCSObjectIdentifiers.id_ct_DVCSRequestData, request));
     }

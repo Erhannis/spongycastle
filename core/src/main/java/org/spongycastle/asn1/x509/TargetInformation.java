@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.x509;
+package org.spongycastle.asn1.x509;
 
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.DERSequence;
 
 /**
  * Target information extension for attributes certificates according to RFC
@@ -109,7 +109,7 @@ public class TargetInformation
      * According to RFC 3281 only one targets element must be produced. If
      * multiple targets are given in the constructor they are merged into one
      * targets element. If this was produced from a
-     * {@link org.bouncycastle.asn1.ASN1Sequence} the encoding is kept.
+     * {@link org.spongycastle.asn1.ASN1Sequence} the encoding is kept.
      * 
      * @return a ASN1Primitive
      */

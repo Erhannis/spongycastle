@@ -1,4 +1,4 @@
-package org.bouncycastle.openpgp;
+package org.spongycastle.openpgp;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.bouncycastle.bcpg.BCPGInputStream;
-import org.bouncycastle.bcpg.InputStreamPacket;
-import org.bouncycastle.bcpg.Packet;
-import org.bouncycastle.bcpg.PacketTags;
-import org.bouncycastle.bcpg.PublicKeyEncSessionPacket;
-import org.bouncycastle.bcpg.SymmetricKeyEncSessionPacket;
-import org.bouncycastle.util.Iterable;
+import org.spongycastle.bcpg.BCPGInputStream;
+import org.spongycastle.bcpg.InputStreamPacket;
+import org.spongycastle.bcpg.Packet;
+import org.spongycastle.bcpg.PacketTags;
+import org.spongycastle.bcpg.PublicKeyEncSessionPacket;
+import org.spongycastle.bcpg.SymmetricKeyEncSessionPacket;
+import org.spongycastle.util.Iterable;
 
 /**
  * A holder for a list of PGP encryption method packets and the encrypted data associated with them.

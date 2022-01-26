@@ -1,12 +1,12 @@
-package org.bouncycastle.cert.cmp;
+package org.spongycastle.cert.cmp;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.cmp.PKIBody;
-import org.bouncycastle.asn1.cmp.PKIHeader;
-import org.bouncycastle.asn1.cmp.PKIMessage;
-import org.bouncycastle.cert.CertIOException;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.cmp.PKIBody;
+import org.spongycastle.asn1.cmp.PKIHeader;
+import org.spongycastle.asn1.cmp.PKIMessage;
+import org.spongycastle.cert.CertIOException;
 
 /**
  * General wrapper for a generic PKIMessage

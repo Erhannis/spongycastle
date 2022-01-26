@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.math.linearalgebra;
+package org.spongycastle.pqc.math.linearalgebra;
 
 /**
  * This class represents polynomial rings <tt>GF(2^m)[X]/p(X)</tt> for

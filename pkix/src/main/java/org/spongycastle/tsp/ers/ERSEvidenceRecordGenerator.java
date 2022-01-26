@@ -1,8 +1,8 @@
-package org.bouncycastle.tsp.ers;
+package org.spongycastle.tsp.ers;
 
-import org.bouncycastle.asn1.tsp.EvidenceRecord;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.tsp.TSPException;
+import org.spongycastle.asn1.tsp.EvidenceRecord;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.tsp.TSPException;
 
 public class ERSEvidenceRecordGenerator
 {

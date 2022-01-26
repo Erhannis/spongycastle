@@ -1,20 +1,20 @@
-package org.bouncycastle.asn1.util.test;
+package org.spongycastle.asn1.util.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import org.bouncycastle.asn1.cms.test.*;
-import org.bouncycastle.asn1.misc.test.*;
-import org.bouncycastle.util.test.SimpleTestResult;
+import org.spongycastle.asn1.cms.test.*;
+import org.spongycastle.asn1.misc.test.*;
+import org.spongycastle.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
 {
     public void testASN1()
     {   
-        org.bouncycastle.util.test.Test[] tests = RegressionTest.tests;
+        org.spongycastle.util.test.Test[] tests = RegressionTest.tests;
         
         for (int i = 0; i != tests.length; i++)
         {

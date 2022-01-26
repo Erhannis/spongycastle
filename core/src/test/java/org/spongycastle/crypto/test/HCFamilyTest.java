@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.test;
+package org.spongycastle.crypto.test;
 
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.engines.HC128Engine;
-import org.bouncycastle.crypto.engines.HC256Engine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.crypto.StreamCipher;
+import org.spongycastle.crypto.engines.HC128Engine;
+import org.spongycastle.crypto.engines.HC256Engine;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 /**
  * HC-128 and HC-256 Tests. Based on the test vectors in the official reference

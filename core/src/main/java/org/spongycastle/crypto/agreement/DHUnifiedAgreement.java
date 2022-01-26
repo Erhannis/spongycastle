@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.agreement;
+package org.spongycastle.crypto.agreement;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.DHUPrivateParameters;
-import org.bouncycastle.crypto.params.DHUPublicParameters;
-import org.bouncycastle.util.BigIntegers;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.params.DHUPrivateParameters;
+import org.spongycastle.crypto.params.DHUPublicParameters;
+import org.spongycastle.util.BigIntegers;
 
 /**
  * FFC Unified static/ephemeral agreement as described in NIST SP 800-56A.

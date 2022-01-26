@@ -1,11 +1,11 @@
-package org.bouncycastle.util.encoders.test;
+package org.spongycastle.util.encoders.test;
 
 import java.util.Arrays;
 import java.util.Random;
 
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.util.encoders.Base64;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class EncoderTest
     extends SimpleTest

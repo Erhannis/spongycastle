@@ -1,14 +1,14 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.util.Random;
 import java.util.Vector;
 
-import org.bouncycastle.tls.HashAlgorithm;
-import org.bouncycastle.tls.KeyExchangeAlgorithm;
-import org.bouncycastle.tls.ProtocolVersion;
-import org.bouncycastle.tls.SignatureAlgorithm;
-import org.bouncycastle.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.tls.TlsUtils;
+import org.spongycastle.tls.HashAlgorithm;
+import org.spongycastle.tls.KeyExchangeAlgorithm;
+import org.spongycastle.tls.ProtocolVersion;
+import org.spongycastle.tls.SignatureAlgorithm;
+import org.spongycastle.tls.SignatureAndHashAlgorithm;
+import org.spongycastle.tls.TlsUtils;
 
 import junit.framework.TestCase;
 

@@ -1,19 +1,19 @@
-package org.bouncycastle.its.test;
+package org.spongycastle.its.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.its.ITSCertificate;
-import org.bouncycastle.oer.OEREncoder;
-import org.bouncycastle.oer.OERInputStream;
-import org.bouncycastle.oer.its.Certificate;
-import org.bouncycastle.oer.its.template.IEEE1609dot2;
-import org.bouncycastle.oer.its.template.Ieee1609Dot2BaseTypes;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1Object;
+import org.spongycastle.its.ITSCertificate;
+import org.spongycastle.oer.OEREncoder;
+import org.spongycastle.oer.OERInputStream;
+import org.spongycastle.oer.its.Certificate;
+import org.spongycastle.oer.its.template.IEEE1609dot2;
+import org.spongycastle.oer.its.template.Ieee1609Dot2BaseTypes;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Pack;
+import org.spongycastle.util.io.Streams;
 
 public class ITSCertLoadTest
     extends TestCase
@@ -79,7 +79,7 @@ public class ITSCertLoadTest
         "CERT_TS_F_AT.oer"
     };
 
-    private static final String certContentRoot = "/org/bouncycastle/its/certs";
+    private static final String certContentRoot = "/org.spongycastle.its/certs";
 
 
     public void testInt()
@@ -99,7 +99,7 @@ public class ITSCertLoadTest
 //        throws Exception
 //    {
 //
-//        String path = "/org/bouncycastle/its/certs/CERT_IUT_B_AT.oer";
+//        String path = "/org.spongycastle.its/certs/CERT_IUT_B_AT.oer";
 //        byte[] data = Streams.readAll(this.getClass().getResourceAsStream(path));
 //        System.out.println(Hex.toHexString(data));
 //

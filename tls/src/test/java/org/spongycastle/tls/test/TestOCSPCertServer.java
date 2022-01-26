@@ -1,4 +1,4 @@
-package org.bouncycastle.tls.test;
+package org.spongycastle.tls.test;
 
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -9,28 +9,28 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ocsp.RevokedInfo;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.CRLReason;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.cert.X509CertificateHolder;
-import org.bouncycastle.cert.ocsp.BasicOCSPResp;
-import org.bouncycastle.cert.ocsp.BasicOCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.CertificateID;
-import org.bouncycastle.cert.ocsp.CertificateStatus;
-import org.bouncycastle.cert.ocsp.OCSPReq;
-import org.bouncycastle.cert.ocsp.OCSPResp;
-import org.bouncycastle.cert.ocsp.OCSPRespBuilder;
-import org.bouncycastle.cert.ocsp.Req;
-import org.bouncycastle.cert.ocsp.RespID;
-import org.bouncycastle.cert.ocsp.RevokedStatus;
-import org.bouncycastle.cert.ocsp.jcajce.JcaBasicOCSPRespBuilder;
-import org.bouncycastle.operator.DigestCalculatorProvider;
-import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
-import org.bouncycastle.pkix.PKIXIdentity;
-import org.bouncycastle.util.io.Streams;
+import org.spongycastle.asn1.ASN1GeneralizedTime;
+import org.spongycastle.asn1.ocsp.RevokedInfo;
+import org.spongycastle.asn1.pkcs.PrivateKeyInfo;
+import org.spongycastle.asn1.x509.CRLReason;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.cert.X509CertificateHolder;
+import org.spongycastle.cert.ocsp.BasicOCSPResp;
+import org.spongycastle.cert.ocsp.BasicOCSPRespBuilder;
+import org.spongycastle.cert.ocsp.CertificateID;
+import org.spongycastle.cert.ocsp.CertificateStatus;
+import org.spongycastle.cert.ocsp.OCSPReq;
+import org.spongycastle.cert.ocsp.OCSPResp;
+import org.spongycastle.cert.ocsp.OCSPRespBuilder;
+import org.spongycastle.cert.ocsp.Req;
+import org.spongycastle.cert.ocsp.RespID;
+import org.spongycastle.cert.ocsp.RevokedStatus;
+import org.spongycastle.cert.ocsp.jcajce.JcaBasicOCSPRespBuilder;
+import org.spongycastle.operator.DigestCalculatorProvider;
+import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.spongycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
+import org.spongycastle.pkix.PKIXIdentity;
+import org.spongycastle.util.io.Streams;
 
 public class TestOCSPCertServer
 {

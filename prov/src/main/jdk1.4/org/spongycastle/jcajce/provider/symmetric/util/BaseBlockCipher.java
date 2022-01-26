@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.symmetric.util;
+package org.spongycastle.jcajce.provider.symmetric.util;
 
 import java.io.ByteArrayOutputStream;
 import java.lang.reflect.Constructor;
@@ -23,64 +23,64 @@ import javax.crypto.spec.PBEParameterSpec;
 import javax.crypto.spec.RC2ParameterSpec;
 import javax.crypto.spec.RC5ParameterSpec;
 
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.crypto.fpe.FPEEngine;
-import org.bouncycastle.crypto.fpe.FPEFF1Engine;
-import org.bouncycastle.crypto.fpe.FPEFF3_1Engine;
-import org.bouncycastle.crypto.params.FPEParameters;
-import org.bouncycastle.internal.asn1.cms.GCMParameters;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.CryptoServicesRegistrar;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.engines.DSTU7624Engine;
-import org.bouncycastle.crypto.modes.AEADBlockCipher;
-import org.bouncycastle.crypto.modes.AEADCipher;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.CCMBlockCipher;
-import org.bouncycastle.crypto.modes.CFBBlockCipher;
-import org.bouncycastle.crypto.modes.CTSBlockCipher;
-import org.bouncycastle.crypto.modes.EAXBlockCipher;
-import org.bouncycastle.crypto.modes.GCFBBlockCipher;
-import org.bouncycastle.crypto.modes.GCMBlockCipher;
-import org.bouncycastle.crypto.modes.GCMSIVBlockCipher;
-import org.bouncycastle.crypto.modes.GOFBBlockCipher;
-import org.bouncycastle.crypto.modes.KCCMBlockCipher;
-import org.bouncycastle.crypto.modes.KCTRBlockCipher;
-import org.bouncycastle.crypto.modes.KGCMBlockCipher;
-import org.bouncycastle.crypto.modes.OCBBlockCipher;
-import org.bouncycastle.crypto.modes.OFBBlockCipher;
-import org.bouncycastle.crypto.modes.OpenPGPCFBBlockCipher;
-import org.bouncycastle.crypto.modes.PGPCFBBlockCipher;
-import org.bouncycastle.crypto.modes.SICBlockCipher;
-import org.bouncycastle.crypto.paddings.BlockCipherPadding;
-import org.bouncycastle.crypto.paddings.ISO10126d2Padding;
-import org.bouncycastle.crypto.paddings.ISO7816d4Padding;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.crypto.paddings.TBCPadding;
-import org.bouncycastle.crypto.paddings.X923Padding;
-import org.bouncycastle.crypto.paddings.ZeroBytePadding;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.ParametersWithSBox;
-import org.bouncycastle.crypto.params.RC2Parameters;
-import org.bouncycastle.crypto.params.RC5Parameters;
-import org.bouncycastle.jcajce.PBKDF1Key;
-import org.bouncycastle.jcajce.PBKDF1KeyWithParameters;
-import org.bouncycastle.jcajce.PKCS12Key;
-import org.bouncycastle.jcajce.PKCS12KeyWithParameters;
-import org.bouncycastle.jcajce.spec.AEADParameterSpec;
-import org.bouncycastle.jcajce.spec.FPEParameterSpec;
-import org.bouncycastle.jcajce.spec.GOST28147ParameterSpec;
-import org.bouncycastle.jcajce.spec.RepeatedSecretKeySpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.crypto.fpe.FPEEngine;
+import org.spongycastle.crypto.fpe.FPEFF1Engine;
+import org.spongycastle.crypto.fpe.FPEFF3_1Engine;
+import org.spongycastle.crypto.params.FPEParameters;
+import org.spongycastle.internal.asn1.cms.GCMParameters;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.crypto.BlockCipher;
+import org.spongycastle.crypto.BufferedBlockCipher;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.CryptoServicesRegistrar;
+import org.spongycastle.crypto.DataLengthException;
+import org.spongycastle.crypto.InvalidCipherTextException;
+import org.spongycastle.crypto.OutputLengthException;
+import org.spongycastle.crypto.engines.DSTU7624Engine;
+import org.spongycastle.crypto.modes.AEADBlockCipher;
+import org.spongycastle.crypto.modes.AEADCipher;
+import org.spongycastle.crypto.modes.CBCBlockCipher;
+import org.spongycastle.crypto.modes.CCMBlockCipher;
+import org.spongycastle.crypto.modes.CFBBlockCipher;
+import org.spongycastle.crypto.modes.CTSBlockCipher;
+import org.spongycastle.crypto.modes.EAXBlockCipher;
+import org.spongycastle.crypto.modes.GCFBBlockCipher;
+import org.spongycastle.crypto.modes.GCMBlockCipher;
+import org.spongycastle.crypto.modes.GCMSIVBlockCipher;
+import org.spongycastle.crypto.modes.GOFBBlockCipher;
+import org.spongycastle.crypto.modes.KCCMBlockCipher;
+import org.spongycastle.crypto.modes.KCTRBlockCipher;
+import org.spongycastle.crypto.modes.KGCMBlockCipher;
+import org.spongycastle.crypto.modes.OCBBlockCipher;
+import org.spongycastle.crypto.modes.OFBBlockCipher;
+import org.spongycastle.crypto.modes.OpenPGPCFBBlockCipher;
+import org.spongycastle.crypto.modes.PGPCFBBlockCipher;
+import org.spongycastle.crypto.modes.SICBlockCipher;
+import org.spongycastle.crypto.paddings.BlockCipherPadding;
+import org.spongycastle.crypto.paddings.ISO10126d2Padding;
+import org.spongycastle.crypto.paddings.ISO7816d4Padding;
+import org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher;
+import org.spongycastle.crypto.paddings.TBCPadding;
+import org.spongycastle.crypto.paddings.X923Padding;
+import org.spongycastle.crypto.paddings.ZeroBytePadding;
+import org.spongycastle.crypto.params.AEADParameters;
+import org.spongycastle.crypto.params.KeyParameter;
+import org.spongycastle.crypto.params.ParametersWithIV;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+import org.spongycastle.crypto.params.ParametersWithSBox;
+import org.spongycastle.crypto.params.RC2Parameters;
+import org.spongycastle.crypto.params.RC5Parameters;
+import org.spongycastle.jcajce.PBKDF1Key;
+import org.spongycastle.jcajce.PBKDF1KeyWithParameters;
+import org.spongycastle.jcajce.PKCS12Key;
+import org.spongycastle.jcajce.PKCS12KeyWithParameters;
+import org.spongycastle.jcajce.spec.AEADParameterSpec;
+import org.spongycastle.jcajce.spec.FPEParameterSpec;
+import org.spongycastle.jcajce.spec.GOST28147ParameterSpec;
+import org.spongycastle.jcajce.spec.RepeatedSecretKeySpec;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.Strings;
 
 public class BaseBlockCipher
     extends BaseWrapCipher
@@ -193,14 +193,14 @@ public class BaseBlockCipher
     }
 
     protected BaseBlockCipher(
-        org.bouncycastle.crypto.BlockCipher engine,
+        org.spongycastle.crypto.BlockCipher engine,
         int ivLength)
     {
         this(engine, true, ivLength);
     }
 
     protected BaseBlockCipher(
-        org.bouncycastle.crypto.BlockCipher engine,
+        org.spongycastle.crypto.BlockCipher engine,
         boolean fixedIv,
         int ivLength)
     {
@@ -1223,7 +1223,7 @@ public class BaseBlockCipher
 
         public String getAlgorithmName();
 
-        public org.bouncycastle.crypto.BlockCipher getUnderlyingCipher();
+        public org.spongycastle.crypto.BlockCipher getUnderlyingCipher();
 
         public int getOutputSize(int len);
 
@@ -1252,12 +1252,12 @@ public class BaseBlockCipher
             this.cipher = cipher;
         }
 
-        BufferedGenericBlockCipher(org.bouncycastle.crypto.BlockCipher cipher)
+        BufferedGenericBlockCipher(org.spongycastle.crypto.BlockCipher cipher)
         {
             this.cipher = new PaddedBufferedBlockCipher(cipher);
         }
 
-        BufferedGenericBlockCipher(org.bouncycastle.crypto.BlockCipher cipher, BlockCipherPadding padding)
+        BufferedGenericBlockCipher(org.spongycastle.crypto.BlockCipher cipher, BlockCipherPadding padding)
         {
             this.cipher = new PaddedBufferedBlockCipher(cipher, padding);
         }
@@ -1278,7 +1278,7 @@ public class BaseBlockCipher
             return cipher.getUnderlyingCipher().getAlgorithmName();
         }
 
-        public org.bouncycastle.crypto.BlockCipher getUnderlyingCipher()
+        public org.spongycastle.crypto.BlockCipher getUnderlyingCipher()
         {
             return cipher.getUnderlyingCipher();
         }
@@ -1351,7 +1351,7 @@ public class BaseBlockCipher
             return cipher.getAlgorithmName();
         }
 
-        public org.bouncycastle.crypto.BlockCipher getUnderlyingCipher()
+        public org.spongycastle.crypto.BlockCipher getUnderlyingCipher()
         {
             throw new IllegalStateException("not applicable for FPE");
         }
@@ -1459,7 +1459,7 @@ public class BaseBlockCipher
             return false;
         }
 
-        public org.bouncycastle.crypto.BlockCipher getUnderlyingCipher()
+        public org.spongycastle.crypto.BlockCipher getUnderlyingCipher()
         {
             if (cipher instanceof AEADBlockCipher)
             {

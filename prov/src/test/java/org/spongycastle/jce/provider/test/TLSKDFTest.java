@@ -1,15 +1,15 @@
-package org.bouncycastle.jce.provider.test;
+package org.spongycastle.jce.provider.test;
 
 import java.security.Security;
 
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 
-import org.bouncycastle.jcajce.spec.TLSKeyMaterialSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import org.spongycastle.jcajce.spec.TLSKeyMaterialSpec;
+import org.spongycastle.jce.provider.BouncyCastleProvider;
+import org.spongycastle.util.Arrays;
+import org.spongycastle.util.encoders.Hex;
+import org.spongycastle.util.test.SimpleTest;
 
 public class TLSKDFTest
     extends SimpleTest
