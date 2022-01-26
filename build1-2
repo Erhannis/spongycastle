@@ -470,7 +470,7 @@ Manifest-Version: 1.0
 Extension-Name: org.spongycastle.bcpkix
 Specification-Vendor: BouncyCastle.org
 Specification-Version: 1.1
-Implementation-Vendor-Id: org.bouncycastle
+Implementation-Vendor-Id: org.spongycastle
 Implementation-Vendor: BouncyCastle.org
 Implementation-Version: $version.0
 %
@@ -555,7 +555,7 @@ Manifest-Version: 1.0
 Extension-Name: org.spongycastle.bcpg
 Specification-Vendor: BouncyCastle.org
 Specification-Version: 1.1
-Implementation-Vendor-Id: org.bouncycastle
+Implementation-Vendor-Id: org.spongycastle
 Implementation-Vendor: BouncyCastle.org
 Implementation-Version: $version.0
 %
