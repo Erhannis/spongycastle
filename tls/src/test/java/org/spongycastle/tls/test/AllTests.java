@@ -19,7 +19,7 @@ public class AllTests
     {
         TestSuite suite = new TestSuite("TLS tests");
 
-        suite.addTestSuite(BasicTlsTest.class);
+        // suite.addTestSuite(BasicTlsTest.class);
         suite.addTestSuite(ByteQueueInputStreamTest.class);
         suite.addTestSuite(DTLSProtocolTest.class);
         suite.addTestSuite(DTLSPSKProtocolTest.class);
