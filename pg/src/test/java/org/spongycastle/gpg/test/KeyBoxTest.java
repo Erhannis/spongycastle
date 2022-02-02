@@ -135,32 +135,19 @@ public class KeyBoxTest
     public void testSanityElGamal()
         throws Exception
     {
-        System.err.println("testSanityElGamal 1");
-        try
-        {
-            testSanityElGamal_verify(new BcKeyBox(KeyBoxTest.class.getResourceAsStream("/pgpdata/eg_pubring.kbx")));
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw e;
-        }
-        System.err.println("testSanityElGamal 2");
+        testSanityElGamal_verify(new BcKeyBox(KeyBoxTest.class.getResourceAsStream("/pgpdata/eg_pubring.kbx")));
         testSanityElGamal_verify(new JcaKeyBoxBuilder().setProvider("BC").build(KeyBoxTest.class.getResourceAsStream("/pgpdata/eg_pubring.kbx")));
-        System.err.println("testSanityElGamal 3");
     }
 
     private void testSanityElGamal_verify(KeyBox keyBox)
         throws Exception
     {
-        System.err.println("testSanityElGamal_verify 1");
         FirstBlob firstBlob = keyBox.getFirstBlob();
 
 
         //
         // Check the first blob.
         //
-        System.err.println("testSanityElGamal_verify 2");
         TestCase.assertEquals(BlobType.FIRST_BLOB, firstBlob.getType());
         TestCase.assertEquals("Version", 1, firstBlob.getVersion());
         TestCase.assertEquals("Header flags.", 2, firstBlob.getHeaderFlags());
@@ -168,25 +155,18 @@ public class KeyBoxTest
         TestCase.assertEquals("Last maintained date.", 1527840866, firstBlob.getLastMaintenanceRun());
 
         // Number of blobs.
-        System.err.println("testSanityElGamal_verify 3");
         TestCase.assertEquals("One material blobs.", 1, keyBox.getKeyBlobs().size());
 
-        System.err.println("testSanityElGamal_verify 4");
         TestCase.assertEquals("Pgp type", BlobType.OPEN_PGP_BLOB, keyBox.getKeyBlobs().get(0).getType());
 
-        System.err.println("testSanityElGamal_verify 5");
         PublicKeyRingBlob pgkr = (PublicKeyRingBlob)keyBox.getKeyBlobs().get(0);
         PGPPublicKeyRing ring = pgkr.getPGPPublicKeyRing();
 
-        System.err.println("testSanityElGamal_verify 6");
         TestCase.assertEquals("Must be DSA", PublicKeyAlgorithmTags.DSA, ring.getPublicKey().getAlgorithm());
 
-        System.err.println("testSanityElGamal_verify 7");
         Iterator<PGPPublicKey> it = ring.getPublicKeys();
         it.next();
         TestCase.assertEquals("Must be ELGAMAL_ENCRYPT", PublicKeyAlgorithmTags.ELGAMAL_ENCRYPT, it.next().getAlgorithm());
-        
-        System.err.println("testSanityElGamal_verify done");
     }
 
 
@@ -207,33 +187,23 @@ public class KeyBoxTest
         // BC
         try
         {
-            System.err.println("Blob 1.1");
             new KeyBox(raw, new BcKeyFingerprintCalculator(), new BcBlobVerifier());
-            System.err.println("Blob 1.2");
             fail("Must have invalid checksum");
-            System.err.println("Blob 1.3");
         }
         catch (IOException ioex)
         {
-            System.err.println("Blob 1.4");
             isEquals("Blob with base offset of 32 has incorrect digest.", ioex.getMessage());
-            System.err.println("Blob 1.5");
         }
 
         // JCA
         try
         {
-            System.err.println("Blob 2.1");
             new JcaKeyBoxBuilder().setProvider("BC").build(raw);
-            System.err.println("Blob 2.2");
             fail("Must have invalid checksum");
-            System.err.println("Blob 2.3");
         }
         catch (IOException ioex)
         {
-            System.err.println("Blob 2.4");
             isEquals("Blob with base offset of 32 has incorrect digest.", ioex.getMessage());
-            System.err.println("Blob 2.5");
         }
 
     }
@@ -374,33 +344,23 @@ public class KeyBoxTest
         // BC
         try
         {
-            System.err.println("Blob 3.1");
             new KeyBox(raw, new BcKeyFingerprintCalculator(), new BcBlobVerifier());
-            System.err.println("Blob 3.2");
             fail("Must have invalid checksum");
-            System.err.println("Blob 3.3");
         }
         catch (IOException ioex)
         {
-            System.err.println("Blob 3.4");
             isEquals("Blob with base offset of 32 has incorrect digest.", ioex.getMessage());
-            System.err.println("Blob 3.5");
         }
 
         // JCA
         try
         {
-            System.err.println("Blob 4.1");
             new JcaKeyBoxBuilder().setProvider("BC").build(raw);
-            System.err.println("Blob 4.2");
             fail("Must have invalid checksum");
-            System.err.println("Blob 4.3");
         }
         catch (IOException ioex)
         {
-            System.err.println("Blob 4.4");
             isEquals("Blob with base offset of 32 has incorrect digest.", ioex.getMessage());
-            System.err.println("Blob 4.5");
         }
 
 
